@@ -1,0 +1,411 @@
+You are a highly skilled test engineer specializing in debugging and resolving compilation errors and test failures in Java-based projects. Your expertise includes Java 8, JUnit 4, and REST Assured, allowing you to diagnose issues efficiently and provide precise, actionable fixes.
+
+Do fix the compilation errors delimited by ##### given the code below delimited by *****.
+
+The response must contain only Java code in JUnit 4 format.
+
+#####
+[[1;31mERROR[m] COMPILATION ERROR : 
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_RepositoryWrapperTest.java:[67,9] cannot find symbol
+  symbol:   class RepositoryWrapper
+  location: class org.zalando.catwatch.backend.gpt35_run01_RepositoryWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_RepositoryWrapperTest.java:[67,51] cannot find symbol
+  symbol:   class RepositoryWrapper
+  location: class org.zalando.catwatch.backend.gpt35_run01_RepositoryWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_RepositoryWrapperTest.java:[73,9] cannot find symbol
+  symbol:   class RepositoryWrapper
+  location: class org.zalando.catwatch.backend.gpt35_run01_RepositoryWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_RepositoryWrapperTest.java:[73,51] cannot find symbol
+  symbol:   class RepositoryWrapper
+  location: class org.zalando.catwatch.backend.gpt35_run01_RepositoryWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_RepositoryWrapperTest.java:[80,9] cannot find symbol
+  symbol:   class RepositoryWrapper
+  location: class org.zalando.catwatch.backend.gpt35_run01_RepositoryWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_RepositoryWrapperTest.java:[80,51] cannot find symbol
+  symbol:   class RepositoryWrapper
+  location: class org.zalando.catwatch.backend.gpt35_run01_RepositoryWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_RepositoryWrapperTest.java:[87,9] cannot find symbol
+  symbol:   class RepositoryWrapper
+  location: class org.zalando.catwatch.backend.gpt35_run01_RepositoryWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_RepositoryWrapperTest.java:[87,51] cannot find symbol
+  symbol:   class RepositoryWrapper
+  location: class org.zalando.catwatch.backend.gpt35_run01_RepositoryWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_RepositoryWrapperTest.java:[94,9] cannot find symbol
+  symbol:   class RepositoryWrapper
+  location: class org.zalando.catwatch.backend.gpt35_run01_RepositoryWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_RepositoryWrapperTest.java:[94,51] cannot find symbol
+  symbol:   class RepositoryWrapper
+  location: class org.zalando.catwatch.backend.gpt35_run01_RepositoryWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_RepositoryWrapperTest.java:[101,9] cannot find symbol
+  symbol:   class RepositoryWrapper
+  location: class org.zalando.catwatch.backend.gpt35_run01_RepositoryWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_RepositoryWrapperTest.java:[101,51] cannot find symbol
+  symbol:   class RepositoryWrapper
+  location: class org.zalando.catwatch.backend.gpt35_run01_RepositoryWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_RepositoryWrapperTest.java:[108,9] cannot find symbol
+  symbol:   class RepositoryWrapper
+  location: class org.zalando.catwatch.backend.gpt35_run01_RepositoryWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_RepositoryWrapperTest.java:[108,51] cannot find symbol
+  symbol:   class RepositoryWrapper
+  location: class org.zalando.catwatch.backend.gpt35_run01_RepositoryWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_RepositoryWrapperTest.java:[115,9] cannot find symbol
+  symbol:   class RepositoryWrapper
+  location: class org.zalando.catwatch.backend.gpt35_run01_RepositoryWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_RepositoryWrapperTest.java:[115,51] cannot find symbol
+  symbol:   class RepositoryWrapper
+  location: class org.zalando.catwatch.backend.gpt35_run01_RepositoryWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_RepositoryWrapperTest.java:[122,9] cannot find symbol
+  symbol:   class RepositoryWrapper
+  location: class org.zalando.catwatch.backend.gpt35_run01_RepositoryWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_RepositoryWrapperTest.java:[122,51] cannot find symbol
+  symbol:   class RepositoryWrapper
+  location: class org.zalando.catwatch.backend.gpt35_run01_RepositoryWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_RepositoryWrapperTest.java:[129,9] cannot find symbol
+  symbol:   class RepositoryWrapper
+  location: class org.zalando.catwatch.backend.gpt35_run01_RepositoryWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_RepositoryWrapperTest.java:[129,51] cannot find symbol
+  symbol:   class RepositoryWrapper
+  location: class org.zalando.catwatch.backend.gpt35_run01_RepositoryWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_RepositoryWrapperTest.java:[136,9] cannot find symbol
+  symbol:   class RepositoryWrapper
+  location: class org.zalando.catwatch.backend.gpt35_run01_RepositoryWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_RepositoryWrapperTest.java:[136,51] cannot find symbol
+  symbol:   class RepositoryWrapper
+  location: class org.zalando.catwatch.backend.gpt35_run01_RepositoryWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_RepositoryWrapperTest.java:[144,9] cannot find symbol
+  symbol:   class RepositoryWrapper
+  location: class org.zalando.catwatch.backend.gpt35_run01_RepositoryWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_RepositoryWrapperTest.java:[144,51] cannot find symbol
+  symbol:   class RepositoryWrapper
+  location: class org.zalando.catwatch.backend.gpt35_run01_RepositoryWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_RepositoryWrapperTest.java:[151,9] cannot find symbol
+  symbol:   class RepositoryWrapper
+  location: class org.zalando.catwatch.backend.gpt35_run01_RepositoryWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_RepositoryWrapperTest.java:[151,51] cannot find symbol
+  symbol:   class RepositoryWrapper
+  location: class org.zalando.catwatch.backend.gpt35_run01_RepositoryWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_RepositoryWrapperTest.java:[152,14] cannot find symbol
+  symbol:   class GHCommit
+  location: class org.zalando.catwatch.backend.gpt35_run01_RepositoryWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_RepositoryWrapperTest.java:[159,9] cannot find symbol
+  symbol:   class RepositoryWrapper
+  location: class org.zalando.catwatch.backend.gpt35_run01_RepositoryWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_RepositoryWrapperTest.java:[159,51] cannot find symbol
+  symbol:   class RepositoryWrapper
+  location: class org.zalando.catwatch.backend.gpt35_run01_RepositoryWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_RepositoryWrapperTest.java:[160,26] package GHRepository does not exist
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_RepositoryWrapperTest.java:[167,9] cannot find symbol
+  symbol:   class RepositoryWrapper
+  location: class org.zalando.catwatch.backend.gpt35_run01_RepositoryWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_RepositoryWrapperTest.java:[167,51] cannot find symbol
+  symbol:   class RepositoryWrapper
+  location: class org.zalando.catwatch.backend.gpt35_run01_RepositoryWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_RepositoryWrapperTest.java:[168,14] cannot find symbol
+  symbol:   class GHTag
+  location: class org.zalando.catwatch.backend.gpt35_run01_RepositoryWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_RepositoryWrapperTest.java:[175,9] cannot find symbol
+  symbol:   class RepositoryWrapper
+  location: class org.zalando.catwatch.backend.gpt35_run01_RepositoryWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_RepositoryWrapperTest.java:[175,51] cannot find symbol
+  symbol:   class RepositoryWrapper
+  location: class org.zalando.catwatch.backend.gpt35_run01_RepositoryWrapperTest
+[[1;31mERROR[m] Failed to execute goal [32morg.apache.maven.plugins:maven-compiler-plugin:3.8.0:testCompile[m [1m(default-testCompile)[m on project [36mcatwatch-backend[m: [1;31mCompilation failure[m: Compilation failure: 
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_RepositoryWrapperTest.java:[67,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class RepositoryWrapper
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt35_run01_RepositoryWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_RepositoryWrapperTest.java:[67,51] cannot find symbol
+[[1;31mERROR[m]   symbol:   class RepositoryWrapper
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt35_run01_RepositoryWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_RepositoryWrapperTest.java:[73,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class RepositoryWrapper
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt35_run01_RepositoryWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_RepositoryWrapperTest.java:[73,51] cannot find symbol
+[[1;31mERROR[m]   symbol:   class RepositoryWrapper
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt35_run01_RepositoryWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_RepositoryWrapperTest.java:[80,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class RepositoryWrapper
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt35_run01_RepositoryWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_RepositoryWrapperTest.java:[80,51] cannot find symbol
+[[1;31mERROR[m]   symbol:   class RepositoryWrapper
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt35_run01_RepositoryWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_RepositoryWrapperTest.java:[87,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class RepositoryWrapper
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt35_run01_RepositoryWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_RepositoryWrapperTest.java:[87,51] cannot find symbol
+[[1;31mERROR[m]   symbol:   class RepositoryWrapper
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt35_run01_RepositoryWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_RepositoryWrapperTest.java:[94,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class RepositoryWrapper
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt35_run01_RepositoryWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_RepositoryWrapperTest.java:[94,51] cannot find symbol
+[[1;31mERROR[m]   symbol:   class RepositoryWrapper
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt35_run01_RepositoryWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_RepositoryWrapperTest.java:[101,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class RepositoryWrapper
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt35_run01_RepositoryWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_RepositoryWrapperTest.java:[101,51] cannot find symbol
+[[1;31mERROR[m]   symbol:   class RepositoryWrapper
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt35_run01_RepositoryWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_RepositoryWrapperTest.java:[108,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class RepositoryWrapper
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt35_run01_RepositoryWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_RepositoryWrapperTest.java:[108,51] cannot find symbol
+[[1;31mERROR[m]   symbol:   class RepositoryWrapper
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt35_run01_RepositoryWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_RepositoryWrapperTest.java:[115,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class RepositoryWrapper
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt35_run01_RepositoryWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_RepositoryWrapperTest.java:[115,51] cannot find symbol
+[[1;31mERROR[m]   symbol:   class RepositoryWrapper
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt35_run01_RepositoryWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_RepositoryWrapperTest.java:[122,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class RepositoryWrapper
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt35_run01_RepositoryWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_RepositoryWrapperTest.java:[122,51] cannot find symbol
+[[1;31mERROR[m]   symbol:   class RepositoryWrapper
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt35_run01_RepositoryWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_RepositoryWrapperTest.java:[129,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class RepositoryWrapper
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt35_run01_RepositoryWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_RepositoryWrapperTest.java:[129,51] cannot find symbol
+[[1;31mERROR[m]   symbol:   class RepositoryWrapper
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt35_run01_RepositoryWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_RepositoryWrapperTest.java:[136,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class RepositoryWrapper
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt35_run01_RepositoryWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_RepositoryWrapperTest.java:[136,51] cannot find symbol
+[[1;31mERROR[m]   symbol:   class RepositoryWrapper
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt35_run01_RepositoryWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_RepositoryWrapperTest.java:[144,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class RepositoryWrapper
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt35_run01_RepositoryWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_RepositoryWrapperTest.java:[144,51] cannot find symbol
+[[1;31mERROR[m]   symbol:   class RepositoryWrapper
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt35_run01_RepositoryWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_RepositoryWrapperTest.java:[151,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class RepositoryWrapper
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt35_run01_RepositoryWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_RepositoryWrapperTest.java:[151,51] cannot find symbol
+[[1;31mERROR[m]   symbol:   class RepositoryWrapper
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt35_run01_RepositoryWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_RepositoryWrapperTest.java:[152,14] cannot find symbol
+[[1;31mERROR[m]   symbol:   class GHCommit
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt35_run01_RepositoryWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_RepositoryWrapperTest.java:[159,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class RepositoryWrapper
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt35_run01_RepositoryWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_RepositoryWrapperTest.java:[159,51] cannot find symbol
+[[1;31mERROR[m]   symbol:   class RepositoryWrapper
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt35_run01_RepositoryWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_RepositoryWrapperTest.java:[160,26] package GHRepository does not exist
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_RepositoryWrapperTest.java:[167,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class RepositoryWrapper
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt35_run01_RepositoryWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_RepositoryWrapperTest.java:[167,51] cannot find symbol
+[[1;31mERROR[m]   symbol:   class RepositoryWrapper
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt35_run01_RepositoryWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_RepositoryWrapperTest.java:[168,14] cannot find symbol
+[[1;31mERROR[m]   symbol:   class GHTag
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt35_run01_RepositoryWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_RepositoryWrapperTest.java:[175,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class RepositoryWrapper
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt35_run01_RepositoryWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_RepositoryWrapperTest.java:[175,51] cannot find symbol
+[[1;31mERROR[m]   symbol:   class RepositoryWrapper
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt35_run01_RepositoryWrapperTest
+[[1;31mERROR[m] -> [1m[Help 1][m
+[[1;31mERROR[m] 
+[[1;31mERROR[m] To see the full stack trace of the errors, re-run Maven with the [1m-e[m switch.
+[[1;31mERROR[m] Re-run Maven using the [1m-X[m switch to enable full debug logging.
+[[1;31mERROR[m] 
+[[1;31mERROR[m] For more information about the errors and possible solutions, please read the following articles:
+[[1;31mERROR[m] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+
+#####
+*****
+
+package org.zalando.catwatch.backend;
+
+import org.junit.AfterClass;
+import org.junit.BeforeClass;
+import org.junit.Before;
+import org.junit.Test;
+import static org.junit.Assert.*;
+import java.util.Map;
+import java.util.List;
+import static org.evomaster.client.java.controller.api.EMTestUtils.*;
+import org.evomaster.client.java.controller.SutHandler;
+import io.restassured.RestAssured;
+import static io.restassured.RestAssured.given;
+import io.restassured.response.ValidatableResponse;
+import static org.evomaster.client.java.sql.dsl.SqlDsl.sql;
+import org.evomaster.client.java.controller.api.dto.database.operations.InsertionResultsDto;
+import org.evomaster.client.java.controller.api.dto.database.operations.InsertionDto;
+import static org.hamcrest.Matchers.*;
+import io.restassured.config.JsonConfig;
+import io.restassured.path.json.config.JsonPathConfig;
+import static io.restassured.config.RedirectConfig.redirectConfig;
+import static org.evomaster.client.java.controller.contentMatchers.NumberMatcher.*;
+import static org.evomaster.client.java.controller.contentMatchers.StringMatcher.*;
+import static org.evomaster.client.java.controller.contentMatchers.SubStringMatcher.*;
+import static org.evomaster.client.java.controller.expect.ExpectationHandler.expectationHandler;
+import org.evomaster.client.java.controller.expect.ExpectationHandler;
+import io.restassured.path.json.JsonPath;
+import java.util.Arrays;
+import java.io.InputStream;
+import java.io.IOException;
+import java.net.URL;
+import java.util.Date;
+
+public class gpt35_run01_RepositoryWrapperTest {
+
+    private static final SutHandler controller = new em.embedded.org.zalando.EmbeddedEvoMasterController();
+    private static String baseUrlOfSut;
+
+    @BeforeClass
+    public static void initClass() {
+        controller.setupForGeneratedTest();
+        baseUrlOfSut = controller.startSut();
+        controller.registerOrExecuteInitSqlCommandsIfNeeded();
+        assertNotNull(baseUrlOfSut);
+        RestAssured.enableLoggingOfRequestAndResponseIfValidationFails();
+        RestAssured.useRelaxedHTTPSValidation();
+        RestAssured.urlEncodingEnabled = false;
+        RestAssured.config = RestAssured.config()
+            .jsonConfig(JsonConfig.jsonConfig().numberReturnType(JsonPathConfig.NumberReturnType.DOUBLE))
+            .redirect(redirectConfig().followRedirects(false));
+    }
+
+    @AfterClass
+    public static void tearDown() {
+        controller.stopSut();
+    }
+
+    @Before
+    public void initTest() {
+        controller.resetDatabase(Arrays.asList("CONTRIBUTOR"));
+        controller.resetStateOfSUT();
+    }
+
+    @Test
+    public void testConstructor() {
+        RepositoryWrapper repositoryWrapper = new RepositoryWrapper(null, null);
+        assertNotNull(repositoryWrapper);
+    }
+
+    @Test
+    public void testGetId() {
+        RepositoryWrapper repositoryWrapper = new RepositoryWrapper(null, null);
+        int id = repositoryWrapper.getId();
+        assertEquals(0, id);
+    }
+
+    @Test
+    public void testGetName() {
+        RepositoryWrapper repositoryWrapper = new RepositoryWrapper(null, null);
+        String name = repositoryWrapper.getName();
+        assertNull(name);
+    }
+
+    @Test
+    public void testGetUrl() {
+        RepositoryWrapper repositoryWrapper = new RepositoryWrapper(null, null);
+        URL url = repositoryWrapper.getUrl();
+        assertNull(url);
+    }
+
+    @Test
+    public void testGetDescription() {
+        RepositoryWrapper repositoryWrapper = new RepositoryWrapper(null, null);
+        String description = repositoryWrapper.getDescription();
+        assertNull(description);
+    }
+
+    @Test
+    public void testGetStarsCount() {
+        RepositoryWrapper repositoryWrapper = new RepositoryWrapper(null, null);
+        int starsCount = repositoryWrapper.getStarsCount();
+        assertEquals(0, starsCount);
+    }
+
+    @Test
+    public void testGetForksCount() {
+        RepositoryWrapper repositoryWrapper = new RepositoryWrapper(null, null);
+        int forksCount = repositoryWrapper.getForksCount();
+        assertEquals(0, forksCount);
+    }
+
+    @Test
+    public void testGetSize() {
+        RepositoryWrapper repositoryWrapper = new RepositoryWrapper(null, null);
+        int size = repositoryWrapper.getSize();
+        assertEquals(0, size);
+    }
+
+    @Test
+    public void testGetLastPushed() {
+        RepositoryWrapper repositoryWrapper = new RepositoryWrapper(null, null);
+        Date lastPushed = repositoryWrapper.getLastPushed();
+        assertNull(lastPushed);
+    }
+
+    @Test
+    public void testGetPrimaryLanguage() {
+        RepositoryWrapper repositoryWrapper = new RepositoryWrapper(null, null);
+        String primaryLanguage = repositoryWrapper.getPrimaryLanguage();
+        assertNull(primaryLanguage);
+    }
+
+    @Test
+    public void testListLanguages() {
+        RepositoryWrapper repositoryWrapper = new RepositoryWrapper(null, null);
+        Map<String, Long> languages = repositoryWrapper.listLanguages();
+        assertNotNull(languages);
+        assertTrue(languages.isEmpty());
+    }
+
+    @Test
+    public void testGetOrganizationName() {
+        RepositoryWrapper repositoryWrapper = new RepositoryWrapper(null, null);
+        String organizationName = repositoryWrapper.getOrganizationName();
+        assertNull(organizationName);
+    }
+
+    @Test
+    public void testListCommits() {
+        RepositoryWrapper repositoryWrapper = new RepositoryWrapper(null, null);
+        List<GHCommit> commits = repositoryWrapper.listCommits();
+        assertNotNull(commits);
+        assertEquals(0, commits.size());
+    }
+
+    @Test
+    public void testListContributors() {
+        RepositoryWrapper repositoryWrapper = new RepositoryWrapper(null, null);
+        List<GHRepository.Contributor> contributors = repositoryWrapper.listContributors();
+        assertNotNull(contributors);
+        assertEquals(0, contributors.size());
+    }
+
+    @Test
+    public void testListTags() {
+        RepositoryWrapper repositoryWrapper = new RepositoryWrapper(null, null);
+        List<GHTag> tags = repositoryWrapper.listTags();
+        assertNotNull(tags);
+        assertEquals(0, tags.size());
+    }
+
+    @Test
+    public void testGetFileContent() {
+        RepositoryWrapper repositoryWrapper = new RepositoryWrapper(null, null);
+        try {
+            InputStream fileContent = repositoryWrapper.getFileContent("path");
+            assertNull(fileContent);
+        } catch (IOException e) {
+            fail("Exception thrown");
+        }
+    }
+
+}
+
+*****

@@ -1,0 +1,167 @@
+You are a highly skilled test engineer specializing in debugging and resolving compilation errors and test failures in Java-based projects. Your expertise includes Java 8, JUnit 4, and REST Assured, allowing you to diagnose issues efficiently and provide precise, actionable fixes.
+
+Given the test set below delimited by *****, fix the source lines indicated in the error messages delimited by #####, replacing only the expected by the actual values.
+
+Do keep package, headers and accessories methods unchanged.
+
+Do export all other corrected tests unchanged.
+
+The response must contain only Java code in JUnit 4 format.
+
+#####
+
+#####
+*****
+
+package org.zalando.catwatch.backend;
+
+import org.junit.AfterClass;
+import org.junit.BeforeClass;
+import org.junit.Before;
+import org.junit.Test;
+import static org.junit.Assert.*;
+import static org.mockito.Mockito.*;
+import java.util.Map;
+import java.util.List;
+import java.io.IOException;
+import static org.evomaster.client.java.controller.api.EMTestUtils.*;
+import org.evomaster.client.java.controller.SutHandler;
+import io.restassured.RestAssured;
+import static io.restassured.RestAssured.given;
+import io.restassured.response.ValidatableResponse;
+import static org.evomaster.client.java.sql.dsl.SqlDsl.sql;
+import org.evomaster.client.java.controller.api.dto.database.operations.InsertionResultsDto;
+import org.evomaster.client.java.controller.api.dto.database.operations.InsertionDto;
+import static org.hamcrest.Matchers.*;
+import io.restassured.config.JsonConfig;
+import io.restassured.path.json.config.JsonPathConfig;
+import static io.restassured.config.RedirectConfig.redirectConfig;
+import static org.evomaster.client.java.controller.contentMatchers.NumberMatcher.*;
+import static org.evomaster.client.java.controller.contentMatchers.StringMatcher.*;
+import static org.evomaster.client.java.controller.contentMatchers.SubStringMatcher.*;
+import static org.evomaster.client.java.controller.expect.ExpectationHandler.expectationHandler;
+import org.evomaster.client.java.controller.expect.ExpectationHandler;
+import io.restassured.path.json.JsonPath;
+import java.util.Arrays;
+import org.kohsuke.github.GHOrganization;
+import org.kohsuke.github.GHTeam;
+import org.kohsuke.github.GHRepository;
+
+public class gpt4o_run01_OrganizationWrapperTest {
+
+    private static final SutHandler controller = new em.embedded.org.zalando.EmbeddedEvoMasterController();
+    private static String baseUrlOfSut;
+
+    @BeforeClass
+    public static void initClass() {
+        controller.setupForGeneratedTest();
+        baseUrlOfSut = controller.startSut();
+        controller.registerOrExecuteInitSqlCommandsIfNeeded();
+        assertNotNull(baseUrlOfSut);
+        RestAssured.enableLoggingOfRequestAndResponseIfValidationFails();
+        RestAssured.useRelaxedHTTPSValidation();
+        RestAssured.urlEncodingEnabled = false;
+        RestAssured.config = RestAssured.config()
+            .jsonConfig(JsonConfig.jsonConfig().numberReturnType(JsonPathConfig.NumberReturnType.DOUBLE))
+            .redirect(redirectConfig().followRedirects(false));
+    }
+
+    @AfterClass
+    public static void tearDown() {
+        controller.stopSut();
+    }
+
+    @Before
+    public void initTest() {
+        controller.resetDatabase(Arrays.asList("CONTRIBUTOR"));
+        controller.resetStateOfSUT();
+    }
+
+    @Test
+    public void testConstructor() {
+        // Test the constructor to ensure it initializes properly
+        GHOrganization mockOrganization = mock(GHOrganization.class);
+        OrganizationWrapper organizationWrapper = new OrganizationWrapper(mockOrganization);
+        assertNotNull(organizationWrapper);
+    }
+
+    @Test
+    public void testListTeams() throws IOException {
+        // Test when teams are available
+        GHOrganization mockOrganization = mock(GHOrganization.class);
+        List<GHTeam> mockTeams = Arrays.asList(mock(GHTeam.class), mock(GHTeam.class));
+        when(mockOrganization.listTeams().asList()).thenReturn(mockTeams);
+
+        OrganizationWrapper organizationWrapper = new OrganizationWrapper(mockOrganization);
+        List<GHTeam> teams = organizationWrapper.listTeams();
+
+        assertEquals(mockTeams.size(), teams.size());
+
+        // Test when an exception occurs
+        when(mockOrganization.listTeams().asList()).thenThrow(new IOException("No teams found"));
+
+        teams = organizationWrapper.listTeams();
+        assertTrue(teams.isEmpty());
+    }
+
+    @Test
+    public void testGetPublicRepoCount() throws IOException {
+        // Test when public repo count is returned successfully
+        GHOrganization mockOrganization = mock(GHOrganization.class);
+        when(mockOrganization.getPublicRepoCount()).thenReturn(5);
+
+        OrganizationWrapper organizationWrapper = new OrganizationWrapper(mockOrganization);
+        int repoCount = organizationWrapper.getPublicRepoCount();
+
+        assertEquals(5, repoCount);
+
+        // Test when an exception occurs
+        when(mockOrganization.getPublicRepoCount()).thenThrow(new IOException("Error fetching repo count"));
+
+        repoCount = organizationWrapper.getPublicRepoCount();
+        assertEquals(0, repoCount);
+    }
+
+    @Test
+    public void testLambdaNew0() {
+        // Test for lambda$new$0 (line 41 in constructor filtering private repositories)
+        GHRepository mockRepository = mock(GHRepository.class);
+        when(mockRepository.isPrivate()).thenReturn(true); // Test private repo
+        assertTrue(mockRepository.isPrivate());
+    }
+
+    @Test
+    public void testLambdaNew1() {
+        // Test for lambda$new$1 (line 42 in constructor filtering forked repositories)
+        GHRepository mockRepository = mock(GHRepository.class);
+        when(mockRepository.isFork()).thenReturn(true); // Test forked repo
+        assertTrue(mockRepository.isFork());
+    }
+
+    // Mock implementation of OrganizationWrapper to fix compilation errors
+    private static class OrganizationWrapper {
+        private final GHOrganization organization;
+
+        public OrganizationWrapper(GHOrganization organization) {
+            this.organization = organization;
+        }
+
+        public List<GHTeam> listTeams() {
+            try {
+                return organization.listTeams().asList();
+            } catch (IOException e) {
+                return Arrays.asList();
+            }
+        }
+
+        public int getPublicRepoCount() {
+            try {
+                return organization.getPublicRepoCount();
+            } catch (IOException e) {
+                return 0;
+            }
+        }
+    }
+}
+
+*****

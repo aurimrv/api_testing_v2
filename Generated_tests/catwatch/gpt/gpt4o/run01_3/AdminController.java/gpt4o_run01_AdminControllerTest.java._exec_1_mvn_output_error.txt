@@ -1,0 +1,9 @@
+Line: 87
+Expected status code <403> but was <401>.
+----------------------------------------
+Line: 99
+Expected status code <403> but was <401>.
+----------------------------------------
+Line: 75
+Expected status code <403> but was <401>.
+----------------------------------------

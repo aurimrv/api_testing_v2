@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="pt"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>ProjectBuilder.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">catwatch-backend</a> &gt; <a href="index.source.html" class="el_package">org.zalando.catwatch.backend.repo.builder</a> &gt; <span class="el_source">ProjectBuilder.java</span></div><h1>ProjectBuilder.java</h1><pre class="source lang-java linenums">package org.zalando.catwatch.backend.repo.builder;
+
+import org.zalando.catwatch.backend.model.Project;
+import org.zalando.catwatch.backend.repo.ProjectRepository;
+
+import java.time.Instant;
+import java.util.Date;
+import java.util.List;
+
+import static java.time.Instant.now;
+import static java.time.temporal.ChronoUnit.DAYS;
+
+public class ProjectBuilder {
+
+<span class="fc" id="L15">    private static Instant now = now();</span>
+
+    private Project project;
+
+    private ProjectRepository projectRepository;
+
+    public ProjectBuilder() {
+<span class="fc" id="L22">        this(null);</span>
+<span class="fc" id="L23">    }</span>
+
+<span class="fc" id="L25">    public ProjectBuilder(final ProjectRepository projectRepository) {</span>
+<span class="fc" id="L26">        this.projectRepository = projectRepository;</span>
+<span class="fc" id="L27">        this.project = new Project();</span>
+<span class="fc" id="L28">    }</span>
+
+    public ProjectBuilder(final ProjectRepository projectRepository, final Date date, final Long gitHubProjectId,
+                          final String name, final String language, final Integer forksCount, final Integer starsCount,
+                          final Integer commitsCount, final Integer contributionCount, final Integer score,
+<span class="nc" id="L33">                          final Integer externalContributorsCount) {</span>
+<span class="nc" id="L34">        this.projectRepository = projectRepository;</span>
+
+<span class="nc" id="L36">        project = new Project();</span>
+<span class="nc" id="L37">        project.setGitHubProjectId(gitHubProjectId);</span>
+<span class="nc" id="L38">        project.setSnapshotDate(date);</span>
+<span class="nc" id="L39">        project.setName(name);</span>
+<span class="nc" id="L40">        project.setPrimaryLanguage(language);</span>
+<span class="nc" id="L41">        project.setForksCount(forksCount);</span>
+<span class="nc" id="L42">        project.setStarsCount(starsCount);</span>
+<span class="nc" id="L43">        project.setCommitsCount(commitsCount);</span>
+<span class="nc" id="L44">        project.setContributorsCount(contributionCount);</span>
+<span class="nc" id="L45">        project.setExternalContributorsCount(externalContributorsCount);</span>
+<span class="nc" id="L46">        project.setScore(score);</span>
+<span class="nc" id="L47">    }</span>
+
+    private void updateUrl() {
+<span class="nc" id="L50">        project.setUrl(&quot;https://github.com/&quot; + project.getOrganizationName() + &quot;/&quot; + project.getName());</span>
+<span class="nc" id="L51">    }</span>
+
+    public Project getProject() {
+<span class="nc" id="L54">        return project;</span>
+    }
+
+    public ProjectBuilder name(final String name) {
+<span class="nc" id="L58">        project.setName(name);</span>
+<span class="nc" id="L59">        return this;</span>
+    }
+
+    public ProjectBuilder days(int numDaysBeforeNow) {
+<span class="nc" id="L63">        project.setSnapshotDate(Date.from(now.minus(numDaysBeforeNow, DAYS)));</span>
+<span class="nc" id="L64">        return this;</span>
+    }
+
+    public ProjectBuilder gitHubProjectId(final long gitHubProjectId) {
+<span class="nc" id="L68">        project.setGitHubProjectId(gitHubProjectId);</span>
+<span class="nc" id="L69">        return this;</span>
+    }
+
+    public ProjectBuilder snapshotDate(final Date snapshotDate) {
+<span class="fc" id="L73">        project.setSnapshotDate(snapshotDate);</span>
+<span class="fc" id="L74">        return this;</span>
+    }
+
+    public ProjectBuilder organizationName(final String organizationName) {
+<span class="nc" id="L78">        project.setOrganizationName(organizationName);</span>
+<span class="nc" id="L79">        return this;</span>
+    }
+
+    public ProjectBuilder primaryLanguage(final String primaryLanguage) {
+<span class="nc" id="L83">        project.setPrimaryLanguage(primaryLanguage);</span>
+<span class="nc" id="L84">        return this;</span>
+    }
+
+    public ProjectBuilder forksCount(final int forksCount) {
+<span class="nc" id="L88">        project.setForksCount(forksCount);</span>
+<span class="nc" id="L89">        return this;</span>
+    }
+
+    public ProjectBuilder starsCount(final int starsCount) {
+<span class="nc" id="L93">        project.setStarsCount(starsCount);</span>
+<span class="nc" id="L94">        return this;</span>
+    }
+
+    public ProjectBuilder commitsCount(final int commitsCount) {
+<span class="nc" id="L98">        project.setCommitsCount(commitsCount);</span>
+<span class="nc" id="L99">        return this;</span>
+    }
+
+    public ProjectBuilder contributorsCount(final int contributorsCount) {
+<span class="nc" id="L103">        project.setContributorsCount(contributorsCount);</span>
+<span class="nc" id="L104">        return this;</span>
+    }
+
+    public ProjectBuilder externalContributorsCount(final int externalContributorsCount) {
+<span class="nc" id="L108">        project.setContributorsCount(externalContributorsCount);</span>
+<span class="nc" id="L109">        return this;</span>
+    }
+
+    public ProjectBuilder description(final String description) {
+<span class="nc" id="L113">        project.setDescription(description);</span>
+<span class="nc" id="L114">        return this;</span>
+    }
+
+    public ProjectBuilder lastPushed(final String lastPushed) {
+<span class="nc" id="L118">        project.setLastPushed(lastPushed);</span>
+<span class="nc" id="L119">        return this;</span>
+    }
+
+    public ProjectBuilder score(final int score) {
+<span class="nc" id="L123">        project.setScore(score);</span>
+<span class="nc" id="L124">        return this;</span>
+    }
+
+    public ProjectBuilder languages(final List&lt;String&gt; languageList) {
+<span class="nc" id="L128">        project.setLanguageList(languageList);</span>
+<span class="nc" id="L129">        return this;</span>
+    }
+
+    public Project create() {
+
+<span class="nc" id="L134">        updateUrl();</span>
+
+<span class="nc" id="L136">        Project p = new Project();</span>
+<span class="nc" id="L137">        p.setGitHubProjectId(project.getGitHubProjectId());</span>
+<span class="nc" id="L138">        p.setSnapshotDate(project.getSnapshotDate());</span>
+<span class="nc" id="L139">        p.setName(project.getName());</span>
+<span class="nc" id="L140">        p.setPrimaryLanguage(project.getPrimaryLanguage());</span>
+<span class="nc" id="L141">        p.setForksCount(project.getForksCount());</span>
+<span class="nc" id="L142">        p.setStarsCount(project.getStarsCount());</span>
+<span class="nc" id="L143">        p.setOrganizationName(project.getOrganizationName());</span>
+<span class="nc" id="L144">        p.setCommitsCount(project.getCommitsCount());</span>
+<span class="nc" id="L145">        p.setContributorsCount(project.getContributorsCount());</span>
+<span class="nc" id="L146">        p.setExternalContributorsCount(project.getExternalContributorsCount());</span>
+<span class="nc" id="L147">        p.setDescription(project.getDescription());</span>
+<span class="nc" id="L148">        p.setLastPushed(project.getLastPushed());</span>
+<span class="nc" id="L149">        p.setScore(project.getScore());</span>
+<span class="nc" id="L150">        p.setLanguageList(project.getLanguageList());</span>
+<span class="nc" id="L151">        return p;</span>
+    }
+
+    public Project save() {
+<span class="nc" id="L155">        return projectRepository.save(create());</span>
+    }
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

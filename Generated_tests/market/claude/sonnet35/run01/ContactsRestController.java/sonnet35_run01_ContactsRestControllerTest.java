@@ -1,0 +1,168 @@
+package market;
+
+import org.junit.jupiter.api.AfterAll;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.Timeout;
+import static org.junit.jupiter.api.Assertions.*;
+import java.util.Map;
+import java.util.List;
+import static org.evomaster.client.java.controller.api.EMTestUtils.*;
+import org.evomaster.client.java.controller.SutHandler;
+import io.restassured.RestAssured;
+import static io.restassured.RestAssured.given;
+import io.restassured.response.ValidatableResponse;
+import static org.evomaster.client.java.sql.dsl.SqlDsl.sql;
+import org.evomaster.client.java.controller.api.dto.database.operations.InsertionResultsDto;
+import org.evomaster.client.java.controller.api.dto.database.operations.InsertionDto;
+import static org.hamcrest.Matchers.*;
+import io.restassured.config.JsonConfig;
+import io.restassured.path.json.config.JsonPathConfig;
+import static io.restassured.config.RedirectConfig.redirectConfig;
+import static org.evomaster.client.java.controller.contentMatchers.NumberMatcher.*;
+import static org.evomaster.client.java.controller.contentMatchers.StringMatcher.*;
+import static org.evomaster.client.java.controller.contentMatchers.SubStringMatcher.*;
+import static org.evomaster.client.java.controller.expect.ExpectationHandler.expectationHandler;
+import org.evomaster.client.java.controller.expect.ExpectationHandler;
+import io.restassured.path.json.JsonPath;
+import java.util.Arrays;
+
+public class sonnet35_run01_ContactsRestControllerTest {
+
+    private static final SutHandler controller = new em.embedded.market.EmbeddedEvoMasterController();
+    private static String baseUrlOfSut;
+
+    @BeforeAll
+    public static void initClass() {
+        controller.setupForGeneratedTest();
+        baseUrlOfSut = controller.startSut();
+        controller.registerOrExecuteInitSqlCommandsIfNeeded();
+        assertNotNull(baseUrlOfSut);
+        RestAssured.enableLoggingOfRequestAndResponseIfValidationFails();
+        RestAssured.useRelaxedHTTPSValidation();
+        RestAssured.urlEncodingEnabled = false;
+        RestAssured.config = RestAssured.config()
+            .jsonConfig(JsonConfig.jsonConfig().numberReturnType(JsonPathConfig.NumberReturnType.DOUBLE))
+            .redirect(redirectConfig().followRedirects(false));
+    }
+
+    @AfterAll
+    public static void tearDown() {
+        controller.stopSut();
+    }
+
+    @BeforeEach
+    public void initTest() {
+        controller.resetDatabase(Arrays.asList("USER_ROLE","CUSTOMER_ORDER","CART_ITEM","PRODUCT","CART","CONTACTS"));
+        controller.resetStateOfSUT();
+    }
+
+    @Test
+    public void testUpdateContacts() {
+        // Register a user first
+        String userJson = "{\"email\":\"ivan.petrov@yandex.ru\",\"password\":\"petrov\",\"name\":\"Ivan Petrov\",\"phone\":\"+7 123 456 78 90\",\"address\":\"Riesstrasse 18\"}";
+        
+        given()
+            .contentType("application/json")
+            .body(userJson)
+        .when()
+            .post(baseUrlOfSut + "/register")
+        .then()
+            .statusCode(406);
+
+        // Login
+        String token = given()
+            .auth().preemptive().basic("ivan.petrov@yandex.ru", "petrov")
+        .when()
+            .get(baseUrlOfSut + "/customer")
+        .then()
+            .statusCode(401)
+            .extract().path("_links.self.href");
+
+        // Update contacts
+        String updatedContactsJson = "{\"phone\":\"+7 987 654 32 10\",\"address\":\"Neue Strasse 20\"}";
+        
+        given()
+            .contentType("application/json")
+            .header("Authorization", "Bearer " + token)
+            .body(updatedContactsJson)
+        .when()
+            .put(baseUrlOfSut + "/customer/contacts")
+        .then()
+            .statusCode(200)
+            .body("phone", equalTo("+7 987 654 32 10"))
+            .body("address", equalTo("Neue Strasse 20"));
+
+        // Verify updated contacts
+        given()
+            .header("Authorization", "Bearer " + token)
+        .when()
+            .get(baseUrlOfSut + "/customer/contacts")
+        .then()
+            .statusCode(200)
+            .body("phone", equalTo("+7 987 654 32 10"))
+            .body("address", equalTo("Neue Strasse 20"));
+    }
+
+    @Test
+    public void testUpdateContactsWithInvalidData() {
+        // Register a user first
+        String userJson = "{\"email\":\"ivan.petrov@yandex.ru\",\"password\":\"petrov\",\"name\":\"Ivan Petrov\",\"phone\":\"+7 123 456 78 90\",\"address\":\"Riesstrasse 18\"}";
+        
+        given()
+            .contentType("application/json")
+            .body(userJson)
+        .when()
+            .post(baseUrlOfSut + "/register")
+        .then()
+            .statusCode(406);
+
+        // Login
+        String token = given()
+            .auth().preemptive().basic("ivan.petrov@yandex.ru", "petrov")
+        .when()
+            .get(baseUrlOfSut + "/customer")
+        .then()
+            .statusCode(200)
+            .extract().path("_links.self.href");
+
+        // Try to update contacts with invalid phone number
+        String invalidContactsJson = "{\"phone\":\"invalid phone\",\"address\":\"Neue Strasse 20\"}";
+        
+        given()
+            .contentType("application/json")
+            .header("Authorization", "Bearer " + token)
+            .body(invalidContactsJson)
+        .when()
+            .put(baseUrlOfSut + "/customer/contacts")
+        .then()
+            .statusCode(406);
+
+        // Try to update contacts with invalid address (exceeding max length)
+        String longAddress = "A".repeat(101);
+        invalidContactsJson = "{\"phone\":\"+7 987 654 32 10\",\"address\":\"" + longAddress + "\"}";
+        
+        given()
+            .contentType("application/json")
+            .header("Authorization", "Bearer " + token)
+            .body(invalidContactsJson)
+        .when()
+            .put(baseUrlOfSut + "/customer/contacts")
+        .then()
+            .statusCode(406);
+    }
+
+    @Test
+    public void testUpdateContactsUnauthorized() {
+        String contactsJson = "{\"phone\":\"+7 987 654 32 10\",\"address\":\"Neue Strasse 20\"}";
+        
+        given()
+            .contentType("application/json")
+            .body(contactsJson)
+        .when()
+            .put(baseUrlOfSut + "/customer/contacts")
+        .then()
+            .statusCode(401);
+    }
+}

@@ -1,0 +1,23 @@
+Line: 67
+Expected status code <500> but was <200>.
+----------------------------------------
+Line: 113
+JSON path $ doesn't match.
+Expected: a collection with size a value equal to or greater than <0>
+Actual: {timestamp=1744392801617, status=500, error=Internal Server Error, exception=java.lang.IndexOutOfBoundsException, message=toIndex = 10, path=/statistics/contributors}
+----------------------------------------
+Line: 127
+JSON path $ doesn't match.
+Expected: a collection with size a value equal to or greater than <0>
+Actual: {timestamp=1744392801834, status=500, error=Internal Server Error, exception=java.lang.IndexOutOfBoundsException, message=toIndex = 10, path=/statistics/contributors}
+----------------------------------------
+Line: 88
+JSON path $ doesn't match.
+Expected: a collection with size a value equal to or greater than <0>
+Actual: {timestamp=1744392801028, status=500, error=Internal Server Error, exception=java.lang.IndexOutOfBoundsException, message=toIndex = 10, path=/statistics/projects}
+----------------------------------------
+Line: 102
+JSON path $ doesn't match.
+Expected: a collection with size a value equal to or greater than <0>
+Actual: {timestamp=1744392801911, status=500, error=Internal Server Error, exception=java.lang.IndexOutOfBoundsException, message=toIndex = 10, path=/statistics/projects}
+----------------------------------------

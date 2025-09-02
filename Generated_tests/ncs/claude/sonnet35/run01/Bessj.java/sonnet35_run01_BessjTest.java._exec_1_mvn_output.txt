@@ -1,0 +1,215 @@
+[[1;34mINFO[m] Scanning for projects...
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m------< [0;36morg.evomaster:evomaster-benchmark-cs-rest-artificial-ncs[0;1m >------[m
+[[1;34mINFO[m] [1mBuilding evomaster-benchmark-cs-rest-artificial-ncs 3.0.0[m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-clean-plugin:2.5:clean[m [1m(default-clean)[m @ [36mevomaster-benchmark-cs-rest-artificial-ncs[0;1m ---[m
+[[1;34mINFO[m] Deleting /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/artificial/ncs/target
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mjacoco-maven-plugin:0.8.7:prepare-agent[m [1m(default)[m @ [36mevomaster-benchmark-cs-rest-artificial-ncs[0;1m ---[m
+[[1;34mINFO[m] argLine set to -javaagent:/home/rincon/.m2/repository/org/jacoco/org.jacoco.agent/0.8.7/org.jacoco.agent-0.8.7-runtime.jar=destfile=/media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/artificial/ncs/target/jacoco.exec,append=true,excludes=em/embedded/org/restncs/**
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:resources[m [1m(default-resources)[m @ [36mevomaster-benchmark-cs-rest-artificial-ncs[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/artificial/ncs/src/main/resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.8.0:compile[m [1m(default-compile)[m @ [36mevomaster-benchmark-cs-rest-artificial-ncs[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 10 source files to /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/artificial/ncs/target/classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mjacoco-maven-plugin:0.8.7:prepare-agent[m [1m(default)[m @ [36mevomaster-benchmark-cs-rest-artificial-ncs[0;1m ---[m
+[[1;34mINFO[m] argLine set to -javaagent:/home/rincon/.m2/repository/org/jacoco/org.jacoco.agent/0.8.7/org.jacoco.agent-0.8.7-runtime.jar=destfile=/media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/artificial/ncs/target/jacoco.exec,append=true,excludes=em/embedded/org/restncs/**
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:resources[m [1m(default-resources)[m @ [36mevomaster-benchmark-cs-rest-artificial-ncs[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/artificial/ncs/src/main/resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.8.0:compile[m [1m(default-compile)[m @ [36mevomaster-benchmark-cs-rest-artificial-ncs[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 10 source files to /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/artificial/ncs/target/classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:testResources[m [1m(default-testResources)[m @ [36mevomaster-benchmark-cs-rest-artificial-ncs[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/artificial/ncs/src/test/resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.8.0:testCompile[m [1m(default-testCompile)[m @ [36mevomaster-benchmark-cs-rest-artificial-ncs[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 1 source file to /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/artificial/ncs/target/test-classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mjacoco-maven-plugin:0.8.7:prepare-agent[m [1m(default)[m @ [36mevomaster-benchmark-cs-rest-artificial-ncs[0;1m ---[m
+[[1;34mINFO[m] argLine set to -javaagent:/home/rincon/.m2/repository/org/jacoco/org.jacoco.agent/0.8.7/org.jacoco.agent-0.8.7-runtime.jar=destfile=/media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/artificial/ncs/target/jacoco.exec,append=true,excludes=em/embedded/org/restncs/**
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:resources[m [1m(default-resources)[m @ [36mevomaster-benchmark-cs-rest-artificial-ncs[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/artificial/ncs/src/main/resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.8.0:compile[m [1m(default-compile)[m @ [36mevomaster-benchmark-cs-rest-artificial-ncs[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 10 source files to /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/artificial/ncs/target/classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:testResources[m [1m(default-testResources)[m @ [36mevomaster-benchmark-cs-rest-artificial-ncs[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/artificial/ncs/src/test/resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.8.0:testCompile[m [1m(default-testCompile)[m @ [36mevomaster-benchmark-cs-rest-artificial-ncs[0;1m ---[m
+[[1;34mINFO[m] Nothing to compile - all classes are up to date
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:2.22.0:test[m [1m(default-test)[m @ [36mevomaster-benchmark-cs-rest-artificial-ncs[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] -------------------------------------------------------
+[[1;34mINFO[m]  T E S T S
+[[1;34mINFO[m] -------------------------------------------------------
+[[1;34mINFO[m] Running org.restncs.[1msonnet35_run01_BessjTest[m
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.0.3.RELEASE)
+
+2025-03-26 15:16:04.564  INFO 8398 --- [           main] o.a.maven.surefire.booter.ForkedBooter   : Starting ForkedBooter v2.22.0 on IFTO-PROBOOK with PID 8398 (started by rincon in /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/artificial/ncs)
+2025-03-26 15:16:04.569  INFO 8398 --- [           main] o.a.maven.surefire.booter.ForkedBooter   : No active profile set, falling back to default profiles: default
+2025-03-26 15:16:05.042  INFO 8398 --- [           main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@701c223a: startup date [Wed Mar 26 15:16:05 BRT 2025]; root of context hierarchy
+2025-03-26 15:16:06.382  INFO 8398 --- [           main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2025-03-26 15:16:06.832  INFO 8398 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2025-03-26 15:16:06.901  INFO 8398 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-26 15:16:06.902  INFO 8398 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.31
+2025-03-26 15:16:06.916  INFO 8398 --- [ost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib]
+2025-03-26 15:16:07.031  INFO 8398 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-03-26 15:16:07.031  INFO 8398 --- [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1992 ms
+2025-03-26 15:16:07.148  INFO 8398 --- [ost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2025-03-26 15:16:07.153  INFO 8398 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2025-03-26 15:16:07.154  INFO 8398 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2025-03-26 15:16:07.154  INFO 8398 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2025-03-26 15:16:07.154  INFO 8398 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2025-03-26 15:16:07.685  INFO 8398 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/bessj/{n}/{x}],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<org.restncs.Dto> org.restncs.NcsRest.bessj(java.lang.Integer,java.lang.Double)
+2025-03-26 15:16:07.687  INFO 8398 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/triangle/{a}/{b}/{c}],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<org.restncs.Dto> org.restncs.NcsRest.checkTriangle(java.lang.Integer,java.lang.Integer,java.lang.Integer)
+2025-03-26 15:16:07.688  INFO 8398 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/expint/{n}/{x}],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<org.restncs.Dto> org.restncs.NcsRest.expint(java.lang.Integer,java.lang.Double)
+2025-03-26 15:16:07.689  INFO 8398 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/fisher/{m}/{n}/{x}],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<org.restncs.Dto> org.restncs.NcsRest.fisher(java.lang.Integer,java.lang.Integer,java.lang.Double)
+2025-03-26 15:16:07.690  INFO 8398 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/gammq/{a}/{x}],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<org.restncs.Dto> org.restncs.NcsRest.gammq(java.lang.Double,java.lang.Double)
+2025-03-26 15:16:07.690  INFO 8398 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/remainder/{a}/{b}],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<org.restncs.Dto> org.restncs.NcsRest.remainder(java.lang.Integer,java.lang.Integer)
+2025-03-26 15:16:07.696  INFO 8398 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2025-03-26 15:16:07.698  INFO 8398 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2025-03-26 15:16:07.699  INFO 8398 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2025-03-26 15:16:07.705  INFO 8398 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2025-03-26 15:16:07.705  INFO 8398 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2025-03-26 15:16:07.872  INFO 8398 --- [           main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2025-03-26 15:16:07.968  INFO 8398 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2025-03-26 15:16:08.165  INFO 8398 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@701c223a: startup date [Wed Mar 26 15:16:05 BRT 2025]; root of context hierarchy
+2025-03-26 15:16:08.245  INFO 8398 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2025-03-26 15:16:08.245  INFO 8398 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2025-03-26 15:16:08.506  INFO 8398 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2025-03-26 15:16:08.518  INFO 8398 --- [           main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2025-03-26 15:16:08.519  INFO 8398 --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2025-03-26 15:16:08.554  INFO 8398 --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2025-03-26 15:16:08.611  INFO 8398 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2025-03-26 15:16:08.846  INFO 8398 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 34033 (http) with context path ''
+2025-03-26 15:16:08.851  INFO 8398 --- [           main] o.a.maven.surefire.booter.ForkedBooter   : Started ForkedBooter in 4.954 seconds (JVM running for 5.821)
+2025-03-26 15:16:10.385  INFO 8398 --- [o-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2025-03-26 15:16:10.385  INFO 8398 --- [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2025-03-26 15:16:10.406  INFO 8398 --- [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 21 ms
+Request method:	GET
+Request URI:	http://localhost:34033/api/bessj/1/2.5
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+HTTP/1.1 400 
+Content-Length: 0
+Date: Wed, 26 Mar 2025 18:16:11 GMT
+Connection: close
+Request method:	GET
+Request URI:	http://localhost:34033/api/bessj/3/0.0
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+HTTP/1.1 200 
+Content-Disposition: inline;filename=f.txt
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Wed, 26 Mar 2025 18:16:11 GMT
+
+{
+    "resultAsInt": null,
+    "resultAsDouble": 0.0
+}
+2025-03-26 15:16:11.855  INFO 8398 --- [           main] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+[[1;31mERROR[m] [1;31mTests [0;1mrun: [0;1m11[m, [1;31mFailures: [0;1;31m2[m, [1;31mErrors: [0;1;31m2[m, Skipped: 0, Time elapsed: 8.316 s[1;31m <<< FAILURE![m - in org.restncs.[1msonnet35_run01_BessjTest[m
+[[1;31mERROR[m] testBessjWithNLessThan2(org.restncs.sonnet35_run01_BessjTest)  Time elapsed: 0.062 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <500> but was <400>.
+
+	at org.restncs.sonnet35_run01_BessjTest.testBessjWithNLessThan2(sonnet35_run01_BessjTest.java:79)
+
+[[1;31mERROR[m] testBessjWithXEqualZero(org.restncs.sonnet35_run01_BessjTest)  Time elapsed: 0.062 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+JSON path resultAsDouble doesn't match.
+Expected: <0.0F>
+  Actual: 0.0
+
+	at org.restncs.sonnet35_run01_BessjTest.testBessjWithXEqualZero(sonnet35_run01_BessjTest.java:89)
+
+[[1;31mERROR[m] testBessj1WithSmallX(org.restncs.sonnet35_run01_BessjTest)  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Index n less than 2 in bessj
+	at org.restncs.sonnet35_run01_BessjTest.testBessj1WithSmallX(sonnet35_run01_BessjTest.java:145)
+
+[[1;31mERROR[m] testBessj1WithLargeX(org.restncs.sonnet35_run01_BessjTest)  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Index n less than 2 in bessj
+	at org.restncs.sonnet35_run01_BessjTest.testBessj1WithLargeX(sonnet35_run01_BessjTest.java:152)
+
+2025-03-26 15:16:11.887  INFO 8398 --- [       Thread-4] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@701c223a: startup date [Wed Mar 26 15:16:05 BRT 2025]; root of context hierarchy
+2025-03-26 15:16:11.890  INFO 8398 --- [       Thread-4] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2025-03-26 15:16:11.891  INFO 8398 --- [       Thread-4] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+[[1;34mINFO[m] 
+[[1;34mINFO[m] Results:
+[[1;34mINFO[m] 
+[[1;31mERROR[m] [1;31mFailures: [m
+[[1;31mERROR[m] [1;31m  sonnet35_run01_BessjTest.testBessjWithNLessThan2:79 1 expectation failed.
+Expected status code <500> but was <400>.
+[m
+[[1;31mERROR[m] [1;31m  sonnet35_run01_BessjTest.testBessjWithXEqualZero:89 1 expectation failed.
+JSON path resultAsDouble doesn't match.
+Expected: <0.0F>
+  Actual: 0.0
+[m
+[[1;31mERROR[m] [1;31mErrors: [m
+[[1;31mERROR[m] [1;31m  sonnet35_run01_BessjTest.testBessj1WithLargeX:152 » IllegalArgument Index n le...[m
+[[1;31mERROR[m] [1;31m  sonnet35_run01_BessjTest.testBessj1WithSmallX:145 » IllegalArgument Index n le...[m
+[[1;34mINFO[m] 
+[[1;31mERROR[m] [1;31mTests run: 11, Failures: 2, Errors: 2, Skipped: 0[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;31mBUILD FAILURE[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  12.072 s
+[[1;34mINFO[m] Finished at: 2025-03-26T15:16:12-03:00
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;31mERROR[m] Failed to execute goal [32morg.apache.maven.plugins:maven-surefire-plugin:2.22.0:test[m [1m(default-test)[m on project [36mevomaster-benchmark-cs-rest-artificial-ncs[m: [1;31mThere are test failures.[m
+[[1;31mERROR[m] [1;31m[m
+[[1;31mERROR[m] [1;31mPlease refer to /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/artificial/ncs/target/surefire-reports for the individual test results.[m
+[[1;31mERROR[m] [1;31mPlease refer to dump files (if any exist) [date]-jvmRun[N].dump, [date].dumpstream and [date]-jvmRun[N].dumpstream.[m
+[[1;31mERROR[m] -> [1m[Help 1][m
+[[1;31mERROR[m] 
+[[1;31mERROR[m] To see the full stack trace of the errors, re-run Maven with the [1m-e[m switch.
+[[1;31mERROR[m] Re-run Maven using the [1m-X[m switch to enable full debug logging.
+[[1;31mERROR[m] 
+[[1;31mERROR[m] For more information about the errors and possible solutions, please read the following articles:
+[[1;31mERROR[m] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

@@ -1,0 +1,18 @@
+-------------------------------------------------------------------------------
+Test set: org.zalando.catwatch.backend.gpt35_run01_AdminControllerTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 1.796 s <<< FAILURE! - in org.zalando.catwatch.backend.gpt35_run01_AdminControllerTest
+testInitMethod(org.zalando.catwatch.backend.gpt35_run01_AdminControllerTest)  Time elapsed: 0.034 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <403> but was <401>.
+
+	at org.zalando.catwatch.backend.gpt35_run01_AdminControllerTest.testInitMethod(gpt35_run01_AdminControllerTest.java:67)
+
+testDeleteAllMethod(org.zalando.catwatch.backend.gpt35_run01_AdminControllerTest)  Time elapsed: 0.024 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <403> but was <401>.
+
+	at org.zalando.catwatch.backend.gpt35_run01_AdminControllerTest.testDeleteAllMethod(gpt35_run01_AdminControllerTest.java:77)
+

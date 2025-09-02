@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: org.zalando.catwatch.backend.gpt35_run01_LanguageServiceTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 1.895 s <<< FAILURE! - in org.zalando.catwatch.backend.gpt35_run01_LanguageServiceTest
+testGetMainLanguages(org.zalando.catwatch.backend.gpt35_run01_LanguageServiceTest)  Time elapsed: 0.003 s  <<< FAILURE!
+java.lang.AssertionError: 
+	at org.zalando.catwatch.backend.gpt35_run01_LanguageServiceTest.testGetMainLanguages(gpt35_run01_LanguageServiceTest.java:69)
+

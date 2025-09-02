@@ -1,0 +1,213 @@
+[[1;31mERROR[m] COMPILATION ERROR : 
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StatisticsApiTest.java:[62,9] cannot find symbol
+  symbol:   class StatisticsApi
+  location: class gpt35_run01_StatisticsApiTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StatisticsApiTest.java:[62,43] cannot find symbol
+  symbol:   class StatisticsApi
+  location: class gpt35_run01_StatisticsApiTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StatisticsApiTest.java:[79,33] cannot find symbol
+  symbol:   variable Constants
+  location: class gpt35_run01_StatisticsApiTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StatisticsApiTest.java:[77,20] cannot find symbol
+  symbol:   variable Constants
+  location: class gpt35_run01_StatisticsApiTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StatisticsApiTest.java:[76,20] cannot find symbol
+  symbol:   variable Constants
+  location: class gpt35_run01_StatisticsApiTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StatisticsApiTest.java:[75,20] cannot find symbol
+  symbol:   variable Constants
+  location: class gpt35_run01_StatisticsApiTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StatisticsApiTest.java:[89,33] cannot find symbol
+  symbol:   variable Constants
+  location: class gpt35_run01_StatisticsApiTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StatisticsApiTest.java:[87,20] cannot find symbol
+  symbol:   variable Constants
+  location: class gpt35_run01_StatisticsApiTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StatisticsApiTest.java:[86,20] cannot find symbol
+  symbol:   variable Constants
+  location: class gpt35_run01_StatisticsApiTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StatisticsApiTest.java:[85,20] cannot find symbol
+  symbol:   variable Constants
+  location: class gpt35_run01_StatisticsApiTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StatisticsApiTest.java:[102,33] cannot find symbol
+  symbol:   variable Constants
+  location: class gpt35_run01_StatisticsApiTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StatisticsApiTest.java:[100,20] cannot find symbol
+  symbol:   variable Constants
+  location: class gpt35_run01_StatisticsApiTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StatisticsApiTest.java:[99,20] cannot find symbol
+  symbol:   variable Constants
+  location: class gpt35_run01_StatisticsApiTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StatisticsApiTest.java:[98,20] cannot find symbol
+  symbol:   variable Constants
+  location: class gpt35_run01_StatisticsApiTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StatisticsApiTest.java:[112,33] cannot find symbol
+  symbol:   variable Constants
+  location: class gpt35_run01_StatisticsApiTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StatisticsApiTest.java:[110,20] cannot find symbol
+  symbol:   variable Constants
+  location: class gpt35_run01_StatisticsApiTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StatisticsApiTest.java:[109,20] cannot find symbol
+  symbol:   variable Constants
+  location: class gpt35_run01_StatisticsApiTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StatisticsApiTest.java:[108,20] cannot find symbol
+  symbol:   variable Constants
+  location: class gpt35_run01_StatisticsApiTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StatisticsApiTest.java:[125,33] cannot find symbol
+  symbol:   variable Constants
+  location: class gpt35_run01_StatisticsApiTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StatisticsApiTest.java:[123,20] cannot find symbol
+  symbol:   variable Constants
+  location: class gpt35_run01_StatisticsApiTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StatisticsApiTest.java:[122,20] cannot find symbol
+  symbol:   variable Constants
+  location: class gpt35_run01_StatisticsApiTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StatisticsApiTest.java:[121,20] cannot find symbol
+  symbol:   variable Constants
+  location: class gpt35_run01_StatisticsApiTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StatisticsApiTest.java:[135,33] cannot find symbol
+  symbol:   variable Constants
+  location: class gpt35_run01_StatisticsApiTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StatisticsApiTest.java:[133,20] cannot find symbol
+  symbol:   variable Constants
+  location: class gpt35_run01_StatisticsApiTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StatisticsApiTest.java:[132,20] cannot find symbol
+  symbol:   variable Constants
+  location: class gpt35_run01_StatisticsApiTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StatisticsApiTest.java:[131,20] cannot find symbol
+  symbol:   variable Constants
+  location: class gpt35_run01_StatisticsApiTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StatisticsApiTest.java:[148,33] cannot find symbol
+  symbol:   variable Constants
+  location: class gpt35_run01_StatisticsApiTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StatisticsApiTest.java:[146,20] cannot find symbol
+  symbol:   variable Constants
+  location: class gpt35_run01_StatisticsApiTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StatisticsApiTest.java:[145,20] cannot find symbol
+  symbol:   variable Constants
+  location: class gpt35_run01_StatisticsApiTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StatisticsApiTest.java:[144,20] cannot find symbol
+  symbol:   variable Constants
+  location: class gpt35_run01_StatisticsApiTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StatisticsApiTest.java:[158,33] cannot find symbol
+  symbol:   variable Constants
+  location: class gpt35_run01_StatisticsApiTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StatisticsApiTest.java:[156,20] cannot find symbol
+  symbol:   variable Constants
+  location: class gpt35_run01_StatisticsApiTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StatisticsApiTest.java:[155,20] cannot find symbol
+  symbol:   variable Constants
+  location: class gpt35_run01_StatisticsApiTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StatisticsApiTest.java:[154,20] cannot find symbol
+  symbol:   variable Constants
+  location: class gpt35_run01_StatisticsApiTest
+[[1;31mERROR[m] Failed to execute goal [32morg.apache.maven.plugins:maven-compiler-plugin:3.8.0:testCompile[m [1m(default-testCompile)[m on project [36mcatwatch-backend[m: [1;31mCompilation failure[m: Compilation failure: 
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StatisticsApiTest.java:[62,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class StatisticsApi
+[[1;31mERROR[m]   location: class gpt35_run01_StatisticsApiTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StatisticsApiTest.java:[62,43] cannot find symbol
+[[1;31mERROR[m]   symbol:   class StatisticsApi
+[[1;31mERROR[m]   location: class gpt35_run01_StatisticsApiTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StatisticsApiTest.java:[79,33] cannot find symbol
+[[1;31mERROR[m]   symbol:   variable Constants
+[[1;31mERROR[m]   location: class gpt35_run01_StatisticsApiTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StatisticsApiTest.java:[77,20] cannot find symbol
+[[1;31mERROR[m]   symbol:   variable Constants
+[[1;31mERROR[m]   location: class gpt35_run01_StatisticsApiTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StatisticsApiTest.java:[76,20] cannot find symbol
+[[1;31mERROR[m]   symbol:   variable Constants
+[[1;31mERROR[m]   location: class gpt35_run01_StatisticsApiTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StatisticsApiTest.java:[75,20] cannot find symbol
+[[1;31mERROR[m]   symbol:   variable Constants
+[[1;31mERROR[m]   location: class gpt35_run01_StatisticsApiTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StatisticsApiTest.java:[89,33] cannot find symbol
+[[1;31mERROR[m]   symbol:   variable Constants
+[[1;31mERROR[m]   location: class gpt35_run01_StatisticsApiTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StatisticsApiTest.java:[87,20] cannot find symbol
+[[1;31mERROR[m]   symbol:   variable Constants
+[[1;31mERROR[m]   location: class gpt35_run01_StatisticsApiTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StatisticsApiTest.java:[86,20] cannot find symbol
+[[1;31mERROR[m]   symbol:   variable Constants
+[[1;31mERROR[m]   location: class gpt35_run01_StatisticsApiTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StatisticsApiTest.java:[85,20] cannot find symbol
+[[1;31mERROR[m]   symbol:   variable Constants
+[[1;31mERROR[m]   location: class gpt35_run01_StatisticsApiTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StatisticsApiTest.java:[102,33] cannot find symbol
+[[1;31mERROR[m]   symbol:   variable Constants
+[[1;31mERROR[m]   location: class gpt35_run01_StatisticsApiTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StatisticsApiTest.java:[100,20] cannot find symbol
+[[1;31mERROR[m]   symbol:   variable Constants
+[[1;31mERROR[m]   location: class gpt35_run01_StatisticsApiTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StatisticsApiTest.java:[99,20] cannot find symbol
+[[1;31mERROR[m]   symbol:   variable Constants
+[[1;31mERROR[m]   location: class gpt35_run01_StatisticsApiTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StatisticsApiTest.java:[98,20] cannot find symbol
+[[1;31mERROR[m]   symbol:   variable Constants
+[[1;31mERROR[m]   location: class gpt35_run01_StatisticsApiTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StatisticsApiTest.java:[112,33] cannot find symbol
+[[1;31mERROR[m]   symbol:   variable Constants
+[[1;31mERROR[m]   location: class gpt35_run01_StatisticsApiTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StatisticsApiTest.java:[110,20] cannot find symbol
+[[1;31mERROR[m]   symbol:   variable Constants
+[[1;31mERROR[m]   location: class gpt35_run01_StatisticsApiTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StatisticsApiTest.java:[109,20] cannot find symbol
+[[1;31mERROR[m]   symbol:   variable Constants
+[[1;31mERROR[m]   location: class gpt35_run01_StatisticsApiTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StatisticsApiTest.java:[108,20] cannot find symbol
+[[1;31mERROR[m]   symbol:   variable Constants
+[[1;31mERROR[m]   location: class gpt35_run01_StatisticsApiTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StatisticsApiTest.java:[125,33] cannot find symbol
+[[1;31mERROR[m]   symbol:   variable Constants
+[[1;31mERROR[m]   location: class gpt35_run01_StatisticsApiTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StatisticsApiTest.java:[123,20] cannot find symbol
+[[1;31mERROR[m]   symbol:   variable Constants
+[[1;31mERROR[m]   location: class gpt35_run01_StatisticsApiTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StatisticsApiTest.java:[122,20] cannot find symbol
+[[1;31mERROR[m]   symbol:   variable Constants
+[[1;31mERROR[m]   location: class gpt35_run01_StatisticsApiTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StatisticsApiTest.java:[121,20] cannot find symbol
+[[1;31mERROR[m]   symbol:   variable Constants
+[[1;31mERROR[m]   location: class gpt35_run01_StatisticsApiTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StatisticsApiTest.java:[135,33] cannot find symbol
+[[1;31mERROR[m]   symbol:   variable Constants
+[[1;31mERROR[m]   location: class gpt35_run01_StatisticsApiTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StatisticsApiTest.java:[133,20] cannot find symbol
+[[1;31mERROR[m]   symbol:   variable Constants
+[[1;31mERROR[m]   location: class gpt35_run01_StatisticsApiTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StatisticsApiTest.java:[132,20] cannot find symbol
+[[1;31mERROR[m]   symbol:   variable Constants
+[[1;31mERROR[m]   location: class gpt35_run01_StatisticsApiTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StatisticsApiTest.java:[131,20] cannot find symbol
+[[1;31mERROR[m]   symbol:   variable Constants
+[[1;31mERROR[m]   location: class gpt35_run01_StatisticsApiTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StatisticsApiTest.java:[148,33] cannot find symbol
+[[1;31mERROR[m]   symbol:   variable Constants
+[[1;31mERROR[m]   location: class gpt35_run01_StatisticsApiTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StatisticsApiTest.java:[146,20] cannot find symbol
+[[1;31mERROR[m]   symbol:   variable Constants
+[[1;31mERROR[m]   location: class gpt35_run01_StatisticsApiTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StatisticsApiTest.java:[145,20] cannot find symbol
+[[1;31mERROR[m]   symbol:   variable Constants
+[[1;31mERROR[m]   location: class gpt35_run01_StatisticsApiTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StatisticsApiTest.java:[144,20] cannot find symbol
+[[1;31mERROR[m]   symbol:   variable Constants
+[[1;31mERROR[m]   location: class gpt35_run01_StatisticsApiTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StatisticsApiTest.java:[158,33] cannot find symbol
+[[1;31mERROR[m]   symbol:   variable Constants
+[[1;31mERROR[m]   location: class gpt35_run01_StatisticsApiTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StatisticsApiTest.java:[156,20] cannot find symbol
+[[1;31mERROR[m]   symbol:   variable Constants
+[[1;31mERROR[m]   location: class gpt35_run01_StatisticsApiTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StatisticsApiTest.java:[155,20] cannot find symbol
+[[1;31mERROR[m]   symbol:   variable Constants
+[[1;31mERROR[m]   location: class gpt35_run01_StatisticsApiTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StatisticsApiTest.java:[154,20] cannot find symbol
+[[1;31mERROR[m]   symbol:   variable Constants
+[[1;31mERROR[m]   location: class gpt35_run01_StatisticsApiTest
+[[1;31mERROR[m] -> [1m[Help 1][m
+[[1;31mERROR[m] 
+[[1;31mERROR[m] To see the full stack trace of the errors, re-run Maven with the [1m-e[m switch.
+[[1;31mERROR[m] Re-run Maven using the [1m-X[m switch to enable full debug logging.
+[[1;31mERROR[m] 
+[[1;31mERROR[m] For more information about the errors and possible solutions, please read the following articles:
+[[1;31mERROR[m] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

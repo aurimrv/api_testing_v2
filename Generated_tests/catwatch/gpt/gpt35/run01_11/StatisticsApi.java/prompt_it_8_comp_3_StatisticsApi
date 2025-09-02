@@ -1,0 +1,82 @@
+You are a highly skilled test engineer specializing in debugging and resolving compilation errors and test failures in Java-based projects. Your expertise includes Java 8, JUnit 4, and REST Assured, allowing you to diagnose issues efficiently and provide precise, actionable fixes.
+
+Do fix the compilation errors delimited by ##### given the code below delimited by *****.
+
+The response must contain only Java code in JUnit 4 format.
+
+#####
+[[1;31mERROR[m] COMPILATION ERROR : 
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StatisticsApiTest.java:[15,17] org.zalando.catwatch.backend.repo.StatisticsRepository is abstract; cannot be instantiated
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StatisticsApiTest.java:[15,45] org.zalando.catwatch.backend.repo.ProjectRepository is abstract; cannot be instantiated
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StatisticsApiTest.java:[15,70] org.zalando.catwatch.backend.repo.ContributorRepository is abstract; cannot be instantiated
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StatisticsApiTest.java:[15,99] org.springframework.core.env.Environment is abstract; cannot be instantiated
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StatisticsApiTest.java:[17,36] parseDate(java.lang.String,java.util.Date) has private access in org.zalando.catwatch.backend.web.StatisticsApi
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StatisticsApiTest.java:[18,9] cannot find symbol
+  symbol:   method assertNotNull(java.util.Date)
+  location: class gpt35_run01_StatisticsApiTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StatisticsApiTest.java:[25,17] org.zalando.catwatch.backend.repo.StatisticsRepository is abstract; cannot be instantiated
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StatisticsApiTest.java:[25,45] org.zalando.catwatch.backend.repo.ProjectRepository is abstract; cannot be instantiated
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StatisticsApiTest.java:[25,70] org.zalando.catwatch.backend.repo.ContributorRepository is abstract; cannot be instantiated
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StatisticsApiTest.java:[25,99] org.springframework.core.env.Environment is abstract; cannot be instantiated
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StatisticsApiTest.java:[26,38] getOrganizationConfig() has private access in org.zalando.catwatch.backend.web.StatisticsApi
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StatisticsApiTest.java:[27,9] cannot find symbol
+  symbol:   method assertNotNull(java.lang.String)
+  location: class gpt35_run01_StatisticsApiTest
+[[1;31mERROR[m] Failed to execute goal [32morg.apache.maven.plugins:maven-compiler-plugin:3.8.0:testCompile[m [1m(default-testCompile)[m on project [36mcatwatch-backend[m: [1;31mCompilation failure[m: Compilation failure: 
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StatisticsApiTest.java:[15,17] org.zalando.catwatch.backend.repo.StatisticsRepository is abstract; cannot be instantiated
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StatisticsApiTest.java:[15,45] org.zalando.catwatch.backend.repo.ProjectRepository is abstract; cannot be instantiated
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StatisticsApiTest.java:[15,70] org.zalando.catwatch.backend.repo.ContributorRepository is abstract; cannot be instantiated
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StatisticsApiTest.java:[15,99] org.springframework.core.env.Environment is abstract; cannot be instantiated
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StatisticsApiTest.java:[17,36] parseDate(java.lang.String,java.util.Date) has private access in org.zalando.catwatch.backend.web.StatisticsApi
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StatisticsApiTest.java:[18,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   method assertNotNull(java.util.Date)
+[[1;31mERROR[m]   location: class gpt35_run01_StatisticsApiTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StatisticsApiTest.java:[25,17] org.zalando.catwatch.backend.repo.StatisticsRepository is abstract; cannot be instantiated
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StatisticsApiTest.java:[25,45] org.zalando.catwatch.backend.repo.ProjectRepository is abstract; cannot be instantiated
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StatisticsApiTest.java:[25,70] org.zalando.catwatch.backend.repo.ContributorRepository is abstract; cannot be instantiated
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StatisticsApiTest.java:[25,99] org.springframework.core.env.Environment is abstract; cannot be instantiated
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StatisticsApiTest.java:[26,38] getOrganizationConfig() has private access in org.zalando.catwatch.backend.web.StatisticsApi
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StatisticsApiTest.java:[27,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   method assertNotNull(java.lang.String)
+[[1;31mERROR[m]   location: class gpt35_run01_StatisticsApiTest
+[[1;31mERROR[m] -> [1m[Help 1][m
+[[1;31mERROR[m] 
+[[1;31mERROR[m] To see the full stack trace of the errors, re-run Maven with the [1m-e[m switch.
+[[1;31mERROR[m] Re-run Maven using the [1m-X[m switch to enable full debug logging.
+[[1;31mERROR[m] 
+[[1;31mERROR[m] For more information about the errors and possible solutions, please read the following articles:
+[[1;31mERROR[m] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+
+#####
+*****
+
+import org.junit.Test;
+import org.zalando.catwatch.backend.repo.StatisticsRepository;
+import org.zalando.catwatch.backend.repo.ProjectRepository;
+import org.zalando.catwatch.backend.repo.ContributorRepository;
+import org.springframework.core.env.Environment;
+import java.util.Date;
+
+public class gpt35_run01_StatisticsApiTest {
+
+    @Test
+    public void test_parseDate() {
+        // Test coverage for parseDate method
+        org.zalando.catwatch.backend.web.StatisticsApi statisticsApi = new org.zalando.catwatch.backend.web.StatisticsApi(
+                new StatisticsRepository(), new ProjectRepository(), new ContributorRepository(), new Environment());
+        Date defaultValue = new Date();
+        Date result = statisticsApi.parseDate("2022-01-01", defaultValue);
+        assertNotNull(result);
+    }
+
+    @Test
+    public void test_getOrganizationConfig() {
+        // Test coverage for getOrganizationConfig method
+        org.zalando.catwatch.backend.web.StatisticsApi statisticsApi = new org.zalando.catwatch.backend.web.StatisticsApi(
+                new StatisticsRepository(), new ProjectRepository(), new ContributorRepository(), new Environment());
+        String result = statisticsApi.getOrganizationConfig();
+        assertNotNull(result);
+    }
+}
+
+*****

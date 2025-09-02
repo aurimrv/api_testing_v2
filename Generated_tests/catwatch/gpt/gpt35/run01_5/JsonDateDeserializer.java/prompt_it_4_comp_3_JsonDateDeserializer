@@ -1,0 +1,189 @@
+You are a highly skilled test engineer specializing in debugging and resolving compilation errors and test failures in Java-based projects. Your expertise includes Java 8, JUnit 4, and REST Assured, allowing you to diagnose issues efficiently and provide precise, actionable fixes.
+
+Do fix the compilation errors delimited by ##### given the code below delimited by *****.
+
+The response must contain only Java code in JUnit 4 format.
+
+#####
+[[1;31mERROR[m] COMPILATION ERROR : 
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_JsonDateDeserializerTest.java:[17,44] cannot find symbol
+  symbol:   class DeserializerFactoryConfig
+  location: package com.fasterxml.jackson.databind.deser
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_JsonDateDeserializerTest.java:[21,26] cannot find symbol
+  symbol:   class SutHandler
+  location: class gpt35_run01_JsonDateDeserializerTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_JsonDateDeserializerTest.java:[30,9] cannot find symbol
+  symbol:   variable RestAssured
+  location: class gpt35_run01_JsonDateDeserializerTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_JsonDateDeserializerTest.java:[31,9] cannot find symbol
+  symbol:   variable RestAssured
+  location: class gpt35_run01_JsonDateDeserializerTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_JsonDateDeserializerTest.java:[32,9] cannot find symbol
+  symbol:   variable RestAssured
+  location: class gpt35_run01_JsonDateDeserializerTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_JsonDateDeserializerTest.java:[33,9] cannot find symbol
+  symbol:   variable RestAssured
+  location: class gpt35_run01_JsonDateDeserializerTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_JsonDateDeserializerTest.java:[35,27] cannot find symbol
+  symbol:   method redirectConfig()
+  location: class gpt35_run01_JsonDateDeserializerTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_JsonDateDeserializerTest.java:[34,84] package JsonPathConfig does not exist
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_JsonDateDeserializerTest.java:[34,29] cannot find symbol
+  symbol:   variable JsonConfig
+  location: class gpt35_run01_JsonDateDeserializerTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_JsonDateDeserializerTest.java:[33,30] cannot find symbol
+  symbol:   variable RestAssured
+  location: class gpt35_run01_JsonDateDeserializerTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_JsonDateDeserializerTest.java:[52,9] cannot find symbol
+  symbol:   class JsonDateDeserializer
+  location: class gpt35_run01_JsonDateDeserializerTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_JsonDateDeserializerTest.java:[52,49] cannot find symbol
+  symbol:   class JsonDateDeserializer
+  location: class gpt35_run01_JsonDateDeserializerTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_JsonDateDeserializerTest.java:[67,9] cannot find symbol
+  symbol:   class JsonDateDeserializer
+  location: class gpt35_run01_JsonDateDeserializerTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_JsonDateDeserializerTest.java:[67,49] cannot find symbol
+  symbol:   class JsonDateDeserializer
+  location: class gpt35_run01_JsonDateDeserializerTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_JsonDateDeserializerTest.java:[80,55] cannot find symbol
+  symbol:   variable DeserializerFactoryConfig
+  location: class gpt35_run01_JsonDateDeserializerTest
+[[1;31mERROR[m] Failed to execute goal [32morg.apache.maven.plugins:maven-compiler-plugin:3.8.0:testCompile[m [1m(default-testCompile)[m on project [36mcatwatch-backend[m: [1;31mCompilation failure[m: Compilation failure: 
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_JsonDateDeserializerTest.java:[17,44] cannot find symbol
+[[1;31mERROR[m]   symbol:   class DeserializerFactoryConfig
+[[1;31mERROR[m]   location: package com.fasterxml.jackson.databind.deser
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_JsonDateDeserializerTest.java:[21,26] cannot find symbol
+[[1;31mERROR[m]   symbol:   class SutHandler
+[[1;31mERROR[m]   location: class gpt35_run01_JsonDateDeserializerTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_JsonDateDeserializerTest.java:[30,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   variable RestAssured
+[[1;31mERROR[m]   location: class gpt35_run01_JsonDateDeserializerTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_JsonDateDeserializerTest.java:[31,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   variable RestAssured
+[[1;31mERROR[m]   location: class gpt35_run01_JsonDateDeserializerTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_JsonDateDeserializerTest.java:[32,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   variable RestAssured
+[[1;31mERROR[m]   location: class gpt35_run01_JsonDateDeserializerTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_JsonDateDeserializerTest.java:[33,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   variable RestAssured
+[[1;31mERROR[m]   location: class gpt35_run01_JsonDateDeserializerTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_JsonDateDeserializerTest.java:[35,27] cannot find symbol
+[[1;31mERROR[m]   symbol:   method redirectConfig()
+[[1;31mERROR[m]   location: class gpt35_run01_JsonDateDeserializerTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_JsonDateDeserializerTest.java:[34,84] package JsonPathConfig does not exist
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_JsonDateDeserializerTest.java:[34,29] cannot find symbol
+[[1;31mERROR[m]   symbol:   variable JsonConfig
+[[1;31mERROR[m]   location: class gpt35_run01_JsonDateDeserializerTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_JsonDateDeserializerTest.java:[33,30] cannot find symbol
+[[1;31mERROR[m]   symbol:   variable RestAssured
+[[1;31mERROR[m]   location: class gpt35_run01_JsonDateDeserializerTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_JsonDateDeserializerTest.java:[52,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class JsonDateDeserializer
+[[1;31mERROR[m]   location: class gpt35_run01_JsonDateDeserializerTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_JsonDateDeserializerTest.java:[52,49] cannot find symbol
+[[1;31mERROR[m]   symbol:   class JsonDateDeserializer
+[[1;31mERROR[m]   location: class gpt35_run01_JsonDateDeserializerTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_JsonDateDeserializerTest.java:[67,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class JsonDateDeserializer
+[[1;31mERROR[m]   location: class gpt35_run01_JsonDateDeserializerTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_JsonDateDeserializerTest.java:[67,49] cannot find symbol
+[[1;31mERROR[m]   symbol:   class JsonDateDeserializer
+[[1;31mERROR[m]   location: class gpt35_run01_JsonDateDeserializerTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_JsonDateDeserializerTest.java:[80,55] cannot find symbol
+[[1;31mERROR[m]   symbol:   variable DeserializerFactoryConfig
+[[1;31mERROR[m]   location: class gpt35_run01_JsonDateDeserializerTest
+[[1;31mERROR[m] -> [1m[Help 1][m
+[[1;31mERROR[m] 
+[[1;31mERROR[m] To see the full stack trace of the errors, re-run Maven with the [1m-e[m switch.
+[[1;31mERROR[m] Re-run Maven using the [1m-X[m switch to enable full debug logging.
+[[1;31mERROR[m] 
+[[1;31mERROR[m] For more information about the errors and possible solutions, please read the following articles:
+[[1;31mERROR[m] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+
+#####
+*****
+
+import org.junit.AfterClass;
+import org.junit.BeforeClass;
+import org.junit.Before;
+import org.junit.Test;
+import static org.junit.Assert.*;
+import java.util.Arrays;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.io.ByteArrayInputStream;
+import java.io.IOException;
+import com.fasterxml.jackson.core.JsonParser;
+import com.fasterxml.jackson.databind.DeserializationContext;
+import com.fasterxml.jackson.databind.JsonDeserializer;
+import com.fasterxml.jackson.core.JsonFactory;
+import com.fasterxml.jackson.databind.deser.DefaultDeserializationContext;
+import com.fasterxml.jackson.databind.deser.DeserializerFactoryConfig;
+
+public class gpt35_run01_JsonDateDeserializerTest {
+
+    private static final SutHandler controller = new em.embedded.org.zalando.EmbeddedEvoMasterController();
+    private static String baseUrlOfSut;
+
+    @BeforeClass
+    public static void initClass() {
+        controller.setupForGeneratedTest();
+        baseUrlOfSut = controller.startSut();
+        controller.registerOrExecuteInitSqlCommandsIfNeeded();
+        assertNotNull(baseUrlOfSut);
+        RestAssured.enableLoggingOfRequestAndResponseIfValidationFails();
+        RestAssured.useRelaxedHTTPSValidation();
+        RestAssured.urlEncodingEnabled = false;
+        RestAssured.config = RestAssured.config()
+                .jsonConfig(JsonConfig.jsonConfig().numberReturnType(JsonPathConfig.NumberReturnType.DOUBLE))
+                .redirect(redirectConfig().followRedirects(false));
+    }
+
+    @AfterClass
+    public static void tearDown() {
+        controller.stopSut();
+    }
+
+    @Before
+    public void initTest() {
+        controller.resetDatabase(Arrays.asList("CONTRIBUTOR"));
+        controller.resetStateOfSUT();
+    }
+
+    @Test
+    public void testDeserialize_shouldParseDateStringToDateObject() throws Exception {
+        // Given
+        JsonDateDeserializer deserializer = new JsonDateDeserializer();
+        String dateString = "2022-01-01T10:30:00";
+
+        // When
+        Date result = deserializer.deserialize(createJsonParserFor(dateString), createContext());
+
+        // Then
+        SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss");
+        Date expectedDate = format.parse(dateString);
+        assertEquals(expectedDate, result);
+    }
+
+    @Test(expected = IllegalStateException.class)
+    public void testDeserialize_shouldThrowExceptionForInvalidDateString() throws Exception {
+        // Given
+        JsonDateDeserializer deserializer = new JsonDateDeserializer();
+        String invalidDateString = "invalid-date-string";
+
+        // When
+        deserializer.deserialize(createJsonParserFor(invalidDateString), createContext());
+    }
+
+    private JsonParser createJsonParserFor(String value) throws IOException {
+        JsonFactory factory = new JsonFactory();
+        return factory.createParser(new ByteArrayInputStream(value.getBytes()));
+    }
+
+    private DeserializationContext createContext() {
+        return new DefaultDeserializationContext.Impl(DeserializerFactoryConfig.instance);
+    }
+}
+  
+*****

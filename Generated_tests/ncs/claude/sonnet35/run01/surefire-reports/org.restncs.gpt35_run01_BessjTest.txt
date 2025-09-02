@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: org.restncs.gpt35_run01_BessjTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.855 s <<< FAILURE! - in org.restncs.gpt35_run01_BessjTest
+testBessj_Method_bessj(org.restncs.gpt35_run01_BessjTest)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: Exception not thrown for n < 2
+	at org.restncs.gpt35_run01_BessjTest.testBessj_Method_bessj(gpt35_run01_BessjTest.java:64)
+

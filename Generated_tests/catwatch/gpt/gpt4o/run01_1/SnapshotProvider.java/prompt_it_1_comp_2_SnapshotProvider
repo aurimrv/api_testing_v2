@@ -1,0 +1,359 @@
+You are a highly skilled test engineer specializing in debugging and resolving compilation errors and test failures in Java-based projects. Your expertise includes Java 8, JUnit 4, and REST Assured, allowing you to diagnose issues efficiently and provide precise, actionable fixes.
+
+Do fix the compilation errors delimited by ##### given the code below delimited by *****.
+
+The response must contain only Java code in JUnit 4 format.
+
+#####
+[[1;31mERROR[m] COMPILATION ERROR : 
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[75,9] cannot find symbol
+  symbol:   class SnapshotProvider
+  location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[75,41] cannot find symbol
+  symbol:   class SnapshotProvider
+  location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[83,9] cannot find symbol
+  symbol:   class Future
+  location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[97,9] cannot find symbol
+  symbol:   class SnapshotProvider
+  location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[97,41] cannot find symbol
+  symbol:   class SnapshotProvider
+  location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[105,9] cannot find symbol
+  symbol:   class Future
+  location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[117,9] cannot find symbol
+  symbol:   class SnapshotProvider
+  location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[117,41] cannot find symbol
+  symbol:   class SnapshotProvider
+  location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[125,9] cannot find symbol
+  symbol:   class Future
+  location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[136,9] cannot find symbol
+  symbol:   class SnapshotProvider
+  location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[136,41] cannot find symbol
+  symbol:   class SnapshotProvider
+  location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[155,9] cannot find symbol
+  symbol:   class SnapshotProvider
+  location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[155,41] cannot find symbol
+  symbol:   class SnapshotProvider
+  location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[173,9] cannot find symbol
+  symbol:   class SnapshotProvider
+  location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[173,41] cannot find symbol
+  symbol:   class SnapshotProvider
+  location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[196,9] cannot find symbol
+  symbol:   class SnapshotProvider
+  location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[196,41] cannot find symbol
+  symbol:   class SnapshotProvider
+  location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[217,9] cannot find symbol
+  symbol:   class SnapshotProvider
+  location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[217,41] cannot find symbol
+  symbol:   class SnapshotProvider
+  location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] Failed to execute goal [32morg.apache.maven.plugins:maven-compiler-plugin:3.8.0:testCompile[m [1m(default-testCompile)[m on project [36mcatwatch-backend[m: [1;31mCompilation failure[m: Compilation failure: 
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[75,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class SnapshotProvider
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[75,41] cannot find symbol
+[[1;31mERROR[m]   symbol:   class SnapshotProvider
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[83,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Future
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[97,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class SnapshotProvider
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[97,41] cannot find symbol
+[[1;31mERROR[m]   symbol:   class SnapshotProvider
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[105,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Future
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[117,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class SnapshotProvider
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[117,41] cannot find symbol
+[[1;31mERROR[m]   symbol:   class SnapshotProvider
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[125,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Future
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[136,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class SnapshotProvider
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[136,41] cannot find symbol
+[[1;31mERROR[m]   symbol:   class SnapshotProvider
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[155,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class SnapshotProvider
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[155,41] cannot find symbol
+[[1;31mERROR[m]   symbol:   class SnapshotProvider
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[173,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class SnapshotProvider
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[173,41] cannot find symbol
+[[1;31mERROR[m]   symbol:   class SnapshotProvider
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[196,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class SnapshotProvider
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[196,41] cannot find symbol
+[[1;31mERROR[m]   symbol:   class SnapshotProvider
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[217,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class SnapshotProvider
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[217,41] cannot find symbol
+[[1;31mERROR[m]   symbol:   class SnapshotProvider
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] -> [1m[Help 1][m
+[[1;31mERROR[m] 
+[[1;31mERROR[m] To see the full stack trace of the errors, re-run Maven with the [1m-e[m switch.
+[[1;31mERROR[m] Re-run Maven using the [1m-X[m switch to enable full debug logging.
+[[1;31mERROR[m] 
+[[1;31mERROR[m] For more information about the errors and possible solutions, please read the following articles:
+[[1;31mERROR[m] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+
+#####
+*****
+
+package org.zalando.catwatch.backend;
+
+import org.junit.AfterClass;
+import org.junit.BeforeClass;
+import org.junit.Before;
+import org.junit.Test;
+import static org.junit.Assert.*;
+import java.util.Map;
+import java.util.List;
+import static org.evomaster.client.java.controller.api.EMTestUtils.*;
+import org.evomaster.client.java.controller.SutHandler;
+import io.restassured.RestAssured;
+import static io.restassured.RestAssured.given;
+import io.restassured.response.ValidatableResponse;
+import static org.evomaster.client.java.sql.dsl.SqlDsl.sql;
+import org.evomaster.client.java.controller.api.dto.database.operations.InsertionResultsDto;
+import org.evomaster.client.java.controller.api.dto.database.operations.InsertionDto;
+import static org.hamcrest.Matchers.*;
+import io.restassured.config.JsonConfig;
+import io.restassured.path.json.config.JsonPathConfig;
+import static io.restassured.config.RedirectConfig.redirectConfig;
+import static org.evomaster.client.java.controller.contentMatchers.NumberMatcher.*;
+import static org.evomaster.client.java.controller.contentMatchers.StringMatcher.*;
+import static org.evomaster.client.java.controller.contentMatchers.SubStringMatcher.*;
+import static org.evomaster.client.java.controller.expect.ExpectationHandler.expectationHandler;
+import org.evomaster.client.java.controller.expect.ExpectationHandler;
+import io.restassured.path.json.JsonPath;
+import java.util.Arrays;
+import java.io.File;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.util.Date;
+import java.util.Optional;
+
+public class gpt4o_run01_SnapshotProviderTest {
+
+    private static final SutHandler controller = new em.embedded.org.zalando.EmbeddedEvoMasterController();
+    private static String baseUrlOfSut;
+
+    @BeforeClass
+    public static void initClass() {
+        controller.setupForGeneratedTest();
+        baseUrlOfSut = controller.startSut();
+        controller.registerOrExecuteInitSqlCommandsIfNeeded();
+        assertNotNull(baseUrlOfSut);
+        RestAssured.enableLoggingOfRequestAndResponseIfValidationFails();
+        RestAssured.useRelaxedHTTPSValidation();
+        RestAssured.urlEncodingEnabled = false;
+        RestAssured.config = RestAssured.config()
+            .jsonConfig(JsonConfig.jsonConfig().numberReturnType(JsonPathConfig.NumberReturnType.DOUBLE))
+            .redirect(redirectConfig().followRedirects(false));
+    }
+
+    @AfterClass
+    public static void tearDown() {
+        controller.stopSut();
+    }
+
+    @Before
+    public void initTest() {
+        controller.resetDatabase(Arrays.asList("CONTRIBUTOR"));
+        controller.resetStateOfSUT();
+    }
+
+    @Test
+    public void testTakeSnapshot_withToken() throws IOException {
+        // Arrange
+        String cachePath = "testCache";
+        int cacheSize = 10; // in MB
+        String token = "valid_token";
+
+        SnapshotProvider provider = new SnapshotProvider(
+            null, // Assuming Scorer is mocked or injected
+            cachePath, cacheSize, null, null, token
+        );
+
+        Date snapshotDate = new Date();
+
+        // Act & Assert
+        Future<?> future = provider.takeSnapshot("organizationName", snapshotDate);
+        assertNotNull(future);
+
+        // Verify line 90-93 coverage (branches based on token usage)
+    }
+
+    @Test
+    public void testTakeSnapshot_withLoginPassword() throws IOException {
+        // Arrange
+        String cachePath = "testCache";
+        int cacheSize = 10; // in MB
+        String login = "userLogin";
+        String password = "userPassword";
+
+        SnapshotProvider provider = new SnapshotProvider(
+            null, // Assuming Scorer is mocked or injected
+            cachePath, cacheSize, login, password, null
+        );
+
+        Date snapshotDate = new Date();
+
+        // Act & Assert
+        Future<?> future = provider.takeSnapshot("organizationName", snapshotDate);
+        assertNotNull(future);
+
+        // Verify line 91-92 coverage (branches based on login/password usage)
+    }
+
+    @Test
+    public void testTakeSnapshot_noCredentials() throws IOException {
+        // Arrange
+        String cachePath = "testCache";
+        int cacheSize = 10; // in MB
+
+        SnapshotProvider provider = new SnapshotProvider(
+            null, // Assuming Scorer is mocked or injected
+            cachePath, cacheSize, null, null, null
+        );
+
+        Date snapshotDate = new Date();
+
+        // Act & Assert
+        Future<?> future = provider.takeSnapshot("organizationName", snapshotDate);
+        assertNotNull(future);
+
+        // Verify line 93 coverage (no credentials branch)
+    }
+
+    @Test
+    public void testGetCacheDirectory_validPath() throws IOException {
+        // Arrange
+        String cachePath = "validDir";
+        Files.createDirectories(Paths.get(cachePath));
+        SnapshotProvider provider = new SnapshotProvider(
+            null, cachePath, 10, null, null, null
+        );
+
+        // Act
+        Optional<File> cacheDirectory = provider.getCacheDirectory();
+
+        // Assert
+        assertTrue(cacheDirectory.isPresent());
+        assertTrue(Files.exists(Paths.get(cachePath)));
+    }
+
+    @Test
+    public void testGetCacheDirectory_nonWritablePath() throws IOException {
+        // Arrange
+        String cachePath = "readOnlyDir";
+        Path path = Paths.get(cachePath);
+        Files.createDirectories(path);
+        path.toFile().setWritable(false);
+        SnapshotProvider provider = new SnapshotProvider(
+            null, cachePath, 10, null, null, null
+        );
+
+        // Act
+        Optional<File> cacheDirectory = provider.getCacheDirectory();
+
+        // Assert
+        assertFalse(cacheDirectory.isPresent());
+
+        // Clean up
+        path.toFile().setWritable(true);
+    }
+
+    @Test
+    public void testGetCacheDirectory_createMissingDirectory() {
+        // Arrange
+        String cachePath = "missingDir";
+        SnapshotProvider provider = new SnapshotProvider(
+            null, cachePath, 10, null, null, null
+        );
+
+        // Act
+        Optional<File> cacheDirectory = provider.getCacheDirectory();
+
+        // Assert
+        assertTrue(cacheDirectory.isPresent());
+        assertTrue(Files.exists(Paths.get(cachePath)));
+
+        // Clean up
+        Path path = Paths.get(cachePath);
+        path.toFile().delete();
+    }
+
+    @Test
+    public void testGetCacheDirectory_createDirectoryExistsAsFile() throws IOException {
+        // Arrange
+        String cachePath = "existingFile";
+        Path filePath = Paths.get(cachePath);
+        Files.createFile(filePath);
+
+        SnapshotProvider provider = new SnapshotProvider(
+            null, cachePath, 10, null, null, null
+        );
+
+        // Act
+        Optional<File> cacheDirectory = provider.getCacheDirectory();
+
+        // Assert
+        assertFalse(cacheDirectory.isPresent());
+
+        // Clean up
+        filePath.toFile().delete();
+    }
+
+    @Test
+    public void testConstructorCoverage() {
+        // Arrange
+        String cachePath = "cachePath";
+        int cacheSize = 10;
+
+        // Act
+        SnapshotProvider provider = new SnapshotProvider(
+            null, cachePath, cacheSize, null, null, null
+        );
+
+        // Assert
+        assertNotNull(provider);
+    }
+}
+
+*****

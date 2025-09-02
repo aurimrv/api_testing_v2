@@ -1,0 +1,31 @@
+Line: 102
+Expected status code <200> but was <404>.
+----------------------------------------
+Line: 82
+Expected status code <404> but was <200>.
+----------------------------------------
+Line: 133
+Response body doesn't match expectation.
+Expected: "none"
+Actual: date
+----------------------------------------
+Line: 123
+Response body doesn't match expectation.
+Expected: "none"
+Actual: 0
+----------------------------------------
+Line: 113
+Response body doesn't match expectation.
+Expected: "url"
+Actual: {"timestamp":"2025-03-27T14:24:29.884+0000","status":404,"error":"Not Found","message":"No message available","path":"/api/pat/http://very-long-domain-name-with-many-subdomains.example.com/path/to/resource"}
+----------------------------------------
+Line: 93
+Response body doesn't match expectation.
+Expected: "0"
+Actual: none
+----------------------------------------
+Line: 63
+Response body doesn't match expectation.
+Expected: "url"
+Actual: {"timestamp":"2025-03-27T14:24:29.259+0000","status":404,"error":"Not Found","message":"No message available","path":"/api/pat/http://example.com/path"}
+----------------------------------------

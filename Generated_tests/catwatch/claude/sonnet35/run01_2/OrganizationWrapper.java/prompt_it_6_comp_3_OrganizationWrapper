@@ -1,0 +1,203 @@
+You are a highly skilled test engineer specializing in debugging and resolving compilation errors and test failures in Java-based projects. Your expertise includes Java 8, JUnit 4, and REST Assured, allowing you to diagnose issues efficiently and provide precise, actionable fixes.
+
+Do fix the compilation errors delimited by ##### given the code below delimited by *****.
+
+The response must contain only Java code in JUnit 4 format.
+
+#####
+[[1;31mERROR[m] COMPILATION ERROR : 
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_OrganizationWrapperTest.java:[25,39] OrganizationWrapper(org.kohsuke.github.GHOrganization) is not public in org.zalando.catwatch.backend.github.OrganizationWrapper; cannot be accessed from outside package
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_OrganizationWrapperTest.java:[37,39] OrganizationWrapper(org.kohsuke.github.GHOrganization) is not public in org.zalando.catwatch.backend.github.OrganizationWrapper; cannot be accessed from outside package
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_OrganizationWrapperTest.java:[47,39] OrganizationWrapper(org.kohsuke.github.GHOrganization) is not public in org.zalando.catwatch.backend.github.OrganizationWrapper; cannot be accessed from outside package
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_OrganizationWrapperTest.java:[58,39] OrganizationWrapper(org.kohsuke.github.GHOrganization) is not public in org.zalando.catwatch.backend.github.OrganizationWrapper; cannot be accessed from outside package
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_OrganizationWrapperTest.java:[68,39] OrganizationWrapper(org.kohsuke.github.GHOrganization) is not public in org.zalando.catwatch.backend.github.OrganizationWrapper; cannot be accessed from outside package
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_OrganizationWrapperTest.java:[79,39] OrganizationWrapper(org.kohsuke.github.GHOrganization) is not public in org.zalando.catwatch.backend.github.OrganizationWrapper; cannot be accessed from outside package
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_OrganizationWrapperTest.java:[87,38] no suitable method found for thenReturn(long)
+    method org.mockito.stubbing.OngoingStubbing.thenReturn(java.lang.Integer) is not applicable
+      (argument mismatch; long cannot be converted to java.lang.Integer)
+    method org.mockito.stubbing.OngoingStubbing.thenReturn(java.lang.Integer,java.lang.Integer...) is not applicable
+      (argument mismatch; long cannot be converted to java.lang.Integer)
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_OrganizationWrapperTest.java:[89,39] OrganizationWrapper(org.kohsuke.github.GHOrganization) is not public in org.zalando.catwatch.backend.github.OrganizationWrapper; cannot be accessed from outside package
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_OrganizationWrapperTest.java:[99,39] OrganizationWrapper(org.kohsuke.github.GHOrganization) is not public in org.zalando.catwatch.backend.github.OrganizationWrapper; cannot be accessed from outside package
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_OrganizationWrapperTest.java:[109,39] OrganizationWrapper(org.kohsuke.github.GHOrganization) is not public in org.zalando.catwatch.backend.github.OrganizationWrapper; cannot be accessed from outside package
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_OrganizationWrapperTest.java:[119,39] OrganizationWrapper(org.kohsuke.github.GHOrganization) is not public in org.zalando.catwatch.backend.github.OrganizationWrapper; cannot be accessed from outside package
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_OrganizationWrapperTest.java:[130,59] cannot find symbol
+  symbol:   method of(org.kohsuke.github.GHUser)
+  location: interface java.util.List
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_OrganizationWrapperTest.java:[130,33] cannot find symbol
+  symbol:   method toList()
+  location: variable mockMembers of type org.kohsuke.github.PagedIterable<org.kohsuke.github.GHUser>
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_OrganizationWrapperTest.java:[132,39] OrganizationWrapper(org.kohsuke.github.GHOrganization) is not public in org.zalando.catwatch.backend.github.OrganizationWrapper; cannot be accessed from outside package
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_OrganizationWrapperTest.java:[134,48] incompatible types: org.kohsuke.github.GHUser cannot be converted to org.kohsuke.github.GHRepository.Contributor
+[[1;31mERROR[m] Failed to execute goal [32morg.apache.maven.plugins:maven-compiler-plugin:3.8.0:testCompile[m [1m(default-testCompile)[m on project [36mcatwatch-backend[m: [1;31mCompilation failure[m: Compilation failure: 
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_OrganizationWrapperTest.java:[25,39] OrganizationWrapper(org.kohsuke.github.GHOrganization) is not public in org.zalando.catwatch.backend.github.OrganizationWrapper; cannot be accessed from outside package
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_OrganizationWrapperTest.java:[37,39] OrganizationWrapper(org.kohsuke.github.GHOrganization) is not public in org.zalando.catwatch.backend.github.OrganizationWrapper; cannot be accessed from outside package
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_OrganizationWrapperTest.java:[47,39] OrganizationWrapper(org.kohsuke.github.GHOrganization) is not public in org.zalando.catwatch.backend.github.OrganizationWrapper; cannot be accessed from outside package
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_OrganizationWrapperTest.java:[58,39] OrganizationWrapper(org.kohsuke.github.GHOrganization) is not public in org.zalando.catwatch.backend.github.OrganizationWrapper; cannot be accessed from outside package
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_OrganizationWrapperTest.java:[68,39] OrganizationWrapper(org.kohsuke.github.GHOrganization) is not public in org.zalando.catwatch.backend.github.OrganizationWrapper; cannot be accessed from outside package
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_OrganizationWrapperTest.java:[79,39] OrganizationWrapper(org.kohsuke.github.GHOrganization) is not public in org.zalando.catwatch.backend.github.OrganizationWrapper; cannot be accessed from outside package
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_OrganizationWrapperTest.java:[87,38] no suitable method found for thenReturn(long)
+[[1;31mERROR[m]     method org.mockito.stubbing.OngoingStubbing.thenReturn(java.lang.Integer) is not applicable
+[[1;31mERROR[m]       (argument mismatch; long cannot be converted to java.lang.Integer)
+[[1;31mERROR[m]     method org.mockito.stubbing.OngoingStubbing.thenReturn(java.lang.Integer,java.lang.Integer...) is not applicable
+[[1;31mERROR[m]       (argument mismatch; long cannot be converted to java.lang.Integer)
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_OrganizationWrapperTest.java:[89,39] OrganizationWrapper(org.kohsuke.github.GHOrganization) is not public in org.zalando.catwatch.backend.github.OrganizationWrapper; cannot be accessed from outside package
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_OrganizationWrapperTest.java:[99,39] OrganizationWrapper(org.kohsuke.github.GHOrganization) is not public in org.zalando.catwatch.backend.github.OrganizationWrapper; cannot be accessed from outside package
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_OrganizationWrapperTest.java:[109,39] OrganizationWrapper(org.kohsuke.github.GHOrganization) is not public in org.zalando.catwatch.backend.github.OrganizationWrapper; cannot be accessed from outside package
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_OrganizationWrapperTest.java:[119,39] OrganizationWrapper(org.kohsuke.github.GHOrganization) is not public in org.zalando.catwatch.backend.github.OrganizationWrapper; cannot be accessed from outside package
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_OrganizationWrapperTest.java:[130,59] cannot find symbol
+[[1;31mERROR[m]   symbol:   method of(org.kohsuke.github.GHUser)
+[[1;31mERROR[m]   location: interface java.util.List
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_OrganizationWrapperTest.java:[130,33] cannot find symbol
+[[1;31mERROR[m]   symbol:   method toList()
+[[1;31mERROR[m]   location: variable mockMembers of type org.kohsuke.github.PagedIterable<org.kohsuke.github.GHUser>
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_OrganizationWrapperTest.java:[132,39] OrganizationWrapper(org.kohsuke.github.GHOrganization) is not public in org.zalando.catwatch.backend.github.OrganizationWrapper; cannot be accessed from outside package
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_OrganizationWrapperTest.java:[134,48] incompatible types: org.kohsuke.github.GHUser cannot be converted to org.kohsuke.github.GHRepository.Contributor
+[[1;31mERROR[m] -> [1m[Help 1][m
+[[1;31mERROR[m] 
+[[1;31mERROR[m] To see the full stack trace of the errors, re-run Maven with the [1m-e[m switch.
+[[1;31mERROR[m] Re-run Maven using the [1m-X[m switch to enable full debug logging.
+[[1;31mERROR[m] 
+[[1;31mERROR[m] For more information about the errors and possible solutions, please read the following articles:
+[[1;31mERROR[m] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+
+#####
+*****
+package org.zalando.catwatch.backend;
+
+import org.junit.Test;
+import static org.junit.Assert.*;
+import org.mockito.Mockito;
+
+import org.zalando.catwatch.backend.github.OrganizationWrapper;
+import org.kohsuke.github.GHOrganization;
+import org.kohsuke.github.GHRepository;
+import org.kohsuke.github.GHTeam;
+import org.kohsuke.github.GHUser;
+import org.kohsuke.github.PagedIterable;
+
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+
+public class sonnet35_run01_OrganizationWrapperTest {
+
+    @Test
+    public void testConstructor() throws IOException {
+        GHOrganization mockOrg = Mockito.mock(GHOrganization.class);
+        Mockito.when(mockOrg.listRepositories()).thenThrow(new IOException("Test exception"));
+        
+        OrganizationWrapper wrapper = new OrganizationWrapper(mockOrg);
+        
+        assertNotNull(wrapper);
+        assertTrue(wrapper.listRepositories().isEmpty());
+    }
+
+    @Test
+    public void testListTeams() throws IOException {
+        GHOrganization mockOrg = Mockito.mock(GHOrganization.class);
+        PagedIterable<GHTeam> mockTeams = Mockito.mock(PagedIterable.class);
+        Mockito.when(mockOrg.listTeams()).thenReturn(mockTeams);
+        
+        OrganizationWrapper wrapper = new OrganizationWrapper(mockOrg);
+        
+        assertEquals(mockTeams, wrapper.listTeams());
+    }
+
+    @Test
+    public void testListTeamsException() throws IOException {
+        GHOrganization mockOrg = Mockito.mock(GHOrganization.class);
+        Mockito.when(mockOrg.listTeams()).thenThrow(new IOException("Test exception"));
+        
+        OrganizationWrapper wrapper = new OrganizationWrapper(mockOrg);
+        
+        assertTrue(wrapper.listTeams().isEmpty());
+    }
+
+    @Test
+    public void testListMembers() throws IOException {
+        GHOrganization mockOrg = Mockito.mock(GHOrganization.class);
+        PagedIterable<GHUser> mockMembers = Mockito.mock(PagedIterable.class);
+        Mockito.when(mockOrg.listMembers()).thenReturn(mockMembers);
+        
+        OrganizationWrapper wrapper = new OrganizationWrapper(mockOrg);
+        
+        assertEquals(mockMembers, wrapper.listMembers());
+    }
+
+    @Test
+    public void testListMembersException() throws IOException {
+        GHOrganization mockOrg = Mockito.mock(GHOrganization.class);
+        Mockito.when(mockOrg.listMembers()).thenThrow(new IOException("Test exception"));
+        
+        OrganizationWrapper wrapper = new OrganizationWrapper(mockOrg);
+        
+        assertTrue(wrapper.listMembers().isEmpty());
+    }
+
+    @Test
+    public void testListRepositories() throws IOException {
+        GHOrganization mockOrg = Mockito.mock(GHOrganization.class);
+        PagedIterable<GHRepository> mockRepos = Mockito.mock(PagedIterable.class);
+        Mockito.when(mockOrg.listRepositories()).thenReturn(mockRepos);
+        
+        OrganizationWrapper wrapper = new OrganizationWrapper(mockOrg);
+        
+        assertEquals(mockRepos, wrapper.listRepositories());
+    }
+
+    @Test
+    public void testGetId() {
+        GHOrganization mockOrg = Mockito.mock(GHOrganization.class);
+        Mockito.when(mockOrg.getId()).thenReturn(123L);
+        
+        OrganizationWrapper wrapper = new OrganizationWrapper(mockOrg);
+        
+        assertEquals(123L, wrapper.getId());
+    }
+
+    @Test
+    public void testGetPublicRepoCount() throws IOException {
+        GHOrganization mockOrg = Mockito.mock(GHOrganization.class);
+        Mockito.when(mockOrg.getPublicRepoCount()).thenReturn(5);
+        
+        OrganizationWrapper wrapper = new OrganizationWrapper(mockOrg);
+        
+        assertEquals(5, wrapper.getPublicRepoCount());
+    }
+
+    @Test
+    public void testGetPublicRepoCountException() throws IOException {
+        GHOrganization mockOrg = Mockito.mock(GHOrganization.class);
+        Mockito.when(mockOrg.getPublicRepoCount()).thenThrow(new IOException("Test exception"));
+        
+        OrganizationWrapper wrapper = new OrganizationWrapper(mockOrg);
+        
+        assertEquals(0, wrapper.getPublicRepoCount());
+    }
+
+    @Test
+    public void testGetLogin() {
+        GHOrganization mockOrg = Mockito.mock(GHOrganization.class);
+        Mockito.when(mockOrg.getLogin()).thenReturn("testorg");
+        
+        OrganizationWrapper wrapper = new OrganizationWrapper(mockOrg);
+        
+        assertEquals("testorg", wrapper.getLogin());
+    }
+
+    @Test
+    public void testContributorIsMember() throws IOException {
+        GHOrganization mockOrg = Mockito.mock(GHOrganization.class);
+        GHUser mockContributor = Mockito.mock(GHUser.class);
+        PagedIterable<GHUser> mockMembers = Mockito.mock(PagedIterable.class);
+        Mockito.when(mockOrg.listMembers()).thenReturn(mockMembers);
+        Mockito.when(mockMembers.toList()).thenReturn(List.of(mockContributor));
+        
+        OrganizationWrapper wrapper = new OrganizationWrapper(mockOrg);
+        
+        assertTrue(wrapper.contributorIsMember(mockContributor));
+    }
+}
+
+*****

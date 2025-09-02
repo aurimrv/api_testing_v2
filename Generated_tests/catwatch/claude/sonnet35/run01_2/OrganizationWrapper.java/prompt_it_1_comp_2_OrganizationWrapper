@@ -1,0 +1,362 @@
+You are a highly skilled test engineer specializing in debugging and resolving compilation errors and test failures in Java-based projects. Your expertise includes Java 8, JUnit 4, and REST Assured, allowing you to diagnose issues efficiently and provide precise, actionable fixes.
+
+Do fix the compilation errors delimited by ##### given the code below delimited by *****.
+
+The response must contain only Java code in JUnit 4 format.
+
+#####
+[[1;31mERROR[m] COMPILATION ERROR : 
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_OrganizationWrapperTest.java:[67,34] cannot find symbol
+  symbol:   method mock(java.lang.Class<org.kohsuke.github.GHOrganization>)
+  location: class org.zalando.catwatch.backend.sonnet35_run01_OrganizationWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_OrganizationWrapperTest.java:[68,9] cannot find symbol
+  symbol:   method when(org.kohsuke.github.PagedIterable<org.kohsuke.github.GHRepository>)
+  location: class org.zalando.catwatch.backend.sonnet35_run01_OrganizationWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_OrganizationWrapperTest.java:[70,39] OrganizationWrapper(org.kohsuke.github.GHOrganization) is not public in org.zalando.catwatch.backend.github.OrganizationWrapper; cannot be accessed from outside package
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_OrganizationWrapperTest.java:[77,34] cannot find symbol
+  symbol:   method mock(java.lang.Class<org.kohsuke.github.GHOrganization>)
+  location: class org.zalando.catwatch.backend.sonnet35_run01_OrganizationWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_OrganizationWrapperTest.java:[78,27] cannot find symbol
+  symbol:   method mock(java.lang.Class<org.kohsuke.github.GHTeam>)
+  location: class org.zalando.catwatch.backend.sonnet35_run01_OrganizationWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_OrganizationWrapperTest.java:[79,9] cannot find symbol
+  symbol:   method when(org.kohsuke.github.PagedIterable<org.kohsuke.github.GHTeam>)
+  location: class org.zalando.catwatch.backend.sonnet35_run01_OrganizationWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_OrganizationWrapperTest.java:[81,39] OrganizationWrapper(org.kohsuke.github.GHOrganization) is not public in org.zalando.catwatch.backend.github.OrganizationWrapper; cannot be accessed from outside package
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_OrganizationWrapperTest.java:[90,34] cannot find symbol
+  symbol:   method mock(java.lang.Class<org.kohsuke.github.GHOrganization>)
+  location: class org.zalando.catwatch.backend.sonnet35_run01_OrganizationWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_OrganizationWrapperTest.java:[91,27] cannot find symbol
+  symbol:   method mock(java.lang.Class<org.kohsuke.github.GHUser>)
+  location: class org.zalando.catwatch.backend.sonnet35_run01_OrganizationWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_OrganizationWrapperTest.java:[92,9] cannot find symbol
+  symbol:   method when(org.kohsuke.github.PagedIterable<org.kohsuke.github.GHUser>)
+  location: class org.zalando.catwatch.backend.sonnet35_run01_OrganizationWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_OrganizationWrapperTest.java:[94,39] OrganizationWrapper(org.kohsuke.github.GHOrganization) is not public in org.zalando.catwatch.backend.github.OrganizationWrapper; cannot be accessed from outside package
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_OrganizationWrapperTest.java:[103,34] cannot find symbol
+  symbol:   method mock(java.lang.Class<org.kohsuke.github.GHOrganization>)
+  location: class org.zalando.catwatch.backend.sonnet35_run01_OrganizationWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_OrganizationWrapperTest.java:[104,33] cannot find symbol
+  symbol:   method mock(java.lang.Class<org.kohsuke.github.GHRepository>)
+  location: class org.zalando.catwatch.backend.sonnet35_run01_OrganizationWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_OrganizationWrapperTest.java:[105,9] cannot find symbol
+  symbol:   method when(boolean)
+  location: class org.zalando.catwatch.backend.sonnet35_run01_OrganizationWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_OrganizationWrapperTest.java:[106,9] cannot find symbol
+  symbol:   method when(boolean)
+  location: class org.zalando.catwatch.backend.sonnet35_run01_OrganizationWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_OrganizationWrapperTest.java:[107,9] cannot find symbol
+  symbol:   method when(org.kohsuke.github.PagedIterable<org.kohsuke.github.GHRepository>)
+  location: class org.zalando.catwatch.backend.sonnet35_run01_OrganizationWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_OrganizationWrapperTest.java:[109,39] OrganizationWrapper(org.kohsuke.github.GHOrganization) is not public in org.zalando.catwatch.backend.github.OrganizationWrapper; cannot be accessed from outside package
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_OrganizationWrapperTest.java:[111,14] cannot find symbol
+  symbol:   class RepositoryWrapper
+  location: class org.zalando.catwatch.backend.sonnet35_run01_OrganizationWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_OrganizationWrapperTest.java:[118,34] cannot find symbol
+  symbol:   method mock(java.lang.Class<org.kohsuke.github.GHOrganization>)
+  location: class org.zalando.catwatch.backend.sonnet35_run01_OrganizationWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_OrganizationWrapperTest.java:[119,9] cannot find symbol
+  symbol:   method when(int)
+  location: class org.zalando.catwatch.backend.sonnet35_run01_OrganizationWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_OrganizationWrapperTest.java:[121,39] OrganizationWrapper(org.kohsuke.github.GHOrganization) is not public in org.zalando.catwatch.backend.github.OrganizationWrapper; cannot be accessed from outside package
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_OrganizationWrapperTest.java:[128,34] cannot find symbol
+  symbol:   method mock(java.lang.Class<org.kohsuke.github.GHOrganization>)
+  location: class org.zalando.catwatch.backend.sonnet35_run01_OrganizationWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_OrganizationWrapperTest.java:[129,9] cannot find symbol
+  symbol:   method when(int)
+  location: class org.zalando.catwatch.backend.sonnet35_run01_OrganizationWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_OrganizationWrapperTest.java:[131,39] OrganizationWrapper(org.kohsuke.github.GHOrganization) is not public in org.zalando.catwatch.backend.github.OrganizationWrapper; cannot be accessed from outside package
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_OrganizationWrapperTest.java:[138,34] cannot find symbol
+  symbol:   method mock(java.lang.Class<org.kohsuke.github.GHOrganization>)
+  location: class org.zalando.catwatch.backend.sonnet35_run01_OrganizationWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_OrganizationWrapperTest.java:[139,9] cannot find symbol
+  symbol:   method when(int)
+  location: class org.zalando.catwatch.backend.sonnet35_run01_OrganizationWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_OrganizationWrapperTest.java:[141,39] OrganizationWrapper(org.kohsuke.github.GHOrganization) is not public in org.zalando.catwatch.backend.github.OrganizationWrapper; cannot be accessed from outside package
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_OrganizationWrapperTest.java:[148,34] cannot find symbol
+  symbol:   method mock(java.lang.Class<org.kohsuke.github.GHOrganization>)
+  location: class org.zalando.catwatch.backend.sonnet35_run01_OrganizationWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_OrganizationWrapperTest.java:[149,9] cannot find symbol
+  symbol:   method when(java.lang.String)
+  location: class org.zalando.catwatch.backend.sonnet35_run01_OrganizationWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_OrganizationWrapperTest.java:[151,39] OrganizationWrapper(org.kohsuke.github.GHOrganization) is not public in org.zalando.catwatch.backend.github.OrganizationWrapper; cannot be accessed from outside package
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_OrganizationWrapperTest.java:[158,34] cannot find symbol
+  symbol:   method mock(java.lang.Class<org.kohsuke.github.GHOrganization>)
+  location: class org.zalando.catwatch.backend.sonnet35_run01_OrganizationWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_OrganizationWrapperTest.java:[159,27] cannot find symbol
+  symbol:   method mock(java.lang.Class<org.kohsuke.github.GHUser>)
+  location: class org.zalando.catwatch.backend.sonnet35_run01_OrganizationWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_OrganizationWrapperTest.java:[160,52] cannot find symbol
+  symbol:   method mock(java.lang.Class<org.kohsuke.github.GHRepository.Contributor>)
+  location: class org.zalando.catwatch.backend.sonnet35_run01_OrganizationWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_OrganizationWrapperTest.java:[161,9] cannot find symbol
+  symbol:   method when(org.kohsuke.github.PagedIterable<org.kohsuke.github.GHUser>)
+  location: class org.zalando.catwatch.backend.sonnet35_run01_OrganizationWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_OrganizationWrapperTest.java:[163,39] OrganizationWrapper(org.kohsuke.github.GHOrganization) is not public in org.zalando.catwatch.backend.github.OrganizationWrapper; cannot be accessed from outside package
+[[1;31mERROR[m] Failed to execute goal [32morg.apache.maven.plugins:maven-compiler-plugin:3.8.0:testCompile[m [1m(default-testCompile)[m on project [36mcatwatch-backend[m: [1;31mCompilation failure[m: Compilation failure: 
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_OrganizationWrapperTest.java:[67,34] cannot find symbol
+[[1;31mERROR[m]   symbol:   method mock(java.lang.Class<org.kohsuke.github.GHOrganization>)
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_OrganizationWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_OrganizationWrapperTest.java:[68,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   method when(org.kohsuke.github.PagedIterable<org.kohsuke.github.GHRepository>)
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_OrganizationWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_OrganizationWrapperTest.java:[70,39] OrganizationWrapper(org.kohsuke.github.GHOrganization) is not public in org.zalando.catwatch.backend.github.OrganizationWrapper; cannot be accessed from outside package
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_OrganizationWrapperTest.java:[77,34] cannot find symbol
+[[1;31mERROR[m]   symbol:   method mock(java.lang.Class<org.kohsuke.github.GHOrganization>)
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_OrganizationWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_OrganizationWrapperTest.java:[78,27] cannot find symbol
+[[1;31mERROR[m]   symbol:   method mock(java.lang.Class<org.kohsuke.github.GHTeam>)
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_OrganizationWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_OrganizationWrapperTest.java:[79,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   method when(org.kohsuke.github.PagedIterable<org.kohsuke.github.GHTeam>)
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_OrganizationWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_OrganizationWrapperTest.java:[81,39] OrganizationWrapper(org.kohsuke.github.GHOrganization) is not public in org.zalando.catwatch.backend.github.OrganizationWrapper; cannot be accessed from outside package
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_OrganizationWrapperTest.java:[90,34] cannot find symbol
+[[1;31mERROR[m]   symbol:   method mock(java.lang.Class<org.kohsuke.github.GHOrganization>)
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_OrganizationWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_OrganizationWrapperTest.java:[91,27] cannot find symbol
+[[1;31mERROR[m]   symbol:   method mock(java.lang.Class<org.kohsuke.github.GHUser>)
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_OrganizationWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_OrganizationWrapperTest.java:[92,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   method when(org.kohsuke.github.PagedIterable<org.kohsuke.github.GHUser>)
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_OrganizationWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_OrganizationWrapperTest.java:[94,39] OrganizationWrapper(org.kohsuke.github.GHOrganization) is not public in org.zalando.catwatch.backend.github.OrganizationWrapper; cannot be accessed from outside package
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_OrganizationWrapperTest.java:[103,34] cannot find symbol
+[[1;31mERROR[m]   symbol:   method mock(java.lang.Class<org.kohsuke.github.GHOrganization>)
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_OrganizationWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_OrganizationWrapperTest.java:[104,33] cannot find symbol
+[[1;31mERROR[m]   symbol:   method mock(java.lang.Class<org.kohsuke.github.GHRepository>)
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_OrganizationWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_OrganizationWrapperTest.java:[105,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   method when(boolean)
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_OrganizationWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_OrganizationWrapperTest.java:[106,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   method when(boolean)
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_OrganizationWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_OrganizationWrapperTest.java:[107,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   method when(org.kohsuke.github.PagedIterable<org.kohsuke.github.GHRepository>)
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_OrganizationWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_OrganizationWrapperTest.java:[109,39] OrganizationWrapper(org.kohsuke.github.GHOrganization) is not public in org.zalando.catwatch.backend.github.OrganizationWrapper; cannot be accessed from outside package
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_OrganizationWrapperTest.java:[111,14] cannot find symbol
+[[1;31mERROR[m]   symbol:   class RepositoryWrapper
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_OrganizationWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_OrganizationWrapperTest.java:[118,34] cannot find symbol
+[[1;31mERROR[m]   symbol:   method mock(java.lang.Class<org.kohsuke.github.GHOrganization>)
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_OrganizationWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_OrganizationWrapperTest.java:[119,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   method when(int)
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_OrganizationWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_OrganizationWrapperTest.java:[121,39] OrganizationWrapper(org.kohsuke.github.GHOrganization) is not public in org.zalando.catwatch.backend.github.OrganizationWrapper; cannot be accessed from outside package
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_OrganizationWrapperTest.java:[128,34] cannot find symbol
+[[1;31mERROR[m]   symbol:   method mock(java.lang.Class<org.kohsuke.github.GHOrganization>)
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_OrganizationWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_OrganizationWrapperTest.java:[129,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   method when(int)
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_OrganizationWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_OrganizationWrapperTest.java:[131,39] OrganizationWrapper(org.kohsuke.github.GHOrganization) is not public in org.zalando.catwatch.backend.github.OrganizationWrapper; cannot be accessed from outside package
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_OrganizationWrapperTest.java:[138,34] cannot find symbol
+[[1;31mERROR[m]   symbol:   method mock(java.lang.Class<org.kohsuke.github.GHOrganization>)
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_OrganizationWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_OrganizationWrapperTest.java:[139,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   method when(int)
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_OrganizationWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_OrganizationWrapperTest.java:[141,39] OrganizationWrapper(org.kohsuke.github.GHOrganization) is not public in org.zalando.catwatch.backend.github.OrganizationWrapper; cannot be accessed from outside package
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_OrganizationWrapperTest.java:[148,34] cannot find symbol
+[[1;31mERROR[m]   symbol:   method mock(java.lang.Class<org.kohsuke.github.GHOrganization>)
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_OrganizationWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_OrganizationWrapperTest.java:[149,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   method when(java.lang.String)
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_OrganizationWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_OrganizationWrapperTest.java:[151,39] OrganizationWrapper(org.kohsuke.github.GHOrganization) is not public in org.zalando.catwatch.backend.github.OrganizationWrapper; cannot be accessed from outside package
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_OrganizationWrapperTest.java:[158,34] cannot find symbol
+[[1;31mERROR[m]   symbol:   method mock(java.lang.Class<org.kohsuke.github.GHOrganization>)
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_OrganizationWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_OrganizationWrapperTest.java:[159,27] cannot find symbol
+[[1;31mERROR[m]   symbol:   method mock(java.lang.Class<org.kohsuke.github.GHUser>)
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_OrganizationWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_OrganizationWrapperTest.java:[160,52] cannot find symbol
+[[1;31mERROR[m]   symbol:   method mock(java.lang.Class<org.kohsuke.github.GHRepository.Contributor>)
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_OrganizationWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_OrganizationWrapperTest.java:[161,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   method when(org.kohsuke.github.PagedIterable<org.kohsuke.github.GHUser>)
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_OrganizationWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_OrganizationWrapperTest.java:[163,39] OrganizationWrapper(org.kohsuke.github.GHOrganization) is not public in org.zalando.catwatch.backend.github.OrganizationWrapper; cannot be accessed from outside package
+[[1;31mERROR[m] -> [1m[Help 1][m
+[[1;31mERROR[m] 
+[[1;31mERROR[m] To see the full stack trace of the errors, re-run Maven with the [1m-e[m switch.
+[[1;31mERROR[m] Re-run Maven using the [1m-X[m switch to enable full debug logging.
+[[1;31mERROR[m] 
+[[1;31mERROR[m] For more information about the errors and possible solutions, please read the following articles:
+[[1;31mERROR[m] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+
+#####
+*****
+package org.zalando.catwatch.backend;
+
+import org.junit.AfterClass;
+import org.junit.BeforeClass;
+import org.junit.Before;
+import org.junit.Test;
+import static org.junit.Assert.*;
+import java.util.Map;
+import java.util.List;
+import static org.evomaster.client.java.controller.api.EMTestUtils.*;
+import org.evomaster.client.java.controller.SutHandler;
+import io.restassured.RestAssured;
+import static io.restassured.RestAssured.given;
+import io.restassured.response.ValidatableResponse;
+import static org.evomaster.client.java.sql.dsl.SqlDsl.sql;
+import org.evomaster.client.java.controller.api.dto.database.operations.InsertionResultsDto;
+import org.evomaster.client.java.controller.api.dto.database.operations.InsertionDto;
+import static org.hamcrest.Matchers.*;
+import io.restassured.config.JsonConfig;
+import io.restassured.path.json.config.JsonPathConfig;
+import static io.restassured.config.RedirectConfig.redirectConfig;
+import static org.evomaster.client.java.controller.contentMatchers.NumberMatcher.*;
+import static org.evomaster.client.java.controller.contentMatchers.StringMatcher.*;
+import static org.evomaster.client.java.controller.contentMatchers.SubStringMatcher.*;
+import static org.evomaster.client.java.controller.expect.ExpectationHandler.expectationHandler;
+import org.evomaster.client.java.controller.expect.ExpectationHandler;
+import io.restassured.path.json.JsonPath;
+import java.util.Arrays;
+
+import org.zalando.catwatch.backend.github.OrganizationWrapper;
+import org.kohsuke.github.*;
+import java.io.IOException;
+import java.util.Collections;
+
+public class sonnet35_run01_OrganizationWrapperTest {
+
+    private static final SutHandler controller = new em.embedded.org.zalando.EmbeddedEvoMasterController();
+    private static String baseUrlOfSut;
+
+    @BeforeClass
+    public static void initClass() {
+        controller.setupForGeneratedTest();
+        baseUrlOfSut = controller.startSut();
+        controller.registerOrExecuteInitSqlCommandsIfNeeded();
+        assertNotNull(baseUrlOfSut);
+        RestAssured.enableLoggingOfRequestAndResponseIfValidationFails();
+        RestAssured.useRelaxedHTTPSValidation();
+        RestAssured.urlEncodingEnabled = false;
+        RestAssured.config = RestAssured.config()
+            .jsonConfig(JsonConfig.jsonConfig().numberReturnType(JsonPathConfig.NumberReturnType.DOUBLE))
+            .redirect(redirectConfig().followRedirects(false));
+    }
+
+    @AfterClass
+    public static void tearDown() {
+        controller.stopSut();
+    }
+
+    @Before
+    public void initTest() {
+        controller.resetDatabase(Arrays.asList("CONTRIBUTOR"));
+        controller.resetStateOfSUT();
+    }
+
+    @Test
+    public void testConstructor() throws Exception {
+        GHOrganization mockOrg = mock(GHOrganization.class);
+        when(mockOrg.listRepositories()).thenReturn(Collections.emptyList());
+        
+        OrganizationWrapper wrapper = new OrganizationWrapper(mockOrg);
+        
+        assertNotNull(wrapper);
+    }
+
+    @Test
+    public void testListTeams() throws Exception {
+        GHOrganization mockOrg = mock(GHOrganization.class);
+        GHTeam mockTeam = mock(GHTeam.class);
+        when(mockOrg.listTeams()).thenReturn(Collections.singletonList(mockTeam));
+        
+        OrganizationWrapper wrapper = new OrganizationWrapper(mockOrg);
+        
+        List<GHTeam> teams = wrapper.listTeams();
+        assertNotNull(teams);
+        assertEquals(1, teams.size());
+    }
+
+    @Test
+    public void testListMembers() throws Exception {
+        GHOrganization mockOrg = mock(GHOrganization.class);
+        GHUser mockUser = mock(GHUser.class);
+        when(mockOrg.listMembers()).thenReturn(Collections.singletonList(mockUser));
+        
+        OrganizationWrapper wrapper = new OrganizationWrapper(mockOrg);
+        
+        List<GHUser> members = wrapper.listMembers();
+        assertNotNull(members);
+        assertEquals(1, members.size());
+    }
+
+    @Test
+    public void testListRepositories() throws Exception {
+        GHOrganization mockOrg = mock(GHOrganization.class);
+        GHRepository mockRepo = mock(GHRepository.class);
+        when(mockRepo.isPrivate()).thenReturn(false);
+        when(mockRepo.isFork()).thenReturn(false);
+        when(mockOrg.listRepositories()).thenReturn(Collections.singletonList(mockRepo));
+        
+        OrganizationWrapper wrapper = new OrganizationWrapper(mockOrg);
+        
+        List<RepositoryWrapper> repos = wrapper.listRepositories();
+        assertNotNull(repos);
+        assertEquals(1, repos.size());
+    }
+
+    @Test
+    public void testGetId() throws Exception {
+        GHOrganization mockOrg = mock(GHOrganization.class);
+        when(mockOrg.getId()).thenReturn(123);
+        
+        OrganizationWrapper wrapper = new OrganizationWrapper(mockOrg);
+        
+        assertEquals(123, wrapper.getId());
+    }
+
+    @Test
+    public void testGetPublicRepoCount() throws Exception {
+        GHOrganization mockOrg = mock(GHOrganization.class);
+        when(mockOrg.getPublicRepoCount()).thenReturn(5);
+        
+        OrganizationWrapper wrapper = new OrganizationWrapper(mockOrg);
+        
+        assertEquals(5, wrapper.getPublicRepoCount());
+    }
+
+    @Test
+    public void testGetPublicRepoCountWithException() throws Exception {
+        GHOrganization mockOrg = mock(GHOrganization.class);
+        when(mockOrg.getPublicRepoCount()).thenThrow(new IOException());
+        
+        OrganizationWrapper wrapper = new OrganizationWrapper(mockOrg);
+        
+        assertEquals(0, wrapper.getPublicRepoCount());
+    }
+
+    @Test
+    public void testGetLogin() throws Exception {
+        GHOrganization mockOrg = mock(GHOrganization.class);
+        when(mockOrg.getLogin()).thenReturn("testOrg");
+        
+        OrganizationWrapper wrapper = new OrganizationWrapper(mockOrg);
+        
+        assertEquals("testOrg", wrapper.getLogin());
+    }
+
+    @Test
+    public void testContributorIsMember() throws Exception {
+        GHOrganization mockOrg = mock(GHOrganization.class);
+        GHUser mockUser = mock(GHUser.class);
+        GHRepository.Contributor mockContributor = mock(GHRepository.Contributor.class);
+        when(mockOrg.listMembers()).thenReturn(Collections.singletonList(mockUser));
+        
+        OrganizationWrapper wrapper = new OrganizationWrapper(mockOrg);
+        
+        assertFalse(wrapper.contributorIsMember(mockContributor));
+    }
+}
+
+*****

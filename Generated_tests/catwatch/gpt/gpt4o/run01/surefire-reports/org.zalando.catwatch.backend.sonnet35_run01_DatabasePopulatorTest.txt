@@ -1,0 +1,25 @@
+-------------------------------------------------------------------------------
+Test set: org.zalando.catwatch.backend.sonnet35_run01_DatabasePopulatorTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 1.831 s <<< FAILURE! - in org.zalando.catwatch.backend.sonnet35_run01_DatabasePopulatorTest
+testPopulateTestData_DatabaseAvailable(org.zalando.catwatch.backend.sonnet35_run01_DatabasePopulatorTest)  Time elapsed: 0.026 s  <<< FAILURE!
+org.mockito.exceptions.verification.WantedButNotInvoked: 
+
+Wanted but not invoked:
+statisticsRepository.save(<any>);
+-> at org.zalando.catwatch.backend.sonnet35_run01_DatabasePopulatorTest.testPopulateTestData_DatabaseAvailable(sonnet35_run01_DatabasePopulatorTest.java:77)
+
+However, there were other interactions with this mock:
+statisticsRepository.save(
+    Statistics{id=24, privateProjectCount=67, publicProjectCount=34, membersCount=17, teamsCount=3, allContributorsCount=47, externalContributorsCount=27, allStarsCount=54, allForksCount=110, allSizeCount=733730, programLanguagesCount=7, tagsCount=8, organizationName=galanto, snapshotDate=Tue Apr 15 13:13:37 BRT 2025}
+);
+-> at org.zalando.catwatch.backend.repo.builder.StatisticsBuilder.save(StatisticsBuilder.java:135)
+
+statisticsRepository.save(
+    Statistics{id=25, privateProjectCount=68, publicProjectCount=56, membersCount=18, teamsCount=3, allContributorsCount=46, externalContributorsCount=33, allStarsCount=93, allForksCount=249, allSizeCount=70892, programLanguagesCount=15, tagsCount=4, organizationName=galanto-italic, snapshotDate=Tue Apr 15 13:13:37 BRT 2025}
+);
+-> at org.zalando.catwatch.backend.repo.builder.StatisticsBuilder.save(StatisticsBuilder.java:135)
+
+
+	at org.zalando.catwatch.backend.sonnet35_run01_DatabasePopulatorTest.testPopulateTestData_DatabaseAvailable(sonnet35_run01_DatabasePopulatorTest.java:77)
+

@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: org.restncs.gpt4o_run01_GammqTest
+-------------------------------------------------------------------------------
+Tests run: 9, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.618 s <<< FAILURE! - in org.restncs.gpt4o_run01_GammqTest
+testGcfIterationLimitExceeded(org.restncs.gpt4o_run01_GammqTest)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: Expected RuntimeException for iteration limit exceeded
+	at org.restncs.gpt4o_run01_GammqTest.testGcfIterationLimitExceeded(gpt4o_run01_GammqTest.java:90)
+
+testGserIterationLimitExceeded(org.restncs.gpt4o_run01_GammqTest)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: Expected RuntimeException for iteration limit exceeded
+	at org.restncs.gpt4o_run01_GammqTest.testGserIterationLimitExceeded(gpt4o_run01_GammqTest.java:139)
+

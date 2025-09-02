@@ -1,0 +1,73 @@
+[[1;31mERROR[m] COMPILATION ERROR : 
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[37,63] no suitable method found for thenReturn(org.zalando.catwatch.backend.github.OrganizationWrapper)
+    method org.mockito.stubbing.OngoingStubbing.thenReturn(org.kohsuke.github.GHOrganization) is not applicable
+      (argument mismatch; org.zalando.catwatch.backend.github.OrganizationWrapper cannot be converted to org.kohsuke.github.GHOrganization)
+    method org.mockito.stubbing.OngoingStubbing.thenReturn(org.kohsuke.github.GHOrganization,org.kohsuke.github.GHOrganization...) is not applicable
+      (argument mismatch; org.zalando.catwatch.backend.github.OrganizationWrapper cannot be converted to org.kohsuke.github.GHOrganization)
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[55,41] no suitable method found for thenReturn(long)
+    method org.mockito.stubbing.OngoingStubbing.thenReturn(java.lang.Integer) is not applicable
+      (argument mismatch; long cannot be converted to java.lang.Integer)
+    method org.mockito.stubbing.OngoingStubbing.thenReturn(java.lang.Integer,java.lang.Integer...) is not applicable
+      (argument mismatch; long cannot be converted to java.lang.Integer)
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[58,37] collectStatistics(org.zalando.catwatch.backend.github.OrganizationWrapper) is not public in org.zalando.catwatch.backend.github.TakeSnapshotTask; cannot be accessed from outside package
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[61,44] long cannot be dereferenced
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[79,44] collectProjects(org.zalando.catwatch.backend.github.OrganizationWrapper) is not public in org.zalando.catwatch.backend.github.TakeSnapshotTask; cannot be accessed from outside package
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[94,28] cannot find symbol
+  symbol:   class RepositoryWrapper
+  location: class org.zalando.catwatch.backend.github.OrganizationWrapper
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[94,93] cannot find symbol
+  symbol:   class RepositoryWrapper
+  location: class org.zalando.catwatch.backend.github.OrganizationWrapper
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[114,28] cannot find symbol
+  symbol:   class RepositoryWrapper
+  location: class org.zalando.catwatch.backend.github.OrganizationWrapper
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[114,93] cannot find symbol
+  symbol:   class RepositoryWrapper
+  location: class org.zalando.catwatch.backend.github.OrganizationWrapper
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[135,41] no suitable method found for thenReturn(long)
+    method org.mockito.stubbing.OngoingStubbing.thenReturn(java.lang.Integer) is not applicable
+      (argument mismatch; long cannot be converted to java.lang.Integer)
+    method org.mockito.stubbing.OngoingStubbing.thenReturn(java.lang.Integer,java.lang.Integer...) is not applicable
+      (argument mismatch; long cannot be converted to java.lang.Integer)
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[138,52] collectContributors(org.zalando.catwatch.backend.github.OrganizationWrapper) is not public in org.zalando.catwatch.backend.github.TakeSnapshotTask; cannot be accessed from outside package
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[155,46] collectLanguages(org.zalando.catwatch.backend.github.OrganizationWrapper) is not public in org.zalando.catwatch.backend.github.TakeSnapshotTask; cannot be accessed from outside package
+[[1;31mERROR[m] Failed to execute goal [32morg.apache.maven.plugins:maven-compiler-plugin:3.8.0:testCompile[m [1m(default-testCompile)[m on project [36mcatwatch-backend[m: [1;31mCompilation failure[m: Compilation failure: 
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[37,63] no suitable method found for thenReturn(org.zalando.catwatch.backend.github.OrganizationWrapper)
+[[1;31mERROR[m]     method org.mockito.stubbing.OngoingStubbing.thenReturn(org.kohsuke.github.GHOrganization) is not applicable
+[[1;31mERROR[m]       (argument mismatch; org.zalando.catwatch.backend.github.OrganizationWrapper cannot be converted to org.kohsuke.github.GHOrganization)
+[[1;31mERROR[m]     method org.mockito.stubbing.OngoingStubbing.thenReturn(org.kohsuke.github.GHOrganization,org.kohsuke.github.GHOrganization...) is not applicable
+[[1;31mERROR[m]       (argument mismatch; org.zalando.catwatch.backend.github.OrganizationWrapper cannot be converted to org.kohsuke.github.GHOrganization)
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[55,41] no suitable method found for thenReturn(long)
+[[1;31mERROR[m]     method org.mockito.stubbing.OngoingStubbing.thenReturn(java.lang.Integer) is not applicable
+[[1;31mERROR[m]       (argument mismatch; long cannot be converted to java.lang.Integer)
+[[1;31mERROR[m]     method org.mockito.stubbing.OngoingStubbing.thenReturn(java.lang.Integer,java.lang.Integer...) is not applicable
+[[1;31mERROR[m]       (argument mismatch; long cannot be converted to java.lang.Integer)
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[58,37] collectStatistics(org.zalando.catwatch.backend.github.OrganizationWrapper) is not public in org.zalando.catwatch.backend.github.TakeSnapshotTask; cannot be accessed from outside package
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[61,44] long cannot be dereferenced
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[79,44] collectProjects(org.zalando.catwatch.backend.github.OrganizationWrapper) is not public in org.zalando.catwatch.backend.github.TakeSnapshotTask; cannot be accessed from outside package
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[94,28] cannot find symbol
+[[1;31mERROR[m]   symbol:   class RepositoryWrapper
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.github.OrganizationWrapper
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[94,93] cannot find symbol
+[[1;31mERROR[m]   symbol:   class RepositoryWrapper
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.github.OrganizationWrapper
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[114,28] cannot find symbol
+[[1;31mERROR[m]   symbol:   class RepositoryWrapper
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.github.OrganizationWrapper
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[114,93] cannot find symbol
+[[1;31mERROR[m]   symbol:   class RepositoryWrapper
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.github.OrganizationWrapper
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[135,41] no suitable method found for thenReturn(long)
+[[1;31mERROR[m]     method org.mockito.stubbing.OngoingStubbing.thenReturn(java.lang.Integer) is not applicable
+[[1;31mERROR[m]       (argument mismatch; long cannot be converted to java.lang.Integer)
+[[1;31mERROR[m]     method org.mockito.stubbing.OngoingStubbing.thenReturn(java.lang.Integer,java.lang.Integer...) is not applicable
+[[1;31mERROR[m]       (argument mismatch; long cannot be converted to java.lang.Integer)
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[138,52] collectContributors(org.zalando.catwatch.backend.github.OrganizationWrapper) is not public in org.zalando.catwatch.backend.github.TakeSnapshotTask; cannot be accessed from outside package
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[155,46] collectLanguages(org.zalando.catwatch.backend.github.OrganizationWrapper) is not public in org.zalando.catwatch.backend.github.TakeSnapshotTask; cannot be accessed from outside package
+[[1;31mERROR[m] -> [1m[Help 1][m
+[[1;31mERROR[m] 
+[[1;31mERROR[m] To see the full stack trace of the errors, re-run Maven with the [1m-e[m switch.
+[[1;31mERROR[m] Re-run Maven using the [1m-X[m switch to enable full debug logging.
+[[1;31mERROR[m] 
+[[1;31mERROR[m] For more information about the errors and possible solutions, please read the following articles:
+[[1;31mERROR[m] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

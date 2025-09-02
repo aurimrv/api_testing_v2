@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="pt"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>JsonDateDeserializer.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">catwatch-backend</a> &gt; <a href="index.source.html" class="el_package">org.zalando.catwatch.backend.model.util</a> &gt; <span class="el_source">JsonDateDeserializer.java</span></div><h1>JsonDateDeserializer.java</h1><pre class="source lang-java linenums">package org.zalando.catwatch.backend.model.util;
+
+import com.fasterxml.jackson.core.JsonParser;
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.DeserializationContext;
+import com.fasterxml.jackson.databind.JsonDeserializer;
+
+import java.io.IOException;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+<span class="fc" id="L13">public class JsonDateDeserializer extends JsonDeserializer&lt;Date&gt; {</span>
+
+    @Override
+    public Date deserialize(final JsonParser jp, final DeserializationContext ctxt) throws IOException,
+        JsonProcessingException {
+<span class="fc" id="L18">        String dateString = jp.getText();</span>
+        try {
+<span class="fc" id="L20">            SimpleDateFormat format = new SimpleDateFormat(&quot;yyyy-MM-dd'T'HH:mm:ss&quot;);</span>
+<span class="fc" id="L21">            return format.parse(dateString);</span>
+<span class="nc" id="L22">        } catch (ParseException e) {</span>
+<span class="nc" id="L23">            throw new IllegalStateException(</span>
+                &quot;parse exception occured when trying to deserialize date, date string was: &quot;, e);
+        }
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

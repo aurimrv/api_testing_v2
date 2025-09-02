@@ -1,0 +1,22 @@
+Line: 127
+Expected status code <200> but was <500>.
+----------------------------------------
+Line: 103
+Response body doesn't match expectation.
+Expected: a string containing "startDate must be before endDate"
+Actual: {"timestamp":1744755057766,"status":500,"error":"Internal Server Error","exception":"java.lang.RuntimeException","message":"java.text.ParseException: Unparseable date: \"2023-01-01\"","path":"/contributors"}
+----------------------------------------
+Line: 117
+Response body doesn't match expectation.
+Expected: a string containing "this parameter configuration is not implemented yet"
+Actual: {"timestamp":1744755057996,"status":500,"error":"Internal Server Error","exception":"java.lang.RuntimeException","message":"java.text.ParseException: Unparseable date: \"2023-12-31\"","path":"/contributors"}
+----------------------------------------
+Line: 89
+Expected status code <200> but was <500>.
+----------------------------------------
+Line: 74
+Expected status code <200> but was <500>.
+----------------------------------------
+Line: 137
+Expected status code <200> but was <400>.
+----------------------------------------

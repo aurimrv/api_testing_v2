@@ -1,0 +1,261 @@
+You are a highly skilled test engineer specializing in debugging and resolving compilation errors and test failures in Java-based projects. Your expertise includes Java 8, JUnit 4, and REST Assured, allowing you to diagnose issues efficiently and provide precise, actionable fixes.
+
+Do fix the compilation errors delimited by ##### given the code below delimited by *****.
+
+The response must contain only Java code in JUnit 4 format.
+
+#####
+[[1;31mERROR[m] COMPILATION ERROR : 
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[62,14] cannot find symbol
+  symbol:   class Project
+  location: class gpt35_run01_ProjectStatsTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[63,21] cannot find symbol
+  symbol:   class Project
+  location: class gpt35_run01_ProjectStatsTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[70,9] cannot find symbol
+  symbol:   class ProjectStats
+  location: class gpt35_run01_ProjectStatsTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[70,41] cannot find symbol
+  symbol:   class ProjectStats
+  location: class gpt35_run01_ProjectStatsTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[86,14] cannot find symbol
+  symbol:   class Project
+  location: class gpt35_run01_ProjectStatsTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[87,21] cannot find symbol
+  symbol:   class Project
+  location: class gpt35_run01_ProjectStatsTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[88,21] cannot find symbol
+  symbol:   class Project
+  location: class gpt35_run01_ProjectStatsTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[89,21] cannot find symbol
+  symbol:   class Project
+  location: class gpt35_run01_ProjectStatsTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[92,26] cannot find symbol
+  symbol:   class Project
+  location: class gpt35_run01_ProjectStatsTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[92,55] cannot find symbol
+  symbol:   variable ProjectStats
+  location: class gpt35_run01_ProjectStatsTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[96,14] cannot find symbol
+  symbol:   class Project
+  location: class gpt35_run01_ProjectStatsTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[104,14] cannot find symbol
+  symbol:   class Project
+  location: class gpt35_run01_ProjectStatsTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[105,21] cannot find symbol
+  symbol:   class Project
+  location: class gpt35_run01_ProjectStatsTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[106,21] cannot find symbol
+  symbol:   class Project
+  location: class gpt35_run01_ProjectStatsTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[107,21] cannot find symbol
+  symbol:   class Project
+  location: class gpt35_run01_ProjectStatsTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[110,14] cannot find symbol
+  symbol:   class ProjectStats
+  location: class gpt35_run01_ProjectStatsTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[110,47] cannot find symbol
+  symbol:   variable ProjectStats
+  location: class gpt35_run01_ProjectStatsTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[119,9] cannot find symbol
+  symbol:   class ProjectStats
+  location: class gpt35_run01_ProjectStatsTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[119,41] cannot find symbol
+  symbol:   class ProjectStats
+  location: class gpt35_run01_ProjectStatsTest
+[[1;31mERROR[m] Failed to execute goal [32morg.apache.maven.plugins:maven-compiler-plugin:3.8.0:testCompile[m [1m(default-testCompile)[m on project [36mcatwatch-backend[m: [1;31mCompilation failure[m: Compilation failure: 
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[62,14] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Project
+[[1;31mERROR[m]   location: class gpt35_run01_ProjectStatsTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[63,21] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Project
+[[1;31mERROR[m]   location: class gpt35_run01_ProjectStatsTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[70,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class ProjectStats
+[[1;31mERROR[m]   location: class gpt35_run01_ProjectStatsTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[70,41] cannot find symbol
+[[1;31mERROR[m]   symbol:   class ProjectStats
+[[1;31mERROR[m]   location: class gpt35_run01_ProjectStatsTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[86,14] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Project
+[[1;31mERROR[m]   location: class gpt35_run01_ProjectStatsTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[87,21] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Project
+[[1;31mERROR[m]   location: class gpt35_run01_ProjectStatsTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[88,21] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Project
+[[1;31mERROR[m]   location: class gpt35_run01_ProjectStatsTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[89,21] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Project
+[[1;31mERROR[m]   location: class gpt35_run01_ProjectStatsTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[92,26] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Project
+[[1;31mERROR[m]   location: class gpt35_run01_ProjectStatsTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[92,55] cannot find symbol
+[[1;31mERROR[m]   symbol:   variable ProjectStats
+[[1;31mERROR[m]   location: class gpt35_run01_ProjectStatsTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[96,14] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Project
+[[1;31mERROR[m]   location: class gpt35_run01_ProjectStatsTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[104,14] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Project
+[[1;31mERROR[m]   location: class gpt35_run01_ProjectStatsTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[105,21] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Project
+[[1;31mERROR[m]   location: class gpt35_run01_ProjectStatsTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[106,21] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Project
+[[1;31mERROR[m]   location: class gpt35_run01_ProjectStatsTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[107,21] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Project
+[[1;31mERROR[m]   location: class gpt35_run01_ProjectStatsTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[110,14] cannot find symbol
+[[1;31mERROR[m]   symbol:   class ProjectStats
+[[1;31mERROR[m]   location: class gpt35_run01_ProjectStatsTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[110,47] cannot find symbol
+[[1;31mERROR[m]   symbol:   variable ProjectStats
+[[1;31mERROR[m]   location: class gpt35_run01_ProjectStatsTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[119,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class ProjectStats
+[[1;31mERROR[m]   location: class gpt35_run01_ProjectStatsTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[119,41] cannot find symbol
+[[1;31mERROR[m]   symbol:   class ProjectStats
+[[1;31mERROR[m]   location: class gpt35_run01_ProjectStatsTest
+[[1;31mERROR[m] -> [1m[Help 1][m
+[[1;31mERROR[m] 
+[[1;31mERROR[m] To see the full stack trace of the errors, re-run Maven with the [1m-e[m switch.
+[[1;31mERROR[m] Re-run Maven using the [1m-X[m switch to enable full debug logging.
+[[1;31mERROR[m] 
+[[1;31mERROR[m] For more information about the errors and possible solutions, please read the following articles:
+[[1;31mERROR[m] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+
+#####
+*****
+
+import org.junit.AfterClass;
+import org.junit.Before;
+import org.junit.BeforeClass;
+import org.junit.Test;
+import static org.junit.Assert.*;
+import java.util.Map;
+import java.util.List;
+import static org.evomaster.client.java.controller.api.EMTestUtils.*;
+import org.evomaster.client.java.controller.SutHandler;
+import io.restassured.RestAssured;
+import static io.restassured.RestAssured.given;
+import io.restassured.response.ValidatableResponse;
+import static org.evomaster.client.java.sql.dsl.SqlDsl.sql;
+import org.evomaster.client.java.controller.api.dto.database.operations.InsertionResultsDto;
+import org.evomaster.client.java.controller.api.dto.database.operations.InsertionDto;
+import static org.hamcrest.Matchers.*;
+import io.restassured.config.JsonConfig;
+import io.restassured.path.json.config.JsonPathConfig;
+import static io.restassured.config.RedirectConfig.redirectConfig;
+import static org.evomaster.client.java.controller.contentMatchers.NumberMatcher.*;
+import static org.evomaster.client.java.controller.contentMatchers.StringMatcher.*;
+import static org.evomaster.client.java.controller.contentMatchers.SubStringMatcher.*;
+import static org.evomaster.client.java.controller.expect.ExpectationHandler.expectationHandler;
+import org.evomaster.client.java.controller.expect.ExpectationHandler;
+import io.restassured.path.json.JsonPath;
+import java.util.Arrays;
+import java.util.Date; // Add import for Date
+
+public class gpt35_run01_ProjectStatsTest {
+
+    private static final SutHandler controller = new em.embedded.org.zalando.EmbeddedEvoMasterController();
+    private static String baseUrlOfSut;
+
+    @BeforeClass
+    public static void initClass() {
+        controller.setupForGeneratedTest();
+        baseUrlOfSut = controller.startSut();
+        controller.registerOrExecuteInitSqlCommandsIfNeeded();
+        assertNotNull(baseUrlOfSut);
+        RestAssured.enableLoggingOfRequestAndResponseIfValidationFails();
+        RestAssured.useRelaxedHTTPSValidation();
+        RestAssured.urlEncodingEnabled = false;
+        RestAssured.config = RestAssured.config()
+                .jsonConfig(JsonConfig.jsonConfig().numberReturnType(JsonPathConfig.NumberReturnType.DOUBLE))
+                .redirect(redirectConfig().followRedirects(false));
+    }
+
+    @AfterClass
+    public static void tearDown() {
+        controller.stopSut();
+    }
+
+    @Before
+    public void initTest() {
+        controller.resetDatabase(Arrays.asList("CONTRIBUTOR"));
+        controller.resetStateOfSUT();
+    }
+
+    @Test
+    public void testProjectStatsConstructor() {
+        List<Project> projects = Arrays.asList(
+                new Project("Project1", "Org1", "URL1", "Desc1", "Java",
+                        Arrays.asList(10, 20, 30), Arrays.asList(5, 10, 15),
+                        Arrays.asList(3, 6, 9), Arrays.asList(80, 85, 90),
+                        Arrays.asList(new Date(2022, 1, 1), new Date(2022, 2, 1), new Date(2022, 3, 1))
+                )
+        );
+
+        ProjectStats projectStats = new ProjectStats(projects);
+
+        assertEquals("Project1", projectStats.getName());
+        assertEquals("Org1", projectStats.getOrganizationName());
+        assertEquals("URL1", projectStats.getUrl());
+        assertEquals("Java", projectStats.getPrimaryLanguage());
+        assertEquals("Desc1", projectStats.getDescription());
+        assertArrayEquals(new Integer[]{10, 20, 30}, projectStats.getCommitCounts().toArray());
+        assertArrayEquals(new Integer[]{5, 10, 15}, projectStats.getForkCounts().toArray());
+        assertArrayEquals(new Integer[]{3, 6, 9}, projectStats.getContributorsCounts().toArray());
+        assertArrayEquals(new Integer[]{80, 85, 90}, projectStats.getScores().toArray());
+        assertArrayEquals(new Date[]{new Date(2022, 1, 1), new Date(2022, 2, 1), new Date(2022, 3, 1)}, projectStats.getSnapshotDates().toArray());
+    }
+
+    @Test
+    public void testGetDistinctProjects() {
+        List<Project> projects = Arrays.asList(
+                new Project("Project1", "Org1", "URL1", "Desc1", "Java", null, null, null, null, null),
+                new Project("Project2", "Org1", "URL2", "Desc2", "Java", null, null, null, null, null),
+                new Project("Project1", "Org1", "URL3", "Desc3", "Java", null, null, null, null, null)
+        );
+
+        Map<String, List<Project>> distinctProjects = ProjectStats.getDistinctProjects(projects);
+
+        assertEquals(1, distinctProjects.size());
+        assertTrue(distinctProjects.containsKey("Project1"));
+        List<Project> projectList = distinctProjects.get("Project1");
+        assertEquals(2, projectList.size());
+        assertEquals("URL1", projectList.get(0).getUrl());
+        assertEquals("URL3", projectList.get(1).getUrl());
+    }
+
+    @Test
+    public void testBuildStats() {
+        List<Project> projects = Arrays.asList(
+                new Project("Project1", "Org1", "URL1", "Desc1", "Java", null, null, null, null, null),
+                new Project("Project2", "Org2", "URL2", "Desc2", "Java", null, null, null, null, null),
+                new Project("Project1", "Org1", "URL3", "Desc3", "Java", null, null, null, null, null)
+        );
+
+        List<ProjectStats> projectStatsList = ProjectStats.buildStats(projects);
+
+        assertEquals(2, projectStatsList.size());
+        assertEquals("Project1", projectStatsList.get(0).getName());
+        assertEquals("Project2", projectStatsList.get(1).getName());
+    }
+
+    @Test
+    public void testToString() {
+        ProjectStats projectStats = new ProjectStats(Arrays.asList(
+                new Project("Project1", "Org1", "URL1", "Desc1", "Java", null, null, null, null, null))
+        );
+
+        assertEquals("ProjectStats(Project1, commitCounts=[], forkCounts=[], snapshotDates=[])",
+                projectStats.toString());
+    }
+}
+
+*****

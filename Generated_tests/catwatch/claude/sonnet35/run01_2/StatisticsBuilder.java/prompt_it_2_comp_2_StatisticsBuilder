@@ -1,0 +1,349 @@
+You are a highly skilled test engineer specializing in debugging and resolving compilation errors and test failures in Java-based projects. Your expertise includes Java 8, JUnit 4, and REST Assured, allowing you to diagnose issues efficiently and provide precise, actionable fixes.
+
+Do fix the compilation errors delimited by ##### given the code below delimited by *****.
+
+The response must contain only Java code in JUnit 4 format.
+
+#####
+[[1;31mERROR[m] COMPILATION ERROR : 
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_StatisticsBuilderTest.java:[64,26] cannot find symbol
+  symbol:   method mock(java.lang.Class<org.zalando.catwatch.backend.repo.StatisticsRepository>)
+  location: class org.zalando.catwatch.backend.sonnet35_run01_StatisticsBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_StatisticsBuilderTest.java:[85,9] reference to assertEquals is ambiguous
+  both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_StatisticsBuilderTest.java:[92,9] reference to assertEquals is ambiguous
+  both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_StatisticsBuilderTest.java:[99,9] reference to assertEquals is ambiguous
+  both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_StatisticsBuilderTest.java:[106,9] reference to assertEquals is ambiguous
+  both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_StatisticsBuilderTest.java:[113,9] reference to assertEquals is ambiguous
+  both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_StatisticsBuilderTest.java:[120,9] reference to assertEquals is ambiguous
+  both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_StatisticsBuilderTest.java:[127,9] reference to assertEquals is ambiguous
+  both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_StatisticsBuilderTest.java:[134,9] reference to assertEquals is ambiguous
+  both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_StatisticsBuilderTest.java:[141,9] reference to assertEquals is ambiguous
+  both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_StatisticsBuilderTest.java:[148,9] reference to assertEquals is ambiguous
+  both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_StatisticsBuilderTest.java:[155,9] reference to assertEquals is ambiguous
+  both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_StatisticsBuilderTest.java:[191,9] reference to assertEquals is ambiguous
+  both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_StatisticsBuilderTest.java:[192,9] reference to assertEquals is ambiguous
+  both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_StatisticsBuilderTest.java:[193,9] reference to assertEquals is ambiguous
+  both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_StatisticsBuilderTest.java:[194,9] reference to assertEquals is ambiguous
+  both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_StatisticsBuilderTest.java:[195,9] reference to assertEquals is ambiguous
+  both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_StatisticsBuilderTest.java:[196,9] reference to assertEquals is ambiguous
+  both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_StatisticsBuilderTest.java:[197,9] reference to assertEquals is ambiguous
+  both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_StatisticsBuilderTest.java:[198,9] reference to assertEquals is ambiguous
+  both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_StatisticsBuilderTest.java:[199,9] reference to assertEquals is ambiguous
+  both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_StatisticsBuilderTest.java:[200,9] reference to assertEquals is ambiguous
+  both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_StatisticsBuilderTest.java:[201,9] reference to assertEquals is ambiguous
+  both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_StatisticsBuilderTest.java:[207,28] no suitable method found for save(org.hamcrest.Matcher<org.zalando.catwatch.backend.model.Statistics>)
+    method org.springframework.data.repository.CrudRepository.<S>save(S) is not applicable
+      (inferred type does not conform to upper bound(s)
+        inferred: org.hamcrest.Matcher<org.zalando.catwatch.backend.model.Statistics>
+        upper bound(s): org.zalando.catwatch.backend.model.Statistics)
+    method org.springframework.data.repository.CrudRepository.<S>save(java.lang.Iterable<S>) is not applicable
+      (no instance(s) of type variable(s) T exist so that org.hamcrest.Matcher<T> conforms to java.lang.Iterable<S>)
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_StatisticsBuilderTest.java:[212,9] cannot find symbol
+  symbol:   method verify(org.zalando.catwatch.backend.repo.StatisticsRepository)
+  location: class org.zalando.catwatch.backend.sonnet35_run01_StatisticsBuilderTest
+[[1;31mERROR[m] Failed to execute goal [32morg.apache.maven.plugins:maven-compiler-plugin:3.8.0:testCompile[m [1m(default-testCompile)[m on project [36mcatwatch-backend[m: [1;31mCompilation failure[m: Compilation failure: 
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_StatisticsBuilderTest.java:[64,26] cannot find symbol
+[[1;31mERROR[m]   symbol:   method mock(java.lang.Class<org.zalando.catwatch.backend.repo.StatisticsRepository>)
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_StatisticsBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_StatisticsBuilderTest.java:[85,9] reference to assertEquals is ambiguous
+[[1;31mERROR[m]   both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_StatisticsBuilderTest.java:[92,9] reference to assertEquals is ambiguous
+[[1;31mERROR[m]   both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_StatisticsBuilderTest.java:[99,9] reference to assertEquals is ambiguous
+[[1;31mERROR[m]   both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_StatisticsBuilderTest.java:[106,9] reference to assertEquals is ambiguous
+[[1;31mERROR[m]   both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_StatisticsBuilderTest.java:[113,9] reference to assertEquals is ambiguous
+[[1;31mERROR[m]   both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_StatisticsBuilderTest.java:[120,9] reference to assertEquals is ambiguous
+[[1;31mERROR[m]   both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_StatisticsBuilderTest.java:[127,9] reference to assertEquals is ambiguous
+[[1;31mERROR[m]   both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_StatisticsBuilderTest.java:[134,9] reference to assertEquals is ambiguous
+[[1;31mERROR[m]   both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_StatisticsBuilderTest.java:[141,9] reference to assertEquals is ambiguous
+[[1;31mERROR[m]   both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_StatisticsBuilderTest.java:[148,9] reference to assertEquals is ambiguous
+[[1;31mERROR[m]   both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_StatisticsBuilderTest.java:[155,9] reference to assertEquals is ambiguous
+[[1;31mERROR[m]   both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_StatisticsBuilderTest.java:[191,9] reference to assertEquals is ambiguous
+[[1;31mERROR[m]   both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_StatisticsBuilderTest.java:[192,9] reference to assertEquals is ambiguous
+[[1;31mERROR[m]   both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_StatisticsBuilderTest.java:[193,9] reference to assertEquals is ambiguous
+[[1;31mERROR[m]   both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_StatisticsBuilderTest.java:[194,9] reference to assertEquals is ambiguous
+[[1;31mERROR[m]   both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_StatisticsBuilderTest.java:[195,9] reference to assertEquals is ambiguous
+[[1;31mERROR[m]   both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_StatisticsBuilderTest.java:[196,9] reference to assertEquals is ambiguous
+[[1;31mERROR[m]   both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_StatisticsBuilderTest.java:[197,9] reference to assertEquals is ambiguous
+[[1;31mERROR[m]   both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_StatisticsBuilderTest.java:[198,9] reference to assertEquals is ambiguous
+[[1;31mERROR[m]   both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_StatisticsBuilderTest.java:[199,9] reference to assertEquals is ambiguous
+[[1;31mERROR[m]   both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_StatisticsBuilderTest.java:[200,9] reference to assertEquals is ambiguous
+[[1;31mERROR[m]   both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_StatisticsBuilderTest.java:[201,9] reference to assertEquals is ambiguous
+[[1;31mERROR[m]   both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_StatisticsBuilderTest.java:[207,28] no suitable method found for save(org.hamcrest.Matcher<org.zalando.catwatch.backend.model.Statistics>)
+[[1;31mERROR[m]     method org.springframework.data.repository.CrudRepository.<S>save(S) is not applicable
+[[1;31mERROR[m]       (inferred type does not conform to upper bound(s)
+[[1;31mERROR[m]         inferred: org.hamcrest.Matcher<org.zalando.catwatch.backend.model.Statistics>
+[[1;31mERROR[m]         upper bound(s): org.zalando.catwatch.backend.model.Statistics)
+[[1;31mERROR[m]     method org.springframework.data.repository.CrudRepository.<S>save(java.lang.Iterable<S>) is not applicable
+[[1;31mERROR[m]       (no instance(s) of type variable(s) T exist so that org.hamcrest.Matcher<T> conforms to java.lang.Iterable<S>)
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_StatisticsBuilderTest.java:[212,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   method verify(org.zalando.catwatch.backend.repo.StatisticsRepository)
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_StatisticsBuilderTest
+[[1;31mERROR[m] -> [1m[Help 1][m
+[[1;31mERROR[m] 
+[[1;31mERROR[m] To see the full stack trace of the errors, re-run Maven with the [1m-e[m switch.
+[[1;31mERROR[m] Re-run Maven using the [1m-X[m switch to enable full debug logging.
+[[1;31mERROR[m] 
+[[1;31mERROR[m] For more information about the errors and possible solutions, please read the following articles:
+[[1;31mERROR[m] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+
+#####
+*****
+package org.zalando.catwatch.backend;
+
+import org.junit.AfterClass;
+import org.junit.BeforeClass;
+import org.junit.Before;
+import org.junit.Test;
+import static org.junit.Assert.*;
+import java.util.Map;
+import java.util.List;
+import static org.evomaster.client.java.controller.api.EMTestUtils.*;
+import org.evomaster.client.java.controller.SutHandler;
+import io.restassured.RestAssured;
+import static io.restassured.RestAssured.given;
+import io.restassured.response.ValidatableResponse;
+import static org.evomaster.client.java.sql.dsl.SqlDsl.sql;
+import org.evomaster.client.java.controller.api.dto.database.operations.InsertionResultsDto;
+import org.evomaster.client.java.controller.api.dto.database.operations.InsertionDto;
+import static org.hamcrest.Matchers.*;
+import io.restassured.config.JsonConfig;
+import io.restassured.path.json.config.JsonPathConfig;
+import static io.restassured.config.RedirectConfig.redirectConfig;
+import static org.evomaster.client.java.controller.contentMatchers.NumberMatcher.*;
+import static org.evomaster.client.java.controller.contentMatchers.StringMatcher.*;
+import static org.evomaster.client.java.controller.contentMatchers.SubStringMatcher.*;
+import static org.evomaster.client.java.controller.expect.ExpectationHandler.expectationHandler;
+import org.evomaster.client.java.controller.expect.ExpectationHandler;
+import io.restassured.path.json.JsonPath;
+import java.util.Arrays;
+import org.zalando.catwatch.backend.repo.builder.StatisticsBuilder;
+import org.zalando.catwatch.backend.repo.StatisticsRepository;
+import org.zalando.catwatch.backend.model.Statistics;
+import java.util.Date;
+
+public class sonnet35_run01_StatisticsBuilderTest {
+
+    private static final SutHandler controller = new em.embedded.org.zalando.EmbeddedEvoMasterController();
+    private static String baseUrlOfSut;
+    private StatisticsRepository mockRepository;
+    private StatisticsBuilder builder;
+
+    @BeforeClass
+    public static void initClass() {
+        controller.setupForGeneratedTest();
+        baseUrlOfSut = controller.startSut();
+        controller.registerOrExecuteInitSqlCommandsIfNeeded();
+        assertNotNull(baseUrlOfSut);
+        RestAssured.enableLoggingOfRequestAndResponseIfValidationFails();
+        RestAssured.useRelaxedHTTPSValidation();
+        RestAssured.urlEncodingEnabled = false;
+        RestAssured.config = RestAssured.config()
+            .jsonConfig(JsonConfig.jsonConfig().numberReturnType(JsonPathConfig.NumberReturnType.DOUBLE))
+            .redirect(redirectConfig().followRedirects(false));
+    }
+
+    @AfterClass
+    public static void tearDown() {
+        controller.stopSut();
+    }
+
+    @Before
+    public void initTest() {
+        controller.resetDatabase(Arrays.asList("CONTRIBUTOR"));
+        controller.resetStateOfSUT();
+        mockRepository = mock(StatisticsRepository.class);
+        builder = new StatisticsBuilder(mockRepository);
+    }
+
+    @Test
+    public void testConstructor() {
+        assertNotNull(builder);
+        assertNotNull(builder.create());
+    }
+
+    @Test
+    public void testOrganizationName() {
+        String orgName = "TestOrg";
+        builder.organizationName(orgName);
+        assertEquals(orgName, builder.create().getOrganizationName());
+    }
+
+    @Test
+    public void testPublicProjectCount() {
+        int count = 10;
+        builder.publicProjectCount(count);
+        assertEquals(count, builder.create().getPublicProjectCount());
+    }
+
+    @Test
+    public void testAllStarsCount() {
+        int count = 100;
+        builder.allStarsCount(count);
+        assertEquals(count, builder.create().getAllStarsCount());
+    }
+
+    @Test
+    public void testAllForksCount() {
+        int count = 50;
+        builder.allForksCount(count);
+        assertEquals(count, builder.create().getAllForksCount());
+    }
+
+    @Test
+    public void testProgramLanguagesCount() {
+        int count = 5;
+        builder.programLanguagesCount(count);
+        assertEquals(count, builder.create().getProgramLanguagesCount());
+    }
+
+    @Test
+    public void testAllContributersCount() {
+        int count = 20;
+        builder.allContributersCount(count);
+        assertEquals(count, builder.create().getAllContributorsCount());
+    }
+
+    @Test
+    public void testExternalContributorsCount() {
+        int count = 15;
+        builder.externalContributorsCount(count);
+        assertEquals(count, builder.create().getExternalContributorsCount());
+    }
+
+    @Test
+    public void testAllSize() {
+        int size = 1000;
+        builder.allSize(size);
+        assertEquals(size, builder.create().getAllSizeCount());
+    }
+
+    @Test
+    public void testMembersCount() {
+        int count = 30;
+        builder.membersCount(count);
+        assertEquals(count, builder.create().getMembersCount());
+    }
+
+    @Test
+    public void testPrivateProjectCount() {
+        int count = 5;
+        builder.privateProjectCount(count);
+        assertEquals(count, builder.create().getPrivateProjectCount());
+    }
+
+    @Test
+    public void testTagsCount() {
+        int count = 25;
+        builder.tagsCount(count);
+        assertEquals(count, builder.create().getTagsCount());
+    }
+
+    @Test
+    public void testTeamsCount() {
+        int count = 8;
+        builder.teamsCount(count);
+        assertEquals(count, builder.create().getTeamsCount());
+    }
+
+    @Test
+    public void testSnapshotDate() {
+        Date date = new Date();
+        builder.snapshotDate(date);
+        assertEquals(date, builder.create().getSnapshotDate());
+    }
+
+    @Test
+    public void testDays() {
+        int days = 7;
+        builder.days(days);
+        assertNotNull(builder.create().getSnapshotDate());
+    }
+
+    @Test
+    public void testCreate() {
+        Statistics stats = builder
+            .organizationName("TestOrg")
+            .publicProjectCount(10)
+            .privateProjectCount(5)
+            .allStarsCount(100)
+            .allForksCount(50)
+            .programLanguagesCount(5)
+            .allContributersCount(20)
+            .externalContributorsCount(15)
+            .allSize(1000)
+            .membersCount(30)
+            .tagsCount(25)
+            .teamsCount(8)
+            .create();
+
+        assertNotNull(stats);
+        assertEquals("TestOrg", stats.getOrganizationName());
+        assertEquals(10, stats.getPublicProjectCount());
+        assertEquals(5, stats.getPrivateProjectCount());
+        assertEquals(100, stats.getAllStarsCount());
+        assertEquals(50, stats.getAllForksCount());
+        assertEquals(5, stats.getProgramLanguagesCount());
+        assertEquals(20, stats.getAllContributorsCount());
+        assertEquals(15, stats.getExternalContributorsCount());
+        assertEquals(1000, stats.getAllSizeCount());
+        assertEquals(30, stats.getMembersCount());
+        assertEquals(25, stats.getTagsCount());
+        assertEquals(8, stats.getTeamsCount());
+    }
+
+    @Test
+    public void testSave() {
+        Statistics stats = builder.create();
+        when(mockRepository.save(any(Statistics.class))).thenReturn(stats);
+        
+        Statistics savedStats = builder.save();
+        
+        assertNotNull(savedStats);
+        verify(mockRepository).save(any(Statistics.class));
+    }
+}
+
+*****

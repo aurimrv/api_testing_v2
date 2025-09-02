@@ -1,0 +1,402 @@
+You are a highly skilled test engineer specializing in debugging and resolving compilation errors and test failures in Java-based projects. Your expertise includes Java 8, JUnit 4, and REST Assured, allowing you to diagnose issues efficiently and provide precise, actionable fixes.
+
+Do fix the compilation errors delimited by ##### given the code below delimited by *****.
+
+The response must contain only Java code in JUnit 4 format.
+
+#####
+[[1;31mERROR[m] COMPILATION ERROR : 
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[12,42] cannot find symbol
+  symbol:   class Snapshot
+  location: package org.zalando.catwatch.backend.model
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[48,58] no suitable method found for thenReturn(java.util.ArrayList<org.kohsuke.github.GHRepository>)
+    method org.mockito.stubbing.OngoingStubbing.thenReturn(org.kohsuke.github.PagedIterable<org.kohsuke.github.GHRepository>) is not applicable
+      (argument mismatch; java.util.ArrayList<org.kohsuke.github.GHRepository> cannot be converted to org.kohsuke.github.PagedIterable<org.kohsuke.github.GHRepository>)
+    method org.mockito.stubbing.OngoingStubbing.thenReturn(org.kohsuke.github.PagedIterable<org.kohsuke.github.GHRepository>,org.kohsuke.github.PagedIterable<org.kohsuke.github.GHRepository>...) is not applicable
+      (argument mismatch; java.util.ArrayList<org.kohsuke.github.GHRepository> cannot be converted to org.kohsuke.github.PagedIterable<org.kohsuke.github.GHRepository>)
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[49,53] no suitable method found for thenReturn(java.util.ArrayList<java.lang.Object>)
+    method org.mockito.stubbing.OngoingStubbing.thenReturn(org.kohsuke.github.PagedIterable<org.kohsuke.github.GHUser>) is not applicable
+      (argument mismatch; cannot infer type arguments for java.util.ArrayList<>
+          reason: no instance(s) of type variable(s) E exist so that java.util.ArrayList<E> conforms to org.kohsuke.github.PagedIterable<org.kohsuke.github.GHUser>)
+    method org.mockito.stubbing.OngoingStubbing.thenReturn(org.kohsuke.github.PagedIterable<org.kohsuke.github.GHUser>,org.kohsuke.github.PagedIterable<org.kohsuke.github.GHUser>...) is not applicable
+      (argument mismatch; cannot infer type arguments for java.util.ArrayList<>
+          reason: no instance(s) of type variable(s) E exist so that java.util.ArrayList<E> conforms to org.kohsuke.github.PagedIterable<org.kohsuke.github.GHUser>)
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[50,51] no suitable method found for thenReturn(java.util.ArrayList<java.lang.Object>)
+    method org.mockito.stubbing.OngoingStubbing.thenReturn(org.kohsuke.github.PagedIterable<org.kohsuke.github.GHTeam>) is not applicable
+      (argument mismatch; cannot infer type arguments for java.util.ArrayList<>
+          reason: no instance(s) of type variable(s) E exist so that java.util.ArrayList<E> conforms to org.kohsuke.github.PagedIterable<org.kohsuke.github.GHTeam>)
+    method org.mockito.stubbing.OngoingStubbing.thenReturn(org.kohsuke.github.PagedIterable<org.kohsuke.github.GHTeam>,org.kohsuke.github.PagedIterable<org.kohsuke.github.GHTeam>...) is not applicable
+      (argument mismatch; cannot infer type arguments for java.util.ArrayList<>
+          reason: no instance(s) of type variable(s) E exist so that java.util.ArrayList<E> conforms to org.kohsuke.github.PagedIterable<org.kohsuke.github.GHTeam>)
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[52,9] cannot find symbol
+  symbol:   class Snapshot
+  location: class org.zalando.catwatch.backend.sonnet35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[63,58] no suitable method found for thenReturn(java.util.ArrayList<org.kohsuke.github.GHRepository>)
+    method org.mockito.stubbing.OngoingStubbing.thenReturn(org.kohsuke.github.PagedIterable<org.kohsuke.github.GHRepository>) is not applicable
+      (argument mismatch; java.util.ArrayList<org.kohsuke.github.GHRepository> cannot be converted to org.kohsuke.github.PagedIterable<org.kohsuke.github.GHRepository>)
+    method org.mockito.stubbing.OngoingStubbing.thenReturn(org.kohsuke.github.PagedIterable<org.kohsuke.github.GHRepository>,org.kohsuke.github.PagedIterable<org.kohsuke.github.GHRepository>...) is not applicable
+      (argument mismatch; java.util.ArrayList<org.kohsuke.github.GHRepository> cannot be converted to org.kohsuke.github.PagedIterable<org.kohsuke.github.GHRepository>)
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[64,53] no suitable method found for thenReturn(java.util.ArrayList<java.lang.Object>)
+    method org.mockito.stubbing.OngoingStubbing.thenReturn(org.kohsuke.github.PagedIterable<org.kohsuke.github.GHUser>) is not applicable
+      (argument mismatch; cannot infer type arguments for java.util.ArrayList<>
+          reason: no instance(s) of type variable(s) E exist so that java.util.ArrayList<E> conforms to org.kohsuke.github.PagedIterable<org.kohsuke.github.GHUser>)
+    method org.mockito.stubbing.OngoingStubbing.thenReturn(org.kohsuke.github.PagedIterable<org.kohsuke.github.GHUser>,org.kohsuke.github.PagedIterable<org.kohsuke.github.GHUser>...) is not applicable
+      (argument mismatch; cannot infer type arguments for java.util.ArrayList<>
+          reason: no instance(s) of type variable(s) E exist so that java.util.ArrayList<E> conforms to org.kohsuke.github.PagedIterable<org.kohsuke.github.GHUser>)
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[65,51] no suitable method found for thenReturn(java.util.ArrayList<java.lang.Object>)
+    method org.mockito.stubbing.OngoingStubbing.thenReturn(org.kohsuke.github.PagedIterable<org.kohsuke.github.GHTeam>) is not applicable
+      (argument mismatch; cannot infer type arguments for java.util.ArrayList<>
+          reason: no instance(s) of type variable(s) E exist so that java.util.ArrayList<E> conforms to org.kohsuke.github.PagedIterable<org.kohsuke.github.GHTeam>)
+    method org.mockito.stubbing.OngoingStubbing.thenReturn(org.kohsuke.github.PagedIterable<org.kohsuke.github.GHTeam>,org.kohsuke.github.PagedIterable<org.kohsuke.github.GHTeam>...) is not applicable
+      (argument mismatch; cannot infer type arguments for java.util.ArrayList<>
+          reason: no instance(s) of type variable(s) E exist so that java.util.ArrayList<E> conforms to org.kohsuke.github.PagedIterable<org.kohsuke.github.GHTeam>)
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[67,68] incompatible types: org.kohsuke.github.GHOrganization cannot be converted to org.zalando.catwatch.backend.github.OrganizationWrapper
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[70,9] reference to assertEquals is ambiguous
+  both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[71,9] reference to assertEquals is ambiguous
+  both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[72,9] reference to assertEquals is ambiguous
+  both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[78,58] no suitable method found for thenReturn(<anonymous java.util.ArrayList<org.kohsuke.github.GHRepository>>)
+    method org.mockito.stubbing.OngoingStubbing.thenReturn(org.kohsuke.github.PagedIterable<org.kohsuke.github.GHRepository>) is not applicable
+      (argument mismatch; <anonymous java.util.ArrayList<org.kohsuke.github.GHRepository>> cannot be converted to org.kohsuke.github.PagedIterable<org.kohsuke.github.GHRepository>)
+    method org.mockito.stubbing.OngoingStubbing.thenReturn(org.kohsuke.github.PagedIterable<org.kohsuke.github.GHRepository>,org.kohsuke.github.PagedIterable<org.kohsuke.github.GHRepository>...) is not applicable
+      (argument mismatch; <anonymous java.util.ArrayList<org.kohsuke.github.GHRepository>> cannot be converted to org.kohsuke.github.PagedIterable<org.kohsuke.github.GHRepository>)
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[81,30] cannot find symbol
+  symbol:   method getStargazersCount()
+  location: variable mockRepo of type org.kohsuke.github.GHRepository
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[82,30] cannot find symbol
+  symbol:   method getForksCount()
+  location: variable mockRepo of type org.kohsuke.github.GHRepository
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[87,73] incompatible types: org.kohsuke.github.GHOrganization cannot be converted to org.zalando.catwatch.backend.github.OrganizationWrapper
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[94,9] reference to assertEquals is ambiguous
+  both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[95,9] reference to assertEquals is ambiguous
+  both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[103,58] no suitable method found for thenReturn(<anonymous java.util.ArrayList<org.kohsuke.github.GHRepository>>)
+    method org.mockito.stubbing.OngoingStubbing.thenReturn(org.kohsuke.github.PagedIterable<org.kohsuke.github.GHRepository>) is not applicable
+      (argument mismatch; <anonymous java.util.ArrayList<org.kohsuke.github.GHRepository>> cannot be converted to org.kohsuke.github.PagedIterable<org.kohsuke.github.GHRepository>)
+    method org.mockito.stubbing.OngoingStubbing.thenReturn(org.kohsuke.github.PagedIterable<org.kohsuke.github.GHRepository>,org.kohsuke.github.PagedIterable<org.kohsuke.github.GHRepository>...) is not applicable
+      (argument mismatch; <anonymous java.util.ArrayList<org.kohsuke.github.GHRepository>> cannot be converted to org.kohsuke.github.PagedIterable<org.kohsuke.github.GHRepository>)
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[104,50] no suitable method found for thenReturn(<anonymous java.util.ArrayList<org.kohsuke.github.GHRepository.Contributor>>)
+    method org.mockito.stubbing.OngoingStubbing.thenReturn(org.kohsuke.github.PagedIterable<org.kohsuke.github.GHRepository.Contributor>) is not applicable
+      (argument mismatch; <anonymous java.util.ArrayList<org.kohsuke.github.GHRepository.Contributor>> cannot be converted to org.kohsuke.github.PagedIterable<org.kohsuke.github.GHRepository.Contributor>)
+    method org.mockito.stubbing.OngoingStubbing.thenReturn(org.kohsuke.github.PagedIterable<org.kohsuke.github.GHRepository.Contributor>,org.kohsuke.github.PagedIterable<org.kohsuke.github.GHRepository.Contributor>...) is not applicable
+      (argument mismatch; <anonymous java.util.ArrayList<org.kohsuke.github.GHRepository.Contributor>> cannot be converted to org.kohsuke.github.PagedIterable<org.kohsuke.github.GHRepository.Contributor>)
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[109,85] incompatible types: org.kohsuke.github.GHOrganization cannot be converted to org.zalando.catwatch.backend.github.OrganizationWrapper
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[115,9] reference to assertEquals is ambiguous
+  both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[124,58] no suitable method found for thenReturn(<anonymous java.util.ArrayList<org.kohsuke.github.GHRepository>>)
+    method org.mockito.stubbing.OngoingStubbing.thenReturn(org.kohsuke.github.PagedIterable<org.kohsuke.github.GHRepository>) is not applicable
+      (argument mismatch; <anonymous java.util.ArrayList<org.kohsuke.github.GHRepository>> cannot be converted to org.kohsuke.github.PagedIterable<org.kohsuke.github.GHRepository>)
+    method org.mockito.stubbing.OngoingStubbing.thenReturn(org.kohsuke.github.PagedIterable<org.kohsuke.github.GHRepository>,org.kohsuke.github.PagedIterable<org.kohsuke.github.GHRepository>...) is not applicable
+      (argument mismatch; <anonymous java.util.ArrayList<org.kohsuke.github.GHRepository>> cannot be converted to org.kohsuke.github.PagedIterable<org.kohsuke.github.GHRepository>)
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[127,85] incompatible types: org.kohsuke.github.GHOrganization cannot be converted to org.zalando.catwatch.backend.github.OrganizationWrapper
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[133,17] reference to assertEquals is ambiguous
+  both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[135,17] reference to assertEquals is ambiguous
+  both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[145,61] no suitable method found for thenReturn(java.lang.String)
+    method org.mockito.stubbing.OngoingStubbing.thenReturn(org.kohsuke.github.GHContent) is not applicable
+      (argument mismatch; java.lang.String cannot be converted to org.kohsuke.github.GHContent)
+    method org.mockito.stubbing.OngoingStubbing.thenReturn(org.kohsuke.github.GHContent,org.kohsuke.github.GHContent...) is not applicable
+      (argument mismatch; java.lang.String cannot be converted to org.kohsuke.github.GHContent)
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[147,75] incompatible types: org.kohsuke.github.GHRepository cannot be converted to org.zalando.catwatch.backend.github.RepositoryWrapper
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[159,64] no suitable method found for thenReturn(java.lang.String)
+    method org.mockito.stubbing.OngoingStubbing.thenReturn(org.kohsuke.github.GHContent) is not applicable
+      (argument mismatch; java.lang.String cannot be converted to org.kohsuke.github.GHContent)
+    method org.mockito.stubbing.OngoingStubbing.thenReturn(org.kohsuke.github.GHContent,org.kohsuke.github.GHContent...) is not applicable
+      (argument mismatch; java.lang.String cannot be converted to org.kohsuke.github.GHContent)
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[161,43] incompatible types: org.kohsuke.github.GHRepository cannot be converted to org.zalando.catwatch.backend.github.RepositoryWrapper
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[173,43] incompatible types: org.kohsuke.github.GHRepository cannot be converted to org.zalando.catwatch.backend.github.RepositoryWrapper
+[[1;31mERROR[m] Failed to execute goal [32morg.apache.maven.plugins:maven-compiler-plugin:3.8.0:testCompile[m [1m(default-testCompile)[m on project [36mcatwatch-backend[m: [1;31mCompilation failure[m: Compilation failure: 
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[12,42] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Snapshot
+[[1;31mERROR[m]   location: package org.zalando.catwatch.backend.model
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[48,58] no suitable method found for thenReturn(java.util.ArrayList<org.kohsuke.github.GHRepository>)
+[[1;31mERROR[m]     method org.mockito.stubbing.OngoingStubbing.thenReturn(org.kohsuke.github.PagedIterable<org.kohsuke.github.GHRepository>) is not applicable
+[[1;31mERROR[m]       (argument mismatch; java.util.ArrayList<org.kohsuke.github.GHRepository> cannot be converted to org.kohsuke.github.PagedIterable<org.kohsuke.github.GHRepository>)
+[[1;31mERROR[m]     method org.mockito.stubbing.OngoingStubbing.thenReturn(org.kohsuke.github.PagedIterable<org.kohsuke.github.GHRepository>,org.kohsuke.github.PagedIterable<org.kohsuke.github.GHRepository>...) is not applicable
+[[1;31mERROR[m]       (argument mismatch; java.util.ArrayList<org.kohsuke.github.GHRepository> cannot be converted to org.kohsuke.github.PagedIterable<org.kohsuke.github.GHRepository>)
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[49,53] no suitable method found for thenReturn(java.util.ArrayList<java.lang.Object>)
+[[1;31mERROR[m]     method org.mockito.stubbing.OngoingStubbing.thenReturn(org.kohsuke.github.PagedIterable<org.kohsuke.github.GHUser>) is not applicable
+[[1;31mERROR[m]       (argument mismatch; cannot infer type arguments for java.util.ArrayList<>
+[[1;31mERROR[m]           reason: no instance(s) of type variable(s) E exist so that java.util.ArrayList<E> conforms to org.kohsuke.github.PagedIterable<org.kohsuke.github.GHUser>)
+[[1;31mERROR[m]     method org.mockito.stubbing.OngoingStubbing.thenReturn(org.kohsuke.github.PagedIterable<org.kohsuke.github.GHUser>,org.kohsuke.github.PagedIterable<org.kohsuke.github.GHUser>...) is not applicable
+[[1;31mERROR[m]       (argument mismatch; cannot infer type arguments for java.util.ArrayList<>
+[[1;31mERROR[m]           reason: no instance(s) of type variable(s) E exist so that java.util.ArrayList<E> conforms to org.kohsuke.github.PagedIterable<org.kohsuke.github.GHUser>)
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[50,51] no suitable method found for thenReturn(java.util.ArrayList<java.lang.Object>)
+[[1;31mERROR[m]     method org.mockito.stubbing.OngoingStubbing.thenReturn(org.kohsuke.github.PagedIterable<org.kohsuke.github.GHTeam>) is not applicable
+[[1;31mERROR[m]       (argument mismatch; cannot infer type arguments for java.util.ArrayList<>
+[[1;31mERROR[m]           reason: no instance(s) of type variable(s) E exist so that java.util.ArrayList<E> conforms to org.kohsuke.github.PagedIterable<org.kohsuke.github.GHTeam>)
+[[1;31mERROR[m]     method org.mockito.stubbing.OngoingStubbing.thenReturn(org.kohsuke.github.PagedIterable<org.kohsuke.github.GHTeam>,org.kohsuke.github.PagedIterable<org.kohsuke.github.GHTeam>...) is not applicable
+[[1;31mERROR[m]       (argument mismatch; cannot infer type arguments for java.util.ArrayList<>
+[[1;31mERROR[m]           reason: no instance(s) of type variable(s) E exist so that java.util.ArrayList<E> conforms to org.kohsuke.github.PagedIterable<org.kohsuke.github.GHTeam>)
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[52,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Snapshot
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[63,58] no suitable method found for thenReturn(java.util.ArrayList<org.kohsuke.github.GHRepository>)
+[[1;31mERROR[m]     method org.mockito.stubbing.OngoingStubbing.thenReturn(org.kohsuke.github.PagedIterable<org.kohsuke.github.GHRepository>) is not applicable
+[[1;31mERROR[m]       (argument mismatch; java.util.ArrayList<org.kohsuke.github.GHRepository> cannot be converted to org.kohsuke.github.PagedIterable<org.kohsuke.github.GHRepository>)
+[[1;31mERROR[m]     method org.mockito.stubbing.OngoingStubbing.thenReturn(org.kohsuke.github.PagedIterable<org.kohsuke.github.GHRepository>,org.kohsuke.github.PagedIterable<org.kohsuke.github.GHRepository>...) is not applicable
+[[1;31mERROR[m]       (argument mismatch; java.util.ArrayList<org.kohsuke.github.GHRepository> cannot be converted to org.kohsuke.github.PagedIterable<org.kohsuke.github.GHRepository>)
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[64,53] no suitable method found for thenReturn(java.util.ArrayList<java.lang.Object>)
+[[1;31mERROR[m]     method org.mockito.stubbing.OngoingStubbing.thenReturn(org.kohsuke.github.PagedIterable<org.kohsuke.github.GHUser>) is not applicable
+[[1;31mERROR[m]       (argument mismatch; cannot infer type arguments for java.util.ArrayList<>
+[[1;31mERROR[m]           reason: no instance(s) of type variable(s) E exist so that java.util.ArrayList<E> conforms to org.kohsuke.github.PagedIterable<org.kohsuke.github.GHUser>)
+[[1;31mERROR[m]     method org.mockito.stubbing.OngoingStubbing.thenReturn(org.kohsuke.github.PagedIterable<org.kohsuke.github.GHUser>,org.kohsuke.github.PagedIterable<org.kohsuke.github.GHUser>...) is not applicable
+[[1;31mERROR[m]       (argument mismatch; cannot infer type arguments for java.util.ArrayList<>
+[[1;31mERROR[m]           reason: no instance(s) of type variable(s) E exist so that java.util.ArrayList<E> conforms to org.kohsuke.github.PagedIterable<org.kohsuke.github.GHUser>)
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[65,51] no suitable method found for thenReturn(java.util.ArrayList<java.lang.Object>)
+[[1;31mERROR[m]     method org.mockito.stubbing.OngoingStubbing.thenReturn(org.kohsuke.github.PagedIterable<org.kohsuke.github.GHTeam>) is not applicable
+[[1;31mERROR[m]       (argument mismatch; cannot infer type arguments for java.util.ArrayList<>
+[[1;31mERROR[m]           reason: no instance(s) of type variable(s) E exist so that java.util.ArrayList<E> conforms to org.kohsuke.github.PagedIterable<org.kohsuke.github.GHTeam>)
+[[1;31mERROR[m]     method org.mockito.stubbing.OngoingStubbing.thenReturn(org.kohsuke.github.PagedIterable<org.kohsuke.github.GHTeam>,org.kohsuke.github.PagedIterable<org.kohsuke.github.GHTeam>...) is not applicable
+[[1;31mERROR[m]       (argument mismatch; cannot infer type arguments for java.util.ArrayList<>
+[[1;31mERROR[m]           reason: no instance(s) of type variable(s) E exist so that java.util.ArrayList<E> conforms to org.kohsuke.github.PagedIterable<org.kohsuke.github.GHTeam>)
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[67,68] incompatible types: org.kohsuke.github.GHOrganization cannot be converted to org.zalando.catwatch.backend.github.OrganizationWrapper
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[70,9] reference to assertEquals is ambiguous
+[[1;31mERROR[m]   both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[71,9] reference to assertEquals is ambiguous
+[[1;31mERROR[m]   both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[72,9] reference to assertEquals is ambiguous
+[[1;31mERROR[m]   both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[78,58] no suitable method found for thenReturn(<anonymous java.util.ArrayList<org.kohsuke.github.GHRepository>>)
+[[1;31mERROR[m]     method org.mockito.stubbing.OngoingStubbing.thenReturn(org.kohsuke.github.PagedIterable<org.kohsuke.github.GHRepository>) is not applicable
+[[1;31mERROR[m]       (argument mismatch; <anonymous java.util.ArrayList<org.kohsuke.github.GHRepository>> cannot be converted to org.kohsuke.github.PagedIterable<org.kohsuke.github.GHRepository>)
+[[1;31mERROR[m]     method org.mockito.stubbing.OngoingStubbing.thenReturn(org.kohsuke.github.PagedIterable<org.kohsuke.github.GHRepository>,org.kohsuke.github.PagedIterable<org.kohsuke.github.GHRepository>...) is not applicable
+[[1;31mERROR[m]       (argument mismatch; <anonymous java.util.ArrayList<org.kohsuke.github.GHRepository>> cannot be converted to org.kohsuke.github.PagedIterable<org.kohsuke.github.GHRepository>)
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[81,30] cannot find symbol
+[[1;31mERROR[m]   symbol:   method getStargazersCount()
+[[1;31mERROR[m]   location: variable mockRepo of type org.kohsuke.github.GHRepository
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[82,30] cannot find symbol
+[[1;31mERROR[m]   symbol:   method getForksCount()
+[[1;31mERROR[m]   location: variable mockRepo of type org.kohsuke.github.GHRepository
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[87,73] incompatible types: org.kohsuke.github.GHOrganization cannot be converted to org.zalando.catwatch.backend.github.OrganizationWrapper
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[94,9] reference to assertEquals is ambiguous
+[[1;31mERROR[m]   both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[95,9] reference to assertEquals is ambiguous
+[[1;31mERROR[m]   both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[103,58] no suitable method found for thenReturn(<anonymous java.util.ArrayList<org.kohsuke.github.GHRepository>>)
+[[1;31mERROR[m]     method org.mockito.stubbing.OngoingStubbing.thenReturn(org.kohsuke.github.PagedIterable<org.kohsuke.github.GHRepository>) is not applicable
+[[1;31mERROR[m]       (argument mismatch; <anonymous java.util.ArrayList<org.kohsuke.github.GHRepository>> cannot be converted to org.kohsuke.github.PagedIterable<org.kohsuke.github.GHRepository>)
+[[1;31mERROR[m]     method org.mockito.stubbing.OngoingStubbing.thenReturn(org.kohsuke.github.PagedIterable<org.kohsuke.github.GHRepository>,org.kohsuke.github.PagedIterable<org.kohsuke.github.GHRepository>...) is not applicable
+[[1;31mERROR[m]       (argument mismatch; <anonymous java.util.ArrayList<org.kohsuke.github.GHRepository>> cannot be converted to org.kohsuke.github.PagedIterable<org.kohsuke.github.GHRepository>)
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[104,50] no suitable method found for thenReturn(<anonymous java.util.ArrayList<org.kohsuke.github.GHRepository.Contributor>>)
+[[1;31mERROR[m]     method org.mockito.stubbing.OngoingStubbing.thenReturn(org.kohsuke.github.PagedIterable<org.kohsuke.github.GHRepository.Contributor>) is not applicable
+[[1;31mERROR[m]       (argument mismatch; <anonymous java.util.ArrayList<org.kohsuke.github.GHRepository.Contributor>> cannot be converted to org.kohsuke.github.PagedIterable<org.kohsuke.github.GHRepository.Contributor>)
+[[1;31mERROR[m]     method org.mockito.stubbing.OngoingStubbing.thenReturn(org.kohsuke.github.PagedIterable<org.kohsuke.github.GHRepository.Contributor>,org.kohsuke.github.PagedIterable<org.kohsuke.github.GHRepository.Contributor>...) is not applicable
+[[1;31mERROR[m]       (argument mismatch; <anonymous java.util.ArrayList<org.kohsuke.github.GHRepository.Contributor>> cannot be converted to org.kohsuke.github.PagedIterable<org.kohsuke.github.GHRepository.Contributor>)
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[109,85] incompatible types: org.kohsuke.github.GHOrganization cannot be converted to org.zalando.catwatch.backend.github.OrganizationWrapper
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[115,9] reference to assertEquals is ambiguous
+[[1;31mERROR[m]   both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[124,58] no suitable method found for thenReturn(<anonymous java.util.ArrayList<org.kohsuke.github.GHRepository>>)
+[[1;31mERROR[m]     method org.mockito.stubbing.OngoingStubbing.thenReturn(org.kohsuke.github.PagedIterable<org.kohsuke.github.GHRepository>) is not applicable
+[[1;31mERROR[m]       (argument mismatch; <anonymous java.util.ArrayList<org.kohsuke.github.GHRepository>> cannot be converted to org.kohsuke.github.PagedIterable<org.kohsuke.github.GHRepository>)
+[[1;31mERROR[m]     method org.mockito.stubbing.OngoingStubbing.thenReturn(org.kohsuke.github.PagedIterable<org.kohsuke.github.GHRepository>,org.kohsuke.github.PagedIterable<org.kohsuke.github.GHRepository>...) is not applicable
+[[1;31mERROR[m]       (argument mismatch; <anonymous java.util.ArrayList<org.kohsuke.github.GHRepository>> cannot be converted to org.kohsuke.github.PagedIterable<org.kohsuke.github.GHRepository>)
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[127,85] incompatible types: org.kohsuke.github.GHOrganization cannot be converted to org.zalando.catwatch.backend.github.OrganizationWrapper
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[133,17] reference to assertEquals is ambiguous
+[[1;31mERROR[m]   both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[135,17] reference to assertEquals is ambiguous
+[[1;31mERROR[m]   both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[145,61] no suitable method found for thenReturn(java.lang.String)
+[[1;31mERROR[m]     method org.mockito.stubbing.OngoingStubbing.thenReturn(org.kohsuke.github.GHContent) is not applicable
+[[1;31mERROR[m]       (argument mismatch; java.lang.String cannot be converted to org.kohsuke.github.GHContent)
+[[1;31mERROR[m]     method org.mockito.stubbing.OngoingStubbing.thenReturn(org.kohsuke.github.GHContent,org.kohsuke.github.GHContent...) is not applicable
+[[1;31mERROR[m]       (argument mismatch; java.lang.String cannot be converted to org.kohsuke.github.GHContent)
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[147,75] incompatible types: org.kohsuke.github.GHRepository cannot be converted to org.zalando.catwatch.backend.github.RepositoryWrapper
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[159,64] no suitable method found for thenReturn(java.lang.String)
+[[1;31mERROR[m]     method org.mockito.stubbing.OngoingStubbing.thenReturn(org.kohsuke.github.GHContent) is not applicable
+[[1;31mERROR[m]       (argument mismatch; java.lang.String cannot be converted to org.kohsuke.github.GHContent)
+[[1;31mERROR[m]     method org.mockito.stubbing.OngoingStubbing.thenReturn(org.kohsuke.github.GHContent,org.kohsuke.github.GHContent...) is not applicable
+[[1;31mERROR[m]       (argument mismatch; java.lang.String cannot be converted to org.kohsuke.github.GHContent)
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[161,43] incompatible types: org.kohsuke.github.GHRepository cannot be converted to org.zalando.catwatch.backend.github.RepositoryWrapper
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[173,43] incompatible types: org.kohsuke.github.GHRepository cannot be converted to org.zalando.catwatch.backend.github.RepositoryWrapper
+[[1;31mERROR[m] -> [1m[Help 1][m
+[[1;31mERROR[m] 
+[[1;31mERROR[m] To see the full stack trace of the errors, re-run Maven with the [1m-e[m switch.
+[[1;31mERROR[m] Re-run Maven using the [1m-X[m switch to enable full debug logging.
+[[1;31mERROR[m] 
+[[1;31mERROR[m] For more information about the errors and possible solutions, please read the following articles:
+[[1;31mERROR[m] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+
+#####
+*****
+package org.zalando.catwatch.backend;
+
+import org.junit.AfterClass;
+import org.junit.BeforeClass;
+import org.junit.Before;
+import org.junit.Test;
+import static org.junit.Assert.*;
+import java.util.Map;
+import java.util.List;
+import java.util.Collection;
+import org.zalando.catwatch.backend.github.TakeSnapshotTask;
+import org.zalando.catwatch.backend.model.Snapshot;
+import org.zalando.catwatch.backend.model.Statistics;
+import org.zalando.catwatch.backend.model.Project;
+import org.zalando.catwatch.backend.model.Contributor;
+import org.zalando.catwatch.backend.model.Language;
+import org.zalando.catwatch.backend.model.util.Scorer;
+import org.kohsuke.github.GitHub;
+import org.kohsuke.github.GHOrganization;
+import org.kohsuke.github.GHRepository;
+import org.mockito.Mockito;
+
+import java.util.Date;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.io.IOException;
+
+public class sonnet35_run01_TakeSnapshotTaskTest {
+
+    private TakeSnapshotTask takeSnapshotTask;
+    private GitHub mockGitHub;
+    private GHOrganization mockOrganization;
+    private Scorer mockScorer;
+
+    @Before
+    public void initTest() throws Exception {
+        mockGitHub = Mockito.mock(GitHub.class);
+        mockOrganization = Mockito.mock(GHOrganization.class);
+        mockScorer = Mockito.mock(Scorer.class);
+
+        Mockito.when(mockGitHub.getOrganization(Mockito.anyString())).thenReturn(mockOrganization);
+
+        takeSnapshotTask = new TakeSnapshotTask(mockGitHub, "testOrg", mockScorer, new Date());
+    }
+
+    @Test
+    public void testCall() throws Exception {
+        Mockito.when(mockOrganization.listRepositories()).thenReturn(new ArrayList<GHRepository>());
+        Mockito.when(mockOrganization.listMembers()).thenReturn(new ArrayList<>());
+        Mockito.when(mockOrganization.listTeams()).thenReturn(new ArrayList<>());
+
+        Snapshot snapshot = takeSnapshotTask.call();
+
+        assertNotNull(snapshot);
+        assertNotNull(snapshot.getStatistics());
+        assertNotNull(snapshot.getProjects());
+        assertNotNull(snapshot.getContributors());
+        assertNotNull(snapshot.getLanguages());
+    }
+
+    @Test
+    public void testCollectStatistics() throws Exception {
+        Mockito.when(mockOrganization.listRepositories()).thenReturn(new ArrayList<GHRepository>());
+        Mockito.when(mockOrganization.listMembers()).thenReturn(new ArrayList<>());
+        Mockito.when(mockOrganization.listTeams()).thenReturn(new ArrayList<>());
+
+        Statistics statistics = takeSnapshotTask.collectStatistics(mockOrganization);
+
+        assertNotNull(statistics);
+        assertEquals(0, statistics.getPublicProjectCount());
+        assertEquals(0, statistics.getMembersCount());
+        assertEquals(0, statistics.getTeamsCount());
+    }
+
+    @Test
+    public void testCollectProjects() throws Exception {
+        GHRepository mockRepo = Mockito.mock(GHRepository.class);
+        Mockito.when(mockOrganization.listRepositories()).thenReturn(new ArrayList<GHRepository>() {{ add(mockRepo); }});
+        Mockito.when(mockRepo.getName()).thenReturn("testRepo");
+        Mockito.when(mockRepo.getDescription()).thenReturn("Test Description");
+        Mockito.when(mockRepo.getStargazersCount()).thenReturn(10);
+        Mockito.when(mockRepo.getForksCount()).thenReturn(5);
+        Mockito.when(mockRepo.getPushedAt()).thenReturn(new Date());
+        Mockito.when(mockRepo.getLanguage()).thenReturn("Java");
+        Mockito.when(mockRepo.listLanguages()).thenReturn(new HashMap<>());
+
+        Collection<Project> projects = takeSnapshotTask.collectProjects(mockOrganization);
+
+        assertNotNull(projects);
+        assertEquals(1, projects.size());
+        Project project = projects.iterator().next();
+        assertEquals("testRepo", project.getName());
+        assertEquals("Test Description", project.getDescription());
+        assertEquals(10, project.getStarsCount());
+        assertEquals(5, project.getForksCount());
+        assertEquals("Java", project.getPrimaryLanguage());
+    }
+
+    @Test
+    public void testCollectContributors() throws Exception {
+        GHRepository mockRepo = Mockito.mock(GHRepository.class);
+        GHRepository.Contributor mockContributor = Mockito.mock(GHRepository.Contributor.class);
+        Mockito.when(mockOrganization.listRepositories()).thenReturn(new ArrayList<GHRepository>() {{ add(mockRepo); }});
+        Mockito.when(mockRepo.listContributors()).thenReturn(new ArrayList<GHRepository.Contributor>() {{ add(mockContributor); }});
+        Mockito.when(mockContributor.getId()).thenReturn(1);
+        Mockito.when(mockContributor.getName()).thenReturn("testContributor");
+        Mockito.when(mockContributor.getContributions()).thenReturn(10);
+
+        Collection<Contributor> contributors = takeSnapshotTask.collectContributors(mockOrganization);
+
+        assertNotNull(contributors);
+        assertEquals(1, contributors.size());
+        Contributor contributor = contributors.iterator().next();
+        assertEquals("testContributor", contributor.getName());
+        assertEquals(10, contributor.getOrganizationalCommitsCount());
+    }
+
+    @Test
+    public void testCollectLanguages() throws Exception {
+        GHRepository mockRepo = Mockito.mock(GHRepository.class);
+        Map<String, Long> languages = new HashMap<>();
+        languages.put("Java", 1000L);
+        languages.put("Python", 500L);
+        Mockito.when(mockOrganization.listRepositories()).thenReturn(new ArrayList<GHRepository>() {{ add(mockRepo); }});
+        Mockito.when(mockRepo.listLanguages()).thenReturn(languages);
+
+        Collection<Language> collectedLanguages = takeSnapshotTask.collectLanguages(mockOrganization);
+
+        assertNotNull(collectedLanguages);
+        assertEquals(2, collectedLanguages.size());
+        for (Language lang : collectedLanguages) {
+            if (lang.getName().equals("Java")) {
+                assertEquals(66, lang.getPercentage());
+            } else if (lang.getName().equals("Python")) {
+                assertEquals(33, lang.getPercentage());
+            } else {
+                fail("Unexpected language: " + lang.getName());
+            }
+        }
+    }
+
+    @Test
+    public void testGetProjectMaintainers() throws Exception {
+        GHRepository mockRepo = Mockito.mock(GHRepository.class);
+        Mockito.when(mockRepo.getFileContent("MAINTAINERS")).thenReturn("maintainer1\nmaintainer2");
+
+        List<String> maintainers = takeSnapshotTask.getProjectMaintainers(mockRepo);
+
+        assertNotNull(maintainers);
+        assertEquals(2, maintainers.size());
+        assertTrue(maintainers.contains("maintainer1"));
+        assertTrue(maintainers.contains("maintainer2"));
+    }
+
+    @Test
+    public void testReadCatwatchYaml() throws Exception {
+        GHRepository mockRepo = Mockito.mock(GHRepository.class);
+        Project project = new Project();
+        Mockito.when(mockRepo.getFileContent(".catwatch.yaml")).thenReturn("title: Test Title\nimage: test.jpg");
+
+        takeSnapshotTask.readCatwatchYaml(mockRepo, project);
+
+        assertEquals("Test Title", project.getTitle());
+        assertEquals("test.jpg", project.getImage());
+    }
+
+    @Test(expected = IOException.class)
+    public void testReadCatwatchYamlWithIOException() throws Exception {
+        GHRepository mockRepo = Mockito.mock(GHRepository.class);
+        Project project = new Project();
+        Mockito.when(mockRepo.getFileContent(".catwatch.yaml")).thenThrow(new IOException());
+
+        takeSnapshotTask.readCatwatchYaml(mockRepo, project);
+    }
+}
+
+*****

@@ -1,0 +1,12 @@
+Line: 69
+Expected status code <201> but was <406>.
+----------------------------------------
+Line: 177
+Expected status code <201> but was <406>.
+----------------------------------------
+Line: 102
+Expected status code <201> but was <406>.
+----------------------------------------
+Line: 143
+Expected status code <201> but was <406>.
+----------------------------------------

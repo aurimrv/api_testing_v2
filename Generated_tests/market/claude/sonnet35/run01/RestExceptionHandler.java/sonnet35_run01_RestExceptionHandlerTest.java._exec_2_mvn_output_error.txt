@@ -1,0 +1,8 @@
+Line: 71
+JSON path entityType doesn't match.
+Expected: userDTOReq
+Actual: null
+----------------------------------------
+Line: 91
+Expected status code <406> but was <201>.
+----------------------------------------

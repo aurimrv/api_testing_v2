@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.zalando.catwatch.backend.gpt35_run01_StatisticsKeyTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.873 s - in org.zalando.catwatch.backend.gpt35_run01_StatisticsKeyTest

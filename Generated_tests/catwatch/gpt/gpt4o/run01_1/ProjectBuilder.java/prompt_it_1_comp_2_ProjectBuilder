@@ -1,0 +1,372 @@
+You are a highly skilled test engineer specializing in debugging and resolving compilation errors and test failures in Java-based projects. Your expertise includes Java 8, JUnit 4, and REST Assured, allowing you to diagnose issues efficiently and provide precise, actionable fixes.
+
+Do fix the compilation errors delimited by ##### given the code below delimited by *****.
+
+The response must contain only Java code in JUnit 4 format.
+
+#####
+[[1;31mERROR[m] COMPILATION ERROR : 
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_ProjectBuilderTest.java:[63,9] cannot find symbol
+  symbol:   class ProjectBuilder
+  location: class org.zalando.catwatch.backend.gpt4o_run01_ProjectBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_ProjectBuilderTest.java:[63,45] cannot find symbol
+  symbol:   class ProjectBuilder
+  location: class org.zalando.catwatch.backend.gpt4o_run01_ProjectBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_ProjectBuilderTest.java:[70,9] cannot find symbol
+  symbol:   class ProjectRepository
+  location: class org.zalando.catwatch.backend.gpt4o_run01_ProjectBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_ProjectBuilderTest.java:[71,9] cannot find symbol
+  symbol:   class ProjectBuilder
+  location: class org.zalando.catwatch.backend.gpt4o_run01_ProjectBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_ProjectBuilderTest.java:[71,45] cannot find symbol
+  symbol:   class ProjectBuilder
+  location: class org.zalando.catwatch.backend.gpt4o_run01_ProjectBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_ProjectBuilderTest.java:[78,9] cannot find symbol
+  symbol:   class ProjectRepository
+  location: class org.zalando.catwatch.backend.gpt4o_run01_ProjectBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_ProjectBuilderTest.java:[79,9] cannot find symbol
+  symbol:   class ProjectBuilder
+  location: class org.zalando.catwatch.backend.gpt4o_run01_ProjectBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_ProjectBuilderTest.java:[79,45] cannot find symbol
+  symbol:   class ProjectBuilder
+  location: class org.zalando.catwatch.backend.gpt4o_run01_ProjectBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_ProjectBuilderTest.java:[92,9] cannot find symbol
+  symbol:   class Project
+  location: class org.zalando.catwatch.backend.gpt4o_run01_ProjectBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_ProjectBuilderTest.java:[101,9] cannot find symbol
+  symbol:   class ProjectBuilder
+  location: class org.zalando.catwatch.backend.gpt4o_run01_ProjectBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_ProjectBuilderTest.java:[101,45] cannot find symbol
+  symbol:   class ProjectBuilder
+  location: class org.zalando.catwatch.backend.gpt4o_run01_ProjectBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_ProjectBuilderTest.java:[103,9] cannot find symbol
+  symbol:   class Project
+  location: class org.zalando.catwatch.backend.gpt4o_run01_ProjectBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_ProjectBuilderTest.java:[109,9] cannot find symbol
+  symbol:   class ProjectBuilder
+  location: class org.zalando.catwatch.backend.gpt4o_run01_ProjectBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_ProjectBuilderTest.java:[109,45] cannot find symbol
+  symbol:   class ProjectBuilder
+  location: class org.zalando.catwatch.backend.gpt4o_run01_ProjectBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_ProjectBuilderTest.java:[111,9] cannot find symbol
+  symbol:   class Project
+  location: class org.zalando.catwatch.backend.gpt4o_run01_ProjectBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_ProjectBuilderTest.java:[117,9] cannot find symbol
+  symbol:   class ProjectBuilder
+  location: class org.zalando.catwatch.backend.gpt4o_run01_ProjectBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_ProjectBuilderTest.java:[117,45] cannot find symbol
+  symbol:   class ProjectBuilder
+  location: class org.zalando.catwatch.backend.gpt4o_run01_ProjectBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_ProjectBuilderTest.java:[119,9] cannot find symbol
+  symbol:   class Project
+  location: class org.zalando.catwatch.backend.gpt4o_run01_ProjectBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_ProjectBuilderTest.java:[125,9] cannot find symbol
+  symbol:   class ProjectBuilder
+  location: class org.zalando.catwatch.backend.gpt4o_run01_ProjectBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_ProjectBuilderTest.java:[125,45] cannot find symbol
+  symbol:   class ProjectBuilder
+  location: class org.zalando.catwatch.backend.gpt4o_run01_ProjectBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_ProjectBuilderTest.java:[127,9] cannot find symbol
+  symbol:   class Project
+  location: class org.zalando.catwatch.backend.gpt4o_run01_ProjectBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_ProjectBuilderTest.java:[133,9] cannot find symbol
+  symbol:   class ProjectBuilder
+  location: class org.zalando.catwatch.backend.gpt4o_run01_ProjectBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_ProjectBuilderTest.java:[133,45] cannot find symbol
+  symbol:   class ProjectBuilder
+  location: class org.zalando.catwatch.backend.gpt4o_run01_ProjectBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_ProjectBuilderTest.java:[136,9] cannot find symbol
+  symbol:   class Project
+  location: class org.zalando.catwatch.backend.gpt4o_run01_ProjectBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_ProjectBuilderTest.java:[142,9] cannot find symbol
+  symbol:   class ProjectBuilder
+  location: class org.zalando.catwatch.backend.gpt4o_run01_ProjectBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_ProjectBuilderTest.java:[142,45] cannot find symbol
+  symbol:   class ProjectBuilder
+  location: class org.zalando.catwatch.backend.gpt4o_run01_ProjectBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_ProjectBuilderTest.java:[143,9] cannot find symbol
+  symbol:   class Project
+  location: class org.zalando.catwatch.backend.gpt4o_run01_ProjectBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_ProjectBuilderTest.java:[149,9] cannot find symbol
+  symbol:   class ProjectBuilder
+  location: class org.zalando.catwatch.backend.gpt4o_run01_ProjectBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_ProjectBuilderTest.java:[149,45] cannot find symbol
+  symbol:   class ProjectBuilder
+  location: class org.zalando.catwatch.backend.gpt4o_run01_ProjectBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_ProjectBuilderTest.java:[150,9] cannot find symbol
+  symbol:   class Project
+  location: class org.zalando.catwatch.backend.gpt4o_run01_ProjectBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_ProjectBuilderTest.java:[156,9] cannot find symbol
+  symbol:   class ProjectBuilder
+  location: class org.zalando.catwatch.backend.gpt4o_run01_ProjectBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_ProjectBuilderTest.java:[156,45] cannot find symbol
+  symbol:   class ProjectBuilder
+  location: class org.zalando.catwatch.backend.gpt4o_run01_ProjectBuilderTest
+[[1;31mERROR[m] Failed to execute goal [32morg.apache.maven.plugins:maven-compiler-plugin:3.8.0:testCompile[m [1m(default-testCompile)[m on project [36mcatwatch-backend[m: [1;31mCompilation failure[m: Compilation failure: 
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_ProjectBuilderTest.java:[63,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class ProjectBuilder
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_ProjectBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_ProjectBuilderTest.java:[63,45] cannot find symbol
+[[1;31mERROR[m]   symbol:   class ProjectBuilder
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_ProjectBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_ProjectBuilderTest.java:[70,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class ProjectRepository
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_ProjectBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_ProjectBuilderTest.java:[71,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class ProjectBuilder
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_ProjectBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_ProjectBuilderTest.java:[71,45] cannot find symbol
+[[1;31mERROR[m]   symbol:   class ProjectBuilder
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_ProjectBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_ProjectBuilderTest.java:[78,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class ProjectRepository
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_ProjectBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_ProjectBuilderTest.java:[79,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class ProjectBuilder
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_ProjectBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_ProjectBuilderTest.java:[79,45] cannot find symbol
+[[1;31mERROR[m]   symbol:   class ProjectBuilder
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_ProjectBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_ProjectBuilderTest.java:[92,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Project
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_ProjectBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_ProjectBuilderTest.java:[101,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class ProjectBuilder
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_ProjectBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_ProjectBuilderTest.java:[101,45] cannot find symbol
+[[1;31mERROR[m]   symbol:   class ProjectBuilder
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_ProjectBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_ProjectBuilderTest.java:[103,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Project
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_ProjectBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_ProjectBuilderTest.java:[109,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class ProjectBuilder
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_ProjectBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_ProjectBuilderTest.java:[109,45] cannot find symbol
+[[1;31mERROR[m]   symbol:   class ProjectBuilder
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_ProjectBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_ProjectBuilderTest.java:[111,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Project
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_ProjectBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_ProjectBuilderTest.java:[117,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class ProjectBuilder
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_ProjectBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_ProjectBuilderTest.java:[117,45] cannot find symbol
+[[1;31mERROR[m]   symbol:   class ProjectBuilder
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_ProjectBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_ProjectBuilderTest.java:[119,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Project
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_ProjectBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_ProjectBuilderTest.java:[125,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class ProjectBuilder
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_ProjectBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_ProjectBuilderTest.java:[125,45] cannot find symbol
+[[1;31mERROR[m]   symbol:   class ProjectBuilder
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_ProjectBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_ProjectBuilderTest.java:[127,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Project
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_ProjectBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_ProjectBuilderTest.java:[133,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class ProjectBuilder
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_ProjectBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_ProjectBuilderTest.java:[133,45] cannot find symbol
+[[1;31mERROR[m]   symbol:   class ProjectBuilder
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_ProjectBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_ProjectBuilderTest.java:[136,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Project
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_ProjectBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_ProjectBuilderTest.java:[142,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class ProjectBuilder
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_ProjectBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_ProjectBuilderTest.java:[142,45] cannot find symbol
+[[1;31mERROR[m]   symbol:   class ProjectBuilder
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_ProjectBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_ProjectBuilderTest.java:[143,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Project
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_ProjectBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_ProjectBuilderTest.java:[149,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class ProjectBuilder
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_ProjectBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_ProjectBuilderTest.java:[149,45] cannot find symbol
+[[1;31mERROR[m]   symbol:   class ProjectBuilder
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_ProjectBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_ProjectBuilderTest.java:[150,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Project
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_ProjectBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_ProjectBuilderTest.java:[156,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class ProjectBuilder
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_ProjectBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_ProjectBuilderTest.java:[156,45] cannot find symbol
+[[1;31mERROR[m]   symbol:   class ProjectBuilder
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_ProjectBuilderTest
+[[1;31mERROR[m] -> [1m[Help 1][m
+[[1;31mERROR[m] 
+[[1;31mERROR[m] To see the full stack trace of the errors, re-run Maven with the [1m-e[m switch.
+[[1;31mERROR[m] Re-run Maven using the [1m-X[m switch to enable full debug logging.
+[[1;31mERROR[m] 
+[[1;31mERROR[m] For more information about the errors and possible solutions, please read the following articles:
+[[1;31mERROR[m] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+
+#####
+*****
+
+package org.zalando.catwatch.backend;
+
+import org.junit.AfterClass;
+import org.junit.BeforeClass;
+import org.junit.Before;
+import org.junit.Test;
+import static org.junit.Assert.*;
+import java.util.Map;
+import java.util.List;
+import static org.evomaster.client.java.controller.api.EMTestUtils.*;
+import org.evomaster.client.java.controller.SutHandler;
+import io.restassured.RestAssured;
+import static io.restassured.RestAssured.given;
+import io.restassured.response.ValidatableResponse;
+import static org.evomaster.client.java.sql.dsl.SqlDsl.sql;
+import org.evomaster.client.java.controller.api.dto.database.operations.InsertionResultsDto;
+import org.evomaster.client.java.controller.api.dto.database.operations.InsertionDto;
+import static org.hamcrest.Matchers.*;
+import io.restassured.config.JsonConfig;
+import io.restassured.path.json.config.JsonPathConfig;
+import static io.restassured.config.RedirectConfig.redirectConfig;
+import static org.evomaster.client.java.controller.contentMatchers.NumberMatcher.*;
+import static org.evomaster.client.java.controller.contentMatchers.StringMatcher.*;
+import static org.evomaster.client.java.controller.contentMatchers.SubStringMatcher.*;
+import static org.evomaster.client.java.controller.expect.ExpectationHandler.expectationHandler;
+import org.evomaster.client.java.controller.expect.ExpectationHandler;
+import io.restassured.path.json.JsonPath;
+import java.util.Arrays;
+
+public class gpt4o_run01_ProjectBuilderTest {
+
+    private static final SutHandler controller = new em.embedded.org.zalando.EmbeddedEvoMasterController();
+    private static String baseUrlOfSut;
+
+    @BeforeClass
+    public static void initClass() {
+        controller.setupForGeneratedTest();
+        baseUrlOfSut = controller.startSut();
+        controller.registerOrExecuteInitSqlCommandsIfNeeded();
+        assertNotNull(baseUrlOfSut);
+        RestAssured.enableLoggingOfRequestAndResponseIfValidationFails();
+        RestAssured.useRelaxedHTTPSValidation();
+        RestAssured.urlEncodingEnabled = false;
+        RestAssured.config = RestAssured.config()
+            .jsonConfig(JsonConfig.jsonConfig().numberReturnType(JsonPathConfig.NumberReturnType.DOUBLE))
+            .redirect(redirectConfig().followRedirects(false));
+    }
+
+    @AfterClass
+    public static void tearDown() {
+        controller.stopSut();
+    }
+
+    @Before
+    public void initTest() {
+        controller.resetDatabase(Arrays.asList("CONTRIBUTOR"));
+        controller.resetStateOfSUT();
+    }
+
+    @Test
+    public void testConstructorWithNoArgs() {
+        ProjectBuilder projectBuilder = new ProjectBuilder();
+        assertNotNull(projectBuilder);
+        assertNotNull(projectBuilder.getProject());
+    }
+
+    @Test
+    public void testConstructorWithRepository() {
+        ProjectRepository mockRepo = null; // Pass null or a mocked repo
+        ProjectBuilder projectBuilder = new ProjectBuilder(mockRepo);
+        assertNotNull(projectBuilder);
+        assertNotNull(projectBuilder.getProject());
+    }
+
+    @Test
+    public void testFullConstructor() {
+        ProjectRepository mockRepo = null; // Pass null or a mocked repo
+        ProjectBuilder projectBuilder = new ProjectBuilder(
+            mockRepo,
+            new java.util.Date(),
+            12345L,
+            "Test Project",
+            "Java",
+            10,
+            20,
+            5,
+            3,
+            50,
+            2
+        );
+        Project project = projectBuilder.getProject();
+        assertNotNull(project);
+        assertEquals("Test Project", project.getName());
+        assertEquals("Java", project.getPrimaryLanguage());
+        assertEquals(12345L, project.getGitHubProjectId().longValue());
+    }
+
+    @Test
+    public void testDaysMethod() {
+        ProjectBuilder projectBuilder = new ProjectBuilder();
+        projectBuilder.days(5);
+        Project project = projectBuilder.getProject();
+        assertNotNull(project.getSnapshotDate());
+    }
+
+    @Test
+    public void testExternalContributorsCount() {
+        ProjectBuilder projectBuilder = new ProjectBuilder();
+        projectBuilder.externalContributorsCount(10);
+        Project project = projectBuilder.getProject();
+        assertEquals(10, project.getContributorsCount().intValue());
+    }
+
+    @Test
+    public void testDescriptionMethod() {
+        ProjectBuilder projectBuilder = new ProjectBuilder();
+        projectBuilder.description("A sample project description");
+        Project project = projectBuilder.getProject();
+        assertEquals("A sample project description", project.getDescription());
+    }
+
+    @Test
+    public void testLastPushedMethod() {
+        ProjectBuilder projectBuilder = new ProjectBuilder();
+        projectBuilder.lastPushed("2021-11-01");
+        Project project = projectBuilder.getProject();
+        assertEquals("2021-11-01", project.getLastPushed());
+    }
+
+    @Test
+    public void testLanguagesMethod() {
+        ProjectBuilder projectBuilder = new ProjectBuilder();
+        List<String> languages = Arrays.asList("Java", "Python", "JavaScript");
+        projectBuilder.languages(languages);
+        Project project = projectBuilder.getProject();
+        assertEquals(languages, project.getLanguageList());
+    }
+
+    @Test
+    public void testGetProject() {
+        ProjectBuilder projectBuilder = new ProjectBuilder();
+        Project project = projectBuilder.getProject();
+        assertNotNull(project);
+    }
+
+    @Test
+    public void testCreateMethod() {
+        ProjectBuilder projectBuilder = new ProjectBuilder();
+        Project project = projectBuilder.create();
+        assertNotNull(project.getUrl()); // Ensures updateUrl() was called during create()
+    }
+
+    @Test(expected = NullPointerException.class)
+    public void testSaveWithNullRepository() {
+        ProjectBuilder projectBuilder = new ProjectBuilder(null);
+        projectBuilder.save(); // Should throw NullPointerException due to null repository
+    }
+}
+
+*****

@@ -1,0 +1,204 @@
+You are a highly skilled test engineer specializing in debugging and resolving compilation errors and test failures in Java-based projects. Your expertise includes Java 8, JUnit 4, and REST Assured, allowing you to diagnose issues efficiently and provide precise, actionable fixes.
+
+Do fix the compilation errors delimited by ##### given the code below delimited by *****.
+
+The response must contain only Java code in JUnit 4 format.
+
+#####
+[[1;31mERROR[m] COMPILATION ERROR : 
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_FetcherTest.java:[45,13] cannot find symbol
+  symbol:   class Fetcher
+  location: class org.zalando.catwatch.backend.sonnet35_run01_FetcherTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_FetcherTest.java:[105,22] cannot find symbol
+  symbol:   class CrawlerRetryException
+  location: class org.zalando.catwatch.backend.sonnet35_run01_FetcherTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_FetcherTest.java:[112,22] cannot find symbol
+  symbol:   class CrawlerRetryException
+  location: class org.zalando.catwatch.backend.sonnet35_run01_FetcherTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_FetcherTest.java:[121,22] cannot find symbol
+  symbol:   class CrawlerRetryException
+  location: class org.zalando.catwatch.backend.sonnet35_run01_FetcherTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_FetcherTest.java:[80,23] cannot find symbol
+  symbol:   class Fetcher
+  location: class org.zalando.catwatch.backend.sonnet35_run01_FetcherTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_FetcherTest.java:[100,63] reference to save is ambiguous
+  both method <S>save(S) in org.springframework.data.repository.CrudRepository and method <S>save(java.lang.Iterable<S>) in org.springframework.data.repository.CrudRepository match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_FetcherTest.java:[101,60] reference to save is ambiguous
+  both method <S>save(S) in org.springframework.data.repository.CrudRepository and method <S>save(java.lang.Iterable<S>) in org.springframework.data.repository.CrudRepository match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_FetcherTest.java:[102,64] reference to save is ambiguous
+  both method <S>save(S) in org.springframework.data.repository.CrudRepository and method <S>save(java.lang.Iterable<S>) in org.springframework.data.repository.CrudRepository match
+[[1;31mERROR[m] Failed to execute goal [32morg.apache.maven.plugins:maven-compiler-plugin:3.8.0:testCompile[m [1m(default-testCompile)[m on project [36mcatwatch-backend[m: [1;31mCompilation failure[m: Compilation failure: 
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_FetcherTest.java:[45,13] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Fetcher
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_FetcherTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_FetcherTest.java:[105,22] cannot find symbol
+[[1;31mERROR[m]   symbol:   class CrawlerRetryException
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_FetcherTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_FetcherTest.java:[112,22] cannot find symbol
+[[1;31mERROR[m]   symbol:   class CrawlerRetryException
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_FetcherTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_FetcherTest.java:[121,22] cannot find symbol
+[[1;31mERROR[m]   symbol:   class CrawlerRetryException
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_FetcherTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_FetcherTest.java:[80,23] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Fetcher
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_FetcherTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_FetcherTest.java:[100,63] reference to save is ambiguous
+[[1;31mERROR[m]   both method <S>save(S) in org.springframework.data.repository.CrudRepository and method <S>save(java.lang.Iterable<S>) in org.springframework.data.repository.CrudRepository match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_FetcherTest.java:[101,60] reference to save is ambiguous
+[[1;31mERROR[m]   both method <S>save(S) in org.springframework.data.repository.CrudRepository and method <S>save(java.lang.Iterable<S>) in org.springframework.data.repository.CrudRepository match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_FetcherTest.java:[102,64] reference to save is ambiguous
+[[1;31mERROR[m]   both method <S>save(S) in org.springframework.data.repository.CrudRepository and method <S>save(java.lang.Iterable<S>) in org.springframework.data.repository.CrudRepository match
+[[1;31mERROR[m] -> [1m[Help 1][m
+[[1;31mERROR[m] 
+[[1;31mERROR[m] To see the full stack trace of the errors, re-run Maven with the [1m-e[m switch.
+[[1;31mERROR[m] Re-run Maven using the [1m-X[m switch to enable full debug logging.
+[[1;31mERROR[m] 
+[[1;31mERROR[m] For more information about the errors and possible solutions, please read the following articles:
+[[1;31mERROR[m] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+
+#####
+*****
+package org.zalando.catwatch.backend;
+
+import org.junit.AfterClass;
+import org.junit.BeforeClass;
+import org.junit.Before;
+import org.junit.Test;
+import static org.junit.Assert.*;
+import java.util.Map;
+import java.util.List;
+import static org.evomaster.client.java.controller.api.EMTestUtils.*;
+import org.evomaster.client.java.controller.SutHandler;
+import io.restassured.RestAssured;
+import static io.restassured.RestAssured.given;
+import io.restassured.response.ValidatableResponse;
+import static org.evomaster.client.java.sql.dsl.SqlDsl.sql;
+import org.evomaster.client.java.controller.api.dto.database.operations.InsertionResultsDto;
+import org.evomaster.client.java.controller.api.dto.database.operations.InsertionDto;
+import static org.hamcrest.Matchers.*;
+import io.restassured.config.JsonConfig;
+import io.restassured.path.json.config.JsonPathConfig;
+import static io.restassured.config.RedirectConfig.redirectConfig;
+import static org.evomaster.client.java.controller.contentMatchers.NumberMatcher.*;
+import static org.evomaster.client.java.controller.contentMatchers.StringMatcher.*;
+import static org.evomaster.client.java.controller.contentMatchers.SubStringMatcher.*;
+import static org.evomaster.client.java.controller.expect.ExpectationHandler.expectationHandler;
+import org.evomaster.client.java.controller.expect.ExpectationHandler;
+import io.restassured.path.json.JsonPath;
+import java.util.Arrays;
+import org.mockito.Mockito;
+import org.zalando.catwatch.backend.github.Snapshot;
+import org.zalando.catwatch.backend.github.SnapshotProvider;
+import org.zalando.catwatch.backend.repo.ContributorRepository;
+import org.zalando.catwatch.backend.repo.ProjectRepository;
+import org.zalando.catwatch.backend.repo.StatisticsRepository;
+import java.util.Date;
+import java.util.concurrent.Future;
+import java.io.IOException;
+import java.util.concurrent.ExecutionException;
+
+public class sonnet35_run01_FetcherTest {
+
+    private static final SutHandler controller = new em.embedded.org.zalando.EmbeddedEvoMasterController();
+    private static String baseUrlOfSut;
+
+    private Fetcher fetcher;
+    private ProjectRepository projectRepository;
+    private StatisticsRepository statisticsRepository;
+    private ContributorRepository contributorRepository;
+    private SnapshotProvider snapshotProvider;
+
+    @BeforeClass
+    public static void initClass() {
+        controller.setupForGeneratedTest();
+        baseUrlOfSut = controller.startSut();
+        controller.registerOrExecuteInitSqlCommandsIfNeeded();
+        assertNotNull(baseUrlOfSut);
+        RestAssured.enableLoggingOfRequestAndResponseIfValidationFails();
+        RestAssured.useRelaxedHTTPSValidation();
+        RestAssured.urlEncodingEnabled = false;
+        RestAssured.config = RestAssured.config()
+            .jsonConfig(JsonConfig.jsonConfig().numberReturnType(JsonPathConfig.NumberReturnType.DOUBLE))
+            .redirect(redirectConfig().followRedirects(false));
+    }
+
+    @AfterClass
+    public static void tearDown() {
+        controller.stopSut();
+    }
+
+    @Before
+    public void initTest() {
+        controller.resetDatabase(Arrays.asList("CONTRIBUTOR"));
+        controller.resetStateOfSUT();
+
+        projectRepository = Mockito.mock(ProjectRepository.class);
+        statisticsRepository = Mockito.mock(StatisticsRepository.class);
+        contributorRepository = Mockito.mock(ContributorRepository.class);
+        snapshotProvider = Mockito.mock(SnapshotProvider.class);
+
+        fetcher = new Fetcher(projectRepository, statisticsRepository, contributorRepository, snapshotProvider, new String[]{"org1", "org2"});
+    }
+
+    @Test
+    public void testFetchDataSuccess() throws Exception {
+        Snapshot snapshot1 = Mockito.mock(Snapshot.class);
+        Snapshot snapshot2 = Mockito.mock(Snapshot.class);
+
+        Future<Snapshot> future1 = Mockito.mock(Future.class);
+        Future<Snapshot> future2 = Mockito.mock(Future.class);
+
+        Mockito.when(snapshotProvider.takeSnapshot(Mockito.eq("org1"), Mockito.any(Date.class))).thenReturn(future1);
+        Mockito.when(snapshotProvider.takeSnapshot(Mockito.eq("org2"), Mockito.any(Date.class))).thenReturn(future2);
+
+        Mockito.when(future1.get()).thenReturn(snapshot1);
+        Mockito.when(future2.get()).thenReturn(snapshot2);
+
+        boolean result = fetcher.fetchData();
+
+        assertTrue(result);
+        Mockito.verify(statisticsRepository, Mockito.times(2)).save(Mockito.any());
+        Mockito.verify(projectRepository, Mockito.times(2)).save(Mockito.any());
+        Mockito.verify(contributorRepository, Mockito.times(2)).save(Mockito.any());
+    }
+
+    @Test(expected = CrawlerRetryException.class)
+    public void testFetchDataIOException() throws Exception {
+        Mockito.when(snapshotProvider.takeSnapshot(Mockito.anyString(), Mockito.any(Date.class))).thenThrow(new IOException());
+
+        fetcher.fetchData();
+    }
+
+    @Test(expected = CrawlerRetryException.class)
+    public void testFetchDataInterruptedException() throws Exception {
+        Future<Snapshot> future = Mockito.mock(Future.class);
+        Mockito.when(snapshotProvider.takeSnapshot(Mockito.anyString(), Mockito.any(Date.class))).thenReturn(future);
+        Mockito.when(future.get()).thenThrow(new InterruptedException());
+
+        fetcher.fetchData();
+    }
+
+    @Test(expected = CrawlerRetryException.class)
+    public void testFetchDataExecutionException() throws Exception {
+        Future<Snapshot> future = Mockito.mock(Future.class);
+        Mockito.when(snapshotProvider.takeSnapshot(Mockito.anyString(), Mockito.any(Date.class))).thenReturn(future);
+        Mockito.when(future.get()).thenThrow(new ExecutionException(new RuntimeException()));
+
+        fetcher.fetchData();
+    }
+
+    @Test
+    public void testGetIpAndMacAddress() throws Exception {
+        String result = fetcher.getIpAndMacAddress();
+        assertNotNull(result);
+        assertTrue(result.contains("#") || result.equals("unknownAddress"));
+    }
+
+    @Test
+    public void testConstructor() {
+        assertNotNull(fetcher);
+    }
+}
+
+*****

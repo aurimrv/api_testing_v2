@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.restncs.sonnet35_run01_BessjTest
+-------------------------------------------------------------------------------
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.871 s - in org.restncs.sonnet35_run01_BessjTest

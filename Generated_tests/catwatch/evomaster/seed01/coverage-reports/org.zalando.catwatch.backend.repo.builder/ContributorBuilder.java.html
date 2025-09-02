@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="pt"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>ContributorBuilder.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">catwatch-backend</a> &gt; <a href="index.source.html" class="el_package">org.zalando.catwatch.backend.repo.builder</a> &gt; <span class="el_source">ContributorBuilder.java</span></div><h1>ContributorBuilder.java</h1><pre class="source lang-java linenums">package org.zalando.catwatch.backend.repo.builder;
+
+import org.zalando.catwatch.backend.model.Contributor;
+import org.zalando.catwatch.backend.repo.ContributorRepository;
+
+import java.time.Instant;
+import java.util.Date;
+import java.util.UUID;
+
+import static java.time.Instant.now;
+import static java.time.temporal.ChronoUnit.DAYS;
+import static org.zalando.catwatch.backend.repo.builder.BuilderUtil.*;
+
+public class ContributorBuilder {
+
+<span class="nc" id="L16">    private static Instant now = now();</span>
+
+    private Contributor contributor;
+
+    private ContributorRepository contributorRepository;
+
+    public ContributorBuilder() {
+<span class="nc" id="L23">        this(null);</span>
+<span class="nc" id="L24">    }</span>
+
+<span class="nc" id="L26">    public ContributorBuilder(ContributorRepository contributorRepository) {</span>
+<span class="nc" id="L27">        this.contributorRepository = contributorRepository;</span>
+<span class="nc" id="L28">        contributor = new Contributor(freshId(), freshId(), randomDate());</span>
+<span class="nc" id="L29">        contributor.setName(&quot;&quot; + UUID.randomUUID());</span>
+<span class="nc" id="L30">        contributor.setUrl(&quot;https://github.com/&quot; + contributor.getName());</span>
+<span class="nc" id="L31">        contributor.setOrganizationName(&quot;&quot; + UUID.randomUUID());</span>
+<span class="nc" id="L32">        contributor.setOrganizationalCommitsCount(50 + random(1, 40));</span>
+<span class="nc" id="L33">        contributor.setOrganizationalProjectsCount(5 + random(1, 4));</span>
+<span class="nc" id="L34">        contributor.setPersonalCommitsCount(random(1, 40));</span>
+<span class="nc" id="L35">        contributor.setPersonalProjectsCount(random(1, 4));</span>
+<span class="nc" id="L36">    }</span>
+
+    public ContributorBuilder id(long id) {
+<span class="nc" id="L39">        contributor.getKey().setId(id);</span>
+<span class="nc" id="L40">        return this;</span>
+    }
+
+    public ContributorBuilder url(String url) {
+<span class="nc" id="L44">        contributor.setUrl(url);</span>
+<span class="nc" id="L45">        return this;</span>
+    }
+
+    public ContributorBuilder name(String name) {
+<span class="nc" id="L49">        contributor.setName(name);</span>
+<span class="nc" id="L50">        return this;</span>
+    }
+
+    public ContributorBuilder days(int numDaysBeforeNow) {
+<span class="nc" id="L54">        contributor.getKey().setSnapshotDate(Date.from(now.minus(numDaysBeforeNow, DAYS)));</span>
+<span class="nc" id="L55">        return this;</span>
+    }
+
+    public ContributorBuilder organizationName(String organizationName) {
+<span class="nc" id="L59">        contributor.setOrganizationName(organizationName);</span>
+<span class="nc" id="L60">        return this;</span>
+    }
+
+    public ContributorBuilder organizationId(long organizationId) {
+<span class="nc" id="L64">        contributor.getKey().setOrganizationId(organizationId);</span>
+<span class="nc" id="L65">        return this;</span>
+    }
+
+    public ContributorBuilder orgCommits(Integer organizationalCommitsCount) {
+<span class="nc" id="L69">        contributor.setOrganizationalCommitsCount(organizationalCommitsCount);</span>
+<span class="nc" id="L70">        return this;</span>
+    }
+
+    public ContributorBuilder orgProjects(Integer organizationalProjectsCount) {
+<span class="nc" id="L74">        contributor.setOrganizationalProjectsCount(organizationalProjectsCount);</span>
+<span class="nc" id="L75">        return this;</span>
+    }
+
+    public ContributorBuilder persProjects(Integer personalProjectsCount) {
+<span class="nc" id="L79">        contributor.setPersonalProjectsCount(personalProjectsCount);</span>
+<span class="nc" id="L80">        return this;</span>
+    }
+
+    public ContributorBuilder persCommits(Integer personalCommitsCount) {
+<span class="nc" id="L84">        contributor.setPersonalCommitsCount(personalCommitsCount);</span>
+<span class="nc" id="L85">        return this;</span>
+    }
+
+    public ContributorBuilder snapshotDate(final Date snapshotDate) {
+<span class="nc" id="L89">        contributor.getKey().setSnapshotDate(snapshotDate);</span>
+<span class="nc" id="L90">        return this;</span>
+    }
+
+    public Contributor create() {
+<span class="nc" id="L94">        Contributor c = new Contributor(contributor.getId(), contributor.getOrganizationId(),</span>
+<span class="nc" id="L95">                contributor.getSnapshotDate());</span>
+<span class="nc" id="L96">        c.setName(contributor.getName());</span>
+<span class="nc" id="L97">        c.setUrl(contributor.getUrl());</span>
+<span class="nc" id="L98">        c.setOrganizationName(contributor.getOrganizationName());</span>
+<span class="nc" id="L99">        c.setOrganizationalCommitsCount(contributor.getOrganizationalCommitsCount());</span>
+<span class="nc" id="L100">        c.setOrganizationalProjectsCount(contributor.getOrganizationalProjectsCount());</span>
+<span class="nc" id="L101">        c.setPersonalCommitsCount(contributor.getPersonalCommitsCount());</span>
+<span class="nc" id="L102">        c.setPersonalProjectsCount(contributor.getPersonalProjectsCount());</span>
+<span class="nc" id="L103">        return c;</span>
+    }
+
+    public Contributor save() {
+<span class="nc" id="L107">        return contributorRepository.save(create());</span>
+    }
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

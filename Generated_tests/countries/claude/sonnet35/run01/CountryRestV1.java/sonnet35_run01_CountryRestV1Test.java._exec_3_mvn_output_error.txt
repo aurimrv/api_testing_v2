@@ -1,0 +1,33 @@
+Line: 227
+Expected status code <405> but was <404>.
+----------------------------------------
+Line: 62
+Expected status code <200> but was <404>.
+----------------------------------------
+Line: 89
+Expected status code <200> but was <404>.
+----------------------------------------
+Line: 152
+Expected status code <200> but was <404>.
+----------------------------------------
+Line: 167
+Expected status code <200> but was <404>.
+----------------------------------------
+Line: 110
+Expected status code <200> but was <404>.
+----------------------------------------
+Line: 212
+Expected status code <200> but was <404>.
+----------------------------------------
+Line: 131
+Expected status code <200> but was <404>.
+----------------------------------------
+Line: 182
+Expected status code <200> but was <404>.
+----------------------------------------
+Line: 236
+Expected status code <400> but was <404>.
+----------------------------------------
+Line: 195
+URISyntax Illegal ch...
+----------------------------------------

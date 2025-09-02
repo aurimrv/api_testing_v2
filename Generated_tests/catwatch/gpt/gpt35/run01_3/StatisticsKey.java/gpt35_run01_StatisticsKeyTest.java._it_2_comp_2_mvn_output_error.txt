@@ -1,0 +1,24 @@
+[[1;31mERROR[m] COMPILATION ERROR : 
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StatisticsKeyTest.java:[67,9] no suitable constructor found for QStatisticsKey(no arguments)
+    constructor org.zalando.catwatch.backend.model.QStatisticsKey.QStatisticsKey(java.lang.String) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor org.zalando.catwatch.backend.model.QStatisticsKey.QStatisticsKey(com.mysema.query.types.Path<? extends org.zalando.catwatch.backend.model.StatisticsKey>) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor org.zalando.catwatch.backend.model.QStatisticsKey.QStatisticsKey(com.mysema.query.types.PathMetadata<?>) is not applicable
+      (actual and formal argument lists differ in length)
+[[1;31mERROR[m] Failed to execute goal [32morg.apache.maven.plugins:maven-compiler-plugin:3.8.0:testCompile[m [1m(default-testCompile)[m on project [36mcatwatch-backend[m: [1;31mCompilation failure[m
+[[1;31mERROR[m] [1;31m/media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StatisticsKeyTest.java:[67,9] no suitable constructor found for QStatisticsKey(no arguments)[m
+[[1;31mERROR[m] [1;31m    constructor org.zalando.catwatch.backend.model.QStatisticsKey.QStatisticsKey(java.lang.String) is not applicable[m
+[[1;31mERROR[m] [1;31m      (actual and formal argument lists differ in length)[m
+[[1;31mERROR[m] [1;31m    constructor org.zalando.catwatch.backend.model.QStatisticsKey.QStatisticsKey(com.mysema.query.types.Path<? extends org.zalando.catwatch.backend.model.StatisticsKey>) is not applicable[m
+[[1;31mERROR[m] [1;31m      (actual and formal argument lists differ in length)[m
+[[1;31mERROR[m] [1;31m    constructor org.zalando.catwatch.backend.model.QStatisticsKey.QStatisticsKey(com.mysema.query.types.PathMetadata<?>) is not applicable[m
+[[1;31mERROR[m] [1;31m      (actual and formal argument lists differ in length)[m
+[[1;31mERROR[m] [1;31m[m
+[[1;31mERROR[m] -> [1m[Help 1][m
+[[1;31mERROR[m] 
+[[1;31mERROR[m] To see the full stack trace of the errors, re-run Maven with the [1m-e[m switch.
+[[1;31mERROR[m] Re-run Maven using the [1m-X[m switch to enable full debug logging.
+[[1;31mERROR[m] 
+[[1;31mERROR[m] For more information about the errors and possible solutions, please read the following articles:
+[[1;31mERROR[m] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

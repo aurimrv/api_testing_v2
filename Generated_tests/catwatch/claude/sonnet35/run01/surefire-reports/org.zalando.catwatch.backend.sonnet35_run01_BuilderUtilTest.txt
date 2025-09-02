@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: org.zalando.catwatch.backend.sonnet35_run01_BuilderUtilTest
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 1.673 s <<< FAILURE! - in org.zalando.catwatch.backend.sonnet35_run01_BuilderUtilTest
+testRandomProjectNameExceptionHandling(org.zalando.catwatch.backend.sonnet35_run01_BuilderUtilTest)  Time elapsed: 0.002 s  <<< FAILURE!
+java.lang.AssertionError: Expected RuntimeException was not thrown
+	at org.zalando.catwatch.backend.sonnet35_run01_BuilderUtilTest.testRandomProjectNameExceptionHandling(sonnet35_run01_BuilderUtilTest.java:135)
+

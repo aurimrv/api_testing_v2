@@ -1,0 +1,478 @@
+You are a highly skilled test engineer specializing in debugging and resolving compilation errors and test failures in Java-based projects. Your expertise includes Java 8, JUnit 4, and REST Assured, allowing you to diagnose issues efficiently and provide precise, actionable fixes.
+
+Do fix the compilation errors delimited by ##### given the code below delimited by *****.
+
+The response must contain only Java code in JUnit 4 format.
+
+#####
+[[1;31mERROR[m] COMPILATION ERROR : 
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[44,17] cannot find symbol
+  symbol:   method setName(java.lang.String)
+  location: variable project1 of type Project
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[45,17] cannot find symbol
+  symbol:   method setOrganizationName(java.lang.String)
+  location: variable project1 of type Project
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[46,17] cannot find symbol
+  symbol:   method setUrl(java.lang.String)
+  location: variable project1 of type Project
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[47,17] cannot find symbol
+  symbol:   method setDescription(java.lang.String)
+  location: variable project1 of type Project
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[48,17] cannot find symbol
+  symbol:   method setPrimaryLanguage(java.lang.String)
+  location: variable project1 of type Project
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[49,17] cannot find symbol
+  symbol:   method setCommitsCount(int)
+  location: variable project1 of type Project
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[50,17] cannot find symbol
+  symbol:   method setForksCount(int)
+  location: variable project1 of type Project
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[51,17] cannot find symbol
+  symbol:   method setContributorsCount(int)
+  location: variable project1 of type Project
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[52,17] cannot find symbol
+  symbol:   method setScore(int)
+  location: variable project1 of type Project
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[53,17] cannot find symbol
+  symbol:   method setSnapshotDate(java.util.Date)
+  location: variable project1 of type Project
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[56,17] cannot find symbol
+  symbol:   method setName(java.lang.String)
+  location: variable project2 of type Project
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[57,17] cannot find symbol
+  symbol:   method setOrganizationName(java.lang.String)
+  location: variable project2 of type Project
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[58,17] cannot find symbol
+  symbol:   method setUrl(java.lang.String)
+  location: variable project2 of type Project
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[59,17] cannot find symbol
+  symbol:   method setDescription(java.lang.String)
+  location: variable project2 of type Project
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[60,17] cannot find symbol
+  symbol:   method setPrimaryLanguage(java.lang.String)
+  location: variable project2 of type Project
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[61,17] cannot find symbol
+  symbol:   method setCommitsCount(int)
+  location: variable project2 of type Project
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[62,17] cannot find symbol
+  symbol:   method setForksCount(int)
+  location: variable project2 of type Project
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[63,17] cannot find symbol
+  symbol:   method setContributorsCount(int)
+  location: variable project2 of type Project
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[64,17] cannot find symbol
+  symbol:   method setScore(int)
+  location: variable project2 of type Project
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[65,17] cannot find symbol
+  symbol:   method setSnapshotDate(java.util.Date)
+  location: variable project2 of type Project
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[70,37] constructor ProjectStats in class ProjectStats cannot be applied to given types;
+  required: no arguments
+  found: java.util.List<Project>
+  reason: actual and formal argument lists differ in length
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[72,47] cannot find symbol
+  symbol:   method getName()
+  location: variable projectStats of type ProjectStats
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[73,43] cannot find symbol
+  symbol:   method getOrganizationName()
+  location: variable projectStats of type ProjectStats
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[74,58] cannot find symbol
+  symbol:   method getUrl()
+  location: variable projectStats of type ProjectStats
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[75,51] cannot find symbol
+  symbol:   method getDescription()
+  location: variable projectStats of type ProjectStats
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[76,42] cannot find symbol
+  symbol:   method getPrimaryLanguage()
+  location: variable projectStats of type ProjectStats
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[77,62] cannot find symbol
+  symbol:   method getCommitCounts()
+  location: variable projectStats of type ProjectStats
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[78,60] cannot find symbol
+  symbol:   method getForkCounts()
+  location: variable projectStats of type ProjectStats
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[79,60] cannot find symbol
+  symbol:   method getContributorsCounts()
+  location: variable projectStats of type ProjectStats
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[80,60] cannot find symbol
+  symbol:   method getScores()
+  location: variable projectStats of type ProjectStats
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[81,37] cannot find symbol
+  symbol:   method getSnapshotDates()
+  location: variable projectStats of type ProjectStats
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[88,17] cannot find symbol
+  symbol:   method setName(java.lang.String)
+  location: variable project1 of type Project
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[89,17] cannot find symbol
+  symbol:   method setOrganizationName(java.lang.String)
+  location: variable project1 of type Project
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[90,17] cannot find symbol
+  symbol:   method setUrl(java.lang.String)
+  location: variable project1 of type Project
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[91,17] cannot find symbol
+  symbol:   method setDescription(java.lang.String)
+  location: variable project1 of type Project
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[92,17] cannot find symbol
+  symbol:   method setPrimaryLanguage(java.lang.String)
+  location: variable project1 of type Project
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[93,17] cannot find symbol
+  symbol:   method setCommitsCount(int)
+  location: variable project1 of type Project
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[94,17] cannot find symbol
+  symbol:   method setForksCount(int)
+  location: variable project1 of type Project
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[95,17] cannot find symbol
+  symbol:   method setContributorsCount(int)
+  location: variable project1 of type Project
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[96,17] cannot find symbol
+  symbol:   method setScore(int)
+  location: variable project1 of type Project
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[97,17] cannot find symbol
+  symbol:   method setSnapshotDate(java.util.Date)
+  location: variable project1 of type Project
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[100,37] constructor ProjectStats in class ProjectStats cannot be applied to given types;
+  required: no arguments
+  found: java.util.List<Project>
+  reason: actual and formal argument lists differ in length
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[102,109] cannot find symbol
+  symbol:   method getSnapshotDate()
+  location: variable project1 of type Project
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[103,47] cannot find symbol
+  symbol:   method getName()
+  location: variable projectStats of type ProjectStats
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[104,43] cannot find symbol
+  symbol:   method getOrganizationName()
+  location: variable projectStats of type ProjectStats
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[105,58] cannot find symbol
+  symbol:   method getUrl()
+  location: variable projectStats of type ProjectStats
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[106,51] cannot find symbol
+  symbol:   method getDescription()
+  location: variable projectStats of type ProjectStats
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[107,42] cannot find symbol
+  symbol:   method getPrimaryLanguage()
+  location: variable projectStats of type ProjectStats
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[109,50] cannot find symbol
+  symbol:   method getCommitCounts()
+  location: variable projectStats of type ProjectStats
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[113,48] cannot find symbol
+  symbol:   method getForkCounts()
+  location: variable projectStats of type ProjectStats
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[117,56] cannot find symbol
+  symbol:   method getContributorsCounts()
+  location: variable projectStats of type ProjectStats
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[121,44] cannot find symbol
+  symbol:   method getScores()
+  location: variable projectStats of type ProjectStats
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[125,48] cannot find symbol
+  symbol:   method getSnapshotDates()
+  location: variable projectStats of type ProjectStats
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[127,30] cannot find symbol
+  symbol:   method getSnapshotDate()
+  location: variable project1 of type Project
+[[1;31mERROR[m] Failed to execute goal [32morg.apache.maven.plugins:maven-compiler-plugin:3.8.0:testCompile[m [1m(default-testCompile)[m on project [36mcatwatch-backend[m: [1;31mCompilation failure[m: Compilation failure: 
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[44,17] cannot find symbol
+[[1;31mERROR[m]   symbol:   method setName(java.lang.String)
+[[1;31mERROR[m]   location: variable project1 of type Project
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[45,17] cannot find symbol
+[[1;31mERROR[m]   symbol:   method setOrganizationName(java.lang.String)
+[[1;31mERROR[m]   location: variable project1 of type Project
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[46,17] cannot find symbol
+[[1;31mERROR[m]   symbol:   method setUrl(java.lang.String)
+[[1;31mERROR[m]   location: variable project1 of type Project
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[47,17] cannot find symbol
+[[1;31mERROR[m]   symbol:   method setDescription(java.lang.String)
+[[1;31mERROR[m]   location: variable project1 of type Project
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[48,17] cannot find symbol
+[[1;31mERROR[m]   symbol:   method setPrimaryLanguage(java.lang.String)
+[[1;31mERROR[m]   location: variable project1 of type Project
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[49,17] cannot find symbol
+[[1;31mERROR[m]   symbol:   method setCommitsCount(int)
+[[1;31mERROR[m]   location: variable project1 of type Project
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[50,17] cannot find symbol
+[[1;31mERROR[m]   symbol:   method setForksCount(int)
+[[1;31mERROR[m]   location: variable project1 of type Project
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[51,17] cannot find symbol
+[[1;31mERROR[m]   symbol:   method setContributorsCount(int)
+[[1;31mERROR[m]   location: variable project1 of type Project
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[52,17] cannot find symbol
+[[1;31mERROR[m]   symbol:   method setScore(int)
+[[1;31mERROR[m]   location: variable project1 of type Project
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[53,17] cannot find symbol
+[[1;31mERROR[m]   symbol:   method setSnapshotDate(java.util.Date)
+[[1;31mERROR[m]   location: variable project1 of type Project
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[56,17] cannot find symbol
+[[1;31mERROR[m]   symbol:   method setName(java.lang.String)
+[[1;31mERROR[m]   location: variable project2 of type Project
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[57,17] cannot find symbol
+[[1;31mERROR[m]   symbol:   method setOrganizationName(java.lang.String)
+[[1;31mERROR[m]   location: variable project2 of type Project
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[58,17] cannot find symbol
+[[1;31mERROR[m]   symbol:   method setUrl(java.lang.String)
+[[1;31mERROR[m]   location: variable project2 of type Project
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[59,17] cannot find symbol
+[[1;31mERROR[m]   symbol:   method setDescription(java.lang.String)
+[[1;31mERROR[m]   location: variable project2 of type Project
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[60,17] cannot find symbol
+[[1;31mERROR[m]   symbol:   method setPrimaryLanguage(java.lang.String)
+[[1;31mERROR[m]   location: variable project2 of type Project
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[61,17] cannot find symbol
+[[1;31mERROR[m]   symbol:   method setCommitsCount(int)
+[[1;31mERROR[m]   location: variable project2 of type Project
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[62,17] cannot find symbol
+[[1;31mERROR[m]   symbol:   method setForksCount(int)
+[[1;31mERROR[m]   location: variable project2 of type Project
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[63,17] cannot find symbol
+[[1;31mERROR[m]   symbol:   method setContributorsCount(int)
+[[1;31mERROR[m]   location: variable project2 of type Project
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[64,17] cannot find symbol
+[[1;31mERROR[m]   symbol:   method setScore(int)
+[[1;31mERROR[m]   location: variable project2 of type Project
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[65,17] cannot find symbol
+[[1;31mERROR[m]   symbol:   method setSnapshotDate(java.util.Date)
+[[1;31mERROR[m]   location: variable project2 of type Project
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[70,37] constructor ProjectStats in class ProjectStats cannot be applied to given types;
+[[1;31mERROR[m]   required: no arguments
+[[1;31mERROR[m]   found: java.util.List<Project>
+[[1;31mERROR[m]   reason: actual and formal argument lists differ in length
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[72,47] cannot find symbol
+[[1;31mERROR[m]   symbol:   method getName()
+[[1;31mERROR[m]   location: variable projectStats of type ProjectStats
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[73,43] cannot find symbol
+[[1;31mERROR[m]   symbol:   method getOrganizationName()
+[[1;31mERROR[m]   location: variable projectStats of type ProjectStats
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[74,58] cannot find symbol
+[[1;31mERROR[m]   symbol:   method getUrl()
+[[1;31mERROR[m]   location: variable projectStats of type ProjectStats
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[75,51] cannot find symbol
+[[1;31mERROR[m]   symbol:   method getDescription()
+[[1;31mERROR[m]   location: variable projectStats of type ProjectStats
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[76,42] cannot find symbol
+[[1;31mERROR[m]   symbol:   method getPrimaryLanguage()
+[[1;31mERROR[m]   location: variable projectStats of type ProjectStats
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[77,62] cannot find symbol
+[[1;31mERROR[m]   symbol:   method getCommitCounts()
+[[1;31mERROR[m]   location: variable projectStats of type ProjectStats
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[78,60] cannot find symbol
+[[1;31mERROR[m]   symbol:   method getForkCounts()
+[[1;31mERROR[m]   location: variable projectStats of type ProjectStats
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[79,60] cannot find symbol
+[[1;31mERROR[m]   symbol:   method getContributorsCounts()
+[[1;31mERROR[m]   location: variable projectStats of type ProjectStats
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[80,60] cannot find symbol
+[[1;31mERROR[m]   symbol:   method getScores()
+[[1;31mERROR[m]   location: variable projectStats of type ProjectStats
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[81,37] cannot find symbol
+[[1;31mERROR[m]   symbol:   method getSnapshotDates()
+[[1;31mERROR[m]   location: variable projectStats of type ProjectStats
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[88,17] cannot find symbol
+[[1;31mERROR[m]   symbol:   method setName(java.lang.String)
+[[1;31mERROR[m]   location: variable project1 of type Project
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[89,17] cannot find symbol
+[[1;31mERROR[m]   symbol:   method setOrganizationName(java.lang.String)
+[[1;31mERROR[m]   location: variable project1 of type Project
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[90,17] cannot find symbol
+[[1;31mERROR[m]   symbol:   method setUrl(java.lang.String)
+[[1;31mERROR[m]   location: variable project1 of type Project
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[91,17] cannot find symbol
+[[1;31mERROR[m]   symbol:   method setDescription(java.lang.String)
+[[1;31mERROR[m]   location: variable project1 of type Project
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[92,17] cannot find symbol
+[[1;31mERROR[m]   symbol:   method setPrimaryLanguage(java.lang.String)
+[[1;31mERROR[m]   location: variable project1 of type Project
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[93,17] cannot find symbol
+[[1;31mERROR[m]   symbol:   method setCommitsCount(int)
+[[1;31mERROR[m]   location: variable project1 of type Project
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[94,17] cannot find symbol
+[[1;31mERROR[m]   symbol:   method setForksCount(int)
+[[1;31mERROR[m]   location: variable project1 of type Project
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[95,17] cannot find symbol
+[[1;31mERROR[m]   symbol:   method setContributorsCount(int)
+[[1;31mERROR[m]   location: variable project1 of type Project
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[96,17] cannot find symbol
+[[1;31mERROR[m]   symbol:   method setScore(int)
+[[1;31mERROR[m]   location: variable project1 of type Project
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[97,17] cannot find symbol
+[[1;31mERROR[m]   symbol:   method setSnapshotDate(java.util.Date)
+[[1;31mERROR[m]   location: variable project1 of type Project
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[100,37] constructor ProjectStats in class ProjectStats cannot be applied to given types;
+[[1;31mERROR[m]   required: no arguments
+[[1;31mERROR[m]   found: java.util.List<Project>
+[[1;31mERROR[m]   reason: actual and formal argument lists differ in length
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[102,109] cannot find symbol
+[[1;31mERROR[m]   symbol:   method getSnapshotDate()
+[[1;31mERROR[m]   location: variable project1 of type Project
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[103,47] cannot find symbol
+[[1;31mERROR[m]   symbol:   method getName()
+[[1;31mERROR[m]   location: variable projectStats of type ProjectStats
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[104,43] cannot find symbol
+[[1;31mERROR[m]   symbol:   method getOrganizationName()
+[[1;31mERROR[m]   location: variable projectStats of type ProjectStats
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[105,58] cannot find symbol
+[[1;31mERROR[m]   symbol:   method getUrl()
+[[1;31mERROR[m]   location: variable projectStats of type ProjectStats
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[106,51] cannot find symbol
+[[1;31mERROR[m]   symbol:   method getDescription()
+[[1;31mERROR[m]   location: variable projectStats of type ProjectStats
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[107,42] cannot find symbol
+[[1;31mERROR[m]   symbol:   method getPrimaryLanguage()
+[[1;31mERROR[m]   location: variable projectStats of type ProjectStats
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[109,50] cannot find symbol
+[[1;31mERROR[m]   symbol:   method getCommitCounts()
+[[1;31mERROR[m]   location: variable projectStats of type ProjectStats
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[113,48] cannot find symbol
+[[1;31mERROR[m]   symbol:   method getForkCounts()
+[[1;31mERROR[m]   location: variable projectStats of type ProjectStats
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[117,56] cannot find symbol
+[[1;31mERROR[m]   symbol:   method getContributorsCounts()
+[[1;31mERROR[m]   location: variable projectStats of type ProjectStats
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[121,44] cannot find symbol
+[[1;31mERROR[m]   symbol:   method getScores()
+[[1;31mERROR[m]   location: variable projectStats of type ProjectStats
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[125,48] cannot find symbol
+[[1;31mERROR[m]   symbol:   method getSnapshotDates()
+[[1;31mERROR[m]   location: variable projectStats of type ProjectStats
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[127,30] cannot find symbol
+[[1;31mERROR[m]   symbol:   method getSnapshotDate()
+[[1;31mERROR[m]   location: variable project1 of type Project
+[[1;31mERROR[m] -> [1m[Help 1][m
+[[1;31mERROR[m] 
+[[1;31mERROR[m] To see the full stack trace of the errors, re-run Maven with the [1m-e[m switch.
+[[1;31mERROR[m] Re-run Maven using the [1m-X[m switch to enable full debug logging.
+[[1;31mERROR[m] 
+[[1;31mERROR[m] For more information about the errors and possible solutions, please read the following articles:
+[[1;31mERROR[m] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+
+#####
+*****
+
+import org.junit.Test;
+import static org.junit.Assert.*;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+
+class Project {
+    private String name;
+    private String organizationName;
+    private String url;
+    private String description;
+    private String primaryLanguage;
+    private int commitsCount;
+    private int forksCount;
+    private int contributorsCount;
+    private int score;
+    private Date snapshotDate;
+
+    // Getters and Setters
+}
+
+class ProjectStats {
+    private String name;
+    private String organizationName;
+    private String url;
+    private String description;
+    private String primaryLanguage;
+    private List<Integer> commitCounts;
+    private List<Integer> forkCounts;
+    private List<Integer> contributorsCounts;
+    private List<Integer> scores;
+    private List<Date> snapshotDates;
+
+    // Constructor and methods
+}
+
+public class gpt35_run01_ProjectStatsTest {
+
+    @Test
+    public void testProjectStatsConstructor() {
+        List<Project> projects = new ArrayList<>();
+        Project project1 = new Project();
+        project1.setName("Project 1");
+        project1.setOrganizationName("Org 1");
+        project1.setUrl("https://project1.com");
+        project1.setDescription("Description 1");
+        project1.setPrimaryLanguage("Java");
+        project1.setCommitsCount(10);
+        project1.setForksCount(5);
+        project1.setContributorsCount(3);
+        project1.setScore(8);
+        project1.setSnapshotDate(new Date());
+
+        Project project2 = new Project();
+        project2.setName("Project 1");
+        project2.setOrganizationName("Org 1");
+        project2.setUrl("https://project1.com");
+        project2.setDescription("Description 1");
+        project2.setPrimaryLanguage("Java");
+        project2.setCommitsCount(15);
+        project2.setForksCount(7);
+        project2.setContributorsCount(4);
+        project2.setScore(9);
+        project2.setSnapshotDate(new Date());
+
+        projects.add(project1);
+        projects.add(project2);
+
+        ProjectStats projectStats = new ProjectStats(projects);
+
+        assertEquals("Project 1", projectStats.getName());
+        assertEquals("Org 1", projectStats.getOrganizationName());
+        assertEquals("https://project1.com", projectStats.getUrl());
+        assertEquals("Description 1", projectStats.getDescription());
+        assertEquals("Java", projectStats.getPrimaryLanguage());
+        assertArrayEquals(new Integer[]{10, 15}, projectStats.getCommitCounts().toArray());
+        assertArrayEquals(new Integer[]{5, 7}, projectStats.getForkCounts().toArray());
+        assertArrayEquals(new Integer[]{3, 4}, projectStats.getContributorsCounts().toArray());
+        assertArrayEquals(new Integer[]{8, 9}, projectStats.getScores().toArray());
+        assertEquals(2, projectStats.getSnapshotDates().size());
+    }
+
+    @Test
+    public void testProjectStatsMethods() {
+        List<Project> projects = new ArrayList<>();
+        Project project1 = new Project();
+        project1.setName("Project 1");
+        project1.setOrganizationName("Org 1");
+        project1.setUrl("https://project1.com");
+        project1.setDescription("Description 1");
+        project1.setPrimaryLanguage("Java");
+        project1.setCommitsCount(10);
+        project1.setForksCount(5);
+        project1.setContributorsCount(3);
+        project1.setScore(8);
+        project1.setSnapshotDate(new Date());
+        projects.add(project1);
+
+        ProjectStats projectStats = new ProjectStats(projects);
+
+        assertEquals("ProjectStats(Project 1, commitCounts=[10], forkCounts=[5], snapshotDates=[" + project1.getSnapshotDate() + "])", projectStats.toString());
+        assertEquals("Project 1", projectStats.getName());
+        assertEquals("Org 1", projectStats.getOrganizationName());
+        assertEquals("https://project1.com", projectStats.getUrl());
+        assertEquals("Description 1", projectStats.getDescription());
+        assertEquals("Java", projectStats.getPrimaryLanguage());
+
+        List<Integer> commitCounts = projectStats.getCommitCounts();
+        assertEquals(1, commitCounts.size());
+        assertEquals(10, (int) commitCounts.get(0));
+
+        List<Integer> forkCounts = projectStats.getForkCounts();
+        assertEquals(1, forkCounts.size());
+        assertEquals(5, (int) forkCounts.get(0));
+
+        List<Integer> contributorsCounts = projectStats.getContributorsCounts();
+        assertEquals(1, contributorsCounts.size());
+        assertEquals(3, (int) contributorsCounts.get(0));
+
+        List<Integer> scores = projectStats.getScores();
+        assertEquals(1, scores.size());
+        assertEquals(8, (int) scores.get(0));
+
+        List<Date> snapshotDates = projectStats.getSnapshotDates();
+        assertEquals(1, snapshotDates.size());
+        assertEquals(project1.getSnapshotDate(), snapshotDates.get(0));
+    }
+}
+
+*****

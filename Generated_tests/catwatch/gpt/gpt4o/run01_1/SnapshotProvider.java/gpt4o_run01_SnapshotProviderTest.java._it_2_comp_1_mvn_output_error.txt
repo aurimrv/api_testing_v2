@@ -1,0 +1,375 @@
+[[1;31mERROR[m] COMPILATION ERROR : 
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[63,9] cannot find symbol
+  symbol:   class Scorer
+  location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[63,29] cannot find symbol
+  symbol:   class Scorer
+  location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[66,9] cannot find symbol
+  symbol:   class SnapshotProvider
+  location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[66,41] cannot find symbol
+  symbol:   class SnapshotProvider
+  location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[72,9] cannot find symbol
+  symbol:   class Scorer
+  location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[72,29] cannot find symbol
+  symbol:   class Scorer
+  location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[77,9] cannot find symbol
+  symbol:   class SnapshotProvider
+  location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[77,41] cannot find symbol
+  symbol:   class SnapshotProvider
+  location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[80,9] cannot find symbol
+  symbol:   class Future
+  location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[80,16] cannot find symbol
+  symbol:   class Snapshot
+  location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[80,81] cannot find symbol
+  symbol:   class Date
+  location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[86,9] cannot find symbol
+  symbol:   class Scorer
+  location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[86,29] cannot find symbol
+  symbol:   class Scorer
+  location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[90,9] cannot find symbol
+  symbol:   class SnapshotProvider
+  location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[90,41] cannot find symbol
+  symbol:   class SnapshotProvider
+  location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[93,9] cannot find symbol
+  symbol:   class Future
+  location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[93,16] cannot find symbol
+  symbol:   class Snapshot
+  location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[93,81] cannot find symbol
+  symbol:   class Date
+  location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[99,9] cannot find symbol
+  symbol:   class Scorer
+  location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[99,29] cannot find symbol
+  symbol:   class Scorer
+  location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[103,9] cannot find symbol
+  symbol:   class SnapshotProvider
+  location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[103,41] cannot find symbol
+  symbol:   class SnapshotProvider
+  location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[106,9] cannot find symbol
+  symbol:   class Future
+  location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[106,16] cannot find symbol
+  symbol:   class Snapshot
+  location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[106,81] cannot find symbol
+  symbol:   class Date
+  location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[112,9] cannot find symbol
+  symbol:   class Scorer
+  location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[112,29] cannot find symbol
+  symbol:   class Scorer
+  location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[116,31] cannot find symbol
+  symbol:   variable Paths
+  location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[116,9] cannot find symbol
+  symbol:   variable Files
+  location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[117,9] cannot find symbol
+  symbol:   class SnapshotProvider
+  location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[117,41] cannot find symbol
+  symbol:   class SnapshotProvider
+  location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[119,9] cannot find symbol
+  symbol:   class Optional
+  location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[119,18] cannot find symbol
+  symbol:   class File
+  location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[121,22] cannot find symbol
+  symbol:   variable Paths
+  location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[123,22] cannot find symbol
+  symbol:   variable Paths
+  location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[123,9] cannot find symbol
+  symbol:   variable Files
+  location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[128,9] cannot find symbol
+  symbol:   class Scorer
+  location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[128,29] cannot find symbol
+  symbol:   class Scorer
+  location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[132,9] cannot find symbol
+  symbol:   class Path
+  location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[132,43] cannot find symbol
+  symbol:   variable Paths
+  location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[132,21] cannot find symbol
+  symbol:   variable Files
+  location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[135,9] cannot find symbol
+  symbol:   class SnapshotProvider
+  location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[135,41] cannot find symbol
+  symbol:   class SnapshotProvider
+  location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[137,9] cannot find symbol
+  symbol:   class Optional
+  location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[137,18] cannot find symbol
+  symbol:   class File
+  location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[141,9] cannot find symbol
+  symbol:   variable Files
+  location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[146,9] cannot find symbol
+  symbol:   class Scorer
+  location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[146,29] cannot find symbol
+  symbol:   class Scorer
+  location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[150,9] cannot find symbol
+  symbol:   class SnapshotProvider
+  location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[150,41] cannot find symbol
+  symbol:   class SnapshotProvider
+  location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[152,9] cannot find symbol
+  symbol:   class Optional
+  location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[152,18] cannot find symbol
+  symbol:   class File
+  location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[154,22] cannot find symbol
+  symbol:   variable Paths
+  location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[156,22] cannot find symbol
+  symbol:   variable Paths
+  location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[156,9] cannot find symbol
+  symbol:   variable Files
+  location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[161,9] cannot find symbol
+  symbol:   class Scorer
+  location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[161,29] cannot find symbol
+  symbol:   class Scorer
+  location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[165,9] cannot find symbol
+  symbol:   class SnapshotProvider
+  location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[165,41] cannot find symbol
+  symbol:   class SnapshotProvider
+  location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[167,9] cannot find symbol
+  symbol:   class Optional
+  location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[167,18] cannot find symbol
+  symbol:   class File
+  location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] Failed to execute goal [32morg.apache.maven.plugins:maven-compiler-plugin:3.8.0:testCompile[m [1m(default-testCompile)[m on project [36mcatwatch-backend[m: [1;31mCompilation failure[m: Compilation failure: 
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[63,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Scorer
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[63,29] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Scorer
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[66,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class SnapshotProvider
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[66,41] cannot find symbol
+[[1;31mERROR[m]   symbol:   class SnapshotProvider
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[72,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Scorer
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[72,29] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Scorer
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[77,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class SnapshotProvider
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[77,41] cannot find symbol
+[[1;31mERROR[m]   symbol:   class SnapshotProvider
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[80,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Future
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[80,16] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Snapshot
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[80,81] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Date
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[86,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Scorer
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[86,29] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Scorer
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[90,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class SnapshotProvider
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[90,41] cannot find symbol
+[[1;31mERROR[m]   symbol:   class SnapshotProvider
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[93,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Future
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[93,16] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Snapshot
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[93,81] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Date
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[99,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Scorer
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[99,29] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Scorer
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[103,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class SnapshotProvider
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[103,41] cannot find symbol
+[[1;31mERROR[m]   symbol:   class SnapshotProvider
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[106,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Future
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[106,16] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Snapshot
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[106,81] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Date
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[112,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Scorer
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[112,29] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Scorer
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[116,31] cannot find symbol
+[[1;31mERROR[m]   symbol:   variable Paths
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[116,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   variable Files
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[117,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class SnapshotProvider
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[117,41] cannot find symbol
+[[1;31mERROR[m]   symbol:   class SnapshotProvider
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[119,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Optional
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[119,18] cannot find symbol
+[[1;31mERROR[m]   symbol:   class File
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[121,22] cannot find symbol
+[[1;31mERROR[m]   symbol:   variable Paths
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[123,22] cannot find symbol
+[[1;31mERROR[m]   symbol:   variable Paths
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[123,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   variable Files
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[128,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Scorer
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[128,29] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Scorer
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[132,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Path
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[132,43] cannot find symbol
+[[1;31mERROR[m]   symbol:   variable Paths
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[132,21] cannot find symbol
+[[1;31mERROR[m]   symbol:   variable Files
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[135,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class SnapshotProvider
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[135,41] cannot find symbol
+[[1;31mERROR[m]   symbol:   class SnapshotProvider
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[137,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Optional
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[137,18] cannot find symbol
+[[1;31mERROR[m]   symbol:   class File
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[141,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   variable Files
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[146,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Scorer
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[146,29] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Scorer
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[150,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class SnapshotProvider
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[150,41] cannot find symbol
+[[1;31mERROR[m]   symbol:   class SnapshotProvider
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[152,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Optional
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[152,18] cannot find symbol
+[[1;31mERROR[m]   symbol:   class File
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[154,22] cannot find symbol
+[[1;31mERROR[m]   symbol:   variable Paths
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[156,22] cannot find symbol
+[[1;31mERROR[m]   symbol:   variable Paths
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[156,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   variable Files
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[161,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Scorer
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[161,29] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Scorer
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[165,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class SnapshotProvider
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[165,41] cannot find symbol
+[[1;31mERROR[m]   symbol:   class SnapshotProvider
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[167,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Optional
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_SnapshotProviderTest.java:[167,18] cannot find symbol
+[[1;31mERROR[m]   symbol:   class File
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+[[1;31mERROR[m] -> [1m[Help 1][m
+[[1;31mERROR[m] 
+[[1;31mERROR[m] To see the full stack trace of the errors, re-run Maven with the [1m-e[m switch.
+[[1;31mERROR[m] Re-run Maven using the [1m-X[m switch to enable full debug logging.
+[[1;31mERROR[m] 
+[[1;31mERROR[m] For more information about the errors and possible solutions, please read the following articles:
+[[1;31mERROR[m] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

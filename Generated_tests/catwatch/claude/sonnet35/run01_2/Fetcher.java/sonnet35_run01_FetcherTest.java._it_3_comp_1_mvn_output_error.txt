@@ -1,0 +1,69 @@
+[[1;31mERROR[m] COMPILATION ERROR : 
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_FetcherTest.java:[107,22] cannot find symbol
+  symbol:   class CrawlerRetryException
+  location: class org.zalando.catwatch.backend.sonnet35_run01_FetcherTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_FetcherTest.java:[122,22] cannot find symbol
+  symbol:   class CrawlerRetryException
+  location: class org.zalando.catwatch.backend.sonnet35_run01_FetcherTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_FetcherTest.java:[102,63] reference to save is ambiguous
+  both method <S>save(S) in org.springframework.data.repository.CrudRepository and method <S>save(java.lang.Iterable<S>) in org.springframework.data.repository.CrudRepository match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_FetcherTest.java:[103,60] reference to save is ambiguous
+  both method <S>save(S) in org.springframework.data.repository.CrudRepository and method <S>save(java.lang.Iterable<S>) in org.springframework.data.repository.CrudRepository match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_FetcherTest.java:[104,64] reference to save is ambiguous
+  both method <S>save(S) in org.springframework.data.repository.CrudRepository and method <S>save(java.lang.Iterable<S>) in org.springframework.data.repository.CrudRepository match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_FetcherTest.java:[149,32] getIpAndMacAddress() has private access in org.zalando.catwatch.backend.scheduler.Fetcher
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_FetcherTest.java:[158,45] constructor RetryableFetcher in class org.zalando.catwatch.backend.scheduler.RetryableFetcher cannot be applied to given types;
+  required: org.zalando.catwatch.backend.scheduler.Fetcher,int,int,int,double,org.zalando.catwatch.backend.mail.MailSender
+  found: org.zalando.catwatch.backend.scheduler.Fetcher
+  reason: actual and formal argument lists differ in length
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_FetcherTest.java:[162,55] incompatible types: void cannot be converted to boolean
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_FetcherTest.java:[171,45] constructor RetryableFetcher in class org.zalando.catwatch.backend.scheduler.RetryableFetcher cannot be applied to given types;
+  required: org.zalando.catwatch.backend.scheduler.Fetcher,int,int,int,double,org.zalando.catwatch.backend.mail.MailSender
+  found: org.zalando.catwatch.backend.scheduler.Fetcher
+  reason: actual and formal argument lists differ in length
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_FetcherTest.java:[174,31] cannot find symbol
+  symbol:   class CrawlerRetryException
+  location: class org.zalando.catwatch.backend.sonnet35_run01_FetcherTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_FetcherTest.java:[177,55] incompatible types: void cannot be converted to boolean
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_FetcherTest.java:[186,45] constructor RetryableFetcher in class org.zalando.catwatch.backend.scheduler.RetryableFetcher cannot be applied to given types;
+  required: org.zalando.catwatch.backend.scheduler.Fetcher,int,int,int,double,org.zalando.catwatch.backend.mail.MailSender
+  found: org.zalando.catwatch.backend.scheduler.Fetcher
+  reason: actual and formal argument lists differ in length
+[[1;31mERROR[m] Failed to execute goal [32morg.apache.maven.plugins:maven-compiler-plugin:3.8.0:testCompile[m [1m(default-testCompile)[m on project [36mcatwatch-backend[m: [1;31mCompilation failure[m: Compilation failure: 
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_FetcherTest.java:[107,22] cannot find symbol
+[[1;31mERROR[m]   symbol:   class CrawlerRetryException
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_FetcherTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_FetcherTest.java:[122,22] cannot find symbol
+[[1;31mERROR[m]   symbol:   class CrawlerRetryException
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_FetcherTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_FetcherTest.java:[102,63] reference to save is ambiguous
+[[1;31mERROR[m]   both method <S>save(S) in org.springframework.data.repository.CrudRepository and method <S>save(java.lang.Iterable<S>) in org.springframework.data.repository.CrudRepository match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_FetcherTest.java:[103,60] reference to save is ambiguous
+[[1;31mERROR[m]   both method <S>save(S) in org.springframework.data.repository.CrudRepository and method <S>save(java.lang.Iterable<S>) in org.springframework.data.repository.CrudRepository match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_FetcherTest.java:[104,64] reference to save is ambiguous
+[[1;31mERROR[m]   both method <S>save(S) in org.springframework.data.repository.CrudRepository and method <S>save(java.lang.Iterable<S>) in org.springframework.data.repository.CrudRepository match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_FetcherTest.java:[149,32] getIpAndMacAddress() has private access in org.zalando.catwatch.backend.scheduler.Fetcher
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_FetcherTest.java:[158,45] constructor RetryableFetcher in class org.zalando.catwatch.backend.scheduler.RetryableFetcher cannot be applied to given types;
+[[1;31mERROR[m]   required: org.zalando.catwatch.backend.scheduler.Fetcher,int,int,int,double,org.zalando.catwatch.backend.mail.MailSender
+[[1;31mERROR[m]   found: org.zalando.catwatch.backend.scheduler.Fetcher
+[[1;31mERROR[m]   reason: actual and formal argument lists differ in length
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_FetcherTest.java:[162,55] incompatible types: void cannot be converted to boolean
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_FetcherTest.java:[171,45] constructor RetryableFetcher in class org.zalando.catwatch.backend.scheduler.RetryableFetcher cannot be applied to given types;
+[[1;31mERROR[m]   required: org.zalando.catwatch.backend.scheduler.Fetcher,int,int,int,double,org.zalando.catwatch.backend.mail.MailSender
+[[1;31mERROR[m]   found: org.zalando.catwatch.backend.scheduler.Fetcher
+[[1;31mERROR[m]   reason: actual and formal argument lists differ in length
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_FetcherTest.java:[174,31] cannot find symbol
+[[1;31mERROR[m]   symbol:   class CrawlerRetryException
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_FetcherTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_FetcherTest.java:[177,55] incompatible types: void cannot be converted to boolean
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_FetcherTest.java:[186,45] constructor RetryableFetcher in class org.zalando.catwatch.backend.scheduler.RetryableFetcher cannot be applied to given types;
+[[1;31mERROR[m]   required: org.zalando.catwatch.backend.scheduler.Fetcher,int,int,int,double,org.zalando.catwatch.backend.mail.MailSender
+[[1;31mERROR[m]   found: org.zalando.catwatch.backend.scheduler.Fetcher
+[[1;31mERROR[m]   reason: actual and formal argument lists differ in length
+[[1;31mERROR[m] -> [1m[Help 1][m
+[[1;31mERROR[m] 
+[[1;31mERROR[m] To see the full stack trace of the errors, re-run Maven with the [1m-e[m switch.
+[[1;31mERROR[m] Re-run Maven using the [1m-X[m switch to enable full debug logging.
+[[1;31mERROR[m] 
+[[1;31mERROR[m] For more information about the errors and possible solutions, please read the following articles:
+[[1;31mERROR[m] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

@@ -1,0 +1,39 @@
+-------------------------------------------------------------------------------
+Test set: org.restscs.gpt35_run01_CalcTest
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 5, Errors: 0, Skipped: 0, Time elapsed: 0.85 s <<< FAILURE! - in org.restscs.gpt35_run01_CalcTest
+testCalcConstPi(org.restscs.gpt35_run01_CalcTest)  Time elapsed: 0.064 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <200> but was <404>.
+
+	at org.restscs.gpt35_run01_CalcTest.testCalcConstPi(gpt35_run01_CalcTest.java:64)
+
+testCalcUnarySqrt(org.restscs.gpt35_run01_CalcTest)  Time elapsed: 0.017 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <200> but was <404>.
+
+	at org.restscs.gpt35_run01_CalcTest.testCalcUnarySqrt(gpt35_run01_CalcTest.java:76)
+
+testCalcBinaryMultiply(org.restscs.gpt35_run01_CalcTest)  Time elapsed: 0.013 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <200> but was <404>.
+
+	at org.restscs.gpt35_run01_CalcTest.testCalcBinaryMultiply(gpt35_run01_CalcTest.java:88)
+
+testCalcBinaryDivide(org.restscs.gpt35_run01_CalcTest)  Time elapsed: 0.011 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <200> but was <404>.
+
+	at org.restscs.gpt35_run01_CalcTest.testCalcBinaryDivide(gpt35_run01_CalcTest.java:100)
+
+testCalcBinarySubtract(org.restscs.gpt35_run01_CalcTest)  Time elapsed: 0.015 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <200> but was <404>.
+
+	at org.restscs.gpt35_run01_CalcTest.testCalcBinarySubtract(gpt35_run01_CalcTest.java:112)
+

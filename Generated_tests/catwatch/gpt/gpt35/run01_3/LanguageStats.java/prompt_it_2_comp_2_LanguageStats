@@ -1,0 +1,205 @@
+You are a highly skilled test engineer specializing in debugging and resolving compilation errors and test failures in Java-based projects. Your expertise includes Java 8, JUnit 4, and REST Assured, allowing you to diagnose issues efficiently and provide precise, actionable fixes.
+
+Do fix the compilation errors delimited by ##### given the code below delimited by *****.
+
+The response must contain only Java code in JUnit 4 format.
+
+#####
+[[1;31mERROR[m] COMPILATION ERROR : 
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_LanguageStatsTest.java:[64,59] integer number too large: 1592623060000
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_LanguageStatsTest.java:[64,84] integer number too large: 1592623120000
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_LanguageStatsTest.java:[64,109] integer number too large: 1592623180000
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_LanguageStatsTest.java:[107,69] integer number too large: 1592622960000
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_LanguageStatsTest.java:[108,69] integer number too large: 1592680800000
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_LanguageStatsTest.java:[109,71] integer number too large: 1592622960000
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_LanguageStatsTest.java:[130,59] integer number too large: 1592623200000
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_LanguageStatsTest.java:[130,84] integer number too large: 1592623260000
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_LanguageStatsTest.java:[130,109] integer number too large: 1592623320000
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_LanguageStatsTest.java:[139,59] integer number too large: 1592623200000
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_LanguageStatsTest.java:[139,84] integer number too large: 1592623260000
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_LanguageStatsTest.java:[139,109] integer number too large: 1592623320000
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_LanguageStatsTest.java:[148,59] integer number too large: 1592623200000
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_LanguageStatsTest.java:[148,84] integer number too large: 1592623260000
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_LanguageStatsTest.java:[148,109] integer number too large: 1592623320000
+[[1;31mERROR[m] Failed to execute goal [32morg.apache.maven.plugins:maven-compiler-plugin:3.8.0:testCompile[m [1m(default-testCompile)[m on project [36mcatwatch-backend[m: [1;31mCompilation failure[m: Compilation failure: 
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_LanguageStatsTest.java:[64,59] integer number too large: 1592623060000
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_LanguageStatsTest.java:[64,84] integer number too large: 1592623120000
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_LanguageStatsTest.java:[64,109] integer number too large: 1592623180000
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_LanguageStatsTest.java:[107,69] integer number too large: 1592622960000
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_LanguageStatsTest.java:[108,69] integer number too large: 1592680800000
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_LanguageStatsTest.java:[109,71] integer number too large: 1592622960000
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_LanguageStatsTest.java:[130,59] integer number too large: 1592623200000
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_LanguageStatsTest.java:[130,84] integer number too large: 1592623260000
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_LanguageStatsTest.java:[130,109] integer number too large: 1592623320000
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_LanguageStatsTest.java:[139,59] integer number too large: 1592623200000
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_LanguageStatsTest.java:[139,84] integer number too large: 1592623260000
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_LanguageStatsTest.java:[139,109] integer number too large: 1592623320000
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_LanguageStatsTest.java:[148,59] integer number too large: 1592623200000
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_LanguageStatsTest.java:[148,84] integer number too large: 1592623260000
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_LanguageStatsTest.java:[148,109] integer number too large: 1592623320000
+[[1;31mERROR[m] -> [1m[Help 1][m
+[[1;31mERROR[m] 
+[[1;31mERROR[m] To see the full stack trace of the errors, re-run Maven with the [1m-e[m switch.
+[[1;31mERROR[m] Re-run Maven using the [1m-X[m switch to enable full debug logging.
+[[1;31mERROR[m] 
+[[1;31mERROR[m] For more information about the errors and possible solutions, please read the following articles:
+[[1;31mERROR[m] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+
+#####
+*****
+
+package org.zalando.catwatch.backend;
+
+import  org.junit.AfterClass;
+import  org.junit.BeforeClass;
+import  org.junit.Before;
+import  org.junit.Test;
+import static org.junit.Assert.*;
+import  java.util.Map;
+import  java.util.List;
+import static org.evomaster.client.java.controller.api.EMTestUtils.*;
+import  org.evomaster.client.java.controller.SutHandler;
+import  io.restassured.RestAssured;
+import static io.restassured.RestAssured.given;
+import  io.restassured.response.ValidatableResponse;
+import static org.evomaster.client.java.sql.dsl.SqlDsl.sql;
+import  org.evomaster.client.java.controller.api.dto.database.operations.InsertionResultsDto;
+import  org.evomaster.client.java.controller.api.dto.database.operations.InsertionDto;
+import static org.hamcrest.Matchers.*;
+import  io.restassured.config.JsonConfig;
+import  io.restassured.path.json.config.JsonPathConfig;
+import static io.restassured.config.RedirectConfig.redirectConfig;
+import static org.evomaster.client.java.controller.contentMatchers.NumberMatcher.*;
+import static org.evomaster.client.java.controller.contentMatchers.StringMatcher.*;
+import static org.evomaster.client.java.controller.contentMatchers.SubStringMatcher.*;
+import static org.evomaster.client.java.controller.expect.ExpectationHandler.expectationHandler;
+import  org.evomaster.client.java.controller.expect.ExpectationHandler;
+import  io.restassured.path.json.JsonPath;
+import  java.util.Arrays;
+
+public class gpt35_run01_LanguageStatsTest {
+
+    private static final SutHandler controller = new em.embedded.org.zalando.EmbeddedEvoMasterController();
+    private static String baseUrlOfSut;
+
+    @BeforeClass
+    public static void initClass() {
+        controller.setupForGeneratedTest();
+        baseUrlOfSut = controller.startSut();
+        controller.registerOrExecuteInitSqlCommandsIfNeeded();
+        assertNotNull(baseUrlOfSut);
+        RestAssured.enableLoggingOfRequestAndResponseIfValidationFails();
+        RestAssured.useRelaxedHTTPSValidation();
+        RestAssured.urlEncodingEnabled = false;
+        RestAssured.config = RestAssured.config()
+            .jsonConfig(JsonConfig.jsonConfig().numberReturnType(JsonPathConfig.NumberReturnType.DOUBLE))
+            .redirect(redirectConfig().followRedirects(false));
+    }
+
+    @AfterClass
+    public static void tearDown() {
+        controller.stopSut();
+    }
+
+    @Before
+    public void initTest() {
+        controller.resetDatabase(Arrays.asList("CONTRIBUTOR"));
+        controller.resetStateOfSUT();
+    }
+
+    @Test
+    public void testLanguageStatsConstructor() {
+        List<Integer> projectCounts = Arrays.asList(1, 2, 3);
+        List<Date> snapshotDates = Arrays.asList(new Date(1592623060000), new Date(1592623120000), new Date(1592623180000));
+
+        LanguageStats languageStats = new LanguageStats("Java", projectCounts, snapshotDates);
+
+        assertEquals("Java", languageStats.getLanguageName());
+        assertEquals(projectCounts, languageStats.getProjectCounts());
+        assertEquals(snapshotDates, languageStats.getSnapshotDates());
+    }
+
+    @Test
+    public void testBuildStats() {
+        // Prepare projects
+        Project project1 = new Project("Project1", "Java", new Date(), 5);
+        Project project2 = new Project("Project2", "Python", new Date(), 3);
+        Project project3 = new Project("Project3", "Java", new Date(), 4);
+        List<Project> projects = Arrays.asList(project1, project2, project3);
+
+        List<LanguageStats> stats = LanguageStats.buildStats(projects);
+
+        // Test size
+        assertEquals(2, stats.size());
+
+        // Test first language
+        LanguageStats javaStats = stats.get(0);
+        assertEquals("Java", javaStats.getLanguageName());
+        List<Integer> javaProjectCounts = javaStats.getProjectCounts();
+        List<Date> javaSnapshotDates = javaStats.getSnapshotDates();
+        assertEquals(3, javaProjectCounts.size());
+        assertEquals(Arrays.asList(1, 0, 1), javaProjectCounts);
+        assertEquals(Arrays.asList(project1.getSnapshotDate(), project2.getSnapshotDate(), project3.getSnapshotDate()), javaSnapshotDates);
+
+        // Test second language
+        LanguageStats pythonStats = stats.get(1);
+        assertEquals("Python", pythonStats.getLanguageName());
+        List<Integer> pythonProjectCounts = pythonStats.getProjectCounts();
+        List<Date> pythonSnapshotDates = pythonStats.getSnapshotDates();
+        assertEquals(3, pythonProjectCounts.size());
+        assertEquals(Arrays.asList(0, 1, 0), pythonProjectCounts);
+        assertEquals(Arrays.asList(project1.getSnapshotDate(), project2.getSnapshotDate(), project3.getSnapshotDate()), pythonSnapshotDates);
+    }
+
+    @Test
+    public void testFilterUniqueSnapshots() {
+        Project project1 = new Project("Project1", "Java", new Date(1592622960000), 5);
+        Project project2 = new Project("Project1", "Java", new Date(1592680800000), 5); // Same as project1 but different date
+        Project project3 = new Project("Project2", "Python", new Date(1592622960000), 3);
+        List<Project> projects = Arrays.asList(project1, project2, project3);
+
+        List<Project> filteredProjects = LanguageStats.filterUniqueSnapshots(projects);
+
+        // Test size
+        assertEquals(2, filteredProjects.size());
+
+        // Ensure project1 is still in the list
+        assertTrue(filteredProjects.contains(project1));
+
+        // Ensure project3 is still in the list
+        assertTrue(filteredProjects.contains(project3));
+
+        // Ensure project2 is not in the list (as it's a duplicate)
+        assertFalse(filteredProjects.contains(project2));
+    }
+
+    @Test
+    public void testGetLanguageName() {
+        List<Integer> projectCounts = Arrays.asList(1, 2, 3);
+        List<Date> snapshotDates = Arrays.asList(new Date(1592623200000), new Date(1592623260000), new Date(1592623320000));
+        LanguageStats languageStats = new LanguageStats("Java", projectCounts, snapshotDates);
+
+        assertEquals("Java", languageStats.getLanguageName());
+    }
+
+    @Test
+    public void testGetProjectCounts() {
+        List<Integer> projectCounts = Arrays.asList(1, 2, 3);
+        List<Date> snapshotDates = Arrays.asList(new Date(1592623200000), new Date(1592623260000), new Date(1592623320000));
+        LanguageStats languageStats = new LanguageStats("Java", projectCounts, snapshotDates);
+
+        assertEquals(projectCounts, languageStats.getProjectCounts());
+    }
+
+    @Test
+    public void testGetSnapshotDates() {
+        List<Integer> projectCounts = Arrays.asList(1, 2, 3);
+        List<Date> snapshotDates = Arrays.asList(new Date(1592623200000), new Date(1592623260000), new Date(1592623320000));
+        LanguageStats languageStats = new LanguageStats("Java", projectCounts, snapshotDates);
+
+        assertEquals(snapshotDates, languageStats.getSnapshotDates());
+    }
+}
+
+
+*****

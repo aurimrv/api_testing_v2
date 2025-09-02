@@ -1,0 +1,18 @@
+-------------------------------------------------------------------------------
+Test set: org.zalando.catwatch.backend.gpt4o_run01_DatabasePingTest
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 1.699 s <<< FAILURE! - in org.zalando.catwatch.backend.gpt4o_run01_DatabasePingTest
+testDatabasePingFailure(org.zalando.catwatch.backend.gpt4o_run01_DatabasePingTest)  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.AssertionError: 
+	at org.zalando.catwatch.backend.gpt4o_run01_DatabasePingTest.testDatabasePingFailure(gpt4o_run01_DatabasePingTest.java:95)
+
+testDatabasePingCachedValue(org.zalando.catwatch.backend.gpt4o_run01_DatabasePingTest)  Time elapsed: 0.002 s  <<< FAILURE!
+org.mockito.exceptions.verification.WantedButNotInvoked: 
+
+Wanted but not invoked:
+jdbcTemplate.execute("select 1;");
+-> at org.zalando.catwatch.backend.gpt4o_run01_DatabasePingTest.testDatabasePingCachedValue(gpt4o_run01_DatabasePingTest.java:118)
+Actually, there were zero interactions with this mock.
+
+	at org.zalando.catwatch.backend.gpt4o_run01_DatabasePingTest.testDatabasePingCachedValue(gpt4o_run01_DatabasePingTest.java:118)
+

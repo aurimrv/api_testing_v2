@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="pt"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>ContributorRepositoryImpl.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">catwatch-backend</a> &gt; <a href="index.source.html" class="el_package">org.zalando.catwatch.backend.repo</a> &gt; <span class="el_source">ContributorRepositoryImpl.java</span></div><h1>ContributorRepositoryImpl.java</h1><pre class="source lang-java linenums">package org.zalando.catwatch.backend.repo;
+
+import org.zalando.catwatch.backend.model.Contributor;
+import org.zalando.catwatch.backend.model.ContributorKey;
+
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
+import javax.persistence.criteria.CriteriaBuilder;
+import javax.persistence.criteria.CriteriaQuery;
+import javax.persistence.criteria.Path;
+import javax.persistence.criteria.Predicate;
+import javax.persistence.criteria.Root;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+
+import static com.google.common.base.Preconditions.checkNotNull;
+import static java.time.Instant.now;
+import static java.time.LocalDateTime.ofInstant;
+import static java.time.ZoneId.systemDefault;
+import static java.time.ZoneOffset.UTC;
+import static java.time.temporal.ChronoUnit.YEARS;
+import static java.util.Date.from;
+
+<span class="fc" id="L25">public class ContributorRepositoryImpl implements ContributorRepositoryCustom {</span>
+
+	@PersistenceContext
+	private EntityManager em;
+
+	@Override
+	public Long findOrganizationId(String organizationName) {
+
+<span class="fc" id="L33">		checkNotNull(organizationName, &quot;organizationName must not be null but was&quot;);</span>
+
+		@SuppressWarnings(&quot;unchecked&quot;)
+<span class="fc" id="L36">		List&lt;Long&gt; results = em</span>
+<span class="fc" id="L37">				.createQuery(&quot;select c.key.organizationId from Contributor c &quot; //</span>
+						+ &quot; where c.organizationName = :organizationName&quot;) //
+<span class="fc" id="L39">				.setParameter(&quot;organizationName&quot;, organizationName).setMaxResults(1) //</span>
+<span class="fc" id="L40">				.getResultList();</span>
+<span class="fc bfc" id="L41" title="All 2 branches covered.">		return results.size() &gt; 0 ? results.get(0) : -1L;</span>
+	}
+
+	@Override
+	public Date findPreviousSnapShotDate(Date snapshotDate) {
+
+<span class="fc bfc" id="L47" title="All 2 branches covered.">		if (snapshotDate == null) {</span>
+			// choose some date far away in the future
+<span class="fc" id="L49">			snapshotDate = from(ofInstant(now(), systemDefault()).plus(10, YEARS).toInstant(UTC));</span>
+		}
+
+		@SuppressWarnings(&quot;unchecked&quot;)
+<span class="fc" id="L53">		List&lt;Date&gt; results = em</span>
+<span class="fc" id="L54">				.createQuery(&quot;select c.key.snapshotDate from Contributor c &quot; //</span>
+						+ &quot; where c.key.snapshotDate &lt;= :date &quot; //
+						+ &quot; order by c.key.snapshotDate desc&quot;) //
+<span class="fc" id="L57">				.setParameter(&quot;date&quot;, snapshotDate).setMaxResults(1) //</span>
+<span class="fc" id="L58">				.getResultList();</span>
+
+<span class="fc bfc" id="L60" title="All 2 branches covered.">		return results.size() &gt; 0 ? results.get(0) : null;</span>
+	}
+
+	@Override
+	public List&lt;Contributor&gt; findAllTimeTopContributors(Long organizationId, Date snapshotDate, String namePrefix,
+			Integer offset, Integer limit) {
+
+<span class="nc" id="L67">		checkNotNull(snapshotDate, &quot;snapshot date must not be null but was&quot;);</span>
+
+<span class="nc" id="L69">		CriteriaBuilder cb = em.getCriteriaBuilder();</span>
+<span class="nc" id="L70">		CriteriaQuery&lt;Contributor&gt; cq = cb.createQuery(Contributor.class);</span>
+
+		// define &quot;from&quot; and joins
+<span class="nc" id="L73">		Root&lt;Contributor&gt; contributor = cq.from(Contributor.class);</span>
+<span class="nc" id="L74">		Path&lt;ContributorKey&gt; key = contributor.get(&quot;key&quot;);</span>
+
+		// define constraints
+<span class="nc" id="L77">		List&lt;Predicate&gt; andPredicates = new ArrayList&lt;&gt;();</span>
+		{
+<span class="nc bnc" id="L79" title="All 2 branches missed.">			if (organizationId != null) {</span>
+<span class="nc" id="L80">				andPredicates.add(cb.equal(key.get(&quot;organizationId&quot;), organizationId));</span>
+			}
+
+<span class="nc" id="L83">			andPredicates.add(cb.equal(key.&lt;Date&gt; get(&quot;snapshotDate&quot;), snapshotDate));</span>
+
+<span class="nc bnc" id="L85" title="All 2 branches missed.">			if (namePrefix != null) {</span>
+<span class="nc" id="L86">				andPredicates.add(cb.like(contributor.get(&quot;name&quot;), namePrefix.replace(&quot;%&quot;, &quot;[%]&quot;) + &quot;%&quot;));</span>
+			}
+		}
+
+<span class="nc" id="L90">		return em</span>
+<span class="nc bnc" id="L91" title="All 2 branches missed.">				.createQuery(cq //</span>
+<span class="nc" id="L92">						.select(contributor) //</span>
+<span class="nc" id="L93">						.where(andPredicates.toArray(new Predicate[andPredicates.size()])) //</span>
+<span class="nc" id="L94">						.orderBy(cb.desc(contributor.get(&quot;organizationalCommitsCount&quot;))))</span>
+<span class="nc bnc" id="L95" title="All 2 branches missed.">				.setFirstResult(offset == null ? 0 : offset) //</span>
+<span class="nc" id="L96">				.setMaxResults(limit == null ? 10000000 : limit) //</span>
+<span class="nc" id="L97">				.getResultList();</span>
+	}
+
+	@Override
+	public List&lt;Contributor&gt; findContributorsTimeSeries(Long organizationId, Date startDate, Date endDate,
+			String namePrefix) {
+
+<span class="fc" id="L104">		CriteriaBuilder cb = em.getCriteriaBuilder();</span>
+<span class="fc" id="L105">		CriteriaQuery&lt;Contributor&gt; cq = cb.createQuery(Contributor.class);</span>
+
+		// define &quot;from&quot; and joins
+<span class="fc" id="L108">		Root&lt;Contributor&gt; contributor = cq.from(Contributor.class);</span>
+<span class="fc" id="L109">		Path&lt;ContributorKey&gt; key = contributor.get(&quot;key&quot;);</span>
+
+		// define constraints
+<span class="fc" id="L112">		List&lt;Predicate&gt; andPredicates = new ArrayList&lt;&gt;();</span>
+		{
+<span class="pc bpc" id="L114" title="1 of 2 branches missed.">			if (organizationId != null) {</span>
+<span class="nc" id="L115">				andPredicates.add(cb.equal(key.get(&quot;organizationId&quot;), organizationId));</span>
+			}
+<span class="pc bpc" id="L117" title="2 of 4 branches missed.">			if (startDate != null &amp;&amp; endDate != null) {</span>
+<span class="fc" id="L118">				andPredicates.add(cb.between(key.&lt;Date&gt; get(&quot;snapshotDate&quot;), startDate, endDate));</span>
+<span class="nc bnc" id="L119" title="All 2 branches missed.">			} else if (startDate != null) {</span>
+<span class="nc" id="L120">				andPredicates.add(cb.greaterThanOrEqualTo(key.&lt;Date&gt; get(&quot;snapshotDate&quot;), startDate));</span>
+<span class="nc bnc" id="L121" title="All 2 branches missed.">			} else if (endDate != null) {</span>
+<span class="nc" id="L122">				andPredicates.add(cb.lessThanOrEqualTo(key.&lt;Date&gt; get(&quot;snapshotDate&quot;), endDate));</span>
+			}
+<span class="pc bpc" id="L124" title="1 of 2 branches missed.">			if (namePrefix != null) {</span>
+<span class="nc" id="L125">				andPredicates.add(cb.like(contributor.get(&quot;name&quot;), namePrefix.replace(&quot;%&quot;, &quot;[%]&quot;) + &quot;%&quot;));</span>
+			}
+		}
+
+<span class="fc" id="L129">		return em.createQuery(cq //</span>
+<span class="fc" id="L130">				.select(contributor) //</span>
+<span class="fc" id="L131">				.where(andPredicates.toArray(new Predicate[andPredicates.size()])) //</span>
+<span class="fc" id="L132">				.orderBy(cb.desc(key.get(&quot;snapshotDate&quot;)), cb.desc(key.get(&quot;id&quot;)))).getResultList();</span>
+	}
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

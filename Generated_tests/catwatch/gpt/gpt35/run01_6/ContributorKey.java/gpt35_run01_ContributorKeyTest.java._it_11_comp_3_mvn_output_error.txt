@@ -1,0 +1,27 @@
+[[1;31mERROR[m] COMPILATION ERROR : 
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ContributorKeyTest.java:[68,40] cannot find symbol
+  symbol:   method getId()
+  location: variable contributorKey of type java.lang.Object
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ContributorKeyTest.java:[69,52] cannot find symbol
+  symbol:   method getOrganizationId()
+  location: variable contributorKey of type java.lang.Object
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ContributorKeyTest.java:[70,50] cannot find symbol
+  symbol:   method getSnapshotDate()
+  location: variable contributorKey of type java.lang.Object
+[[1;31mERROR[m] Failed to execute goal [32morg.apache.maven.plugins:maven-compiler-plugin:3.8.0:testCompile[m [1m(default-testCompile)[m on project [36mcatwatch-backend[m: [1;31mCompilation failure[m: Compilation failure: 
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ContributorKeyTest.java:[68,40] cannot find symbol
+[[1;31mERROR[m]   symbol:   method getId()
+[[1;31mERROR[m]   location: variable contributorKey of type java.lang.Object
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ContributorKeyTest.java:[69,52] cannot find symbol
+[[1;31mERROR[m]   symbol:   method getOrganizationId()
+[[1;31mERROR[m]   location: variable contributorKey of type java.lang.Object
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ContributorKeyTest.java:[70,50] cannot find symbol
+[[1;31mERROR[m]   symbol:   method getSnapshotDate()
+[[1;31mERROR[m]   location: variable contributorKey of type java.lang.Object
+[[1;31mERROR[m] -> [1m[Help 1][m
+[[1;31mERROR[m] 
+[[1;31mERROR[m] To see the full stack trace of the errors, re-run Maven with the [1m-e[m switch.
+[[1;31mERROR[m] Re-run Maven using the [1m-X[m switch to enable full debug logging.
+[[1;31mERROR[m] 
+[[1;31mERROR[m] For more information about the errors and possible solutions, please read the following articles:
+[[1;31mERROR[m] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

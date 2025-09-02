@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: org.zalando.catwatch.backend.sonnet35_run01_LanguageServiceTest
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 1.788 s <<< FAILURE! - in org.zalando.catwatch.backend.sonnet35_run01_LanguageServiceTest
+testGetMainLanguagesWithMultipleProjects(org.zalando.catwatch.backend.sonnet35_run01_LanguageServiceTest)  Time elapsed: 0.002 s  <<< FAILURE!
+java.lang.AssertionError: expected:<2> but was:<4>
+	at org.zalando.catwatch.backend.sonnet35_run01_LanguageServiceTest.testGetMainLanguagesWithMultipleProjects(sonnet35_run01_LanguageServiceTest.java:121)
+

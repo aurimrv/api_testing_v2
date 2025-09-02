@@ -1,0 +1,11 @@
+-------------------------------------------------------------------------------
+Test set: org.zalando.catwatch.backend.gpt4o_run01_DatabasePopulatorTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 1, Time elapsed: 3.418 s <<< FAILURE! - in org.zalando.catwatch.backend.gpt4o_run01_DatabasePopulatorTest
+testPopulateTestDataCompleteFlow(org.zalando.catwatch.backend.gpt4o_run01_DatabasePopulatorTest)  Time elapsed: 1.266 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <200> but was <404>.
+
+	at org.zalando.catwatch.backend.gpt4o_run01_DatabasePopulatorTest.testPopulateTestDataCompleteFlow(gpt4o_run01_DatabasePopulatorTest.java:100)
+

@@ -1,0 +1,24 @@
+-------------------------------------------------------------------------------
+Test set: org.zalando.catwatch.backend.gpt4o_run01_RepositoryWrapperTest
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 5, Errors: 0, Skipped: 0, Time elapsed: 3.018 s <<< FAILURE! - in org.zalando.catwatch.backend.gpt4o_run01_RepositoryWrapperTest
+testListCommits(org.zalando.catwatch.backend.gpt4o_run01_RepositoryWrapperTest)  Time elapsed: 0.005 s  <<< FAILURE!
+java.lang.AssertionError: 
+	at org.zalando.catwatch.backend.gpt4o_run01_RepositoryWrapperTest.testListCommits(gpt4o_run01_RepositoryWrapperTest.java:98)
+
+testListLanguages(org.zalando.catwatch.backend.gpt4o_run01_RepositoryWrapperTest)  Time elapsed: 0.002 s  <<< FAILURE!
+java.lang.AssertionError: 
+	at org.zalando.catwatch.backend.gpt4o_run01_RepositoryWrapperTest.testListLanguages(gpt4o_run01_RepositoryWrapperTest.java:72)
+
+testGetFileContent(org.zalando.catwatch.backend.gpt4o_run01_RepositoryWrapperTest)  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.AssertionError: 
+	at org.zalando.catwatch.backend.gpt4o_run01_RepositoryWrapperTest.testGetFileContent(gpt4o_run01_RepositoryWrapperTest.java:137)
+
+testListContributors(org.zalando.catwatch.backend.gpt4o_run01_RepositoryWrapperTest)  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.AssertionError: 
+	at org.zalando.catwatch.backend.gpt4o_run01_RepositoryWrapperTest.testListContributors(gpt4o_run01_RepositoryWrapperTest.java:111)
+
+testListTags(org.zalando.catwatch.backend.gpt4o_run01_RepositoryWrapperTest)  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.AssertionError: 
+	at org.zalando.catwatch.backend.gpt4o_run01_RepositoryWrapperTest.testListTags(gpt4o_run01_RepositoryWrapperTest.java:124)
+

@@ -1,0 +1,41 @@
+Line: 217
+Expected status code <200> but was <500>.
+----------------------------------------
+Line: 139
+Expected status code <200> but was <500>.
+----------------------------------------
+Line: 152
+Expected status code <200> but was <500>.
+----------------------------------------
+Line: 118
+Expected status code <400> but was <500>.
+----------------------------------------
+Line: 95
+Expected status code <400> but was <500>.
+----------------------------------------
+Line: 106
+Expected status code <400> but was <500>.
+----------------------------------------
+Line: 84
+Expected status code <400> but was <500>.
+----------------------------------------
+Line: 129
+Expected status code <400> but was <500>.
+----------------------------------------
+Line: 165
+Response body doesn't match expectation.
+Expected: a string containing "UnsupportedOperationException"
+Actual: {"timestamp":1744070320947,"status":500,"error":"Internal Server Error","exception":"java.lang.RuntimeException","message":"java.text.ParseException: Unparseable date: \"2023-01-01\"","path":"/contributors"}
+----------------------------------------
+Line: 73
+Expected status code <200> but was <500>.
+----------------------------------------
+Line: 204
+Expected status code <200> but was <500>.
+----------------------------------------
+Line: 179
+Expected status code <200> but was <500>.
+----------------------------------------
+Line: 193
+Expected status code <400> but was <500>.
+----------------------------------------

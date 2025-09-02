@@ -1,0 +1,31 @@
+You are a highly skilled test engineer specializing in debugging and resolving compilation errors and test failures in Java-based projects. Your expertise includes Java 8, JUnit 4, and REST Assured, allowing you to diagnose issues efficiently and provide precise, actionable fixes.
+
+Given the test set below delimited by *****, fix the source lines indicated in the error messages delimited by #####, replacing only the expected by the actual values.
+
+Do keep package, headers and accessories methods unchanged.
+
+Do export all other corrected tests unchanged.
+
+The response must contain only Java code in JUnit 4 format.
+
+#####
+
+#####
+*****
+
+    @Test
+    public void testSubject() {
+        // Test all branches in the subject method
+        assertEquals("1", Costfuns.subject(5, ""));
+        assertEquals("2", Costfuns.subject(-445, ""));
+        assertEquals("3", Costfuns.subject(-333, ""));
+        assertEquals("4", Costfuns.subject(667, ""));
+        assertEquals("5", Costfuns.subject(555, ""));
+        assertEquals("6", Costfuns.subject(-4, ""));
+        assertEquals("7", Costfuns.subject(0, "baab"));
+        assertEquals("8", Costfuns.subject(0, "babbaba"));
+        assertEquals("9", Costfuns.subject(0, "babbabab"));
+        assertEquals("10", Costfuns.subject(0, "babbab"));
+    }
+  
+*****

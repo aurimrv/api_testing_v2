@@ -1,0 +1,129 @@
+[[1;31mERROR[m] COMPILATION ERROR : 
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectRepositoryImplTest.java:[64,14] cannot find symbol
+  symbol:   class Project
+  location: class org.zalando.catwatch.backend.gpt35_run01_ProjectRepositoryImplTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectRepositoryImplTest.java:[64,86] cannot find symbol
+  symbol:   variable Optional
+  location: class org.zalando.catwatch.backend.gpt35_run01_ProjectRepositoryImplTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectRepositoryImplTest.java:[64,108] cannot find symbol
+  symbol:   variable Optional
+  location: class org.zalando.catwatch.backend.gpt35_run01_ProjectRepositoryImplTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectRepositoryImplTest.java:[64,38] cannot find symbol
+  symbol:   class ProjectRepositoryImpl
+  location: class org.zalando.catwatch.backend.gpt35_run01_ProjectRepositoryImplTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectRepositoryImplTest.java:[72,9] cannot find symbol
+  symbol:   class Date
+  location: class org.zalando.catwatch.backend.gpt35_run01_ProjectRepositoryImplTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectRepositoryImplTest.java:[72,33] cannot find symbol
+  symbol:   class Date
+  location: class org.zalando.catwatch.backend.gpt35_run01_ProjectRepositoryImplTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectRepositoryImplTest.java:[73,14] cannot find symbol
+  symbol:   class Project
+  location: class org.zalando.catwatch.backend.gpt35_run01_ProjectRepositoryImplTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectRepositoryImplTest.java:[73,100] cannot find symbol
+  symbol:   variable Optional
+  location: class org.zalando.catwatch.backend.gpt35_run01_ProjectRepositoryImplTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectRepositoryImplTest.java:[73,122] cannot find symbol
+  symbol:   variable Optional
+  location: class org.zalando.catwatch.backend.gpt35_run01_ProjectRepositoryImplTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectRepositoryImplTest.java:[73,38] cannot find symbol
+  symbol:   class ProjectRepositoryImpl
+  location: class org.zalando.catwatch.backend.gpt35_run01_ProjectRepositoryImplTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectRepositoryImplTest.java:[81,9] cannot find symbol
+  symbol:   class Optional
+  location: class org.zalando.catwatch.backend.gpt35_run01_ProjectRepositoryImplTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectRepositoryImplTest.java:[81,18] cannot find symbol
+  symbol:   class Date
+  location: class org.zalando.catwatch.backend.gpt35_run01_ProjectRepositoryImplTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectRepositoryImplTest.java:[81,48] cannot find symbol
+  symbol:   class ProjectRepositoryImpl
+  location: class org.zalando.catwatch.backend.gpt35_run01_ProjectRepositoryImplTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectRepositoryImplTest.java:[88,9] cannot find symbol
+  symbol:   class Date
+  location: class org.zalando.catwatch.backend.gpt35_run01_ProjectRepositoryImplTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectRepositoryImplTest.java:[88,33] cannot find symbol
+  symbol:   class Date
+  location: class org.zalando.catwatch.backend.gpt35_run01_ProjectRepositoryImplTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectRepositoryImplTest.java:[89,9] cannot find symbol
+  symbol:   class Optional
+  location: class org.zalando.catwatch.backend.gpt35_run01_ProjectRepositoryImplTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectRepositoryImplTest.java:[89,18] cannot find symbol
+  symbol:   class Date
+  location: class org.zalando.catwatch.backend.gpt35_run01_ProjectRepositoryImplTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectRepositoryImplTest.java:[89,48] cannot find symbol
+  symbol:   class ProjectRepositoryImpl
+  location: class org.zalando.catwatch.backend.gpt35_run01_ProjectRepositoryImplTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectRepositoryImplTest.java:[97,9] cannot find symbol
+  symbol:   class JPAQuery
+  location: class org.zalando.catwatch.backend.gpt35_run01_ProjectRepositoryImplTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectRepositoryImplTest.java:[97,30] cannot find symbol
+  symbol:   class ProjectRepositoryImpl
+  location: class org.zalando.catwatch.backend.gpt35_run01_ProjectRepositoryImplTest
+[[1;31mERROR[m] Failed to execute goal [32morg.apache.maven.plugins:maven-compiler-plugin:3.8.0:testCompile[m [1m(default-testCompile)[m on project [36mcatwatch-backend[m: [1;31mCompilation failure[m: Compilation failure: 
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectRepositoryImplTest.java:[64,14] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Project
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt35_run01_ProjectRepositoryImplTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectRepositoryImplTest.java:[64,86] cannot find symbol
+[[1;31mERROR[m]   symbol:   variable Optional
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt35_run01_ProjectRepositoryImplTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectRepositoryImplTest.java:[64,108] cannot find symbol
+[[1;31mERROR[m]   symbol:   variable Optional
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt35_run01_ProjectRepositoryImplTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectRepositoryImplTest.java:[64,38] cannot find symbol
+[[1;31mERROR[m]   symbol:   class ProjectRepositoryImpl
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt35_run01_ProjectRepositoryImplTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectRepositoryImplTest.java:[72,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Date
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt35_run01_ProjectRepositoryImplTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectRepositoryImplTest.java:[72,33] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Date
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt35_run01_ProjectRepositoryImplTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectRepositoryImplTest.java:[73,14] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Project
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt35_run01_ProjectRepositoryImplTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectRepositoryImplTest.java:[73,100] cannot find symbol
+[[1;31mERROR[m]   symbol:   variable Optional
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt35_run01_ProjectRepositoryImplTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectRepositoryImplTest.java:[73,122] cannot find symbol
+[[1;31mERROR[m]   symbol:   variable Optional
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt35_run01_ProjectRepositoryImplTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectRepositoryImplTest.java:[73,38] cannot find symbol
+[[1;31mERROR[m]   symbol:   class ProjectRepositoryImpl
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt35_run01_ProjectRepositoryImplTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectRepositoryImplTest.java:[81,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Optional
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt35_run01_ProjectRepositoryImplTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectRepositoryImplTest.java:[81,18] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Date
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt35_run01_ProjectRepositoryImplTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectRepositoryImplTest.java:[81,48] cannot find symbol
+[[1;31mERROR[m]   symbol:   class ProjectRepositoryImpl
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt35_run01_ProjectRepositoryImplTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectRepositoryImplTest.java:[88,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Date
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt35_run01_ProjectRepositoryImplTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectRepositoryImplTest.java:[88,33] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Date
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt35_run01_ProjectRepositoryImplTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectRepositoryImplTest.java:[89,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Optional
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt35_run01_ProjectRepositoryImplTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectRepositoryImplTest.java:[89,18] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Date
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt35_run01_ProjectRepositoryImplTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectRepositoryImplTest.java:[89,48] cannot find symbol
+[[1;31mERROR[m]   symbol:   class ProjectRepositoryImpl
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt35_run01_ProjectRepositoryImplTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectRepositoryImplTest.java:[97,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class JPAQuery
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt35_run01_ProjectRepositoryImplTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectRepositoryImplTest.java:[97,30] cannot find symbol
+[[1;31mERROR[m]   symbol:   class ProjectRepositoryImpl
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt35_run01_ProjectRepositoryImplTest
+[[1;31mERROR[m] -> [1m[Help 1][m
+[[1;31mERROR[m] 
+[[1;31mERROR[m] To see the full stack trace of the errors, re-run Maven with the [1m-e[m switch.
+[[1;31mERROR[m] Re-run Maven using the [1m-X[m switch to enable full debug logging.
+[[1;31mERROR[m] 
+[[1;31mERROR[m] For more information about the errors and possible solutions, please read the following articles:
+[[1;31mERROR[m] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

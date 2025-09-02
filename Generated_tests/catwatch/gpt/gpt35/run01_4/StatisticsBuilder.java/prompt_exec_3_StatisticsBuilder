@@ -1,0 +1,54 @@
+You are a highly skilled test engineer specializing in debugging and resolving compilation errors and test failures in Java-based projects. Your expertise includes Java 8, JUnit 4, and REST Assured, allowing you to diagnose issues efficiently and provide precise, actionable fixes.
+
+Given the test set below delimited by *****, fix the source lines indicated in the error messages delimited by #####, replacing only the expected by the actual values.
+
+Do keep package, headers and accessories methods unchanged.
+
+Do export all other corrected tests unchanged.
+
+The response must contain only Java code in JUnit 4 format.
+
+#####
+
+#####
+*****
+
+    @Test
+    public void testStatisticsBuilderOrganizationName() {
+        // Mocking StatisticsRepository and StatisticsBuilder classes for testing
+        class StatisticsRepository {}
+        class StatisticsBuilder {
+            public StatisticsBuilder(StatisticsRepository statisticsRepository) {}
+            public StatisticsBuilder organizationName(String organizationName) { return this; }
+            public Object create() { return new Object(); }
+        }
+
+        StatisticsRepository statisticsRepository = new StatisticsRepository();
+        StatisticsBuilder statisticsBuilder = new StatisticsBuilder(statisticsRepository);
+
+        String organizationName = "TestOrg";
+        statisticsBuilder.organizationName(organizationName);
+
+        assertEquals(organizationName, ((StatisticsBuilder) statisticsBuilder).create());
+    }
+
+    @Test
+    public void testStatisticsBuilderPublicProjectCount() {
+        // Mocking StatisticsRepository and StatisticsBuilder classes for testing
+        class StatisticsRepository {}
+        class StatisticsBuilder {
+            public StatisticsBuilder(StatisticsRepository statisticsRepository) {}
+            public StatisticsBuilder publicProjectCount(int publicProjectCount) { return this; }
+            public Object create() { return new Object(); }
+        }
+
+        StatisticsRepository statisticsRepository = new StatisticsRepository();
+        StatisticsBuilder statisticsBuilder = new StatisticsBuilder(statisticsRepository);
+
+        int publicProjectCount = 100;
+        statisticsBuilder.publicProjectCount(publicProjectCount);
+
+        assertEquals(publicProjectCount, ((StatisticsBuilder) statisticsBuilder).create());
+    }
+
+*****

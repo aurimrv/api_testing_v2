@@ -1,0 +1,13 @@
+-------------------------------------------------------------------------------
+Test set: org.zalando.catwatch.backend.seed01_EvoMaster_faults_Test
+-------------------------------------------------------------------------------
+Tests run: 14, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 20.208 s <<< FAILURE! - in org.zalando.catwatch.backend.seed01_EvoMaster_faults_Test
+test_12_with500(org.zalando.catwatch.backend.seed01_EvoMaster_faults_Test)  Time elapsed: 2.731 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+JSON path 'error_description' doesn't match.
+Expected: a string containing "Unable to obtain a new access token for resource 'null'. The provider manager is not configured to support it."
+  Actual: Unable to obtain a new access token for resource &#39;null&#39;. The provider manager is not configured to support it.
+
+	at org.zalando.catwatch.backend.seed01_EvoMaster_faults_Test.test_12_with500(seed01_EvoMaster_faults_Test.java:533)
+

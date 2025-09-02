@@ -1,0 +1,344 @@
+You are a highly skilled test engineer specializing in debugging and resolving compilation errors and test failures in Java-based projects. Your expertise includes Java 8, JUnit 4, and REST Assured, allowing you to diagnose issues efficiently and provide precise, actionable fixes.
+
+Do fix the compilation errors delimited by ##### given the code below delimited by *****.
+
+The response must contain only Java code in JUnit 4 format.
+
+#####
+[[1;31mERROR[m] COMPILATION ERROR : 
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_FetcherTest.java:[63,9] cannot find symbol
+  symbol:   class Fetcher
+  location: class org.zalando.catwatch.backend.gpt4o_run01_FetcherTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_FetcherTest.java:[63,31] cannot find symbol
+  symbol:   class Fetcher
+  location: class org.zalando.catwatch.backend.gpt4o_run01_FetcherTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_FetcherTest.java:[69,9] cannot find symbol
+  symbol:   class Fetcher
+  location: class org.zalando.catwatch.backend.gpt4o_run01_FetcherTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_FetcherTest.java:[69,31] cannot find symbol
+  symbol:   class Fetcher
+  location: class org.zalando.catwatch.backend.gpt4o_run01_FetcherTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_FetcherTest.java:[76,9] cannot find symbol
+  symbol:   class SnapshotProvider
+  location: class org.zalando.catwatch.backend.gpt4o_run01_FetcherTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_FetcherTest.java:[76,53] cannot find symbol
+  symbol:   class SnapshotProvider
+  location: class org.zalando.catwatch.backend.gpt4o_run01_FetcherTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_FetcherTest.java:[83,9] cannot find symbol
+  symbol:   class Fetcher
+  location: class org.zalando.catwatch.backend.gpt4o_run01_FetcherTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_FetcherTest.java:[83,31] cannot find symbol
+  symbol:   class Fetcher
+  location: class org.zalando.catwatch.backend.gpt4o_run01_FetcherTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_FetcherTest.java:[87,18] cannot find symbol
+  symbol:   class CrawlerRetryException
+  location: class org.zalando.catwatch.backend.gpt4o_run01_FetcherTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_FetcherTest.java:[94,9] cannot find symbol
+  symbol:   class SnapshotProvider
+  location: class org.zalando.catwatch.backend.gpt4o_run01_FetcherTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_FetcherTest.java:[94,53] cannot find symbol
+  symbol:   class SnapshotProvider
+  location: class org.zalando.catwatch.backend.gpt4o_run01_FetcherTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_FetcherTest.java:[108,9] cannot find symbol
+  symbol:   class Fetcher
+  location: class org.zalando.catwatch.backend.gpt4o_run01_FetcherTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_FetcherTest.java:[108,31] cannot find symbol
+  symbol:   class Fetcher
+  location: class org.zalando.catwatch.backend.gpt4o_run01_FetcherTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_FetcherTest.java:[112,18] cannot find symbol
+  symbol:   class CrawlerRetryException
+  location: class org.zalando.catwatch.backend.gpt4o_run01_FetcherTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_FetcherTest.java:[119,9] cannot find symbol
+  symbol:   class SnapshotProvider
+  location: class org.zalando.catwatch.backend.gpt4o_run01_FetcherTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_FetcherTest.java:[119,53] cannot find symbol
+  symbol:   class SnapshotProvider
+  location: class org.zalando.catwatch.backend.gpt4o_run01_FetcherTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_FetcherTest.java:[133,9] cannot find symbol
+  symbol:   class Fetcher
+  location: class org.zalando.catwatch.backend.gpt4o_run01_FetcherTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_FetcherTest.java:[133,31] cannot find symbol
+  symbol:   class Fetcher
+  location: class org.zalando.catwatch.backend.gpt4o_run01_FetcherTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_FetcherTest.java:[137,18] cannot find symbol
+  symbol:   class CrawlerRetryException
+  location: class org.zalando.catwatch.backend.gpt4o_run01_FetcherTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_FetcherTest.java:[144,9] cannot find symbol
+  symbol:   class Fetcher
+  location: class org.zalando.catwatch.backend.gpt4o_run01_FetcherTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_FetcherTest.java:[144,31] cannot find symbol
+  symbol:   class Fetcher
+  location: class org.zalando.catwatch.backend.gpt4o_run01_FetcherTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_FetcherTest.java:[152,9] cannot find symbol
+  symbol:   class Fetcher
+  location: class org.zalando.catwatch.backend.gpt4o_run01_FetcherTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_FetcherTest.java:[152,31] cannot find symbol
+  symbol:   class Fetcher
+  location: class org.zalando.catwatch.backend.gpt4o_run01_FetcherTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_FetcherTest.java:[169,9] cannot find symbol
+  symbol:   class Fetcher
+  location: class org.zalando.catwatch.backend.gpt4o_run01_FetcherTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_FetcherTest.java:[169,31] cannot find symbol
+  symbol:   class Fetcher
+  location: class org.zalando.catwatch.backend.gpt4o_run01_FetcherTest
+[[1;31mERROR[m] Failed to execute goal [32morg.apache.maven.plugins:maven-compiler-plugin:3.8.0:testCompile[m [1m(default-testCompile)[m on project [36mcatwatch-backend[m: [1;31mCompilation failure[m: Compilation failure: 
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_FetcherTest.java:[63,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Fetcher
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_FetcherTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_FetcherTest.java:[63,31] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Fetcher
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_FetcherTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_FetcherTest.java:[69,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Fetcher
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_FetcherTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_FetcherTest.java:[69,31] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Fetcher
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_FetcherTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_FetcherTest.java:[76,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class SnapshotProvider
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_FetcherTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_FetcherTest.java:[76,53] cannot find symbol
+[[1;31mERROR[m]   symbol:   class SnapshotProvider
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_FetcherTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_FetcherTest.java:[83,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Fetcher
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_FetcherTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_FetcherTest.java:[83,31] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Fetcher
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_FetcherTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_FetcherTest.java:[87,18] cannot find symbol
+[[1;31mERROR[m]   symbol:   class CrawlerRetryException
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_FetcherTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_FetcherTest.java:[94,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class SnapshotProvider
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_FetcherTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_FetcherTest.java:[94,53] cannot find symbol
+[[1;31mERROR[m]   symbol:   class SnapshotProvider
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_FetcherTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_FetcherTest.java:[108,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Fetcher
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_FetcherTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_FetcherTest.java:[108,31] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Fetcher
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_FetcherTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_FetcherTest.java:[112,18] cannot find symbol
+[[1;31mERROR[m]   symbol:   class CrawlerRetryException
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_FetcherTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_FetcherTest.java:[119,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class SnapshotProvider
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_FetcherTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_FetcherTest.java:[119,53] cannot find symbol
+[[1;31mERROR[m]   symbol:   class SnapshotProvider
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_FetcherTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_FetcherTest.java:[133,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Fetcher
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_FetcherTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_FetcherTest.java:[133,31] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Fetcher
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_FetcherTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_FetcherTest.java:[137,18] cannot find symbol
+[[1;31mERROR[m]   symbol:   class CrawlerRetryException
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_FetcherTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_FetcherTest.java:[144,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Fetcher
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_FetcherTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_FetcherTest.java:[144,31] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Fetcher
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_FetcherTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_FetcherTest.java:[152,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Fetcher
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_FetcherTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_FetcherTest.java:[152,31] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Fetcher
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_FetcherTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_FetcherTest.java:[169,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Fetcher
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_FetcherTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_FetcherTest.java:[169,31] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Fetcher
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_FetcherTest
+[[1;31mERROR[m] -> [1m[Help 1][m
+[[1;31mERROR[m] 
+[[1;31mERROR[m] To see the full stack trace of the errors, re-run Maven with the [1m-e[m switch.
+[[1;31mERROR[m] Re-run Maven using the [1m-X[m switch to enable full debug logging.
+[[1;31mERROR[m] 
+[[1;31mERROR[m] For more information about the errors and possible solutions, please read the following articles:
+[[1;31mERROR[m] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+
+#####
+*****
+
+package org.zalando.catwatch.backend;
+
+import org.junit.AfterClass;
+import org.junit.BeforeClass;
+import org.junit.Before;
+import org.junit.Test;
+import static org.junit.Assert.*;
+import java.util.Map;
+import java.util.List;
+import static org.evomaster.client.java.controller.api.EMTestUtils.*;
+import org.evomaster.client.java.controller.SutHandler;
+import io.restassured.RestAssured;
+import static io.restassured.RestAssured.given;
+import io.restassured.response.ValidatableResponse;
+import static org.evomaster.client.java.sql.dsl.SqlDsl.sql;
+import org.evomaster.client.java.controller.api.dto.database.operations.InsertionResultsDto;
+import org.evomaster.client.java.controller.api.dto.database.operations.InsertionDto;
+import static org.hamcrest.Matchers.*;
+import io.restassured.config.JsonConfig;
+import io.restassured.path.json.config.JsonPathConfig;
+import static io.restassured.config.RedirectConfig.redirectConfig;
+import static org.evomaster.client.java.controller.contentMatchers.NumberMatcher.*;
+import static org.evomaster.client.java.controller.contentMatchers.StringMatcher.*;
+import static org.evomaster.client.java.controller.contentMatchers.SubStringMatcher.*;
+import static org.evomaster.client.java.controller.expect.ExpectationHandler.expectationHandler;
+import org.evomaster.client.java.controller.expect.ExpectationHandler;
+import io.restassured.path.json.JsonPath;
+import java.util.Arrays;
+
+public class gpt4o_run01_FetcherTest {
+
+    private static final SutHandler controller = new em.embedded.org.zalando.EmbeddedEvoMasterController();
+    private static String baseUrlOfSut;
+
+    @BeforeClass
+    public static void initClass() {
+        controller.setupForGeneratedTest();
+        baseUrlOfSut = controller.startSut();
+        controller.registerOrExecuteInitSqlCommandsIfNeeded();
+        assertNotNull(baseUrlOfSut);
+        RestAssured.enableLoggingOfRequestAndResponseIfValidationFails();
+        RestAssured.useRelaxedHTTPSValidation();
+        RestAssured.urlEncodingEnabled = false;
+        RestAssured.config = RestAssured.config()
+            .jsonConfig(JsonConfig.jsonConfig().numberReturnType(JsonPathConfig.NumberReturnType.DOUBLE))
+            .redirect(redirectConfig().followRedirects(false));
+    }
+
+    @AfterClass
+    public static void tearDown() {
+        controller.stopSut();
+    }
+
+    @Before
+    public void initTest() {
+        controller.resetDatabase(Arrays.asList("CONTRIBUTOR"));
+        controller.resetStateOfSUT();
+    }
+
+    @Test
+    public void testFetcherConstructor() {
+        Fetcher fetcher = new Fetcher(null, null, null, null, new String[]{"org1", "org2"});
+        assertNotNull(fetcher);
+    }
+
+    @Test
+    public void testFetchDataSuccess() {
+        Fetcher fetcher = new Fetcher(null, null, null, null, new String[]{"org1", "org2"});
+        boolean result = fetcher.fetchData();
+        assertTrue(result);
+    }
+
+    @Test
+    public void testFetchDataIOException() {
+        SnapshotProvider mockSnapshotProvider = new SnapshotProvider() {
+            @Override
+            public Future<Snapshot> takeSnapshot(String organization, Date snapshotDate) throws IOException {
+                throw new IOException("Simulated IOException");
+            }
+        };
+
+        Fetcher fetcher = new Fetcher(null, null, null, mockSnapshotProvider, new String[]{"org1"});
+        try {
+            fetcher.fetchData();
+            fail("Expected CrawlerRetryException");
+        } catch (CrawlerRetryException e) {
+            assertEquals("java.io.IOException: Simulated IOException", e.getCause().toString());
+        }
+    }
+
+    @Test
+    public void testFetchDataExecutionException() {
+        SnapshotProvider mockSnapshotProvider = new SnapshotProvider() {
+            @Override
+            public Future<Snapshot> takeSnapshot(String organization, Date snapshotDate) {
+                return new Future<Snapshot>() {
+                    @Override
+                    public Snapshot get() throws ExecutionException {
+                        throw new ExecutionException(new Exception("Simulated ExecutionException"));
+                    }
+
+                    // Other methods would be mocked as needed
+                };
+            }
+        };
+
+        Fetcher fetcher = new Fetcher(null, null, null, mockSnapshotProvider, new String[]{"org1"});
+        try {
+            fetcher.fetchData();
+            fail("Expected CrawlerRetryException");
+        } catch (CrawlerRetryException e) {
+            assertEquals("java.lang.Exception: Simulated ExecutionException", e.getCause().toString());
+        }
+    }
+
+    @Test
+    public void testFetchDataInterruptedException() {
+        SnapshotProvider mockSnapshotProvider = new SnapshotProvider() {
+            @Override
+            public Future<Snapshot> takeSnapshot(String organization, Date snapshotDate) {
+                return new Future<Snapshot>() {
+                    @Override
+                    public Snapshot get() throws InterruptedException {
+                        throw new InterruptedException("Simulated InterruptedException");
+                    }
+
+                    // Other methods would be mocked as needed
+                };
+            }
+        };
+
+        Fetcher fetcher = new Fetcher(null, null, null, mockSnapshotProvider, new String[]{"org1"});
+        try {
+            fetcher.fetchData();
+            fail("Expected CrawlerRetryException");
+        } catch (CrawlerRetryException e) {
+            assertEquals("java.lang.InterruptedException: Simulated InterruptedException", e.getCause().toString());
+        }
+    }
+
+    @Test
+    public void testGetIpAndMacAddressSuccess() {
+        Fetcher fetcher = new Fetcher(null, null, null, null, new String[]{"org1"});
+        String result = fetcher.getIpAndMacAddress();
+        assertNotNull(result);
+        assertThat(result, containsString("#"));
+    }
+
+    @Test
+    public void testGetIpAndMacAddressException() {
+        Fetcher fetcher = new Fetcher(null, null, null, null, new String[]{"org1"}) {
+            @Override
+            public String getIpAndMacAddress() {
+                throw new RuntimeException("Simulated Exception");
+            }
+        };
+
+        try {
+            fetcher.getIpAndMacAddress();
+            fail("Expected RuntimeException");
+        } catch (RuntimeException e) {
+            assertEquals("Simulated Exception", e.getMessage());
+        }
+    }
+
+    @Test
+    public void testLambdaGetIpAndMacAddress() {
+        Fetcher fetcher = new Fetcher(null, null, null, null, new String[]{"org1"});
+        String result = fetcher.getIpAndMacAddress();
+        assertNotNull(result);
+    }
+}
+
+*****

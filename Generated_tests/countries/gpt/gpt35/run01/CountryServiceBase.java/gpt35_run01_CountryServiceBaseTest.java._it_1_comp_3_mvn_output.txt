@@ -1,0 +1,128 @@
+[[1;34mINFO[m] Scanning for projects...
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] Some problems were encountered while building the effective model for eu.fayder:restcountries:jar:2.0.6-SNAPSHOT
+[[1;33mWARNING[m] 'dependencies.dependency.(groupId:artifactId:type:classifier)' must be unique: com.google.code.gson:gson:jar -> version ${gson.version} vs 2.8.9 @ line 111, column 21
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] It is highly recommended to fix these problems because they threaten the stability of your build.
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] For this reason, future Maven versions might no longer support building such malformed projects.
+[[1;33mWARNING[m] 
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m----------------------< [0;36meu.fayder:restcountries[0;1m >-----------------------[m
+[[1;34mINFO[m] [1mBuilding restcountries 2.0.6-SNAPSHOT[m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-clean-plugin:2.5:clean[m [1m(default-clean)[m @ [36mrestcountries[0;1m ---[m
+[[1;34mINFO[m] Deleting /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/target
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mjacoco-maven-plugin:0.8.7:prepare-agent[m [1m(default)[m @ [36mrestcountries[0;1m ---[m
+[[1;34mINFO[m] argLine set to -javaagent:/home/rincon/.m2/repository/org/jacoco/org.jacoco.agent/0.8.7/org.jacoco.agent-0.8.7-runtime.jar=destfile=/media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/target/jacoco.exec
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:resources[m [1m(default-resources)[m @ [36mrestcountries[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Copying 6 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.8.0:compile[m [1m(default-compile)[m @ [36mrestcountries[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 22 source files to /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/target/classes
+[[1;34mINFO[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/main/java/eu/fayder/restcountries/v2/rest/CountryRestV2.java: /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/main/java/eu/fayder/restcountries/v2/rest/CountryRestV2.java uses or overrides a deprecated API.
+[[1;34mINFO[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/main/java/eu/fayder/restcountries/v2/rest/CountryRestV2.java: Recompile with -Xlint:deprecation for details.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mjacoco-maven-plugin:0.8.7:prepare-agent[m [1m(default)[m @ [36mrestcountries[0;1m ---[m
+[[1;34mINFO[m] argLine set to -javaagent:/home/rincon/.m2/repository/org/jacoco/org.jacoco.agent/0.8.7/org.jacoco.agent-0.8.7-runtime.jar=destfile=/media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/target/jacoco.exec
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:resources[m [1m(default-resources)[m @ [36mrestcountries[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Copying 6 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.8.0:compile[m [1m(default-compile)[m @ [36mrestcountries[0;1m ---[m
+[[1;34mINFO[m] Nothing to compile - all classes are up to date
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:testResources[m [1m(default-testResources)[m @ [36mrestcountries[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Copying 1 resource
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.8.0:testCompile[m [1m(default-testCompile)[m @ [36mrestcountries[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 1 source file to /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/target/test-classes
+[[1;34mINFO[m] -------------------------------------------------------------
+[[1;31mERROR[m] COMPILATION ERROR : 
+[[1;34mINFO[m] -------------------------------------------------------------
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_CountryServiceBaseTest.java:[9,37] package eu.fayder.restcountries.model does not exist
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_CountryServiceBaseTest.java:[53,14] cannot find symbol
+  symbol:   class Country
+  location: class gpt35_run01_CountryServiceBaseTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_CountryServiceBaseTest.java:[58,14] cannot find symbol
+  symbol:   class Country
+  location: class gpt35_run01_CountryServiceBaseTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_CountryServiceBaseTest.java:[63,14] cannot find symbol
+  symbol:   class Country
+  location: class gpt35_run01_CountryServiceBaseTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_CountryServiceBaseTest.java:[71,14] cannot find symbol
+  symbol:   class Country
+  location: class gpt35_run01_CountryServiceBaseTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_CountryServiceBaseTest.java:[76,14] cannot find symbol
+  symbol:   class Country
+  location: class gpt35_run01_CountryServiceBaseTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_CountryServiceBaseTest.java:[82,14] cannot find symbol
+  symbol:   class Country
+  location: class gpt35_run01_CountryServiceBaseTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_CountryServiceBaseTest.java:[92,14] cannot find symbol
+  symbol:   class Country
+  location: class gpt35_run01_CountryServiceBaseTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_CountryServiceBaseTest.java:[92,62] cannot find symbol
+  symbol:   class Country
+  location: class gpt35_run01_CountryServiceBaseTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_CountryServiceBaseTest.java:[97,14] cannot find symbol
+  symbol:   class Country
+  location: class gpt35_run01_CountryServiceBaseTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_CountryServiceBaseTest.java:[97,67] cannot find symbol
+  symbol:   class Country
+  location: class gpt35_run01_CountryServiceBaseTest
+[[1;34mINFO[m] 11 errors 
+[[1;34mINFO[m] -------------------------------------------------------------
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;31mBUILD FAILURE[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  2.390 s
+[[1;34mINFO[m] Finished at: 2025-03-26T19:00:10-03:00
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;31mERROR[m] Failed to execute goal [32morg.apache.maven.plugins:maven-compiler-plugin:3.8.0:testCompile[m [1m(default-testCompile)[m on project [36mrestcountries[m: [1;31mCompilation failure[m: Compilation failure: 
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_CountryServiceBaseTest.java:[9,37] package eu.fayder.restcountries.model does not exist
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_CountryServiceBaseTest.java:[53,14] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Country
+[[1;31mERROR[m]   location: class gpt35_run01_CountryServiceBaseTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_CountryServiceBaseTest.java:[58,14] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Country
+[[1;31mERROR[m]   location: class gpt35_run01_CountryServiceBaseTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_CountryServiceBaseTest.java:[63,14] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Country
+[[1;31mERROR[m]   location: class gpt35_run01_CountryServiceBaseTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_CountryServiceBaseTest.java:[71,14] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Country
+[[1;31mERROR[m]   location: class gpt35_run01_CountryServiceBaseTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_CountryServiceBaseTest.java:[76,14] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Country
+[[1;31mERROR[m]   location: class gpt35_run01_CountryServiceBaseTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_CountryServiceBaseTest.java:[82,14] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Country
+[[1;31mERROR[m]   location: class gpt35_run01_CountryServiceBaseTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_CountryServiceBaseTest.java:[92,14] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Country
+[[1;31mERROR[m]   location: class gpt35_run01_CountryServiceBaseTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_CountryServiceBaseTest.java:[92,62] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Country
+[[1;31mERROR[m]   location: class gpt35_run01_CountryServiceBaseTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_CountryServiceBaseTest.java:[97,14] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Country
+[[1;31mERROR[m]   location: class gpt35_run01_CountryServiceBaseTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_CountryServiceBaseTest.java:[97,67] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Country
+[[1;31mERROR[m]   location: class gpt35_run01_CountryServiceBaseTest
+[[1;31mERROR[m] -> [1m[Help 1][m
+[[1;31mERROR[m] 
+[[1;31mERROR[m] To see the full stack trace of the errors, re-run Maven with the [1m-e[m switch.
+[[1;31mERROR[m] Re-run Maven using the [1m-X[m switch to enable full debug logging.
+[[1;31mERROR[m] 
+[[1;31mERROR[m] For more information about the errors and possible solutions, please read the following articles:
+[[1;31mERROR[m] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

@@ -1,0 +1,14 @@
+-------------------------------------------------------------------------------
+Test set: org.zalando.catwatch.backend.sonnet35_run01_OptionalFlywayMigrationInitializerTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 1.827 s <<< FAILURE! - in org.zalando.catwatch.backend.sonnet35_run01_OptionalFlywayMigrationInitializerTest
+testAfterPropertiesSetWhenDatabaseAvailable(org.zalando.catwatch.backend.sonnet35_run01_OptionalFlywayMigrationInitializerTest)  Time elapsed: 0.031 s  <<< FAILURE!
+org.mockito.exceptions.verification.WantedButNotInvoked: 
+
+Wanted but not invoked:
+flyway.migrate();
+-> at org.zalando.catwatch.backend.sonnet35_run01_OptionalFlywayMigrationInitializerTest.testAfterPropertiesSetWhenDatabaseAvailable(sonnet35_run01_OptionalFlywayMigrationInitializerTest.java:95)
+Actually, there were zero interactions with this mock.
+
+	at org.zalando.catwatch.backend.sonnet35_run01_OptionalFlywayMigrationInitializerTest.testAfterPropertiesSetWhenDatabaseAvailable(sonnet35_run01_OptionalFlywayMigrationInitializerTest.java:95)
+

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="pt"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>OAuthConfiguration.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">catwatch-backend</a> &gt; <a href="index.source.html" class="el_package">org.zalando.catwatch.backend.security</a> &gt; <span class="el_source">OAuthConfiguration.java</span></div><h1>OAuthConfiguration.java</h1><pre class="source lang-java linenums">package org.zalando.catwatch.backend.security;
+
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.http.HttpMethod;
+import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
+import org.springframework.security.config.http.SessionCreationPolicy;
+import org.springframework.security.oauth2.config.annotation.web.configuration.EnableResourceServer;
+import org.springframework.security.oauth2.config.annotation.web.configuration.ResourceServerConfigurerAdapter;
+import org.springframework.security.oauth2.provider.token.ResourceServerTokenServices;
+import org.zalando.stups.oauth2.spring.server.TokenInfoResourceServerTokenServices;
+
+@Configuration
+@EnableResourceServer
+@EnableWebSecurity
+<span class="fc" id="L18">public class OAuthConfiguration extends ResourceServerConfigurerAdapter {</span>
+
+    @Value(&quot;${spring.oauth2.resource.tokenInfoUri}&quot;)
+    private String tokenInfoUri;
+
+    /**
+     * Configure scopes for specific controller/httpmethods/roles here.
+     */
+    @Override
+    public void configure(final HttpSecurity http) throws Exception {
+
+        //J-
+<span class="fc" id="L30">        http</span>
+<span class="fc" id="L31">                .sessionManagement()</span>
+<span class="fc" id="L32">                .sessionCreationPolicy(SessionCreationPolicy.NEVER)</span>
+<span class="fc" id="L33">                .and()</span>
+<span class="fc" id="L34">                .authorizeRequests()</span>
+<span class="fc" id="L35">                .antMatchers(HttpMethod.GET, &quot;/delete/**&quot;).access(&quot;#oauth2.hasScope('uid')&quot;)</span>
+<span class="fc" id="L36">                .and()</span>
+<span class="fc" id="L37">                .authorizeRequests()</span>
+<span class="fc" id="L38">                .antMatchers(HttpMethod.GET, &quot;/init/**&quot;).access(&quot;#oauth2.hasScope('uid')&quot;);</span>
+        //J+
+<span class="fc" id="L40">    }</span>
+
+    @Bean
+    public ResourceServerTokenServices customResourceTokenServices() {
+
+<span class="fc" id="L45">        return new TokenInfoResourceServerTokenServices(tokenInfoUri, &quot;what_here&quot;);</span>
+    }
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

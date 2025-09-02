@@ -1,0 +1,13 @@
+-------------------------------------------------------------------------------
+Test set: org.restncs.gpt35_run01_NcsRestTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 10.134 s <<< FAILURE! - in org.restncs.gpt35_run01_NcsRestTest
+testFisher_successfulExecution(org.restncs.gpt35_run01_NcsRestTest)  Time elapsed: 2.861 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+JSON path resultAsDouble doesn't match.
+Expected: <0.03223>
+  Actual: 0.89799772335573
+
+	at org.restncs.gpt35_run01_NcsRestTest.testFisher_successfulExecution(gpt35_run01_NcsRestTest.java:65)
+

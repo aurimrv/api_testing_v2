@@ -1,0 +1,22 @@
+Line: 151
+Expected status code <500> but was <200>.
+----------------------------------------
+Line: 69
+Expected status code <500> but was <400>.
+----------------------------------------
+Line: 162
+Expected status code <500> but was <200>.
+----------------------------------------
+Line: 130
+JSON path resultAsDouble doesn't match.
+Expected: a numeric value within <1.0E-7> of <0.0489005>
+Actual: 0.037534260041957146
+----------------------------------------
+Line: 141
+JSON path resultAsDouble doesn't match.
+Expected: a numeric value within <1.0E-7> of <0.5597736>
+Actual: 0.3266438616797236
+----------------------------------------
+Line: 88
+Expected status code <500> but was <400>.
+----------------------------------------

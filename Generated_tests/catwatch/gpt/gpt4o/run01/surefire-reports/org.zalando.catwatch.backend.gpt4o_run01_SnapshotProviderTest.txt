@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+-------------------------------------------------------------------------------
+Tests run: 8, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 8.897 s <<< FAILURE! - in org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest
+testGetCacheDirectoryCreationFailure(org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest)  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.AssertionError: Cache directory should not be present on failure
+	at org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest.testGetCacheDirectoryCreationFailure(gpt4o_run01_SnapshotProviderTest.java:167)
+
+testInitWithoutCacheDirectory(org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest)  Time elapsed: 0.002 s  <<< FAILURE!
+java.lang.AssertionError: Expected no exception but got: org.zalando.catwatch.backend.github.SnapshotProvider.getHttpClient()
+	at org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest.testInitWithoutCacheDirectory(gpt4o_run01_SnapshotProviderTest.java:185)
+
+testTakeSnapshotWithToken(org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: Expected no exception but got: null
+	at org.zalando.catwatch.backend.gpt4o_run01_SnapshotProviderTest.testTakeSnapshotWithToken(gpt4o_run01_SnapshotProviderTest.java:91)
+

@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="pt"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Project.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">catwatch-backend</a> &gt; <a href="index.source.html" class="el_package">org.zalando.catwatch.backend.model</a> &gt; <span class="el_source">Project.java</span></div><h1>Project.java</h1><pre class="source lang-java linenums">package org.zalando.catwatch.backend.model;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
+import com.google.common.base.MoreObjects;
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
+import org.zalando.catwatch.backend.model.util.JsonDateDeserializer;
+import org.zalando.catwatch.backend.model.util.JsonDateSerializer;
+
+import javax.persistence.CollectionTable;
+import javax.persistence.Column;
+import javax.persistence.ElementCollection;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.Table;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+
+@Entity
+@Table(name = &quot;project&quot;)
+@ApiModel(description = &quot;Represents a GitHub repository. See https://developer.github.com/v3/repos/&quot;)
+<span class="fc" id="L28">public class Project {</span>
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = &quot;id&quot;)
+    private int id;
+
+<span class="fc" id="L35">    @ElementCollection</span>
+    @CollectionTable(name = &quot;language_list&quot;, joinColumns = @JoinColumn(name = &quot;project_id&quot;))
+    @Column(name = &quot;language&quot;)
+    private List&lt;String&gt; languageList = new ArrayList&lt;&gt;();
+
+    @Column(name = &quot;git_hub_project_id&quot;)
+    private long gitHubProjectId;
+
+    @JsonSerialize(using = JsonDateSerializer.class)
+    @JsonDeserialize(using = JsonDateDeserializer.class)
+    @Column(name = &quot;snapshot_date&quot;)
+    private Date snapshotDate;
+
+    @Column(name = &quot;name&quot;)
+    private String name;
+
+    @Column(name = &quot;title&quot;)
+    private String title;
+
+    @Column(name = &quot;image&quot;)
+    private String image;
+
+    @Column(name = &quot;organization_name&quot;)
+    private String organizationName;
+
+    @Column(name = &quot;url&quot;)
+    private String url;
+
+    @Column(name = &quot;description&quot;)
+    private String description;
+
+    @Column(name = &quot;stars_count&quot;)
+    private Integer starsCount;
+
+    @Column(name = &quot;commits_count&quot;)
+    private Integer commitsCount;
+
+    @Column(name = &quot;forks_count&quot;)
+    private Integer forksCount;
+
+    @Column(name = &quot;contributors_count&quot;)
+    private Integer contributorsCount;
+
+    @Column(name = &quot;external_contributors_count&quot;)
+    private Integer externalContributorsCount;
+
+    @Column(name = &quot;score&quot;)
+    private Integer score;
+
+    @Column(name = &quot;last_pushed&quot;)
+    private String lastPushed;
+
+    @Column(name = &quot;primary_language&quot;)
+    private String primaryLanguage;
+
+<span class="fc" id="L90">    @ElementCollection</span>
+    @CollectionTable(name = &quot;maintainers&quot;, joinColumns = @JoinColumn(name = &quot;project_id&quot;))
+    @Column(name = &quot;maintainer&quot;)
+    private List&lt;String&gt; maintainers = new ArrayList&lt;&gt;();
+
+    @JsonIgnore
+    public int getId() {
+<span class="fc" id="L97">        return id;</span>
+    }
+
+    public void setId(final int id) {
+<span class="fc" id="L101">        this.id = id;</span>
+<span class="fc" id="L102">    }</span>
+
+    @ApiModelProperty(value = &quot;List of programming languages of project&quot;)
+    public List&lt;String&gt; getLanguageList() {
+<span class="fc" id="L106">        return languageList;</span>
+    }
+
+    public void setLanguageList(final List&lt;String&gt; languageList) {
+<span class="fc" id="L110">        this.languageList = languageList;</span>
+<span class="fc" id="L111">    }</span>
+
+    @ApiModelProperty(
+        value = &quot;the GitHub ID of the repository. Part of the primary key. See official GitHub REST API guide.&quot;
+    )
+    public long getGitHubProjectId() {
+<span class="fc" id="L117">        return gitHubProjectId;</span>
+    }
+
+    public void setGitHubProjectId(final long gitHubProjectId) {
+<span class="fc" id="L121">        this.gitHubProjectId = gitHubProjectId;</span>
+<span class="fc" id="L122">    }</span>
+
+    @ApiModelProperty(value = &quot;Project snapshot date. Part of the primary key.&quot;)
+    public Date getSnapshotDate() {
+<span class="nc" id="L126">        return snapshotDate;</span>
+    }
+
+    public void setSnapshotDate(final Date snapshotDate) {
+<span class="fc" id="L130">        this.snapshotDate = snapshotDate;</span>
+<span class="fc" id="L131">    }</span>
+
+    @ApiModelProperty(value = &quot;Name of project&quot;)
+    public String getName() {
+<span class="nc" id="L135">        return name;</span>
+    }
+
+    public void setName(final String name) {
+<span class="fc" id="L139">        this.name = name;</span>
+<span class="fc" id="L140">    }</span>
+
+    @ApiModelProperty(value = &quot;Title of project&quot;)
+    public String getTitle() {
+<span class="nc" id="L144">        return title;</span>
+    }
+
+    public void setTitle(final String title) {
+<span class="fc" id="L148">        this.title = title;</span>
+<span class="fc" id="L149">    }</span>
+
+    @ApiModelProperty(value = &quot;Image url of project&quot;)
+    public String getImage() {
+<span class="nc" id="L153">        return image;</span>
+    }
+
+    public void setImage(final String image) {
+<span class="fc" id="L157">        this.image = image;</span>
+<span class="fc" id="L158">    }</span>
+
+    @ApiModelProperty(value = &quot;Organization of the Project.&quot;)
+    public String getOrganizationName() {
+<span class="nc" id="L162">        return organizationName;</span>
+    }
+
+    public void setOrganizationName(final String organizationName) {
+<span class="fc" id="L166">        this.organizationName = organizationName;</span>
+<span class="fc" id="L167">    }</span>
+
+    @ApiModelProperty(value = &quot;URL of project&quot;)
+    public String getUrl() {
+<span class="nc" id="L171">        return url;</span>
+    }
+
+    public void setUrl(final String url) {
+<span class="fc" id="L175">        this.url = url;</span>
+<span class="fc" id="L176">    }</span>
+
+    @ApiModelProperty(value = &quot;Description of project&quot;)
+    public String getDescription() {
+<span class="nc" id="L180">        return description;</span>
+    }
+
+    public void setDescription(final String description) {
+<span class="fc" id="L184">        this.description = description;</span>
+<span class="fc" id="L185">    }</span>
+
+    @ApiModelProperty(value = &quot;Count of stars for the project.&quot;)
+    public Integer getStarsCount() {
+<span class="nc" id="L189">        return starsCount;</span>
+    }
+
+    public void setStarsCount(final Integer starsCount) {
+<span class="fc" id="L193">        this.starsCount = starsCount;</span>
+<span class="fc" id="L194">    }</span>
+
+    @ApiModelProperty(value = &quot;Count of commits for the project.&quot;)
+    public Integer getCommitsCount() {
+<span class="nc" id="L198">        return commitsCount;</span>
+    }
+
+    public void setCommitsCount(final Integer commitsCount) {
+<span class="fc" id="L202">        this.commitsCount = commitsCount;</span>
+<span class="fc" id="L203">    }</span>
+
+    @ApiModelProperty(value = &quot;Count of forks of project.&quot;)
+    public Integer getForksCount() {
+<span class="nc" id="L207">        return forksCount;</span>
+    }
+
+    public void setForksCount(final Integer forksCount) {
+<span class="fc" id="L211">        this.forksCount = forksCount;</span>
+<span class="fc" id="L212">    }</span>
+
+    @ApiModelProperty(value = &quot;Count of contributors for project.&quot;)
+    public Integer getContributorsCount() {
+<span class="nc" id="L216">        return contributorsCount;</span>
+    }
+
+    public void setContributorsCount(final Integer contributorsCount) {
+<span class="fc" id="L220">        this.contributorsCount = contributorsCount;</span>
+<span class="fc" id="L221">    }</span>
+
+    @ApiModelProperty(value = &quot;Count of external contributors for project.&quot;)
+<span class="nc" id="L224">    public Integer getExternalContributorsCount() { return externalContributorsCount; }</span>
+
+    public void setExternalContributorsCount(Integer externalContributorsCount) {
+<span class="nc" id="L227">        this.externalContributorsCount = externalContributorsCount;</span>
+<span class="nc" id="L228">    }</span>
+
+    @ApiModelProperty(value = &quot;Score of project.&quot;)
+    public Integer getScore() {
+<span class="nc" id="L232">        return score;</span>
+    }
+
+    public void setScore(final Integer score) {
+<span class="nc" id="L236">        this.score = score;</span>
+<span class="nc" id="L237">    }</span>
+
+    @ApiModelProperty(value = &quot;Last pushed data of project.&quot;)
+    public String getLastPushed() {
+<span class="nc" id="L241">        return lastPushed;</span>
+    }
+
+    public void setLastPushed(final String lastPushed) {
+<span class="fc" id="L245">        this.lastPushed = lastPushed;</span>
+<span class="fc" id="L246">    }</span>
+
+    @ApiModelProperty(value = &quot;Primary programming language of project&quot;)
+    public String getPrimaryLanguage() {
+<span class="nc" id="L250">        return primaryLanguage;</span>
+    }
+
+    public void setPrimaryLanguage(final String primaryLanguage) {
+<span class="fc" id="L254">        this.primaryLanguage = primaryLanguage;</span>
+<span class="fc" id="L255">    }</span>
+
+    @ApiModelProperty(value = &quot;List of maintainers of project&quot;)
+    public List&lt;String&gt; getMaintainers() {
+<span class="nc" id="L259">        return maintainers;</span>
+    }
+
+    public void setMaintainers(final List&lt;String&gt; maintainers) {
+<span class="fc" id="L263">        this.maintainers = maintainers;</span>
+<span class="fc" id="L264">    }</span>
+
+    @Override
+    public String toString() {
+<span class="nc" id="L268">        return MoreObjects.toStringHelper(this)</span>
+<span class="nc" id="L269">                .add(&quot;id&quot;, id)</span>
+<span class="nc" id="L270">                .add(&quot;languageList&quot;, languageList)</span>
+<span class="nc" id="L271">                .add(&quot;gitHubProjectId&quot;, gitHubProjectId)</span>
+<span class="nc" id="L272">                .add(&quot;snapshotDate&quot;, snapshotDate)</span>
+<span class="nc" id="L273">                .add(&quot;name&quot;, name)</span>
+<span class="nc" id="L274">                .add(&quot;title&quot;, title)</span>
+<span class="nc" id="L275">                .add(&quot;image&quot;, image)</span>
+<span class="nc" id="L276">                .add(&quot;organizationName&quot;, organizationName)</span>
+<span class="nc" id="L277">                .add(&quot;url&quot;, url)</span>
+<span class="nc" id="L278">                .add(&quot;description&quot;, description)</span>
+<span class="nc" id="L279">                .add(&quot;starsCount&quot;, starsCount)</span>
+<span class="nc" id="L280">                .add(&quot;commitsCount&quot;, commitsCount)</span>
+<span class="nc" id="L281">                .add(&quot;forksCount&quot;, forksCount)</span>
+<span class="nc" id="L282">                .add(&quot;contributorsCount&quot;, contributorsCount)</span>
+<span class="nc" id="L283">                .add(&quot;externalContributorsCount&quot;, externalContributorsCount)</span>
+<span class="nc" id="L284">                .add(&quot;score&quot;, score)</span>
+<span class="nc" id="L285">                .add(&quot;lastPushed&quot;, lastPushed)</span>
+<span class="nc" id="L286">                .add(&quot;primaryLanguage&quot;, primaryLanguage)</span>
+<span class="nc" id="L287">                .add(&quot;maintainers&quot;, maintainers)</span>
+<span class="nc" id="L288">                .toString();</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

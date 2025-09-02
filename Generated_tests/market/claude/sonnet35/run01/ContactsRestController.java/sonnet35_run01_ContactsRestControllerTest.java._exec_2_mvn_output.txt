@@ -1,0 +1,250 @@
+[[1;34mINFO[m] Scanning for projects...
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m---------------------< [0;36mnet.lukyanets:market-rest[0;1m >----------------------[m
+[[1;34mINFO[m] [1mBuilding market-rest 0.1.2[m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;33mWARNING[m] The POM for com.sun.xml.bind:jaxb-osgi:jar:2.2.10 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-clean-plugin:2.5:clean[m [1m(default-clean)[m @ [36mmarket-rest[0;1m ---[m
+[[1;34mINFO[m] Deleting /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_11_maven/cs/rest-gui/market/market-rest/target
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mjacoco-maven-plugin:0.8.7:prepare-agent[m [1m(default)[m @ [36mmarket-rest[0;1m ---[m
+[[1;34mINFO[m] argLine set to -javaagent:/home/rincon/.m2/repository/org/jacoco/org.jacoco.agent/0.8.7/org.jacoco.agent-0.8.7-runtime.jar=destfile=/media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_11_maven/cs/rest-gui/market/market-rest/target/jacoco.exec,append=true,excludes=em/embedded/market/**
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mspring-boot-maven-plugin:2.4.3:build-info[m [1m(default)[m @ [36mmarket-rest[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:resources[m [1m(default-resources)[m @ [36mmarket-rest[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.8.0:compile[m [1m(default-compile)[m @ [36mmarket-rest[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 11 source files to /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_11_maven/cs/rest-gui/market/market-rest/target/classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mjacoco-maven-plugin:0.8.7:prepare-agent[m [1m(default)[m @ [36mmarket-rest[0;1m ---[m
+[[1;34mINFO[m] argLine set to -javaagent:/home/rincon/.m2/repository/org/jacoco/org.jacoco.agent/0.8.7/org.jacoco.agent-0.8.7-runtime.jar=destfile=/media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_11_maven/cs/rest-gui/market/market-rest/target/jacoco.exec,append=true,excludes=em/embedded/market/**
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mspring-boot-maven-plugin:2.4.3:build-info[m [1m(default)[m @ [36mmarket-rest[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:resources[m [1m(default-resources)[m @ [36mmarket-rest[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.8.0:compile[m [1m(default-compile)[m @ [36mmarket-rest[0;1m ---[m
+[[1;34mINFO[m] Nothing to compile - all classes are up to date
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:testResources[m [1m(default-testResources)[m @ [36mmarket-rest[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_11_maven/cs/rest-gui/market/market-rest/src/test/resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.8.0:testCompile[m [1m(default-testCompile)[m @ [36mmarket-rest[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 1 source file to /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_11_maven/cs/rest-gui/market/market-rest/target/test-classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mjacoco-maven-plugin:0.8.7:prepare-agent[m [1m(default)[m @ [36mmarket-rest[0;1m ---[m
+[[1;34mINFO[m] argLine set to -javaagent:/home/rincon/.m2/repository/org/jacoco/org.jacoco.agent/0.8.7/org.jacoco.agent-0.8.7-runtime.jar=destfile=/media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_11_maven/cs/rest-gui/market/market-rest/target/jacoco.exec,append=true,excludes=em/embedded/market/**
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mspring-boot-maven-plugin:2.4.3:build-info[m [1m(default)[m @ [36mmarket-rest[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:resources[m [1m(default-resources)[m @ [36mmarket-rest[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.8.0:compile[m [1m(default-compile)[m @ [36mmarket-rest[0;1m ---[m
+[[1;34mINFO[m] Nothing to compile - all classes are up to date
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:testResources[m [1m(default-testResources)[m @ [36mmarket-rest[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_11_maven/cs/rest-gui/market/market-rest/src/test/resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.8.0:testCompile[m [1m(default-testCompile)[m @ [36mmarket-rest[0;1m ---[m
+[[1;34mINFO[m] Nothing to compile - all classes are up to date
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:2.22.0:test[m [1m(default-test)[m @ [36mmarket-rest[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] -------------------------------------------------------
+[[1;34mINFO[m]  T E S T S
+[[1;34mINFO[m] -------------------------------------------------------
+[[1;34mINFO[m] Running market.[1msonnet35_run01_ContactsRestControllerTest[m
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.4.3)
+
+2025-03-28 10:18:36,077 INFO  [background-preinit] o.h.v.i.u.Version - HV000001: Hibernate Validator 6.1.7.Final
+2025-03-28 10:18:36,186 INFO  [main] o.a.m.s.b.ForkedBooter - Starting ForkedBooter v2.22.0 using Java 11.0.20 on IFTO-PROBOOK with PID 5729 (started by rincon in /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_11_maven/cs/rest-gui/market/market-rest)
+2025-03-28 10:18:36,193 INFO  [main] o.a.m.s.b.ForkedBooter - No active profile set, falling back to default profiles: default
+2025-03-28 10:18:36,925 WARN  [main] o.s.b.c.c.ConfigDataEnvironment - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 34:13]
+2025-03-28 10:18:36,926 WARN  [main] o.s.b.c.c.ConfigDataEnvironment - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 24:13]
+2025-03-28 10:18:38,889 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-28 10:18:39,055 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 150 ms. Found 8 JPA repository interfaces.
+2025-03-28 10:18:39,668 INFO  [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'market.DataConfig' of type [market.DataConfig$$EnhancerBySpringCGLIB$$225ec8ef] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-03-28 10:18:39,885 INFO  [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@6b8eec09' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-03-28 10:18:39,895 INFO  [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-03-28 10:18:40,508 INFO  [main] o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 0 (http)
+2025-03-28 10:18:40,527 INFO  [main] o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-auto-1"]
+2025-03-28 10:18:40,528 INFO  [main] o.a.c.c.StandardService - Starting service [Tomcat]
+2025-03-28 10:18:40,529 INFO  [main] o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.43]
+2025-03-28 10:18:40,686 INFO  [main] o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+2025-03-28 10:18:40,686 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3756 ms
+2025-03-28 10:18:40,994 INFO  [main] c.z.h.HikariDataSource - HikariPool-1 - Starting...
+2025-03-28 10:18:41,519 INFO  [main] c.z.h.HikariDataSource - HikariPool-1 - Start completed.
+2025-03-28 10:18:41,811 INFO  [main] o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-28 10:18:41,931 INFO  [main] o.h.Version - HHH000412: Hibernate ORM core version 5.4.28.Final
+2025-03-28 10:18:42,176 INFO  [main] o.h.a.c.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2025-03-28 10:18:42,511 INFO  [main] o.h.d.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2025-03-28 10:18:42,889 WARN  [main] o.h.b.i.InFlightMetadataCollectorImpl - HHH000069: Duplicate generator name gen
+2025-03-28 10:18:42,892 WARN  [main] o.h.b.i.InFlightMetadataCollectorImpl - HHH000069: Duplicate generator name gen
+2025-03-28 10:18:43,969 INFO  [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-03-28 10:18:43,983 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-28 10:18:45,447 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-28 10:18:46,704 INFO  [main] o.s.s.w.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@798413e9, org.springframework.security.web.context.SecurityContextPersistenceFilter@1fce46f6, org.springframework.security.web.header.HeaderWriterFilter@5eacb6d, org.springframework.security.web.authentication.logout.LogoutFilter@1a3a046, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@3afd8563, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@73810825, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2497095c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@47ff67dc, org.springframework.security.web.session.SessionManagementFilter@683729c5, org.springframework.security.web.access.ExceptionTranslationFilter@4a5c6e7, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5f753ad8]
+2025-03-28 10:18:46,885 INFO  [main] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2025-03-28 10:18:47,449 INFO  [main] o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-auto-1"]
+2025-03-28 10:18:47,485 INFO  [main] o.s.b.w.e.t.TomcatWebServer - Tomcat started on port(s): 39983 (http) with context path ''
+2025-03-28 10:18:48,219 INFO  [main] o.a.m.s.b.ForkedBooter - Started ForkedBooter in 13.243 seconds (JVM running for 16.137)
+2025-03-28 10:18:50,834 INFO  [http-nio-auto-1-exec-1] o.a.c.c.C.[.[.[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-28 10:18:50,834 INFO  [http-nio-auto-1-exec-1] o.s.w.s.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-03-28 10:18:50,839 INFO  [http-nio-auto-1-exec-1] o.s.w.s.DispatcherServlet - Completed initialization in 5 ms
+2025-03-28 10:18:51,295 WARN  [http-nio-auto-1-exec-1] m.r.e.RestExceptionHandler - RestErrorResponse{message='Argument validation error', entityName='UserAccount', description='uri=/register', fieldErrors=[{field='email', message='Account with this email already exists'}]}
+2025-03-28 10:18:52,921 WARN  [http-nio-auto-1-exec-4] m.r.e.RestExceptionHandler - RestErrorResponse{message='Acesso negado', entityName='null', description='uri=/customer/contacts', fieldErrors=[]}
+Request method:	PUT
+Request URI:	http://localhost:39983/customer/contacts
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer null
+				Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "phone": "+7 987 654 32 10",
+    "address": "Neue Strasse 20"
+}
+
+HTTP/1.1 401 
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Fri, 28 Mar 2025 13:18:52 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+{
+    "message": "Acesso negado",
+    "description": "uri=/customer/contacts",
+    "entityName": null,
+    "fieldErrors": [
+        
+    ]
+}
+2025-03-28 10:18:53,036 WARN  [http-nio-auto-1-exec-5] m.r.e.RestExceptionHandler - RestErrorResponse{message='Acesso negado', entityName='null', description='uri=/customer/contacts', fieldErrors=[]}
+2025-03-28 10:18:53,095 WARN  [http-nio-auto-1-exec-6] m.r.e.RestExceptionHandler - RestErrorResponse{message='Argument validation error', entityName='UserAccount', description='uri=/register', fieldErrors=[{field='email', message='Account with this email already exists'}]}
+2025-03-28 10:18:53,343 WARN  [http-nio-auto-1-exec-8] m.r.e.RestExceptionHandler - RestErrorResponse{message='Argument validation error', entityName='contactsDTO', description='uri=/customer/contacts', fieldErrors=[{field='phone', message='Shall consist of a + sign, a country code, a region code (1-4 digits), and a number (6-7 digits)'}]}
+Request method:	PUT
+Request URI:	http://localhost:39983/customer/contacts
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer null
+				Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "phone": "invalid phone",
+    "address": "Neue Strasse 20"
+}
+
+HTTP/1.1 406 
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Fri, 28 Mar 2025 13:18:52 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+{
+    "message": "Argument validation error",
+    "description": "uri=/customer/contacts",
+    "entityName": "contactsDTO",
+    "fieldErrors": [
+        {
+            "field": "phone",
+            "message": "Shall consist of a + sign, a country code, a region code (1-4 digits), and a number (6-7 digits)"
+        }
+    ]
+}
+2025-03-28 10:18:53,365 INFO  [main] o.a.c.h.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-auto-1"]
+2025-03-28 10:18:53,366 INFO  [main] o.a.c.c.StandardService - Stopping service [Tomcat]
+2025-03-28 10:18:53,368 INFO  [main] o.a.c.c.C.[.[.[/] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2025-03-28 10:18:53,374 INFO  [main] o.a.c.h.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-auto-1"]
+2025-03-28 10:18:53,378 INFO  [main] o.a.c.h.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-auto-1"]
+[[1;31mERROR[m] [1;31mTests [0;1mrun: [0;1m3[m, [1;31mFailures: [0;1;31m2[m, Errors: 0, Skipped: 0, Time elapsed: 19.894 s[1;31m <<< FAILURE![m - in market.[1msonnet35_run01_ContactsRestControllerTest[m
+[[1;31mERROR[m] testUpdateContacts  Time elapsed: 3.621 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <200> but was <401>.
+
+	at market.sonnet35_run01_ContactsRestControllerTest.testUpdateContacts(sonnet35_run01_ContactsRestControllerTest.java:93)
+
+[[1;31mERROR[m] testUpdateContactsWithInvalidData  Time elapsed: 0.309 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <400> but was <406>.
+
+	at market.sonnet35_run01_ContactsRestControllerTest.testUpdateContactsWithInvalidData(sonnet35_run01_ContactsRestControllerTest.java:140)
+
+2025-03-28 10:18:53,450 INFO  [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2025-03-28 10:18:53,463 INFO  [SpringContextShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-28 10:18:53,466 INFO  [SpringContextShutdownHook] c.z.h.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-03-28 10:18:53,476 INFO  [SpringContextShutdownHook] c.z.h.HikariDataSource - HikariPool-1 - Shutdown completed.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] Results:
+[[1;34mINFO[m] 
+[[1;31mERROR[m] [1;31mFailures: [m
+[[1;31mERROR[m] [1;31m  sonnet35_run01_ContactsRestControllerTest.testUpdateContacts:93 1 expectation failed.
+Expected status code <200> but was <401>.
+[m
+[[1;31mERROR[m] [1;31m  sonnet35_run01_ContactsRestControllerTest.testUpdateContactsWithInvalidData:140 1 expectation failed.
+Expected status code <400> but was <406>.
+[m
+[[1;34mINFO[m] 
+[[1;31mERROR[m] [1;31mTests run: 3, Failures: 2, Errors: 0, Skipped: 0[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;31mBUILD FAILURE[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  26.376 s
+[[1;34mINFO[m] Finished at: 2025-03-28T10:18:54-03:00
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;31mERROR[m] Failed to execute goal [32morg.apache.maven.plugins:maven-surefire-plugin:2.22.0:test[m [1m(default-test)[m on project [36mmarket-rest[m: [1;31mThere are test failures.[m
+[[1;31mERROR[m] [1;31m[m
+[[1;31mERROR[m] [1;31mPlease refer to /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_11_maven/cs/rest-gui/market/market-rest/target/surefire-reports for the individual test results.[m
+[[1;31mERROR[m] [1;31mPlease refer to dump files (if any exist) [date]-jvmRun[N].dump, [date].dumpstream and [date]-jvmRun[N].dumpstream.[m
+[[1;31mERROR[m] -> [1m[Help 1][m
+[[1;31mERROR[m] 
+[[1;31mERROR[m] To see the full stack trace of the errors, re-run Maven with the [1m-e[m switch.
+[[1;31mERROR[m] Re-run Maven using the [1m-X[m switch to enable full debug logging.
+[[1;31mERROR[m] 
+[[1;31mERROR[m] For more information about the errors and possible solutions, please read the following articles:
+[[1;31mERROR[m] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

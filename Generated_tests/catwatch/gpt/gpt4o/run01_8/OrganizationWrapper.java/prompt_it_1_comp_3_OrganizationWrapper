@@ -1,0 +1,218 @@
+You are a highly skilled test engineer specializing in debugging and resolving compilation errors and test failures in Java-based projects. Your expertise includes Java 8, JUnit 4, and REST Assured, allowing you to diagnose issues efficiently and provide precise, actionable fixes.
+
+Do fix the compilation errors delimited by ##### given the code below delimited by *****.
+
+The response must contain only Java code in JUnit 4 format.
+
+#####
+[[1;31mERROR[m] COMPILATION ERROR : 
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_OrganizationWrapperTest.java:[69,58] cannot find symbol
+  symbol:   method createWrapper(org.kohsuke.github.GHOrganization)
+  location: class org.zalando.catwatch.backend.github.OrganizationWrapper
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_OrganizationWrapperTest.java:[78,58] cannot find symbol
+  symbol:   method createWrapper(org.kohsuke.github.GHOrganization)
+  location: class org.zalando.catwatch.backend.github.OrganizationWrapper
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_OrganizationWrapperTest.java:[94,58] cannot find symbol
+  symbol:   method createWrapper(org.kohsuke.github.GHOrganization)
+  location: class org.zalando.catwatch.backend.github.OrganizationWrapper
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_OrganizationWrapperTest.java:[104,58] cannot find symbol
+  symbol:   method createWrapper(org.kohsuke.github.GHOrganization)
+  location: class org.zalando.catwatch.backend.github.OrganizationWrapper
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_OrganizationWrapperTest.java:[119,58] cannot find symbol
+  symbol:   method createWrapper(org.kohsuke.github.GHOrganization)
+  location: class org.zalando.catwatch.backend.github.OrganizationWrapper
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_OrganizationWrapperTest.java:[158,20] org.zalando.catwatch.backend.gpt4o_run01_OrganizationWrapperTest.MockPagedIterator is not abstract and does not override abstract method wrapUp(T[]) in org.kohsuke.github.PagedIterator
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_OrganizationWrapperTest.java:[160,13] PagedIterator(java.util.Iterator<T[]>) is not public in org.kohsuke.github.PagedIterator; cannot be accessed from outside package
+[[1;31mERROR[m] Failed to execute goal [32morg.apache.maven.plugins:maven-compiler-plugin:3.8.0:testCompile[m [1m(default-testCompile)[m on project [36mcatwatch-backend[m: [1;31mCompilation failure[m: Compilation failure: 
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_OrganizationWrapperTest.java:[69,58] cannot find symbol
+[[1;31mERROR[m]   symbol:   method createWrapper(org.kohsuke.github.GHOrganization)
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.github.OrganizationWrapper
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_OrganizationWrapperTest.java:[78,58] cannot find symbol
+[[1;31mERROR[m]   symbol:   method createWrapper(org.kohsuke.github.GHOrganization)
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.github.OrganizationWrapper
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_OrganizationWrapperTest.java:[94,58] cannot find symbol
+[[1;31mERROR[m]   symbol:   method createWrapper(org.kohsuke.github.GHOrganization)
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.github.OrganizationWrapper
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_OrganizationWrapperTest.java:[104,58] cannot find symbol
+[[1;31mERROR[m]   symbol:   method createWrapper(org.kohsuke.github.GHOrganization)
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.github.OrganizationWrapper
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_OrganizationWrapperTest.java:[119,58] cannot find symbol
+[[1;31mERROR[m]   symbol:   method createWrapper(org.kohsuke.github.GHOrganization)
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.github.OrganizationWrapper
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_OrganizationWrapperTest.java:[158,20] org.zalando.catwatch.backend.gpt4o_run01_OrganizationWrapperTest.MockPagedIterator is not abstract and does not override abstract method wrapUp(T[]) in org.kohsuke.github.PagedIterator
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_OrganizationWrapperTest.java:[160,13] PagedIterator(java.util.Iterator<T[]>) is not public in org.kohsuke.github.PagedIterator; cannot be accessed from outside package
+[[1;31mERROR[m] -> [1m[Help 1][m
+[[1;31mERROR[m] 
+[[1;31mERROR[m] To see the full stack trace of the errors, re-run Maven with the [1m-e[m switch.
+[[1;31mERROR[m] Re-run Maven using the [1m-X[m switch to enable full debug logging.
+[[1;31mERROR[m] 
+[[1;31mERROR[m] For more information about the errors and possible solutions, please read the following articles:
+[[1;31mERROR[m] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+
+#####
+*****
+
+package org.zalando.catwatch.backend;
+
+import org.junit.AfterClass;
+import org.junit.BeforeClass;
+import org.junit.Before;
+import org.junit.Test;
+import static org.junit.Assert.*;
+import java.util.Map;
+import java.util.List;
+import static org.evomaster.client.java.controller.api.EMTestUtils.*;
+import org.evomaster.client.java.controller.SutHandler;
+import io.restassured.RestAssured;
+import static io.restassured.RestAssured.given;
+import io.restassured.response.ValidatableResponse;
+import static org.evomaster.client.java.sql.dsl.SqlDsl.sql;
+import org.evomaster.client.java.controller.api.dto.database.operations.InsertionResultsDto;
+import org.evomaster.client.java.controller.api.dto.database.operations.InsertionDto;
+import static org.hamcrest.Matchers.*;
+import io.restassured.config.JsonConfig;
+import io.restassured.path.json.config.JsonPathConfig;
+import static io.restassured.config.RedirectConfig.redirectConfig;
+import static org.evomaster.client.java.controller.contentMatchers.NumberMatcher.*;
+import static org.evomaster.client.java.controller.contentMatchers.StringMatcher.*;
+import static org.evomaster.client.java.controller.contentMatchers.SubStringMatcher.*;
+import static org.evomaster.client.java.controller.expect.ExpectationHandler.expectationHandler;
+import org.evomaster.client.java.controller.expect.ExpectationHandler;
+import io.restassured.path.json.JsonPath;
+import java.util.Arrays;
+import org.zalando.catwatch.backend.github.OrganizationWrapper;
+import org.kohsuke.github.*;
+
+import java.io.IOException;
+import java.util.Collections;
+
+public class gpt4o_run01_OrganizationWrapperTest {
+
+    private static final SutHandler controller = new em.embedded.org.zalando.EmbeddedEvoMasterController();
+    private static String baseUrlOfSut;
+
+    @BeforeClass
+    public static void initClass() {
+        controller.setupForGeneratedTest();
+        baseUrlOfSut = controller.startSut();
+        controller.registerOrExecuteInitSqlCommandsIfNeeded();
+        assertNotNull(baseUrlOfSut);
+        RestAssured.enableLoggingOfRequestAndResponseIfValidationFails();
+        RestAssured.useRelaxedHTTPSValidation();
+        RestAssured.urlEncodingEnabled = false;
+        RestAssured.config = RestAssured.config()
+            .jsonConfig(JsonConfig.jsonConfig().numberReturnType(JsonPathConfig.NumberReturnType.DOUBLE))
+            .redirect(redirectConfig().followRedirects(false));
+    }
+
+    @AfterClass
+    public static void tearDown() {
+        controller.stopSut();
+    }
+
+    @Before
+    public void initTest() {
+        controller.resetDatabase(Arrays.asList("CONTRIBUTOR"));
+        controller.resetStateOfSUT();
+    }
+
+    @Test
+    public void testOrganizationWrapperConstructor() {
+        GHOrganization mockOrganization = new MockGHOrganization();
+        OrganizationWrapper wrapper = OrganizationWrapper.createWrapper(mockOrganization); // Use a factory method to bypass access modifier issues
+        
+        assertNotNull(wrapper);
+        assertEquals(Collections.emptyList(), wrapper.listRepositories());
+    }
+
+    @Test
+    public void testListTeamsNoTeams() {
+        GHOrganization mockOrganization = new MockGHOrganization();
+        OrganizationWrapper wrapper = OrganizationWrapper.createWrapper(mockOrganization);
+
+        List<GHTeam> teams = wrapper.listTeams();
+        assertNotNull(teams);
+        assertTrue(teams.isEmpty());
+    }
+
+    @Test
+    public void testListTeamsWithException() {
+        GHOrganization mockOrganization = new MockGHOrganization() {
+            @Override
+            public PagedIterable<GHTeam> listTeams() {
+                throw new RuntimeException("Test Exception");
+            }
+        };
+
+        OrganizationWrapper wrapper = OrganizationWrapper.createWrapper(mockOrganization);
+
+        List<GHTeam> teams = wrapper.listTeams();
+        assertNotNull(teams);
+        assertTrue(teams.isEmpty());
+    }
+
+    @Test
+    public void testGetPublicRepoCountNoRepos() {
+        GHOrganization mockOrganization = new MockGHOrganization();
+        OrganizationWrapper wrapper = OrganizationWrapper.createWrapper(mockOrganization);
+
+        int count = wrapper.getPublicRepoCount();
+        assertEquals(0, count);
+    }
+
+    @Test
+    public void testGetPublicRepoCountWithException() {
+        GHOrganization mockOrganization = new MockGHOrganization() {
+            @Override
+            public int getPublicRepoCount() throws IOException {
+                throw new IOException("Test Exception");
+            }
+        };
+
+        OrganizationWrapper wrapper = OrganizationWrapper.createWrapper(mockOrganization);
+
+        int count = wrapper.getPublicRepoCount();
+        assertEquals(0, count);
+    }
+
+    // Additional helper classes for mocking
+    private static class MockGHOrganization extends GHOrganization {
+        @Override
+        public String getLogin() {
+            return "mock-login";
+        }
+
+        @Override
+        public int getId() {
+            return 1;
+        }
+
+        @Override
+        public PagedIterable<GHRepository> listRepositories() {
+            return new PagedIterable<GHRepository>() {
+                @Override
+                public PagedIterator<GHRepository> _iterator(int pageSize) {
+                    return new MockPagedIterator<>();
+                }
+            };
+        }
+
+        @Override
+        public PagedIterable<GHTeam> listTeams() {
+            return new PagedIterable<GHTeam>() {
+                @Override
+                public PagedIterator<GHTeam> _iterator(int pageSize) {
+                    return new MockPagedIterator<>();
+                }
+            };
+        }
+    }
+
+    private static class MockPagedIterator<T> extends PagedIterator<T> {
+        public MockPagedIterator() {
+            super(Collections.emptyIterator());
+        }
+    }
+}
+
+*****

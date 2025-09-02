@@ -1,0 +1,31 @@
+Line: 118
+JSON path $ doesn't match.
+Expected: a collection with size a value less than or equal to <10>
+Actual: {timestamp=1744815246014, status=500, error=Internal Server Error, exception=java.lang.IndexOutOfBoundsException, message=toIndex = 10, path=/statistics/contributors}
+----------------------------------------
+Line: 130
+JSON path $ doesn't match.
+Expected: a collection with size a value less than or equal to <10>
+Actual: {timestamp=1744815246063, status=500, error=Internal Server Error, exception=java.lang.IndexOutOfBoundsException, message=toIndex = 10, path=/statistics/contributors}
+----------------------------------------
+Line: 140
+Expected status code <500> but was <200>.
+----------------------------------------
+Line: 152
+Expected status code <500> but was <200>.
+----------------------------------------
+Line: 172
+Response body doesn't match expectation.
+Expected: a string containing "Couldn't parse date string"
+Actual: {"timestamp":1744815246187,"status":500,"error":"Internal Server Error","exception":"java.lang.IndexOutOfBoundsException","message":"toIndex = 10","path":"/statistics/projects"}
+----------------------------------------
+Line: 95
+JSON path $ doesn't match.
+Expected: a collection with size a value less than or equal to <10>
+Actual: {timestamp=1744815245467, status=500, error=Internal Server Error, exception=java.lang.IndexOutOfBoundsException, message=toIndex = 10, path=/statistics/projects}
+----------------------------------------
+Line: 107
+JSON path $ doesn't match.
+Expected: a collection with size a value less than or equal to <10>
+Actual: {timestamp=1744815245955, status=500, error=Internal Server Error, exception=java.lang.IndexOutOfBoundsException, message=toIndex = 10, path=/statistics/projects}
+----------------------------------------

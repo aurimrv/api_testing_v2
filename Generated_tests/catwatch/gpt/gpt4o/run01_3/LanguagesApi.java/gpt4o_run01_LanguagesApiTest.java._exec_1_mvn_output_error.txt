@@ -1,0 +1,24 @@
+Line: 76
+JSON path $ doesn't match.
+Expected: not an empty collection
+Actual: []
+----------------------------------------
+Line: 121
+Expected status code <400> but was <500>.
+----------------------------------------
+Line: 131
+Expected status code <400> but was <500>.
+----------------------------------------
+Line: 89
+JSON path $ doesn't match.
+Expected: not an empty collection
+Actual: []
+----------------------------------------
+Line: 111
+Expected status code <400> but was <200>.
+----------------------------------------
+Line: 101
+JSON path $ doesn't match.
+Expected: not an empty collection
+Actual: []
+----------------------------------------

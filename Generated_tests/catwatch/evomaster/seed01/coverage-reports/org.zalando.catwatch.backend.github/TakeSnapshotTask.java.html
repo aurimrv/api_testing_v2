@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="pt"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>TakeSnapshotTask.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">catwatch-backend</a> &gt; <a href="index.source.html" class="el_package">org.zalando.catwatch.backend.github</a> &gt; <span class="el_source">TakeSnapshotTask.java</span></div><h1>TakeSnapshotTask.java</h1><pre class="source lang-java linenums">package org.zalando.catwatch.backend.github;
+
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.dataformat.yaml.YAMLFactory;
+import com.google.common.collect.Lists;
+import org.apache.tomcat.util.http.fileupload.util.Streams;
+import org.kohsuke.github.GHObject;
+import org.kohsuke.github.GHRepository;
+import org.kohsuke.github.GitHub;
+import org.kohsuke.github.RateLimitHandler;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.zalando.catwatch.backend.model.CatwatchYaml;
+import org.zalando.catwatch.backend.model.Contributor;
+import org.zalando.catwatch.backend.model.Language;
+import org.zalando.catwatch.backend.model.Project;
+import org.zalando.catwatch.backend.model.Statistics;
+import org.zalando.catwatch.backend.model.util.Scorer;
+
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.net.URISyntaxException;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.Date;
+import java.util.IntSummaryStatistics;
+import java.util.List;
+import java.util.LongSummaryStatistics;
+import java.util.Map;
+import java.util.Set;
+import java.util.TreeSet;
+import java.util.concurrent.Callable;
+
+import static java.util.stream.Collectors.*;
+
+/**
+ * Task to get organisation snapshot from GitHub using Kohsuke GitHub API.
+ * &lt;p&gt;
+ * The code of this class is not optimised in terms of number of API requests
+ * in favour of code simplicity and readability. However, this should not affect
+ * API rate limit if http cache is used. If rate limit is reached the task
+ * is blocked until the limit is reset.
+ *
+ * @see RateLimitHandler
+ * @see &lt;a href=&quot;http://github-api.kohsuke.org&quot;&gt;Kohsuke GitHub API&lt;/a&gt;
+ * @see &lt;a href=&quot;https://developer.github.com/v3/#rate-limiting&quot;&gt;API documentation from GitHub&lt;/a&gt;
+ */
+public class TakeSnapshotTask implements Callable&lt;Snapshot&gt; {
+
+<span class="nc" id="L52">    private static final Logger logger = LoggerFactory.getLogger(TakeSnapshotTask.class);</span>
+
+    private final GitHub gitHub;
+    private final String organisationName;
+    private final Date snapshotDate;
+
+    private Scorer scorer;
+
+<span class="nc" id="L60">    public TakeSnapshotTask(final GitHub gitHub, final String organisationName, Scorer scorer, Date snapshotDate) {</span>
+<span class="nc" id="L61">        this.gitHub = gitHub;</span>
+<span class="nc" id="L62">        this.organisationName = organisationName;</span>
+<span class="nc" id="L63">        this.scorer = scorer;</span>
+<span class="nc" id="L64">        this.snapshotDate = snapshotDate;</span>
+<span class="nc" id="L65">    }</span>
+
+    @Override
+    public Snapshot call() throws Exception {
+<span class="nc" id="L69">        logger.info(&quot;Taking snapshot of organization '{}'.&quot;, organisationName);</span>
+
+<span class="nc" id="L71">        final OrganizationWrapper organization = new OrganizationWrapper(gitHub.getOrganization(organisationName));</span>
+
+<span class="nc" id="L73">        Snapshot snapshot = new Snapshot(</span>
+<span class="nc" id="L74">                collectStatistics(organization),</span>
+<span class="nc" id="L75">                collectProjects(organization),</span>
+<span class="nc" id="L76">                collectContributors(organization),</span>
+<span class="nc" id="L77">                collectLanguages(organization));</span>
+
+<span class="nc" id="L79">        logger.info(&quot;Successfully taken snapshot of organization '{}'.&quot;, organisationName);</span>
+
+<span class="nc" id="L81">        return snapshot;</span>
+    }
+
+    Statistics collectStatistics(final OrganizationWrapper organization) throws IOException {
+<span class="nc" id="L85">        logger.info(&quot;Started collecting statistics for organization '{}'.&quot;, organisationName);</span>
+
+<span class="nc" id="L87">        Statistics statistics = new Statistics(organization.getId(), snapshotDate);</span>
+
+<span class="nc" id="L89">        statistics.setPublicProjectCount(organization.listRepositories().size());</span>
+<span class="nc" id="L90">        statistics.setMembersCount(organization.listMembers().size());</span>
+<span class="nc" id="L91">        statistics.setTeamsCount(organization.listTeams().size());</span>
+<span class="nc" id="L92">        statistics.setAllContributorsCount((int) organization.listRepositories().stream()</span>
+<span class="nc" id="L93">                .map(RepositoryWrapper::listContributors)</span>
+<span class="nc" id="L94">                .flatMap(List::stream)</span>
+<span class="nc" id="L95">                .map(GHRepository.Contributor::getId)</span>
+<span class="nc" id="L96">                .distinct()</span>
+<span class="nc" id="L97">                .count());</span>
+<span class="nc" id="L98">        statistics.setExternalContributorsCount((int) organization.listRepositories().stream()</span>
+<span class="nc" id="L99">                .map(RepositoryWrapper::listContributors)</span>
+<span class="nc" id="L100">                .flatMap(List::stream)</span>
+<span class="nc bnc" id="L101" title="All 2 branches missed.">                .filter(contributor -&gt; !organization.contributorIsMember(contributor))</span>
+<span class="nc" id="L102">                .map(GHRepository.Contributor::getId)</span>
+<span class="nc" id="L103">                .distinct()</span>
+<span class="nc" id="L104">                .count());</span>
+<span class="nc" id="L105">        statistics.setAllStarsCount(organization.listRepositories().stream()</span>
+<span class="nc" id="L106">                .map(RepositoryWrapper::getStarsCount)</span>
+<span class="nc" id="L107">                .reduce(0, Integer::sum));</span>
+<span class="nc" id="L108">        statistics.setAllForksCount(organization.listRepositories().stream()</span>
+<span class="nc" id="L109">                .map(RepositoryWrapper::getForksCount)</span>
+<span class="nc" id="L110">                .reduce(0, Integer::sum));</span>
+<span class="nc" id="L111">        statistics.setAllSizeCount(organization.listRepositories().stream()</span>
+<span class="nc" id="L112">                .map(RepositoryWrapper::getSize)</span>
+<span class="nc" id="L113">                .reduce(0, Integer::sum));</span>
+<span class="nc" id="L114">        statistics.setProgramLanguagesCount((int) organization.listRepositories().stream()</span>
+<span class="nc" id="L115">                .map(RepositoryWrapper::getPrimaryLanguage)</span>
+<span class="nc" id="L116">                .distinct()</span>
+<span class="nc" id="L117">                .count());</span>
+<span class="nc" id="L118">        statistics.setTagsCount((int) organization.listRepositories().stream()</span>
+<span class="nc" id="L119">                .map(RepositoryWrapper::listTags)</span>
+<span class="nc" id="L120">                .flatMap(List::stream)</span>
+<span class="nc" id="L121">                .count());</span>
+<span class="nc" id="L122">        statistics.setOrganizationName(organization.getLogin());</span>
+
+<span class="nc" id="L124">        logger.info(&quot;Finished collecting statistics for organization '{}'.&quot;, organisationName);</span>
+
+<span class="nc" id="L126">        return statistics;</span>
+    }
+
+    Collection&lt;Project&gt; collectProjects(OrganizationWrapper organization) throws IOException, URISyntaxException {
+<span class="nc" id="L130">        logger.info(&quot;Started collecting projects for organization '{}'.&quot;, organisationName);</span>
+
+<span class="nc" id="L132">        List&lt;Project&gt; projects = new ArrayList&lt;&gt;();</span>
+
+<span class="nc bnc" id="L134" title="All 2 branches missed.">        for (RepositoryWrapper repository : organization.listRepositories()) {</span>
+<span class="nc" id="L135">            Project project = new Project();</span>
+
+<span class="nc" id="L137">            project.setGitHubProjectId(repository.getId());</span>
+<span class="nc" id="L138">            project.setSnapshotDate(snapshotDate);</span>
+<span class="nc" id="L139">            project.setName(repository.getName());</span>
+<span class="nc" id="L140">            project.setUrl(repository.getUrl().toURI().toString());</span>
+<span class="nc" id="L141">            project.setDescription(repository.getDescription());</span>
+<span class="nc" id="L142">            project.setStarsCount(repository.getStarsCount());</span>
+<span class="nc" id="L143">            project.setForksCount(repository.getForksCount());</span>
+<span class="nc" id="L144">            project.setLastPushed(repository.getLastPushed().toString());</span>
+<span class="nc" id="L145">            project.setPrimaryLanguage(repository.getPrimaryLanguage());</span>
+<span class="nc" id="L146">            project.setLanguageList(new ArrayList&lt;&gt;(repository.listLanguages().keySet()));</span>
+<span class="nc" id="L147">            project.setOrganizationName(organization.getLogin());</span>
+<span class="nc" id="L148">            project.setCommitsCount(repository.listCommits().size());</span>
+<span class="nc" id="L149">            project.setContributorsCount(repository.listContributors().size());</span>
+<span class="nc" id="L150">            project.setExternalContributorsCount((int) repository.listContributors().stream()</span>
+<span class="nc bnc" id="L151" title="All 2 branches missed.">                    .filter(contributor -&gt; !organization.contributorIsMember(contributor))</span>
+<span class="nc" id="L152">                    .map(GHRepository.Contributor::getId)</span>
+<span class="nc" id="L153">                    .distinct()</span>
+<span class="nc" id="L154">                    .count());</span>
+<span class="nc" id="L155">            project.setScore(scorer.score(project));</span>
+
+<span class="nc" id="L157">            project.setMaintainers(getProjectMaintainers(repository));</span>
+
+<span class="nc" id="L159">            readCatwatchYaml(repository, project);</span>
+
+<span class="nc" id="L161">            projects.add(project);</span>
+<span class="nc" id="L162">        }</span>
+
+<span class="nc" id="L164">        logger.info(&quot;Finished collecting projects for organization '{}'.&quot;, organisationName);</span>
+
+<span class="nc" id="L166">        return projects;</span>
+    }
+
+    List&lt;String&gt; getProjectMaintainers(RepositoryWrapper repository) {
+        try {
+<span class="nc" id="L171">            return Lists.newArrayList(Streams.asString(repository.getFileContent(&quot;MAINTAINERS&quot;)).split(&quot;\n&quot;));</span>
+<span class="nc" id="L172">        } catch (IOException ioe) {</span>
+<span class="nc" id="L173">            return Collections.emptyList();</span>
+        }
+    }
+
+    void readCatwatchYaml(RepositoryWrapper repository, Project project) {
+        CatwatchYaml data;
+        try {
+<span class="nc" id="L180">            final ObjectMapper mapper = new ObjectMapper(new YAMLFactory()); // jackson databind</span>
+
+<span class="nc" id="L182">            data = mapper.readValue(repository.getFileContent(&quot;.catwatch.yaml&quot;), CatwatchYaml.class);</span>
+
+<span class="nc" id="L184">        } catch (FileNotFoundException fnfe) {</span>
+            // ignore 404 for .catwatch.yaml
+<span class="nc" id="L186">            data = null;</span>
+<span class="nc" id="L187">        } catch (IOException ioe) {</span>
+<span class="nc" id="L188">            logger.warn(&quot;Failed to read .catwatch.yaml for '{}'&quot;, repository.getName(), ioe);</span>
+<span class="nc" id="L189">            data = null;</span>
+<span class="nc" id="L190">        }</span>
+<span class="nc bnc" id="L191" title="All 2 branches missed.">        if (null != data) {</span>
+<span class="nc" id="L192">            project.setTitle(data.getTitle());</span>
+<span class="nc" id="L193">            project.setImage(data.getImage());</span>
+        }
+<span class="nc" id="L195">    }</span>
+
+    @SuppressWarnings(&quot;unchecked&quot;)
+    Collection&lt;Contributor&gt; collectContributors(OrganizationWrapper organization) throws IOException, URISyntaxException {
+<span class="nc" id="L199">        logger.info(&quot;Started collecting contributors for organization '{}'.&quot;, organisationName);</span>
+
+<span class="nc" id="L201">        Collection&lt;Contributor&gt; contributors = new ArrayList&lt;&gt;();</span>
+
+        // Get a list of all contributors of all repositories
+<span class="nc" id="L204">        Collection&lt;GHRepository.Contributor&gt; ghContributors = organization.listRepositories().stream()</span>
+<span class="nc" id="L205">                .map(RepositoryWrapper::listContributors)</span>
+<span class="nc" id="L206">                .flatMap(List::stream)</span>
+<span class="nc" id="L207">                .collect(toList());</span>
+
+        // Get a map of &lt;Contributor ID&gt; - &lt;Contributions statistics&gt;
+<span class="nc" id="L210">        Map&lt;Integer, IntSummaryStatistics&gt; idStatisticsMap = ghContributors.stream()</span>
+<span class="nc" id="L211">                .collect(groupingBy(GHObject::getId, summarizingInt(GHRepository.Contributor::getContributions)));</span>
+
+        // Eliminate duplicates in contributors list
+<span class="nc" id="L214">        ghContributors = ghContributors.stream()</span>
+<span class="nc" id="L215">                .collect(collectingAndThen(toCollection(() -&gt;</span>
+<span class="nc" id="L216">                        new TreeSet&lt;&gt;(Comparator.comparingInt(GHObject::getId))), ArrayList::new));</span>
+
+        // Build a list of contributors
+<span class="nc bnc" id="L219" title="All 2 branches missed.">        for (GHRepository.Contributor ghContributor : ghContributors) {</span>
+<span class="nc" id="L220">            Contributor contributor = new Contributor(ghContributor.getId(), organization.getId(), snapshotDate);</span>
+
+<span class="nc" id="L222">            contributor.setName(ghContributor.getName());</span>
+<span class="nc" id="L223">            contributor.setUrl(ghContributor.getHtmlUrl().toURI().toString());</span>
+<span class="nc" id="L224">            contributor.setOrganizationalCommitsCount((int) idStatisticsMap.get(ghContributor.getId()).getSum());</span>
+<span class="nc" id="L225">            contributor.setOrganizationalProjectsCount((int) idStatisticsMap.get(ghContributor.getId()).getCount());</span>
+<span class="nc" id="L226">            contributor.setPersonalProjectsCount(ghContributor.getPublicRepoCount());</span>
+<span class="nc" id="L227">            contributor.setOrganizationName(organisationName);</span>
+
+<span class="nc" id="L229">            contributors.add(contributor);</span>
+<span class="nc" id="L230">        }</span>
+
+        // TODO contributor.setPersonalCommitsCount()
+
+<span class="nc" id="L234">        logger.info(&quot;Finished collecting contributors for organization '{}'.&quot;, organisationName);</span>
+
+<span class="nc" id="L236">        return contributors;</span>
+    }
+
+    @SuppressWarnings(&quot;rawtypes&quot;)
+    Collection&lt;Language&gt; collectLanguages(OrganizationWrapper organization) {
+<span class="nc" id="L241">        logger.info(&quot;Started collecting languages for organization '{}'.&quot;, organisationName);</span>
+
+<span class="nc" id="L243">        Collection&lt;Language&gt; languages = new ArrayList&lt;&gt;();</span>
+
+<span class="nc" id="L245">        Map&lt;String, LongSummaryStatistics&gt; stat = organization.listRepositories().stream()</span>
+<span class="nc" id="L246">                .map(RepositoryWrapper::listLanguages)</span>
+<span class="nc" id="L247">                .map(Map::entrySet)</span>
+<span class="nc" id="L248">                .flatMap(Set::stream)</span>
+<span class="nc" id="L249">                .collect(groupingBy(Map.Entry::getKey,</span>
+<span class="nc" id="L250">                        summarizingLong(entry -&gt; ((Number) ((Map.Entry) entry).getValue()).longValue())));</span>
+
+<span class="nc" id="L252">        final long allLanguageSize = stat.entrySet().stream()</span>
+<span class="nc" id="L253">                .map(entry -&gt; entry.getValue().getSum())</span>
+<span class="nc" id="L254">                .reduce(0L, Long::sum);</span>
+
+<span class="nc bnc" id="L256" title="All 2 branches missed.">        for (Map.Entry&lt;String, LongSummaryStatistics&gt; entry : stat.entrySet()) {</span>
+<span class="nc" id="L257">            Language language = new Language();</span>
+
+<span class="nc" id="L259">            language.setName(entry.getKey());</span>
+<span class="nc" id="L260">            language.setProjectsCount((int) entry.getValue().getCount());</span>
+<span class="nc" id="L261">            language.setPercentage((int) (entry.getValue().getSum() * 100 / allLanguageSize));</span>
+
+<span class="nc" id="L263">            languages.add(language);</span>
+<span class="nc" id="L264">        }</span>
+
+<span class="nc" id="L266">        logger.info(&quot;Finished collecting languages for organization '{}'.&quot;, organisationName);</span>
+
+<span class="nc" id="L268">        return languages;</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

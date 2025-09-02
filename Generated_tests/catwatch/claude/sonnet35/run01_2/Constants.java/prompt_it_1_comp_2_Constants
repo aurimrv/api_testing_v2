@@ -1,0 +1,176 @@
+You are a highly skilled test engineer specializing in debugging and resolving compilation errors and test failures in Java-based projects. Your expertise includes Java 8, JUnit 4, and REST Assured, allowing you to diagnose issues efficiently and provide precise, actionable fixes.
+
+Do fix the compilation errors delimited by ##### given the code below delimited by *****.
+
+The response must contain only Java code in JUnit 4 format.
+
+#####
+[[1;31mERROR[m] COMPILATION ERROR : 
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ConstantsTest.java:[8,26] cannot find symbol
+  symbol:   class SutHandler
+  location: class org.zalando.catwatch.backend.sonnet35_run01_ConstantsTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ConstantsTest.java:[13,9] cannot find symbol
+  symbol:   class Constants
+  location: class org.zalando.catwatch.backend.sonnet35_run01_ConstantsTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ConstantsTest.java:[13,35] cannot find symbol
+  symbol:   class Constants
+  location: class org.zalando.catwatch.backend.sonnet35_run01_ConstantsTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ConstantsTest.java:[19,39] cannot find symbol
+  symbol:   variable Constants
+  location: class org.zalando.catwatch.backend.sonnet35_run01_ConstantsTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ConstantsTest.java:[20,37] cannot find symbol
+  symbol:   variable Constants
+  location: class org.zalando.catwatch.backend.sonnet35_run01_ConstantsTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ConstantsTest.java:[21,35] cannot find symbol
+  symbol:   variable Constants
+  location: class org.zalando.catwatch.backend.sonnet35_run01_ConstantsTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ConstantsTest.java:[22,36] cannot find symbol
+  symbol:   variable Constants
+  location: class org.zalando.catwatch.backend.sonnet35_run01_ConstantsTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ConstantsTest.java:[27,34] cannot find symbol
+  symbol:   variable Constants
+  location: class org.zalando.catwatch.backend.sonnet35_run01_ConstantsTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ConstantsTest.java:[28,36] cannot find symbol
+  symbol:   variable Constants
+  location: class org.zalando.catwatch.backend.sonnet35_run01_ConstantsTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ConstantsTest.java:[29,32] cannot find symbol
+  symbol:   variable Constants
+  location: class org.zalando.catwatch.backend.sonnet35_run01_ConstantsTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ConstantsTest.java:[30,39] cannot find symbol
+  symbol:   variable Constants
+  location: class org.zalando.catwatch.backend.sonnet35_run01_ConstantsTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ConstantsTest.java:[31,31] cannot find symbol
+  symbol:   variable Constants
+  location: class org.zalando.catwatch.backend.sonnet35_run01_ConstantsTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ConstantsTest.java:[32,32] cannot find symbol
+  symbol:   variable Constants
+  location: class org.zalando.catwatch.backend.sonnet35_run01_ConstantsTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ConstantsTest.java:[33,27] cannot find symbol
+  symbol:   variable Constants
+  location: class org.zalando.catwatch.backend.sonnet35_run01_ConstantsTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ConstantsTest.java:[34,34] cannot find symbol
+  symbol:   variable Constants
+  location: class org.zalando.catwatch.backend.sonnet35_run01_ConstantsTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ConstantsTest.java:[39,43] cannot find symbol
+  symbol:   variable Constants
+  location: class org.zalando.catwatch.backend.sonnet35_run01_ConstantsTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ConstantsTest.java:[40,44] cannot find symbol
+  symbol:   variable Constants
+  location: class org.zalando.catwatch.backend.sonnet35_run01_ConstantsTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ConstantsTest.java:[45,45] cannot find symbol
+  symbol:   variable Constants
+  location: class org.zalando.catwatch.backend.sonnet35_run01_ConstantsTest
+[[1;31mERROR[m] Failed to execute goal [32morg.apache.maven.plugins:maven-compiler-plugin:3.8.0:testCompile[m [1m(default-testCompile)[m on project [36mcatwatch-backend[m: [1;31mCompilation failure[m: Compilation failure: 
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ConstantsTest.java:[8,26] cannot find symbol
+[[1;31mERROR[m]   symbol:   class SutHandler
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_ConstantsTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ConstantsTest.java:[13,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Constants
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_ConstantsTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ConstantsTest.java:[13,35] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Constants
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_ConstantsTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ConstantsTest.java:[19,39] cannot find symbol
+[[1;31mERROR[m]   symbol:   variable Constants
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_ConstantsTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ConstantsTest.java:[20,37] cannot find symbol
+[[1;31mERROR[m]   symbol:   variable Constants
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_ConstantsTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ConstantsTest.java:[21,35] cannot find symbol
+[[1;31mERROR[m]   symbol:   variable Constants
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_ConstantsTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ConstantsTest.java:[22,36] cannot find symbol
+[[1;31mERROR[m]   symbol:   variable Constants
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_ConstantsTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ConstantsTest.java:[27,34] cannot find symbol
+[[1;31mERROR[m]   symbol:   variable Constants
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_ConstantsTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ConstantsTest.java:[28,36] cannot find symbol
+[[1;31mERROR[m]   symbol:   variable Constants
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_ConstantsTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ConstantsTest.java:[29,32] cannot find symbol
+[[1;31mERROR[m]   symbol:   variable Constants
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_ConstantsTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ConstantsTest.java:[30,39] cannot find symbol
+[[1;31mERROR[m]   symbol:   variable Constants
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_ConstantsTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ConstantsTest.java:[31,31] cannot find symbol
+[[1;31mERROR[m]   symbol:   variable Constants
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_ConstantsTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ConstantsTest.java:[32,32] cannot find symbol
+[[1;31mERROR[m]   symbol:   variable Constants
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_ConstantsTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ConstantsTest.java:[33,27] cannot find symbol
+[[1;31mERROR[m]   symbol:   variable Constants
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_ConstantsTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ConstantsTest.java:[34,34] cannot find symbol
+[[1;31mERROR[m]   symbol:   variable Constants
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_ConstantsTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ConstantsTest.java:[39,43] cannot find symbol
+[[1;31mERROR[m]   symbol:   variable Constants
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_ConstantsTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ConstantsTest.java:[40,44] cannot find symbol
+[[1;31mERROR[m]   symbol:   variable Constants
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_ConstantsTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ConstantsTest.java:[45,45] cannot find symbol
+[[1;31mERROR[m]   symbol:   variable Constants
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_ConstantsTest
+[[1;31mERROR[m] -> [1m[Help 1][m
+[[1;31mERROR[m] 
+[[1;31mERROR[m] To see the full stack trace of the errors, re-run Maven with the [1m-e[m switch.
+[[1;31mERROR[m] Re-run Maven using the [1m-X[m switch to enable full debug logging.
+[[1;31mERROR[m] 
+[[1;31mERROR[m] For more information about the errors and possible solutions, please read the following articles:
+[[1;31mERROR[m] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+
+#####
+*****
+package org.zalando.catwatch.backend;
+
+import org.junit.Test;
+import static org.junit.Assert.*;
+
+public class sonnet35_run01_ConstantsTest {
+
+    private static final SutHandler controller = new em.embedded.org.zalando.EmbeddedEvoMasterController();
+    private static String baseUrlOfSut;
+
+    @Test
+    public void testConstantsInitialization() {
+        Constants constants = new Constants();
+        assertNotNull(constants);
+    }
+
+    @Test
+    public void testApiResourceConstants() {
+        assertEquals("/contributors", Constants.API_RESOURCE_CONTRIBUTORS);
+        assertEquals("/statistics", Constants.API_RESOURCE_STATISTICS);
+        assertEquals("/projects", Constants.API_RESOURCE_PROJECTS);
+        assertEquals("/languages", Constants.API_RESOURCE_LANGUAGES);
+    }
+
+    @Test
+    public void testApiRequestParamConstants() {
+        assertEquals("end_date", Constants.API_REQUEST_PARAM_ENDDATE);
+        assertEquals("start_date", Constants.API_REQUEST_PARAM_STARTDATE);
+        assertEquals("sortBy", Constants.API_REQUEST_PARAM_SORTBY);
+        assertEquals("organizations", Constants.API_REQUEST_PARAM_ORGANIZATIONS);
+        assertEquals("limit", Constants.API_REQUEST_PARAM_LIMIT);
+        assertEquals("offset", Constants.API_REQUEST_PARAM_OFFSET);
+        assertEquals("q", Constants.API_REQUEST_PARAM_Q);
+        assertEquals("language", Constants.API_REQUEST_PARAM_LANGUAGE);
+    }
+
+    @Test
+    public void testConfigConstants() {
+        assertEquals("organization.list", Constants.CONFIG_ORGANIZATION_LIST);
+        assertEquals("default.item.limit", Constants.CONFIG_DEFAULT_LIMIT);
+    }
+
+    @Test
+    public void testErrorMessageConstant() {
+        assertEquals("Invalid date format", Constants.ERR_MSG_WRONG_DATE_FORMAT);
+    }
+}
+
+*****

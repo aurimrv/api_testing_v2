@@ -1,0 +1,37 @@
+You are a highly skilled test engineer specializing in debugging and resolving compilation errors and test failures in Java-based projects. Your expertise includes Java 8, JUnit 4, and REST Assured, allowing you to diagnose issues efficiently and provide precise, actionable fixes.
+
+Given the test set below delimited by *****, fix the source lines indicated in the error messages delimited by #####, replacing only the expected by the actual values.
+
+Do keep package, headers and accessories methods unchanged.
+
+Do export all other corrected tests unchanged.
+
+The response must contain only Java code in JUnit 4 format.
+
+#####
+
+#####
+*****
+
+        int result1 = org.restncs.imp.Remainder.exe(10, 3);
+        assertEquals(-1, result1);
+
+        int result2 = org.restncs.imp.Remainder.exe(10, -3);
+        assertEquals(-1, result2);
+
+        int result3 = org.restncs.imp.Remainder.exe(-10, 3);
+        assertEquals(1, result3);
+
+        int result4 = org.restncs.imp.Remainder.exe(-10, -3);
+        assertEquals(1, result4);
+
+        int result5 = org.restncs.imp.Remainder.exe(0, 5);
+        assertEquals(1, result5);
+
+        int result6 = org.restncs.imp.Remainder.exe(10, 0);
+        assertEquals(1, result6);
+
+        int result7 = org.restncs.imp.Remainder.exe(0, 0);
+        assertEquals(1, result7);
+  
+*****

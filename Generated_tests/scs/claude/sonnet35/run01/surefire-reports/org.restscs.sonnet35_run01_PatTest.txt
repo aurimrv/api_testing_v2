@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: org.restscs.sonnet35_run01_PatTest
+-------------------------------------------------------------------------------
+Tests run: 13, Failures: 3, Errors: 0, Skipped: 2, Time elapsed: 0.528 s <<< FAILURE! - in org.restscs.sonnet35_run01_PatTest
+testSubjectBothPatAndReverseFound(org.restscs.sonnet35_run01_PatTest)  Time elapsed: 0.001 s  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[1]> but was:<[6]>
+	at org.restscs.sonnet35_run01_PatTest.testSubjectBothPatAndReverseFound(sonnet35_run01_PatTest.java:96)
+
+testSubjectPalindromePatReversePat(org.restscs.sonnet35_run01_PatTest)  Time elapsed: 0 s  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[1]> but was:<[6]>
+	at org.restscs.sonnet35_run01_PatTest.testSubjectPalindromePatReversePat(sonnet35_run01_PatTest.java:102)
+
+testSubjectPalindromeReversePatPat(org.restscs.sonnet35_run01_PatTest)  Time elapsed: 0.001 s  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[2]> but was:<[6]>
+	at org.restscs.sonnet35_run01_PatTest.testSubjectPalindromeReversePatPat(sonnet35_run01_PatTest.java:108)
+

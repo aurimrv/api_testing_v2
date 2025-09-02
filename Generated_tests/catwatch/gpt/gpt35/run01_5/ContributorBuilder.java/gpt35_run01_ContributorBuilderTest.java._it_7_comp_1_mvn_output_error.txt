@@ -1,0 +1,285 @@
+[[1;31mERROR[m] COMPILATION ERROR : 
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ContributorBuilderTest.java:[63,9] cannot find symbol
+  symbol:   class ContributorBuilder
+  location: class org.zalando.catwatch.backend.gpt35_run01_ContributorBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ContributorBuilderTest.java:[63,53] cannot find symbol
+  symbol:   class ContributorBuilder
+  location: class org.zalando.catwatch.backend.gpt35_run01_ContributorBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ContributorBuilderTest.java:[69,9] cannot find symbol
+  symbol:   class ContributorBuilder
+  location: class org.zalando.catwatch.backend.gpt35_run01_ContributorBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ContributorBuilderTest.java:[69,53] cannot find symbol
+  symbol:   class ContributorBuilder
+  location: class org.zalando.catwatch.backend.gpt35_run01_ContributorBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ContributorBuilderTest.java:[71,9] cannot find symbol
+  symbol:   class Contributor
+  location: class org.zalando.catwatch.backend.gpt35_run01_ContributorBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ContributorBuilderTest.java:[77,9] cannot find symbol
+  symbol:   class ContributorBuilder
+  location: class org.zalando.catwatch.backend.gpt35_run01_ContributorBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ContributorBuilderTest.java:[77,53] cannot find symbol
+  symbol:   class ContributorBuilder
+  location: class org.zalando.catwatch.backend.gpt35_run01_ContributorBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ContributorBuilderTest.java:[79,9] cannot find symbol
+  symbol:   class Contributor
+  location: class org.zalando.catwatch.backend.gpt35_run01_ContributorBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ContributorBuilderTest.java:[85,9] cannot find symbol
+  symbol:   class ContributorBuilder
+  location: class org.zalando.catwatch.backend.gpt35_run01_ContributorBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ContributorBuilderTest.java:[85,53] cannot find symbol
+  symbol:   class ContributorBuilder
+  location: class org.zalando.catwatch.backend.gpt35_run01_ContributorBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ContributorBuilderTest.java:[87,9] cannot find symbol
+  symbol:   class Contributor
+  location: class org.zalando.catwatch.backend.gpt35_run01_ContributorBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ContributorBuilderTest.java:[93,9] cannot find symbol
+  symbol:   class ContributorBuilder
+  location: class org.zalando.catwatch.backend.gpt35_run01_ContributorBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ContributorBuilderTest.java:[93,53] cannot find symbol
+  symbol:   class ContributorBuilder
+  location: class org.zalando.catwatch.backend.gpt35_run01_ContributorBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ContributorBuilderTest.java:[95,9] cannot find symbol
+  symbol:   class Contributor
+  location: class org.zalando.catwatch.backend.gpt35_run01_ContributorBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ContributorBuilderTest.java:[96,61] cannot find symbol
+  symbol:   variable DAYS
+  location: class org.zalando.catwatch.backend.gpt35_run01_ContributorBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ContributorBuilderTest.java:[96,32] cannot find symbol
+  symbol:   variable Instant
+  location: class org.zalando.catwatch.backend.gpt35_run01_ContributorBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ContributorBuilderTest.java:[96,22] cannot find symbol
+  symbol:   variable Date
+  location: class org.zalando.catwatch.backend.gpt35_run01_ContributorBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ContributorBuilderTest.java:[101,9] cannot find symbol
+  symbol:   class ContributorBuilder
+  location: class org.zalando.catwatch.backend.gpt35_run01_ContributorBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ContributorBuilderTest.java:[101,53] cannot find symbol
+  symbol:   class ContributorBuilder
+  location: class org.zalando.catwatch.backend.gpt35_run01_ContributorBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ContributorBuilderTest.java:[103,9] cannot find symbol
+  symbol:   class Contributor
+  location: class org.zalando.catwatch.backend.gpt35_run01_ContributorBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ContributorBuilderTest.java:[109,9] cannot find symbol
+  symbol:   class ContributorBuilder
+  location: class org.zalando.catwatch.backend.gpt35_run01_ContributorBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ContributorBuilderTest.java:[109,53] cannot find symbol
+  symbol:   class ContributorBuilder
+  location: class org.zalando.catwatch.backend.gpt35_run01_ContributorBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ContributorBuilderTest.java:[111,9] cannot find symbol
+  symbol:   class Contributor
+  location: class org.zalando.catwatch.backend.gpt35_run01_ContributorBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ContributorBuilderTest.java:[117,9] cannot find symbol
+  symbol:   class ContributorBuilder
+  location: class org.zalando.catwatch.backend.gpt35_run01_ContributorBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ContributorBuilderTest.java:[117,53] cannot find symbol
+  symbol:   class ContributorBuilder
+  location: class org.zalando.catwatch.backend.gpt35_run01_ContributorBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ContributorBuilderTest.java:[119,9] cannot find symbol
+  symbol:   class Contributor
+  location: class org.zalando.catwatch.backend.gpt35_run01_ContributorBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ContributorBuilderTest.java:[125,9] cannot find symbol
+  symbol:   class ContributorBuilder
+  location: class org.zalando.catwatch.backend.gpt35_run01_ContributorBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ContributorBuilderTest.java:[125,53] cannot find symbol
+  symbol:   class ContributorBuilder
+  location: class org.zalando.catwatch.backend.gpt35_run01_ContributorBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ContributorBuilderTest.java:[127,9] cannot find symbol
+  symbol:   class Contributor
+  location: class org.zalando.catwatch.backend.gpt35_run01_ContributorBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ContributorBuilderTest.java:[133,9] cannot find symbol
+  symbol:   class ContributorBuilder
+  location: class org.zalando.catwatch.backend.gpt35_run01_ContributorBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ContributorBuilderTest.java:[133,53] cannot find symbol
+  symbol:   class ContributorBuilder
+  location: class org.zalando.catwatch.backend.gpt35_run01_ContributorBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ContributorBuilderTest.java:[135,9] cannot find symbol
+  symbol:   class Contributor
+  location: class org.zalando.catwatch.backend.gpt35_run01_ContributorBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ContributorBuilderTest.java:[141,9] cannot find symbol
+  symbol:   class ContributorBuilder
+  location: class org.zalando.catwatch.backend.gpt35_run01_ContributorBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ContributorBuilderTest.java:[141,53] cannot find symbol
+  symbol:   class ContributorBuilder
+  location: class org.zalando.catwatch.backend.gpt35_run01_ContributorBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ContributorBuilderTest.java:[143,9] cannot find symbol
+  symbol:   class Contributor
+  location: class org.zalando.catwatch.backend.gpt35_run01_ContributorBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ContributorBuilderTest.java:[149,9] cannot find symbol
+  symbol:   class ContributorBuilder
+  location: class org.zalando.catwatch.backend.gpt35_run01_ContributorBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ContributorBuilderTest.java:[149,53] cannot find symbol
+  symbol:   class ContributorBuilder
+  location: class org.zalando.catwatch.backend.gpt35_run01_ContributorBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ContributorBuilderTest.java:[150,9] cannot find symbol
+  symbol:   class Date
+  location: class org.zalando.catwatch.backend.gpt35_run01_ContributorBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ContributorBuilderTest.java:[150,25] cannot find symbol
+  symbol:   class Date
+  location: class org.zalando.catwatch.backend.gpt35_run01_ContributorBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ContributorBuilderTest.java:[151,9] cannot find symbol
+  symbol:   class Contributor
+  location: class org.zalando.catwatch.backend.gpt35_run01_ContributorBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ContributorBuilderTest.java:[157,9] cannot find symbol
+  symbol:   class ContributorBuilder
+  location: class org.zalando.catwatch.backend.gpt35_run01_ContributorBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ContributorBuilderTest.java:[157,53] cannot find symbol
+  symbol:   class ContributorBuilder
+  location: class org.zalando.catwatch.backend.gpt35_run01_ContributorBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ContributorBuilderTest.java:[158,9] cannot find symbol
+  symbol:   class Contributor
+  location: class org.zalando.catwatch.backend.gpt35_run01_ContributorBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ContributorBuilderTest.java:[164,9] cannot find symbol
+  symbol:   class ContributorBuilder
+  location: class org.zalando.catwatch.backend.gpt35_run01_ContributorBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ContributorBuilderTest.java:[164,53] cannot find symbol
+  symbol:   class ContributorBuilder
+  location: class org.zalando.catwatch.backend.gpt35_run01_ContributorBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ContributorBuilderTest.java:[165,9] cannot find symbol
+  symbol:   class Contributor
+  location: class org.zalando.catwatch.backend.gpt35_run01_ContributorBuilderTest
+[[1;31mERROR[m] Failed to execute goal [32morg.apache.maven.plugins:maven-compiler-plugin:3.8.0:testCompile[m [1m(default-testCompile)[m on project [36mcatwatch-backend[m: [1;31mCompilation failure[m: Compilation failure: 
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ContributorBuilderTest.java:[63,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class ContributorBuilder
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt35_run01_ContributorBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ContributorBuilderTest.java:[63,53] cannot find symbol
+[[1;31mERROR[m]   symbol:   class ContributorBuilder
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt35_run01_ContributorBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ContributorBuilderTest.java:[69,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class ContributorBuilder
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt35_run01_ContributorBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ContributorBuilderTest.java:[69,53] cannot find symbol
+[[1;31mERROR[m]   symbol:   class ContributorBuilder
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt35_run01_ContributorBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ContributorBuilderTest.java:[71,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Contributor
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt35_run01_ContributorBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ContributorBuilderTest.java:[77,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class ContributorBuilder
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt35_run01_ContributorBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ContributorBuilderTest.java:[77,53] cannot find symbol
+[[1;31mERROR[m]   symbol:   class ContributorBuilder
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt35_run01_ContributorBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ContributorBuilderTest.java:[79,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Contributor
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt35_run01_ContributorBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ContributorBuilderTest.java:[85,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class ContributorBuilder
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt35_run01_ContributorBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ContributorBuilderTest.java:[85,53] cannot find symbol
+[[1;31mERROR[m]   symbol:   class ContributorBuilder
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt35_run01_ContributorBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ContributorBuilderTest.java:[87,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Contributor
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt35_run01_ContributorBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ContributorBuilderTest.java:[93,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class ContributorBuilder
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt35_run01_ContributorBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ContributorBuilderTest.java:[93,53] cannot find symbol
+[[1;31mERROR[m]   symbol:   class ContributorBuilder
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt35_run01_ContributorBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ContributorBuilderTest.java:[95,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Contributor
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt35_run01_ContributorBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ContributorBuilderTest.java:[96,61] cannot find symbol
+[[1;31mERROR[m]   symbol:   variable DAYS
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt35_run01_ContributorBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ContributorBuilderTest.java:[96,32] cannot find symbol
+[[1;31mERROR[m]   symbol:   variable Instant
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt35_run01_ContributorBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ContributorBuilderTest.java:[96,22] cannot find symbol
+[[1;31mERROR[m]   symbol:   variable Date
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt35_run01_ContributorBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ContributorBuilderTest.java:[101,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class ContributorBuilder
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt35_run01_ContributorBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ContributorBuilderTest.java:[101,53] cannot find symbol
+[[1;31mERROR[m]   symbol:   class ContributorBuilder
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt35_run01_ContributorBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ContributorBuilderTest.java:[103,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Contributor
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt35_run01_ContributorBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ContributorBuilderTest.java:[109,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class ContributorBuilder
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt35_run01_ContributorBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ContributorBuilderTest.java:[109,53] cannot find symbol
+[[1;31mERROR[m]   symbol:   class ContributorBuilder
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt35_run01_ContributorBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ContributorBuilderTest.java:[111,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Contributor
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt35_run01_ContributorBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ContributorBuilderTest.java:[117,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class ContributorBuilder
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt35_run01_ContributorBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ContributorBuilderTest.java:[117,53] cannot find symbol
+[[1;31mERROR[m]   symbol:   class ContributorBuilder
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt35_run01_ContributorBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ContributorBuilderTest.java:[119,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Contributor
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt35_run01_ContributorBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ContributorBuilderTest.java:[125,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class ContributorBuilder
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt35_run01_ContributorBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ContributorBuilderTest.java:[125,53] cannot find symbol
+[[1;31mERROR[m]   symbol:   class ContributorBuilder
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt35_run01_ContributorBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ContributorBuilderTest.java:[127,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Contributor
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt35_run01_ContributorBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ContributorBuilderTest.java:[133,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class ContributorBuilder
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt35_run01_ContributorBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ContributorBuilderTest.java:[133,53] cannot find symbol
+[[1;31mERROR[m]   symbol:   class ContributorBuilder
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt35_run01_ContributorBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ContributorBuilderTest.java:[135,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Contributor
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt35_run01_ContributorBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ContributorBuilderTest.java:[141,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class ContributorBuilder
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt35_run01_ContributorBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ContributorBuilderTest.java:[141,53] cannot find symbol
+[[1;31mERROR[m]   symbol:   class ContributorBuilder
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt35_run01_ContributorBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ContributorBuilderTest.java:[143,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Contributor
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt35_run01_ContributorBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ContributorBuilderTest.java:[149,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class ContributorBuilder
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt35_run01_ContributorBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ContributorBuilderTest.java:[149,53] cannot find symbol
+[[1;31mERROR[m]   symbol:   class ContributorBuilder
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt35_run01_ContributorBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ContributorBuilderTest.java:[150,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Date
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt35_run01_ContributorBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ContributorBuilderTest.java:[150,25] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Date
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt35_run01_ContributorBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ContributorBuilderTest.java:[151,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Contributor
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt35_run01_ContributorBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ContributorBuilderTest.java:[157,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class ContributorBuilder
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt35_run01_ContributorBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ContributorBuilderTest.java:[157,53] cannot find symbol
+[[1;31mERROR[m]   symbol:   class ContributorBuilder
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt35_run01_ContributorBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ContributorBuilderTest.java:[158,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Contributor
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt35_run01_ContributorBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ContributorBuilderTest.java:[164,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class ContributorBuilder
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt35_run01_ContributorBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ContributorBuilderTest.java:[164,53] cannot find symbol
+[[1;31mERROR[m]   symbol:   class ContributorBuilder
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt35_run01_ContributorBuilderTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ContributorBuilderTest.java:[165,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Contributor
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt35_run01_ContributorBuilderTest
+[[1;31mERROR[m] -> [1m[Help 1][m
+[[1;31mERROR[m] 
+[[1;31mERROR[m] To see the full stack trace of the errors, re-run Maven with the [1m-e[m switch.
+[[1;31mERROR[m] Re-run Maven using the [1m-X[m switch to enable full debug logging.
+[[1;31mERROR[m] 
+[[1;31mERROR[m] For more information about the errors and possible solutions, please read the following articles:
+[[1;31mERROR[m] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

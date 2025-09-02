@@ -1,0 +1,25 @@
+Line: 128
+JSON path $ doesn't match.
+Expected: a collection with size a value less than or equal to <5>
+Actual: {timestamp=1744755087580, status=500, error=Internal Server Error, exception=java.lang.UnsupportedOperationException, message=this parameter configuration is not implemented yet .. start date, end date required atm, path=/contributors}
+----------------------------------------
+Line: 103
+Response body doesn't match expectation.
+Expected: a string containing "startDate must be before endDate"
+Actual: {"timestamp":1744755087446,"status":500,"error":"Internal Server Error","exception":"java.lang.RuntimeException","message":"java.text.ParseException: Unparseable date: \"2023-01-01\"","path":"/contributors"}
+----------------------------------------
+Line: 117
+Response body doesn't match expectation.
+Expected: a string containing "this parameter configuration is not implemented yet"
+Actual: {"timestamp":1744755087535,"status":500,"error":"Internal Server Error","exception":"java.lang.RuntimeException","message":"java.text.ParseException: Unparseable date: \"2023-12-31\"","path":"/contributors"}
+----------------------------------------
+Line: 90
+JSON path $ doesn't match.
+Expected: a collection with size a value less than or equal to <5>
+Actual: {timestamp=1744755087492, status=500, error=Internal Server Error, exception=java.lang.IllegalArgumentException, message=sortBy must be empty or have a valid value but was -commits. Valid values are organizationalCommitsCount,organizationalProjectsCount,personalCommitsCount,personalProjectsCount,organizationName,name, path=/contributors}
+----------------------------------------
+Line: 75
+JSON path $ doesn't match.
+Expected: a collection with size a value less than or equal to <5>
+Actual: {timestamp=1744755086949, status=500, error=Internal Server Error, exception=java.lang.IllegalArgumentException, message=sortBy must be empty or have a valid value but was -commits. Valid values are organizationalCommitsCount,organizationalProjectsCount,personalCommitsCount,personalProjectsCount,organizationName,name, path=/contributors}
+----------------------------------------

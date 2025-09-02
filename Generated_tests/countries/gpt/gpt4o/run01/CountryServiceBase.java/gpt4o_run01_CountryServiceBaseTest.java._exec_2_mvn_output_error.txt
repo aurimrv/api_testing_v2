@@ -1,0 +1,16 @@
+Line: 67
+JSON path size() doesn't match.
+Expected: <0>
+Actual: 5
+----------------------------------------
+Line: 80
+JSON path alpha2Code doesn't match.
+Expected: (a collection containing "US" and a collection containing "GB")
+Actual: null
+----------------------------------------
+Line: 89
+URISyntax
+----------------------------------------
+Line: 103
+URISyntax ...
+----------------------------------------

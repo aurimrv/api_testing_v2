@@ -1,0 +1,98 @@
+You are a highly skilled test engineer specializing in debugging and resolving compilation errors and test failures in Java-based projects. Your expertise includes Java 8, JUnit 4, and REST Assured, allowing you to diagnose issues efficiently and provide precise, actionable fixes.
+
+Given the test set below delimited by *****, fix the source lines indicated in the error messages delimited by #####, replacing only the expected by the actual values.
+
+Do keep package, headers and accessories methods unchanged.
+
+Do export all other corrected tests unchanged.
+
+The response must contain only Java code in JUnit 4 format.
+
+#####
+Line: 67
+IllegalState
+----------------------------------------
+Line: 58
+NullPointer
+----------------------------------------
+
+#####
+*****
+package org.zalando.catwatch.backend;
+
+import static org.junit.Assert.*;
+import static org.mockito.Mockito.*;
+
+import java.io.IOException;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+import org.junit.Before;
+import org.junit.Test;
+import org.mockito.Mock;
+import org.mockito.MockitoAnnotations;
+import org.zalando.catwatch.backend.model.util.JsonDateDeserializer;
+
+import com.fasterxml.jackson.core.JsonParser;
+import com.fasterxml.jackson.databind.DeserializationContext;
+
+public class sonnet35_run01_JsonDateDeserializerTest {
+
+    @Mock
+    private JsonParser jsonParser;
+
+    @Mock
+    private DeserializationContext context;
+
+    private JsonDateDeserializer deserializer;
+
+    @Before
+    public void setUp() {
+        MockitoAnnotations.initMocks(this);
+        deserializer = new JsonDateDeserializer();
+    }
+
+    @Test
+    public void testDeserializeValidDate() throws IOException {
+        when(jsonParser.getText()).thenReturn("2023-05-24T10:30:00");
+
+        Date result = deserializer.deserialize(jsonParser, context);
+
+        assertNotNull(result);
+        SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss");
+        assertEquals("2023-05-24T10:30:00", format.format(result));
+    }
+
+    @Test(expected = IllegalStateException.class)
+    public void testDeserializeInvalidDate() throws IOException {
+        when(jsonParser.getText()).thenReturn("invalid-date-format");
+
+        deserializer.deserialize(jsonParser, context);
+    }
+
+    @Test
+    public void testDeserializeNullDate() throws IOException {
+        when(jsonParser.getText()).thenReturn(null);
+
+        Date result = deserializer.deserialize(jsonParser, context);
+
+        assertNull(result);
+    }
+
+    @Test
+    public void testDeserializeEmptyString() throws IOException {
+        when(jsonParser.getText()).thenReturn("");
+
+        Date result = deserializer.deserialize(jsonParser, context);
+        assertNull(result);
+    }
+
+    @Test
+    public void testConstructor() {
+        JsonDateDeserializer deserializer = new JsonDateDeserializer();
+        assertNotNull(deserializer);
+    }
+}
+
+*****

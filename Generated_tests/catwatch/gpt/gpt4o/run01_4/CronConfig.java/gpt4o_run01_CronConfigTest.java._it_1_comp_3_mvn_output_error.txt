@@ -1,0 +1,33 @@
+[[1;31mERROR[m] COMPILATION ERROR : 
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_CronConfigTest.java:[70,70] constructor Fetcher in class org.zalando.catwatch.backend.scheduler.Fetcher cannot be applied to given types;
+  required: org.zalando.catwatch.backend.repo.ProjectRepository,org.zalando.catwatch.backend.repo.StatisticsRepository,org.zalando.catwatch.backend.repo.ContributorRepository,org.zalando.catwatch.backend.github.SnapshotProvider,java.lang.String[]
+  found: no arguments
+  reason: actual and formal argument lists differ in length
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_CronConfigTest.java:[71,13] method does not override or implement a method from a supertype
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_CronConfigTest.java:[97,70] constructor Fetcher in class org.zalando.catwatch.backend.scheduler.Fetcher cannot be applied to given types;
+  required: org.zalando.catwatch.backend.repo.ProjectRepository,org.zalando.catwatch.backend.repo.StatisticsRepository,org.zalando.catwatch.backend.repo.ContributorRepository,org.zalando.catwatch.backend.github.SnapshotProvider,java.lang.String[]
+  found: no arguments
+  reason: actual and formal argument lists differ in length
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_CronConfigTest.java:[98,13] method does not override or implement a method from a supertype
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_CronConfigTest.java:[125,58] org.zalando.catwatch.backend.scheduler.CronConfig.CustomExitCodeGenerator is not public in org.zalando.catwatch.backend.scheduler.CronConfig; cannot be accessed from outside package
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_CronConfigTest.java:[126,66] org.zalando.catwatch.backend.scheduler.CronConfig.CustomExitCodeGenerator is not public in org.zalando.catwatch.backend.scheduler.CronConfig; cannot be accessed from outside package
+[[1;31mERROR[m] Failed to execute goal [32morg.apache.maven.plugins:maven-compiler-plugin:3.8.0:testCompile[m [1m(default-testCompile)[m on project [36mcatwatch-backend[m: [1;31mCompilation failure[m: Compilation failure: 
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_CronConfigTest.java:[70,70] constructor Fetcher in class org.zalando.catwatch.backend.scheduler.Fetcher cannot be applied to given types;
+[[1;31mERROR[m]   required: org.zalando.catwatch.backend.repo.ProjectRepository,org.zalando.catwatch.backend.repo.StatisticsRepository,org.zalando.catwatch.backend.repo.ContributorRepository,org.zalando.catwatch.backend.github.SnapshotProvider,java.lang.String[]
+[[1;31mERROR[m]   found: no arguments
+[[1;31mERROR[m]   reason: actual and formal argument lists differ in length
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_CronConfigTest.java:[71,13] method does not override or implement a method from a supertype
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_CronConfigTest.java:[97,70] constructor Fetcher in class org.zalando.catwatch.backend.scheduler.Fetcher cannot be applied to given types;
+[[1;31mERROR[m]   required: org.zalando.catwatch.backend.repo.ProjectRepository,org.zalando.catwatch.backend.repo.StatisticsRepository,org.zalando.catwatch.backend.repo.ContributorRepository,org.zalando.catwatch.backend.github.SnapshotProvider,java.lang.String[]
+[[1;31mERROR[m]   found: no arguments
+[[1;31mERROR[m]   reason: actual and formal argument lists differ in length
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_CronConfigTest.java:[98,13] method does not override or implement a method from a supertype
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_CronConfigTest.java:[125,58] org.zalando.catwatch.backend.scheduler.CronConfig.CustomExitCodeGenerator is not public in org.zalando.catwatch.backend.scheduler.CronConfig; cannot be accessed from outside package
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_CronConfigTest.java:[126,66] org.zalando.catwatch.backend.scheduler.CronConfig.CustomExitCodeGenerator is not public in org.zalando.catwatch.backend.scheduler.CronConfig; cannot be accessed from outside package
+[[1;31mERROR[m] -> [1m[Help 1][m
+[[1;31mERROR[m] 
+[[1;31mERROR[m] To see the full stack trace of the errors, re-run Maven with the [1m-e[m switch.
+[[1;31mERROR[m] Re-run Maven using the [1m-X[m switch to enable full debug logging.
+[[1;31mERROR[m] 
+[[1;31mERROR[m] For more information about the errors and possible solutions, please read the following articles:
+[[1;31mERROR[m] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

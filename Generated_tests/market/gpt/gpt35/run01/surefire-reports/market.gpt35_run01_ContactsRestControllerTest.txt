@@ -1,0 +1,18 @@
+-------------------------------------------------------------------------------
+Test set: market.gpt35_run01_ContactsRestControllerTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 1.559 s <<< FAILURE! - in market.gpt35_run01_ContactsRestControllerTest
+testUpdateContacts  Time elapsed: 0.128 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <200> but was <406>.
+
+	at market.gpt35_run01_ContactsRestControllerTest.testUpdateContacts(gpt35_run01_ContactsRestControllerTest.java:80)
+
+testUpdateContacts_emptyContacts  Time elapsed: 0.028 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <200> but was <406>.
+
+	at market.gpt35_run01_ContactsRestControllerTest.testUpdateContacts_emptyContacts(gpt35_run01_ContactsRestControllerTest.java:101)
+

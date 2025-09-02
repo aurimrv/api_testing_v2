@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="pt"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Snapshot.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">catwatch-backend</a> &gt; <a href="index.source.html" class="el_package">org.zalando.catwatch.backend.github</a> &gt; <span class="el_source">Snapshot.java</span></div><h1>Snapshot.java</h1><pre class="source lang-java linenums">package org.zalando.catwatch.backend.github;
+
+import org.zalando.catwatch.backend.model.Contributor;
+import org.zalando.catwatch.backend.model.Language;
+import org.zalando.catwatch.backend.model.Project;
+import org.zalando.catwatch.backend.model.Statistics;
+
+import java.util.Collection;
+
+public class Snapshot {
+
+    private final Statistics statistics;
+    private final Collection&lt;Project&gt; projects;
+    private final Collection&lt;Contributor&gt; contributors;
+    private final Collection&lt;Language&gt; languages;
+
+    public Snapshot(Statistics statistics,
+                    Collection&lt;Project&gt; projects,
+                    Collection&lt;Contributor&gt; contributors,
+<span class="nc" id="L20">                    Collection&lt;Language&gt; languages) {</span>
+<span class="nc" id="L21">        this.statistics = statistics;</span>
+<span class="nc" id="L22">        this.projects = projects;</span>
+<span class="nc" id="L23">        this.contributors = contributors;</span>
+<span class="nc" id="L24">        this.languages = languages;</span>
+<span class="nc" id="L25">    }</span>
+
+    public Statistics getStatistics() {
+<span class="nc" id="L28">        return statistics;</span>
+    }
+
+    public Collection&lt;Project&gt; getProjects() {
+<span class="nc" id="L32">        return projects;</span>
+    }
+
+    public Collection&lt;Contributor&gt; getContributors() {
+<span class="nc" id="L36">        return contributors;</span>
+    }
+
+    public Collection&lt;Language&gt; getLanguages() {
+<span class="nc" id="L40">        return languages;</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

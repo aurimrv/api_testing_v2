@@ -1,0 +1,11 @@
+-------------------------------------------------------------------------------
+Test set: market.sonnet35_run01_RestExceptionHandlerTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 1.861 s <<< FAILURE! - in market.sonnet35_run01_RestExceptionHandlerTest
+testResolveErrorMessage  Time elapsed: 0.203 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <201> but was <500>.
+
+	at market.sonnet35_run01_RestExceptionHandlerTest.testResolveErrorMessage(sonnet35_run01_RestExceptionHandlerTest.java:83)
+

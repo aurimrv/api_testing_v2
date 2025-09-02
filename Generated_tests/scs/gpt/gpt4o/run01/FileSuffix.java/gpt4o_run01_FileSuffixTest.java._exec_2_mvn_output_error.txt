@@ -1,0 +1,18 @@
+Line: 83
+Expected status code <404> but was <200>.
+----------------------------------------
+Line: 167
+Expected status code <200> but was <404>.
+----------------------------------------
+Line: 179
+Expected status code <200> but was <404>.
+----------------------------------------
+Line: 155
+Expected status code <200> but was <404>.
+----------------------------------------
+Line: 71
+Expected status code <404> but was <200>.
+----------------------------------------
+Line: 95
+Expected status code <404> but was <200>.
+----------------------------------------

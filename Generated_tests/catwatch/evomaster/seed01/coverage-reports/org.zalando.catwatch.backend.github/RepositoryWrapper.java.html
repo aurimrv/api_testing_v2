@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="pt"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>RepositoryWrapper.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">catwatch-backend</a> &gt; <a href="index.source.html" class="el_package">org.zalando.catwatch.backend.github</a> &gt; <span class="el_source">RepositoryWrapper.java</span></div><h1>RepositoryWrapper.java</h1><pre class="source lang-java linenums">package org.zalando.catwatch.backend.github;
+
+import org.kohsuke.github.GHCommit;
+import org.kohsuke.github.GHOrganization;
+import org.kohsuke.github.GHRepository;
+import org.kohsuke.github.GHTag;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.net.URL;
+import java.util.Collections;
+import java.util.Date;
+import java.util.List;
+import java.util.Map;
+
+/**
+ * Wrapper for GHRepository object.
+ * &lt;p&gt;
+ * The objective of this class is to deal with exceptions during fetching
+ * data via Kohsuke GitHub API so that TakeSnapshotTask is kept free from
+ * try/catch clutter. For some reason the library throws Error on empty
+ * responses (e.g. no contributors for project). Another scenario for
+ * throwing an exception is having not enough rights to see private
+ * details (e.g. teams of organization).
+ *
+ * @see GHRepository
+ */
+public class RepositoryWrapper {
+
+<span class="nc" id="L32">    private static final Logger logger = LoggerFactory.getLogger(RepositoryWrapper.class);</span>
+
+    private final GHRepository repository;
+    private final GHOrganization organization;
+
+<span class="nc" id="L37">    RepositoryWrapper(GHRepository repository, GHOrganization organization) {</span>
+<span class="nc" id="L38">        this.repository = repository;</span>
+<span class="nc" id="L39">        this.organization = organization;</span>
+<span class="nc" id="L40">    }</span>
+
+    private List&lt;GHRepository.Contributor&gt; contributors;
+
+    private List&lt;GHCommit&gt; commits;
+
+    private List&lt;GHTag&gt; tags;
+
+    public int getId() {
+<span class="nc" id="L49">        return repository.getId();</span>
+    }
+
+    public String getName() {
+<span class="nc" id="L53">        return repository.getName();</span>
+    }
+
+    public URL getUrl() {
+<span class="nc" id="L57">        return repository.getHtmlUrl();</span>
+    }
+
+    public String getDescription() {
+<span class="nc" id="L61">        return repository.getDescription();</span>
+    }
+
+    public int getStarsCount() {
+<span class="nc" id="L65">        return repository.getWatchers();</span>
+    }
+
+    public int getForksCount() {
+<span class="nc" id="L69">        return repository.getForks();</span>
+    }
+
+    public int getSize() {
+<span class="nc" id="L73">        return repository.getSize();</span>
+    }
+
+    public Date getLastPushed() {
+<span class="nc" id="L77">        return repository.getPushedAt();</span>
+    }
+
+    public String getPrimaryLanguage() {
+<span class="nc" id="L81">        return repository.getLanguage();</span>
+    }
+
+    public Map&lt;String, Long&gt; listLanguages() {
+        try {
+<span class="nc" id="L86">            return repository.listLanguages();</span>
+<span class="nc" id="L87">        } catch (IOException e) {</span>
+<span class="nc" id="L88">            logger.warn(&quot;No languages found for project '{}' of organization '{}'.&quot;, repository.getName(), organization.getLogin());</span>
+<span class="nc" id="L89">            return Collections.&lt;String, Long&gt;emptyMap();</span>
+        }
+    }
+
+    public String getOrganizationName() {
+<span class="nc" id="L94">        return organization.getLogin();</span>
+    }
+
+    public List&lt;GHCommit&gt; listCommits() {
+<span class="nc bnc" id="L98" title="All 2 branches missed.">        if (this.commits == null) {</span>
+            try {
+<span class="nc" id="L100">                this.commits = repository.listCommits().asList();</span>
+<span class="nc" id="L101">            } catch (Error e) {</span>
+<span class="nc" id="L102">                logger.warn(&quot;No commits found for project '{}' of organization '{}'.&quot;, repository.getName(), organization.getLogin());</span>
+<span class="nc" id="L103">                this.commits = Collections.&lt;GHCommit&gt;emptyList();</span>
+<span class="nc" id="L104">            }</span>
+        }
+<span class="nc" id="L106">        return this.commits;</span>
+    }
+
+    public List&lt;GHRepository.Contributor&gt; listContributors() {
+<span class="nc bnc" id="L110" title="All 2 branches missed.">        if (this.contributors == null) {</span>
+            try {
+<span class="nc" id="L112">                this.contributors = repository.listContributors().asList();</span>
+<span class="nc" id="L113">            } catch (Throwable t) {</span>
+<span class="nc" id="L114">                logger.warn(&quot;No contributors found for project '{}' of organization '{}'.&quot;, repository.getName(), organization.getLogin());</span>
+<span class="nc" id="L115">                this.contributors = Collections.&lt;GHRepository.Contributor&gt;emptyList();</span>
+<span class="nc" id="L116">            }</span>
+        }
+<span class="nc" id="L118">        return this.contributors;</span>
+    }
+
+    public List&lt;GHTag&gt; listTags() {
+<span class="nc bnc" id="L122" title="All 2 branches missed.">        if (this.tags == null) {</span>
+            try {
+<span class="nc" id="L124">                this.tags = repository.listTags().asList();</span>
+<span class="nc" id="L125">            } catch (Throwable t) {</span>
+<span class="nc" id="L126">                logger.warn(&quot;No tags found for project '{}' of organization '{}'.&quot;, repository.getName(), organization.getLogin());</span>
+<span class="nc" id="L127">                this.tags = Collections.&lt;GHTag&gt;emptyList();</span>
+<span class="nc" id="L128">            }</span>
+        }
+<span class="nc" id="L130">        return this.tags;</span>
+    }
+
+    public InputStream getFileContent(String path) throws IOException {
+<span class="nc" id="L134">        return repository.getFileContent(path).read();</span>
+    }
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

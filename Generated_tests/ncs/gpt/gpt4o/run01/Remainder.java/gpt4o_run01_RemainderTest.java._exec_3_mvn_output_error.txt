@@ -1,0 +1,10 @@
+Line: 126
+JSON path resultAsInt doesn't match.
+Expected: is <-1>
+Actual: 1
+----------------------------------------
+Line: 82
+JSON path resultAsInt doesn't match.
+Expected: is <1>
+Actual: -1
+----------------------------------------

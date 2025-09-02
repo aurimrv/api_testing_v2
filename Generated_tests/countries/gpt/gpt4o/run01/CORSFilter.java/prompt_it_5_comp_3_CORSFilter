@@ -1,0 +1,205 @@
+You are a highly skilled test engineer specializing in debugging and resolving compilation errors and test failures in Java-based projects. Your expertise includes Java 8, JUnit 4, and REST Assured, allowing you to diagnose issues efficiently and provide precise, actionable fixes.
+
+Do fix the compilation errors delimited by ##### given the code below delimited by *****.
+
+The response must contain only Java code in JUnit 4 format.
+
+#####
+[[1;31mERROR[m] COMPILATION ERROR : 
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt4o_run01_CORSFilterTest.java:[89,13] eu.fayder.restcountries.gpt4o_run01_CORSFilterTest.MockServletRequest is not abstract and does not override abstract method isSecure() in javax.servlet.ServletRequest
+[[1;31mERROR[m] Failed to execute goal [32morg.apache.maven.plugins:maven-compiler-plugin:3.8.0:testCompile[m [1m(default-testCompile)[m on project [36mrestcountries[m: [1;31mCompilation failure[m
+[[1;31mERROR[m] [1;31m/media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt4o_run01_CORSFilterTest.java:[89,13] eu.fayder.restcountries.gpt4o_run01_CORSFilterTest.MockServletRequest is not abstract and does not override abstract method isSecure() in javax.servlet.ServletRequest[m
+[[1;31mERROR[m] [1;31m[m
+[[1;31mERROR[m] -> [1m[Help 1][m
+[[1;31mERROR[m] 
+[[1;31mERROR[m] To see the full stack trace of the errors, re-run Maven with the [1m-e[m switch.
+[[1;31mERROR[m] Re-run Maven using the [1m-X[m switch to enable full debug logging.
+[[1;31mERROR[m] 
+[[1;31mERROR[m] For more information about the errors and possible solutions, please read the following articles:
+[[1;31mERROR[m] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+
+#####
+*****
+
+package eu.fayder.restcountries;
+
+import org.junit.AfterClass;
+import org.junit.BeforeClass;
+import org.junit.Before;
+import org.junit.Test;
+import static org.junit.Assert.*;
+import java.util.Map;
+import java.util.List;
+import static org.evomaster.client.java.controller.api.EMTestUtils.*;
+import org.evomaster.client.java.controller.SutHandler;
+import io.restassured.RestAssured;
+import static io.restassured.RestAssured.given;
+import io.restassured.response.ValidatableResponse;
+import static org.hamcrest.Matchers.*;
+import io.restassured.config.JsonConfig;
+import io.restassured.path.json.config.JsonPathConfig;
+import static io.restassured.config.RedirectConfig.redirectConfig;
+import static org.evomaster.client.java.controller.contentMatchers.NumberMatcher.*;
+import static org.evomaster.client.java.controller.contentMatchers.StringMatcher.*;
+import static org.evomaster.client.java.controller.contentMatchers.SubStringMatcher.*;
+import static org.evomaster.client.java.controller.expect.ExpectationHandler.expectationHandler;
+import org.evomaster.client.java.controller.expect.ExpectationHandler;
+import io.restassured.path.json.JsonPath;
+import java.util.Arrays;
+
+public class gpt4o_run01_CORSFilterTest {
+
+    private static final SutHandler controller = new em.embedded.eu.fayder.EmbeddedEvoMasterController();
+    private static String baseUrlOfSut;
+
+    @BeforeClass
+    public static void initClass() {
+        controller.setupForGeneratedTest();
+        baseUrlOfSut = controller.startSut();
+        controller.registerOrExecuteInitSqlCommandsIfNeeded();
+        assertNotNull(baseUrlOfSut);
+        RestAssured.enableLoggingOfRequestAndResponseIfValidationFails();
+        RestAssured.useRelaxedHTTPSValidation();
+        RestAssured.urlEncodingEnabled = false;
+        RestAssured.config = RestAssured.config()
+            .jsonConfig(JsonConfig.jsonConfig().numberReturnType(JsonPathConfig.NumberReturnType.DOUBLE))
+            .redirect(redirectConfig().followRedirects(false));
+    }
+
+    @AfterClass
+    public static void tearDown() {
+        controller.stopSut();
+    }
+
+    @Before
+    public void initTest() {
+        controller.resetStateOfSUT();
+    }
+
+    @Test
+    public void testCORSFilterInit() {
+        // Testing the constructor and init method to ensure full coverage of line 16
+        eu.fayder.restcountries.servlet.CORSFilter corsFilter = new eu.fayder.restcountries.servlet.CORSFilter();
+        try {
+            corsFilter.init(null); // Passing null as FilterConfig for simplicity
+        } catch (Exception e) {
+            fail("Exception thrown during init: " + e.getMessage());
+        }
+    }
+
+    @Test
+    public void testCORSFilterDoFilter() throws Exception {
+        // Mocking the necessary objects for doFilter method
+        eu.fayder.restcountries.servlet.CORSFilter corsFilter = new eu.fayder.restcountries.servlet.CORSFilter();
+        MockServletRequest mockRequest = new MockServletRequest();
+        MockServletResponse mockResponse = new MockServletResponse();
+        MockFilterChain mockChain = new MockFilterChain();
+
+        corsFilter.doFilter(mockRequest, mockResponse, mockChain);
+
+        // Verifying the headers are correctly added
+        assertEquals("*", mockResponse.getHeader("Access-Control-Allow-Origin"));
+        assertEquals("GET", mockResponse.getHeader("Access-Control-Allow-Methods"));
+        assertEquals("Accept, X-Requested-With", mockResponse.getHeader("Access-Control-Allow-Headers"));
+        assertEquals("public, max-age=86400", mockResponse.getHeader("Cache-Control"));
+
+        // Verifying the filter chain is invoked
+        assertTrue(mockChain.isInvoked());
+    }
+
+    // Mock classes to simulate ServletRequest, ServletResponse, and FilterChain
+    private class MockServletRequest implements javax.servlet.ServletRequest {
+        @Override public Object getAttribute(String name) { return null; }
+        @Override public void setAttribute(String name, Object o) {}
+        @Override public void removeAttribute(String name) {}
+        @Override public String getParameter(String name) { return null; }
+        @Override public java.util.Enumeration<String> getParameterNames() { return null; }
+        @Override public String[] getParameterValues(String name) { return new String[0]; }
+        @Override public Map<String, String[]> getParameterMap() { return null; }
+        @Override public String getProtocol() { return null; }
+        @Override public String getScheme() { return null; }
+        @Override public String getServerName() { return null; }
+        @Override public int getServerPort() { return 0; }
+        @Override public java.io.BufferedReader getReader() { return null; }
+        @Override public String getRemoteAddr() { return null; }
+        @Override public String getRemoteHost() { return null; }
+        @Override public void setCharacterEncoding(String env) {}
+        @Override public String getCharacterEncoding() { return null; }
+        @Override public int getContentLength() { return 0; }
+        @Override public long getContentLengthLong() { return 0; }
+        @Override public String getContentType() { return null; }
+        @Override public javax.servlet.ServletInputStream getInputStream() { return null; }
+        @Override public String getLocalName() { return null; }
+        @Override public String getLocalAddr() { return null; }
+        @Override public int getLocalPort() { return 0; }
+        @Override public javax.servlet.ServletContext getServletContext() { return null; }
+        @Override public javax.servlet.AsyncContext startAsync() { return null; }
+        @Override public javax.servlet.AsyncContext startAsync(javax.servlet.ServletRequest servletRequest, javax.servlet.ServletResponse servletResponse) { return null; }
+        @Override public boolean isAsyncStarted() { return false; }
+        @Override public boolean isAsyncSupported() { return false; }
+        @Override public javax.servlet.AsyncContext getAsyncContext() { return null; }
+        @Override public java.util.Enumeration<String> getAttributeNames() { return null; }
+        @Override public java.util.Locale getLocale() { return null; }
+        @Override public java.util.Enumeration<java.util.Locale> getLocales() { return null; }
+        @Override public javax.servlet.RequestDispatcher getRequestDispatcher(String path) { return null; }
+        @Override public String getRealPath(String path) { return null; }
+        @Override public int getRemotePort() { return 0; }
+        @Override public javax.servlet.DispatcherType getDispatcherType() { return javax.servlet.DispatcherType.REQUEST; }
+    }
+
+    private class MockServletResponse implements javax.servlet.http.HttpServletResponse {
+        private final Map<String, String> headers = new java.util.HashMap<>();
+        @Override public void addHeader(String name, String value) { headers.put(name, value); }
+        public String getHeader(String name) { return headers.get(name); }
+        @Override public java.util.Collection<String> getHeaderNames() { return headers.keySet(); }
+        @Override public java.util.Collection<String> getHeaders(String name) { return Arrays.asList(headers.get(name)); }
+        @Override public javax.servlet.ServletOutputStream getOutputStream() { return new javax.servlet.ServletOutputStream() {
+            @Override public void write(int b) {}
+            @Override public boolean isReady() { return true; }
+            @Override public void setWriteListener(javax.servlet.WriteListener writeListener) {}
+        }; }
+        @Override public java.io.PrintWriter getWriter() { return new java.io.PrintWriter(System.out); }
+        // Remaining methods are no-op or irrelevant for this test
+        @Override public void setStatus(int sc) {}
+        @Override public int getStatus() { return 0; }
+        @Override public String getCharacterEncoding() { return null; }
+        @Override public String getContentType() { return null; }
+        @Override public void setContentLength(int len) {}
+        @Override public void setContentLengthLong(long len) {}
+        @Override public void setContentType(String type) {}
+        @Override public void setCharacterEncoding(String charset) {}
+        @Override public void setBufferSize(int size) {}
+        @Override public int getBufferSize() { return 0; }
+        @Override public void flushBuffer() {}
+        @Override public void resetBuffer() {}
+        @Override public boolean isCommitted() { return false; }
+        @Override public void reset() {}
+        @Override public void addCookie(javax.servlet.http.Cookie cookie) {}
+        @Override public boolean containsHeader(String name) { return false; }
+        @Override public String encodeURL(String url) { return null; }
+        @Override public String encodeRedirectURL(String url) { return null; }
+        @Override public String encodeUrl(String url) { return null; }
+        @Override public String encodeRedirectUrl(String url) { return null; }
+        @Override public void sendError(int sc, String msg) {}
+        @Override public void sendError(int sc) {}
+        @Override public void sendRedirect(String location) {}
+        @Override public void setDateHeader(String name, long date) {}
+        @Override public void addDateHeader(String name, long date) {}
+        @Override public void setHeader(String name, String value) {}
+        @Override public void setIntHeader(String name, int value) {}
+        @Override public void addIntHeader(String name, int value) {}
+        @Override public void setStatus(int sc, String sm) {}
+        @Override public void setLocale(java.util.Locale loc) {}
+        @Override public java.util.Locale getLocale() { return null; }
+    }
+
+    private class MockFilterChain implements javax.servlet.FilterChain {
+        private boolean invoked = false;
+        @Override public void doFilter(javax.servlet.ServletRequest request, javax.servlet.ServletResponse response) {
+            invoked = true;
+        }
+        public boolean isInvoked() { return invoked; }
+    }
+}
+
+*****

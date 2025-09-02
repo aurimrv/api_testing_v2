@@ -1,0 +1,215 @@
+[[1;31mERROR[m] COMPILATION ERROR : 
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_LanguageServiceTest.java:[13,36] cannot find symbol
+  symbol:   class Language
+  location: package org.zalando.catwatch.backend
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_LanguageServiceTest.java:[14,36] cannot find symbol
+  symbol:   class LanguageService
+  location: package org.zalando.catwatch.backend
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_LanguageServiceTest.java:[15,36] cannot find symbol
+  symbol:   class Project
+  location: package org.zalando.catwatch.backend
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_LanguageServiceTest.java:[16,36] cannot find symbol
+  symbol:   class ProjectRepository
+  location: package org.zalando.catwatch.backend
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_LanguageServiceTest.java:[20,26] cannot find symbol
+  symbol:   class SutHandler
+  location: class gpt35_run01_LanguageServiceTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_LanguageServiceTest.java:[29,9] cannot find symbol
+  symbol:   variable RestAssured
+  location: class gpt35_run01_LanguageServiceTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_LanguageServiceTest.java:[30,9] cannot find symbol
+  symbol:   variable RestAssured
+  location: class gpt35_run01_LanguageServiceTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_LanguageServiceTest.java:[31,9] cannot find symbol
+  symbol:   variable RestAssured
+  location: class gpt35_run01_LanguageServiceTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_LanguageServiceTest.java:[32,9] cannot find symbol
+  symbol:   variable RestAssured
+  location: class gpt35_run01_LanguageServiceTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_LanguageServiceTest.java:[34,27] cannot find symbol
+  symbol:   method redirectConfig()
+  location: class gpt35_run01_LanguageServiceTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_LanguageServiceTest.java:[33,84] package JsonPathConfig does not exist
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_LanguageServiceTest.java:[33,29] cannot find symbol
+  symbol:   variable JsonConfig
+  location: class gpt35_run01_LanguageServiceTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_LanguageServiceTest.java:[32,30] cannot find symbol
+  symbol:   variable RestAssured
+  location: class gpt35_run01_LanguageServiceTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_LanguageServiceTest.java:[44,34] cannot find symbol
+  symbol:   variable Arrays
+  location: class gpt35_run01_LanguageServiceTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_LanguageServiceTest.java:[51,14] cannot find symbol
+  symbol:   class Language
+  location: class gpt35_run01_LanguageServiceTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_LanguageServiceTest.java:[51,37] cannot find symbol
+  symbol:   class LanguageService
+  location: class gpt35_run01_LanguageServiceTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_LanguageServiceTest.java:[51,57] cannot find symbol
+  symbol:   class ProjectRepository
+  location: class gpt35_run01_LanguageServiceTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_LanguageServiceTest.java:[51,120] cannot find symbol
+  symbol:   variable Language
+  location: class gpt35_run01_LanguageServiceTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_LanguageServiceTest.java:[56,14] cannot find symbol
+  symbol:   class Language
+  location: class gpt35_run01_LanguageServiceTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_LanguageServiceTest.java:[57,9] cannot find symbol
+  symbol:   class Language
+  location: class gpt35_run01_LanguageServiceTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_LanguageServiceTest.java:[57,34] cannot find symbol
+  symbol:   class Language
+  location: class gpt35_run01_LanguageServiceTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_LanguageServiceTest.java:[60,9] cannot find symbol
+  symbol:   class Language
+  location: class gpt35_run01_LanguageServiceTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_LanguageServiceTest.java:[60,34] cannot find symbol
+  symbol:   class Language
+  location: class gpt35_run01_LanguageServiceTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_LanguageServiceTest.java:[66,9] cannot find symbol
+  symbol:   class ProjectRepository
+  location: class gpt35_run01_LanguageServiceTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_LanguageServiceTest.java:[66,45] cannot find symbol
+  symbol:   class ProjectRepository
+  location: class gpt35_run01_LanguageServiceTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_LanguageServiceTest.java:[67,95] cannot find symbol
+  symbol:   class Project
+  location: class gpt35_run01_LanguageServiceTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_LanguageServiceTest.java:[67,110] cannot find symbol
+  symbol:   class Project
+  location: class gpt35_run01_LanguageServiceTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_LanguageServiceTest.java:[67,77] cannot find symbol
+  symbol:   variable Arrays
+  location: class gpt35_run01_LanguageServiceTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_LanguageServiceTest.java:[67,38] cannot find symbol
+  symbol:   method anyString()
+  location: class gpt35_run01_LanguageServiceTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_LanguageServiceTest.java:[67,51] cannot find symbol
+  symbol:   method any()
+  location: class gpt35_run01_LanguageServiceTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_LanguageServiceTest.java:[67,58] cannot find symbol
+  symbol:   method any()
+  location: class gpt35_run01_LanguageServiceTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_LanguageServiceTest.java:[69,9] cannot find symbol
+  symbol:   class LanguageService
+  location: class gpt35_run01_LanguageServiceTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_LanguageServiceTest.java:[69,47] cannot find symbol
+  symbol:   class LanguageService
+  location: class gpt35_run01_LanguageServiceTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_LanguageServiceTest.java:[70,14] cannot find symbol
+  symbol:   class Language
+  location: class gpt35_run01_LanguageServiceTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_LanguageServiceTest.java:[70,107] cannot find symbol
+  symbol:   variable Language
+  location: class gpt35_run01_LanguageServiceTest
+[[1;31mERROR[m] Failed to execute goal [32morg.apache.maven.plugins:maven-compiler-plugin:3.8.0:testCompile[m [1m(default-testCompile)[m on project [36mcatwatch-backend[m: [1;31mCompilation failure[m: Compilation failure: 
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_LanguageServiceTest.java:[13,36] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Language
+[[1;31mERROR[m]   location: package org.zalando.catwatch.backend
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_LanguageServiceTest.java:[14,36] cannot find symbol
+[[1;31mERROR[m]   symbol:   class LanguageService
+[[1;31mERROR[m]   location: package org.zalando.catwatch.backend
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_LanguageServiceTest.java:[15,36] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Project
+[[1;31mERROR[m]   location: package org.zalando.catwatch.backend
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_LanguageServiceTest.java:[16,36] cannot find symbol
+[[1;31mERROR[m]   symbol:   class ProjectRepository
+[[1;31mERROR[m]   location: package org.zalando.catwatch.backend
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_LanguageServiceTest.java:[20,26] cannot find symbol
+[[1;31mERROR[m]   symbol:   class SutHandler
+[[1;31mERROR[m]   location: class gpt35_run01_LanguageServiceTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_LanguageServiceTest.java:[29,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   variable RestAssured
+[[1;31mERROR[m]   location: class gpt35_run01_LanguageServiceTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_LanguageServiceTest.java:[30,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   variable RestAssured
+[[1;31mERROR[m]   location: class gpt35_run01_LanguageServiceTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_LanguageServiceTest.java:[31,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   variable RestAssured
+[[1;31mERROR[m]   location: class gpt35_run01_LanguageServiceTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_LanguageServiceTest.java:[32,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   variable RestAssured
+[[1;31mERROR[m]   location: class gpt35_run01_LanguageServiceTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_LanguageServiceTest.java:[34,27] cannot find symbol
+[[1;31mERROR[m]   symbol:   method redirectConfig()
+[[1;31mERROR[m]   location: class gpt35_run01_LanguageServiceTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_LanguageServiceTest.java:[33,84] package JsonPathConfig does not exist
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_LanguageServiceTest.java:[33,29] cannot find symbol
+[[1;31mERROR[m]   symbol:   variable JsonConfig
+[[1;31mERROR[m]   location: class gpt35_run01_LanguageServiceTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_LanguageServiceTest.java:[32,30] cannot find symbol
+[[1;31mERROR[m]   symbol:   variable RestAssured
+[[1;31mERROR[m]   location: class gpt35_run01_LanguageServiceTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_LanguageServiceTest.java:[44,34] cannot find symbol
+[[1;31mERROR[m]   symbol:   variable Arrays
+[[1;31mERROR[m]   location: class gpt35_run01_LanguageServiceTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_LanguageServiceTest.java:[51,14] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Language
+[[1;31mERROR[m]   location: class gpt35_run01_LanguageServiceTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_LanguageServiceTest.java:[51,37] cannot find symbol
+[[1;31mERROR[m]   symbol:   class LanguageService
+[[1;31mERROR[m]   location: class gpt35_run01_LanguageServiceTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_LanguageServiceTest.java:[51,57] cannot find symbol
+[[1;31mERROR[m]   symbol:   class ProjectRepository
+[[1;31mERROR[m]   location: class gpt35_run01_LanguageServiceTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_LanguageServiceTest.java:[51,120] cannot find symbol
+[[1;31mERROR[m]   symbol:   variable Language
+[[1;31mERROR[m]   location: class gpt35_run01_LanguageServiceTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_LanguageServiceTest.java:[56,14] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Language
+[[1;31mERROR[m]   location: class gpt35_run01_LanguageServiceTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_LanguageServiceTest.java:[57,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Language
+[[1;31mERROR[m]   location: class gpt35_run01_LanguageServiceTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_LanguageServiceTest.java:[57,34] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Language
+[[1;31mERROR[m]   location: class gpt35_run01_LanguageServiceTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_LanguageServiceTest.java:[60,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Language
+[[1;31mERROR[m]   location: class gpt35_run01_LanguageServiceTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_LanguageServiceTest.java:[60,34] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Language
+[[1;31mERROR[m]   location: class gpt35_run01_LanguageServiceTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_LanguageServiceTest.java:[66,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class ProjectRepository
+[[1;31mERROR[m]   location: class gpt35_run01_LanguageServiceTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_LanguageServiceTest.java:[66,45] cannot find symbol
+[[1;31mERROR[m]   symbol:   class ProjectRepository
+[[1;31mERROR[m]   location: class gpt35_run01_LanguageServiceTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_LanguageServiceTest.java:[67,95] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Project
+[[1;31mERROR[m]   location: class gpt35_run01_LanguageServiceTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_LanguageServiceTest.java:[67,110] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Project
+[[1;31mERROR[m]   location: class gpt35_run01_LanguageServiceTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_LanguageServiceTest.java:[67,77] cannot find symbol
+[[1;31mERROR[m]   symbol:   variable Arrays
+[[1;31mERROR[m]   location: class gpt35_run01_LanguageServiceTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_LanguageServiceTest.java:[67,38] cannot find symbol
+[[1;31mERROR[m]   symbol:   method anyString()
+[[1;31mERROR[m]   location: class gpt35_run01_LanguageServiceTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_LanguageServiceTest.java:[67,51] cannot find symbol
+[[1;31mERROR[m]   symbol:   method any()
+[[1;31mERROR[m]   location: class gpt35_run01_LanguageServiceTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_LanguageServiceTest.java:[67,58] cannot find symbol
+[[1;31mERROR[m]   symbol:   method any()
+[[1;31mERROR[m]   location: class gpt35_run01_LanguageServiceTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_LanguageServiceTest.java:[69,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class LanguageService
+[[1;31mERROR[m]   location: class gpt35_run01_LanguageServiceTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_LanguageServiceTest.java:[69,47] cannot find symbol
+[[1;31mERROR[m]   symbol:   class LanguageService
+[[1;31mERROR[m]   location: class gpt35_run01_LanguageServiceTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_LanguageServiceTest.java:[70,14] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Language
+[[1;31mERROR[m]   location: class gpt35_run01_LanguageServiceTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_LanguageServiceTest.java:[70,107] cannot find symbol
+[[1;31mERROR[m]   symbol:   variable Language
+[[1;31mERROR[m]   location: class gpt35_run01_LanguageServiceTest
+[[1;31mERROR[m] -> [1m[Help 1][m
+[[1;31mERROR[m] 
+[[1;31mERROR[m] To see the full stack trace of the errors, re-run Maven with the [1m-e[m switch.
+[[1;31mERROR[m] Re-run Maven using the [1m-X[m switch to enable full debug logging.
+[[1;31mERROR[m] 
+[[1;31mERROR[m] For more information about the errors and possible solutions, please read the following articles:
+[[1;31mERROR[m] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

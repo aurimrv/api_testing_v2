@@ -1,0 +1,57 @@
+[[1;31mERROR[m] COMPILATION ERROR : 
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_LanguageTest.java:[59,9] cannot find symbol
+  symbol:   class Language
+  location: class eu.fayder.restcountries.gpt35_run01_LanguageTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_LanguageTest.java:[59,33] cannot find symbol
+  symbol:   class Language
+  location: class eu.fayder.restcountries.gpt35_run01_LanguageTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_LanguageTest.java:[66,9] cannot find symbol
+  symbol:   class Language
+  location: class eu.fayder.restcountries.gpt35_run01_LanguageTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_LanguageTest.java:[66,33] cannot find symbol
+  symbol:   class Language
+  location: class eu.fayder.restcountries.gpt35_run01_LanguageTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_LanguageTest.java:[73,9] cannot find symbol
+  symbol:   class Language
+  location: class eu.fayder.restcountries.gpt35_run01_LanguageTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_LanguageTest.java:[73,33] cannot find symbol
+  symbol:   class Language
+  location: class eu.fayder.restcountries.gpt35_run01_LanguageTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_LanguageTest.java:[80,9] cannot find symbol
+  symbol:   class Language
+  location: class eu.fayder.restcountries.gpt35_run01_LanguageTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_LanguageTest.java:[80,33] cannot find symbol
+  symbol:   class Language
+  location: class eu.fayder.restcountries.gpt35_run01_LanguageTest
+[[1;31mERROR[m] Failed to execute goal [32morg.apache.maven.plugins:maven-compiler-plugin:3.8.0:testCompile[m [1m(default-testCompile)[m on project [36mrestcountries[m: [1;31mCompilation failure[m: Compilation failure: 
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_LanguageTest.java:[59,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Language
+[[1;31mERROR[m]   location: class eu.fayder.restcountries.gpt35_run01_LanguageTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_LanguageTest.java:[59,33] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Language
+[[1;31mERROR[m]   location: class eu.fayder.restcountries.gpt35_run01_LanguageTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_LanguageTest.java:[66,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Language
+[[1;31mERROR[m]   location: class eu.fayder.restcountries.gpt35_run01_LanguageTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_LanguageTest.java:[66,33] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Language
+[[1;31mERROR[m]   location: class eu.fayder.restcountries.gpt35_run01_LanguageTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_LanguageTest.java:[73,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Language
+[[1;31mERROR[m]   location: class eu.fayder.restcountries.gpt35_run01_LanguageTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_LanguageTest.java:[73,33] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Language
+[[1;31mERROR[m]   location: class eu.fayder.restcountries.gpt35_run01_LanguageTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_LanguageTest.java:[80,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Language
+[[1;31mERROR[m]   location: class eu.fayder.restcountries.gpt35_run01_LanguageTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_LanguageTest.java:[80,33] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Language
+[[1;31mERROR[m]   location: class eu.fayder.restcountries.gpt35_run01_LanguageTest
+[[1;31mERROR[m] -> [1m[Help 1][m
+[[1;31mERROR[m] 
+[[1;31mERROR[m] To see the full stack trace of the errors, re-run Maven with the [1m-e[m switch.
+[[1;31mERROR[m] Re-run Maven using the [1m-X[m switch to enable full debug logging.
+[[1;31mERROR[m] 
+[[1;31mERROR[m] For more information about the errors and possible solutions, please read the following articles:
+[[1;31mERROR[m] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

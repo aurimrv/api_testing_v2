@@ -1,0 +1,99 @@
+[[1;31mERROR[m] COMPILATION ERROR : 
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ContributorStatsTest.java:[71,20] cannot find symbol
+  symbol:   method setSnapshotDate(java.util.Date)
+  location: variable contributor of type org.zalando.catwatch.backend.model.Contributor
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ContributorStatsTest.java:[76,20] cannot find symbol
+  symbol:   method setLoginId(java.lang.String)
+  location: variable contributor of type org.zalando.catwatch.backend.model.Contributor
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ContributorStatsTest.java:[95,20] cannot find symbol
+  symbol:   method setLoginId(java.lang.String)
+  location: variable contributor of type org.zalando.catwatch.backend.model.Contributor
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ContributorStatsTest.java:[105,21] cannot find symbol
+  symbol:   method setLoginId(java.lang.String)
+  location: variable contributor1 of type org.zalando.catwatch.backend.model.Contributor
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ContributorStatsTest.java:[109,21] cannot find symbol
+  symbol:   method setLoginId(java.lang.String)
+  location: variable contributor2 of type org.zalando.catwatch.backend.model.Contributor
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ContributorStatsTest.java:[124,21] cannot find symbol
+  symbol:   method setSnapshotDate(java.util.Date)
+  location: variable contributor1 of type org.zalando.catwatch.backend.model.Contributor
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ContributorStatsTest.java:[129,21] cannot find symbol
+  symbol:   method setLoginId(java.lang.String)
+  location: variable contributor1 of type org.zalando.catwatch.backend.model.Contributor
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ContributorStatsTest.java:[136,21] cannot find symbol
+  symbol:   method setSnapshotDate(java.util.Date)
+  location: variable contributor2 of type org.zalando.catwatch.backend.model.Contributor
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ContributorStatsTest.java:[141,21] cannot find symbol
+  symbol:   method setLoginId(java.lang.String)
+  location: variable contributor2 of type org.zalando.catwatch.backend.model.Contributor
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ContributorStatsTest.java:[161,21] cannot find symbol
+  symbol:   method setLoginId(java.lang.String)
+  location: variable contributor1 of type org.zalando.catwatch.backend.model.Contributor
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ContributorStatsTest.java:[165,21] cannot find symbol
+  symbol:   method setLoginId(java.lang.String)
+  location: variable contributor2 of type org.zalando.catwatch.backend.model.Contributor
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ContributorStatsTest.java:[169,21] cannot find symbol
+  symbol:   method setLoginId(java.lang.String)
+  location: variable contributor3 of type org.zalando.catwatch.backend.model.Contributor
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ContributorStatsTest.java:[185,20] cannot find symbol
+  symbol:   method setLoginId(java.lang.String)
+  location: variable contributor of type org.zalando.catwatch.backend.model.Contributor
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ContributorStatsTest.java:[199,20] cannot find symbol
+  symbol:   method setSnapshotDate(java.util.Date)
+  location: variable contributor of type org.zalando.catwatch.backend.model.Contributor
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ContributorStatsTest.java:[200,20] cannot find symbol
+  symbol:   method setLoginId(java.lang.String)
+  location: variable contributor of type org.zalando.catwatch.backend.model.Contributor
+[[1;31mERROR[m] Failed to execute goal [32morg.apache.maven.plugins:maven-compiler-plugin:3.8.0:testCompile[m [1m(default-testCompile)[m on project [36mcatwatch-backend[m: [1;31mCompilation failure[m: Compilation failure: 
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ContributorStatsTest.java:[71,20] cannot find symbol
+[[1;31mERROR[m]   symbol:   method setSnapshotDate(java.util.Date)
+[[1;31mERROR[m]   location: variable contributor of type org.zalando.catwatch.backend.model.Contributor
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ContributorStatsTest.java:[76,20] cannot find symbol
+[[1;31mERROR[m]   symbol:   method setLoginId(java.lang.String)
+[[1;31mERROR[m]   location: variable contributor of type org.zalando.catwatch.backend.model.Contributor
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ContributorStatsTest.java:[95,20] cannot find symbol
+[[1;31mERROR[m]   symbol:   method setLoginId(java.lang.String)
+[[1;31mERROR[m]   location: variable contributor of type org.zalando.catwatch.backend.model.Contributor
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ContributorStatsTest.java:[105,21] cannot find symbol
+[[1;31mERROR[m]   symbol:   method setLoginId(java.lang.String)
+[[1;31mERROR[m]   location: variable contributor1 of type org.zalando.catwatch.backend.model.Contributor
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ContributorStatsTest.java:[109,21] cannot find symbol
+[[1;31mERROR[m]   symbol:   method setLoginId(java.lang.String)
+[[1;31mERROR[m]   location: variable contributor2 of type org.zalando.catwatch.backend.model.Contributor
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ContributorStatsTest.java:[124,21] cannot find symbol
+[[1;31mERROR[m]   symbol:   method setSnapshotDate(java.util.Date)
+[[1;31mERROR[m]   location: variable contributor1 of type org.zalando.catwatch.backend.model.Contributor
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ContributorStatsTest.java:[129,21] cannot find symbol
+[[1;31mERROR[m]   symbol:   method setLoginId(java.lang.String)
+[[1;31mERROR[m]   location: variable contributor1 of type org.zalando.catwatch.backend.model.Contributor
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ContributorStatsTest.java:[136,21] cannot find symbol
+[[1;31mERROR[m]   symbol:   method setSnapshotDate(java.util.Date)
+[[1;31mERROR[m]   location: variable contributor2 of type org.zalando.catwatch.backend.model.Contributor
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ContributorStatsTest.java:[141,21] cannot find symbol
+[[1;31mERROR[m]   symbol:   method setLoginId(java.lang.String)
+[[1;31mERROR[m]   location: variable contributor2 of type org.zalando.catwatch.backend.model.Contributor
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ContributorStatsTest.java:[161,21] cannot find symbol
+[[1;31mERROR[m]   symbol:   method setLoginId(java.lang.String)
+[[1;31mERROR[m]   location: variable contributor1 of type org.zalando.catwatch.backend.model.Contributor
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ContributorStatsTest.java:[165,21] cannot find symbol
+[[1;31mERROR[m]   symbol:   method setLoginId(java.lang.String)
+[[1;31mERROR[m]   location: variable contributor2 of type org.zalando.catwatch.backend.model.Contributor
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ContributorStatsTest.java:[169,21] cannot find symbol
+[[1;31mERROR[m]   symbol:   method setLoginId(java.lang.String)
+[[1;31mERROR[m]   location: variable contributor3 of type org.zalando.catwatch.backend.model.Contributor
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ContributorStatsTest.java:[185,20] cannot find symbol
+[[1;31mERROR[m]   symbol:   method setLoginId(java.lang.String)
+[[1;31mERROR[m]   location: variable contributor of type org.zalando.catwatch.backend.model.Contributor
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ContributorStatsTest.java:[199,20] cannot find symbol
+[[1;31mERROR[m]   symbol:   method setSnapshotDate(java.util.Date)
+[[1;31mERROR[m]   location: variable contributor of type org.zalando.catwatch.backend.model.Contributor
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ContributorStatsTest.java:[200,20] cannot find symbol
+[[1;31mERROR[m]   symbol:   method setLoginId(java.lang.String)
+[[1;31mERROR[m]   location: variable contributor of type org.zalando.catwatch.backend.model.Contributor
+[[1;31mERROR[m] -> [1m[Help 1][m
+[[1;31mERROR[m] 
+[[1;31mERROR[m] To see the full stack trace of the errors, re-run Maven with the [1m-e[m switch.
+[[1;31mERROR[m] Re-run Maven using the [1m-X[m switch to enable full debug logging.
+[[1;31mERROR[m] 
+[[1;31mERROR[m] For more information about the errors and possible solutions, please read the following articles:
+[[1;31mERROR[m] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

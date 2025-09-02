@@ -1,0 +1,22 @@
+-------------------------------------------------------------------------------
+Test set: org.restncs.gpt4o_run01_RemainderTest
+-------------------------------------------------------------------------------
+Tests run: 10, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 1.339 s <<< FAILURE! - in org.restncs.gpt4o_run01_RemainderTest
+testRemainder_aAndBNegative(org.restncs.gpt4o_run01_RemainderTest)  Time elapsed: 0.027 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+JSON path resultAsInt doesn't match.
+Expected: is <-1>
+  Actual: 1
+
+	at org.restncs.gpt4o_run01_RemainderTest.testRemainder_aAndBNegative(gpt4o_run01_RemainderTest.java:126)
+
+testRemainder_bIsZero(org.restncs.gpt4o_run01_RemainderTest)  Time elapsed: 0.024 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+JSON path resultAsInt doesn't match.
+Expected: is <1>
+  Actual: -1
+
+	at org.restncs.gpt4o_run01_RemainderTest.testRemainder_bIsZero(gpt4o_run01_RemainderTest.java:82)
+

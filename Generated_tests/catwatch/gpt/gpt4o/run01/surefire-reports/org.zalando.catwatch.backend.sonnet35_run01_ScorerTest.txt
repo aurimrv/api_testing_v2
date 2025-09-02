@@ -1,0 +1,7 @@
+-------------------------------------------------------------------------------
+Test set: org.zalando.catwatch.backend.sonnet35_run01_ScorerTest
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 1, Errors: 0, Skipped: 1, Time elapsed: 1.864 s <<< FAILURE! - in org.zalando.catwatch.backend.sonnet35_run01_ScorerTest
+testSetScoringProjectWithNull(org.zalando.catwatch.backend.sonnet35_run01_ScorerTest)  Time elapsed: 0.002 s  <<< FAILURE!
+java.lang.AssertionError: Expected exception: java.lang.RuntimeException
+

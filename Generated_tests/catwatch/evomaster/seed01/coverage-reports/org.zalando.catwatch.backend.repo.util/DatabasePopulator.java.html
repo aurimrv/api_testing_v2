@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="pt"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>DatabasePopulator.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">catwatch-backend</a> &gt; <a href="index.source.html" class="el_package">org.zalando.catwatch.backend.repo.util</a> &gt; <span class="el_source">DatabasePopulator.java</span></div><h1>DatabasePopulator.java</h1><pre class="source lang-java linenums">package org.zalando.catwatch.backend.repo.util;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.stereotype.Component;
+import org.zalando.catwatch.backend.repo.ContributorRepository;
+import org.zalando.catwatch.backend.repo.ProjectRepository;
+import org.zalando.catwatch.backend.repo.StatisticsRepository;
+import org.zalando.catwatch.backend.repo.builder.BuilderUtil;
+import org.zalando.catwatch.backend.repo.builder.ContributorBuilder;
+import org.zalando.catwatch.backend.repo.builder.ProjectBuilder;
+import org.zalando.catwatch.backend.repo.builder.StatisticsBuilder;
+
+import java.util.Date;
+import java.util.List;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
+
+import static org.zalando.catwatch.backend.repo.builder.BuilderUtil.*;
+import static org.zalando.catwatch.backend.repo.util.DatabasePing.isDatabaseAvailable;
+
+@Component
+public class DatabasePopulator {
+
+    private final StatisticsRepository statisticsRepository;
+    private final ProjectRepository projectRepository;
+    private final ContributorRepository contributorRepository;
+    private final JdbcTemplate jdbcTemplate;
+
+    @Autowired
+    public DatabasePopulator(StatisticsRepository statisticsRepository,
+                             ProjectRepository projectRepository,
+                             ContributorRepository contributorRepository,
+<span class="fc" id="L34">                             JdbcTemplate jdbcTemplate) {</span>
+<span class="fc" id="L35">        this.statisticsRepository = statisticsRepository;</span>
+<span class="fc" id="L36">        this.projectRepository = projectRepository;</span>
+<span class="fc" id="L37">        this.contributorRepository = contributorRepository;</span>
+<span class="fc" id="L38">        this.jdbcTemplate = jdbcTemplate;</span>
+<span class="fc" id="L39">    }</span>
+
+    public void populateTestData() {
+
+<span class="nc bnc" id="L43" title="All 2 branches missed.">        if (!isDatabaseAvailable(jdbcTemplate)) {</span>
+<span class="nc" id="L44">            return;                             // return so that the application context can start at least</span>
+        }
+
+        // create statistics for two companies (latest)
+<span class="nc" id="L48">        new StatisticsBuilder(statisticsRepository) //</span>
+<span class="nc" id="L49">            .organizationName(&quot;galanto&quot;) //</span>
+<span class="nc" id="L50">            .publicProjectCount(34) //</span>
+<span class="nc" id="L51">            .allStarsCount(54) //</span>
+<span class="nc" id="L52">            .allForksCount(110) //</span>
+<span class="nc" id="L53">            .days(1)</span>
+<span class="nc" id="L54">            .save();</span>
+
+<span class="nc" id="L56">        new StatisticsBuilder(statisticsRepository) //</span>
+<span class="nc" id="L57">            .organizationName(&quot;galanto-italic&quot;) //</span>
+<span class="nc" id="L58">            .publicProjectCount(56) //</span>
+<span class="nc" id="L59">            .allStarsCount(93) //</span>
+<span class="nc" id="L60">            .allForksCount(249) //</span>
+<span class="nc" id="L61">            .days(1)</span>
+<span class="nc" id="L62">            .save();</span>
+
+        // create projects for galanto
+<span class="nc" id="L65">        List&lt;Date&gt; snapshots = Stream</span>
+<span class="nc" id="L66">            .generate(BuilderUtil::randomDate)</span>
+<span class="nc" id="L67">            .limit(100)</span>
+<span class="nc" id="L68">            .collect(Collectors.toList());</span>
+
+<span class="nc bnc" id="L70" title="All 2 branches missed.">        for (int i = 0; i &lt; 10; i++) {</span>
+<span class="nc" id="L71">            Long gitHubProjectId = freshId();</span>
+<span class="nc" id="L72">            String name = randomProjectName();</span>
+<span class="nc" id="L73">            String language = randomLanguage();</span>
+
+<span class="nc bnc" id="L75" title="All 2 branches missed.">            for (Date snapshot : snapshots) {</span>
+<span class="nc" id="L76">                new ProjectBuilder(projectRepository)</span>
+<span class="nc" id="L77">                    .organizationName(&quot;galanto&quot;)</span>
+<span class="nc" id="L78">                    .name(name)</span>
+<span class="nc" id="L79">                    .gitHubProjectId(gitHubProjectId)</span>
+<span class="nc" id="L80">                    .primaryLanguage(language)</span>
+<span class="nc" id="L81">                    .snapshotDate(snapshot)</span>
+<span class="nc" id="L82">                    .forksCount(random(1, 4))</span>
+<span class="nc" id="L83">                    .starsCount(random(1, 10))</span>
+<span class="nc" id="L84">                    .commitsCount(random(1, 1000))</span>
+<span class="nc" id="L85">                    .contributorsCount(random(1, 1000))</span>
+<span class="nc" id="L86">                    .score(random(1, 100))</span>
+<span class="nc" id="L87">                    .save();</span>
+<span class="nc" id="L88">            }</span>
+        }
+
+        // create contributors for galanto
+<span class="nc bnc" id="L92" title="All 2 branches missed.">        for (int i = 0; i &lt; 2; i++) {</span>
+<span class="nc" id="L93">            new ContributorBuilder(contributorRepository)</span>
+<span class="nc" id="L94">                .organizationName(&quot;galanto&quot;)</span>
+<span class="nc" id="L95">                .save();</span>
+        }
+<span class="nc" id="L97">    }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

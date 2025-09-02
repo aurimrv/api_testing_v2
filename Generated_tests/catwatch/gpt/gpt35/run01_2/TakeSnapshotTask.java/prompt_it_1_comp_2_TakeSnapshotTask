@@ -1,0 +1,189 @@
+You are a highly skilled test engineer specializing in debugging and resolving compilation errors and test failures in Java-based projects. Your expertise includes Java 8, JUnit 4, and REST Assured, allowing you to diagnose issues efficiently and provide precise, actionable fixes.
+
+Do fix the compilation errors delimited by ##### given the code below delimited by *****.
+
+The response must contain only Java code in JUnit 4 format.
+
+#####
+[[1;31mERROR[m] COMPILATION ERROR : 
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_TakeSnapshotTaskTest.java:[83,56] cannot find symbol
+  symbol:   class IOException
+  location: class org.zalando.catwatch.backend.gpt35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_TakeSnapshotTaskTest.java:[89,54] cannot find symbol
+  symbol:   class IOException
+  location: class org.zalando.catwatch.backend.gpt35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_TakeSnapshotTaskTest.java:[89,67] cannot find symbol
+  symbol:   class URISyntaxException
+  location: class org.zalando.catwatch.backend.gpt35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_TakeSnapshotTaskTest.java:[107,58] cannot find symbol
+  symbol:   class IOException
+  location: class org.zalando.catwatch.backend.gpt35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_TakeSnapshotTaskTest.java:[107,71] cannot find symbol
+  symbol:   class URISyntaxException
+  location: class org.zalando.catwatch.backend.gpt35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_TakeSnapshotTaskTest.java:[63,9] constructor TakeSnapshotTask in class org.zalando.catwatch.backend.github.TakeSnapshotTask cannot be applied to given types;
+  required: org.kohsuke.github.GitHub,java.lang.String,org.zalando.catwatch.backend.model.util.Scorer,java.util.Date
+  found: no arguments
+  reason: actual and formal argument lists differ in length
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_TakeSnapshotTaskTest.java:[85,17] collectStatistics(org.zalando.catwatch.backend.github.OrganizationWrapper) is not public in org.zalando.catwatch.backend.github.TakeSnapshotTask; cannot be accessed from outside package
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_TakeSnapshotTaskTest.java:[91,17] collectProjects(org.zalando.catwatch.backend.github.OrganizationWrapper) is not public in org.zalando.catwatch.backend.github.TakeSnapshotTask; cannot be accessed from outside package
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_TakeSnapshotTaskTest.java:[97,17] getProjectMaintainers(org.zalando.catwatch.backend.github.RepositoryWrapper) is not public in org.zalando.catwatch.backend.github.TakeSnapshotTask; cannot be accessed from outside package
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_TakeSnapshotTaskTest.java:[103,17] readCatwatchYaml(org.zalando.catwatch.backend.github.RepositoryWrapper,org.zalando.catwatch.backend.model.Project) is not public in org.zalando.catwatch.backend.github.TakeSnapshotTask; cannot be accessed from outside package
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_TakeSnapshotTaskTest.java:[109,17] collectContributors(org.zalando.catwatch.backend.github.OrganizationWrapper) is not public in org.zalando.catwatch.backend.github.TakeSnapshotTask; cannot be accessed from outside package
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_TakeSnapshotTaskTest.java:[115,17] collectLanguages(org.zalando.catwatch.backend.github.OrganizationWrapper) is not public in org.zalando.catwatch.backend.github.TakeSnapshotTask; cannot be accessed from outside package
+[[1;31mERROR[m] Failed to execute goal [32morg.apache.maven.plugins:maven-compiler-plugin:3.8.0:testCompile[m [1m(default-testCompile)[m on project [36mcatwatch-backend[m: [1;31mCompilation failure[m: Compilation failure: 
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_TakeSnapshotTaskTest.java:[83,56] cannot find symbol
+[[1;31mERROR[m]   symbol:   class IOException
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_TakeSnapshotTaskTest.java:[89,54] cannot find symbol
+[[1;31mERROR[m]   symbol:   class IOException
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_TakeSnapshotTaskTest.java:[89,67] cannot find symbol
+[[1;31mERROR[m]   symbol:   class URISyntaxException
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_TakeSnapshotTaskTest.java:[107,58] cannot find symbol
+[[1;31mERROR[m]   symbol:   class IOException
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_TakeSnapshotTaskTest.java:[107,71] cannot find symbol
+[[1;31mERROR[m]   symbol:   class URISyntaxException
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_TakeSnapshotTaskTest.java:[63,9] constructor TakeSnapshotTask in class org.zalando.catwatch.backend.github.TakeSnapshotTask cannot be applied to given types;
+[[1;31mERROR[m]   required: org.kohsuke.github.GitHub,java.lang.String,org.zalando.catwatch.backend.model.util.Scorer,java.util.Date
+[[1;31mERROR[m]   found: no arguments
+[[1;31mERROR[m]   reason: actual and formal argument lists differ in length
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_TakeSnapshotTaskTest.java:[85,17] collectStatistics(org.zalando.catwatch.backend.github.OrganizationWrapper) is not public in org.zalando.catwatch.backend.github.TakeSnapshotTask; cannot be accessed from outside package
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_TakeSnapshotTaskTest.java:[91,17] collectProjects(org.zalando.catwatch.backend.github.OrganizationWrapper) is not public in org.zalando.catwatch.backend.github.TakeSnapshotTask; cannot be accessed from outside package
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_TakeSnapshotTaskTest.java:[97,17] getProjectMaintainers(org.zalando.catwatch.backend.github.RepositoryWrapper) is not public in org.zalando.catwatch.backend.github.TakeSnapshotTask; cannot be accessed from outside package
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_TakeSnapshotTaskTest.java:[103,17] readCatwatchYaml(org.zalando.catwatch.backend.github.RepositoryWrapper,org.zalando.catwatch.backend.model.Project) is not public in org.zalando.catwatch.backend.github.TakeSnapshotTask; cannot be accessed from outside package
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_TakeSnapshotTaskTest.java:[109,17] collectContributors(org.zalando.catwatch.backend.github.OrganizationWrapper) is not public in org.zalando.catwatch.backend.github.TakeSnapshotTask; cannot be accessed from outside package
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_TakeSnapshotTaskTest.java:[115,17] collectLanguages(org.zalando.catwatch.backend.github.OrganizationWrapper) is not public in org.zalando.catwatch.backend.github.TakeSnapshotTask; cannot be accessed from outside package
+[[1;31mERROR[m] -> [1m[Help 1][m
+[[1;31mERROR[m] 
+[[1;31mERROR[m] To see the full stack trace of the errors, re-run Maven with the [1m-e[m switch.
+[[1;31mERROR[m] Re-run Maven using the [1m-X[m switch to enable full debug logging.
+[[1;31mERROR[m] 
+[[1;31mERROR[m] For more information about the errors and possible solutions, please read the following articles:
+[[1;31mERROR[m] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+
+#####
+*****
+
+package org.zalando.catwatch.backend;
+
+import org.junit.AfterClass;
+import org.junit.BeforeClass;
+import org.junit.Before;
+import org.junit.Test;
+import static org.junit.Assert.*;
+import java.util.Map;
+import java.util.List;
+import static org.evomaster.client.java.controller.api.EMTestUtils.*;
+import org.evomaster.client.java.controller.SutHandler;
+import io.restassured.RestAssured;
+import static io.restassured.RestAssured.given;
+import io.restassured.response.ValidatableResponse;
+import static org.evomaster.client.java.sql.dsl.SqlDsl.sql;
+import org.evomaster.client.java.controller.api.dto.database.operations.InsertionResultsDto;
+import org.evomaster.client.java.controller.api.dto.database.operations.InsertionDto;
+import static org.hamcrest.Matchers.*;
+import io.restassured.config.JsonConfig;
+import io.restassured.path.json.config.JsonPathConfig;
+import static io.restassured.config.RedirectConfig.redirectConfig;
+import static org.evomaster.client.java.controller.contentMatchers.NumberMatcher.*;
+import static org.evomaster.client.java.controller.contentMatchers.StringMatcher.*;
+import static org.evomaster.client.java.controller.contentMatchers.SubStringMatcher.*;
+import static org.evomaster.client.java.controller.expect.ExpectationHandler.expectationHandler;
+import org.evomaster.client.java.controller.expect.ExpectationHandler;
+import io.restassured.path.json.JsonPath;
+import java.util.Arrays;
+
+public class gpt35_run01_TakeSnapshotTaskTest {
+
+    private static final SutHandler controller = new em.embedded.org.zalando.EmbeddedEvoMasterController();
+    private static String baseUrlOfSut;
+
+    @BeforeClass
+    public static void initClass() {
+        controller.setupForGeneratedTest();
+        baseUrlOfSut = controller.startSut();
+        controller.registerOrExecuteInitSqlCommandsIfNeeded();
+        assertNotNull(baseUrlOfSut);
+        RestAssured.enableLoggingOfRequestAndResponseIfValidationFails();
+        RestAssured.useRelaxedHTTPSValidation();
+        RestAssured.urlEncodingEnabled = false;
+        RestAssured.config = RestAssured.config()
+            .jsonConfig(JsonConfig.jsonConfig().numberReturnType(JsonPathConfig.NumberReturnType.DOUBLE))
+            .redirect(redirectConfig().followRedirects(false));
+    }
+
+    @AfterClass
+    public static void tearDown() {
+        controller.stopSut();
+    }
+
+    @Before
+    public void initTest() {
+        controller.resetDatabase(Arrays.asList("CONTRIBUTOR"));
+        controller.resetStateOfSUT();
+    }
+
+    @Test
+    public void testInitMethodCall() {
+        new org.zalando.catwatch.backend.github.TakeSnapshotTask();
+    }
+
+    @Test
+    public void testClinitLines52Coverage() {
+        // Not applicable for testing
+    }
+
+    @Test
+    public void testInitLines60To65Coverage() {
+        new org.zalando.catwatch.backend.github.TakeSnapshotTask(null, null, null, null);
+    }
+
+    @Test
+    public void testCallMethodCoverage() throws Exception {
+        org.zalando.catwatch.backend.github.TakeSnapshotTask instance = new org.zalando.catwatch.backend.github.TakeSnapshotTask(null, null, null, null);
+        instance.call();
+    }
+
+    @Test
+    public void testCollectStatisticsCoverage() throws IOException {
+        org.zalando.catwatch.backend.github.TakeSnapshotTask instance = new org.zalando.catwatch.backend.github.TakeSnapshotTask(null, null, null, null);
+        instance.collectStatistics(null);
+    }
+
+    @Test
+    public void testCollectProjectsCoverage() throws IOException, URISyntaxException {
+        org.zalando.catwatch.backend.github.TakeSnapshotTask instance = new org.zalando.catwatch.backend.github.TakeSnapshotTask(null, null, null, null);
+        instance.collectProjects(null);
+    }
+
+    @Test
+    public void testGetProjectMaintainersCoverage() {
+        org.zalando.catwatch.backend.github.TakeSnapshotTask instance = new org.zalando.catwatch.backend.github.TakeSnapshotTask(null, null, null, null);
+        instance.getProjectMaintainers(null);
+    }
+
+    @Test
+    public void testReadCatwatchYamlCoverage() {
+        org.zalando.catwatch.backend.github.TakeSnapshotTask instance = new org.zalando.catwatch.backend.github.TakeSnapshotTask(null, null, null, null);
+        instance.readCatwatchYaml(null, null);
+    }
+
+    @Test
+    public void testCollectContributorsCoverage() throws IOException, URISyntaxException {
+        org.zalando.catwatch.backend.github.TakeSnapshotTask instance = new org.zalando.catwatch.backend.github.TakeSnapshotTask(null, null, null, null);
+        instance.collectContributors(null);
+    }
+
+    @Test
+    public void testCollectLanguagesCoverage() {
+        org.zalando.catwatch.backend.github.TakeSnapshotTask instance = new org.zalando.catwatch.backend.github.TakeSnapshotTask(null, null, null, null);
+        instance.collectLanguages(null);
+    }
+
+}
+
+*****

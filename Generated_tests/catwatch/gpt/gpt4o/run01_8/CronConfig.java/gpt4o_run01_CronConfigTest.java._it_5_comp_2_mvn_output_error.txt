@@ -1,0 +1,37 @@
+[[1;31mERROR[m] COMPILATION ERROR : 
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_CronConfigTest.java:[75,40] constructor RetryableFetcher in class org.zalando.catwatch.backend.scheduler.RetryableFetcher cannot be applied to given types;
+  required: org.zalando.catwatch.backend.scheduler.Fetcher,int,int,int,double,org.zalando.catwatch.backend.mail.MailSender
+  found: no arguments
+  reason: actual and formal argument lists differ in length
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_CronConfigTest.java:[81,67] <anonymous org.zalando.catwatch.backend.gpt4o_run01_CronConfigTest$2> is not abstract and does not override abstract method getAutowireCapableBeanFactory() in org.springframework.context.ApplicationContext
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_CronConfigTest.java:[128,40] constructor RetryableFetcher in class org.zalando.catwatch.backend.scheduler.RetryableFetcher cannot be applied to given types;
+  required: org.zalando.catwatch.backend.scheduler.Fetcher,int,int,int,double,org.zalando.catwatch.backend.mail.MailSender
+  found: no arguments
+  reason: actual and formal argument lists differ in length
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_CronConfigTest.java:[130,25] tryFetchData() in <anonymous org.zalando.catwatch.backend.gpt4o_run01_CronConfigTest$3> cannot override tryFetchData() in org.zalando.catwatch.backend.scheduler.RetryableFetcher
+  overridden method does not throw java.lang.Exception
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_CronConfigTest.java:[134,67] <anonymous org.zalando.catwatch.backend.gpt4o_run01_CronConfigTest$4> is not abstract and does not override abstract method getAutowireCapableBeanFactory() in org.springframework.context.ApplicationContext
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_CronConfigTest.java:[181,19] org.zalando.catwatch.backend.scheduler.CronConfig.CustomExitCodeGenerator is not public in org.zalando.catwatch.backend.scheduler.CronConfig; cannot be accessed from outside package
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_CronConfigTest.java:[182,27] org.zalando.catwatch.backend.scheduler.CronConfig.CustomExitCodeGenerator is not public in org.zalando.catwatch.backend.scheduler.CronConfig; cannot be accessed from outside package
+[[1;31mERROR[m] Failed to execute goal [32morg.apache.maven.plugins:maven-compiler-plugin:3.8.0:testCompile[m [1m(default-testCompile)[m on project [36mcatwatch-backend[m: [1;31mCompilation failure[m: Compilation failure: 
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_CronConfigTest.java:[75,40] constructor RetryableFetcher in class org.zalando.catwatch.backend.scheduler.RetryableFetcher cannot be applied to given types;
+[[1;31mERROR[m]   required: org.zalando.catwatch.backend.scheduler.Fetcher,int,int,int,double,org.zalando.catwatch.backend.mail.MailSender
+[[1;31mERROR[m]   found: no arguments
+[[1;31mERROR[m]   reason: actual and formal argument lists differ in length
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_CronConfigTest.java:[81,67] <anonymous org.zalando.catwatch.backend.gpt4o_run01_CronConfigTest$2> is not abstract and does not override abstract method getAutowireCapableBeanFactory() in org.springframework.context.ApplicationContext
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_CronConfigTest.java:[128,40] constructor RetryableFetcher in class org.zalando.catwatch.backend.scheduler.RetryableFetcher cannot be applied to given types;
+[[1;31mERROR[m]   required: org.zalando.catwatch.backend.scheduler.Fetcher,int,int,int,double,org.zalando.catwatch.backend.mail.MailSender
+[[1;31mERROR[m]   found: no arguments
+[[1;31mERROR[m]   reason: actual and formal argument lists differ in length
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_CronConfigTest.java:[130,25] tryFetchData() in <anonymous org.zalando.catwatch.backend.gpt4o_run01_CronConfigTest$3> cannot override tryFetchData() in org.zalando.catwatch.backend.scheduler.RetryableFetcher
+[[1;31mERROR[m]   overridden method does not throw java.lang.Exception
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_CronConfigTest.java:[134,67] <anonymous org.zalando.catwatch.backend.gpt4o_run01_CronConfigTest$4> is not abstract and does not override abstract method getAutowireCapableBeanFactory() in org.springframework.context.ApplicationContext
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_CronConfigTest.java:[181,19] org.zalando.catwatch.backend.scheduler.CronConfig.CustomExitCodeGenerator is not public in org.zalando.catwatch.backend.scheduler.CronConfig; cannot be accessed from outside package
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_CronConfigTest.java:[182,27] org.zalando.catwatch.backend.scheduler.CronConfig.CustomExitCodeGenerator is not public in org.zalando.catwatch.backend.scheduler.CronConfig; cannot be accessed from outside package
+[[1;31mERROR[m] -> [1m[Help 1][m
+[[1;31mERROR[m] 
+[[1;31mERROR[m] To see the full stack trace of the errors, re-run Maven with the [1m-e[m switch.
+[[1;31mERROR[m] Re-run Maven using the [1m-X[m switch to enable full debug logging.
+[[1;31mERROR[m] 
+[[1;31mERROR[m] For more information about the errors and possible solutions, please read the following articles:
+[[1;31mERROR[m] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

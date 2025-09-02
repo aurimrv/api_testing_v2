@@ -1,0 +1,306 @@
+You are a highly skilled test engineer specializing in debugging and resolving compilation errors and test failures in Java-based projects. Your expertise includes Java 8, JUnit 4, and REST Assured, allowing you to diagnose issues efficiently and provide precise, actionable fixes.
+
+Do fix the compilation errors delimited by ##### given the code below delimited by *****.
+
+The response must contain only Java code in JUnit 4 format.
+
+#####
+[[1;31mERROR[m] COMPILATION ERROR : 
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ContributorStatsTest.java:[58,20] cannot find symbol
+  symbol:   method setSnapshotDate(java.util.Date)
+  location: variable contributor of type org.zalando.catwatch.backend.model.Contributor
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ContributorStatsTest.java:[63,20] cannot find symbol
+  symbol:   method setId(java.lang.String)
+  location: variable contributor of type org.zalando.catwatch.backend.model.Contributor
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ContributorStatsTest.java:[82,20] cannot find symbol
+  symbol:   method setId(java.lang.String)
+  location: variable contributor of type org.zalando.catwatch.backend.model.Contributor
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ContributorStatsTest.java:[92,21] cannot find symbol
+  symbol:   method setId(java.lang.String)
+  location: variable contributor1 of type org.zalando.catwatch.backend.model.Contributor
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ContributorStatsTest.java:[96,21] cannot find symbol
+  symbol:   method setId(java.lang.String)
+  location: variable contributor2 of type org.zalando.catwatch.backend.model.Contributor
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ContributorStatsTest.java:[111,21] cannot find symbol
+  symbol:   method setSnapshotDate(java.util.Date)
+  location: variable contributor1 of type org.zalando.catwatch.backend.model.Contributor
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ContributorStatsTest.java:[116,21] cannot find symbol
+  symbol:   method setId(java.lang.String)
+  location: variable contributor1 of type org.zalando.catwatch.backend.model.Contributor
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ContributorStatsTest.java:[123,21] cannot find symbol
+  symbol:   method setSnapshotDate(java.util.Date)
+  location: variable contributor2 of type org.zalando.catwatch.backend.model.Contributor
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ContributorStatsTest.java:[128,21] cannot find symbol
+  symbol:   method setId(java.lang.String)
+  location: variable contributor2 of type org.zalando.catwatch.backend.model.Contributor
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ContributorStatsTest.java:[148,21] cannot find symbol
+  symbol:   method setId(java.lang.String)
+  location: variable contributor1 of type org.zalando.catwatch.backend.model.Contributor
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ContributorStatsTest.java:[152,21] cannot find symbol
+  symbol:   method setId(java.lang.String)
+  location: variable contributor2 of type org.zalando.catwatch.backend.model.Contributor
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ContributorStatsTest.java:[156,21] cannot find symbol
+  symbol:   method setId(java.lang.String)
+  location: variable contributor3 of type org.zalando.catwatch.backend.model.Contributor
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ContributorStatsTest.java:[172,20] cannot find symbol
+  symbol:   method setId(java.lang.String)
+  location: variable contributor of type org.zalando.catwatch.backend.model.Contributor
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ContributorStatsTest.java:[186,20] cannot find symbol
+  symbol:   method setSnapshotDate(java.util.Date)
+  location: variable contributor of type org.zalando.catwatch.backend.model.Contributor
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ContributorStatsTest.java:[187,20] cannot find symbol
+  symbol:   method setId(java.lang.String)
+  location: variable contributor of type org.zalando.catwatch.backend.model.Contributor
+[[1;31mERROR[m] Failed to execute goal [32morg.apache.maven.plugins:maven-compiler-plugin:3.8.0:testCompile[m [1m(default-testCompile)[m on project [36mcatwatch-backend[m: [1;31mCompilation failure[m: Compilation failure: 
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ContributorStatsTest.java:[58,20] cannot find symbol
+[[1;31mERROR[m]   symbol:   method setSnapshotDate(java.util.Date)
+[[1;31mERROR[m]   location: variable contributor of type org.zalando.catwatch.backend.model.Contributor
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ContributorStatsTest.java:[63,20] cannot find symbol
+[[1;31mERROR[m]   symbol:   method setId(java.lang.String)
+[[1;31mERROR[m]   location: variable contributor of type org.zalando.catwatch.backend.model.Contributor
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ContributorStatsTest.java:[82,20] cannot find symbol
+[[1;31mERROR[m]   symbol:   method setId(java.lang.String)
+[[1;31mERROR[m]   location: variable contributor of type org.zalando.catwatch.backend.model.Contributor
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ContributorStatsTest.java:[92,21] cannot find symbol
+[[1;31mERROR[m]   symbol:   method setId(java.lang.String)
+[[1;31mERROR[m]   location: variable contributor1 of type org.zalando.catwatch.backend.model.Contributor
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ContributorStatsTest.java:[96,21] cannot find symbol
+[[1;31mERROR[m]   symbol:   method setId(java.lang.String)
+[[1;31mERROR[m]   location: variable contributor2 of type org.zalando.catwatch.backend.model.Contributor
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ContributorStatsTest.java:[111,21] cannot find symbol
+[[1;31mERROR[m]   symbol:   method setSnapshotDate(java.util.Date)
+[[1;31mERROR[m]   location: variable contributor1 of type org.zalando.catwatch.backend.model.Contributor
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ContributorStatsTest.java:[116,21] cannot find symbol
+[[1;31mERROR[m]   symbol:   method setId(java.lang.String)
+[[1;31mERROR[m]   location: variable contributor1 of type org.zalando.catwatch.backend.model.Contributor
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ContributorStatsTest.java:[123,21] cannot find symbol
+[[1;31mERROR[m]   symbol:   method setSnapshotDate(java.util.Date)
+[[1;31mERROR[m]   location: variable contributor2 of type org.zalando.catwatch.backend.model.Contributor
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ContributorStatsTest.java:[128,21] cannot find symbol
+[[1;31mERROR[m]   symbol:   method setId(java.lang.String)
+[[1;31mERROR[m]   location: variable contributor2 of type org.zalando.catwatch.backend.model.Contributor
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ContributorStatsTest.java:[148,21] cannot find symbol
+[[1;31mERROR[m]   symbol:   method setId(java.lang.String)
+[[1;31mERROR[m]   location: variable contributor1 of type org.zalando.catwatch.backend.model.Contributor
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ContributorStatsTest.java:[152,21] cannot find symbol
+[[1;31mERROR[m]   symbol:   method setId(java.lang.String)
+[[1;31mERROR[m]   location: variable contributor2 of type org.zalando.catwatch.backend.model.Contributor
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ContributorStatsTest.java:[156,21] cannot find symbol
+[[1;31mERROR[m]   symbol:   method setId(java.lang.String)
+[[1;31mERROR[m]   location: variable contributor3 of type org.zalando.catwatch.backend.model.Contributor
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ContributorStatsTest.java:[172,20] cannot find symbol
+[[1;31mERROR[m]   symbol:   method setId(java.lang.String)
+[[1;31mERROR[m]   location: variable contributor of type org.zalando.catwatch.backend.model.Contributor
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ContributorStatsTest.java:[186,20] cannot find symbol
+[[1;31mERROR[m]   symbol:   method setSnapshotDate(java.util.Date)
+[[1;31mERROR[m]   location: variable contributor of type org.zalando.catwatch.backend.model.Contributor
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ContributorStatsTest.java:[187,20] cannot find symbol
+[[1;31mERROR[m]   symbol:   method setId(java.lang.String)
+[[1;31mERROR[m]   location: variable contributor of type org.zalando.catwatch.backend.model.Contributor
+[[1;31mERROR[m] -> [1m[Help 1][m
+[[1;31mERROR[m] 
+[[1;31mERROR[m] To see the full stack trace of the errors, re-run Maven with the [1m-e[m switch.
+[[1;31mERROR[m] Re-run Maven using the [1m-X[m switch to enable full debug logging.
+[[1;31mERROR[m] 
+[[1;31mERROR[m] For more information about the errors and possible solutions, please read the following articles:
+[[1;31mERROR[m] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+
+#####
+*****
+package org.zalando.catwatch.backend;
+
+import org.junit.AfterClass;
+import org.junit.BeforeClass;
+import org.junit.Before;
+import org.junit.Test;
+import static org.junit.Assert.*;
+import java.util.Map;
+import java.util.List;
+import org.evomaster.client.java.controller.SutHandler;
+import io.restassured.RestAssured;
+import io.restassured.config.JsonConfig;
+import io.restassured.path.json.config.JsonPathConfig;
+import static io.restassured.config.RedirectConfig.redirectConfig;
+import org.zalando.catwatch.backend.model.Contributor;
+import org.zalando.catwatch.backend.util.ContributorStats;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.Arrays;
+
+public class sonnet35_run01_ContributorStatsTest {
+
+    private static final SutHandler controller = new em.embedded.org.zalando.EmbeddedEvoMasterController();
+    private static String baseUrlOfSut;
+
+    @BeforeClass
+    public static void initClass() {
+        controller.setupForGeneratedTest();
+        baseUrlOfSut = controller.startSut();
+        controller.registerOrExecuteInitSqlCommandsIfNeeded();
+        assertNotNull(baseUrlOfSut);
+        RestAssured.enableLoggingOfRequestAndResponseIfValidationFails();
+        RestAssured.useRelaxedHTTPSValidation();
+        RestAssured.urlEncodingEnabled = false;
+        RestAssured.config = RestAssured.config()
+            .jsonConfig(JsonConfig.jsonConfig().numberReturnType(JsonPathConfig.NumberReturnType.DOUBLE))
+            .redirect(redirectConfig().followRedirects(false));
+    }
+
+    @AfterClass
+    public static void tearDown() {
+        controller.stopSut();
+    }
+
+    @Before
+    public void initTest() {
+        controller.resetDatabase(Arrays.asList("CONTRIBUTOR"));
+        controller.resetStateOfSUT();
+    }
+
+    @Test
+    public void testConstructor() {
+        List<Contributor> contributors = new ArrayList<>();
+        Contributor contributor = new Contributor();
+        contributor.setName("John Doe");
+        contributor.setOrganizationName("Org1");
+        contributor.setUrl("http://example.com");
+        contributor.setSnapshotDate(new Date());
+        contributor.setOrganizationalCommitsCount(10);
+        contributor.setPersonalCommitsCount(5);
+        contributor.setOrganizationalProjectsCount(2);
+        contributor.setPersonalProjectsCount(1);
+        contributor.setId("johndoe");
+        contributors.add(contributor);
+
+        ContributorStats stats = new ContributorStats(contributors);
+
+        assertEquals("John Doe", stats.getName());
+        assertEquals(Arrays.asList("Org1"), stats.getOrganizationName());
+        assertEquals("http://example.com", stats.getUrl());
+        assertEquals(Arrays.asList(10), stats.getOrganizationalCommitsCounts());
+        assertEquals(Arrays.asList(5), stats.getPersonalCommitsCounts());
+        assertEquals(Arrays.asList(2), stats.getOrganizationalProjectsCounts());
+        assertEquals(Arrays.asList(1), stats.getPersonalProjectsCounts());
+        assertEquals(1, stats.getSnapshotDates().size());
+    }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void testConstructorWithEmptyLoginId() {
+        List<Contributor> contributors = new ArrayList<>();
+        Contributor contributor = new Contributor();
+        contributor.setId("");
+        contributors.add(contributor);
+
+        new ContributorStats(contributors);
+    }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void testConstructorWithDifferentLoginIds() {
+        List<Contributor> contributors = new ArrayList<>();
+        Contributor contributor1 = new Contributor();
+        contributor1.setId("user1");
+        contributors.add(contributor1);
+
+        Contributor contributor2 = new Contributor();
+        contributor2.setId("user2");
+        contributors.add(contributor2);
+
+        new ContributorStats(contributors);
+    }
+
+    @Test
+    public void testConstructorWithMultipleContributionsOnSameDay() {
+        List<Contributor> contributors = new ArrayList<>();
+        Date date = new Date();
+
+        Contributor contributor1 = new Contributor();
+        contributor1.setName("John Doe");
+        contributor1.setOrganizationName("Org1");
+        contributor1.setUrl("http://example.com");
+        contributor1.setSnapshotDate(date);
+        contributor1.setOrganizationalCommitsCount(10);
+        contributor1.setPersonalCommitsCount(5);
+        contributor1.setOrganizationalProjectsCount(2);
+        contributor1.setPersonalProjectsCount(1);
+        contributor1.setId("johndoe");
+        contributors.add(contributor1);
+
+        Contributor contributor2 = new Contributor();
+        contributor2.setName("John Doe");
+        contributor2.setOrganizationName("Org2");
+        contributor2.setUrl("http://example.com");
+        contributor2.setSnapshotDate(date);
+        contributor2.setOrganizationalCommitsCount(5);
+        contributor2.setPersonalCommitsCount(3);
+        contributor2.setOrganizationalProjectsCount(1);
+        contributor2.setPersonalProjectsCount(1);
+        contributor2.setId("johndoe");
+        contributors.add(contributor2);
+
+        ContributorStats stats = new ContributorStats(contributors);
+
+        assertEquals("John Doe", stats.getName());
+        assertEquals(Arrays.asList("Org1", "Org2"), stats.getOrganizationName());
+        assertEquals("http://example.com", stats.getUrl());
+        assertEquals(Arrays.asList(15), stats.getOrganizationalCommitsCounts());
+        assertEquals(Arrays.asList(5), stats.getPersonalCommitsCounts());
+        assertEquals(Arrays.asList(3), stats.getOrganizationalProjectsCounts());
+        assertEquals(Arrays.asList(2), stats.getPersonalProjectsCounts());
+        assertEquals(1, stats.getSnapshotDates().size());
+    }
+
+    @Test
+    public void testGetDistinctContributors() {
+        List<Contributor> contributors = new ArrayList<>();
+
+        Contributor contributor1 = new Contributor();
+        contributor1.setId("user1");
+        contributors.add(contributor1);
+
+        Contributor contributor2 = new Contributor();
+        contributor2.setId("user2");
+        contributors.add(contributor2);
+
+        Contributor contributor3 = new Contributor();
+        contributor3.setId("user1");
+        contributors.add(contributor3);
+
+        Map<String, List<Contributor>> result = ContributorStats.getDistinctContributors(contributors);
+
+        assertEquals(2, result.size());
+        assertTrue(result.containsKey("user1"));
+        assertTrue(result.containsKey("user2"));
+        assertEquals(2, result.get("user1").size());
+        assertEquals(1, result.get("user2").size());
+    }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void testGetDistinctContributorsWithEmptyLoginId() {
+        List<Contributor> contributors = new ArrayList<>();
+        Contributor contributor = new Contributor();
+        contributor.setId("");
+        contributors.add(contributor);
+
+        ContributorStats.getDistinctContributors(contributors);
+    }
+
+    @Test
+    public void testToString() {
+        List<Contributor> contributors = new ArrayList<>();
+        Contributor contributor = new Contributor();
+        contributor.setName("John Doe");
+        contributor.setOrganizationName("Org1");
+        contributor.setUrl("http://example.com");
+        Date date = new Date();
+        contributor.setSnapshotDate(date);
+        contributor.setId("johndoe");
+        contributors.add(contributor);
+
+        ContributorStats stats = new ContributorStats(contributors);
+
+        String expected = String.format("ContributorStats(John Doe, [Org1], http://example.com, [%s])", date);
+        assertEquals(expected, stats.toString());
+    }
+}
+
+*****

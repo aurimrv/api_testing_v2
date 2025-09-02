@@ -1,0 +1,68 @@
+-------------------------------------------------------------------------------
+Test set: gpt35_run01_RepositoryWrapperTest
+-------------------------------------------------------------------------------
+Tests run: 16, Failures: 16, Errors: 0, Skipped: 0, Time elapsed: 2.772 s <<< FAILURE! - in gpt35_run01_RepositoryWrapperTest
+testGetSize(gpt35_run01_RepositoryWrapperTest)  Time elapsed: 0.015 s  <<< FAILURE!
+java.lang.AssertionError: Test not implemented
+	at gpt35_run01_RepositoryWrapperTest.testGetSize(gpt35_run01_RepositoryWrapperTest.java:123)
+
+testListCommits(gpt35_run01_RepositoryWrapperTest)  Time elapsed: 0.003 s  <<< FAILURE!
+java.lang.AssertionError: Test not implemented
+	at gpt35_run01_RepositoryWrapperTest.testListCommits(gpt35_run01_RepositoryWrapperTest.java:165)
+
+testGetPrimaryLanguage(gpt35_run01_RepositoryWrapperTest)  Time elapsed: 0.003 s  <<< FAILURE!
+java.lang.AssertionError: Test not implemented
+	at gpt35_run01_RepositoryWrapperTest.testGetPrimaryLanguage(gpt35_run01_RepositoryWrapperTest.java:139)
+
+testListLanguages(gpt35_run01_RepositoryWrapperTest)  Time elapsed: 0.004 s  <<< FAILURE!
+java.lang.AssertionError: Test not implemented
+	at gpt35_run01_RepositoryWrapperTest.testListLanguages(gpt35_run01_RepositoryWrapperTest.java:148)
+
+testGetOrganizationName(gpt35_run01_RepositoryWrapperTest)  Time elapsed: 0.004 s  <<< FAILURE!
+java.lang.AssertionError: Test not implemented
+	at gpt35_run01_RepositoryWrapperTest.testGetOrganizationName(gpt35_run01_RepositoryWrapperTest.java:156)
+
+testGetForksCount(gpt35_run01_RepositoryWrapperTest)  Time elapsed: 0.004 s  <<< FAILURE!
+java.lang.AssertionError: Test not implemented
+	at gpt35_run01_RepositoryWrapperTest.testGetForksCount(gpt35_run01_RepositoryWrapperTest.java:115)
+
+testGetFileContent(gpt35_run01_RepositoryWrapperTest)  Time elapsed: 0.002 s  <<< FAILURE!
+java.lang.AssertionError: Test not implemented
+	at gpt35_run01_RepositoryWrapperTest.testGetFileContent(gpt35_run01_RepositoryWrapperTest.java:195)
+
+testGetUrl(gpt35_run01_RepositoryWrapperTest)  Time elapsed: 0.002 s  <<< FAILURE!
+java.lang.AssertionError: Test not implemented
+	at gpt35_run01_RepositoryWrapperTest.testGetUrl(gpt35_run01_RepositoryWrapperTest.java:91)
+
+testGetName(gpt35_run01_RepositoryWrapperTest)  Time elapsed: 0.003 s  <<< FAILURE!
+java.lang.AssertionError: Test not implemented
+	at gpt35_run01_RepositoryWrapperTest.testGetName(gpt35_run01_RepositoryWrapperTest.java:83)
+
+testGetLastPushed(gpt35_run01_RepositoryWrapperTest)  Time elapsed: 0.002 s  <<< FAILURE!
+java.lang.AssertionError: Test not implemented
+	at gpt35_run01_RepositoryWrapperTest.testGetLastPushed(gpt35_run01_RepositoryWrapperTest.java:131)
+
+testConstructor(gpt35_run01_RepositoryWrapperTest)  Time elapsed: 0.003 s  <<< FAILURE!
+java.lang.AssertionError: Test not implemented
+	at gpt35_run01_RepositoryWrapperTest.testConstructor(gpt35_run01_RepositoryWrapperTest.java:67)
+
+testGetStarsCount(gpt35_run01_RepositoryWrapperTest)  Time elapsed: 0.002 s  <<< FAILURE!
+java.lang.AssertionError: Test not implemented
+	at gpt35_run01_RepositoryWrapperTest.testGetStarsCount(gpt35_run01_RepositoryWrapperTest.java:107)
+
+testGetDescription(gpt35_run01_RepositoryWrapperTest)  Time elapsed: 0.003 s  <<< FAILURE!
+java.lang.AssertionError: Test not implemented
+	at gpt35_run01_RepositoryWrapperTest.testGetDescription(gpt35_run01_RepositoryWrapperTest.java:99)
+
+testListContributors(gpt35_run01_RepositoryWrapperTest)  Time elapsed: 0.002 s  <<< FAILURE!
+java.lang.AssertionError: Test not implemented
+	at gpt35_run01_RepositoryWrapperTest.testListContributors(gpt35_run01_RepositoryWrapperTest.java:174)
+
+testListTags(gpt35_run01_RepositoryWrapperTest)  Time elapsed: 0.003 s  <<< FAILURE!
+java.lang.AssertionError: Test not implemented
+	at gpt35_run01_RepositoryWrapperTest.testListTags(gpt35_run01_RepositoryWrapperTest.java:183)
+
+testGetId(gpt35_run01_RepositoryWrapperTest)  Time elapsed: 0.003 s  <<< FAILURE!
+java.lang.AssertionError: Test not implemented
+	at gpt35_run01_RepositoryWrapperTest.testGetId(gpt35_run01_RepositoryWrapperTest.java:75)
+

@@ -1,0 +1,313 @@
+You are a highly skilled test engineer specializing in debugging and resolving compilation errors and test failures in Java-based projects. Your expertise includes Java 8, JUnit 4, and REST Assured, allowing you to diagnose issues efficiently and provide precise, actionable fixes.
+
+Do fix the compilation errors delimited by ##### given the code below delimited by *****.
+
+The response must contain only Java code in JUnit 4 format.
+
+#####
+[[1;31mERROR[m] COMPILATION ERROR : 
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_JsonDateListSerializerTest.java:[78,39] cannot find symbol
+  symbol:   method mock(java.lang.Class<com.fasterxml.jackson.core.JsonGenerator>)
+  location: class org.zalando.catwatch.backend.sonnet35_run01_JsonDateListSerializerTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_JsonDateListSerializerTest.java:[79,49] cannot find symbol
+  symbol:   method mock(java.lang.Class<com.fasterxml.jackson.databind.SerializerProvider>)
+  location: class org.zalando.catwatch.backend.sonnet35_run01_JsonDateListSerializerTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_JsonDateListSerializerTest.java:[84,9] cannot find symbol
+  symbol:   method verify(com.fasterxml.jackson.core.JsonGenerator)
+  location: class org.zalando.catwatch.backend.sonnet35_run01_JsonDateListSerializerTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_JsonDateListSerializerTest.java:[85,9] cannot find symbol
+  symbol:   method verify(com.fasterxml.jackson.core.JsonGenerator)
+  location: class org.zalando.catwatch.backend.sonnet35_run01_JsonDateListSerializerTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_JsonDateListSerializerTest.java:[86,9] cannot find symbol
+  symbol:   method verifyNoMoreInteractions(com.fasterxml.jackson.core.JsonGenerator)
+  location: class org.zalando.catwatch.backend.sonnet35_run01_JsonDateListSerializerTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_JsonDateListSerializerTest.java:[92,39] cannot find symbol
+  symbol:   method mock(java.lang.Class<com.fasterxml.jackson.core.JsonGenerator>)
+  location: class org.zalando.catwatch.backend.sonnet35_run01_JsonDateListSerializerTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_JsonDateListSerializerTest.java:[93,49] cannot find symbol
+  symbol:   method mock(java.lang.Class<com.fasterxml.jackson.databind.SerializerProvider>)
+  location: class org.zalando.catwatch.backend.sonnet35_run01_JsonDateListSerializerTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_JsonDateListSerializerTest.java:[101,9] cannot find symbol
+  symbol:   method verify(com.fasterxml.jackson.core.JsonGenerator)
+  location: class org.zalando.catwatch.backend.sonnet35_run01_JsonDateListSerializerTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_JsonDateListSerializerTest.java:[102,9] cannot find symbol
+  symbol:   method verify(com.fasterxml.jackson.core.JsonGenerator)
+  location: class org.zalando.catwatch.backend.sonnet35_run01_JsonDateListSerializerTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_JsonDateListSerializerTest.java:[103,9] cannot find symbol
+  symbol:   method verify(com.fasterxml.jackson.core.JsonGenerator)
+  location: class org.zalando.catwatch.backend.sonnet35_run01_JsonDateListSerializerTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_JsonDateListSerializerTest.java:[104,9] cannot find symbol
+  symbol:   method verify(com.fasterxml.jackson.core.JsonGenerator)
+  location: class org.zalando.catwatch.backend.sonnet35_run01_JsonDateListSerializerTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_JsonDateListSerializerTest.java:[105,9] cannot find symbol
+  symbol:   method verifyNoMoreInteractions(com.fasterxml.jackson.core.JsonGenerator)
+  location: class org.zalando.catwatch.backend.sonnet35_run01_JsonDateListSerializerTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_JsonDateListSerializerTest.java:[111,39] cannot find symbol
+  symbol:   method mock(java.lang.Class<com.fasterxml.jackson.core.JsonGenerator>)
+  location: class org.zalando.catwatch.backend.sonnet35_run01_JsonDateListSerializerTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_JsonDateListSerializerTest.java:[112,49] cannot find symbol
+  symbol:   method mock(java.lang.Class<com.fasterxml.jackson.databind.SerializerProvider>)
+  location: class org.zalando.catwatch.backend.sonnet35_run01_JsonDateListSerializerTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_JsonDateListSerializerTest.java:[116,9] cannot find symbol
+  symbol:   method verify(com.fasterxml.jackson.core.JsonGenerator)
+  location: class org.zalando.catwatch.backend.sonnet35_run01_JsonDateListSerializerTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_JsonDateListSerializerTest.java:[117,9] cannot find symbol
+  symbol:   method verify(com.fasterxml.jackson.core.JsonGenerator)
+  location: class org.zalando.catwatch.backend.sonnet35_run01_JsonDateListSerializerTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_JsonDateListSerializerTest.java:[118,9] cannot find symbol
+  symbol:   method verifyNoMoreInteractions(com.fasterxml.jackson.core.JsonGenerator)
+  location: class org.zalando.catwatch.backend.sonnet35_run01_JsonDateListSerializerTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_JsonDateListSerializerTest.java:[124,39] cannot find symbol
+  symbol:   method mock(java.lang.Class<com.fasterxml.jackson.core.JsonGenerator>)
+  location: class org.zalando.catwatch.backend.sonnet35_run01_JsonDateListSerializerTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_JsonDateListSerializerTest.java:[125,49] cannot find symbol
+  symbol:   method mock(java.lang.Class<com.fasterxml.jackson.databind.SerializerProvider>)
+  location: class org.zalando.catwatch.backend.sonnet35_run01_JsonDateListSerializerTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_JsonDateListSerializerTest.java:[130,84] cannot find symbol
+  symbol:   method anyString()
+  location: class org.zalando.catwatch.backend.sonnet35_run01_JsonDateListSerializerTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_JsonDateListSerializerTest.java:[130,9] cannot find symbol
+  symbol:   method doThrow(java.io.IOException)
+  location: class org.zalando.catwatch.backend.sonnet35_run01_JsonDateListSerializerTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_JsonDateListSerializerTest.java:[139,9] cannot find symbol
+  symbol:   method verify(com.fasterxml.jackson.core.JsonGenerator)
+  location: class org.zalando.catwatch.backend.sonnet35_run01_JsonDateListSerializerTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_JsonDateListSerializerTest.java:[140,43] cannot find symbol
+  symbol:   method anyString()
+  location: class org.zalando.catwatch.backend.sonnet35_run01_JsonDateListSerializerTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_JsonDateListSerializerTest.java:[140,9] cannot find symbol
+  symbol:   method verify(com.fasterxml.jackson.core.JsonGenerator)
+  location: class org.zalando.catwatch.backend.sonnet35_run01_JsonDateListSerializerTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_JsonDateListSerializerTest.java:[141,9] cannot find symbol
+  symbol:   method verifyNoMoreInteractions(com.fasterxml.jackson.core.JsonGenerator)
+  location: class org.zalando.catwatch.backend.sonnet35_run01_JsonDateListSerializerTest
+[[1;31mERROR[m] Failed to execute goal [32morg.apache.maven.plugins:maven-compiler-plugin:3.8.0:testCompile[m [1m(default-testCompile)[m on project [36mcatwatch-backend[m: [1;31mCompilation failure[m: Compilation failure: 
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_JsonDateListSerializerTest.java:[78,39] cannot find symbol
+[[1;31mERROR[m]   symbol:   method mock(java.lang.Class<com.fasterxml.jackson.core.JsonGenerator>)
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_JsonDateListSerializerTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_JsonDateListSerializerTest.java:[79,49] cannot find symbol
+[[1;31mERROR[m]   symbol:   method mock(java.lang.Class<com.fasterxml.jackson.databind.SerializerProvider>)
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_JsonDateListSerializerTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_JsonDateListSerializerTest.java:[84,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   method verify(com.fasterxml.jackson.core.JsonGenerator)
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_JsonDateListSerializerTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_JsonDateListSerializerTest.java:[85,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   method verify(com.fasterxml.jackson.core.JsonGenerator)
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_JsonDateListSerializerTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_JsonDateListSerializerTest.java:[86,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   method verifyNoMoreInteractions(com.fasterxml.jackson.core.JsonGenerator)
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_JsonDateListSerializerTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_JsonDateListSerializerTest.java:[92,39] cannot find symbol
+[[1;31mERROR[m]   symbol:   method mock(java.lang.Class<com.fasterxml.jackson.core.JsonGenerator>)
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_JsonDateListSerializerTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_JsonDateListSerializerTest.java:[93,49] cannot find symbol
+[[1;31mERROR[m]   symbol:   method mock(java.lang.Class<com.fasterxml.jackson.databind.SerializerProvider>)
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_JsonDateListSerializerTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_JsonDateListSerializerTest.java:[101,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   method verify(com.fasterxml.jackson.core.JsonGenerator)
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_JsonDateListSerializerTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_JsonDateListSerializerTest.java:[102,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   method verify(com.fasterxml.jackson.core.JsonGenerator)
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_JsonDateListSerializerTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_JsonDateListSerializerTest.java:[103,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   method verify(com.fasterxml.jackson.core.JsonGenerator)
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_JsonDateListSerializerTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_JsonDateListSerializerTest.java:[104,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   method verify(com.fasterxml.jackson.core.JsonGenerator)
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_JsonDateListSerializerTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_JsonDateListSerializerTest.java:[105,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   method verifyNoMoreInteractions(com.fasterxml.jackson.core.JsonGenerator)
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_JsonDateListSerializerTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_JsonDateListSerializerTest.java:[111,39] cannot find symbol
+[[1;31mERROR[m]   symbol:   method mock(java.lang.Class<com.fasterxml.jackson.core.JsonGenerator>)
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_JsonDateListSerializerTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_JsonDateListSerializerTest.java:[112,49] cannot find symbol
+[[1;31mERROR[m]   symbol:   method mock(java.lang.Class<com.fasterxml.jackson.databind.SerializerProvider>)
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_JsonDateListSerializerTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_JsonDateListSerializerTest.java:[116,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   method verify(com.fasterxml.jackson.core.JsonGenerator)
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_JsonDateListSerializerTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_JsonDateListSerializerTest.java:[117,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   method verify(com.fasterxml.jackson.core.JsonGenerator)
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_JsonDateListSerializerTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_JsonDateListSerializerTest.java:[118,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   method verifyNoMoreInteractions(com.fasterxml.jackson.core.JsonGenerator)
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_JsonDateListSerializerTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_JsonDateListSerializerTest.java:[124,39] cannot find symbol
+[[1;31mERROR[m]   symbol:   method mock(java.lang.Class<com.fasterxml.jackson.core.JsonGenerator>)
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_JsonDateListSerializerTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_JsonDateListSerializerTest.java:[125,49] cannot find symbol
+[[1;31mERROR[m]   symbol:   method mock(java.lang.Class<com.fasterxml.jackson.databind.SerializerProvider>)
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_JsonDateListSerializerTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_JsonDateListSerializerTest.java:[130,84] cannot find symbol
+[[1;31mERROR[m]   symbol:   method anyString()
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_JsonDateListSerializerTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_JsonDateListSerializerTest.java:[130,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   method doThrow(java.io.IOException)
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_JsonDateListSerializerTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_JsonDateListSerializerTest.java:[139,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   method verify(com.fasterxml.jackson.core.JsonGenerator)
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_JsonDateListSerializerTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_JsonDateListSerializerTest.java:[140,43] cannot find symbol
+[[1;31mERROR[m]   symbol:   method anyString()
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_JsonDateListSerializerTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_JsonDateListSerializerTest.java:[140,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   method verify(com.fasterxml.jackson.core.JsonGenerator)
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_JsonDateListSerializerTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_JsonDateListSerializerTest.java:[141,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   method verifyNoMoreInteractions(com.fasterxml.jackson.core.JsonGenerator)
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_JsonDateListSerializerTest
+[[1;31mERROR[m] -> [1m[Help 1][m
+[[1;31mERROR[m] 
+[[1;31mERROR[m] To see the full stack trace of the errors, re-run Maven with the [1m-e[m switch.
+[[1;31mERROR[m] Re-run Maven using the [1m-X[m switch to enable full debug logging.
+[[1;31mERROR[m] 
+[[1;31mERROR[m] For more information about the errors and possible solutions, please read the following articles:
+[[1;31mERROR[m] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+
+#####
+*****
+package org.zalando.catwatch.backend;
+
+import org.junit.AfterClass;
+import org.junit.BeforeClass;
+import org.junit.Before;
+import org.junit.Test;
+import static org.junit.Assert.*;
+import java.util.Map;
+import java.util.List;
+import static org.evomaster.client.java.controller.api.EMTestUtils.*;
+import org.evomaster.client.java.controller.SutHandler;
+import io.restassured.RestAssured;
+import static io.restassured.RestAssured.given;
+import io.restassured.response.ValidatableResponse;
+import static org.evomaster.client.java.sql.dsl.SqlDsl.sql;
+import org.evomaster.client.java.controller.api.dto.database.operations.InsertionResultsDto;
+import org.evomaster.client.java.controller.api.dto.database.operations.InsertionDto;
+import static org.hamcrest.Matchers.*;
+import io.restassured.config.JsonConfig;
+import io.restassured.path.json.config.JsonPathConfig;
+import static io.restassured.config.RedirectConfig.redirectConfig;
+import static org.evomaster.client.java.controller.contentMatchers.NumberMatcher.*;
+import static org.evomaster.client.java.controller.contentMatchers.StringMatcher.*;
+import static org.evomaster.client.java.controller.contentMatchers.SubStringMatcher.*;
+import static org.evomaster.client.java.controller.expect.ExpectationHandler.expectationHandler;
+import org.evomaster.client.java.controller.expect.ExpectationHandler;
+import io.restassured.path.json.JsonPath;
+import java.util.Arrays;
+
+import com.fasterxml.jackson.core.JsonGenerator;
+import com.fasterxml.jackson.databind.SerializerProvider;
+import org.zalando.catwatch.backend.util.JsonDateListSerializer;
+
+import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Date;
+
+public class sonnet35_run01_JsonDateListSerializerTest {
+
+    private static final SutHandler controller = new em.embedded.org.zalando.EmbeddedEvoMasterController();
+    private static String baseUrlOfSut;
+
+    @BeforeClass
+    public static void initClass() {
+        controller.setupForGeneratedTest();
+        baseUrlOfSut = controller.startSut();
+        controller.registerOrExecuteInitSqlCommandsIfNeeded();
+        assertNotNull(baseUrlOfSut);
+        RestAssured.enableLoggingOfRequestAndResponseIfValidationFails();
+        RestAssured.useRelaxedHTTPSValidation();
+        RestAssured.urlEncodingEnabled = false;
+        RestAssured.config = RestAssured.config()
+            .jsonConfig(JsonConfig.jsonConfig().numberReturnType(JsonPathConfig.NumberReturnType.DOUBLE))
+            .redirect(redirectConfig().followRedirects(false));
+    }
+
+    @AfterClass
+    public static void tearDown() {
+        controller.stopSut();
+    }
+
+    @Before
+    public void initTest() {
+        controller.resetDatabase(Arrays.asList("CONTRIBUTOR"));
+        controller.resetStateOfSUT();
+    }
+
+    @Test
+    public void testConstructor() {
+        JsonDateListSerializer serializer = new JsonDateListSerializer();
+        assertNotNull(serializer);
+    }
+
+    @Test
+    public void testSerializeEmptyList() throws IOException {
+        JsonDateListSerializer serializer = new JsonDateListSerializer();
+        JsonGenerator jsonGenerator = mock(JsonGenerator.class);
+        SerializerProvider serializerProvider = mock(SerializerProvider.class);
+        
+        List<Date> emptyList = new ArrayList<>();
+        serializer.serialize(emptyList, jsonGenerator, serializerProvider);
+        
+        verify(jsonGenerator).writeStartArray();
+        verify(jsonGenerator).writeEndArray();
+        verifyNoMoreInteractions(jsonGenerator);
+    }
+
+    @Test
+    public void testSerializeNonEmptyList() throws IOException {
+        JsonDateListSerializer serializer = new JsonDateListSerializer();
+        JsonGenerator jsonGenerator = mock(JsonGenerator.class);
+        SerializerProvider serializerProvider = mock(SerializerProvider.class);
+        
+        List<Date> dateList = new ArrayList<>();
+        dateList.add(new Date(1625097600000L)); // 2021-07-01
+        dateList.add(new Date(1627776000000L)); // 2021-08-01
+        
+        serializer.serialize(dateList, jsonGenerator, serializerProvider);
+        
+        verify(jsonGenerator).writeStartArray();
+        verify(jsonGenerator).writeString("2021-07-01T00:00:00");
+        verify(jsonGenerator).writeString("2021-08-01T00:00:00");
+        verify(jsonGenerator).writeEndArray();
+        verifyNoMoreInteractions(jsonGenerator);
+    }
+
+    @Test
+    public void testSerializeNullList() throws IOException {
+        JsonDateListSerializer serializer = new JsonDateListSerializer();
+        JsonGenerator jsonGenerator = mock(JsonGenerator.class);
+        SerializerProvider serializerProvider = mock(SerializerProvider.class);
+        
+        serializer.serialize(null, jsonGenerator, serializerProvider);
+        
+        verify(jsonGenerator).writeStartArray();
+        verify(jsonGenerator).writeEndArray();
+        verifyNoMoreInteractions(jsonGenerator);
+    }
+
+    @Test
+    public void testSerializeWithException() throws IOException {
+        JsonDateListSerializer serializer = new JsonDateListSerializer();
+        JsonGenerator jsonGenerator = mock(JsonGenerator.class);
+        SerializerProvider serializerProvider = mock(SerializerProvider.class);
+        
+        List<Date> dateList = new ArrayList<>();
+        dateList.add(new Date(1625097600000L)); // 2021-07-01
+        
+        doThrow(new IOException("Test exception")).when(jsonGenerator).writeString(anyString());
+        
+        try {
+            serializer.serialize(dateList, jsonGenerator, serializerProvider);
+            fail("Expected IOException");
+        } catch (IOException e) {
+            assertEquals("Test exception", e.getMessage());
+        }
+        
+        verify(jsonGenerator).writeStartArray();
+        verify(jsonGenerator).writeString(anyString());
+        verifyNoMoreInteractions(jsonGenerator);
+    }
+}
+*****

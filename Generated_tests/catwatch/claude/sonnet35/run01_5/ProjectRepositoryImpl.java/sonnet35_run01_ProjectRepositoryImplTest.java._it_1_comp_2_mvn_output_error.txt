@@ -1,0 +1,165 @@
+[[1;31mERROR[m] COMPILATION ERROR : 
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectRepositoryImplTest.java:[9,41] org.zalando.catwatch.backend.repo.ProjectRepositoryImpl is not public in org.zalando.catwatch.backend.repo; cannot be accessed from outside package
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectRepositoryImplTest.java:[18,13] cannot find symbol
+  symbol:   class ProjectRepositoryImpl
+  location: class org.zalando.catwatch.backend.sonnet35_run01_ProjectRepositoryImplTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectRepositoryImplTest.java:[24,33] cannot find symbol
+  symbol:   class ProjectRepositoryImpl
+  location: class org.zalando.catwatch.backend.sonnet35_run01_ProjectRepositoryImplTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectRepositoryImplTest.java:[32,69] no suitable method found for thenReturn(com.mysema.query.jpa.impl.JPAQuery)
+    method org.mockito.stubbing.OngoingStubbing.thenReturn(javax.persistence.Query) is not applicable
+      (argument mismatch; com.mysema.query.jpa.impl.JPAQuery cannot be converted to javax.persistence.Query)
+    method org.mockito.stubbing.OngoingStubbing.thenReturn(javax.persistence.Query,javax.persistence.Query...) is not applicable
+      (argument mismatch; com.mysema.query.jpa.impl.JPAQuery cannot be converted to javax.persistence.Query)
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectRepositoryImplTest.java:[33,27] reference to from is ambiguous
+  both method from(com.mysema.query.types.EntityPath<?>) in com.mysema.query.jpa.JPAQueryBase and method from(com.mysema.query.types.EntityPath<?>...) in com.mysema.query.jpa.JPAQueryBase match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectRepositoryImplTest.java:[35,35] no suitable method found for thenReturn(java.util.List<org.zalando.catwatch.backend.model.Project>)
+    method org.mockito.stubbing.OngoingStubbing.thenReturn(java.util.List<com.mysema.query.Tuple>) is not applicable
+      (argument mismatch; inference variable T has incompatible bounds
+          equality constraints: com.mysema.query.Tuple
+          lower bounds: org.zalando.catwatch.backend.model.Project)
+    method org.mockito.stubbing.OngoingStubbing.thenReturn(java.util.List<com.mysema.query.Tuple>,java.util.List<com.mysema.query.Tuple>...) is not applicable
+      (argument mismatch; inference variable T has incompatible bounds
+          equality constraints: com.mysema.query.Tuple
+          lower bounds: org.zalando.catwatch.backend.model.Project)
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectRepositoryImplTest.java:[48,69] no suitable method found for thenReturn(com.mysema.query.jpa.impl.JPAQuery)
+    method org.mockito.stubbing.OngoingStubbing.thenReturn(javax.persistence.Query) is not applicable
+      (argument mismatch; com.mysema.query.jpa.impl.JPAQuery cannot be converted to javax.persistence.Query)
+    method org.mockito.stubbing.OngoingStubbing.thenReturn(javax.persistence.Query,javax.persistence.Query...) is not applicable
+      (argument mismatch; com.mysema.query.jpa.impl.JPAQuery cannot be converted to javax.persistence.Query)
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectRepositoryImplTest.java:[49,30] reference to from is ambiguous
+  both method from(com.mysema.query.types.EntityPath<?>) in com.mysema.query.jpa.JPAQueryBase and method from(com.mysema.query.types.EntityPath<?>...) in com.mysema.query.jpa.JPAQueryBase match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectRepositoryImplTest.java:[51,38] no suitable method found for thenReturn(java.util.List<org.zalando.catwatch.backend.model.Project>)
+    method org.mockito.stubbing.OngoingStubbing.thenReturn(java.util.List<com.mysema.query.Tuple>) is not applicable
+      (argument mismatch; inference variable T has incompatible bounds
+          equality constraints: com.mysema.query.Tuple
+          lower bounds: org.zalando.catwatch.backend.model.Project)
+    method org.mockito.stubbing.OngoingStubbing.thenReturn(java.util.List<com.mysema.query.Tuple>,java.util.List<com.mysema.query.Tuple>...) is not applicable
+      (argument mismatch; inference variable T has incompatible bounds
+          equality constraints: com.mysema.query.Tuple
+          lower bounds: org.zalando.catwatch.backend.model.Project)
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectRepositoryImplTest.java:[64,69] no suitable method found for thenReturn(com.mysema.query.jpa.impl.JPAQuery)
+    method org.mockito.stubbing.OngoingStubbing.thenReturn(javax.persistence.Query) is not applicable
+      (argument mismatch; com.mysema.query.jpa.impl.JPAQuery cannot be converted to javax.persistence.Query)
+    method org.mockito.stubbing.OngoingStubbing.thenReturn(javax.persistence.Query,javax.persistence.Query...) is not applicable
+      (argument mismatch; com.mysema.query.jpa.impl.JPAQuery cannot be converted to javax.persistence.Query)
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectRepositoryImplTest.java:[65,30] reference to from is ambiguous
+  both method from(com.mysema.query.types.EntityPath<?>) in com.mysema.query.jpa.JPAQueryBase and method from(com.mysema.query.types.EntityPath<?>...) in com.mysema.query.jpa.JPAQueryBase match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectRepositoryImplTest.java:[67,38] no suitable method found for thenReturn(java.util.List<org.zalando.catwatch.backend.model.Project>)
+    method org.mockito.stubbing.OngoingStubbing.thenReturn(java.util.List<com.mysema.query.Tuple>) is not applicable
+      (argument mismatch; inference variable T has incompatible bounds
+          equality constraints: com.mysema.query.Tuple
+          lower bounds: org.zalando.catwatch.backend.model.Project)
+    method org.mockito.stubbing.OngoingStubbing.thenReturn(java.util.List<com.mysema.query.Tuple>,java.util.List<com.mysema.query.Tuple>...) is not applicable
+      (argument mismatch; inference variable T has incompatible bounds
+          equality constraints: com.mysema.query.Tuple
+          lower bounds: org.zalando.catwatch.backend.model.Project)
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectRepositoryImplTest.java:[81,69] no suitable method found for thenReturn(com.mysema.query.jpa.impl.JPAQuery)
+    method org.mockito.stubbing.OngoingStubbing.thenReturn(javax.persistence.Query) is not applicable
+      (argument mismatch; com.mysema.query.jpa.impl.JPAQuery cannot be converted to javax.persistence.Query)
+    method org.mockito.stubbing.OngoingStubbing.thenReturn(javax.persistence.Query,javax.persistence.Query...) is not applicable
+      (argument mismatch; com.mysema.query.jpa.impl.JPAQuery cannot be converted to javax.persistence.Query)
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectRepositoryImplTest.java:[82,30] reference to from is ambiguous
+  both method from(com.mysema.query.types.EntityPath<?>) in com.mysema.query.jpa.JPAQueryBase and method from(com.mysema.query.types.EntityPath<?>...) in com.mysema.query.jpa.JPAQueryBase match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectRepositoryImplTest.java:[84,38] no suitable method found for thenReturn(java.util.List<org.zalando.catwatch.backend.model.Project>)
+    method org.mockito.stubbing.OngoingStubbing.thenReturn(java.util.List<com.mysema.query.Tuple>) is not applicable
+      (argument mismatch; inference variable T has incompatible bounds
+          equality constraints: com.mysema.query.Tuple
+          lower bounds: org.zalando.catwatch.backend.model.Project)
+    method org.mockito.stubbing.OngoingStubbing.thenReturn(java.util.List<com.mysema.query.Tuple>,java.util.List<com.mysema.query.Tuple>...) is not applicable
+      (argument mismatch; inference variable T has incompatible bounds
+          equality constraints: com.mysema.query.Tuple
+          lower bounds: org.zalando.catwatch.backend.model.Project)
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectRepositoryImplTest.java:[96,69] no suitable method found for thenReturn(com.mysema.query.jpa.impl.JPAQuery)
+    method org.mockito.stubbing.OngoingStubbing.thenReturn(javax.persistence.Query) is not applicable
+      (argument mismatch; com.mysema.query.jpa.impl.JPAQuery cannot be converted to javax.persistence.Query)
+    method org.mockito.stubbing.OngoingStubbing.thenReturn(javax.persistence.Query,javax.persistence.Query...) is not applicable
+      (argument mismatch; com.mysema.query.jpa.impl.JPAQuery cannot be converted to javax.persistence.Query)
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectRepositoryImplTest.java:[97,30] reference to from is ambiguous
+  both method from(com.mysema.query.types.EntityPath<?>) in com.mysema.query.jpa.JPAQueryBase and method from(com.mysema.query.types.EntityPath<?>...) in com.mysema.query.jpa.JPAQueryBase match
+[[1;31mERROR[m] Failed to execute goal [32morg.apache.maven.plugins:maven-compiler-plugin:3.8.0:testCompile[m [1m(default-testCompile)[m on project [36mcatwatch-backend[m: [1;31mCompilation failure[m: Compilation failure: 
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectRepositoryImplTest.java:[9,41] org.zalando.catwatch.backend.repo.ProjectRepositoryImpl is not public in org.zalando.catwatch.backend.repo; cannot be accessed from outside package
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectRepositoryImplTest.java:[18,13] cannot find symbol
+[[1;31mERROR[m]   symbol:   class ProjectRepositoryImpl
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_ProjectRepositoryImplTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectRepositoryImplTest.java:[24,33] cannot find symbol
+[[1;31mERROR[m]   symbol:   class ProjectRepositoryImpl
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_ProjectRepositoryImplTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectRepositoryImplTest.java:[32,69] no suitable method found for thenReturn(com.mysema.query.jpa.impl.JPAQuery)
+[[1;31mERROR[m]     method org.mockito.stubbing.OngoingStubbing.thenReturn(javax.persistence.Query) is not applicable
+[[1;31mERROR[m]       (argument mismatch; com.mysema.query.jpa.impl.JPAQuery cannot be converted to javax.persistence.Query)
+[[1;31mERROR[m]     method org.mockito.stubbing.OngoingStubbing.thenReturn(javax.persistence.Query,javax.persistence.Query...) is not applicable
+[[1;31mERROR[m]       (argument mismatch; com.mysema.query.jpa.impl.JPAQuery cannot be converted to javax.persistence.Query)
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectRepositoryImplTest.java:[33,27] reference to from is ambiguous
+[[1;31mERROR[m]   both method from(com.mysema.query.types.EntityPath<?>) in com.mysema.query.jpa.JPAQueryBase and method from(com.mysema.query.types.EntityPath<?>...) in com.mysema.query.jpa.JPAQueryBase match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectRepositoryImplTest.java:[35,35] no suitable method found for thenReturn(java.util.List<org.zalando.catwatch.backend.model.Project>)
+[[1;31mERROR[m]     method org.mockito.stubbing.OngoingStubbing.thenReturn(java.util.List<com.mysema.query.Tuple>) is not applicable
+[[1;31mERROR[m]       (argument mismatch; inference variable T has incompatible bounds
+[[1;31mERROR[m]           equality constraints: com.mysema.query.Tuple
+[[1;31mERROR[m]           lower bounds: org.zalando.catwatch.backend.model.Project)
+[[1;31mERROR[m]     method org.mockito.stubbing.OngoingStubbing.thenReturn(java.util.List<com.mysema.query.Tuple>,java.util.List<com.mysema.query.Tuple>...) is not applicable
+[[1;31mERROR[m]       (argument mismatch; inference variable T has incompatible bounds
+[[1;31mERROR[m]           equality constraints: com.mysema.query.Tuple
+[[1;31mERROR[m]           lower bounds: org.zalando.catwatch.backend.model.Project)
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectRepositoryImplTest.java:[48,69] no suitable method found for thenReturn(com.mysema.query.jpa.impl.JPAQuery)
+[[1;31mERROR[m]     method org.mockito.stubbing.OngoingStubbing.thenReturn(javax.persistence.Query) is not applicable
+[[1;31mERROR[m]       (argument mismatch; com.mysema.query.jpa.impl.JPAQuery cannot be converted to javax.persistence.Query)
+[[1;31mERROR[m]     method org.mockito.stubbing.OngoingStubbing.thenReturn(javax.persistence.Query,javax.persistence.Query...) is not applicable
+[[1;31mERROR[m]       (argument mismatch; com.mysema.query.jpa.impl.JPAQuery cannot be converted to javax.persistence.Query)
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectRepositoryImplTest.java:[49,30] reference to from is ambiguous
+[[1;31mERROR[m]   both method from(com.mysema.query.types.EntityPath<?>) in com.mysema.query.jpa.JPAQueryBase and method from(com.mysema.query.types.EntityPath<?>...) in com.mysema.query.jpa.JPAQueryBase match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectRepositoryImplTest.java:[51,38] no suitable method found for thenReturn(java.util.List<org.zalando.catwatch.backend.model.Project>)
+[[1;31mERROR[m]     method org.mockito.stubbing.OngoingStubbing.thenReturn(java.util.List<com.mysema.query.Tuple>) is not applicable
+[[1;31mERROR[m]       (argument mismatch; inference variable T has incompatible bounds
+[[1;31mERROR[m]           equality constraints: com.mysema.query.Tuple
+[[1;31mERROR[m]           lower bounds: org.zalando.catwatch.backend.model.Project)
+[[1;31mERROR[m]     method org.mockito.stubbing.OngoingStubbing.thenReturn(java.util.List<com.mysema.query.Tuple>,java.util.List<com.mysema.query.Tuple>...) is not applicable
+[[1;31mERROR[m]       (argument mismatch; inference variable T has incompatible bounds
+[[1;31mERROR[m]           equality constraints: com.mysema.query.Tuple
+[[1;31mERROR[m]           lower bounds: org.zalando.catwatch.backend.model.Project)
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectRepositoryImplTest.java:[64,69] no suitable method found for thenReturn(com.mysema.query.jpa.impl.JPAQuery)
+[[1;31mERROR[m]     method org.mockito.stubbing.OngoingStubbing.thenReturn(javax.persistence.Query) is not applicable
+[[1;31mERROR[m]       (argument mismatch; com.mysema.query.jpa.impl.JPAQuery cannot be converted to javax.persistence.Query)
+[[1;31mERROR[m]     method org.mockito.stubbing.OngoingStubbing.thenReturn(javax.persistence.Query,javax.persistence.Query...) is not applicable
+[[1;31mERROR[m]       (argument mismatch; com.mysema.query.jpa.impl.JPAQuery cannot be converted to javax.persistence.Query)
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectRepositoryImplTest.java:[65,30] reference to from is ambiguous
+[[1;31mERROR[m]   both method from(com.mysema.query.types.EntityPath<?>) in com.mysema.query.jpa.JPAQueryBase and method from(com.mysema.query.types.EntityPath<?>...) in com.mysema.query.jpa.JPAQueryBase match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectRepositoryImplTest.java:[67,38] no suitable method found for thenReturn(java.util.List<org.zalando.catwatch.backend.model.Project>)
+[[1;31mERROR[m]     method org.mockito.stubbing.OngoingStubbing.thenReturn(java.util.List<com.mysema.query.Tuple>) is not applicable
+[[1;31mERROR[m]       (argument mismatch; inference variable T has incompatible bounds
+[[1;31mERROR[m]           equality constraints: com.mysema.query.Tuple
+[[1;31mERROR[m]           lower bounds: org.zalando.catwatch.backend.model.Project)
+[[1;31mERROR[m]     method org.mockito.stubbing.OngoingStubbing.thenReturn(java.util.List<com.mysema.query.Tuple>,java.util.List<com.mysema.query.Tuple>...) is not applicable
+[[1;31mERROR[m]       (argument mismatch; inference variable T has incompatible bounds
+[[1;31mERROR[m]           equality constraints: com.mysema.query.Tuple
+[[1;31mERROR[m]           lower bounds: org.zalando.catwatch.backend.model.Project)
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectRepositoryImplTest.java:[81,69] no suitable method found for thenReturn(com.mysema.query.jpa.impl.JPAQuery)
+[[1;31mERROR[m]     method org.mockito.stubbing.OngoingStubbing.thenReturn(javax.persistence.Query) is not applicable
+[[1;31mERROR[m]       (argument mismatch; com.mysema.query.jpa.impl.JPAQuery cannot be converted to javax.persistence.Query)
+[[1;31mERROR[m]     method org.mockito.stubbing.OngoingStubbing.thenReturn(javax.persistence.Query,javax.persistence.Query...) is not applicable
+[[1;31mERROR[m]       (argument mismatch; com.mysema.query.jpa.impl.JPAQuery cannot be converted to javax.persistence.Query)
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectRepositoryImplTest.java:[82,30] reference to from is ambiguous
+[[1;31mERROR[m]   both method from(com.mysema.query.types.EntityPath<?>) in com.mysema.query.jpa.JPAQueryBase and method from(com.mysema.query.types.EntityPath<?>...) in com.mysema.query.jpa.JPAQueryBase match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectRepositoryImplTest.java:[84,38] no suitable method found for thenReturn(java.util.List<org.zalando.catwatch.backend.model.Project>)
+[[1;31mERROR[m]     method org.mockito.stubbing.OngoingStubbing.thenReturn(java.util.List<com.mysema.query.Tuple>) is not applicable
+[[1;31mERROR[m]       (argument mismatch; inference variable T has incompatible bounds
+[[1;31mERROR[m]           equality constraints: com.mysema.query.Tuple
+[[1;31mERROR[m]           lower bounds: org.zalando.catwatch.backend.model.Project)
+[[1;31mERROR[m]     method org.mockito.stubbing.OngoingStubbing.thenReturn(java.util.List<com.mysema.query.Tuple>,java.util.List<com.mysema.query.Tuple>...) is not applicable
+[[1;31mERROR[m]       (argument mismatch; inference variable T has incompatible bounds
+[[1;31mERROR[m]           equality constraints: com.mysema.query.Tuple
+[[1;31mERROR[m]           lower bounds: org.zalando.catwatch.backend.model.Project)
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectRepositoryImplTest.java:[96,69] no suitable method found for thenReturn(com.mysema.query.jpa.impl.JPAQuery)
+[[1;31mERROR[m]     method org.mockito.stubbing.OngoingStubbing.thenReturn(javax.persistence.Query) is not applicable
+[[1;31mERROR[m]       (argument mismatch; com.mysema.query.jpa.impl.JPAQuery cannot be converted to javax.persistence.Query)
+[[1;31mERROR[m]     method org.mockito.stubbing.OngoingStubbing.thenReturn(javax.persistence.Query,javax.persistence.Query...) is not applicable
+[[1;31mERROR[m]       (argument mismatch; com.mysema.query.jpa.impl.JPAQuery cannot be converted to javax.persistence.Query)
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectRepositoryImplTest.java:[97,30] reference to from is ambiguous
+[[1;31mERROR[m]   both method from(com.mysema.query.types.EntityPath<?>) in com.mysema.query.jpa.JPAQueryBase and method from(com.mysema.query.types.EntityPath<?>...) in com.mysema.query.jpa.JPAQueryBase match
+[[1;31mERROR[m] -> [1m[Help 1][m
+[[1;31mERROR[m] 
+[[1;31mERROR[m] To see the full stack trace of the errors, re-run Maven with the [1m-e[m switch.
+[[1;31mERROR[m] Re-run Maven using the [1m-X[m switch to enable full debug logging.
+[[1;31mERROR[m] 
+[[1;31mERROR[m] For more information about the errors and possible solutions, please read the following articles:
+[[1;31mERROR[m] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

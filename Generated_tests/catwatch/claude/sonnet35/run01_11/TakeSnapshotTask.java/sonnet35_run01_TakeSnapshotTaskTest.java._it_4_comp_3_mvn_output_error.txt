@@ -1,0 +1,127 @@
+[[1;31mERROR[m] COMPILATION ERROR : 
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[61,68] incompatible types: org.kohsuke.github.GHOrganization cannot be converted to org.zalando.catwatch.backend.github.OrganizationWrapper
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[64,9] reference to assertEquals is ambiguous
+  both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[65,9] reference to assertEquals is ambiguous
+  both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[66,9] reference to assertEquals is ambiguous
+  both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[74,47] no suitable method found for thenReturn(java.util.Iterator<org.kohsuke.github.GHRepository>)
+    method org.mockito.stubbing.OngoingStubbing.thenReturn(org.kohsuke.github.PagedIterator<org.kohsuke.github.GHRepository>) is not applicable
+      (argument mismatch; java.util.Iterator<org.kohsuke.github.GHRepository> cannot be converted to org.kohsuke.github.PagedIterator<org.kohsuke.github.GHRepository>)
+    method org.mockito.stubbing.OngoingStubbing.thenReturn(org.kohsuke.github.PagedIterator<org.kohsuke.github.GHRepository>,org.kohsuke.github.PagedIterator<org.kohsuke.github.GHRepository>...) is not applicable
+      (argument mismatch; java.util.Iterator<org.kohsuke.github.GHRepository> cannot be converted to org.kohsuke.github.PagedIterator<org.kohsuke.github.GHRepository>)
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[77,30] cannot find symbol
+  symbol:   method getStargazersCount()
+  location: variable mockRepo of type org.kohsuke.github.GHRepository
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[78,30] cannot find symbol
+  symbol:   method getForksCount()
+  location: variable mockRepo of type org.kohsuke.github.GHRepository
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[83,73] incompatible types: org.kohsuke.github.GHOrganization cannot be converted to org.zalando.catwatch.backend.github.OrganizationWrapper
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[90,9] reference to assertEquals is ambiguous
+  both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[91,9] reference to assertEquals is ambiguous
+  both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[101,47] no suitable method found for thenReturn(java.util.Iterator<org.kohsuke.github.GHRepository>)
+    method org.mockito.stubbing.OngoingStubbing.thenReturn(org.kohsuke.github.PagedIterator<org.kohsuke.github.GHRepository>) is not applicable
+      (argument mismatch; java.util.Iterator<org.kohsuke.github.GHRepository> cannot be converted to org.kohsuke.github.PagedIterator<org.kohsuke.github.GHRepository>)
+    method org.mockito.stubbing.OngoingStubbing.thenReturn(org.kohsuke.github.PagedIterator<org.kohsuke.github.GHRepository>,org.kohsuke.github.PagedIterator<org.kohsuke.github.GHRepository>...) is not applicable
+      (argument mismatch; java.util.Iterator<org.kohsuke.github.GHRepository> cannot be converted to org.kohsuke.github.PagedIterator<org.kohsuke.github.GHRepository>)
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[102,50] no suitable method found for thenReturn(<anonymous java.util.ArrayList<org.kohsuke.github.GHRepository.Contributor>>)
+    method org.mockito.stubbing.OngoingStubbing.thenReturn(org.kohsuke.github.PagedIterable<org.kohsuke.github.GHRepository.Contributor>) is not applicable
+      (argument mismatch; <anonymous java.util.ArrayList<org.kohsuke.github.GHRepository.Contributor>> cannot be converted to org.kohsuke.github.PagedIterable<org.kohsuke.github.GHRepository.Contributor>)
+    method org.mockito.stubbing.OngoingStubbing.thenReturn(org.kohsuke.github.PagedIterable<org.kohsuke.github.GHRepository.Contributor>,org.kohsuke.github.PagedIterable<org.kohsuke.github.GHRepository.Contributor>...) is not applicable
+      (argument mismatch; <anonymous java.util.ArrayList<org.kohsuke.github.GHRepository.Contributor>> cannot be converted to org.kohsuke.github.PagedIterable<org.kohsuke.github.GHRepository.Contributor>)
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[107,85] incompatible types: org.kohsuke.github.GHOrganization cannot be converted to org.zalando.catwatch.backend.github.OrganizationWrapper
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[113,9] reference to assertEquals is ambiguous
+  both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[124,47] no suitable method found for thenReturn(java.util.Iterator<org.kohsuke.github.GHRepository>)
+    method org.mockito.stubbing.OngoingStubbing.thenReturn(org.kohsuke.github.PagedIterator<org.kohsuke.github.GHRepository>) is not applicable
+      (argument mismatch; java.util.Iterator<org.kohsuke.github.GHRepository> cannot be converted to org.kohsuke.github.PagedIterator<org.kohsuke.github.GHRepository>)
+    method org.mockito.stubbing.OngoingStubbing.thenReturn(org.kohsuke.github.PagedIterator<org.kohsuke.github.GHRepository>,org.kohsuke.github.PagedIterator<org.kohsuke.github.GHRepository>...) is not applicable
+      (argument mismatch; java.util.Iterator<org.kohsuke.github.GHRepository> cannot be converted to org.kohsuke.github.PagedIterator<org.kohsuke.github.GHRepository>)
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[127,85] incompatible types: org.kohsuke.github.GHOrganization cannot be converted to org.zalando.catwatch.backend.github.OrganizationWrapper
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[133,17] reference to assertEquals is ambiguous
+  both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[135,17] reference to assertEquals is ambiguous
+  both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[145,61] no suitable method found for thenReturn(java.lang.String)
+    method org.mockito.stubbing.OngoingStubbing.thenReturn(org.kohsuke.github.GHContent) is not applicable
+      (argument mismatch; java.lang.String cannot be converted to org.kohsuke.github.GHContent)
+    method org.mockito.stubbing.OngoingStubbing.thenReturn(org.kohsuke.github.GHContent,org.kohsuke.github.GHContent...) is not applicable
+      (argument mismatch; java.lang.String cannot be converted to org.kohsuke.github.GHContent)
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[147,75] incompatible types: org.kohsuke.github.GHRepository cannot be converted to org.zalando.catwatch.backend.github.RepositoryWrapper
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[159,64] no suitable method found for thenReturn(java.lang.String)
+    method org.mockito.stubbing.OngoingStubbing.thenReturn(org.kohsuke.github.GHContent) is not applicable
+      (argument mismatch; java.lang.String cannot be converted to org.kohsuke.github.GHContent)
+    method org.mockito.stubbing.OngoingStubbing.thenReturn(org.kohsuke.github.GHContent,org.kohsuke.github.GHContent...) is not applicable
+      (argument mismatch; java.lang.String cannot be converted to org.kohsuke.github.GHContent)
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[161,43] incompatible types: org.kohsuke.github.GHRepository cannot be converted to org.zalando.catwatch.backend.github.RepositoryWrapper
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[173,43] incompatible types: org.kohsuke.github.GHRepository cannot be converted to org.zalando.catwatch.backend.github.RepositoryWrapper
+[[1;31mERROR[m] Failed to execute goal [32morg.apache.maven.plugins:maven-compiler-plugin:3.8.0:testCompile[m [1m(default-testCompile)[m on project [36mcatwatch-backend[m: [1;31mCompilation failure[m: Compilation failure: 
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[61,68] incompatible types: org.kohsuke.github.GHOrganization cannot be converted to org.zalando.catwatch.backend.github.OrganizationWrapper
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[64,9] reference to assertEquals is ambiguous
+[[1;31mERROR[m]   both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[65,9] reference to assertEquals is ambiguous
+[[1;31mERROR[m]   both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[66,9] reference to assertEquals is ambiguous
+[[1;31mERROR[m]   both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[74,47] no suitable method found for thenReturn(java.util.Iterator<org.kohsuke.github.GHRepository>)
+[[1;31mERROR[m]     method org.mockito.stubbing.OngoingStubbing.thenReturn(org.kohsuke.github.PagedIterator<org.kohsuke.github.GHRepository>) is not applicable
+[[1;31mERROR[m]       (argument mismatch; java.util.Iterator<org.kohsuke.github.GHRepository> cannot be converted to org.kohsuke.github.PagedIterator<org.kohsuke.github.GHRepository>)
+[[1;31mERROR[m]     method org.mockito.stubbing.OngoingStubbing.thenReturn(org.kohsuke.github.PagedIterator<org.kohsuke.github.GHRepository>,org.kohsuke.github.PagedIterator<org.kohsuke.github.GHRepository>...) is not applicable
+[[1;31mERROR[m]       (argument mismatch; java.util.Iterator<org.kohsuke.github.GHRepository> cannot be converted to org.kohsuke.github.PagedIterator<org.kohsuke.github.GHRepository>)
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[77,30] cannot find symbol
+[[1;31mERROR[m]   symbol:   method getStargazersCount()
+[[1;31mERROR[m]   location: variable mockRepo of type org.kohsuke.github.GHRepository
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[78,30] cannot find symbol
+[[1;31mERROR[m]   symbol:   method getForksCount()
+[[1;31mERROR[m]   location: variable mockRepo of type org.kohsuke.github.GHRepository
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[83,73] incompatible types: org.kohsuke.github.GHOrganization cannot be converted to org.zalando.catwatch.backend.github.OrganizationWrapper
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[90,9] reference to assertEquals is ambiguous
+[[1;31mERROR[m]   both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[91,9] reference to assertEquals is ambiguous
+[[1;31mERROR[m]   both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[101,47] no suitable method found for thenReturn(java.util.Iterator<org.kohsuke.github.GHRepository>)
+[[1;31mERROR[m]     method org.mockito.stubbing.OngoingStubbing.thenReturn(org.kohsuke.github.PagedIterator<org.kohsuke.github.GHRepository>) is not applicable
+[[1;31mERROR[m]       (argument mismatch; java.util.Iterator<org.kohsuke.github.GHRepository> cannot be converted to org.kohsuke.github.PagedIterator<org.kohsuke.github.GHRepository>)
+[[1;31mERROR[m]     method org.mockito.stubbing.OngoingStubbing.thenReturn(org.kohsuke.github.PagedIterator<org.kohsuke.github.GHRepository>,org.kohsuke.github.PagedIterator<org.kohsuke.github.GHRepository>...) is not applicable
+[[1;31mERROR[m]       (argument mismatch; java.util.Iterator<org.kohsuke.github.GHRepository> cannot be converted to org.kohsuke.github.PagedIterator<org.kohsuke.github.GHRepository>)
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[102,50] no suitable method found for thenReturn(<anonymous java.util.ArrayList<org.kohsuke.github.GHRepository.Contributor>>)
+[[1;31mERROR[m]     method org.mockito.stubbing.OngoingStubbing.thenReturn(org.kohsuke.github.PagedIterable<org.kohsuke.github.GHRepository.Contributor>) is not applicable
+[[1;31mERROR[m]       (argument mismatch; <anonymous java.util.ArrayList<org.kohsuke.github.GHRepository.Contributor>> cannot be converted to org.kohsuke.github.PagedIterable<org.kohsuke.github.GHRepository.Contributor>)
+[[1;31mERROR[m]     method org.mockito.stubbing.OngoingStubbing.thenReturn(org.kohsuke.github.PagedIterable<org.kohsuke.github.GHRepository.Contributor>,org.kohsuke.github.PagedIterable<org.kohsuke.github.GHRepository.Contributor>...) is not applicable
+[[1;31mERROR[m]       (argument mismatch; <anonymous java.util.ArrayList<org.kohsuke.github.GHRepository.Contributor>> cannot be converted to org.kohsuke.github.PagedIterable<org.kohsuke.github.GHRepository.Contributor>)
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[107,85] incompatible types: org.kohsuke.github.GHOrganization cannot be converted to org.zalando.catwatch.backend.github.OrganizationWrapper
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[113,9] reference to assertEquals is ambiguous
+[[1;31mERROR[m]   both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[124,47] no suitable method found for thenReturn(java.util.Iterator<org.kohsuke.github.GHRepository>)
+[[1;31mERROR[m]     method org.mockito.stubbing.OngoingStubbing.thenReturn(org.kohsuke.github.PagedIterator<org.kohsuke.github.GHRepository>) is not applicable
+[[1;31mERROR[m]       (argument mismatch; java.util.Iterator<org.kohsuke.github.GHRepository> cannot be converted to org.kohsuke.github.PagedIterator<org.kohsuke.github.GHRepository>)
+[[1;31mERROR[m]     method org.mockito.stubbing.OngoingStubbing.thenReturn(org.kohsuke.github.PagedIterator<org.kohsuke.github.GHRepository>,org.kohsuke.github.PagedIterator<org.kohsuke.github.GHRepository>...) is not applicable
+[[1;31mERROR[m]       (argument mismatch; java.util.Iterator<org.kohsuke.github.GHRepository> cannot be converted to org.kohsuke.github.PagedIterator<org.kohsuke.github.GHRepository>)
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[127,85] incompatible types: org.kohsuke.github.GHOrganization cannot be converted to org.zalando.catwatch.backend.github.OrganizationWrapper
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[133,17] reference to assertEquals is ambiguous
+[[1;31mERROR[m]   both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[135,17] reference to assertEquals is ambiguous
+[[1;31mERROR[m]   both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[145,61] no suitable method found for thenReturn(java.lang.String)
+[[1;31mERROR[m]     method org.mockito.stubbing.OngoingStubbing.thenReturn(org.kohsuke.github.GHContent) is not applicable
+[[1;31mERROR[m]       (argument mismatch; java.lang.String cannot be converted to org.kohsuke.github.GHContent)
+[[1;31mERROR[m]     method org.mockito.stubbing.OngoingStubbing.thenReturn(org.kohsuke.github.GHContent,org.kohsuke.github.GHContent...) is not applicable
+[[1;31mERROR[m]       (argument mismatch; java.lang.String cannot be converted to org.kohsuke.github.GHContent)
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[147,75] incompatible types: org.kohsuke.github.GHRepository cannot be converted to org.zalando.catwatch.backend.github.RepositoryWrapper
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[159,64] no suitable method found for thenReturn(java.lang.String)
+[[1;31mERROR[m]     method org.mockito.stubbing.OngoingStubbing.thenReturn(org.kohsuke.github.GHContent) is not applicable
+[[1;31mERROR[m]       (argument mismatch; java.lang.String cannot be converted to org.kohsuke.github.GHContent)
+[[1;31mERROR[m]     method org.mockito.stubbing.OngoingStubbing.thenReturn(org.kohsuke.github.GHContent,org.kohsuke.github.GHContent...) is not applicable
+[[1;31mERROR[m]       (argument mismatch; java.lang.String cannot be converted to org.kohsuke.github.GHContent)
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[161,43] incompatible types: org.kohsuke.github.GHRepository cannot be converted to org.zalando.catwatch.backend.github.RepositoryWrapper
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[173,43] incompatible types: org.kohsuke.github.GHRepository cannot be converted to org.zalando.catwatch.backend.github.RepositoryWrapper
+[[1;31mERROR[m] -> [1m[Help 1][m
+[[1;31mERROR[m] 
+[[1;31mERROR[m] To see the full stack trace of the errors, re-run Maven with the [1m-e[m switch.
+[[1;31mERROR[m] Re-run Maven using the [1m-X[m switch to enable full debug logging.
+[[1;31mERROR[m] 
+[[1;31mERROR[m] For more information about the errors and possible solutions, please read the following articles:
+[[1;31mERROR[m] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

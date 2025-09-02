@@ -1,0 +1,15 @@
+Line: 94
+Expected status code <400> but was <404>.
+----------------------------------------
+Line: 83
+Expected status code <400> but was <404>.
+----------------------------------------
+Line: 116
+Expected status code <500> but was <404>.
+----------------------------------------
+Line: 105
+Expected status code <200> but was <404>.
+----------------------------------------
+Line: 68
+IllegalArgument
+----------------------------------------

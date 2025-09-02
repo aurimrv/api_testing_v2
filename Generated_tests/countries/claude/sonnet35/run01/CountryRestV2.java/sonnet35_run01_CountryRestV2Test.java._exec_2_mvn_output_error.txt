@@ -1,0 +1,26 @@
+Line: 63
+JSON path alpha2Code doesn't match.
+Expected: US
+Actual: null
+----------------------------------------
+Line: 92
+JSON path size() doesn't match.
+Expected: <3>
+Actual: 5
+----------------------------------------
+Line: 175
+JSON path size() doesn't match.
+Expected: <1>
+Actual: 5
+----------------------------------------
+Line: 239
+JSON path size() doesn't match.
+Expected: <1>
+Actual: 5
+----------------------------------------
+Line: 140
+URISyntax Illegal charact...
+----------------------------------------
+Line: 204
+URISyntax Illegal ch...
+----------------------------------------

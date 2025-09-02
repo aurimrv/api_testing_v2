@@ -1,0 +1,18 @@
+-------------------------------------------------------------------------------
+Test set: org.restscs.gpt4o_run01_PatTest
+-------------------------------------------------------------------------------
+Tests run: 10, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.608 s <<< FAILURE! - in org.restscs.gpt4o_run01_PatTest
+testReverseMethodEmptyString(org.restscs.gpt4o_run01_PatTest)  Time elapsed: 0.029 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <200> but was <404>.
+
+	at org.restscs.gpt4o_run01_PatTest.testReverseMethodEmptyString(gpt4o_run01_PatTest.java:66)
+
+testSubjectMethodReverseMatch(org.restscs.gpt4o_run01_PatTest)  Time elapsed: 0.008 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <404> but was <200>.
+
+	at org.restscs.gpt4o_run01_PatTest.testSubjectMethodReverseMatch(gpt4o_run01_PatTest.java:129)
+

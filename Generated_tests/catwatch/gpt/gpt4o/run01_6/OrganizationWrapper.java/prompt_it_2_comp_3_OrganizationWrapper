@@ -1,0 +1,255 @@
+You are a highly skilled test engineer specializing in debugging and resolving compilation errors and test failures in Java-based projects. Your expertise includes Java 8, JUnit 4, and REST Assured, allowing you to diagnose issues efficiently and provide precise, actionable fixes.
+
+Do fix the compilation errors delimited by ##### given the code below delimited by *****.
+
+The response must contain only Java code in JUnit 4 format.
+
+#####
+[[1;31mERROR[m] COMPILATION ERROR : 
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_OrganizationWrapperTest.java:[72,61] no suitable method found for thenReturn(java.util.List<java.lang.Object>)
+    method org.mockito.stubbing.OngoingStubbing.thenReturn(org.kohsuke.github.PagedIterable<org.kohsuke.github.GHRepository>) is not applicable
+      (argument mismatch; no instance(s) of type variable(s) T exist so that java.util.List<T> conforms to org.kohsuke.github.PagedIterable<org.kohsuke.github.GHRepository>)
+    method org.mockito.stubbing.OngoingStubbing.thenReturn(org.kohsuke.github.PagedIterable<org.kohsuke.github.GHRepository>,org.kohsuke.github.PagedIterable<org.kohsuke.github.GHRepository>...) is not applicable
+      (argument mismatch; no instance(s) of type variable(s) T exist so that java.util.List<T> conforms to org.kohsuke.github.PagedIterable<org.kohsuke.github.GHRepository>)
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_OrganizationWrapperTest.java:[74,9] cannot find symbol
+  symbol:   class OrganizationWrapper
+  location: class org.zalando.catwatch.backend.gpt4o_run01_OrganizationWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_OrganizationWrapperTest.java:[74,43] cannot find symbol
+  symbol:   class OrganizationWrapper
+  location: class org.zalando.catwatch.backend.gpt4o_run01_OrganizationWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_OrganizationWrapperTest.java:[86,9] cannot find symbol
+  symbol:   class OrganizationWrapper
+  location: class org.zalando.catwatch.backend.gpt4o_run01_OrganizationWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_OrganizationWrapperTest.java:[86,43] cannot find symbol
+  symbol:   class OrganizationWrapper
+  location: class org.zalando.catwatch.backend.gpt4o_run01_OrganizationWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_OrganizationWrapperTest.java:[93,54] no suitable method found for thenReturn(java.util.List<org.kohsuke.github.GHTeam>)
+    method org.mockito.stubbing.OngoingStubbing.thenReturn(org.kohsuke.github.PagedIterable<org.kohsuke.github.GHTeam>) is not applicable
+      (argument mismatch; java.util.List<org.kohsuke.github.GHTeam> cannot be converted to org.kohsuke.github.PagedIterable<org.kohsuke.github.GHTeam>)
+    method org.mockito.stubbing.OngoingStubbing.thenReturn(org.kohsuke.github.PagedIterable<org.kohsuke.github.GHTeam>,org.kohsuke.github.PagedIterable<org.kohsuke.github.GHTeam>...) is not applicable
+      (argument mismatch; java.util.List<org.kohsuke.github.GHTeam> cannot be converted to org.kohsuke.github.PagedIterable<org.kohsuke.github.GHTeam>)
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_OrganizationWrapperTest.java:[95,9] cannot find symbol
+  symbol:   class OrganizationWrapper
+  location: class org.zalando.catwatch.backend.gpt4o_run01_OrganizationWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_OrganizationWrapperTest.java:[95,44] cannot find symbol
+  symbol:   class OrganizationWrapper
+  location: class org.zalando.catwatch.backend.gpt4o_run01_OrganizationWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_OrganizationWrapperTest.java:[110,9] cannot find symbol
+  symbol:   class OrganizationWrapper
+  location: class org.zalando.catwatch.backend.gpt4o_run01_OrganizationWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_OrganizationWrapperTest.java:[110,43] cannot find symbol
+  symbol:   class OrganizationWrapper
+  location: class org.zalando.catwatch.backend.gpt4o_run01_OrganizationWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_OrganizationWrapperTest.java:[133,47] <anonymous org.zalando.catwatch.backend.gpt4o_run01_OrganizationWrapperTest$1> is not abstract and does not override abstract method _iterator(int) in org.kohsuke.github.PagedIterable
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_OrganizationWrapperTest.java:[134,17] method does not override or implement a method from a supertype
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_OrganizationWrapperTest.java:[139,9] cannot find symbol
+  symbol:   class OrganizationWrapper
+  location: class org.zalando.catwatch.backend.gpt4o_run01_OrganizationWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_OrganizationWrapperTest.java:[139,43] cannot find symbol
+  symbol:   class OrganizationWrapper
+  location: class org.zalando.catwatch.backend.gpt4o_run01_OrganizationWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_OrganizationWrapperTest.java:[140,14] cannot find symbol
+  symbol:   class RepositoryWrapper
+  location: class org.zalando.catwatch.backend.gpt4o_run01_OrganizationWrapperTest
+[[1;31mERROR[m] Failed to execute goal [32morg.apache.maven.plugins:maven-compiler-plugin:3.8.0:testCompile[m [1m(default-testCompile)[m on project [36mcatwatch-backend[m: [1;31mCompilation failure[m: Compilation failure: 
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_OrganizationWrapperTest.java:[72,61] no suitable method found for thenReturn(java.util.List<java.lang.Object>)
+[[1;31mERROR[m]     method org.mockito.stubbing.OngoingStubbing.thenReturn(org.kohsuke.github.PagedIterable<org.kohsuke.github.GHRepository>) is not applicable
+[[1;31mERROR[m]       (argument mismatch; no instance(s) of type variable(s) T exist so that java.util.List<T> conforms to org.kohsuke.github.PagedIterable<org.kohsuke.github.GHRepository>)
+[[1;31mERROR[m]     method org.mockito.stubbing.OngoingStubbing.thenReturn(org.kohsuke.github.PagedIterable<org.kohsuke.github.GHRepository>,org.kohsuke.github.PagedIterable<org.kohsuke.github.GHRepository>...) is not applicable
+[[1;31mERROR[m]       (argument mismatch; no instance(s) of type variable(s) T exist so that java.util.List<T> conforms to org.kohsuke.github.PagedIterable<org.kohsuke.github.GHRepository>)
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_OrganizationWrapperTest.java:[74,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class OrganizationWrapper
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_OrganizationWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_OrganizationWrapperTest.java:[74,43] cannot find symbol
+[[1;31mERROR[m]   symbol:   class OrganizationWrapper
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_OrganizationWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_OrganizationWrapperTest.java:[86,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class OrganizationWrapper
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_OrganizationWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_OrganizationWrapperTest.java:[86,43] cannot find symbol
+[[1;31mERROR[m]   symbol:   class OrganizationWrapper
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_OrganizationWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_OrganizationWrapperTest.java:[93,54] no suitable method found for thenReturn(java.util.List<org.kohsuke.github.GHTeam>)
+[[1;31mERROR[m]     method org.mockito.stubbing.OngoingStubbing.thenReturn(org.kohsuke.github.PagedIterable<org.kohsuke.github.GHTeam>) is not applicable
+[[1;31mERROR[m]       (argument mismatch; java.util.List<org.kohsuke.github.GHTeam> cannot be converted to org.kohsuke.github.PagedIterable<org.kohsuke.github.GHTeam>)
+[[1;31mERROR[m]     method org.mockito.stubbing.OngoingStubbing.thenReturn(org.kohsuke.github.PagedIterable<org.kohsuke.github.GHTeam>,org.kohsuke.github.PagedIterable<org.kohsuke.github.GHTeam>...) is not applicable
+[[1;31mERROR[m]       (argument mismatch; java.util.List<org.kohsuke.github.GHTeam> cannot be converted to org.kohsuke.github.PagedIterable<org.kohsuke.github.GHTeam>)
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_OrganizationWrapperTest.java:[95,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class OrganizationWrapper
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_OrganizationWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_OrganizationWrapperTest.java:[95,44] cannot find symbol
+[[1;31mERROR[m]   symbol:   class OrganizationWrapper
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_OrganizationWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_OrganizationWrapperTest.java:[110,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class OrganizationWrapper
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_OrganizationWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_OrganizationWrapperTest.java:[110,43] cannot find symbol
+[[1;31mERROR[m]   symbol:   class OrganizationWrapper
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_OrganizationWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_OrganizationWrapperTest.java:[133,47] <anonymous org.zalando.catwatch.backend.gpt4o_run01_OrganizationWrapperTest$1> is not abstract and does not override abstract method _iterator(int) in org.kohsuke.github.PagedIterable
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_OrganizationWrapperTest.java:[134,17] method does not override or implement a method from a supertype
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_OrganizationWrapperTest.java:[139,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class OrganizationWrapper
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_OrganizationWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_OrganizationWrapperTest.java:[139,43] cannot find symbol
+[[1;31mERROR[m]   symbol:   class OrganizationWrapper
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_OrganizationWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_OrganizationWrapperTest.java:[140,14] cannot find symbol
+[[1;31mERROR[m]   symbol:   class RepositoryWrapper
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_OrganizationWrapperTest
+[[1;31mERROR[m] -> [1m[Help 1][m
+[[1;31mERROR[m] 
+[[1;31mERROR[m] To see the full stack trace of the errors, re-run Maven with the [1m-e[m switch.
+[[1;31mERROR[m] Re-run Maven using the [1m-X[m switch to enable full debug logging.
+[[1;31mERROR[m] 
+[[1;31mERROR[m] For more information about the errors and possible solutions, please read the following articles:
+[[1;31mERROR[m] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+
+#####
+*****
+
+package org.zalando.catwatch.backend;
+
+import org.junit.AfterClass;
+import org.junit.BeforeClass;
+import org.junit.Before;
+import org.junit.Test;
+import static org.junit.Assert.*;
+import java.util.Map;
+import java.util.List;
+import static org.evomaster.client.java.controller.api.EMTestUtils.*;
+import org.evomaster.client.java.controller.SutHandler;
+import io.restassured.RestAssured;
+import static io.restassured.RestAssured.given;
+import io.restassured.response.ValidatableResponse;
+import static org.evomaster.client.java.sql.dsl.SqlDsl.sql;
+import org.evomaster.client.java.controller.api.dto.database.operations.InsertionResultsDto;
+import org.evomaster.client.java.controller.api.dto.database.operations.InsertionDto;
+import static org.hamcrest.Matchers.*;
+import io.restassured.config.JsonConfig;
+import io.restassured.path.json.config.JsonPathConfig;
+import static io.restassured.config.RedirectConfig.redirectConfig;
+import static org.evomaster.client.java.controller.contentMatchers.NumberMatcher.*;
+import static org.evomaster.client.java.controller.contentMatchers.StringMatcher.*;
+import static org.evomaster.client.java.controller.contentMatchers.SubStringMatcher.*;
+import static org.evomaster.client.java.controller.expect.ExpectationHandler.expectationHandler;
+import org.evomaster.client.java.controller.expect.ExpectationHandler;
+import io.restassured.path.json.JsonPath;
+import java.util.Arrays;
+import java.util.Collections;
+import java.io.IOException;
+import java.util.stream.Stream;
+import org.kohsuke.github.GHOrganization;
+import org.kohsuke.github.GHTeam;
+import org.kohsuke.github.GHRepository;
+import org.kohsuke.github.PagedIterable;
+
+public class gpt4o_run01_OrganizationWrapperTest {
+
+    private static final SutHandler controller = new em.embedded.org.zalando.EmbeddedEvoMasterController();
+    private static String baseUrlOfSut;
+
+    @BeforeClass
+    public static void initClass() {
+        controller.setupForGeneratedTest();
+        baseUrlOfSut = controller.startSut();
+        controller.registerOrExecuteInitSqlCommandsIfNeeded();
+        assertNotNull(baseUrlOfSut);
+        RestAssured.enableLoggingOfRequestAndResponseIfValidationFails();
+        RestAssured.useRelaxedHTTPSValidation();
+        RestAssured.urlEncodingEnabled = false;
+        RestAssured.config = RestAssured.config()
+            .jsonConfig(JsonConfig.jsonConfig().numberReturnType(JsonPathConfig.NumberReturnType.DOUBLE))
+            .redirect(redirectConfig().followRedirects(false));
+    }
+
+    @AfterClass
+    public static void tearDown() {
+        controller.stopSut();
+    }
+
+    @Before
+    public void initTest() {
+        controller.resetDatabase(Arrays.asList("CONTRIBUTOR"));
+        controller.resetStateOfSUT();
+    }
+
+    @Test
+    public void testConstructorExecution() {
+        GHOrganization mockOrg = org.mockito.Mockito.mock(GHOrganization.class);
+        org.mockito.Mockito.when(mockOrg.getLogin()).thenReturn("test-org");
+        org.mockito.Mockito.when(mockOrg.listRepositories()).thenReturn(Collections.emptyList());
+
+        OrganizationWrapper wrapper = new OrganizationWrapper(mockOrg);
+        assertNotNull(wrapper);
+        assertNotNull(wrapper.listRepositories());
+        assertTrue(wrapper.listRepositories().isEmpty());
+    }
+
+    @Test
+    public void testListTeams() {
+        GHOrganization mockOrg = org.mockito.Mockito.mock(GHOrganization.class);
+        org.mockito.Mockito.when(mockOrg.getLogin()).thenReturn("test-org");
+        org.mockito.Mockito.when(mockOrg.listTeams()).thenThrow(new RuntimeException("No access to teams"));
+
+        OrganizationWrapper wrapper = new OrganizationWrapper(mockOrg);
+        List<GHTeam> teams = wrapper.listTeams();
+        assertNotNull(teams);
+        assertTrue(teams.isEmpty());
+
+        // Test valid case
+        List<GHTeam> mockTeams = Collections.singletonList(org.mockito.Mockito.mock(GHTeam.class));
+        org.mockito.Mockito.when(mockOrg.listTeams()).thenReturn(mockTeams);
+
+        OrganizationWrapper wrapper2 = new OrganizationWrapper(mockOrg);
+        List<GHTeam> teams2 = wrapper2.listTeams();
+        assertNotNull(teams2);
+        assertFalse(teams2.isEmpty());
+    }
+
+    @Test
+    public void testGetPublicRepoCount() {
+        GHOrganization mockOrg = org.mockito.Mockito.mock(GHOrganization.class);
+        org.mockito.Mockito.when(mockOrg.getLogin()).thenReturn("test-org");
+
+        try {
+            org.mockito.Mockito.when(mockOrg.getPublicRepoCount()).thenThrow(new IOException("Error fetching public repo count"));
+        } catch (IOException e) { fail("Unexpected exception setup"); }
+
+        OrganizationWrapper wrapper = new OrganizationWrapper(mockOrg);
+        int repoCount = wrapper.getPublicRepoCount();
+        assertEquals(0, repoCount);
+
+        // Test valid case
+        try {
+            org.mockito.Mockito.when(mockOrg.getPublicRepoCount()).thenReturn(5);
+        } catch (IOException e) { fail("Unexpected exception setup"); }
+
+        repoCount = wrapper.getPublicRepoCount();
+        assertEquals(5, repoCount);
+    }
+
+    @Test
+    public void testLambdaExecutionInConstructor() {
+        GHOrganization mockOrg = org.mockito.Mockito.mock(GHOrganization.class);
+        List<GHRepository> mockRepos = Arrays.asList(
+            org.mockito.Mockito.mock(GHRepository.class),
+            org.mockito.Mockito.mock(GHRepository.class)
+        );
+
+        org.mockito.Mockito.when(mockOrg.getLogin()).thenReturn("test-org");
+        org.mockito.Mockito.when(mockOrg.listRepositories()).thenReturn(
+            new PagedIterable<GHRepository>() {
+                @Override
+                public Stream<GHRepository> stream() { return mockRepos.stream(); }
+            }
+        );
+
+        OrganizationWrapper wrapper = new OrganizationWrapper(mockOrg);
+        List<RepositoryWrapper> repositories = wrapper.listRepositories();
+        assertNotNull(repositories);
+        assertTrue(repositories.isEmpty()); // All filters make them excluded
+    }
+}
+
+*****

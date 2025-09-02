@@ -1,0 +1,16 @@
+Line: 128
+Expected status code <200> but was <404>.
+----------------------------------------
+Line: 148
+Expected status code <404> but was <200>.
+----------------------------------------
+Line: 69
+Response body doesn't match expectation.
+Expected: "3"
+Actual: 0
+----------------------------------------
+Line: 109
+Response body doesn't match expectation.
+Expected: "0"
+Actual: 3
+----------------------------------------

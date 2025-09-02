@@ -1,0 +1,175 @@
+You are a highly skilled test engineer specializing in debugging and resolving compilation errors and test failures in Java-based projects. Your expertise includes Java 8, JUnit 4, and REST Assured, allowing you to diagnose issues efficiently and provide precise, actionable fixes.
+
+Do fix the compilation errors delimited by ##### given the code below delimited by *****.
+
+The response must contain only Java code in JUnit 4 format.
+
+#####
+[[1;31mERROR[m] COMPILATION ERROR : 
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_LanguageServiceTest.java:[35,67] 'void' type not allowed here
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_LanguageServiceTest.java:[45,67] 'void' type not allowed here
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_LanguageServiceTest.java:[46,67] 'void' type not allowed here
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_LanguageServiceTest.java:[47,67] 'void' type not allowed here
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_LanguageServiceTest.java:[60,67] 'void' type not allowed here
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_LanguageServiceTest.java:[61,67] 'void' type not allowed here
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_LanguageServiceTest.java:[62,67] 'void' type not allowed here
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_LanguageServiceTest.java:[72,75] void cannot be dereferenced
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_LanguageServiceTest.java:[73,77] void cannot be dereferenced
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_LanguageServiceTest.java:[74,75] void cannot be dereferenced
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_LanguageServiceTest.java:[87,67] 'void' type not allowed here
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_LanguageServiceTest.java:[88,67] 'void' type not allowed here
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_LanguageServiceTest.java:[98,67] 'void' type not allowed here
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_LanguageServiceTest.java:[99,67] 'void' type not allowed here
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_LanguageServiceTest.java:[107,13] org.zalando.catwatch.backend.sonnet35_run01_LanguageServiceTest.MockProjectRepository is not abstract and does not override abstract method findProjectsByOrganizationNameAndDateRange(java.util.Collection<java.lang.String>,java.util.Date,java.util.Date) in org.zalando.catwatch.backend.repo.ProjectRepository
+[[1;31mERROR[m] Failed to execute goal [32morg.apache.maven.plugins:maven-compiler-plugin:3.8.0:testCompile[m [1m(default-testCompile)[m on project [36mcatwatch-backend[m: [1;31mCompilation failure[m: Compilation failure: 
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_LanguageServiceTest.java:[35,67] 'void' type not allowed here
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_LanguageServiceTest.java:[45,67] 'void' type not allowed here
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_LanguageServiceTest.java:[46,67] 'void' type not allowed here
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_LanguageServiceTest.java:[47,67] 'void' type not allowed here
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_LanguageServiceTest.java:[60,67] 'void' type not allowed here
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_LanguageServiceTest.java:[61,67] 'void' type not allowed here
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_LanguageServiceTest.java:[62,67] 'void' type not allowed here
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_LanguageServiceTest.java:[72,75] void cannot be dereferenced
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_LanguageServiceTest.java:[73,77] void cannot be dereferenced
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_LanguageServiceTest.java:[74,75] void cannot be dereferenced
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_LanguageServiceTest.java:[87,67] 'void' type not allowed here
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_LanguageServiceTest.java:[88,67] 'void' type not allowed here
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_LanguageServiceTest.java:[98,67] 'void' type not allowed here
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_LanguageServiceTest.java:[99,67] 'void' type not allowed here
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_LanguageServiceTest.java:[107,13] org.zalando.catwatch.backend.sonnet35_run01_LanguageServiceTest.MockProjectRepository is not abstract and does not override abstract method findProjectsByOrganizationNameAndDateRange(java.util.Collection<java.lang.String>,java.util.Date,java.util.Date) in org.zalando.catwatch.backend.repo.ProjectRepository
+[[1;31mERROR[m] -> [1m[Help 1][m
+[[1;31mERROR[m] 
+[[1;31mERROR[m] To see the full stack trace of the errors, re-run Maven with the [1m-e[m switch.
+[[1;31mERROR[m] Re-run Maven using the [1m-X[m switch to enable full debug logging.
+[[1;31mERROR[m] 
+[[1;31mERROR[m] For more information about the errors and possible solutions, please read the following articles:
+[[1;31mERROR[m] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+
+#####
+*****
+package org.zalando.catwatch.backend;
+
+import org.junit.Before;
+import org.junit.Test;
+import static org.junit.Assert.*;
+import java.util.List;
+import java.util.Optional;
+import java.util.Comparator;
+import java.util.ArrayList;
+import java.util.stream.Collectors;
+import org.zalando.catwatch.backend.model.Language;
+import org.zalando.catwatch.backend.model.Project;
+import org.zalando.catwatch.backend.repo.ProjectRepository;
+import org.zalando.catwatch.backend.service.LanguageService;
+
+public class sonnet35_run01_LanguageServiceTest {
+
+    private LanguageService languageService;
+    private MockProjectRepository mockRepository;
+
+    @Before
+    public void initTest() {
+        mockRepository = new MockProjectRepository();
+        languageService = new LanguageService(mockRepository);
+    }
+
+    @Test
+    public void testGetMainLanguagesWithNoProjects() {
+        List<Language> result = languageService.getMainLanguages("org1,org2", Comparator.comparing(Language::getName), Optional.empty());
+        assertTrue(result.isEmpty());
+    }
+
+    @Test
+    public void testGetMainLanguagesWithSingleProject() {
+        mockRepository.addProject(new Project().setPrimaryLanguage("Java"));
+        List<Language> result = languageService.getMainLanguages("org1", Comparator.comparing(Language::getName), Optional.empty());
+        assertEquals(1, result.size());
+        assertEquals("Java", result.get(0).getName());
+        assertEquals(100, result.get(0).getPercentage().intValue());
+        assertEquals(1, result.get(0).getProjectsCount().intValue());
+    }
+
+    @Test
+    public void testGetMainLanguagesWithMultipleProjects() {
+        mockRepository.addProject(new Project().setPrimaryLanguage("Java"));
+        mockRepository.addProject(new Project().setPrimaryLanguage("Python"));
+        mockRepository.addProject(new Project().setPrimaryLanguage("Java"));
+        List<Language> result = languageService.getMainLanguages("org1", Comparator.comparing(Language::getName), Optional.empty());
+        assertEquals(2, result.size());
+        assertEquals("Java", result.get(0).getName());
+        assertEquals(67, result.get(0).getPercentage().intValue());
+        assertEquals(2, result.get(0).getProjectsCount().intValue());
+        assertEquals("Python", result.get(1).getName());
+        assertEquals(33, result.get(1).getPercentage().intValue());
+        assertEquals(1, result.get(1).getProjectsCount().intValue());
+    }
+
+    @Test
+    public void testGetMainLanguagesWithLanguageFilter() {
+        mockRepository.addProject(new Project().setPrimaryLanguage("Java"));
+        mockRepository.addProject(new Project().setPrimaryLanguage("Python"));
+        mockRepository.addProject(new Project().setPrimaryLanguage("Java"));
+        List<Language> result = languageService.getMainLanguages("org1", Comparator.comparing(Language::getName), Optional.of("Java"));
+        assertEquals(1, result.size());
+        assertEquals("Java", result.get(0).getName());
+        assertEquals(100, result.get(0).getPercentage().intValue());
+        assertEquals(2, result.get(0).getProjectsCount().intValue());
+    }
+
+    @Test
+    public void testGetMainLanguagesWithMultipleOrganizations() {
+        mockRepository.addProject(new Project().setPrimaryLanguage("Java").setOrganizationName("org1"));
+        mockRepository.addProject(new Project().setPrimaryLanguage("Python").setOrganizationName("org2"));
+        mockRepository.addProject(new Project().setPrimaryLanguage("Java").setOrganizationName("org2"));
+        List<Language> result = languageService.getMainLanguages("org1,org2", Comparator.comparing(Language::getName), Optional.empty());
+        assertEquals(2, result.size());
+        assertEquals("Java", result.get(0).getName());
+        assertEquals(67, result.get(0).getPercentage().intValue());
+        assertEquals(2, result.get(0).getProjectsCount().intValue());
+        assertEquals("Python", result.get(1).getName());
+        assertEquals(33, result.get(1).getPercentage().intValue());
+        assertEquals(1, result.get(1).getProjectsCount().intValue());
+    }
+
+    @Test
+    public void testGetMainLanguagesWithNullPrimaryLanguage() {
+        mockRepository.addProject(new Project().setPrimaryLanguage(null));
+        mockRepository.addProject(new Project().setPrimaryLanguage("Java"));
+        List<Language> result = languageService.getMainLanguages("org1", Comparator.comparing(Language::getName), Optional.empty());
+        assertEquals(1, result.size());
+        assertEquals("Java", result.get(0).getName());
+        assertEquals(100, result.get(0).getPercentage().intValue());
+        assertEquals(1, result.get(0).getProjectsCount().intValue());
+    }
+
+    @Test
+    public void testGetMainLanguagesWithEmptyPrimaryLanguage() {
+        mockRepository.addProject(new Project().setPrimaryLanguage(""));
+        mockRepository.addProject(new Project().setPrimaryLanguage("Java"));
+        List<Language> result = languageService.getMainLanguages("org1", Comparator.comparing(Language::getName), Optional.empty());
+        assertEquals(1, result.size());
+        assertEquals("Java", result.get(0).getName());
+        assertEquals(100, result.get(0).getPercentage().intValue());
+        assertEquals(1, result.get(0).getProjectsCount().intValue());
+    }
+
+    private class MockProjectRepository implements ProjectRepository {
+        private List<Project> projects = new ArrayList<>();
+
+        public void addProject(Project project) {
+            projects.add(project);
+        }
+
+        @Override
+        public List<Project> findProjects(String organizationName, Optional<String> query, Optional<String> language) {
+            return projects.stream()
+                .filter(p -> language.map(l -> l.equals(p.getPrimaryLanguage())).orElse(true))
+                .filter(p -> organizationName.contains(p.getOrganizationName()))
+                .collect(Collectors.toList());
+        }
+
+        // Other methods from ProjectRepository interface should be implemented here
+    }
+}
+
+*****

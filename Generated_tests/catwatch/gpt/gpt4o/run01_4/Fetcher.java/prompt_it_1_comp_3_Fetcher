@@ -1,0 +1,222 @@
+You are a highly skilled test engineer specializing in debugging and resolving compilation errors and test failures in Java-based projects. Your expertise includes Java 8, JUnit 4, and REST Assured, allowing you to diagnose issues efficiently and provide precise, actionable fixes.
+
+Do fix the compilation errors delimited by ##### given the code below delimited by *****.
+
+The response must contain only Java code in JUnit 4 format.
+
+#####
+[[1;31mERROR[m] COMPILATION ERROR : 
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_FetcherTest.java:[80,47] <anonymous org.zalando.catwatch.backend.gpt4o_run01_FetcherTest$1$1> is not abstract and does not override abstract method get(long,java.util.concurrent.TimeUnit) in java.util.concurrent.Future
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_FetcherTest.java:[119,47] <anonymous org.zalando.catwatch.backend.gpt4o_run01_FetcherTest$3$1> is not abstract and does not override abstract method get(long,java.util.concurrent.TimeUnit) in java.util.concurrent.Future
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_FetcherTest.java:[144,47] <anonymous org.zalando.catwatch.backend.gpt4o_run01_FetcherTest$4$1> is not abstract and does not override abstract method get(long,java.util.concurrent.TimeUnit) in java.util.concurrent.Future
+[[1;31mERROR[m] Failed to execute goal [32morg.apache.maven.plugins:maven-compiler-plugin:3.8.0:testCompile[m [1m(default-testCompile)[m on project [36mcatwatch-backend[m: [1;31mCompilation failure[m: Compilation failure: 
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_FetcherTest.java:[80,47] <anonymous org.zalando.catwatch.backend.gpt4o_run01_FetcherTest$1$1> is not abstract and does not override abstract method get(long,java.util.concurrent.TimeUnit) in java.util.concurrent.Future
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_FetcherTest.java:[119,47] <anonymous org.zalando.catwatch.backend.gpt4o_run01_FetcherTest$3$1> is not abstract and does not override abstract method get(long,java.util.concurrent.TimeUnit) in java.util.concurrent.Future
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_FetcherTest.java:[144,47] <anonymous org.zalando.catwatch.backend.gpt4o_run01_FetcherTest$4$1> is not abstract and does not override abstract method get(long,java.util.concurrent.TimeUnit) in java.util.concurrent.Future
+[[1;31mERROR[m] -> [1m[Help 1][m
+[[1;31mERROR[m] 
+[[1;31mERROR[m] To see the full stack trace of the errors, re-run Maven with the [1m-e[m switch.
+[[1;31mERROR[m] Re-run Maven using the [1m-X[m switch to enable full debug logging.
+[[1;31mERROR[m] 
+[[1;31mERROR[m] For more information about the errors and possible solutions, please read the following articles:
+[[1;31mERROR[m] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+
+#####
+*****
+
+package org.zalando.catwatch.backend;
+
+import org.junit.AfterClass;
+import org.junit.BeforeClass;
+import org.junit.Before;
+import org.junit.Test;
+import static org.junit.Assert.*;
+import java.util.concurrent.Future;
+import java.util.concurrent.ExecutionException;
+import java.io.IOException;
+import java.util.Date;
+import java.util.Arrays;
+
+public class gpt4o_run01_FetcherTest {
+
+    private static class Fetcher {
+        private final SnapshotProvider snapshotProvider;
+        private final String[] organizations;
+
+        public Fetcher(Object param1, Object param2, Object param3, SnapshotProvider snapshotProvider, String[] organizations) {
+            this.snapshotProvider = snapshotProvider;
+            this.organizations = organizations;
+        }
+
+        public boolean fetchData() throws CrawlerRetryException {
+            try {
+                for (String organization : organizations) {
+                    snapshotProvider.takeSnapshot(organization, new Date()).get();
+                }
+                return true;
+            } catch (IOException | ExecutionException | InterruptedException e) {
+                throw new CrawlerRetryException(e);
+            }
+        }
+
+        public String getIpAndMacAddress() {
+            return "192.168.1.1#00:1A:2B:3C:4D:5E";
+        }
+    }
+
+    private interface SnapshotProvider {
+        Future<Snapshot> takeSnapshot(String organization, Date snapshotDate) throws IOException;
+    }
+
+    private static class Snapshot {}
+
+    private static class CrawlerRetryException extends Exception {
+        public CrawlerRetryException(Throwable cause) {
+            super(cause);
+        }
+    }
+
+    @BeforeClass
+    public static void initClass() {
+        // Setup logic if needed
+    }
+
+    @AfterClass
+    public static void tearDown() {
+        // Teardown logic if needed
+    }
+
+    @Before
+    public void initTest() {
+        // Test initialization logic if needed
+    }
+
+    @Test
+    public void testFetcherConstructor() {
+        Fetcher fetcher = new Fetcher(null, null, null, null, new String[]{"org1", "org2"});
+        assertNotNull(fetcher);
+    }
+
+    @Test
+    public void testFetchDataSuccess() throws CrawlerRetryException {
+        SnapshotProvider mockSnapshotProvider = new SnapshotProvider() {
+            @Override
+            public Future<Snapshot> takeSnapshot(String organization, Date snapshotDate) {
+                return new Future<Snapshot>() {
+                    @Override
+                    public Snapshot get() {
+                        return new Snapshot();
+                    }
+
+                    // Other methods of Future would be mocked as needed
+                };
+            }
+        };
+
+        Fetcher fetcher = new Fetcher(null, null, null, mockSnapshotProvider, new String[]{"org1", "org2"});
+        boolean result = fetcher.fetchData();
+        assertTrue(result);
+    }
+
+    @Test
+    public void testFetchDataIOException() {
+        SnapshotProvider mockSnapshotProvider = new SnapshotProvider() {
+            @Override
+            public Future<Snapshot> takeSnapshot(String organization, Date snapshotDate) throws IOException {
+                throw new IOException("Simulated IOException");
+            }
+        };
+
+        Fetcher fetcher = new Fetcher(null, null, null, mockSnapshotProvider, new String[]{"org1"});
+        try {
+            fetcher.fetchData();
+            fail("Expected CrawlerRetryException");
+        } catch (CrawlerRetryException e) {
+            assertEquals("java.io.IOException: Simulated IOException", e.getCause().toString());
+        }
+    }
+
+    @Test
+    public void testFetchDataExecutionException() {
+        SnapshotProvider mockSnapshotProvider = new SnapshotProvider() {
+            @Override
+            public Future<Snapshot> takeSnapshot(String organization, Date snapshotDate) {
+                return new Future<Snapshot>() {
+                    @Override
+                    public Snapshot get() throws ExecutionException {
+                        throw new ExecutionException(new Exception("Simulated ExecutionException"));
+                    }
+
+                    // Other methods of Future would be mocked as needed
+                };
+            }
+        };
+
+        Fetcher fetcher = new Fetcher(null, null, null, mockSnapshotProvider, new String[]{"org1"});
+        try {
+            fetcher.fetchData();
+            fail("Expected CrawlerRetryException");
+        } catch (CrawlerRetryException e) {
+            assertEquals("java.lang.Exception: Simulated ExecutionException", e.getCause().toString());
+        }
+    }
+
+    @Test
+    public void testFetchDataInterruptedException() {
+        SnapshotProvider mockSnapshotProvider = new SnapshotProvider() {
+            @Override
+            public Future<Snapshot> takeSnapshot(String organization, Date snapshotDate) {
+                return new Future<Snapshot>() {
+                    @Override
+                    public Snapshot get() throws InterruptedException {
+                        throw new InterruptedException("Simulated InterruptedException");
+                    }
+
+                    // Other methods of Future would be mocked as needed
+                };
+            }
+        };
+
+        Fetcher fetcher = new Fetcher(null, null, null, mockSnapshotProvider, new String[]{"org1"});
+        try {
+            fetcher.fetchData();
+            fail("Expected CrawlerRetryException");
+        } catch (CrawlerRetryException e) {
+            assertEquals("java.lang.InterruptedException: Simulated InterruptedException", e.getCause().toString());
+        }
+    }
+
+    @Test
+    public void testGetIpAndMacAddressSuccess() {
+        Fetcher fetcher = new Fetcher(null, null, null, null, new String[]{"org1"});
+        String result = fetcher.getIpAndMacAddress();
+        assertNotNull(result);
+        assertTrue(result.contains("#"));
+    }
+
+    @Test
+    public void testGetIpAndMacAddressException() {
+        Fetcher fetcher = new Fetcher(null, null, null, null, new String[]{"org1"}) {
+            @Override
+            public String getIpAndMacAddress() {
+                throw new RuntimeException("Simulated Exception");
+            }
+        };
+
+        try {
+            fetcher.getIpAndMacAddress();
+            fail("Expected RuntimeException");
+        } catch (RuntimeException e) {
+            assertEquals("Simulated Exception", e.getMessage());
+        }
+    }
+
+    @Test
+    public void testLambdaGetIpAndMacAddress() {
+        Fetcher fetcher = new Fetcher(null, null, null, null, new String[]{"org1"});
+        String result = fetcher.getIpAndMacAddress();
+        assertNotNull(result);
+    }
+}
+
+*****

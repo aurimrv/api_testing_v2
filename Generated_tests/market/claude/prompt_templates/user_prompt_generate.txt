@@ -1,0 +1,83 @@
+Do create a white box test suite in JUnit 5 and Java 11 using REST Assured to achieve full test coverage, including methods, lines, and all branches with all possible execution paths, according the instructions delimited by %%%%%, whith is part of the REST Java Application code delimited by *****. Use the swagger documentation delimited by ##### to provide complementary information about the application. If the uncovered line is related to the <init> method (constructor), generate a test case  that explicitly instantiates the class to ensure the constructor is executed.Your responses must contain only Java code in JUnit 5 format.
+
+If applicable, use the following details in your test suite:
+Registered user data: {"email":"ivan.petrov@yandex.ru","password":"petrov","name":"Ivan Petrov","phone":"+7 123 456 78 90","address":"Riesstrasse 18"}
+Registered users: ("admin","admin","password") / ("user", "ivan.petrov@yandex.ru", "petrov")
+
+Follow these five instructions for this generated test code:
+
+Instruction 1: Add this package line to generated test code file:
+package market;
+
+Instruction 2: Add the following Java imports:
+import  org.junit.jupiter.api.AfterAll;
+import  org.junit.jupiter.api.BeforeAll;
+import  org.junit.jupiter.api.BeforeEach;
+import  org.junit.jupiter.api.Test;
+import  org.junit.jupiter.api.Timeout;
+import static org.junit.jupiter.api.Assertions.*;
+import  java.util.Map;
+import  java.util.List;
+import static org.evomaster.client.java.controller.api.EMTestUtils.*;
+import  org.evomaster.client.java.controller.SutHandler;
+import  io.restassured.RestAssured;
+import static io.restassured.RestAssured.given;
+import  io.restassured.response.ValidatableResponse;
+import static org.evomaster.client.java.sql.dsl.SqlDsl.sql;
+import  org.evomaster.client.java.controller.api.dto.database.operations.InsertionResultsDto;
+import  org.evomaster.client.java.controller.api.dto.database.operations.InsertionDto;
+import static org.hamcrest.Matchers.*;
+import  io.restassured.config.JsonConfig;
+import  io.restassured.path.json.config.JsonPathConfig;
+import static io.restassured.config.RedirectConfig.redirectConfig;
+import static org.evomaster.client.java.controller.contentMatchers.NumberMatcher.*;
+import static org.evomaster.client.java.controller.contentMatchers.StringMatcher.*;
+import static org.evomaster.client.java.controller.contentMatchers.SubStringMatcher.*;
+import static org.evomaster.client.java.controller.expect.ExpectationHandler.expectationHandler;
+import  org.evomaster.client.java.controller.expect.ExpectationHandler;
+import  io.restassured.path.json.JsonPath;
+import  java.util.Arrays;
+
+Instruction 3. Create the class declaration using: <<class_name>>
+
+Instruction 4: Declare these variables:
+private static final SutHandler controller = new em.embedded.market.EmbeddedEvoMasterController();
+private static String baseUrlOfSut;
+
+Instruction 5: Add these setup and teardown methods:
+@BeforeAll
+public static void initClass() {
+    controller.setupForGeneratedTest();
+    baseUrlOfSut = controller.startSut();
+    controller.registerOrExecuteInitSqlCommandsIfNeeded();
+    assertNotNull(baseUrlOfSut);
+    RestAssured.enableLoggingOfRequestAndResponseIfValidationFails();
+    RestAssured.useRelaxedHTTPSValidation();
+    RestAssured.urlEncodingEnabled = false;
+    RestAssured.config = RestAssured.config()
+        .jsonConfig(JsonConfig.jsonConfig().numberReturnType(JsonPathConfig.NumberReturnType.DOUBLE))
+        .redirect(redirectConfig().followRedirects(false));
+}
+
+
+@AfterAll
+public static void tearDown() {
+    controller.stopSut();
+}
+
+
+@BeforeEach
+public void initTest() {
+    controller.resetDatabase(Arrays.asList("USER_ROLE","CUSTOMER_ORDER","CART_ITEM","PRODUCT","CART","CONTACTS"));
+    controller.resetStateOfSUT();
+}
+
+%%%%%
+<<uncovered_informations>>
+%%%%%
+*****
+<<java_application_code>>
+*****
+#####
+<<swagger.json>>
+#####

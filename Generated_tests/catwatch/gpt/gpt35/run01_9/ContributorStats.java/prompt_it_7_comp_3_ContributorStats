@@ -1,0 +1,164 @@
+You are a highly skilled test engineer specializing in debugging and resolving compilation errors and test failures in Java-based projects. Your expertise includes Java 8, JUnit 4, and REST Assured, allowing you to diagnose issues efficiently and provide precise, actionable fixes.
+
+Do fix the compilation errors delimited by ##### given the code below delimited by *****.
+
+The response must contain only Java code in JUnit 4 format.
+
+#####
+[[1;31mERROR[m] COMPILATION ERROR : 
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ContributorStatsTest.java:[107,95] ')' expected
+[[1;31mERROR[m] Failed to execute goal [32morg.apache.maven.plugins:maven-compiler-plugin:3.8.0:testCompile[m [1m(default-testCompile)[m on project [36mcatwatch-backend[m: [1;31mCompilation failure[m
+[[1;31mERROR[m] [1;31m/media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ContributorStatsTest.java:[107,95] ')' expected[m
+[[1;31mERROR[m] [1;31m[m
+[[1;31mERROR[m] -> [1m[Help 1][m
+[[1;31mERROR[m] 
+[[1;31mERROR[m] To see the full stack trace of the errors, re-run Maven with the [1m-e[m switch.
+[[1;31mERROR[m] Re-run Maven using the [1m-X[m switch to enable full debug logging.
+[[1;31mERROR[m] 
+[[1;31mERROR[m] For more information about the errors and possible solutions, please read the following articles:
+[[1;31mERROR[m] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+
+#####
+*****
+
+import org.junit.Test;
+import static org.junit.Assert.*;
+import java.util.Date;
+import java.util.List;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Map;
+import org.zalando.catwatch.backend.util.Contributor;
+import org.zalando.catwatch.backend.util.ContributorStats;
+
+public class gpt35_run01_ContributorStatsTest {
+
+    @Test
+    public void testConstructor() {
+        List<Contributor> contributors = new ArrayList<>();
+        contributors.add(new Contributor("John Doe", "Org1", "url1", 5, 3, 2, 4, new Date()));
+        contributors.add(new Contributor("Jane Smith", "Org2", "url2", 8, 6, 3, 7, new Date()));
+
+        ContributorStats contributorStats = new ContributorStats(contributors);
+
+        assertNotNull(contributorStats);
+    }
+
+    @Test
+    public void testGetName() {
+        ContributorStats contributorStats = new ContributorStats(Collections.emptyList());
+
+        String name = contributorStats.getName();
+
+        assertNull(name);
+    }
+
+    @Test
+    public void testGetOrganizationName() {
+        ContributorStats contributorStats = new ContributorStats(Collections.emptyList());
+
+        List<String> organizationName = contributorStats.getOrganizationName();
+
+        assertNotNull(organizationName);
+        assertTrue(organizationName.isEmpty());
+    }
+
+    @Test
+    public void testGetUrl() {
+        ContributorStats contributorStats = new ContributorStats(Collections.emptyList());
+
+        String url = contributorStats.getUrl();
+
+        assertNull(url);
+    }
+
+    @Test
+    public void testGetOrganizationalCommitsCounts() {
+        ContributorStats contributorStats = new ContributorStats(Collections.emptyList());
+
+        List<Integer> organizationalCommitsCounts = contributorStats.getOrganizationalCommitsCounts();
+
+        assertNotNull(organizationalCommitsCounts);
+        assertTrue(organizationalCommitsCounts.isEmpty());
+    }
+
+    @Test
+    public void testGetPersonalCommitsCounts() {
+        ContributorStats contributorStats = new ContributorStats(Collections.emptyList());
+
+        List<Integer> personalCommitsCounts = contributorStats.getPersonalCommitsCounts();
+
+        assertNotNull(personalCommitsCounts);
+        assertTrue(personalCommitsCounts.isEmpty());
+    }
+
+    @Test
+    public void testGetOrganizationalProjectsCounts() {
+        ContributorStats contributorStats = new ContributorStats(Collections.emptyList());
+
+        List<Integer> organizationalProjectsCounts = contributorStats.getOrganizationalProjectsCounts();
+
+        assertNotNull(organizationalProjectsCounts);
+        assertTrue(organizationalProjectsCounts.isEmpty());
+    }
+
+    @Test
+    public void testGetPersonalProjectsCounts() {
+        ContributorStats contributorStats = new ContributorStats(Collections.emptyList());
+
+        List<Integer> personalProjectsCounts = contributorStats.getPersonalProjectsCounts();
+
+        assertNotNull(personalProjectsCounts);
+        assertTrue(personalProjectsCounts.isEmpty());
+    }
+
+    @Test
+    public void testGetSnapshotDates() {
+        ContributorStats contributorStats = new ContributorStats(Collections.emptyList());
+
+        List<Date> snapshotDates = contributorStats.getSnapshotDates();
+
+        assertNotNull(snapshotDates);
+        assertTrue(snapshotDates.isEmpty());
+    }
+
+    @Test
+    public void testBuildStats() {
+        List<Contributor> contributors = new ArrayList<>();
+        contributors.add(new Contributor("John Doe", "Org1", "url1", 5, 3, 2, 4, new Date()));
+        contributors.add(new Contributor("Jane Smith", "Org2", "url2", 8, 6, 3, 7, new Date());
+
+        List<ContributorStats> statsList = ContributorStats.buildStats(contributors);
+
+        assertNotNull(statsList);
+        assertFalse(statsList.isEmpty());
+    }
+
+    @Test
+    public void testGetDistinctContributors() {
+        List<Contributor> contributors = new ArrayList<>();
+        contributors.add(new Contributor("John Doe", "Org1", "url1", 5, 3, 2, 4, new Date()));
+        contributors.add(new Contributor("Jane Smith", "Org2", "url2", 8, 6, 3, 7, new Date()));
+
+        Map<String, List<Contributor>> contributorMap = ContributorStats.getDistinctContributors(contributors);
+
+        assertNotNull(contributorMap);
+        assertFalse(contributorMap.isEmpty());
+    }
+
+    @Test
+    public void testToString() {
+        List<Contributor> contributors = new ArrayList<>();
+        contributors.add(new Contributor("John Doe", "Org1", "url1", 5, 3, 2, 4, new Date()));
+        contributors.add(new Contributor("Jane Smith", "Org2", "url2", 8, 6, 3, 7, new Date()));
+
+        ContributorStats contributorStats = new ContributorStats(contributors);
+
+        String str = contributorStats.toString();
+
+        assertNotNull(str);
+        assertTrue(str.contains("ContributorStats"));
+    }
+}
+
+*****

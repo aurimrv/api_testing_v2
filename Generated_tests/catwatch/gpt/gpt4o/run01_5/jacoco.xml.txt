@@ -1,0 +1,417 @@
+------------------------------------------------------------------------------------------
+Class name: org/zalando/catwatch/backend/util/ContributorStats
+Method: lambda$new$0
+Lines: 39, 49, 51, 55, 56, 59, 60, 61, 62, 63, 64, 65, 66, 68, 72, 73, 74, 75, 78, 79, 80, 81, 84, 85, 86, 87
+------------------------------------------------------------------------------------------
+Class name: org/zalando/catwatch/backend/util/ContributorStats
+Method: getName
+Lines: 90
+------------------------------------------------------------------------------------------
+Class name: org/zalando/catwatch/backend/util/ContributorStats
+Method: getOrganizationName
+Lines: 93
+------------------------------------------------------------------------------------------
+Class name: org/zalando/catwatch/backend/util/ContributorStats
+Method: getUrl
+Lines: 96
+------------------------------------------------------------------------------------------
+Class name: org/zalando/catwatch/backend/util/ContributorStats
+Method: getOrganizationalCommitsCounts
+Lines: 99
+------------------------------------------------------------------------------------------
+Class name: org/zalando/catwatch/backend/util/ContributorStats
+Method: getPersonalCommitsCounts
+Lines: 102
+------------------------------------------------------------------------------------------
+Class name: org/zalando/catwatch/backend/util/ContributorStats
+Method: getOrganizationalProjectsCounts
+Lines: 105
+------------------------------------------------------------------------------------------
+Class name: org/zalando/catwatch/backend/util/ContributorStats
+Method: getPersonalProjectsCounts
+Lines: 108
+------------------------------------------------------------------------------------------
+Class name: org/zalando/catwatch/backend/util/ContributorStats
+Method: getSnapshotDates
+Lines: 112
+------------------------------------------------------------------------------------------
+Class name: org/zalando/catwatch/backend/util/ContributorStats
+Method: getDistinctContributors
+Lines: 138, 139, 140, 141, 144, 145, 146, 147, 149, 150
+------------------------------------------------------------------------------------------
+Class name: org/zalando/catwatch/backend/util/ContributorStats
+Method: toString
+Lines: 156
+------------------------------------------------------------------------------------------
+Class name: org/zalando/catwatch/backend/util/ProjectStats
+Method: lambda$new$0
+Lines: 62, 63, 66
+------------------------------------------------------------------------------------------
+Class name: org/zalando/catwatch/backend/util/LanguageStats
+Method: buildStats
+Lines: 58, 59, 70, 71
+------------------------------------------------------------------------------------------
+Class name: org/zalando/catwatch/backend/util/Constants
+Method: <init>
+Lines: 3
+------------------------------------------------------------------------------------------
+Class name: org/zalando/catwatch/backend/repo/builder/ProjectBuilder
+Method: <init>
+Lines: 33, 34, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47
+------------------------------------------------------------------------------------------
+Class name: org/zalando/catwatch/backend/repo/builder/ProjectBuilder
+Method: getProject
+Lines: 54
+------------------------------------------------------------------------------------------
+Class name: org/zalando/catwatch/backend/repo/builder/ProjectBuilder
+Method: days
+Lines: 63, 64
+------------------------------------------------------------------------------------------
+Class name: org/zalando/catwatch/backend/repo/builder/ProjectBuilder
+Method: externalContributorsCount
+Lines: 108, 109
+------------------------------------------------------------------------------------------
+Class name: org/zalando/catwatch/backend/repo/builder/ProjectBuilder
+Method: description
+Lines: 113, 114
+------------------------------------------------------------------------------------------
+Class name: org/zalando/catwatch/backend/repo/builder/ProjectBuilder
+Method: lastPushed
+Lines: 118, 119
+------------------------------------------------------------------------------------------
+Class name: org/zalando/catwatch/backend/repo/builder/ProjectBuilder
+Method: languages
+Lines: 128, 129
+------------------------------------------------------------------------------------------
+Class name: org/zalando/catwatch/backend/repo/builder/BuilderUtil
+Method: randomProjectName
+Lines: 50, 51
+------------------------------------------------------------------------------------------
+Class name: org/zalando/catwatch/backend/web/StatisticsApi
+Method: <clinit>
+Lines: 39
+------------------------------------------------------------------------------------------
+Class name: org/zalando/catwatch/backend/web/StatisticsApi
+Method: statisticsProjectGet
+Lines: 124
+------------------------------------------------------------------------------------------
+Class name: org/zalando/catwatch/backend/web/StatisticsApi
+Method: lambda$statisticsProjectGet$0
+Lines: 129, 130, 132, 134
+------------------------------------------------------------------------------------------
+Class name: org/zalando/catwatch/backend/web/StatisticsApi
+Method: statisticsContributorGet
+Lines: 159
+------------------------------------------------------------------------------------------
+Class name: org/zalando/catwatch/backend/web/StatisticsApi
+Method: lambda$statisticsContributorGet$1
+Lines: 162, 163, 165
+------------------------------------------------------------------------------------------
+Class name: org/zalando/catwatch/backend/web/StatisticsApi
+Method: getOrganizationConfig
+Lines: 178, 180
+------------------------------------------------------------------------------------------
+Class name: org/zalando/catwatch/backend/web/StatisticsApi
+Method: statisticsLanguagesGet
+Lines: 209
+------------------------------------------------------------------------------------------
+Class name: org/zalando/catwatch/backend/web/LanguagesApi$LanguagePercentComparator
+Method: compare
+Lines: 91, 93
+------------------------------------------------------------------------------------------
+Class name: org/zalando/catwatch/backend/web/LanguagesApi
+Method: languagesGet
+Lines: 74, 75, 91, 93
+------------------------------------------------------------------------------------------
+Class name: org/zalando/catwatch/backend/web/ContributorsApi
+Method: contributorsGet
+Lines: 116, 117, 119, 121, 122, 124
+------------------------------------------------------------------------------------------
+Class name: org/zalando/catwatch/backend/web/ContributorsApi
+Method: contributorsGet_noTimeSpan
+Lines: 137, 138, 140, 142
+------------------------------------------------------------------------------------------
+Class name: org/zalando/catwatch/backend/web/ContributorsApi
+Method: lambda$contributorsGet_noTimeSpan$1
+Lines: 144
+------------------------------------------------------------------------------------------
+Class name: org/zalando/catwatch/backend/web/ContributorsApi
+Method: lambda$null$0
+Lines: 147, 148
+------------------------------------------------------------------------------------------
+Class name: org/zalando/catwatch/backend/web/ContributorsApi
+Method: lambda$contributorsGet_noTimeSpan$2
+Lines: 150, 151, 153
+------------------------------------------------------------------------------------------
+Class name: org/zalando/catwatch/backend/web/ContributorsApi
+Method: contributorsGet_timeSpan
+Lines: 159, 160, 162, 163, 165, 167
+------------------------------------------------------------------------------------------
+Class name: org/zalando/catwatch/backend/web/ContributorsApi
+Method: lambda$contributorsGet_timeSpan$5
+Lines: 169, 172, 174, 177, 179, 181
+------------------------------------------------------------------------------------------
+Class name: org/zalando/catwatch/backend/web/ContributorsApi
+Method: lambda$null$3
+Lines: 182
+------------------------------------------------------------------------------------------
+Class name: org/zalando/catwatch/backend/web/ContributorsApi
+Method: lambda$null$4
+Lines: 183, 184
+------------------------------------------------------------------------------------------
+Class name: org/zalando/catwatch/backend/web/ContributorsApi
+Method: lambda$contributorsGet_timeSpan$6
+Lines: 186, 187, 189
+------------------------------------------------------------------------------------------
+Class name: org/zalando/catwatch/backend/web/ContributorsApi
+Method: sublist
+Lines: 198, 199, 201, 203, 205
+------------------------------------------------------------------------------------------
+Class name: org/zalando/catwatch/backend/web/ContributorsApi
+Method: validate
+Lines: 219, 224, 227, 230
+------------------------------------------------------------------------------------------
+Class name: org/zalando/catwatch/backend/web/ContributorsApi
+Method: add
+Lines: 280, 282, 283, 284, 285, 286, 287, 288, 290, 291, 292, 293, 294, 295, 296, 298, 321
+------------------------------------------------------------------------------------------
+Class name: org/zalando/catwatch/backend/web/ContributorsApi
+Method: diff
+Lines: 302, 303, 304, 306, 307, 308, 309, 310, 311, 313
+------------------------------------------------------------------------------------------
+Class name: org/zalando/catwatch/backend/web/ContributorsApi
+Method: subtract
+Lines: 317
+------------------------------------------------------------------------------------------
+Class name: org/zalando/catwatch/backend/web/admin/AdminController
+Method: init
+Lines: 45
+------------------------------------------------------------------------------------------
+Class name: org/zalando/catwatch/backend/web/admin/AdminController
+Method: deleteAll
+Lines: 52
+------------------------------------------------------------------------------------------
+Class name: org/zalando/catwatch/backend/web/fetch/FetchController
+Method: fetch
+Lines: 23, 24
+------------------------------------------------------------------------------------------
+Class name: org/zalando/catwatch/backend/scheduler/CronConfig$CustomExitCodeGenerator
+Method: <init>
+Lines: 40, 41, 42
+------------------------------------------------------------------------------------------
+Class name: org/zalando/catwatch/backend/scheduler/CronConfig$CustomExitCodeGenerator
+Method: getExitCode
+Lines: 46
+------------------------------------------------------------------------------------------
+Class name: org/zalando/catwatch/backend/scheduler/CronConfig
+Method: cron
+Lines: 22, 25, 27, 28, 29, 30, 31, 32, 33, 40, 41, 42, 46
+------------------------------------------------------------------------------------------
+Class name: org/zalando/catwatch/backend/scheduler/CronConfig$1
+Method: <init>
+Lines: 22
+------------------------------------------------------------------------------------------
+Class name: org/zalando/catwatch/backend/scheduler/CronConfig$1
+Method: run
+Lines: 25, 27, 28, 29, 30, 31, 32, 33, 40, 41, 42, 46
+------------------------------------------------------------------------------------------
+Class name: org/zalando/catwatch/backend/scheduler/Fetcher
+Method: fetchData
+Lines: 78, 80, 82, 83, 84, 87, 88, 89, 90, 91, 92, 93, 94, 95
+------------------------------------------------------------------------------------------
+Class name: org/zalando/catwatch/backend/scheduler/Fetcher
+Method: getIpAndMacAddress
+Lines: 102
+------------------------------------------------------------------------------------------
+Class name: org/zalando/catwatch/backend/scheduler/Fetcher
+Method: lambda$getIpAndMacAddress$0
+Lines: 103, 104, 106
+------------------------------------------------------------------------------------------
+Class name: org/zalando/catwatch/backend/github/TakeSnapshotTask
+Method: lambda$collectStatistics$0
+Lines: 101
+------------------------------------------------------------------------------------------
+Class name: org/zalando/catwatch/backend/github/TakeSnapshotTask
+Method: lambda$collectProjects$1
+Lines: 151, 155, 157, 159, 161, 162
+------------------------------------------------------------------------------------------
+Class name: org/zalando/catwatch/backend/github/TakeSnapshotTask
+Method: getProjectMaintainers
+Lines: 171, 172, 173
+------------------------------------------------------------------------------------------
+Class name: org/zalando/catwatch/backend/github/TakeSnapshotTask
+Method: readCatwatchYaml
+Lines: 180, 182, 184, 186, 187, 188, 189, 190, 191, 192, 193, 195
+------------------------------------------------------------------------------------------
+Class name: org/zalando/catwatch/backend/github/TakeSnapshotTask
+Method: lambda$collectContributors$2
+Lines: 219, 220, 222, 223, 224, 225, 226, 227, 229, 230
+------------------------------------------------------------------------------------------
+Class name: org/zalando/catwatch/backend/github/TakeSnapshotTask
+Method: lambda$collectLanguages$3
+Lines: 250
+------------------------------------------------------------------------------------------
+Class name: org/zalando/catwatch/backend/github/TakeSnapshotTask
+Method: lambda$collectLanguages$4
+Lines: 253, 256, 257, 259, 260, 261, 263, 264
+------------------------------------------------------------------------------------------
+Class name: org/zalando/catwatch/backend/github/RepositoryWrapper
+Method: listLanguages
+Lines: 87, 88, 89
+------------------------------------------------------------------------------------------
+Class name: org/zalando/catwatch/backend/github/RepositoryWrapper
+Method: getOrganizationName
+Lines: 94
+------------------------------------------------------------------------------------------
+Class name: org/zalando/catwatch/backend/github/RepositoryWrapper
+Method: listCommits
+Lines: 98, 101, 102, 103
+------------------------------------------------------------------------------------------
+Class name: org/zalando/catwatch/backend/github/RepositoryWrapper
+Method: listContributors
+Lines: 113, 114, 115
+------------------------------------------------------------------------------------------
+Class name: org/zalando/catwatch/backend/github/RepositoryWrapper
+Method: listTags
+Lines: 122, 125, 126, 127
+------------------------------------------------------------------------------------------
+Class name: org/zalando/catwatch/backend/github/RepositoryWrapper
+Method: getFileContent
+Lines: 134
+------------------------------------------------------------------------------------------
+Class name: org/zalando/catwatch/backend/github/SnapshotProvider
+Method: takeSnapshot
+Lines: 90, 91, 92, 93
+------------------------------------------------------------------------------------------
+Class name: org/zalando/catwatch/backend/github/SnapshotProvider
+Method: getCacheDirectory
+Lines: 122, 123, 126
+------------------------------------------------------------------------------------------
+Class name: org/zalando/catwatch/backend/github/OrganizationWrapper
+Method: lambda$new$0
+Lines: 41
+------------------------------------------------------------------------------------------
+Class name: org/zalando/catwatch/backend/github/OrganizationWrapper
+Method: lambda$new$1
+Lines: 42
+------------------------------------------------------------------------------------------
+Class name: org/zalando/catwatch/backend/github/OrganizationWrapper
+Method: listTeams
+Lines: 53, 55, 59
+------------------------------------------------------------------------------------------
+Class name: org/zalando/catwatch/backend/github/OrganizationWrapper
+Method: getPublicRepoCount
+Lines: 86, 87, 88, 89
+------------------------------------------------------------------------------------------
+Class name: org/zalando/catwatch/backend/postgres/OptionalFlywayMigrationInitializer
+Method: afterPropertiesSet
+Lines: 22
+------------------------------------------------------------------------------------------
+Class name: org/zalando/catwatch/backend/repo/util/DatabasePing
+Method: isDatabaseAvailable
+Lines: 21, 22, 23
+------------------------------------------------------------------------------------------
+Class name: org/zalando/catwatch/backend/repo/util/DatabasePopulator
+Method: populateTestData
+Lines: 43, 44
+------------------------------------------------------------------------------------------
+Class name: org/zalando/catwatch/backend/model/QStatistics
+Method: <init>
+Lines: 56, 57, 60, 61, 64, 65, 69
+------------------------------------------------------------------------------------------
+Class name: org/zalando/catwatch/backend/model/QContributor
+Method: <init>
+Lines: 22, 24, 26, 28, 30, 32, 34, 36, 43, 44, 47, 48
+------------------------------------------------------------------------------------------
+Class name: org/zalando/catwatch/backend/model/QStatisticsKey
+Method: <init>
+Lines: 22, 24, 31, 32
+------------------------------------------------------------------------------------------
+Class name: org/zalando/catwatch/backend/model/Language
+Method: setName
+Lines: 31, 32
+------------------------------------------------------------------------------------------
+Class name: org/zalando/catwatch/backend/model/Language
+Method: toString
+Lines: 64, 65, 67, 68, 69, 70, 71
+------------------------------------------------------------------------------------------
+Class name: org/zalando/catwatch/backend/model/Statistics
+Method: getId
+Lines: 48
+------------------------------------------------------------------------------------------
+Class name: org/zalando/catwatch/backend/model/Statistics
+Method: getSnapshotDate
+Lines: 210
+------------------------------------------------------------------------------------------
+Class name: org/zalando/catwatch/backend/model/QProject
+Method: <init>
+Lines: 23, 25, 27, 29, 31, 33, 35, 37, 39, 41, 43, 45, 47, 49, 51, 53, 55, 57, 59, 66, 67, 70, 71
+------------------------------------------------------------------------------------------
+Class name: org/zalando/catwatch/backend/repo/StatisticsRepositoryImpl
+Method: getLatestSnaphotDateBefore
+Lines: 29, 30
+------------------------------------------------------------------------------------------
+Class name: org/zalando/catwatch/backend/repo/StatisticsRepositoryImpl
+Method: getEarliestSnaphotDate
+Lines: 35, 36, 37, 38, 40, 41
+------------------------------------------------------------------------------------------
+Class name: org/zalando/catwatch/backend/repo/ProjectRepositoryImpl
+Method: findProjects
+Lines: 50, 54, 55, 56, 59, 60, 63
+------------------------------------------------------------------------------------------
+Class name: org/zalando/catwatch/backend/repo/ContributorRepositoryImpl
+Method: findAllTimeTopContributors
+Lines: 67, 69, 70, 73, 74, 77, 79, 80, 83, 85, 86, 90, 91, 92, 93, 94, 95, 96, 97
+------------------------------------------------------------------------------------------
+Class name: org/zalando/catwatch/backend/repo/ContributorRepositoryImpl
+Method: findContributorsTimeSeries
+Lines: 114, 115, 117, 119, 120, 121, 122, 124, 125
+------------------------------------------------------------------------------------------
+Class name: org/zalando/catwatch/backend/service/ProjectServiceImpl
+Method: findProjects
+Lines: 53, 57
+------------------------------------------------------------------------------------------
+Class name: org/zalando/catwatch/backend/service/ProjectServiceImpl
+Method: getMergedProjectList
+Lines: 80, 81, 82, 84, 86
+------------------------------------------------------------------------------------------
+Class name: org/zalando/catwatch/backend/service/ProjectServiceImpl
+Method: createMergedProject
+Lines: 103, 104, 105, 106, 107, 108
+------------------------------------------------------------------------------------------
+Class name: org/zalando/catwatch/backend/service/ProjectServiceImpl
+Method: convertProjectsToMap
+Lines: 113, 114, 115
+------------------------------------------------------------------------------------------
+Class name: org/zalando/catwatch/backend/service/ProjectServiceImpl
+Method: getOrganizationConfig
+Lines: 136, 139
+------------------------------------------------------------------------------------------
+Class name: org/zalando/catwatch/backend/service/ProjectServiceImpl
+Method: isSortOrderAscending
+Lines: 155
+------------------------------------------------------------------------------------------
+Class name: org/zalando/catwatch/backend/service/ProjectServiceImpl
+Method: getProjectSortComparator
+Lines: 174, 175, 184, 193, 196, 199
+------------------------------------------------------------------------------------------
+Class name: org/zalando/catwatch/backend/service/StatisticsService
+Method: getStatisticsByDate
+Lines: 65
+------------------------------------------------------------------------------------------
+Class name: org/zalando/catwatch/backend/service/StatisticsService
+Method: collectStatistics
+Lines: 83, 84, 85, 86, 90, 93, 94, 98, 99
+------------------------------------------------------------------------------------------
+Class name: org/zalando/catwatch/backend/service/StatisticsService
+Method: aggregateStatistics
+Lines: 122, 128, 157, 163, 166
+------------------------------------------------------------------------------------------
+Class name: org/zalando/catwatch/backend/service/StatisticsService
+Method: aggregateHistoricalStatistics
+Lines: 208
+------------------------------------------------------------------------------------------
+Class name: org/zalando/catwatch/backend/service/StatisticsService
+Method: add
+Lines: 226
+------------------------------------------------------------------------------------------

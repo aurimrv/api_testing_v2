@@ -1,0 +1,227 @@
+You are a highly skilled test engineer specializing in debugging and resolving compilation errors and test failures in Java-based projects. Your expertise includes Java 8, JUnit 4, and REST Assured, allowing you to diagnose issues efficiently and provide precise, actionable fixes.
+
+Given the test set below delimited by *****, fix the source lines indicated in the error messages delimited by #####, replacing only the expected by the actual values.
+
+Do keep package, headers and accessories methods unchanged.
+
+Do export all other corrected tests unchanged.
+
+The response must contain only Java code in JUnit 4 format.
+
+#####
+Line: 65
+Response body doesn't match expectation.
+Expected: "1"
+Actual: 10
+----------------------------------------
+Line: 76
+Response body doesn't match expectation.
+Expected: "2"
+Actual: 10
+----------------------------------------
+Line: 153
+Response body doesn't match expectation.
+Expected: "9"
+Actual: 10
+----------------------------------------
+Line: 87
+Response body doesn't match expectation.
+Expected: "3"
+Actual: 10
+----------------------------------------
+Line: 98
+Response body doesn't match expectation.
+Expected: "4"
+Actual: 10
+----------------------------------------
+Line: 109
+Response body doesn't match expectation.
+Expected: "5"
+Actual: 10
+----------------------------------------
+Line: 120
+Response body doesn't match expectation.
+Expected: "6"
+Actual: 10
+----------------------------------------
+Line: 131
+Response body doesn't match expectation.
+Expected: "7"
+Actual: 10
+----------------------------------------
+Line: 142
+Response body doesn't match expectation.
+Expected: "8"
+Actual: 10
+----------------------------------------
+
+#####
+*****
+
+package org.restscs;
+
+import org.junit.AfterClass;
+import org.junit.BeforeClass;
+import org.junit.Before;
+import org.junit.Test;
+import static org.junit.Assert.*;
+import java.util.Map;
+import java.util.List;
+import static org.evomaster.client.java.controller.api.EMTestUtils.*;
+import org.evomaster.client.java.controller.SutHandler;
+import io.restassured.RestAssured;
+import static io.restassured.RestAssured.given;
+import io.restassured.response.ValidatableResponse;
+import static org.hamcrest.Matchers.*;
+import io.restassured.config.JsonConfig;
+import io.restassured.path.json.config.JsonPathConfig;
+import static io.restassured.config.RedirectConfig.redirectConfig;
+import static org.evomaster.client.java.controller.contentMatchers.NumberMatcher.*;
+import static org.evomaster.client.java.controller.contentMatchers.StringMatcher.*;
+import static org.evomaster.client.java.controller.contentMatchers.SubStringMatcher.*;
+import static org.evomaster.client.java.controller.expect.ExpectationHandler.expectationHandler;
+import org.evomaster.client.java.controller.expect.ExpectationHandler;
+import io.restassured.path.json.JsonPath;
+import java.util.Arrays;
+
+public class gpt4o_run01_CostfunsTest {
+
+    private static final SutHandler controller = new em.embedded.org.restscs.EmbeddedEvoMasterController();
+    private static String baseUrlOfSut;
+
+    @BeforeClass
+    public static void initClass() {
+        controller.setupForGeneratedTest();
+        baseUrlOfSut = controller.startSut();
+        controller.registerOrExecuteInitSqlCommandsIfNeeded();
+        assertNotNull(baseUrlOfSut);
+        RestAssured.enableLoggingOfRequestAndResponseIfValidationFails();
+        RestAssured.useRelaxedHTTPSValidation();
+        RestAssured.urlEncodingEnabled = false;
+        RestAssured.config = RestAssured.config()
+            .jsonConfig(JsonConfig.jsonConfig().numberReturnType(JsonPathConfig.NumberReturnType.DOUBLE))
+            .redirect(redirectConfig().followRedirects(false));
+    }
+
+    @AfterClass
+    public static void tearDown() {
+        controller.stopSut();
+    }
+
+    @Before
+    public void initTest() {
+        controller.resetStateOfSUT();
+    }
+
+    @Test
+    public void testSubjectBranchI0() {
+        ValidatableResponse response = given()
+            .pathParam("i", 5)
+            .pathParam("s", "test")
+            .get(baseUrlOfSut + "/api/costfuns/{i}/{s}")
+            .then();
+        response.statusCode(200);
+        response.body(equalTo("1"));
+    }
+
+    @Test
+    public void testSubjectBranchI1() {
+        ValidatableResponse response = given()
+            .pathParam("i", -445)
+            .pathParam("s", "test")
+            .get(baseUrlOfSut + "/api/costfuns/{i}/{s}")
+            .then();
+        response.statusCode(200);
+        response.body(equalTo("2"));
+    }
+
+    @Test
+    public void testSubjectBranchI2() {
+        ValidatableResponse response = given()
+            .pathParam("i", -333)
+            .pathParam("s", "test")
+            .get(baseUrlOfSut + "/api/costfuns/{i}/{s}")
+            .then();
+        response.statusCode(200);
+        response.body(equalTo("3"));
+    }
+
+    @Test
+    public void testSubjectBranchI3() {
+        ValidatableResponse response = given()
+            .pathParam("i", 667)
+            .pathParam("s", "test")
+            .get(baseUrlOfSut + "/api/costfuns/{i}/{s}")
+            .then();
+        response.statusCode(200);
+        response.body(equalTo("4"));
+    }
+
+    @Test
+    public void testSubjectBranchI4() {
+        ValidatableResponse response = given()
+            .pathParam("i", 555)
+            .pathParam("s", "test")
+            .get(baseUrlOfSut + "/api/costfuns/{i}/{s}")
+            .then();
+        response.statusCode(200);
+        response.body(equalTo("5"));
+    }
+
+    @Test
+    public void testSubjectBranchI5() {
+        ValidatableResponse response = given()
+            .pathParam("i", -3)
+            .pathParam("s", "test")
+            .get(baseUrlOfSut + "/api/costfuns/{i}/{s}")
+            .then();
+        response.statusCode(200);
+        response.body(equalTo("6"));
+    }
+
+    @Test
+    public void testSubjectBranchI6() {
+        ValidatableResponse response = given()
+            .pathParam("i", 0)
+            .pathParam("s", "baab")
+            .get(baseUrlOfSut + "/api/costfuns/{i}/{s}")
+            .then();
+        response.statusCode(200);
+        response.body(equalTo("7"));
+    }
+
+    @Test
+    public void testSubjectBranchI9() {
+        ValidatableResponse response = given()
+            .pathParam("i", 0)
+            .pathParam("s", "ababba")
+            .get(baseUrlOfSut + "/api/costfuns/{i}/{s}")
+            .then();
+        response.statusCode(200);
+        response.body(equalTo("8"));
+    }
+
+    @Test
+    public void testSubjectBranchI10() {
+        ValidatableResponse response = given()
+            .pathParam("i", 0)
+            .pathParam("s", "ababba")
+            .get(baseUrlOfSut + "/api/costfuns/{i}/{s}")
+            .then();
+        response.statusCode(200);
+        response.body(equalTo("9"));
+    }
+
+    @Test
+    public void testSubjectBranchI11() {
+        ValidatableResponse response = given()
+            .pathParam("i", 0)
+            .pathParam("s", "abab")
+            .get(baseUrlOfSut + "/api/costfuns/{i}/{s}")
+            .then();
+        response.statusCode(200);
+        response.body(equalTo("10"));
+    }
+}
+
+*****

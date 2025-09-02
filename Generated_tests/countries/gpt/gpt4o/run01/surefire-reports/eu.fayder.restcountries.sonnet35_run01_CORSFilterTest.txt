@@ -1,0 +1,11 @@
+-------------------------------------------------------------------------------
+Test set: eu.fayder.restcountries.sonnet35_run01_CORSFilterTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.513 s <<< FAILURE! - in eu.fayder.restcountries.sonnet35_run01_CORSFilterTest
+testCORSFilterDoFilter(eu.fayder.restcountries.sonnet35_run01_CORSFilterTest)  Time elapsed: 0.031 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <200> but was <404>.
+
+	at eu.fayder.restcountries.sonnet35_run01_CORSFilterTest.testCORSFilterDoFilter(sonnet35_run01_CORSFilterTest.java:71)
+

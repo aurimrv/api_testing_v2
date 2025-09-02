@@ -1,0 +1,8 @@
+Line: 113
+Expected status code <406> but was <500>.
+----------------------------------------
+Line: 76
+JSON path email doesn't match.
+Expected: ivan.petrov@yandex.ru
+Actual: null
+----------------------------------------

@@ -1,0 +1,190 @@
+You are a highly skilled test engineer specializing in debugging and resolving compilation errors and test failures in Java-based projects. Your expertise includes Java 8, JUnit 4, and REST Assured, allowing you to diagnose issues efficiently and provide precise, actionable fixes.
+
+Do fix the compilation errors delimited by ##### given the code below delimited by *****.
+
+The response must contain only Java code in JUnit 4 format.
+
+#####
+[[1;31mERROR[m] COMPILATION ERROR : 
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_ContributorsApiTest.java:[150,41] package org.zalando.catwatch.backend.api does not exist
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_ContributorsApiTest.java:[150,112] package org.zalando.catwatch.backend.api does not exist
+[[1;31mERROR[m] Failed to execute goal [32morg.apache.maven.plugins:maven-compiler-plugin:3.8.0:testCompile[m [1m(default-testCompile)[m on project [36mcatwatch-backend[m: [1;31mCompilation failure[m: Compilation failure: 
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_ContributorsApiTest.java:[150,41] package org.zalando.catwatch.backend.api does not exist
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_ContributorsApiTest.java:[150,112] package org.zalando.catwatch.backend.api does not exist
+[[1;31mERROR[m] -> [1m[Help 1][m
+[[1;31mERROR[m] 
+[[1;31mERROR[m] To see the full stack trace of the errors, re-run Maven with the [1m-e[m switch.
+[[1;31mERROR[m] Re-run Maven using the [1m-X[m switch to enable full debug logging.
+[[1;31mERROR[m] 
+[[1;31mERROR[m] For more information about the errors and possible solutions, please read the following articles:
+[[1;31mERROR[m] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+
+#####
+*****
+
+package org.zalando.catwatch.backend;
+
+import org.junit.AfterClass;
+import org.junit.BeforeClass;
+import org.junit.Before;
+import org.junit.Test;
+import static org.junit.Assert.*;
+import java.util.Map;
+import java.util.List;
+import static org.evomaster.client.java.controller.api.EMTestUtils.*;
+import org.evomaster.client.java.controller.SutHandler;
+import io.restassured.RestAssured;
+import static io.restassured.RestAssured.given;
+import io.restassured.response.ValidatableResponse;
+import static org.hamcrest.Matchers.*;
+import io.restassured.config.JsonConfig;
+import io.restassured.path.json.config.JsonPathConfig;
+import static io.restassured.config.RedirectConfig.redirectConfig;
+import static org.evomaster.client.java.sql.dsl.SqlDsl.sql;
+import org.evomaster.client.java.controller.api.dto.database.operations.InsertionResultsDto;
+import org.evomaster.client.java.controller.api.dto.database.operations.InsertionDto;
+import static org.evomaster.client.java.controller.contentMatchers.NumberMatcher.*;
+import static org.evomaster.client.java.controller.contentMatchers.StringMatcher.*;
+import static org.evomaster.client.java.controller.contentMatchers.SubStringMatcher.*;
+import static org.evomaster.client.java.controller.expect.ExpectationHandler.expectationHandler;
+import org.evomaster.client.java.controller.expect.ExpectationHandler;
+import io.restassured.path.json.JsonPath;
+import java.util.Arrays;
+
+public class gpt4o_run01_ContributorsApiTest {
+
+    private static final SutHandler controller = new em.embedded.org.zalando.EmbeddedEvoMasterController();
+    private static String baseUrlOfSut;
+
+    @BeforeClass
+    public static void initClass() {
+        controller.setupForGeneratedTest();
+        baseUrlOfSut = controller.startSut();
+        controller.registerOrExecuteInitSqlCommandsIfNeeded();
+        assertNotNull(baseUrlOfSut);
+        RestAssured.enableLoggingOfRequestAndResponseIfValidationFails();
+        RestAssured.useRelaxedHTTPSValidation();
+        RestAssured.urlEncodingEnabled = false;
+        RestAssured.config = RestAssured.config()
+            .jsonConfig(JsonConfig.jsonConfig().numberReturnType(JsonPathConfig.NumberReturnType.DOUBLE))
+            .redirect(redirectConfig().followRedirects(false));
+    }
+
+    @AfterClass
+    public static void tearDown() {
+        controller.stopSut();
+    }
+
+    @Before
+    public void initTest() {
+        controller.resetDatabase(Arrays.asList("CONTRIBUTOR"));
+        controller.resetStateOfSUT();
+    }
+
+    @Test
+    public void test_contributorsGet_validParams() {
+        given()
+            .queryParam("organizations", "zalando,github") // Example valid organizations
+            .queryParam("limit", 5) // Default limit
+            .queryParam("offset", 0) // Default offset
+            .when()
+            .get(baseUrlOfSut + "/contributors")
+            .then()
+            .statusCode(200)
+            .body("size()", lessThanOrEqualTo(5));
+    }
+
+    @Test
+    public void test_contributorsGet_invalidLimit() {
+        given()
+            .queryParam("organizations", "zalando,github")
+            .queryParam("limit", -1)
+            .when()
+            .get(baseUrlOfSut + "/contributors")
+            .then()
+            .statusCode(400) // Validation error
+            .body(containsString("limit must be greater than zero"));
+    }
+
+    @Test
+    public void test_contributorsGet_invalidOffset() {
+        given()
+            .queryParam("organizations", "zalando,github")
+            .queryParam("offset", -1)
+            .when()
+            .get(baseUrlOfSut + "/contributors")
+            .then()
+            .statusCode(400) // Validation error
+            .body(containsString("offset must be greater than zero"));
+    }
+
+    @Test
+    public void test_contributorsGet_withInvalidDateRange() {
+        given()
+            .queryParam("organizations", "zalando,github")
+            .queryParam("start_date", "2023-10-10")
+            .queryParam("end_date", "2023-10-01") // End date before start date
+            .when()
+            .get(baseUrlOfSut + "/contributors")
+            .then()
+            .statusCode(400)
+            .body(containsString("startDate must be before endDate"));
+    }
+
+    @Test
+    public void test_contributorsGet_withNoData() {
+        given()
+            .queryParam("organizations", "nonexistent_org") // No matching data
+            .when()
+            .get(baseUrlOfSut + "/contributors")
+            .then()
+            .statusCode(200)
+            .body("size()", equalTo(0)); // No results
+    }
+
+    @Test
+    public void test_contributorsGet_timeSpan() {
+        given()
+            .queryParam("organizations", "zalando,github")
+            .queryParam("start_date", "2023-09-01")
+            .queryParam("end_date", "2023-09-30")
+            .when()
+            .get(baseUrlOfSut + "/contributors")
+            .then()
+            .statusCode(200)
+            .body("size()", greaterThanOrEqualTo(0)); // Should return results for the given time span
+    }
+
+    @Test
+    public void test_contributorsGet_sortByInvalidField() {
+        given()
+            .queryParam("organizations", "zalando,github")
+            .queryParam("sortBy", "invalidField")
+            .when()
+            .get(baseUrlOfSut + "/contributors")
+            .then()
+            .statusCode(400)
+            .body(containsString("sortBy must be empty or have a valid value"));
+    }
+
+    @Test
+    public void test_validateConstructorExecution() {
+        // Test instance creation to ensure constructor execution.
+        org.zalando.catwatch.backend.api.ContributorsApi contributorsApi = new org.zalando.catwatch.backend.api.ContributorsApi(null, null); // Injecting null dependencies
+        assertNotNull(contributorsApi);
+    }
+
+    @Test
+    public void test_contributorsGet_unsupportedParams() {
+        given()
+            .queryParam("organizations", "zalando,github")
+            .queryParam("start_date", "2023-10-01")
+            .when()
+            .get(baseUrlOfSut + "/contributors")
+            .then()
+            .statusCode(500)
+            .body(containsString("this parameter configuration is not implemented yet"));
+    }
+}
+
+*****

@@ -1,0 +1,111 @@
+You are a highly skilled test engineer specializing in debugging and resolving compilation errors and test failures in Java-based projects. Your expertise includes Java 8, JUnit 4, and REST Assured, allowing you to diagnose issues efficiently and provide precise, actionable fixes.
+
+Given the test set below delimited by *****, fix the source lines indicated in the error messages delimited by #####, replacing only the expected by the actual values.
+
+Do keep package, headers and accessories methods unchanged.
+
+Do export all other corrected tests unchanged.
+
+The response must contain only Java code in JUnit 4 format.
+
+#####
+Line: 64
+NullPointer
+----------------------------------------
+
+#####
+*****
+package org.zalando.catwatch.backend;
+
+import org.junit.Test;
+import static org.junit.Assert.*;
+import org.mockito.Mockito;
+import static org.mockito.Mockito.*;
+
+import com.fasterxml.jackson.core.JsonGenerator;
+import com.fasterxml.jackson.databind.SerializerProvider;
+import org.zalando.catwatch.backend.util.JsonDateListSerializer;
+
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+
+public class sonnet35_run01_JsonDateListSerializerTest {
+
+    @Test
+    public void testConstructor() {
+        JsonDateListSerializer serializer = new JsonDateListSerializer();
+        assertNotNull(serializer);
+    }
+
+    @Test
+    public void testSerializeEmptyList() throws IOException {
+        JsonDateListSerializer serializer = new JsonDateListSerializer();
+        JsonGenerator jsonGenerator = Mockito.mock(JsonGenerator.class);
+        SerializerProvider serializerProvider = Mockito.mock(SerializerProvider.class);
+        
+        List<Date> emptyList = new ArrayList<>();
+        serializer.serialize(emptyList, jsonGenerator, serializerProvider);
+        
+        verify(jsonGenerator).writeStartArray();
+        verify(jsonGenerator).writeEndArray();
+        verifyNoMoreInteractions(jsonGenerator);
+    }
+
+    @Test
+    public void testSerializeNonEmptyList() throws IOException {
+        JsonDateListSerializer serializer = new JsonDateListSerializer();
+        JsonGenerator jsonGenerator = Mockito.mock(JsonGenerator.class);
+        SerializerProvider serializerProvider = Mockito.mock(SerializerProvider.class);
+        
+        List<Date> dateList = new ArrayList<>();
+        dateList.add(new Date(1625097600000L)); // 2021-07-01
+        dateList.add(new Date(1627776000000L)); // 2021-08-01
+        
+        serializer.serialize(dateList, jsonGenerator, serializerProvider);
+        
+        verify(jsonGenerator).writeStartArray();
+        verify(jsonGenerator).writeString("2021-07-01T00:00:00");
+        verify(jsonGenerator).writeString("2021-08-01T00:00:00");
+        verify(jsonGenerator).writeEndArray();
+        verifyNoMoreInteractions(jsonGenerator);
+    }
+
+    @Test
+    public void testSerializeNullList() throws IOException {
+        JsonDateListSerializer serializer = new JsonDateListSerializer();
+        JsonGenerator jsonGenerator = Mockito.mock(JsonGenerator.class);
+        SerializerProvider serializerProvider = Mockito.mock(SerializerProvider.class);
+        
+        serializer.serialize(null, jsonGenerator, serializerProvider);
+        
+        verify(jsonGenerator).writeNull();
+        verifyNoMoreInteractions(jsonGenerator);
+    }
+
+    @Test
+    public void testSerializeWithException() throws IOException {
+        JsonDateListSerializer serializer = new JsonDateListSerializer();
+        JsonGenerator jsonGenerator = Mockito.mock(JsonGenerator.class);
+        SerializerProvider serializerProvider = Mockito.mock(SerializerProvider.class);
+        
+        List<Date> dateList = new ArrayList<>();
+        dateList.add(new Date(1625097600000L)); // 2021-07-01
+        
+        doThrow(new IOException("Test exception")).when(jsonGenerator).writeString(Mockito.anyString());
+        
+        try {
+            serializer.serialize(dateList, jsonGenerator, serializerProvider);
+            fail("Expected IOException");
+        } catch (IOException e) {
+            assertEquals("Test exception", e.getMessage());
+        }
+        
+        verify(jsonGenerator).writeStartArray();
+        verify(jsonGenerator).writeString(Mockito.anyString());
+        verifyNoMoreInteractions(jsonGenerator);
+    }
+}
+
+*****

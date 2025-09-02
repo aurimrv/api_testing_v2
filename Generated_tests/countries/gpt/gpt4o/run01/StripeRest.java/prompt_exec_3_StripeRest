@@ -1,0 +1,213 @@
+You are a highly skilled test engineer specializing in debugging and resolving compilation errors and test failures in Java-based projects. Your expertise includes Java 8, JUnit 4, and REST Assured, allowing you to diagnose issues efficiently and provide precise, actionable fixes.
+
+Given the test set below delimited by *****, fix the source lines indicated in the error messages delimited by #####, replacing only the expected by the actual values.
+
+Do keep package, headers and accessories methods unchanged.
+
+Do export all other corrected tests unchanged.
+
+The response must contain only Java code in JUnit 4 format.
+
+#####
+Line: 111
+JSON path code doesn't match.
+Expected: is <404>
+Actual: null
+----------------------------------------
+Line: 143
+JSON path code doesn't match.
+Expected: is <404>
+Actual: null
+----------------------------------------
+Line: 127
+JSON path code doesn't match.
+Expected: is <404>
+Actual: null
+----------------------------------------
+Line: 171
+JSON path code doesn't match.
+Expected: is <404>
+Actual: null
+----------------------------------------
+Line: 90
+IllegalArgument
+----------------------------------------
+
+#####
+*****
+
+package eu.fayder.restcountries;
+
+import org.junit.AfterClass;
+import org.junit.BeforeClass;
+import org.junit.Before;
+import org.junit.Test;
+import static org.junit.Assert.*;
+import java.util.Map;
+import java.util.List;
+import static org.evomaster.client.java.controller.api.EMTestUtils.*;
+import org.evomaster.client.java.controller.SutHandler;
+import io.restassured.RestAssured;
+import static io.restassured.RestAssured.given;
+import io.restassured.response.ValidatableResponse;
+import static org.hamcrest.Matchers.*;
+import io.restassured.config.JsonConfig;
+import io.restassured.path.json.config.JsonPathConfig;
+import static io.restassured.config.RedirectConfig.redirectConfig;
+import static org.evomaster.client.java.controller.contentMatchers.NumberMatcher.*;
+import static org.evomaster.client.java.controller.contentMatchers.StringMatcher.*;
+import static org.evomaster.client.java.controller.contentMatchers.SubStringMatcher.*;
+import static org.evomaster.client.java.controller.expect.ExpectationHandler.expectationHandler;
+import org.evomaster.client.java.controller.expect.ExpectationHandler;
+import io.restassured.path.json.JsonPath;
+import java.util.Arrays;
+
+class StripeRest {
+    public StripeRest() {
+        // Constructor implementation
+    }
+
+    public boolean isBlank(String input) {
+        return input == null || input.trim().isEmpty();
+    }
+}
+
+public class gpt4o_run01_StripeRestTest {
+
+    private static final SutHandler controller = new em.embedded.eu.fayder.EmbeddedEvoMasterController();
+    private static String baseUrlOfSut;
+
+    @BeforeClass
+    public static void initClass() {
+        controller.setupForGeneratedTest();
+        baseUrlOfSut = controller.startSut();
+        controller.registerOrExecuteInitSqlCommandsIfNeeded();
+        assertNotNull(baseUrlOfSut);
+        RestAssured.enableLoggingOfRequestAndResponseIfValidationFails();
+        RestAssured.useRelaxedHTTPSValidation();
+        RestAssured.urlEncodingEnabled = false;
+        RestAssured.config = RestAssured.config()
+            .jsonConfig(JsonConfig.jsonConfig().numberReturnType(JsonPathConfig.NumberReturnType.DOUBLE))
+            .redirect(redirectConfig().followRedirects(false));
+    }
+
+    @AfterClass
+    public static void tearDown() {
+        controller.stopSut();
+    }
+
+    @Before
+    public void initTest() {
+        controller.resetStateOfSUT();
+    }
+
+    // Test case to explicitly instantiate StripeRest to cover constructor
+    @Test
+    public void testConstructor() {
+        StripeRest stripeRest = new StripeRest();
+        assertNotNull(stripeRest);
+    }
+
+    // Test for isBlank method
+    @Test
+    public void testIsBlank() {
+        StripeRest stripeRest = new StripeRest();
+
+        assertTrue(stripeRest.isBlank(null)); // Null input
+        assertTrue(stripeRest.isBlank("")); // Empty string
+        assertTrue(stripeRest.isBlank("   ")); // Whitespaces
+        assertFalse(stripeRest.isBlank("test")); // Non-empty string
+    }
+
+    // Test for contribute method - null contribution
+    @Test
+    public void testContributeNullContribution() {
+        given()
+            .contentType("application/json")
+            .body((String) null)
+        .when()
+            .post(baseUrlOfSut + "/contribute")
+        .then()
+            .statusCode(404) // Updated from 400 to 404
+            .body("code", is(404)) // Updated from 400 to 404
+            .body("message", is("Not Found")); // Updated message
+    }
+
+    // Test for contribute method - blank token
+    @Test
+    public void testContributeBlankToken() {
+        String body = "{\"token\": \" \", \"amount\": 100}";
+
+        given()
+            .contentType("application/json")
+            .body(body)
+        .when()
+            .post(baseUrlOfSut + "/contribute")
+        .then()
+            .statusCode(404) // Updated from 400 to 404
+            .body("code", is(404)) // Updated from 400 to 404
+            .body("message", is("Not Found")); // Updated message
+    }
+
+    // Test for contribute method - valid contribution
+    @Test
+    public void testContributeValid() {
+        String body = "{\"token\": \"valid_token\", \"amount\": 100}";
+
+        given()
+            .contentType("application/json")
+            .body(body)
+        .when()
+            .post(baseUrlOfSut + "/contribute")
+        .then()
+            .statusCode(404) // Updated from 202 to 404
+            .body("code", is(404)) // Updated from 202 to 404
+            .body("message", is("Not Found")); // Updated message
+    }
+
+    // Test for contribute method - Stripe exceptions
+    @Test
+    public void testContributeStripeException() {
+        String body = "{\"token\": \"invalid_token\", \"amount\": 100}";
+
+        given()
+            .contentType("application/json")
+            .body(body)
+        .when()
+            .post(baseUrlOfSut + "/contribute")
+        .then()
+            .statusCode(404) // Updated from 400 to 404
+            .body("code", is(404)) // Updated from 400 to 404
+            .body("message", is("Not Found")); // Updated message
+    }
+
+    // Test for getResponse method - BAD_REQUEST
+    @Test
+    public void testGetResponseBadRequest() {
+        ValidatableResponse response = given()
+            .when()
+            .get(baseUrlOfSut + "/nonexistent_endpoint")
+            .then()
+            .statusCode(404); // Updated from 400 to 404
+        
+        assertNotNull(response);
+    }
+
+    // Test for getResponse method - ACCEPTED
+    @Test
+    public void testGetResponseAccepted() {
+        String body = "{\"token\": \"valid_token\", \"amount\": 100}";
+
+        given()
+            .contentType("application/json")
+            .body(body)
+        .when()
+            .post(baseUrlOfSut + "/contribute")
+        .then()
+            .statusCode(404) // Updated from 202 to 404
+            .body("code", is(404)) // Updated from 202 to 404
+            .body("message", is("Not Found")); // Updated message
+    }
+}
+
+*****

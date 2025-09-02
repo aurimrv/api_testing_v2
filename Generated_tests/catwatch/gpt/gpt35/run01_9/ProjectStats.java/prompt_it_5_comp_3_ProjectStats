@@ -1,0 +1,138 @@
+You are a highly skilled test engineer specializing in debugging and resolving compilation errors and test failures in Java-based projects. Your expertise includes Java 8, JUnit 4, and REST Assured, allowing you to diagnose issues efficiently and provide precise, actionable fixes.
+
+Do fix the compilation errors delimited by ##### given the code below delimited by *****.
+
+The response must contain only Java code in JUnit 4 format.
+
+#####
+[[1;31mERROR[m] COMPILATION ERROR : 
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[20,14] cannot find symbol
+  symbol:   class Project
+  location: class gpt35_run01_ProjectStatsTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[21,26] cannot find symbol
+  symbol:   class Project
+  location: class gpt35_run01_ProjectStatsTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[25,9] cannot find symbol
+  symbol:   class ProjectStats
+  location: class gpt35_run01_ProjectStatsTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[25,41] cannot find symbol
+  symbol:   class ProjectStats
+  location: class gpt35_run01_ProjectStatsTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[44,9] cannot find symbol
+  symbol:   class ProjectStats
+  location: class gpt35_run01_ProjectStatsTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[44,41] cannot find symbol
+  symbol:   class ProjectStats
+  location: class gpt35_run01_ProjectStatsTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[57,9] cannot find symbol
+  symbol:   class ProjectStats
+  location: class gpt35_run01_ProjectStatsTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[57,41] cannot find symbol
+  symbol:   class ProjectStats
+  location: class gpt35_run01_ProjectStatsTest
+[[1;31mERROR[m] Failed to execute goal [32morg.apache.maven.plugins:maven-compiler-plugin:3.8.0:testCompile[m [1m(default-testCompile)[m on project [36mcatwatch-backend[m: [1;31mCompilation failure[m: Compilation failure: 
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[20,14] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Project
+[[1;31mERROR[m]   location: class gpt35_run01_ProjectStatsTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[21,26] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Project
+[[1;31mERROR[m]   location: class gpt35_run01_ProjectStatsTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[25,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class ProjectStats
+[[1;31mERROR[m]   location: class gpt35_run01_ProjectStatsTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[25,41] cannot find symbol
+[[1;31mERROR[m]   symbol:   class ProjectStats
+[[1;31mERROR[m]   location: class gpt35_run01_ProjectStatsTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[44,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class ProjectStats
+[[1;31mERROR[m]   location: class gpt35_run01_ProjectStatsTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[44,41] cannot find symbol
+[[1;31mERROR[m]   symbol:   class ProjectStats
+[[1;31mERROR[m]   location: class gpt35_run01_ProjectStatsTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[57,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class ProjectStats
+[[1;31mERROR[m]   location: class gpt35_run01_ProjectStatsTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[57,41] cannot find symbol
+[[1;31mERROR[m]   symbol:   class ProjectStats
+[[1;31mERROR[m]   location: class gpt35_run01_ProjectStatsTest
+[[1;31mERROR[m] -> [1m[Help 1][m
+[[1;31mERROR[m] 
+[[1;31mERROR[m] To see the full stack trace of the errors, re-run Maven with the [1m-e[m switch.
+[[1;31mERROR[m] Re-run Maven using the [1m-X[m switch to enable full debug logging.
+[[1;31mERROR[m] 
+[[1;31mERROR[m] For more information about the errors and possible solutions, please read the following articles:
+[[1;31mERROR[m] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+
+#####
+*****
+
+import org.junit.Test;
+import org.junit.Before;
+import static org.junit.Assert.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Date;
+import java.util.List;
+
+public class gpt35_run01_ProjectStatsTest {
+
+    @Before
+    public void initTest() {
+        // Your initialization code here
+    }
+
+    @Test
+    public void testProjectStatsConstructor() {
+        // Given
+        List<Project> projects = new ArrayList<>();
+        projects.add(new Project("Project1", "Org1", "url1", "description1", "Java",
+                100, 20, 10, new Date(), 50));
+
+        // When
+        ProjectStats projectStats = new ProjectStats(projects);
+
+        // Then
+        assertNotNull(projectStats);
+        assertEquals("Project1", projectStats.getName());
+        assertEquals("Org1", projectStats.getOrganizationName());
+        assertEquals("url1", projectStats.getUrl());
+        assertEquals("Java", projectStats.getPrimaryLanguage());
+        assertEquals("description1", projectStats.getDescription());
+        assertEquals(Arrays.asList(100), projectStats.getCommitCounts());
+        assertEquals(Arrays.asList(20), projectStats.getForkCounts());
+        assertEquals(Arrays.asList(10), projectStats.getContributorsCounts());
+        assertEquals(Arrays.asList(50), projectStats.getScores());
+        assertEquals(Arrays.asList(new Date()), projectStats.getSnapshotDates());
+    }
+
+    @Test
+    public void testGetName() {
+        // Given
+        ProjectStats projectStats = new ProjectStats(new ArrayList<>());
+        projectStats.setName("TestProject");
+
+        // When
+        String projectName = projectStats.getName();
+
+        // Then
+        assertEquals("TestProject", projectName);
+    }
+
+    @Test
+    public void testGetOrganizationName() {
+        // Given
+        ProjectStats projectStats = new ProjectStats(new ArrayList<>());
+        projectStats.setOrganizationName("TestOrganization");
+
+        // When
+        String organizationName = projectStats.getOrganizationName();
+
+        // Then
+        assertEquals("TestOrganization", organizationName);
+    }
+
+    // Add similar tests for other methods based on their logic and usage
+
+}
+
+*****

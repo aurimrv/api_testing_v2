@@ -1,0 +1,186 @@
+You are a highly skilled test engineer specializing in debugging and resolving compilation errors and test failures in Java-based projects. Your expertise includes Java 8, JUnit 4, and REST Assured, allowing you to diagnose issues efficiently and provide precise, actionable fixes.
+
+Given the test set below delimited by *****, fix the source lines indicated in the error messages delimited by #####, replacing only the expected by the actual values.
+
+Do keep package, headers and accessories methods unchanged.
+
+Do export all other corrected tests unchanged.
+
+The response must contain only Java code in JUnit 4 format.
+
+#####
+Line: 75
+InvalidDefinition No serializer...
+----------------------------------------
+
+#####
+*****
+
+package eu.fayder.restcountries;
+
+import org.junit.AfterClass;
+import org.junit.BeforeClass;
+import org.junit.Before;
+import org.junit.Test;
+import static org.junit.Assert.*;
+import java.util.Map;
+import java.util.List;
+import static org.evomaster.client.java.controller.api.EMTestUtils.*;
+import org.evomaster.client.java.controller.SutHandler;
+import io.restassured.RestAssured;
+import static io.restassured.RestAssured.given;
+import io.restassured.response.ValidatableResponse;
+import static org.hamcrest.Matchers.*;
+import io.restassured.config.JsonConfig;
+import io.restassured.path.json.config.JsonPathConfig;
+import static io.restassured.config.RedirectConfig.redirectConfig;
+import org.evomaster.client.java.controller.contentMatchers.NumberMatcher;
+import org.evomaster.client.java.controller.contentMatchers.StringMatcher;
+import org.evomaster.client.java.controller.contentMatchers.SubStringMatcher;
+import org.evomaster.client.java.controller.expect.ExpectationHandler;
+import io.restassured.path.json.JsonPath;
+import java.util.Arrays;
+
+public class gpt35_run01_StripeRestTest {
+
+    private static final SutHandler controller = new em.embedded.eu.fayder.EmbeddedEvoMasterController();
+    private static String baseUrlOfSut;
+
+    @BeforeClass
+    public static void initClass() {
+        controller.setupForGeneratedTest();
+        baseUrlOfSut = controller.startSut();
+        controller.registerOrExecuteInitSqlCommandsIfNeeded();
+        assertNotNull(baseUrlOfSut);
+        RestAssured.enableLoggingOfRequestAndResponseIfValidationFails();
+        RestAssured.useRelaxedHTTPSValidation();
+        RestAssured.urlEncodingEnabled = false;
+        RestAssured.config = RestAssured.config()
+            .jsonConfig(JsonConfig.jsonConfig().numberReturnType(JsonPathConfig.NumberReturnType.DOUBLE))
+            .redirect(redirectConfig().followRedirects(false));
+    }
+
+    @AfterClass
+    public static void tearDown() {
+        controller.stopSut();
+    }
+
+    @Before
+    public void initTest() {
+        controller.resetStateOfSUT();
+    }
+
+    // Testing method isBlank in StripeRest class
+    @Test
+    public void testIsBlank() {
+        StripeRest stripeRest = new StripeRest();
+        assertFalse(stripeRest.isBlank("Test"));
+        assertTrue(stripeRest.isBlank(""));
+        assertTrue(stripeRest.isBlank(null));
+    }
+
+    // Testing method contribute in StripeRest class
+    @Test
+    public void testContribute() {
+        StripeRest stripeRest = new StripeRest();
+        Contribution contribution = new Contribution();
+        contribution.setToken("dummyToken");
+        contribution.setAmount(100);
+
+        ValidatableResponse response = given()
+                .contentType("application/json;charset=utf-8")
+                .body(contribution)
+                .post(baseUrlOfSut + "/contribute")
+                .then()
+                .statusCode(202);
+
+        response.body("status", equalTo("ACCEPTED"));
+
+        contribution.setToken(null);
+
+        response = given()
+                .contentType("application/json;charset=utf-8")
+                .body(contribution)
+                .post(baseUrlOfSut + "/contribute")
+                .then()
+                .statusCode(400);
+
+        response.body("status", equalTo("BAD_REQUEST"));
+    }
+
+    // Testing method getResponse in StripeRest class
+    @Test
+    public void testGetResponse() {
+        StripeRest stripeRest = new StripeRest();
+        Response response = stripeRest.getResponse(Response.Status.ACCEPTED);
+        assertNotNull(response);
+        assertEquals(Response.Status.ACCEPTED.getStatusCode(), response.getStatus());
+        assertEquals(Response.Status.ACCEPTED.getReasonPhrase(), response.getEntity().toString());
+    }
+
+    // Add missing class definitions to resolve compilation errors
+    static class StripeRest {
+        public boolean isBlank(String str) {
+            return str == null || str.trim().isEmpty();
+        }
+
+        public Response getResponse(Response.Status status) {
+            return new Response(status);
+        }
+    }
+
+    static class Contribution {
+        private String token;
+        private int amount;
+
+        public void setToken(String token) {
+            this.token = token;
+        }
+
+        public void setAmount(int amount) {
+            this.amount = amount;
+        }
+    }
+
+    static class Response {
+        private int status;
+        private String entity;
+
+        public Response(Status status) {
+            this.status = status.getStatusCode();
+            this.entity = status.getReasonPhrase();
+        }
+
+        public int getStatus() {
+            return status;
+        }
+
+        public String getEntity() {
+            return entity;
+        }
+
+        static class Status {
+            public static final Status ACCEPTED = new Status(202, "ACCEPTED");
+            public static final Status BAD_REQUEST = new Status(400, "BAD_REQUEST");
+
+            private int statusCode;
+            private String reasonPhrase;
+
+            public Status(int statusCode, String reasonPhrase) {
+                this.statusCode = statusCode;
+                this.reasonPhrase = reasonPhrase;
+            }
+
+            public int getStatusCode() {
+                return statusCode;
+            }
+
+            public String getReasonPhrase() {
+                return reasonPhrase;
+            }
+        }
+    }
+}
+
+
+*****

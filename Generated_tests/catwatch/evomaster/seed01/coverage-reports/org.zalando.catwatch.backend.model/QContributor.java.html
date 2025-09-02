@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="pt"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>QContributor.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">catwatch-backend</a> &gt; <a href="index.source.html" class="el_package">org.zalando.catwatch.backend.model</a> &gt; <span class="el_source">QContributor.java</span></div><h1>QContributor.java</h1><pre class="source lang-java linenums">package org.zalando.catwatch.backend.model;
+
+import static com.mysema.query.types.PathMetadataFactory.*;
+
+import com.mysema.query.types.path.*;
+
+import com.mysema.query.types.PathMetadata;
+import javax.annotation.Generated;
+import com.mysema.query.types.Path;
+
+
+/**
+ * QContributor is a Querydsl query type for Contributor
+ */
+@Generated(&quot;com.mysema.query.codegen.EntitySerializer&quot;)
+public class QContributor extends EntityPathBase&lt;Contributor&gt; {
+
+    private static final long serialVersionUID = -211140254L;
+
+<span class="nc" id="L20">    public static final QContributor contributor = new QContributor(&quot;contributor&quot;);</span>
+
+<span class="nc" id="L22">    public final SimplePath&lt;ContributorKey&gt; key = createSimple(&quot;key&quot;, ContributorKey.class);</span>
+
+<span class="nc" id="L24">    public final StringPath name = createString(&quot;name&quot;);</span>
+
+<span class="nc" id="L26">    public final NumberPath&lt;Integer&gt; organizationalCommitsCount = createNumber(&quot;organizationalCommitsCount&quot;, Integer.class);</span>
+
+<span class="nc" id="L28">    public final NumberPath&lt;Integer&gt; organizationalProjectsCount = createNumber(&quot;organizationalProjectsCount&quot;, Integer.class);</span>
+
+<span class="nc" id="L30">    public final StringPath organizationName = createString(&quot;organizationName&quot;);</span>
+
+<span class="nc" id="L32">    public final NumberPath&lt;Integer&gt; personalCommitsCount = createNumber(&quot;personalCommitsCount&quot;, Integer.class);</span>
+
+<span class="nc" id="L34">    public final NumberPath&lt;Integer&gt; personalProjectsCount = createNumber(&quot;personalProjectsCount&quot;, Integer.class);</span>
+
+<span class="nc" id="L36">    public final StringPath url = createString(&quot;url&quot;);</span>
+
+    public QContributor(String variable) {
+<span class="nc" id="L39">        super(Contributor.class, forVariable(variable));</span>
+<span class="nc" id="L40">    }</span>
+
+    public QContributor(Path&lt;? extends Contributor&gt; path) {
+<span class="nc" id="L43">        super(path.getType(), path.getMetadata());</span>
+<span class="nc" id="L44">    }</span>
+
+    public QContributor(PathMetadata&lt;?&gt; metadata) {
+<span class="nc" id="L47">        super(Contributor.class, metadata);</span>
+<span class="nc" id="L48">    }</span>
+
+}
+
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="pt"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>QStatistics.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">catwatch-backend</a> &gt; <a href="index.source.html" class="el_package">org.zalando.catwatch.backend.model</a> &gt; <span class="el_source">QStatistics.java</span></div><h1>QStatistics.java</h1><pre class="source lang-java linenums">package org.zalando.catwatch.backend.model;
+
+import static com.mysema.query.types.PathMetadataFactory.*;
+
+import com.mysema.query.types.path.*;
+
+import com.mysema.query.types.PathMetadata;
+import javax.annotation.Generated;
+import com.mysema.query.types.Path;
+import com.mysema.query.types.path.PathInits;
+
+
+/**
+ * QStatistics is a Querydsl query type for Statistics
+ */
+@Generated(&quot;com.mysema.query.codegen.EntitySerializer&quot;)
+public class QStatistics extends EntityPathBase&lt;Statistics&gt; {
+
+    private static final long serialVersionUID = -1148640324L;
+
+<span class="nc" id="L21">    private static final PathInits INITS = PathInits.DIRECT2;</span>
+
+<span class="nc" id="L23">    public static final QStatistics statistics = new QStatistics(&quot;statistics&quot;);</span>
+
+<span class="nc" id="L25">    public final NumberPath&lt;Integer&gt; allContributorsCount = createNumber(&quot;allContributorsCount&quot;, Integer.class);</span>
+
+<span class="nc" id="L27">    public final NumberPath&lt;Integer&gt; allForksCount = createNumber(&quot;allForksCount&quot;, Integer.class);</span>
+
+<span class="nc" id="L29">    public final NumberPath&lt;Integer&gt; allSizeCount = createNumber(&quot;allSizeCount&quot;, Integer.class);</span>
+
+<span class="nc" id="L31">    public final NumberPath&lt;Integer&gt; allStarsCount = createNumber(&quot;allStarsCount&quot;, Integer.class);</span>
+
+<span class="nc" id="L33">    public final NumberPath&lt;Integer&gt; externalContributorsCount = createNumber(&quot;externalContributorsCount&quot;, Integer.class);</span>
+
+    public final QStatisticsKey key;
+
+<span class="nc" id="L37">    public final NumberPath&lt;Integer&gt; membersCount = createNumber(&quot;membersCount&quot;, Integer.class);</span>
+
+<span class="nc" id="L39">    public final StringPath organizationName = createString(&quot;organizationName&quot;);</span>
+
+<span class="nc" id="L41">    public final NumberPath&lt;Integer&gt; privateProjectCount = createNumber(&quot;privateProjectCount&quot;, Integer.class);</span>
+
+<span class="nc" id="L43">    public final NumberPath&lt;Integer&gt; programLanguagesCount = createNumber(&quot;programLanguagesCount&quot;, Integer.class);</span>
+
+<span class="nc" id="L45">    public final NumberPath&lt;Integer&gt; publicProjectCount = createNumber(&quot;publicProjectCount&quot;, Integer.class);</span>
+
+<span class="nc" id="L47">    public final NumberPath&lt;Integer&gt; tagsCount = createNumber(&quot;tagsCount&quot;, Integer.class);</span>
+
+<span class="nc" id="L49">    public final NumberPath&lt;Integer&gt; teamsCount = createNumber(&quot;teamsCount&quot;, Integer.class);</span>
+
+    public QStatistics(String variable) {
+<span class="nc" id="L52">        this(Statistics.class, forVariable(variable), INITS);</span>
+<span class="nc" id="L53">    }</span>
+
+    public QStatistics(Path&lt;? extends Statistics&gt; path) {
+<span class="nc bnc" id="L56" title="All 2 branches missed.">        this(path.getType(), path.getMetadata(), path.getMetadata().isRoot() ? INITS : PathInits.DEFAULT);</span>
+<span class="nc" id="L57">    }</span>
+
+    public QStatistics(PathMetadata&lt;?&gt; metadata) {
+<span class="nc bnc" id="L60" title="All 2 branches missed.">        this(metadata, metadata.isRoot() ? INITS : PathInits.DEFAULT);</span>
+<span class="nc" id="L61">    }</span>
+
+    public QStatistics(PathMetadata&lt;?&gt; metadata, PathInits inits) {
+<span class="nc" id="L64">        this(Statistics.class, metadata, inits);</span>
+<span class="nc" id="L65">    }</span>
+
+    public QStatistics(Class&lt;? extends Statistics&gt; type, PathMetadata&lt;?&gt; metadata, PathInits inits) {
+<span class="nc" id="L68">        super(type, metadata, inits);</span>
+<span class="nc bnc" id="L69" title="All 2 branches missed.">        this.key = inits.isInitialized(&quot;key&quot;) ? new QStatisticsKey(forProperty(&quot;key&quot;)) : null;</span>
+<span class="nc" id="L70">    }</span>
+
+}
+
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

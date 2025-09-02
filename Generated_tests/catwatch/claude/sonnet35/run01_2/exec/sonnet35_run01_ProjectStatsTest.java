@@ -1,0 +1,208 @@
+package org.zalando.catwatch.backend;
+
+import org.junit.AfterClass;
+import org.junit.Ignore;
+import org.junit.BeforeClass;
+import org.junit.Before;
+import org.junit.Test;
+import static org.junit.Assert.*;
+import java.util.Map;
+import java.util.List;
+import static org.evomaster.client.java.controller.api.EMTestUtils.*;
+import org.evomaster.client.java.controller.SutHandler;
+import io.restassured.RestAssured;
+import static io.restassured.RestAssured.given;
+import io.restassured.response.ValidatableResponse;
+import static org.evomaster.client.java.sql.dsl.SqlDsl.sql;
+import org.evomaster.client.java.controller.api.dto.database.operations.InsertionResultsDto;
+import org.evomaster.client.java.controller.api.dto.database.operations.InsertionDto;
+import static org.hamcrest.Matchers.*;
+import io.restassured.config.JsonConfig;
+import io.restassured.path.json.config.JsonPathConfig;
+import static io.restassured.config.RedirectConfig.redirectConfig;
+import static org.evomaster.client.java.controller.contentMatchers.NumberMatcher.*;
+import static org.evomaster.client.java.controller.contentMatchers.StringMatcher.*;
+import static org.evomaster.client.java.controller.contentMatchers.SubStringMatcher.*;
+import static org.evomaster.client.java.controller.expect.ExpectationHandler.expectationHandler;
+import org.evomaster.client.java.controller.expect.ExpectationHandler;
+import io.restassured.path.json.JsonPath;
+import java.util.Arrays;
+import org.zalando.catwatch.backend.util.ProjectStats;
+import org.zalando.catwatch.backend.model.Project;
+import java.util.ArrayList;
+import java.util.Date;
+
+public class sonnet35_run01_ProjectStatsTest {
+
+    private static final SutHandler controller = new em.embedded.org.zalando.EmbeddedEvoMasterController();
+    private static String baseUrlOfSut;
+
+    @BeforeClass
+    public static void initClass() {
+        controller.setupForGeneratedTest();
+        baseUrlOfSut = controller.startSut();
+        controller.registerOrExecuteInitSqlCommandsIfNeeded();
+        assertNotNull(baseUrlOfSut);
+        RestAssured.enableLoggingOfRequestAndResponseIfValidationFails();
+        RestAssured.useRelaxedHTTPSValidation();
+        RestAssured.urlEncodingEnabled = false;
+        RestAssured.config = RestAssured.config()
+            .jsonConfig(JsonConfig.jsonConfig().numberReturnType(JsonPathConfig.NumberReturnType.DOUBLE))
+            .redirect(redirectConfig().followRedirects(false));
+    }
+
+    @AfterClass
+    public static void tearDown() {
+        controller.stopSut();
+    }
+
+    @Before
+    public void initTest() {
+        controller.resetDatabase(Arrays.asList("CONTRIBUTOR"));
+        controller.resetStateOfSUT();
+    }
+
+    @Test
+    public void testConstructor() {
+        List<Project> projects = new ArrayList<>();
+        Project project = new Project();
+        project.setName("TestProject");
+        project.setOrganizationName("TestOrg");
+        project.setUrl("http://test.com");
+        project.setDescription("Test Description");
+        project.setPrimaryLanguage("Java");
+        project.setCommitsCount(100);
+        project.setForksCount(10);
+        project.setContributorsCount(5);
+        project.setScore(80);
+        project.setSnapshotDate(new Date());
+        projects.add(project);
+
+        ProjectStats stats = new ProjectStats(projects);
+
+        assertEquals("TestProject", stats.getName());
+        assertEquals("TestOrg", stats.getOrganizationName());
+        assertEquals("http://test.com", stats.getUrl());
+        assertEquals("Test Description", stats.getDescription());
+        assertEquals("Java", stats.getPrimaryLanguage());
+        assertEquals(1, stats.getCommitCounts().size());
+        assertEquals(100, (int) stats.getCommitCounts().get(0));
+        assertEquals(1, stats.getForkCounts().size());
+        assertEquals(10, (int) stats.getForkCounts().get(0));
+        assertEquals(1, stats.getContributorsCounts().size());
+        assertEquals(5, (int) stats.getContributorsCounts().get(0));
+        assertEquals(1, stats.getScores().size());
+        assertEquals(80, (int) stats.getScores().get(0));
+        assertEquals(1, stats.getSnapshotDates().size());
+    }
+
+    @Test
+    public void testConstructorWithMultipleProjects() {
+        List<Project> projects = new ArrayList<>();
+        for (int i = 0; i < 3; i++) {
+            Project project = new Project();
+            project.setName("TestProject");
+            project.setOrganizationName("TestOrg");
+            project.setUrl("http://test.com");
+            project.setDescription("Test Description");
+            project.setPrimaryLanguage("Java");
+            project.setCommitsCount(100 + i);
+            project.setForksCount(10 + i);
+            project.setContributorsCount(5 + i);
+            project.setScore(80 + i);
+            project.setSnapshotDate(new Date(System.currentTimeMillis() + i * 86400000)); // Add i days
+            projects.add(project);
+        }
+
+        ProjectStats stats = new ProjectStats(projects);
+
+        assertEquals(3, stats.getCommitCounts().size());
+        assertEquals(3, stats.getForkCounts().size());
+        assertEquals(3, stats.getContributorsCounts().size());
+        assertEquals(3, stats.getScores().size());
+        assertEquals(3, stats.getSnapshotDates().size());
+    }
+
+    @Test(expected = IllegalArgumentException.class)
+    @Ignore
+    public void testConstructorWithDifferentProjects() {
+        List<Project> projects = new ArrayList<>();
+        Project project1 = new Project();
+        project1.setName("TestProject1");
+        projects.add(project1);
+
+        Project project2 = new Project();
+        project2.setName("TestProject2");
+        projects.add(project2);
+
+        new ProjectStats(projects);
+    }
+
+    @Test
+    public void testGetters() {
+        List<Project> projects = new ArrayList<>();
+        Project project = new Project();
+        project.setName("TestProject");
+        project.setOrganizationName("TestOrg");
+        project.setUrl("http://test.com");
+        project.setDescription("Test Description");
+        project.setPrimaryLanguage("Java");
+        project.setCommitsCount(100);
+        project.setForksCount(10);
+        project.setContributorsCount(5);
+        project.setScore(80);
+        project.setSnapshotDate(new Date());
+        projects.add(project);
+
+        ProjectStats stats = new ProjectStats(projects);
+
+        assertEquals("TestProject", stats.getName());
+        assertEquals("TestOrg", stats.getOrganizationName());
+        assertEquals("http://test.com", stats.getUrl());
+        assertEquals("Test Description", stats.getDescription());
+        assertEquals("Java", stats.getPrimaryLanguage());
+        assertEquals(1, stats.getCommitCounts().size());
+        assertEquals(1, stats.getForkCounts().size());
+        assertEquals(1, stats.getContributorsCounts().size());
+        assertEquals(1, stats.getScores().size());
+        assertEquals(1, stats.getSnapshotDates().size());
+    }
+
+    @Test
+    public void testGetDistinctProjects() {
+        List<Project> projects = new ArrayList<>();
+        Project project1 = new Project();
+        project1.setName("TestProject1");
+        projects.add(project1);
+
+        Project project2 = new Project();
+        project2.setName("TestProject2");
+        projects.add(project2);
+
+        Project project3 = new Project();
+        project3.setName("TestProject1");
+        projects.add(project3);
+
+        Map<String, List<Project>> distinctProjects = ProjectStats.getDistinctProjects(projects);
+
+        assertEquals(2, distinctProjects.size());
+        assertEquals(2, distinctProjects.get("TestProject1").size());
+        assertEquals(1, distinctProjects.get("TestProject2").size());
+    }
+
+    @Test
+    public void testToString() {
+        List<Project> projects = new ArrayList<>();
+        Project project = new Project();
+        project.setName("TestProject");
+        project.setCommitsCount(100);
+        project.setForksCount(10);
+        project.setSnapshotDate(new Date(0)); // Use epoch time for consistent testing
+        projects.add(project);
+
+        ProjectStats stats = new ProjectStats(projects);
+
+        String expected = "ProjectStats(TestProject, commitCounts=[100], forkCounts=[10], snapshotDates=[Wed Dec 31 21:00:00 BRT 1969])";
+        assertEquals(expected, stats.toString());
+    }
+}

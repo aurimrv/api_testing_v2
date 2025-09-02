@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="pt"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>ProjectServiceImpl.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">catwatch-backend</a> &gt; <a href="index.source.html" class="el_package">org.zalando.catwatch.backend.service</a> &gt; <span class="el_source">ProjectServiceImpl.java</span></div><h1>ProjectServiceImpl.java</h1><pre class="source lang-java linenums">package org.zalando.catwatch.backend.service;
+
+import com.google.common.base.Splitter;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.core.env.Environment;
+import org.springframework.stereotype.Service;
+import org.zalando.catwatch.backend.model.Project;
+import org.zalando.catwatch.backend.repo.ProjectRepository;
+import org.zalando.catwatch.backend.service.comparator.ProjectCommitComparator;
+import org.zalando.catwatch.backend.service.comparator.ProjectContributorComparator;
+import org.zalando.catwatch.backend.service.comparator.ProjectForkComparator;
+import org.zalando.catwatch.backend.service.comparator.ProjectScoreComparator;
+import org.zalando.catwatch.backend.service.comparator.ProjectStarComparator;
+import org.zalando.catwatch.backend.util.Constants;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.Date;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Optional;
+import java.util.stream.Collectors;
+
+@Service
+public class ProjectServiceImpl implements ProjectService {
+
+    private static final String SORT_ORDER_DESC = &quot;-&quot;;
+<span class="fc" id="L30">    private static final Integer DEFAULT_LIMIT = 5;</span>
+<span class="fc" id="L31">    private static final Integer DEFAULT_OFFSET = 0;</span>
+
+    private final ProjectRepository projectRepository;
+    private final Environment env;
+
+    @Autowired
+<span class="fc" id="L37">    public ProjectServiceImpl(ProjectRepository projectRepository, Environment env) {</span>
+<span class="fc" id="L38">        this.projectRepository = projectRepository;</span>
+<span class="fc" id="L39">        this.env = env;</span>
+<span class="fc" id="L40">    }</span>
+
+    @Override
+    public Iterable&lt;Project&gt; findProjects(final String organizations, final Optional&lt;Integer&gt; limit,
+                                          final Optional&lt;Integer&gt; offset, final Optional&lt;Date&gt; startDate, final Optional&lt;Date&gt; endDate,
+                                          final Optional&lt;String&gt; sortBy, final Optional&lt;String&gt; query, final Optional&lt;String&gt; language) {
+
+<span class="fc" id="L47">        List&lt;Project&gt; resultList = new ArrayList&lt;&gt;();</span>
+<span class="fc bfc" id="L48" title="All 2 branches covered.">        for (String organization : getOrganizations(organizations)) {</span>
+<span class="fc bfc" id="L49" title="All 4 branches covered.">            if (startDate.isPresent() &amp;&amp; endDate.isPresent()) {</span>
+<span class="fc" id="L50">                List&lt;Project&gt; startProjects = projectRepository.findProjects(organization, startDate.get(), query,language);</span>
+<span class="fc" id="L51">                List&lt;Project&gt; endProjects = projectRepository.findProjects(organization, endDate.get(), query, language);</span>
+<span class="fc" id="L52">                resultList.addAll(getMergedProjectList(startProjects, endProjects));</span>
+<span class="pc bpc" id="L53" title="1 of 4 branches missed.">            } else if (startDate.isPresent() &amp;&amp; !endDate.isPresent()) {</span>
+<span class="fc" id="L54">                List&lt;Project&gt; startProjects = projectRepository.findProjects(organization, startDate.get(), query,language);</span>
+<span class="fc" id="L55">                List&lt;Project&gt; endProjects = projectRepository.findProjects(organization, query,language);</span>
+<span class="fc" id="L56">                resultList.addAll(getMergedProjectList(startProjects, endProjects));</span>
+<span class="pc bpc" id="L57" title="1 of 4 branches missed.">            } else if (!startDate.isPresent() &amp;&amp; endDate.isPresent()) {</span>
+<span class="fc" id="L58">                List&lt;Project&gt; projects = projectRepository.findProjects(organization, endDate.get(), query, language);</span>
+<span class="fc" id="L59">                resultList.addAll(projects);</span>
+<span class="fc" id="L60">            } else {</span>
+<span class="fc" id="L61">                List&lt;Project&gt; projects = projectRepository.findProjects(organization, query, language);</span>
+<span class="fc" id="L62">                resultList.addAll(projects);</span>
+            }
+<span class="fc" id="L64">        }</span>
+
+<span class="fc" id="L66">        resultList = getSortedResultList(resultList, sortBy);</span>
+
+<span class="fc" id="L68">        Integer limitVal = limit.orElse(DEFAULT_LIMIT);</span>
+<span class="fc" id="L69">        Integer offsetVal = offset.orElse(DEFAULT_OFFSET);</span>
+
+<span class="fc" id="L71">        return resultList.stream().skip(offsetVal).limit(limitVal).collect(Collectors.toList());</span>
+    }
+
+    private List&lt;Project&gt; getMergedProjectList(final List&lt;Project&gt; projectsStart, final List&lt;Project&gt; projectsEnd) {
+<span class="fc" id="L75">        Map&lt;Long, Project&gt; startProjectMap = convertProjectsToMap(projectsStart);</span>
+<span class="fc" id="L76">        Map&lt;Long, Project&gt; endProjectMap = convertProjectsToMap(projectsEnd);</span>
+
+<span class="fc" id="L78">        List&lt;Project&gt; resultList = new ArrayList&lt;&gt;();</span>
+
+<span class="pc bpc" id="L80" title="1 of 2 branches missed.">        for (Map.Entry&lt;Long, Project&gt; entry : endProjectMap.entrySet()) {</span>
+<span class="nc bnc" id="L81" title="All 2 branches missed.">            if (startProjectMap.containsKey(entry.getKey())) {</span>
+<span class="nc" id="L82">                resultList.add(createMergedProject(startProjectMap.get(entry.getKey()), entry.getValue()));</span>
+            } else {
+<span class="nc" id="L84">                resultList.add(entry.getValue());</span>
+            }
+<span class="nc" id="L86">        }</span>
+
+<span class="fc" id="L88">        return resultList;</span>
+    }
+
+    private List&lt;Project&gt; getSortedResultList(final List&lt;Project&gt; projectList, final Optional&lt;String&gt; sortBy) {
+
+<span class="fc bfc" id="L93" title="All 2 branches covered.">        if (isSortOrderAscending(sortBy)) {</span>
+<span class="fc" id="L94">            Collections.sort(projectList, getProjectSortComparator(sortBy, true));</span>
+        } else {
+<span class="fc" id="L96">            Collections.sort(projectList, Collections.reverseOrder(getProjectSortComparator(sortBy, false)));</span>
+        }
+
+<span class="fc" id="L99">        return projectList;</span>
+    }
+
+    private Project createMergedProject(final Project startProject, final Project endProject) {
+<span class="fc" id="L103">        endProject.setStarsCount(endProject.getStarsCount() - startProject.getStarsCount());</span>
+<span class="fc" id="L104">        endProject.setCommitsCount(endProject.getCommitsCount() - startProject.getCommitsCount());</span>
+<span class="fc" id="L105">        endProject.setForksCount(endProject.getForksCount() - startProject.getForksCount());</span>
+<span class="fc" id="L106">        endProject.setContributorsCount(endProject.getContributorsCount() - startProject.getContributorsCount());</span>
+<span class="fc" id="L107">        endProject.setScore(endProject.getScore() - startProject.getScore());</span>
+<span class="fc" id="L108">        return endProject;</span>
+    }
+
+    private Map&lt;Long, Project&gt; convertProjectsToMap(final List&lt;Project&gt; projects) {
+<span class="fc" id="L112">        Map&lt;Long, Project&gt; projectMap = new HashMap&lt;&gt;();</span>
+<span class="fc bfc" id="L113" title="All 2 branches covered.">        for (Project project : projects) {</span>
+<span class="fc" id="L114">            projectMap.put(project.getGitHubProjectId(), project);</span>
+<span class="fc" id="L115">        }</span>
+
+<span class="fc" id="L117">        return projectMap;</span>
+    }
+
+    private Iterable&lt;String&gt; getOrganizations(String organizations) {
+
+<span class="fc bfc" id="L122" title="All 2 branches covered.">        if (organizations == null) {</span>
+<span class="fc" id="L123">            organizations = getOrganizationConfig();</span>
+        }
+
+<span class="fc" id="L126">        return Splitter.on(',').trimResults().omitEmptyStrings().split(organizations);</span>
+    }
+
+    /**
+     * This method returns the list of organizations string.
+     *
+     * @return
+     */
+    private String getOrganizationConfig() {
+
+<span class="pc bpc" id="L136" title="1 of 2 branches missed.">        if (!env.containsProperty(Constants.CONFIG_ORGANIZATION_LIST)) {</span>
+
+            // TODO throw new exception
+<span class="nc" id="L139">            return &quot;&quot;;</span>
+        }
+
+<span class="fc" id="L142">        return env.getProperty(Constants.CONFIG_ORGANIZATION_LIST);</span>
+    }
+
+    /**
+     * This returns sorting order.
+     *
+     * @param sortBy
+     * @return
+     */
+    private boolean isSortOrderAscending(final Optional&lt;String&gt; sortBy) {
+
+<span class="fc bfc" id="L153" title="All 2 branches covered.">        if (sortBy.isPresent()) {</span>
+<span class="fc" id="L154">            String sortColumn = sortBy.get();</span>
+<span class="fc bfc" id="L155" title="All 2 branches covered.">            return !sortColumn.startsWith(SORT_ORDER_DESC);</span>
+        } else {
+<span class="fc" id="L157">            return false;</span>
+        }
+    }
+
+    /**
+     * This returns the required sorting comparator class.
+     *
+     * @param sortBy
+     * @param sortOrderAscending
+     * @return
+     */
+    private Comparator&lt;Project&gt; getProjectSortComparator(final Optional&lt;String&gt; sortBy, final boolean sortOrderAscending) {
+
+        String sortColumn;
+
+<span class="fc bfc" id="L172" title="All 2 branches covered.">        if (sortBy.isPresent()) {</span>
+
+<span class="pc bpc" id="L174" title="1 of 2 branches missed.">            if (!sortOrderAscending) {</span>
+<span class="nc" id="L175">                sortColumn = sortBy.get().substring(1);</span>
+            } else {
+<span class="fc" id="L177">                sortColumn = sortBy.get();</span>
+            }
+
+        } else {
+<span class="fc" id="L181">            sortColumn = ProjectSortColumn.SCORE;</span>
+        }
+
+<span class="pc bpc" id="L184" title="3 of 6 branches missed.">        switch (sortColumn) {</span>
+
+            case ProjectSortColumn.STARS_COUNT:
+<span class="fc" id="L187">                return new ProjectStarComparator();</span>
+
+            case ProjectSortColumn.SCORE:
+<span class="fc" id="L190">                return new ProjectScoreComparator();</span>
+
+            case ProjectSortColumn.COMMITS_COUNT:
+<span class="nc" id="L193">                return new ProjectCommitComparator();</span>
+
+            case ProjectSortColumn.FORKS_COUNT:
+<span class="nc" id="L196">                return new ProjectForkComparator();</span>
+
+            case ProjectSortColumn.CONTRIBUTION_COUNT:
+<span class="nc" id="L199">                return new ProjectContributorComparator();</span>
+
+            default:
+<span class="fc" id="L202">                return new ProjectScoreComparator();</span>
+        }
+
+    }
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

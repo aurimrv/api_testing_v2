@@ -1,0 +1,25 @@
+-------------------------------------------------------------------------------
+Test set: org.restscs.gpt4o_run01_FileSuffixTest
+-------------------------------------------------------------------------------
+Tests run: 12, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 0.819 s <<< FAILURE! - in org.restscs.gpt4o_run01_FileSuffixTest
+testFileSuffixForEmptyFileName(org.restscs.gpt4o_run01_FileSuffixTest)  Time elapsed: 0.017 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <200> but was <404>.
+
+	at org.restscs.gpt4o_run01_FileSuffixTest.testFileSuffixForEmptyFileName(gpt4o_run01_FileSuffixTest.java:155)
+
+testFileSuffixForEmptyDirectory(org.restscs.gpt4o_run01_FileSuffixTest)  Time elapsed: 0.011 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <200> but was <404>.
+
+	at org.restscs.gpt4o_run01_FileSuffixTest.testFileSuffixForEmptyDirectory(gpt4o_run01_FileSuffixTest.java:167)
+
+testFileSuffixForEmptyDirectoryAndFile(org.restscs.gpt4o_run01_FileSuffixTest)  Time elapsed: 0.011 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <200> but was <404>.
+
+	at org.restscs.gpt4o_run01_FileSuffixTest.testFileSuffixForEmptyDirectoryAndFile(gpt4o_run01_FileSuffixTest.java:179)
+

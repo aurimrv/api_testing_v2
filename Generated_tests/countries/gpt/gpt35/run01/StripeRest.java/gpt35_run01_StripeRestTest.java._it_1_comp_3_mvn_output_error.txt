@@ -1,0 +1,197 @@
+[[1;31mERROR[m] COMPILATION ERROR : 
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_StripeRestTest.java:[9,26] package org.mockito does not exist
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_StripeRestTest.java:[9,1] static import only from classes and interfaces
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_StripeRestTest.java:[10,26] package org.mockito does not exist
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_StripeRestTest.java:[10,1] static import only from classes and interfaces
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_StripeRestTest.java:[15,26] cannot find symbol
+  symbol:   class SutHandler
+  location: class eu.fayder.restcountries.gpt35_run01_StripeRestTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_StripeRestTest.java:[15,55] cannot find symbol
+  symbol:   class SutHandler
+  location: class eu.fayder.restcountries.gpt35_run01_StripeRestTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_StripeRestTest.java:[38,9] cannot find symbol
+  symbol:   class StripeRest
+  location: class eu.fayder.restcountries.gpt35_run01_StripeRestTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_StripeRestTest.java:[38,37] cannot find symbol
+  symbol:   class StripeRest
+  location: class eu.fayder.restcountries.gpt35_run01_StripeRestTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_StripeRestTest.java:[44,9] cannot find symbol
+  symbol:   class StripeRest
+  location: class eu.fayder.restcountries.gpt35_run01_StripeRestTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_StripeRestTest.java:[44,37] cannot find symbol
+  symbol:   class StripeRest
+  location: class eu.fayder.restcountries.gpt35_run01_StripeRestTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_StripeRestTest.java:[50,9] cannot find symbol
+  symbol:   class StripeRest
+  location: class eu.fayder.restcountries.gpt35_run01_StripeRestTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_StripeRestTest.java:[50,37] cannot find symbol
+  symbol:   class StripeRest
+  location: class eu.fayder.restcountries.gpt35_run01_StripeRestTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_StripeRestTest.java:[57,9] cannot find symbol
+  symbol:   class StripeRest
+  location: class eu.fayder.restcountries.gpt35_run01_StripeRestTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_StripeRestTest.java:[57,37] cannot find symbol
+  symbol:   class StripeRest
+  location: class eu.fayder.restcountries.gpt35_run01_StripeRestTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_StripeRestTest.java:[58,9] cannot find symbol
+  symbol:   class ValidatableResponse
+  location: class eu.fayder.restcountries.gpt35_run01_StripeRestTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_StripeRestTest.java:[58,40] cannot find symbol
+  symbol:   method given()
+  location: class eu.fayder.restcountries.gpt35_run01_StripeRestTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_StripeRestTest.java:[65,34] cannot find symbol
+  symbol:   method equalTo(java.lang.String)
+  location: class eu.fayder.restcountries.gpt35_run01_StripeRestTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_StripeRestTest.java:[64,31] cannot find symbol
+  symbol:   method equalTo(int)
+  location: class eu.fayder.restcountries.gpt35_run01_StripeRestTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_StripeRestTest.java:[70,9] cannot find symbol
+  symbol:   class StripeRest
+  location: class eu.fayder.restcountries.gpt35_run01_StripeRestTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_StripeRestTest.java:[70,37] cannot find symbol
+  symbol:   class StripeRest
+  location: class eu.fayder.restcountries.gpt35_run01_StripeRestTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_StripeRestTest.java:[71,9] cannot find symbol
+  symbol:   class ValidatableResponse
+  location: class eu.fayder.restcountries.gpt35_run01_StripeRestTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_StripeRestTest.java:[71,40] cannot find symbol
+  symbol:   method given()
+  location: class eu.fayder.restcountries.gpt35_run01_StripeRestTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_StripeRestTest.java:[78,34] cannot find symbol
+  symbol:   method equalTo(java.lang.String)
+  location: class eu.fayder.restcountries.gpt35_run01_StripeRestTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_StripeRestTest.java:[77,31] cannot find symbol
+  symbol:   method equalTo(int)
+  location: class eu.fayder.restcountries.gpt35_run01_StripeRestTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_StripeRestTest.java:[83,9] cannot find symbol
+  symbol:   class StripeRest
+  location: class eu.fayder.restcountries.gpt35_run01_StripeRestTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_StripeRestTest.java:[83,37] cannot find symbol
+  symbol:   class StripeRest
+  location: class eu.fayder.restcountries.gpt35_run01_StripeRestTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_StripeRestTest.java:[84,9] cannot find symbol
+  symbol:   class ValidatableResponse
+  location: class eu.fayder.restcountries.gpt35_run01_StripeRestTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_StripeRestTest.java:[84,40] cannot find symbol
+  symbol:   method given()
+  location: class eu.fayder.restcountries.gpt35_run01_StripeRestTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_StripeRestTest.java:[91,34] cannot find symbol
+  symbol:   method equalTo(java.lang.String)
+  location: class eu.fayder.restcountries.gpt35_run01_StripeRestTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_StripeRestTest.java:[90,31] cannot find symbol
+  symbol:   method equalTo(int)
+  location: class eu.fayder.restcountries.gpt35_run01_StripeRestTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_StripeRestTest.java:[97,9] cannot find symbol
+  symbol:   class StripeRest
+  location: class eu.fayder.restcountries.gpt35_run01_StripeRestTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_StripeRestTest.java:[97,37] cannot find symbol
+  symbol:   class StripeRest
+  location: class eu.fayder.restcountries.gpt35_run01_StripeRestTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_StripeRestTest.java:[105,9] cannot find symbol
+  symbol:   class StripeRest
+  location: class eu.fayder.restcountries.gpt35_run01_StripeRestTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_StripeRestTest.java:[105,37] cannot find symbol
+  symbol:   class StripeRest
+  location: class eu.fayder.restcountries.gpt35_run01_StripeRestTest
+[[1;31mERROR[m] Failed to execute goal [32morg.apache.maven.plugins:maven-compiler-plugin:3.8.0:testCompile[m [1m(default-testCompile)[m on project [36mrestcountries[m: [1;31mCompilation failure[m: Compilation failure: 
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_StripeRestTest.java:[9,26] package org.mockito does not exist
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_StripeRestTest.java:[9,1] static import only from classes and interfaces
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_StripeRestTest.java:[10,26] package org.mockito does not exist
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_StripeRestTest.java:[10,1] static import only from classes and interfaces
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_StripeRestTest.java:[15,26] cannot find symbol
+[[1;31mERROR[m]   symbol:   class SutHandler
+[[1;31mERROR[m]   location: class eu.fayder.restcountries.gpt35_run01_StripeRestTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_StripeRestTest.java:[15,55] cannot find symbol
+[[1;31mERROR[m]   symbol:   class SutHandler
+[[1;31mERROR[m]   location: class eu.fayder.restcountries.gpt35_run01_StripeRestTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_StripeRestTest.java:[38,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class StripeRest
+[[1;31mERROR[m]   location: class eu.fayder.restcountries.gpt35_run01_StripeRestTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_StripeRestTest.java:[38,37] cannot find symbol
+[[1;31mERROR[m]   symbol:   class StripeRest
+[[1;31mERROR[m]   location: class eu.fayder.restcountries.gpt35_run01_StripeRestTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_StripeRestTest.java:[44,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class StripeRest
+[[1;31mERROR[m]   location: class eu.fayder.restcountries.gpt35_run01_StripeRestTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_StripeRestTest.java:[44,37] cannot find symbol
+[[1;31mERROR[m]   symbol:   class StripeRest
+[[1;31mERROR[m]   location: class eu.fayder.restcountries.gpt35_run01_StripeRestTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_StripeRestTest.java:[50,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class StripeRest
+[[1;31mERROR[m]   location: class eu.fayder.restcountries.gpt35_run01_StripeRestTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_StripeRestTest.java:[50,37] cannot find symbol
+[[1;31mERROR[m]   symbol:   class StripeRest
+[[1;31mERROR[m]   location: class eu.fayder.restcountries.gpt35_run01_StripeRestTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_StripeRestTest.java:[57,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class StripeRest
+[[1;31mERROR[m]   location: class eu.fayder.restcountries.gpt35_run01_StripeRestTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_StripeRestTest.java:[57,37] cannot find symbol
+[[1;31mERROR[m]   symbol:   class StripeRest
+[[1;31mERROR[m]   location: class eu.fayder.restcountries.gpt35_run01_StripeRestTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_StripeRestTest.java:[58,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class ValidatableResponse
+[[1;31mERROR[m]   location: class eu.fayder.restcountries.gpt35_run01_StripeRestTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_StripeRestTest.java:[58,40] cannot find symbol
+[[1;31mERROR[m]   symbol:   method given()
+[[1;31mERROR[m]   location: class eu.fayder.restcountries.gpt35_run01_StripeRestTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_StripeRestTest.java:[65,34] cannot find symbol
+[[1;31mERROR[m]   symbol:   method equalTo(java.lang.String)
+[[1;31mERROR[m]   location: class eu.fayder.restcountries.gpt35_run01_StripeRestTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_StripeRestTest.java:[64,31] cannot find symbol
+[[1;31mERROR[m]   symbol:   method equalTo(int)
+[[1;31mERROR[m]   location: class eu.fayder.restcountries.gpt35_run01_StripeRestTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_StripeRestTest.java:[70,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class StripeRest
+[[1;31mERROR[m]   location: class eu.fayder.restcountries.gpt35_run01_StripeRestTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_StripeRestTest.java:[70,37] cannot find symbol
+[[1;31mERROR[m]   symbol:   class StripeRest
+[[1;31mERROR[m]   location: class eu.fayder.restcountries.gpt35_run01_StripeRestTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_StripeRestTest.java:[71,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class ValidatableResponse
+[[1;31mERROR[m]   location: class eu.fayder.restcountries.gpt35_run01_StripeRestTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_StripeRestTest.java:[71,40] cannot find symbol
+[[1;31mERROR[m]   symbol:   method given()
+[[1;31mERROR[m]   location: class eu.fayder.restcountries.gpt35_run01_StripeRestTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_StripeRestTest.java:[78,34] cannot find symbol
+[[1;31mERROR[m]   symbol:   method equalTo(java.lang.String)
+[[1;31mERROR[m]   location: class eu.fayder.restcountries.gpt35_run01_StripeRestTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_StripeRestTest.java:[77,31] cannot find symbol
+[[1;31mERROR[m]   symbol:   method equalTo(int)
+[[1;31mERROR[m]   location: class eu.fayder.restcountries.gpt35_run01_StripeRestTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_StripeRestTest.java:[83,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class StripeRest
+[[1;31mERROR[m]   location: class eu.fayder.restcountries.gpt35_run01_StripeRestTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_StripeRestTest.java:[83,37] cannot find symbol
+[[1;31mERROR[m]   symbol:   class StripeRest
+[[1;31mERROR[m]   location: class eu.fayder.restcountries.gpt35_run01_StripeRestTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_StripeRestTest.java:[84,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class ValidatableResponse
+[[1;31mERROR[m]   location: class eu.fayder.restcountries.gpt35_run01_StripeRestTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_StripeRestTest.java:[84,40] cannot find symbol
+[[1;31mERROR[m]   symbol:   method given()
+[[1;31mERROR[m]   location: class eu.fayder.restcountries.gpt35_run01_StripeRestTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_StripeRestTest.java:[91,34] cannot find symbol
+[[1;31mERROR[m]   symbol:   method equalTo(java.lang.String)
+[[1;31mERROR[m]   location: class eu.fayder.restcountries.gpt35_run01_StripeRestTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_StripeRestTest.java:[90,31] cannot find symbol
+[[1;31mERROR[m]   symbol:   method equalTo(int)
+[[1;31mERROR[m]   location: class eu.fayder.restcountries.gpt35_run01_StripeRestTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_StripeRestTest.java:[97,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class StripeRest
+[[1;31mERROR[m]   location: class eu.fayder.restcountries.gpt35_run01_StripeRestTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_StripeRestTest.java:[97,37] cannot find symbol
+[[1;31mERROR[m]   symbol:   class StripeRest
+[[1;31mERROR[m]   location: class eu.fayder.restcountries.gpt35_run01_StripeRestTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_StripeRestTest.java:[105,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class StripeRest
+[[1;31mERROR[m]   location: class eu.fayder.restcountries.gpt35_run01_StripeRestTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_StripeRestTest.java:[105,37] cannot find symbol
+[[1;31mERROR[m]   symbol:   class StripeRest
+[[1;31mERROR[m]   location: class eu.fayder.restcountries.gpt35_run01_StripeRestTest
+[[1;31mERROR[m] -> [1m[Help 1][m
+[[1;31mERROR[m] 
+[[1;31mERROR[m] To see the full stack trace of the errors, re-run Maven with the [1m-e[m switch.
+[[1;31mERROR[m] Re-run Maven using the [1m-X[m switch to enable full debug logging.
+[[1;31mERROR[m] 
+[[1;31mERROR[m] For more information about the errors and possible solutions, please read the following articles:
+[[1;31mERROR[m] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

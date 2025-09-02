@@ -1,0 +1,81 @@
+[[1;31mERROR[m] COMPILATION ERROR : 
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/artificial/ncs/src/test/java/org/restncs/gpt35_run01_TriangleClassificationTest.java:[59,25] cannot find symbol
+  symbol:   variable TriangleClassification
+  location: class org.restncs.gpt35_run01_TriangleClassificationTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/artificial/ncs/src/test/java/org/restncs/gpt35_run01_TriangleClassificationTest.java:[60,25] cannot find symbol
+  symbol:   variable TriangleClassification
+  location: class org.restncs.gpt35_run01_TriangleClassificationTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/artificial/ncs/src/test/java/org/restncs/gpt35_run01_TriangleClassificationTest.java:[61,25] cannot find symbol
+  symbol:   variable TriangleClassification
+  location: class org.restncs.gpt35_run01_TriangleClassificationTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/artificial/ncs/src/test/java/org/restncs/gpt35_run01_TriangleClassificationTest.java:[62,25] cannot find symbol
+  symbol:   variable TriangleClassification
+  location: class org.restncs.gpt35_run01_TriangleClassificationTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/artificial/ncs/src/test/java/org/restncs/gpt35_run01_TriangleClassificationTest.java:[63,25] cannot find symbol
+  symbol:   variable TriangleClassification
+  location: class org.restncs.gpt35_run01_TriangleClassificationTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/artificial/ncs/src/test/java/org/restncs/gpt35_run01_TriangleClassificationTest.java:[64,25] cannot find symbol
+  symbol:   variable TriangleClassification
+  location: class org.restncs.gpt35_run01_TriangleClassificationTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/artificial/ncs/src/test/java/org/restncs/gpt35_run01_TriangleClassificationTest.java:[65,25] cannot find symbol
+  symbol:   variable TriangleClassification
+  location: class org.restncs.gpt35_run01_TriangleClassificationTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/artificial/ncs/src/test/java/org/restncs/gpt35_run01_TriangleClassificationTest.java:[70,25] cannot find symbol
+  symbol:   variable TriangleClassification
+  location: class org.restncs.gpt35_run01_TriangleClassificationTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/artificial/ncs/src/test/java/org/restncs/gpt35_run01_TriangleClassificationTest.java:[71,25] cannot find symbol
+  symbol:   variable TriangleClassification
+  location: class org.restncs.gpt35_run01_TriangleClassificationTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/artificial/ncs/src/test/java/org/restncs/gpt35_run01_TriangleClassificationTest.java:[72,25] cannot find symbol
+  symbol:   variable TriangleClassification
+  location: class org.restncs.gpt35_run01_TriangleClassificationTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/artificial/ncs/src/test/java/org/restncs/gpt35_run01_TriangleClassificationTest.java:[77,25] cannot find symbol
+  symbol:   variable TriangleClassification
+  location: class org.restncs.gpt35_run01_TriangleClassificationTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/artificial/ncs/src/test/java/org/restncs/gpt35_run01_TriangleClassificationTest.java:[78,25] cannot find symbol
+  symbol:   variable TriangleClassification
+  location: class org.restncs.gpt35_run01_TriangleClassificationTest
+[[1;31mERROR[m] Failed to execute goal [32morg.apache.maven.plugins:maven-compiler-plugin:3.8.0:testCompile[m [1m(default-testCompile)[m on project [36mevomaster-benchmark-cs-rest-artificial-ncs[m: [1;31mCompilation failure[m: Compilation failure: 
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/artificial/ncs/src/test/java/org/restncs/gpt35_run01_TriangleClassificationTest.java:[59,25] cannot find symbol
+[[1;31mERROR[m]   symbol:   variable TriangleClassification
+[[1;31mERROR[m]   location: class org.restncs.gpt35_run01_TriangleClassificationTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/artificial/ncs/src/test/java/org/restncs/gpt35_run01_TriangleClassificationTest.java:[60,25] cannot find symbol
+[[1;31mERROR[m]   symbol:   variable TriangleClassification
+[[1;31mERROR[m]   location: class org.restncs.gpt35_run01_TriangleClassificationTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/artificial/ncs/src/test/java/org/restncs/gpt35_run01_TriangleClassificationTest.java:[61,25] cannot find symbol
+[[1;31mERROR[m]   symbol:   variable TriangleClassification
+[[1;31mERROR[m]   location: class org.restncs.gpt35_run01_TriangleClassificationTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/artificial/ncs/src/test/java/org/restncs/gpt35_run01_TriangleClassificationTest.java:[62,25] cannot find symbol
+[[1;31mERROR[m]   symbol:   variable TriangleClassification
+[[1;31mERROR[m]   location: class org.restncs.gpt35_run01_TriangleClassificationTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/artificial/ncs/src/test/java/org/restncs/gpt35_run01_TriangleClassificationTest.java:[63,25] cannot find symbol
+[[1;31mERROR[m]   symbol:   variable TriangleClassification
+[[1;31mERROR[m]   location: class org.restncs.gpt35_run01_TriangleClassificationTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/artificial/ncs/src/test/java/org/restncs/gpt35_run01_TriangleClassificationTest.java:[64,25] cannot find symbol
+[[1;31mERROR[m]   symbol:   variable TriangleClassification
+[[1;31mERROR[m]   location: class org.restncs.gpt35_run01_TriangleClassificationTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/artificial/ncs/src/test/java/org/restncs/gpt35_run01_TriangleClassificationTest.java:[65,25] cannot find symbol
+[[1;31mERROR[m]   symbol:   variable TriangleClassification
+[[1;31mERROR[m]   location: class org.restncs.gpt35_run01_TriangleClassificationTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/artificial/ncs/src/test/java/org/restncs/gpt35_run01_TriangleClassificationTest.java:[70,25] cannot find symbol
+[[1;31mERROR[m]   symbol:   variable TriangleClassification
+[[1;31mERROR[m]   location: class org.restncs.gpt35_run01_TriangleClassificationTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/artificial/ncs/src/test/java/org/restncs/gpt35_run01_TriangleClassificationTest.java:[71,25] cannot find symbol
+[[1;31mERROR[m]   symbol:   variable TriangleClassification
+[[1;31mERROR[m]   location: class org.restncs.gpt35_run01_TriangleClassificationTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/artificial/ncs/src/test/java/org/restncs/gpt35_run01_TriangleClassificationTest.java:[72,25] cannot find symbol
+[[1;31mERROR[m]   symbol:   variable TriangleClassification
+[[1;31mERROR[m]   location: class org.restncs.gpt35_run01_TriangleClassificationTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/artificial/ncs/src/test/java/org/restncs/gpt35_run01_TriangleClassificationTest.java:[77,25] cannot find symbol
+[[1;31mERROR[m]   symbol:   variable TriangleClassification
+[[1;31mERROR[m]   location: class org.restncs.gpt35_run01_TriangleClassificationTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/artificial/ncs/src/test/java/org/restncs/gpt35_run01_TriangleClassificationTest.java:[78,25] cannot find symbol
+[[1;31mERROR[m]   symbol:   variable TriangleClassification
+[[1;31mERROR[m]   location: class org.restncs.gpt35_run01_TriangleClassificationTest
+[[1;31mERROR[m] -> [1m[Help 1][m
+[[1;31mERROR[m] 
+[[1;31mERROR[m] To see the full stack trace of the errors, re-run Maven with the [1m-e[m switch.
+[[1;31mERROR[m] Re-run Maven using the [1m-X[m switch to enable full debug logging.
+[[1;31mERROR[m] 
+[[1;31mERROR[m] For more information about the errors and possible solutions, please read the following articles:
+[[1;31mERROR[m] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

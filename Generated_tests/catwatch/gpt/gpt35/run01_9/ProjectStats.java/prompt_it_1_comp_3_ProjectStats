@@ -1,0 +1,174 @@
+You are a highly skilled test engineer specializing in debugging and resolving compilation errors and test failures in Java-based projects. Your expertise includes Java 8, JUnit 4, and REST Assured, allowing you to diagnose issues efficiently and provide precise, actionable fixes.
+
+Do fix the compilation errors delimited by ##### given the code below delimited by *****.
+
+The response must contain only Java code in JUnit 4 format.
+
+#####
+[[1;31mERROR[m] COMPILATION ERROR : 
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[105,26] cannot find symbol
+  symbol:   method of(int,int)
+  location: interface java.util.List
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[106,26] cannot find symbol
+  symbol:   method of(int,int)
+  location: interface java.util.List
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[107,26] cannot find symbol
+  symbol:   method of(int,int)
+  location: interface java.util.List
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[108,26] cannot find symbol
+  symbol:   method of(int,int)
+  location: interface java.util.List
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[109,26] cannot find symbol
+  symbol:   method of(java.util.Date,java.util.Date)
+  location: interface java.util.List
+[[1;31mERROR[m] Failed to execute goal [32morg.apache.maven.plugins:maven-compiler-plugin:3.8.0:testCompile[m [1m(default-testCompile)[m on project [36mcatwatch-backend[m: [1;31mCompilation failure[m: Compilation failure: 
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[105,26] cannot find symbol
+[[1;31mERROR[m]   symbol:   method of(int,int)
+[[1;31mERROR[m]   location: interface java.util.List
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[106,26] cannot find symbol
+[[1;31mERROR[m]   symbol:   method of(int,int)
+[[1;31mERROR[m]   location: interface java.util.List
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[107,26] cannot find symbol
+[[1;31mERROR[m]   symbol:   method of(int,int)
+[[1;31mERROR[m]   location: interface java.util.List
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[108,26] cannot find symbol
+[[1;31mERROR[m]   symbol:   method of(int,int)
+[[1;31mERROR[m]   location: interface java.util.List
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_ProjectStatsTest.java:[109,26] cannot find symbol
+[[1;31mERROR[m]   symbol:   method of(java.util.Date,java.util.Date)
+[[1;31mERROR[m]   location: interface java.util.List
+[[1;31mERROR[m] -> [1m[Help 1][m
+[[1;31mERROR[m] 
+[[1;31mERROR[m] To see the full stack trace of the errors, re-run Maven with the [1m-e[m switch.
+[[1;31mERROR[m] Re-run Maven using the [1m-X[m switch to enable full debug logging.
+[[1;31mERROR[m] 
+[[1;31mERROR[m] For more information about the errors and possible solutions, please read the following articles:
+[[1;31mERROR[m] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+
+#####
+*****
+
+import org.junit.Test;
+import static org.junit.Assert.*;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+
+class Project {
+    public Project(String name, String organizationName, String url, String description, String primaryLanguage, int commitCount, int forkCount, int contributorsCount, int score, Date snapshotDate) {
+        // Constructor implementation
+    }
+
+    public Date getSnapshotDate() {
+        return new Date(); // Sample implementation
+    }
+}
+
+class ProjectStats {
+    private String name;
+    private String organizationName;
+    private String url;
+    private String primaryLanguage;
+    private String description;
+    private List<Integer> commitCounts;
+    private List<Integer> forkCounts;
+    private List<Integer> contributorsCounts;
+    private List<Integer> scores;
+    private List<Date> snapshotDates;
+
+    public ProjectStats(List<Project> projects) {
+        // Constructor implementation
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getOrganizationName() {
+        return organizationName;
+    }
+
+    public String getUrl() {
+        return url;
+    }
+
+    public String getPrimaryLanguage() {
+        return primaryLanguage;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public List<Integer> getCommitCounts() {
+        return commitCounts;
+    }
+
+    public List<Integer> getForkCounts() {
+        return forkCounts;
+    }
+
+    public List<Integer> getContributorsCounts() {
+        return contributorsCounts;
+    }
+
+    public List<Integer> getScores() {
+        return scores;
+    }
+
+    public List<Date> getSnapshotDates() {
+        return snapshotDates;
+    }
+
+    @Override
+    public String toString() {
+        return "ProjectStats(" + name + ", commitCounts=" + commitCounts + ", forkCounts=" + forkCounts + ", snapshotDates=" + snapshotDates + ")";
+    }
+}
+
+public class gpt35_run01_ProjectStatsTest {
+
+    @Test
+    public void testProjectStatsConstructor() {
+        List<Project> projects = new ArrayList<>();
+        projects.add(new Project("Project1", "Org1", "url1", "desc1", "Java", 10, 5, 3, 9, new Date()));
+        projects.add(new Project("Project1", "Org1", "url1", "desc1", "Java", 15, 7, 4, 12, new Date()));
+
+        ProjectStats projectStats = new ProjectStats(projects);
+        assertNotNull(projectStats);
+    }
+
+    @Test
+    public void testProjectStatsGetters() {
+        List<Project> projects = new ArrayList<>();
+        projects.add(new Project("Project1", "Org1", "url1", "desc1", "Java", 10, 5, 3, 9, new Date()));
+        projects.add(new Project("Project1", "Org1", "url1", "desc1", "Java", 15, 7, 4, 12, new Date()));
+
+        ProjectStats projectStats = new ProjectStats(projects);
+
+        assertEquals("Project1", projectStats.getName());
+        assertEquals("Org1", projectStats.getOrganizationName());
+        assertEquals("url1", projectStats.getUrl());
+        assertEquals("Java", projectStats.getPrimaryLanguage());
+        assertEquals("desc1", projectStats.getDescription());
+        assertEquals(List.of(10, 15), projectStats.getCommitCounts());
+        assertEquals(List.of(5, 7), projectStats.getForkCounts());
+        assertEquals(List.of(3, 4), projectStats.getContributorsCounts());
+        assertEquals(List.of(9, 12), projectStats.getScores());
+        assertEquals(List.of(projects.get(0).getSnapshotDate(), projects.get(1).getSnapshotDate()), projectStats.getSnapshotDates());
+    }
+
+    @Test
+    public void testProjectStatsToString() {
+        List<Project> projects = new ArrayList<>();
+        projects.add(new Project("Project1", "Org1", "url1", "desc1", "Java", 10, 5, 3, 9, new Date()));
+        projects.add(new Project("Project1", "Org1", "url1", "desc1", "Java", 15, 7, 4, 12, new Date()));
+
+        ProjectStats projectStats = new ProjectStats(projects);
+
+        String expectedString = "ProjectStats(Project1, commitCounts=[10, 15], forkCounts=[5, 7], snapshotDates=[" + projects.get(0).getSnapshotDate() + ", " + projects.get(1).getSnapshotDate() + "])";
+        assertEquals(expectedString, projectStats.toString());
+    }
+}
+
+*****

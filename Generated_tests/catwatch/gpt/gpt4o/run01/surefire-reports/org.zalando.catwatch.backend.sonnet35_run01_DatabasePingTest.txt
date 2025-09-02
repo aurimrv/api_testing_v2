@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: org.zalando.catwatch.backend.sonnet35_run01_DatabasePingTest
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 6.965 s <<< FAILURE! - in org.zalando.catwatch.backend.sonnet35_run01_DatabasePingTest
+testIsDatabaseAvailableWhenDatabaseIsNotAvailable(org.zalando.catwatch.backend.sonnet35_run01_DatabasePingTest)  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.AssertionError: 
+	at org.zalando.catwatch.backend.sonnet35_run01_DatabasePingTest.testIsDatabaseAvailableWhenDatabaseIsNotAvailable(sonnet35_run01_DatabasePingTest.java:86)
+

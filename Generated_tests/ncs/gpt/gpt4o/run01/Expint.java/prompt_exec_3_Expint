@@ -1,0 +1,167 @@
+You are a highly skilled test engineer specializing in debugging and resolving compilation errors and test failures in Java-based projects. Your expertise includes Java 8, JUnit 4, and REST Assured, allowing you to diagnose issues efficiently and provide precise, actionable fixes.
+
+Given the test set below delimited by *****, fix the source lines indicated in the error messages delimited by #####, replacing only the expected by the actual values.
+
+Do keep package, headers and accessories methods unchanged.
+
+Do export all other corrected tests unchanged.
+
+The response must contain only Java code in JUnit 4 format.
+
+#####
+Line: 95
+expected:<error: [x = 0 and n = 1]> but was:<error: [n < 0 or x < 0]>
+----------------------------------------
+
+#####
+*****
+
+package org.restncs;
+
+import org.junit.AfterClass;
+import org.junit.BeforeClass;
+import org.junit.Before;
+import org.junit.Test;
+import static org.junit.Assert.*;
+import java.util.Map;
+import java.util.List;
+import static org.evomaster.client.java.controller.api.EMTestUtils.*;
+import org.evomaster.client.java.controller.SutHandler;
+import io.restassured.RestAssured;
+import static io.restassured.RestAssured.given;
+import io.restassured.response.ValidatableResponse;
+import static org.hamcrest.Matchers.*;
+import io.restassured.config.JsonConfig;
+import io.restassured.path.json.config.JsonPathConfig;
+import static io.restassured.config.RedirectConfig.redirectConfig;
+import static org.evomaster.client.java.controller.contentMatchers.NumberMatcher.*;
+import static org.evomaster.client.java.controller.contentMatchers.StringMatcher.*;
+import static org.evomaster.client.java.controller.contentMatchers.SubStringMatcher.*;
+import static org.evomaster.client.java.controller.expect.ExpectationHandler.expectationHandler;
+import org.evomaster.client.java.controller.expect.ExpectationHandler;
+import io.restassured.path.json.JsonPath;
+import java.util.Arrays;
+
+public class gpt4o_run01_ExpintTest {
+
+    private static final SutHandler controller = new em.embedded.org.restncs.EmbeddedEvoMasterController();
+    private static String baseUrlOfSut;
+
+    @BeforeClass
+    public static void initClass() {
+        controller.setupForGeneratedTest();
+        baseUrlOfSut = controller.startSut();
+        controller.registerOrExecuteInitSqlCommandsIfNeeded();
+        assertNotNull(baseUrlOfSut);
+        RestAssured.enableLoggingOfRequestAndResponseIfValidationFails();
+        RestAssured.useRelaxedHTTPSValidation();
+        RestAssured.urlEncodingEnabled = false;
+        RestAssured.config = RestAssured.config()
+            .jsonConfig(JsonConfig.jsonConfig().numberReturnType(JsonPathConfig.NumberReturnType.DOUBLE))
+            .redirect(redirectConfig().followRedirects(false));
+    }
+
+    @AfterClass
+    public static void tearDown() {
+        controller.stopSut();
+    }
+
+    @Before
+    public void initTest() {
+        controller.resetStateOfSUT();
+    }
+
+    // Test for constructor coverage
+    @Test
+    public void testConstructor() {
+        new org.restncs.imp.Expint(); // Ensures constructor <init> is covered
+    }
+
+    // Test for negative n or x
+    @Test
+    public void testNegativeNOrX() {
+        try {
+            org.restncs.imp.Expint.exe(-1, 5.0);
+            fail("Expected RuntimeException for n < 0");
+        } catch (RuntimeException e) {
+            assertEquals("error: n < 0 or x < 0", e.getMessage());
+        }
+
+        try {
+            org.restncs.imp.Expint.exe(2, -1.0);
+            fail("Expected RuntimeException for x < 0");
+        } catch (RuntimeException e) {
+            assertEquals("error: n < 0 or x < 0", e.getMessage());
+        }
+    }
+
+    // Test for n = 0 and x > 0
+    @Test
+    public void testNZeroXPositive() {
+        double result = org.restncs.imp.Expint.exe(0, 5.0);
+        assertEquals(Math.exp(-5.0) / 5.0, result, 1e-7);
+    }
+
+    // Test for x = 0 and n = 1
+    @Test
+    public void testXZeroNOne() {
+        try {
+            org.restncs.imp.Expint.exe(1, 0.0);
+            fail("Expected RuntimeException for x = 0 and n = 1");
+        } catch (RuntimeException e) {
+            assertEquals("error: x = 0 and n = 1", e.getMessage());
+        }
+    }
+
+    // Test for x = 0 and n > 1
+    @Test
+    public void testXZeroNGreaterThanOne() {
+        double result = org.restncs.imp.Expint.exe(3, 0.0);
+        assertEquals(1.0 / 2, result, 1e-7);
+    }
+
+    // Test for x > 1.0 branch
+    @Test
+    public void testXGreaterThanOne() {
+        double result = org.restncs.imp.Expint.exe(2, 5.0);
+        assertTrue(result < 1); // Validating returned result is less than 1
+    }
+
+    // Test for x <= 1.0 branch and nm1 != 0
+    @Test
+    public void testXLessEqualOneNm1NotZero() {
+        double result = org.restncs.imp.Expint.exe(2, 0.5);
+        assertTrue(result > 0); // Validating result is positive
+    }
+
+    // Test for x <= 1.0 branch and nm1 == 0
+    @Test
+    public void testXLessEqualOneNm1Zero() {
+        double result = org.restncs.imp.Expint.exe(1, 0.5);
+        assertTrue(result > 0); // Validating result is positive
+    }
+
+    // Test for RuntimeException "continued fraction failed in expint"
+    @Test
+    public void testContinuedFractionFailure() {
+        try {
+            org.restncs.imp.Expint.exe(2, 1.0e30); // Large x value causing failure
+            fail("Expected RuntimeException for continued fraction failure");
+        } catch (RuntimeException e) {
+            assertEquals("continued fraction failed in expint", e.getMessage());
+        }
+    }
+
+    // Test for RuntimeException "series failed in expint"
+    @Test
+    public void testSeriesFailure() {
+        try {
+            org.restncs.imp.Expint.exe(0, 1.0e-30); // Small x value causing failure
+            fail("Expected RuntimeException for series failure");
+        } catch (RuntimeException e) {
+            assertEquals("series failed in expint", e.getMessage());
+        }
+    }
+}
+
+*****

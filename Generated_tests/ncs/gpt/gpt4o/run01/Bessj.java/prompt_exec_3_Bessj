@@ -1,0 +1,187 @@
+You are a highly skilled test engineer specializing in debugging and resolving compilation errors and test failures in Java-based projects. Your expertise includes Java 8, JUnit 4, and REST Assured, allowing you to diagnose issues efficiently and provide precise, actionable fixes.
+
+Given the test set below delimited by *****, fix the source lines indicated in the error messages delimited by #####, replacing only the expected by the actual values.
+
+Do keep package, headers and accessories methods unchanged.
+
+Do export all other corrected tests unchanged.
+
+The response must contain only Java code in JUnit 4 format.
+
+#####
+Line: 100
+Response body doesn't match expectation.
+Expected: a string containing "Index n less than 2 in bessj"
+Actual:
+----------------------------------------
+
+#####
+*****
+
+package org.restncs;
+
+import org.junit.AfterClass;
+import org.junit.BeforeClass;
+import org.junit.Before;
+import org.junit.Test;
+import static org.junit.Assert.*;
+import java.util.Map;
+import java.util.List;
+import static org.evomaster.client.java.controller.api.EMTestUtils.*;
+import org.evomaster.client.java.controller.SutHandler;
+import io.restassured.RestAssured;
+import static io.restassured.RestAssured.given;
+import io.restassured.response.ValidatableResponse;
+import static org.hamcrest.Matchers.*;
+import io.restassured.config.JsonConfig;
+import io.restassured.path.json.config.JsonPathConfig;
+import static io.restassured.config.RedirectConfig.redirectConfig;
+import static org.evomaster.client.java.controller.contentMatchers.NumberMatcher.*;
+import static org.evomaster.client.java.controller.contentMatchers.StringMatcher.*;
+import static org.evomaster.client.java.controller.contentMatchers.SubStringMatcher.*;
+import static org.evomaster.client.java.controller.expect.ExpectationHandler.expectationHandler;
+import org.evomaster.client.java.controller.expect.ExpectationHandler;
+import io.restassured.path.json.JsonPath;
+import java.util.Arrays;
+
+public class gpt4o_run01_BessjTest {
+
+    private static final SutHandler controller = new em.embedded.org.restncs.EmbeddedEvoMasterController();
+    private static String baseUrlOfSut;
+
+    @BeforeClass
+    public static void initClass() {
+        controller.setupForGeneratedTest();
+        baseUrlOfSut = controller.startSut();
+        controller.registerOrExecuteInitSqlCommandsIfNeeded();
+        assertNotNull(baseUrlOfSut);
+        RestAssured.enableLoggingOfRequestAndResponseIfValidationFails();
+        RestAssured.useRelaxedHTTPSValidation();
+        RestAssured.urlEncodingEnabled = false;
+        RestAssured.config = RestAssured.config()
+            .jsonConfig(JsonConfig.jsonConfig().numberReturnType(JsonPathConfig.NumberReturnType.DOUBLE))
+            .redirect(redirectConfig().followRedirects(false));
+    }
+
+    @AfterClass
+    public static void tearDown() {
+        controller.stopSut();
+    }
+
+    @Before
+    public void initTest() {
+        controller.resetStateOfSUT();
+    }
+
+    @Test
+    public void testBessjSuccess_HigherAx() {
+        // Test case where ax > n
+        ValidatableResponse response = given()
+            .baseUri(baseUrlOfSut)
+            .pathParam("n", 3)
+            .pathParam("x", 10.0)
+        .when()
+            .get("/api/bessj/{n}/{x}")
+        .then()
+            .statusCode(200)
+            .body("resultAsDouble", notNullValue());
+        double result = response.extract().jsonPath().getDouble("resultAsDouble");
+        assertNotNull(result);
+    }
+
+    @Test
+    public void testBessjSuccess_LowerAx() {
+        // Test case where ax <= n
+        ValidatableResponse response = given()
+            .baseUri(baseUrlOfSut)
+            .pathParam("n", 4)
+            .pathParam("x", 2.0)
+        .when()
+            .get("/api/bessj/{n}/{x}")
+        .then()
+            .statusCode(200)
+            .body("resultAsDouble", notNullValue());
+        double result = response.extract().jsonPath().getDouble("resultAsDouble");
+        assertNotNull(result);
+    }
+
+    @Test
+    public void testBessjException_IndexTooLow() {
+        // Test case where n < 2, should throw an exception
+        given()
+            .baseUri(baseUrlOfSut)
+            .pathParam("n", 1)
+            .pathParam("x", 5.0)
+        .when()
+            .get("/api/bessj/{n}/{x}")
+        .then()
+            .statusCode(400)
+            .body(containsString("Index n less than 2 in bessj"));
+    }
+
+    @Test
+    public void testBessjBoundary_ZeroX() {
+        // Test case where x == 0; should return 0
+        ValidatableResponse response = given()
+            .baseUri(baseUrlOfSut)
+            .pathParam("n", 5)
+            .pathParam("x", 0.0)
+        .when()
+            .get("/api/bessj/{n}/{x}")
+        .then()
+            .statusCode(200)
+            .body("resultAsDouble", is(0.0));
+        double result = response.extract().jsonPath().getDouble("resultAsDouble");
+        assertEquals(0.0, result, 0.0);
+    }
+
+    @Test
+    public void testBessjNegativeX_WithOddN() {
+        // Test case where x < 0 and n is odd; result should be negated
+        ValidatableResponse response = given()
+            .baseUri(baseUrlOfSut)
+            .pathParam("n", 3)
+            .pathParam("x", -6.0)
+        .when()
+            .get("/api/bessj/{n}/{x}")
+        .then()
+            .statusCode(200)
+            .body("resultAsDouble", notNullValue());
+        double result = response.extract().jsonPath().getDouble("resultAsDouble");
+        assertTrue(result < 0);
+    }
+
+    @Test
+    public void testBessjNegativeX_WithEvenN() {
+        // Test case where x < 0 and n is even; result should not be negated
+        ValidatableResponse response = given()
+            .baseUri(baseUrlOfSut)
+            .pathParam("n", 4)
+            .pathParam("x", -6.0)
+        .when()
+            .get("/api/bessj/{n}/{x}")
+        .then()
+            .statusCode(200)
+            .body("resultAsDouble", notNullValue());
+        double result = response.extract().jsonPath().getDouble("resultAsDouble");
+        assertTrue(result >= 0);
+    }
+
+    @Test
+    public void testBessjLargeValues() {
+        // Test case with large n and x to verify high iteration stability
+        ValidatableResponse response = given()
+            .baseUri(baseUrlOfSut)
+            .pathParam("n", 500)
+            .pathParam("x", 1000.0)
+        .when()
+            .get("/api/bessj/{n}/{x}")
+        .then()
+            .statusCode(200)
+            .body("resultAsDouble", notNullValue());
+        double result = response.extract().jsonPath().getDouble("resultAsDouble");
+        assertNotNull(result);
+    }
+}
+
+*****

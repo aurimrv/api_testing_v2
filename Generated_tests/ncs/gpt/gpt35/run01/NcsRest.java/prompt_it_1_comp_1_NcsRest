@@ -1,0 +1,556 @@
+Do create a white box test suite in JUnit 4 and Java 8 using REST Assured to achieve full test coverage, including methods, lines, and all branches with all possible execution paths, according to the instructions delimited by %%%%%, which is part of the REST Java Application code delimited by *****. Use the Swagger documentation delimited by ##### to provide complementary information about the application. If an uncovered line is related to the <init> method (constructor), generate a test case that explicitly instantiates the class to ensure the constructor is executed. Your responses must contain only Java code in JUnit 4 format.
+
+Follow these five instructions for this generated test code:
+
+Instruction 1: Add this package line to generated test code file:
+package org.restncs;
+
+Instruction 2: Add the following Java imports to generated test code file:
+import org.junit.AfterClass;
+import org.junit.BeforeClass;
+import org.junit.Before;
+import org.junit.Test;
+import static org.junit.Assert.*;
+import java.util.Map;
+import java.util.List;
+import static org.evomaster.client.java.controller.api.EMTestUtils.*;
+import org.evomaster.client.java.controller.SutHandler;
+import io.restassured.RestAssured;
+import static io.restassured.RestAssured.given;
+import io.restassured.response.ValidatableResponse;
+import static org.hamcrest.Matchers.*;
+import io.restassured.config.JsonConfig;
+import io.restassured.path.json.config.JsonPathConfig;
+import static io.restassured.config.RedirectConfig.redirectConfig;
+import static org.evomaster.client.java.controller.contentMatchers.NumberMatcher.*;
+import static org.evomaster.client.java.controller.contentMatchers.StringMatcher.*;
+import static org.evomaster.client.java.controller.contentMatchers.SubStringMatcher.*;
+import static org.evomaster.client.java.controller.expect.ExpectationHandler.expectationHandler;
+import org.evomaster.client.java.controller.expect.ExpectationHandler;
+import io.restassured.path.json.JsonPath;
+import java.util.Arrays;
+
+Instruction 3. Class Declaration: Create the class with the following declaration: gpt35_run01_NcsRestTest
+
+Instruction 4: Create these variables in the generated test code:
+private static final SutHandler controller = new em.embedded.org.restncs.EmbeddedEvoMasterController();
+private static String baseUrlOfSut;
+
+Instruction 5: Include the following setup and teardown methods in generated test code file:
+@BeforeClass
+public static void initClass() {
+    controller.setupForGeneratedTest();
+    baseUrlOfSut = controller.startSut();
+    controller.registerOrExecuteInitSqlCommandsIfNeeded();
+    assertNotNull(baseUrlOfSut);
+    RestAssured.enableLoggingOfRequestAndResponseIfValidationFails();
+    RestAssured.useRelaxedHTTPSValidation();
+    RestAssured.urlEncodingEnabled = false;
+    RestAssured.config = RestAssured.config()
+        .jsonConfig(JsonConfig.jsonConfig().numberReturnType(JsonPathConfig.NumberReturnType.DOUBLE))
+        .redirect(redirectConfig().followRedirects(false));
+}
+
+@AfterClass
+public static void tearDown() {
+    controller.stopSut();
+}
+
+@Before
+public void initTest() {
+    controller.resetStateOfSUT();
+}
+
+%%%%%
+Class name: org/restncs/NcsRest
+Method: fisher
+Lines: 92, 93
+%%%%%
+*****
+package org.restncs;
+
+import io.swagger.annotations.ApiOperation;
+import io.swagger.annotations.ApiParam;
+import org.restncs.imp.*;
+import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
+
+@RestController
+@RequestMapping(path = "/api")
+public class NcsRest {
+
+    @ApiOperation("Check the triangle type of the given three edges")
+    @GetMapping(
+            value = "/triangle/{a}/{b}/{c}",
+            produces = MediaType.APPLICATION_JSON_VALUE
+    )
+    public ResponseEntity<Dto> checkTriangle(
+            @ApiParam("First edge")
+            @PathVariable("a") Integer a,
+            @ApiParam("Second edge")
+            @PathVariable("b") Integer b,
+            @ApiParam("Third edge")
+            @PathVariable("c") Integer c
+    ){
+
+        Dto dto = new Dto();
+        dto.resultAsInt = TriangleClassification.classify(a,b,c);
+
+        return ResponseEntity.ok(dto);
+    }
+
+
+    @GetMapping(
+            value = "/bessj/{n}/{x}",
+            produces = MediaType.APPLICATION_JSON_VALUE
+    )
+    public ResponseEntity<Dto> bessj(
+            @PathVariable("n") Integer n,
+            @PathVariable("x") Double x
+    ){
+        if(n <= 2 || n > 1000){
+            return ResponseEntity.status(400).build();
+        }
+
+        Dto dto = new Dto();
+        Bessj bessj = new Bessj();
+        dto.resultAsDouble = bessj.bessj(n, x);
+
+        return ResponseEntity.ok(dto);
+    }
+
+
+    @GetMapping(
+            value = "/expint/{n}/{x}",
+            produces = MediaType.APPLICATION_JSON_VALUE
+    )
+    public ResponseEntity<Dto> expint(
+            @PathVariable("n") Integer n,
+            @PathVariable("x") Double x
+    ){
+
+        try{
+            Dto dto = new Dto();
+            dto.resultAsDouble = Expint.exe(n,x);
+            return ResponseEntity.ok(dto);
+        }catch (RuntimeException e){
+            return ResponseEntity.status(400).build();
+        }
+    }
+
+
+    @GetMapping(
+            value = "/fisher/{m}/{n}/{x}",
+            produces = MediaType.APPLICATION_JSON_VALUE
+    )
+    public ResponseEntity<Dto> fisher(
+            @PathVariable("m") Integer m,
+            @PathVariable("n") Integer n,
+            @PathVariable("x") Double x
+    ){
+
+        if(m > 1000 || n > 1000){
+            return ResponseEntity.status(400).build();
+        }
+
+        try{
+            Dto dto = new Dto();
+            dto.resultAsDouble = Fisher.exe(m, n, x);
+            return ResponseEntity.ok(dto);
+        }catch (RuntimeException e){
+            return ResponseEntity.status(400).build();
+        }
+    }
+
+
+    @GetMapping(
+            value = "/gammq/{a}/{x}",
+            produces = MediaType.APPLICATION_JSON_VALUE
+    )
+    public ResponseEntity<Dto> gammq(
+            @PathVariable("a") Double a,
+            @PathVariable("x") Double x
+    ){
+
+        try{
+            Dto dto = new Dto();
+            Gammq gammq = new Gammq();
+            dto.resultAsDouble = gammq.exe(a, x);
+            return ResponseEntity.ok(dto);
+        }catch (RuntimeException e){
+            return ResponseEntity.status(400).build();
+        }
+    }
+
+
+    @GetMapping(
+            value = "/remainder/{a}/{b}",
+            produces = MediaType.APPLICATION_JSON_VALUE
+    )
+    public ResponseEntity<Dto> remainder(
+            @PathVariable("a") Integer a,
+            @PathVariable("b") Integer b
+    ){
+        int lim = 10_000;
+        if(a > lim || a < -lim || b > lim || b < -lim){
+            return ResponseEntity.status(400).build();
+        }
+
+        Dto dto = new Dto();
+        dto.resultAsInt = Remainder.exe(a,b);
+
+        return ResponseEntity.ok(dto);
+    }
+}
+
+*****
+#####
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "Examples of different numerical algorithms accessible via REST",
+    "version": "1.0",
+    "title": "API for Numerical Case Study (NCS)"
+  },
+  "schemes": [
+    "http"
+  ],
+  "host": "localhost:8080",
+  "basePath": "/",
+  "tags": [
+    {
+      "name": "ncs-rest",
+      "description": "Ncs Rest"
+    }
+  ],
+  "paths": {
+    "/api/bessj/{n}/{x}": {
+      "get": {
+        "tags": [
+          "ncs-rest"
+        ],
+        "summary": "bessj",
+        "operationId": "bessjUsingGET",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "n",
+            "in": "path",
+            "description": "n",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "name": "x",
+            "in": "path",
+            "description": "x",
+            "required": true,
+            "type": "number",
+            "format": "double"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/Dto",
+              "originalRef": "Dto"
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/api/expint/{n}/{x}": {
+      "get": {
+        "tags": [
+          "ncs-rest"
+        ],
+        "summary": "expint",
+        "operationId": "expintUsingGET",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "n",
+            "in": "path",
+            "description": "n",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "name": "x",
+            "in": "path",
+            "description": "x",
+            "required": true,
+            "type": "number",
+            "format": "double"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/Dto",
+              "originalRef": "Dto"
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/api/fisher/{m}/{n}/{x}": {
+      "get": {
+        "tags": [
+          "ncs-rest"
+        ],
+        "summary": "fisher",
+        "operationId": "fisherUsingGET",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "m",
+            "in": "path",
+            "description": "m",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "name": "n",
+            "in": "path",
+            "description": "n",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "name": "x",
+            "in": "path",
+            "description": "x",
+            "required": true,
+            "type": "number",
+            "format": "double"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/Dto",
+              "originalRef": "Dto"
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/api/gammq/{a}/{x}": {
+      "get": {
+        "tags": [
+          "ncs-rest"
+        ],
+        "summary": "gammq",
+        "operationId": "gammqUsingGET",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "a",
+            "in": "path",
+            "description": "a",
+            "required": true,
+            "type": "number",
+            "format": "double"
+          },
+          {
+            "name": "x",
+            "in": "path",
+            "description": "x",
+            "required": true,
+            "type": "number",
+            "format": "double"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/Dto",
+              "originalRef": "Dto"
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/api/remainder/{a}/{b}": {
+      "get": {
+        "tags": [
+          "ncs-rest"
+        ],
+        "summary": "remainder",
+        "operationId": "remainderUsingGET",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "a",
+            "in": "path",
+            "description": "a",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "name": "b",
+            "in": "path",
+            "description": "b",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/Dto",
+              "originalRef": "Dto"
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/api/triangle/{a}/{b}/{c}": {
+      "get": {
+        "tags": [
+          "ncs-rest"
+        ],
+        "summary": "Check the triangle type of the given three edges",
+        "operationId": "checkTriangleUsingGET",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "a",
+            "in": "path",
+            "description": "First edge",
+            "required": false,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "name": "b",
+            "in": "path",
+            "description": "Second edge",
+            "required": false,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "name": "c",
+            "in": "path",
+            "description": "Third edge",
+            "required": false,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/Dto",
+              "originalRef": "Dto"
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        },
+        "deprecated": false
+      }
+    }
+  },
+  "definitions": {
+    "Dto": {
+      "type": "object",
+      "properties": {
+        "resultAsDouble": {
+          "type": "number",
+          "format": "double"
+        },
+        "resultAsInt": {
+          "type": "integer",
+          "format": "int32"
+        }
+      },
+      "title": "Dto"
+    }
+  }
+}
+#####

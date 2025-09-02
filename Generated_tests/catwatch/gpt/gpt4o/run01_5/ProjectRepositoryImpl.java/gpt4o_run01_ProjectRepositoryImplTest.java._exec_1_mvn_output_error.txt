@@ -1,0 +1,33 @@
+Line: 152
+Expected status code <400> but was <200>.
+----------------------------------------
+Line: 168
+JSON path  doesn't match.
+Expected: is an empty array
+Actual: []
+----------------------------------------
+Line: 142
+JSON path  doesn't match.
+Expected: is an empty array
+Actual: []
+----------------------------------------
+Line: 106
+JSON path  doesn't match.
+Expected: is an empty array
+Actual: []
+----------------------------------------
+Line: 90
+JSON path  doesn't match.
+Expected: is an empty array
+Actual: []
+----------------------------------------
+Line: 74
+JSON path  doesn't match.
+Expected: is an empty array
+Actual: []
+----------------------------------------
+Line: 124
+JSON path  doesn't match.
+Expected: is an empty array
+Actual: []
+----------------------------------------

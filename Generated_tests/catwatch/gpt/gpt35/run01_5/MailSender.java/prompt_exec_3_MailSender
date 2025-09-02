@@ -1,0 +1,42 @@
+You are a highly skilled test engineer specializing in debugging and resolving compilation errors and test failures in Java-based projects. Your expertise includes Java 8, JUnit 4, and REST Assured, allowing you to diagnose issues efficiently and provide precise, actionable fixes.
+
+Given the test set below delimited by *****, fix the source lines indicated in the error messages delimited by #####, replacing only the expected by the actual values.
+
+Do keep package, headers and accessories methods unchanged.
+
+Do export all other corrected tests unchanged.
+
+The response must contain only Java code in JUnit 4 format.
+
+#####
+
+#####
+*****
+
+import org.junit.Test;
+import static org.junit.Assert.*;
+
+public class gpt35_run01_MailSenderTest {
+
+    @Test
+    public void testSend() {
+        // Test for successful email sending
+        Throwable e = new Throwable("Test Exception Message");
+        assertTrue(new MailSender(null, "to@test.com", "from@test.com").send(e));
+    }
+
+    @Test
+    public void testCreateMessageFor() {
+        // Test creating email message for the given exception
+        String destinationAddress = "to@test.com";
+        String sourceAddress = "from@test.com";
+        Throwable e = new Throwable("Test Exception Message");
+        SimpleMailMessage mailMessage = new MailSender(null, destinationAddress, sourceAddress).createMessageFor(e);
+        assertEquals(destinationAddress, mailMessage.getTo());
+        assertEquals(sourceAddress, mailMessage.getFrom());
+        assertEquals("Test Exception Message", mailMessage.getSubject()); // Corrected subject value
+        assertTrue(mailMessage.getText().contains("Test Exception Message"));
+    }
+}
+
+*****

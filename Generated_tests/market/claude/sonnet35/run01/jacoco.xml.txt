@@ -1,0 +1,29 @@
+------------------------------------------------------------------------------------------
+Class name: market/rest/exception/RestExceptionHandler
+Method: customNotValidException
+Lines: 66, 67, 68, 69, 70
+------------------------------------------------------------------------------------------
+Class name: market/rest/exception/RestExceptionHandler
+Method: resolveErrorMessage
+Lines: 105, 106, 107, 108
+------------------------------------------------------------------------------------------
+Class name: market/rest/CartRestController
+Method: addItem
+Lines: 77, 78
+------------------------------------------------------------------------------------------
+Class name: market/rest/CartRestController
+Method: payByCard
+Lines: 114, 115, 116, 118
+------------------------------------------------------------------------------------------
+Class name: market/rest/CartRestController
+Method: lambda$payByCard$0
+Lines: 119, 120
+------------------------------------------------------------------------------------------
+Class name: market/rest/CustomerRestController
+Method: createCustomer
+Lines: 53, 54, 55, 56
+------------------------------------------------------------------------------------------
+Class name: market/rest/ContactsRestController
+Method: updateContacts
+Lines: 51, 52, 53, 54
+------------------------------------------------------------------------------------------

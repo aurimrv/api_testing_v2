@@ -1,0 +1,215 @@
+You are a highly skilled test engineer specializing in debugging and resolving compilation errors and test failures in Java-based projects. Your expertise includes Java 8, JUnit 4, and REST Assured, allowing you to diagnose issues efficiently and provide precise, actionable fixes.
+
+Do fix the compilation errors delimited by ##### given the code below delimited by *****.
+
+The response must contain only Java code in JUnit 4 format.
+
+#####
+[[1;31mERROR[m] COMPILATION ERROR : 
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/artificial/scs/src/test/java/org/restscs/gpt35_run01_CalcTest.java:[65,9] cannot find symbol
+  symbol:   class Calc
+  location: class org.restscs.gpt35_run01_CalcTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/artificial/scs/src/test/java/org/restscs/gpt35_run01_CalcTest.java:[65,25] cannot find symbol
+  symbol:   class Calc
+  location: class org.restscs.gpt35_run01_CalcTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/artificial/scs/src/test/java/org/restscs/gpt35_run01_CalcTest.java:[73,27] cannot find symbol
+  symbol:   variable Calc
+  location: class org.restscs.gpt35_run01_CalcTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/artificial/scs/src/test/java/org/restscs/gpt35_run01_CalcTest.java:[77,26] cannot find symbol
+  symbol:   variable Calc
+  location: class org.restscs.gpt35_run01_CalcTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/artificial/scs/src/test/java/org/restscs/gpt35_run01_CalcTest.java:[81,29] cannot find symbol
+  symbol:   variable Calc
+  location: class org.restscs.gpt35_run01_CalcTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/artificial/scs/src/test/java/org/restscs/gpt35_run01_CalcTest.java:[85,28] cannot find symbol
+  symbol:   variable Calc
+  location: class org.restscs.gpt35_run01_CalcTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/artificial/scs/src/test/java/org/restscs/gpt35_run01_CalcTest.java:[89,29] cannot find symbol
+  symbol:   variable Calc
+  location: class org.restscs.gpt35_run01_CalcTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/artificial/scs/src/test/java/org/restscs/gpt35_run01_CalcTest.java:[93,31] cannot find symbol
+  symbol:   variable Calc
+  location: class org.restscs.gpt35_run01_CalcTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/artificial/scs/src/test/java/org/restscs/gpt35_run01_CalcTest.java:[97,32] cannot find symbol
+  symbol:   variable Calc
+  location: class org.restscs.gpt35_run01_CalcTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/artificial/scs/src/test/java/org/restscs/gpt35_run01_CalcTest.java:[101,29] cannot find symbol
+  symbol:   variable Calc
+  location: class org.restscs.gpt35_run01_CalcTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/artificial/scs/src/test/java/org/restscs/gpt35_run01_CalcTest.java:[105,33] cannot find symbol
+  symbol:   variable Calc
+  location: class org.restscs.gpt35_run01_CalcTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/artificial/scs/src/test/java/org/restscs/gpt35_run01_CalcTest.java:[109,33] cannot find symbol
+  symbol:   variable Calc
+  location: class org.restscs.gpt35_run01_CalcTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/artificial/scs/src/test/java/org/restscs/gpt35_run01_CalcTest.java:[113,31] cannot find symbol
+  symbol:   variable Calc
+  location: class org.restscs.gpt35_run01_CalcTest
+[[1;31mERROR[m] Failed to execute goal [32morg.apache.maven.plugins:maven-compiler-plugin:3.8.0:testCompile[m [1m(default-testCompile)[m on project [36mevomaster-benchmark-cs-rest-artificial-scs[m: [1;31mCompilation failure[m: Compilation failure: 
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/artificial/scs/src/test/java/org/restscs/gpt35_run01_CalcTest.java:[65,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Calc
+[[1;31mERROR[m]   location: class org.restscs.gpt35_run01_CalcTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/artificial/scs/src/test/java/org/restscs/gpt35_run01_CalcTest.java:[65,25] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Calc
+[[1;31mERROR[m]   location: class org.restscs.gpt35_run01_CalcTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/artificial/scs/src/test/java/org/restscs/gpt35_run01_CalcTest.java:[73,27] cannot find symbol
+[[1;31mERROR[m]   symbol:   variable Calc
+[[1;31mERROR[m]   location: class org.restscs.gpt35_run01_CalcTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/artificial/scs/src/test/java/org/restscs/gpt35_run01_CalcTest.java:[77,26] cannot find symbol
+[[1;31mERROR[m]   symbol:   variable Calc
+[[1;31mERROR[m]   location: class org.restscs.gpt35_run01_CalcTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/artificial/scs/src/test/java/org/restscs/gpt35_run01_CalcTest.java:[81,29] cannot find symbol
+[[1;31mERROR[m]   symbol:   variable Calc
+[[1;31mERROR[m]   location: class org.restscs.gpt35_run01_CalcTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/artificial/scs/src/test/java/org/restscs/gpt35_run01_CalcTest.java:[85,28] cannot find symbol
+[[1;31mERROR[m]   symbol:   variable Calc
+[[1;31mERROR[m]   location: class org.restscs.gpt35_run01_CalcTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/artificial/scs/src/test/java/org/restscs/gpt35_run01_CalcTest.java:[89,29] cannot find symbol
+[[1;31mERROR[m]   symbol:   variable Calc
+[[1;31mERROR[m]   location: class org.restscs.gpt35_run01_CalcTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/artificial/scs/src/test/java/org/restscs/gpt35_run01_CalcTest.java:[93,31] cannot find symbol
+[[1;31mERROR[m]   symbol:   variable Calc
+[[1;31mERROR[m]   location: class org.restscs.gpt35_run01_CalcTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/artificial/scs/src/test/java/org/restscs/gpt35_run01_CalcTest.java:[97,32] cannot find symbol
+[[1;31mERROR[m]   symbol:   variable Calc
+[[1;31mERROR[m]   location: class org.restscs.gpt35_run01_CalcTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/artificial/scs/src/test/java/org/restscs/gpt35_run01_CalcTest.java:[101,29] cannot find symbol
+[[1;31mERROR[m]   symbol:   variable Calc
+[[1;31mERROR[m]   location: class org.restscs.gpt35_run01_CalcTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/artificial/scs/src/test/java/org/restscs/gpt35_run01_CalcTest.java:[105,33] cannot find symbol
+[[1;31mERROR[m]   symbol:   variable Calc
+[[1;31mERROR[m]   location: class org.restscs.gpt35_run01_CalcTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/artificial/scs/src/test/java/org/restscs/gpt35_run01_CalcTest.java:[109,33] cannot find symbol
+[[1;31mERROR[m]   symbol:   variable Calc
+[[1;31mERROR[m]   location: class org.restscs.gpt35_run01_CalcTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/artificial/scs/src/test/java/org/restscs/gpt35_run01_CalcTest.java:[113,31] cannot find symbol
+[[1;31mERROR[m]   symbol:   variable Calc
+[[1;31mERROR[m]   location: class org.restscs.gpt35_run01_CalcTest
+[[1;31mERROR[m] -> [1m[Help 1][m
+[[1;31mERROR[m] 
+[[1;31mERROR[m] To see the full stack trace of the errors, re-run Maven with the [1m-e[m switch.
+[[1;31mERROR[m] Re-run Maven using the [1m-X[m switch to enable full debug logging.
+[[1;31mERROR[m] 
+[[1;31mERROR[m] For more information about the errors and possible solutions, please read the following articles:
+[[1;31mERROR[m] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+
+#####
+*****
+
+// Instruction 1: Add this package line to generated test code file:
+package org.restscs;
+
+// Instruction 2: Add the following Java imports to generated test code file:
+import org.junit.AfterClass;
+import org.junit.BeforeClass;
+import org.junit.Before;
+import org.junit.Test;
+import static org.junit.Assert.*;
+import java.util.Map;
+import java.util.List;
+import static org.evomaster.client.java.controller.api.EMTestUtils.*;
+import org.evomaster.client.java.controller.SutHandler;
+import io.restassured.RestAssured;
+import static io.restassured.RestAssured.given;
+import io.restassured.response.ValidatableResponse;
+import static org.hamcrest.Matchers.*;
+import io.restassured.config.JsonConfig;
+import io.restassured.path.json.config.JsonPathConfig;
+import static io.restassured.config.RedirectConfig.redirectConfig;
+import static org.evomaster.client.java.controller.contentMatchers.NumberMatcher.*;
+import static org.evomaster.client.java.controller.contentMatchers.StringMatcher.*;
+import static org.evomaster.client.java.controller.contentMatchers.SubStringMatcher.*;
+import static org.evomaster.client.java.controller.expect.ExpectationHandler.expectationHandler;
+import org.evomaster.client.java.controller.expect.ExpectationHandler;
+import io.restassured.path.json.JsonPath;
+import java.util.Arrays;
+
+public class gpt35_run01_CalcTest {
+
+    // Instruction 4: Create these variables in the generated test code
+    private static final SutHandler controller = new em.embedded.org.restscs.EmbeddedEvoMasterController();
+    private static String baseUrlOfSut;
+
+    // Instruction 5: Include the following setup and teardown methods in generated test code file
+    @BeforeClass
+    public static void initClass() {
+        controller.setupForGeneratedTest();
+        baseUrlOfSut = controller.startSut();
+        controller.registerOrExecuteInitSqlCommandsIfNeeded();
+        assertNotNull(baseUrlOfSut);
+        RestAssured.enableLoggingOfRequestAndResponseIfValidationFails();
+        RestAssured.useRelaxedHTTPSValidation();
+        RestAssured.urlEncodingEnabled = false;
+        RestAssured.config = RestAssured.config()
+                .jsonConfig(JsonConfig.jsonConfig().numberReturnType(JsonPathConfig.NumberReturnType.DOUBLE))
+                .redirect(redirectConfig().followRedirects(false));
+    }
+
+    @AfterClass
+    public static void tearDown() {
+        controller.stopSut();
+    }
+
+    @Before
+    public void initTest() {
+        controller.resetStateOfSUT();
+    }
+
+    // Test for constructor <init> of class Calc
+    @Test
+    public void testCalcConstructor() {
+        // Explicitly instantiating the class to ensure constructor is executed
+        Calc calc = new Calc();
+        assertNotNull(calc);
+    }
+
+    // Test method subject in class Calc for full coverage
+    @Test
+    public void testCalcSubject() {
+        // Test for constant operator "pi"
+        String piResult = Calc.subject("pi", 0.0, 0.0);
+        assertEquals("3.141592653589793", piResult);
+
+        // Test for constant operator "e"
+        String eResult = Calc.subject("e", 0.0, 0.0);
+        assertEquals("2.718281828459045", eResult);
+
+        // Test for unary operator "sqrt"
+        String sqrtResult = Calc.subject("sqrt", 4.0, 0.0);
+        assertEquals("2.0", sqrtResult);
+
+        // Test for unary operator "log"
+        String logResult = Calc.subject("log", 10.0, 0.0);
+        assertEquals("2.302585092994046", logResult);
+
+        // Test for unary operator "sine"
+        String sineResult = Calc.subject("sine", Math.PI / 2, 0.0);
+        assertEquals("1.0", sineResult);
+
+        // Test for unary operator "cosine"
+        String cosineResult = Calc.subject("cosine", 0.0, 0.0);
+        assertEquals("1.0", cosineResult);
+
+        // Test for unary operator "tangent"
+        String tangentResult = Calc.subject("tangent", 0.0, 0.0);
+        assertEquals("0.0", tangentResult);
+
+        // Test for binary operator "plus"
+        String plusResult = Calc.subject("plus", 2.0, 3.0);
+        assertEquals("5.0", plusResult);
+
+        // Test for binary operator "subtract"
+        String subtractResult = Calc.subject("subtract", 5.0, 2.0);
+        assertEquals("3.0", subtractResult);
+
+        // Test for binary operator "multiply"
+        String multiplyResult = Calc.subject("multiply", 4.0, 3.0);
+        assertEquals("12.0", multiplyResult);
+
+        // Test for binary operator "divide"
+        String divideResult = Calc.subject("divide", 10.0, 2.0);
+        assertEquals("5.0", divideResult);
+    }
+}
+
+*****

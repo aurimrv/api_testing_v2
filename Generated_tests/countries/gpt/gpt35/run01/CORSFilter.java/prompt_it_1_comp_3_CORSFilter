@@ -1,0 +1,224 @@
+You are a highly skilled test engineer specializing in debugging and resolving compilation errors and test failures in Java-based projects. Your expertise includes Java 8, JUnit 4, and REST Assured, allowing you to diagnose issues efficiently and provide precise, actionable fixes.
+
+Do fix the compilation errors delimited by ##### given the code below delimited by *****.
+
+The response must contain only Java code in JUnit 4 format.
+
+#####
+[[1;31mERROR[m] COMPILATION ERROR : 
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_CORSFilterTest.java:[11,31] cannot find symbol
+  symbol:   class CORSFilter
+  location: package eu.fayder.restcountries
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_CORSFilterTest.java:[12,31] cannot find symbol
+  symbol:   class MockServletRequest
+  location: package eu.fayder.restcountries
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_CORSFilterTest.java:[13,31] cannot find symbol
+  symbol:   class MockServletResponse
+  location: package eu.fayder.restcountries
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_CORSFilterTest.java:[14,31] cannot find symbol
+  symbol:   class MockFilterChain
+  location: package eu.fayder.restcountries
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_CORSFilterTest.java:[34,23] cannot find symbol
+  symbol:   method redirectConfig()
+  location: class eu.fayder.restcountries.gpt35_run01_CORSFilterTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_CORSFilterTest.java:[33,80] package JsonPathConfig does not exist
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_CORSFilterTest.java:[33,25] cannot find symbol
+  symbol:   variable JsonConfig
+  location: class eu.fayder.restcountries.gpt35_run01_CORSFilterTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_CORSFilterTest.java:[49,9] cannot find symbol
+  symbol:   class CORSFilter
+  location: class eu.fayder.restcountries.gpt35_run01_CORSFilterTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_CORSFilterTest.java:[49,37] cannot find symbol
+  symbol:   class CORSFilter
+  location: class eu.fayder.restcountries.gpt35_run01_CORSFilterTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_CORSFilterTest.java:[56,9] cannot find symbol
+  symbol:   class CORSFilter
+  location: class eu.fayder.restcountries.gpt35_run01_CORSFilterTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_CORSFilterTest.java:[56,37] cannot find symbol
+  symbol:   class CORSFilter
+  location: class eu.fayder.restcountries.gpt35_run01_CORSFilterTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_CORSFilterTest.java:[63,9] cannot find symbol
+  symbol:   class CORSFilter
+  location: class eu.fayder.restcountries.gpt35_run01_CORSFilterTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_CORSFilterTest.java:[63,37] cannot find symbol
+  symbol:   class CORSFilter
+  location: class eu.fayder.restcountries.gpt35_run01_CORSFilterTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_CORSFilterTest.java:[65,9] cannot find symbol
+  symbol:   class MockServletRequest
+  location: class eu.fayder.restcountries.gpt35_run01_CORSFilterTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_CORSFilterTest.java:[65,42] cannot find symbol
+  symbol:   class MockServletRequest
+  location: class eu.fayder.restcountries.gpt35_run01_CORSFilterTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_CORSFilterTest.java:[66,9] cannot find symbol
+  symbol:   class MockServletResponse
+  location: class eu.fayder.restcountries.gpt35_run01_CORSFilterTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_CORSFilterTest.java:[66,44] cannot find symbol
+  symbol:   class MockServletResponse
+  location: class eu.fayder.restcountries.gpt35_run01_CORSFilterTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_CORSFilterTest.java:[67,9] cannot find symbol
+  symbol:   class MockFilterChain
+  location: class eu.fayder.restcountries.gpt35_run01_CORSFilterTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_CORSFilterTest.java:[67,37] cannot find symbol
+  symbol:   class MockFilterChain
+  location: class eu.fayder.restcountries.gpt35_run01_CORSFilterTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_CORSFilterTest.java:[76,9] cannot find symbol
+  symbol:   class CORSFilter
+  location: class eu.fayder.restcountries.gpt35_run01_CORSFilterTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_CORSFilterTest.java:[76,37] cannot find symbol
+  symbol:   class CORSFilter
+  location: class eu.fayder.restcountries.gpt35_run01_CORSFilterTest
+[[1;31mERROR[m] Failed to execute goal [32morg.apache.maven.plugins:maven-compiler-plugin:3.8.0:testCompile[m [1m(default-testCompile)[m on project [36mrestcountries[m: [1;31mCompilation failure[m: Compilation failure: 
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_CORSFilterTest.java:[11,31] cannot find symbol
+[[1;31mERROR[m]   symbol:   class CORSFilter
+[[1;31mERROR[m]   location: package eu.fayder.restcountries
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_CORSFilterTest.java:[12,31] cannot find symbol
+[[1;31mERROR[m]   symbol:   class MockServletRequest
+[[1;31mERROR[m]   location: package eu.fayder.restcountries
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_CORSFilterTest.java:[13,31] cannot find symbol
+[[1;31mERROR[m]   symbol:   class MockServletResponse
+[[1;31mERROR[m]   location: package eu.fayder.restcountries
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_CORSFilterTest.java:[14,31] cannot find symbol
+[[1;31mERROR[m]   symbol:   class MockFilterChain
+[[1;31mERROR[m]   location: package eu.fayder.restcountries
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_CORSFilterTest.java:[34,23] cannot find symbol
+[[1;31mERROR[m]   symbol:   method redirectConfig()
+[[1;31mERROR[m]   location: class eu.fayder.restcountries.gpt35_run01_CORSFilterTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_CORSFilterTest.java:[33,80] package JsonPathConfig does not exist
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_CORSFilterTest.java:[33,25] cannot find symbol
+[[1;31mERROR[m]   symbol:   variable JsonConfig
+[[1;31mERROR[m]   location: class eu.fayder.restcountries.gpt35_run01_CORSFilterTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_CORSFilterTest.java:[49,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class CORSFilter
+[[1;31mERROR[m]   location: class eu.fayder.restcountries.gpt35_run01_CORSFilterTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_CORSFilterTest.java:[49,37] cannot find symbol
+[[1;31mERROR[m]   symbol:   class CORSFilter
+[[1;31mERROR[m]   location: class eu.fayder.restcountries.gpt35_run01_CORSFilterTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_CORSFilterTest.java:[56,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class CORSFilter
+[[1;31mERROR[m]   location: class eu.fayder.restcountries.gpt35_run01_CORSFilterTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_CORSFilterTest.java:[56,37] cannot find symbol
+[[1;31mERROR[m]   symbol:   class CORSFilter
+[[1;31mERROR[m]   location: class eu.fayder.restcountries.gpt35_run01_CORSFilterTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_CORSFilterTest.java:[63,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class CORSFilter
+[[1;31mERROR[m]   location: class eu.fayder.restcountries.gpt35_run01_CORSFilterTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_CORSFilterTest.java:[63,37] cannot find symbol
+[[1;31mERROR[m]   symbol:   class CORSFilter
+[[1;31mERROR[m]   location: class eu.fayder.restcountries.gpt35_run01_CORSFilterTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_CORSFilterTest.java:[65,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class MockServletRequest
+[[1;31mERROR[m]   location: class eu.fayder.restcountries.gpt35_run01_CORSFilterTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_CORSFilterTest.java:[65,42] cannot find symbol
+[[1;31mERROR[m]   symbol:   class MockServletRequest
+[[1;31mERROR[m]   location: class eu.fayder.restcountries.gpt35_run01_CORSFilterTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_CORSFilterTest.java:[66,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class MockServletResponse
+[[1;31mERROR[m]   location: class eu.fayder.restcountries.gpt35_run01_CORSFilterTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_CORSFilterTest.java:[66,44] cannot find symbol
+[[1;31mERROR[m]   symbol:   class MockServletResponse
+[[1;31mERROR[m]   location: class eu.fayder.restcountries.gpt35_run01_CORSFilterTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_CORSFilterTest.java:[67,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class MockFilterChain
+[[1;31mERROR[m]   location: class eu.fayder.restcountries.gpt35_run01_CORSFilterTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_CORSFilterTest.java:[67,37] cannot find symbol
+[[1;31mERROR[m]   symbol:   class MockFilterChain
+[[1;31mERROR[m]   location: class eu.fayder.restcountries.gpt35_run01_CORSFilterTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_CORSFilterTest.java:[76,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class CORSFilter
+[[1;31mERROR[m]   location: class eu.fayder.restcountries.gpt35_run01_CORSFilterTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_CORSFilterTest.java:[76,37] cannot find symbol
+[[1;31mERROR[m]   symbol:   class CORSFilter
+[[1;31mERROR[m]   location: class eu.fayder.restcountries.gpt35_run01_CORSFilterTest
+[[1;31mERROR[m] -> [1m[Help 1][m
+[[1;31mERROR[m] 
+[[1;31mERROR[m] To see the full stack trace of the errors, re-run Maven with the [1m-e[m switch.
+[[1;31mERROR[m] Re-run Maven using the [1m-X[m switch to enable full debug logging.
+[[1;31mERROR[m] 
+[[1;31mERROR[m] For more information about the errors and possible solutions, please read the following articles:
+[[1;31mERROR[m] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+
+#####
+*****
+
+package eu.fayder.restcountries;
+
+import org.junit.AfterClass;
+import org.junit.BeforeClass;
+import org.junit.Before;
+import org.junit.Test;
+import static org.junit.Assert.*;
+import java.io.IOException; // Added import for IOException
+import javax.servlet.ServletException; // Added import for ServletException
+import eu.fayder.restcountries.CORSFilter; // Added import for CORSFilter
+import eu.fayder.restcountries.MockServletRequest; // Added import for MockServletRequest
+import eu.fayder.restcountries.MockServletResponse; // Added import for MockServletResponse
+import eu.fayder.restcountries.MockFilterChain; // Added import for MockFilterChain
+import org.evomaster.client.java.controller.SutHandler;
+import io.restassured.RestAssured;
+
+public class gpt35_run01_CORSFilterTest {
+
+    private static final SutHandler controller = new em.embedded.eu.fayder.EmbeddedEvoMasterController();
+    private static String baseUrlOfSut;
+
+    @BeforeClass
+    public static void initClass() {
+        controller.setupForGeneratedTest();
+        baseUrlOfSut = controller.startSut();
+        controller.registerOrExecuteInitSqlCommandsIfNeeded();
+        assertNotNull(baseUrlOfSut);
+        RestAssured.enableLoggingOfRequestAndResponseIfValidationFails();
+        RestAssured.useRelaxedHTTPSValidation();
+        RestAssured.urlEncodingEnabled = false;
+        RestAssured.config = RestAssured.config()
+            .jsonConfig(JsonConfig.jsonConfig().numberReturnType(JsonPathConfig.NumberReturnType.DOUBLE))
+            .redirect(redirectConfig().followRedirects(false));
+    }
+
+    @AfterClass
+    public static void tearDown() {
+        controller.stopSut();
+    }
+
+    @Before
+    public void initTest() {
+        controller.resetStateOfSUT();
+    }
+
+    @Test
+    public void testCORSFilterInit() {
+        CORSFilter corsFilter = new CORSFilter();
+        // This test ensures the constructor <init> is executed
+        assertNotNull(corsFilter);
+    }
+
+    @Test
+    public void testCORSFilterInitMethod() {
+        CORSFilter corsFilter = new CORSFilter();
+        corsFilter.init(null);
+        // Add assertions or further actions if needed
+    }
+
+    @Test
+    public void testCORSFilterDoFilter() throws IOException, ServletException {
+        CORSFilter corsFilter = new CORSFilter();
+
+        MockServletRequest request = new MockServletRequest();
+        MockServletResponse response = new MockServletResponse();
+        MockFilterChain chain = new MockFilterChain();
+
+        corsFilter.doFilter(request, response, chain);
+
+        // Add assertions on response headers or chain behavior if needed
+    }
+
+    @Test
+    public void testCORSFilterDestroy() {
+        CORSFilter corsFilter = new CORSFilter();
+        corsFilter.destroy();
+        // Add assertions or further actions if needed
+    }
+
+}
+
+*****

@@ -1,0 +1,133 @@
+[[1;34mINFO[m] Scanning for projects...
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m---------------------< [0;36mnet.lukyanets:market-rest[0;1m >----------------------[m
+[[1;34mINFO[m] [1mBuilding market-rest 0.1.2[m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;33mWARNING[m] The POM for com.sun.xml.bind:jaxb-osgi:jar:2.2.10 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-clean-plugin:2.5:clean[m [1m(default-clean)[m @ [36mmarket-rest[0;1m ---[m
+[[1;34mINFO[m] Deleting /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_11_maven/cs/rest-gui/market/market-rest/target
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mjacoco-maven-plugin:0.8.7:prepare-agent[m [1m(default)[m @ [36mmarket-rest[0;1m ---[m
+[[1;34mINFO[m] argLine set to -javaagent:/home/rincon/.m2/repository/org/jacoco/org.jacoco.agent/0.8.7/org.jacoco.agent-0.8.7-runtime.jar=destfile=/media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_11_maven/cs/rest-gui/market/market-rest/target/jacoco.exec,append=true,excludes=em/embedded/market/**
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mspring-boot-maven-plugin:2.4.3:build-info[m [1m(default)[m @ [36mmarket-rest[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:resources[m [1m(default-resources)[m @ [36mmarket-rest[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.8.0:compile[m [1m(default-compile)[m @ [36mmarket-rest[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 11 source files to /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_11_maven/cs/rest-gui/market/market-rest/target/classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mjacoco-maven-plugin:0.8.7:prepare-agent[m [1m(default)[m @ [36mmarket-rest[0;1m ---[m
+[[1;34mINFO[m] argLine set to -javaagent:/home/rincon/.m2/repository/org/jacoco/org.jacoco.agent/0.8.7/org.jacoco.agent-0.8.7-runtime.jar=destfile=/media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_11_maven/cs/rest-gui/market/market-rest/target/jacoco.exec,append=true,excludes=em/embedded/market/**
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mspring-boot-maven-plugin:2.4.3:build-info[m [1m(default)[m @ [36mmarket-rest[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:resources[m [1m(default-resources)[m @ [36mmarket-rest[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.8.0:compile[m [1m(default-compile)[m @ [36mmarket-rest[0;1m ---[m
+[[1;34mINFO[m] Nothing to compile - all classes are up to date
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:testResources[m [1m(default-testResources)[m @ [36mmarket-rest[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_11_maven/cs/rest-gui/market/market-rest/src/test/resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.8.0:testCompile[m [1m(default-testCompile)[m @ [36mmarket-rest[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 1 source file to /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_11_maven/cs/rest-gui/market/market-rest/target/test-classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mjacoco-maven-plugin:0.8.7:prepare-agent[m [1m(default)[m @ [36mmarket-rest[0;1m ---[m
+[[1;34mINFO[m] argLine set to -javaagent:/home/rincon/.m2/repository/org/jacoco/org.jacoco.agent/0.8.7/org.jacoco.agent-0.8.7-runtime.jar=destfile=/media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_11_maven/cs/rest-gui/market/market-rest/target/jacoco.exec,append=true,excludes=em/embedded/market/**
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mspring-boot-maven-plugin:2.4.3:build-info[m [1m(default)[m @ [36mmarket-rest[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:resources[m [1m(default-resources)[m @ [36mmarket-rest[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.8.0:compile[m [1m(default-compile)[m @ [36mmarket-rest[0;1m ---[m
+[[1;34mINFO[m] Nothing to compile - all classes are up to date
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:testResources[m [1m(default-testResources)[m @ [36mmarket-rest[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_11_maven/cs/rest-gui/market/market-rest/src/test/resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.8.0:testCompile[m [1m(default-testCompile)[m @ [36mmarket-rest[0;1m ---[m
+[[1;34mINFO[m] Nothing to compile - all classes are up to date
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:2.22.0:test[m [1m(default-test)[m @ [36mmarket-rest[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] -------------------------------------------------------
+[[1;34mINFO[m]  T E S T S
+[[1;34mINFO[m] -------------------------------------------------------
+[[1;34mINFO[m] Running market.[1mgpt4o_run01_RestExceptionHandlerTest[m
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.4.3)
+
+2025-03-28 11:50:05,187 INFO  [background-preinit] o.h.v.i.u.Version - HV000001: Hibernate Validator 6.1.7.Final
+2025-03-28 11:50:05,291 INFO  [main] o.a.m.s.b.ForkedBooter - Starting ForkedBooter v2.22.0 using Java 11.0.20 on IFTO-PROBOOK with PID 17943 (started by rincon in /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_11_maven/cs/rest-gui/market/market-rest)
+2025-03-28 11:50:05,298 INFO  [main] o.a.m.s.b.ForkedBooter - No active profile set, falling back to default profiles: default
+2025-03-28 11:50:06,066 WARN  [main] o.s.b.c.c.ConfigDataEnvironment - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 34:13]
+2025-03-28 11:50:06,066 WARN  [main] o.s.b.c.c.ConfigDataEnvironment - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 24:13]
+2025-03-28 11:50:07,825 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-28 11:50:07,962 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 124 ms. Found 8 JPA repository interfaces.
+2025-03-28 11:50:08,523 INFO  [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'market.DataConfig' of type [market.DataConfig$$EnhancerBySpringCGLIB$$225ec8ef] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-03-28 11:50:08,715 INFO  [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@6b8eec09' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-03-28 11:50:08,724 INFO  [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-03-28 11:50:09,248 INFO  [main] o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 0 (http)
+2025-03-28 11:50:09,269 INFO  [main] o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-auto-1"]
+2025-03-28 11:50:09,270 INFO  [main] o.a.c.c.StandardService - Starting service [Tomcat]
+2025-03-28 11:50:09,270 INFO  [main] o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.43]
+2025-03-28 11:50:09,433 INFO  [main] o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+2025-03-28 11:50:09,433 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3362 ms
+2025-03-28 11:50:09,680 INFO  [main] c.z.h.HikariDataSource - HikariPool-1 - Starting...
+2025-03-28 11:50:10,125 INFO  [main] c.z.h.HikariDataSource - HikariPool-1 - Start completed.
+2025-03-28 11:50:10,357 INFO  [main] o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-28 11:50:10,453 INFO  [main] o.h.Version - HHH000412: Hibernate ORM core version 5.4.28.Final
+2025-03-28 11:50:10,693 INFO  [main] o.h.a.c.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2025-03-28 11:50:11,097 INFO  [main] o.h.d.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2025-03-28 11:50:11,526 WARN  [main] o.h.b.i.InFlightMetadataCollectorImpl - HHH000069: Duplicate generator name gen
+2025-03-28 11:50:11,530 WARN  [main] o.h.b.i.InFlightMetadataCollectorImpl - HHH000069: Duplicate generator name gen
+2025-03-28 11:50:12,490 INFO  [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-03-28 11:50:12,502 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-28 11:50:13,823 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-28 11:50:14,885 INFO  [main] o.s.s.w.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@28d32d3d, org.springframework.security.web.context.SecurityContextPersistenceFilter@1f242a00, org.springframework.security.web.header.HeaderWriterFilter@7628fd81, org.springframework.security.web.authentication.logout.LogoutFilter@55075a4c, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@58a1bf14, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@49392f7c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@569e577b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3defaf6b, org.springframework.security.web.session.SessionManagementFilter@846d357, org.springframework.security.web.access.ExceptionTranslationFilter@36f487d1, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6a5d1b5]
+2025-03-28 11:50:15,043 INFO  [main] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2025-03-28 11:50:15,548 INFO  [main] o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-auto-1"]
+2025-03-28 11:50:15,582 INFO  [main] o.s.b.w.e.t.TomcatWebServer - Tomcat started on port(s): 35109 (http) with context path ''
+2025-03-28 11:50:16,222 INFO  [main] o.a.m.s.b.ForkedBooter - Started ForkedBooter in 11.904 seconds (JVM running for 14.411)
+2025-03-28 11:50:17,292 INFO  [main] o.a.c.h.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-auto-1"]
+2025-03-28 11:50:17,292 INFO  [main] o.a.c.c.StandardService - Stopping service [Tomcat]
+2025-03-28 11:50:17,296 INFO  [main] o.a.c.h.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-auto-1"]
+2025-03-28 11:50:17,300 INFO  [main] o.a.c.h.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-auto-1"]
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m3[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 14.397 s - in market.[1mgpt4o_run01_RestExceptionHandlerTest[m
+2025-03-28 11:50:17,526 INFO  [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2025-03-28 11:50:17,537 INFO  [SpringContextShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-28 11:50:17,539 INFO  [SpringContextShutdownHook] c.z.h.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-03-28 11:50:17,543 INFO  [SpringContextShutdownHook] c.z.h.HikariDataSource - HikariPool-1 - Shutdown completed.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] Results:
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1;32mTests run: 3, Failures: 0, Errors: 0, Skipped: 0[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mjacoco-maven-plugin:0.8.7:report[m [1m(report)[m @ [36mmarket-rest[0;1m ---[m
+[[1;34mINFO[m] Loading execution data file /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_11_maven/cs/rest-gui/market/market-rest/target/jacoco.exec
+[[1;34mINFO[m] Analyzed bundle 'market-rest' with 10 classes
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;32mBUILD SUCCESS[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  20.371 s
+[[1;34mINFO[m] Finished at: 2025-03-28T11:50:18-03:00
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m

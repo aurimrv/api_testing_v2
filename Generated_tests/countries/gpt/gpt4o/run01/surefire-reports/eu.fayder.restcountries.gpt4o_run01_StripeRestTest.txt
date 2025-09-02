@@ -1,0 +1,40 @@
+-------------------------------------------------------------------------------
+Test set: eu.fayder.restcountries.gpt4o_run01_StripeRestTest
+-------------------------------------------------------------------------------
+Tests run: 8, Failures: 4, Errors: 0, Skipped: 1, Time elapsed: 0.761 s <<< FAILURE! - in eu.fayder.restcountries.gpt4o_run01_StripeRestTest
+testContributeBlankToken(eu.fayder.restcountries.gpt4o_run01_StripeRestTest)  Time elapsed: 0.087 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+JSON path code doesn't match.
+Expected: is <404>
+  Actual: null
+
+	at eu.fayder.restcountries.gpt4o_run01_StripeRestTest.testContributeBlankToken(gpt4o_run01_StripeRestTest.java:113)
+
+testContributeValid(eu.fayder.restcountries.gpt4o_run01_StripeRestTest)  Time elapsed: 0.031 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+JSON path code doesn't match.
+Expected: is <404>
+  Actual: null
+
+	at eu.fayder.restcountries.gpt4o_run01_StripeRestTest.testContributeValid(gpt4o_run01_StripeRestTest.java:129)
+
+testContributeStripeException(eu.fayder.restcountries.gpt4o_run01_StripeRestTest)  Time elapsed: 0.03 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+JSON path code doesn't match.
+Expected: is <404>
+  Actual: null
+
+	at eu.fayder.restcountries.gpt4o_run01_StripeRestTest.testContributeStripeException(gpt4o_run01_StripeRestTest.java:145)
+
+testGetResponseAccepted(eu.fayder.restcountries.gpt4o_run01_StripeRestTest)  Time elapsed: 0.031 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+JSON path code doesn't match.
+Expected: is <404>
+  Actual: null
+
+	at eu.fayder.restcountries.gpt4o_run01_StripeRestTest.testGetResponseAccepted(gpt4o_run01_StripeRestTest.java:173)
+

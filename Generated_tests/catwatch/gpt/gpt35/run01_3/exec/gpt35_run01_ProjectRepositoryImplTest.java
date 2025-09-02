@@ -1,0 +1,131 @@
+
+import org.junit.AfterClass;
+import org.junit.BeforeClass;
+import org.junit.Before;
+import org.junit.Test;
+import static org.junit.Assert.*;
+import java.util.Map;
+import java.util.List;
+import static org.evomaster.client.java.controller.api.EMTestUtils.*;
+import org.evomaster.client.java.controller.SutHandler;
+import io.restassured.RestAssured;
+import static io.restassured.RestAssured.given;
+import io.restassured.response.ValidatableResponse;
+import static org.evomaster.client.java.sql.dsl.SqlDsl.sql;
+import org.evomaster.client.java.controller.api.dto.database.operations.InsertionResultsDto;
+import org.evomaster.client.java.controller.api.dto.database.operations.InsertionDto;
+import static org.hamcrest.Matchers.*;
+import io.restassured.config.JsonConfig;
+import io.restassured.path.json.config.JsonPathConfig;
+import static io.restassured.config.RedirectConfig.redirectConfig;
+import static org.evomaster.client.java.controller.contentMatchers.NumberMatcher.*;
+import static org.evomaster.client.java.controller.contentMatchers.StringMatcher.*;
+import static org.evomaster.client.java.controller.contentMatchers.SubStringMatcher.*;
+import static org.evomaster.client.java.controller.expect.ExpectationHandler.expectationHandler;
+import org.evomaster.client.java.controller.expect.ExpectationHandler;
+import io.restassured.path.json.JsonPath;
+import java.util.Arrays;
+import java.util.Optional;
+import java.util.ArrayList;
+import java.util.Date;
+
+class gpt35_run01_ProjectRepositoryImplTest {
+
+    private static final SutHandler controller = new em.embedded.org.zalando.EmbeddedEvoMasterController();
+    private static String baseUrlOfSut;
+
+    @BeforeClass
+    public static void initClass() {
+        controller.setupForGeneratedTest();
+        baseUrlOfSut = controller.startSut();
+        controller.registerOrExecuteInitSqlCommandsIfNeeded();
+        assertNotNull(baseUrlOfSut);
+        RestAssured.enableLoggingOfRequestAndResponseIfValidationFails();
+        RestAssured.useRelaxedHTTPSValidation();
+        RestAssured.urlEncodingEnabled = false;
+        RestAssured.config = RestAssured.config()
+                .jsonConfig(JsonConfig.jsonConfig().numberReturnType(JsonPathConfig.NumberReturnType.DOUBLE))
+                .redirect(redirectConfig().followRedirects(false));
+    }
+
+    @AfterClass
+    public static void tearDown() {
+        controller.stopSut();
+    }
+
+    @Before
+    public void initTest() {
+        controller.resetDatabase(Arrays.asList("CONTRIBUTOR"));
+        controller.resetStateOfSUT();
+    }
+
+    @Test
+    public void testFindProjects() {
+        // Test coverage for findProjects method
+        String organization = "testOrg";
+        Optional<String> query = Optional.of("query");
+        Optional<String> language = Optional.of("Java");
+
+        List<Project> projects = new ArrayList<>();
+        Project project1 = new Project();
+        project1.setOrganizationName(organization);
+        project1.setSnapshotDate(new Date());
+        project1.setName("Project1");
+        project1.setPrimaryLanguage("Java");
+        projects.add(project1);
+
+        // Test when query and language are present
+        List<Project> result1 = new ProjectRepositoryImpl().findProjects(organization, query, language);
+        assertEquals(1, result1.size());
+        assertEquals("Project1", result1.get(0).getName());
+
+        // Test when query is present but language is not
+        List<Project> result2 = new ProjectRepositoryImpl().findProjects(organization, query, Optional.empty());
+        assertEquals(1, result2.size());
+        assertEquals("Project1", result2.get(0).getName());
+
+        // Test when language is present but query is not
+        List<Project> result3 = new ProjectRepositoryImpl().findProjects(organization, Optional.empty(), language);
+        assertEquals(1, result3.size());
+        assertEquals("Project1", result3.get(0).getName());
+
+        // Test when both query and language are not present
+        List<Project> result4 = new ProjectRepositoryImpl().findProjects(organization, Optional.empty(), Optional.empty());
+        assertEquals(1, result4.size());
+        assertEquals("Project1", result4.get(0).getName());
+    }
+
+    static class Project {
+        private String organizationName;
+        private Date snapshotDate;
+        private String name;
+        private String primaryLanguage;
+
+        public void setOrganizationName(String organizationName) {
+            this.organizationName = organizationName;
+        }
+
+        public void setSnapshotDate(Date snapshotDate) {
+            this.snapshotDate = snapshotDate;
+        }
+
+        public void setName(String name) {
+            this.name = name;
+        }
+
+        public void setPrimaryLanguage(String primaryLanguage) {
+            this.primaryLanguage = primaryLanguage;
+        }
+
+        public String getName() {
+            return name;
+        }
+    }
+
+    static class ProjectRepositoryImpl {
+        public List<Project> findProjects(String organization, Optional<String> query, Optional<String> language) {
+            // Implement the logic to find projects
+            return new ArrayList<>();
+        }
+    }
+}

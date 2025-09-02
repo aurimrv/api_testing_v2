@@ -1,0 +1,306 @@
+You are a highly skilled test engineer specializing in debugging and resolving compilation errors and test failures in Java-based projects. Your expertise includes Java 8, JUnit 4, and REST Assured, allowing you to diagnose issues efficiently and provide precise, actionable fixes.
+
+Do fix the compilation errors delimited by ##### given the code below delimited by *****.
+
+The response must contain only Java code in JUnit 4 format.
+
+#####
+[[1;31mERROR[m] COMPILATION ERROR : 
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_ContributorStatsTest.java:[71,21] cannot find symbol
+  symbol:   method setLogin(java.lang.String)
+  location: variable contributor1 of type org.zalando.catwatch.backend.model.Contributor
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_ContributorStatsTest.java:[79,21] cannot find symbol
+  symbol:   method setSnapshotDate(java.util.Date)
+  location: variable contributor1 of type org.zalando.catwatch.backend.model.Contributor
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_ContributorStatsTest.java:[82,21] cannot find symbol
+  symbol:   method setLogin(java.lang.String)
+  location: variable contributor2 of type org.zalando.catwatch.backend.model.Contributor
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_ContributorStatsTest.java:[90,21] cannot find symbol
+  symbol:   method setSnapshotDate(java.util.Date)
+  location: variable contributor2 of type org.zalando.catwatch.backend.model.Contributor
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_ContributorStatsTest.java:[106,20] cannot find symbol
+  symbol:   method setLogin(java.lang.String)
+  location: variable contributor of type org.zalando.catwatch.backend.model.Contributor
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_ContributorStatsTest.java:[114,21] cannot find symbol
+  symbol:   method setLogin(java.lang.String)
+  location: variable contributor1 of type org.zalando.catwatch.backend.model.Contributor
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_ContributorStatsTest.java:[116,21] cannot find symbol
+  symbol:   method setLogin(java.lang.String)
+  location: variable contributor2 of type org.zalando.catwatch.backend.model.Contributor
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_ContributorStatsTest.java:[124,20] cannot find symbol
+  symbol:   method setLogin(java.lang.String)
+  location: variable contributor of type org.zalando.catwatch.backend.model.Contributor
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_ContributorStatsTest.java:[132,20] cannot find symbol
+  symbol:   method setSnapshotDate(java.util.Date)
+  location: variable contributor of type org.zalando.catwatch.backend.model.Contributor
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_ContributorStatsTest.java:[151,21] cannot find symbol
+  symbol:   method setLogin(java.lang.String)
+  location: variable contributor1 of type org.zalando.catwatch.backend.model.Contributor
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_ContributorStatsTest.java:[154,21] cannot find symbol
+  symbol:   method setLogin(java.lang.String)
+  location: variable contributor2 of type org.zalando.catwatch.backend.model.Contributor
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_ContributorStatsTest.java:[157,21] cannot find symbol
+  symbol:   method setLogin(java.lang.String)
+  location: variable contributor3 of type org.zalando.catwatch.backend.model.Contributor
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_ContributorStatsTest.java:[172,20] cannot find symbol
+  symbol:   method setLogin(java.lang.String)
+  location: variable contributor of type org.zalando.catwatch.backend.model.Contributor
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_ContributorStatsTest.java:[180,20] cannot find symbol
+  symbol:   method setLogin(java.lang.String)
+  location: variable contributor of type org.zalando.catwatch.backend.model.Contributor
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_ContributorStatsTest.java:[184,20] cannot find symbol
+  symbol:   method setSnapshotDate(java.util.Date)
+  location: variable contributor of type org.zalando.catwatch.backend.model.Contributor
+[[1;31mERROR[m] Failed to execute goal [32morg.apache.maven.plugins:maven-compiler-plugin:3.8.0:testCompile[m [1m(default-testCompile)[m on project [36mcatwatch-backend[m: [1;31mCompilation failure[m: Compilation failure: 
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_ContributorStatsTest.java:[71,21] cannot find symbol
+[[1;31mERROR[m]   symbol:   method setLogin(java.lang.String)
+[[1;31mERROR[m]   location: variable contributor1 of type org.zalando.catwatch.backend.model.Contributor
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_ContributorStatsTest.java:[79,21] cannot find symbol
+[[1;31mERROR[m]   symbol:   method setSnapshotDate(java.util.Date)
+[[1;31mERROR[m]   location: variable contributor1 of type org.zalando.catwatch.backend.model.Contributor
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_ContributorStatsTest.java:[82,21] cannot find symbol
+[[1;31mERROR[m]   symbol:   method setLogin(java.lang.String)
+[[1;31mERROR[m]   location: variable contributor2 of type org.zalando.catwatch.backend.model.Contributor
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_ContributorStatsTest.java:[90,21] cannot find symbol
+[[1;31mERROR[m]   symbol:   method setSnapshotDate(java.util.Date)
+[[1;31mERROR[m]   location: variable contributor2 of type org.zalando.catwatch.backend.model.Contributor
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_ContributorStatsTest.java:[106,20] cannot find symbol
+[[1;31mERROR[m]   symbol:   method setLogin(java.lang.String)
+[[1;31mERROR[m]   location: variable contributor of type org.zalando.catwatch.backend.model.Contributor
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_ContributorStatsTest.java:[114,21] cannot find symbol
+[[1;31mERROR[m]   symbol:   method setLogin(java.lang.String)
+[[1;31mERROR[m]   location: variable contributor1 of type org.zalando.catwatch.backend.model.Contributor
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_ContributorStatsTest.java:[116,21] cannot find symbol
+[[1;31mERROR[m]   symbol:   method setLogin(java.lang.String)
+[[1;31mERROR[m]   location: variable contributor2 of type org.zalando.catwatch.backend.model.Contributor
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_ContributorStatsTest.java:[124,20] cannot find symbol
+[[1;31mERROR[m]   symbol:   method setLogin(java.lang.String)
+[[1;31mERROR[m]   location: variable contributor of type org.zalando.catwatch.backend.model.Contributor
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_ContributorStatsTest.java:[132,20] cannot find symbol
+[[1;31mERROR[m]   symbol:   method setSnapshotDate(java.util.Date)
+[[1;31mERROR[m]   location: variable contributor of type org.zalando.catwatch.backend.model.Contributor
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_ContributorStatsTest.java:[151,21] cannot find symbol
+[[1;31mERROR[m]   symbol:   method setLogin(java.lang.String)
+[[1;31mERROR[m]   location: variable contributor1 of type org.zalando.catwatch.backend.model.Contributor
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_ContributorStatsTest.java:[154,21] cannot find symbol
+[[1;31mERROR[m]   symbol:   method setLogin(java.lang.String)
+[[1;31mERROR[m]   location: variable contributor2 of type org.zalando.catwatch.backend.model.Contributor
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_ContributorStatsTest.java:[157,21] cannot find symbol
+[[1;31mERROR[m]   symbol:   method setLogin(java.lang.String)
+[[1;31mERROR[m]   location: variable contributor3 of type org.zalando.catwatch.backend.model.Contributor
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_ContributorStatsTest.java:[172,20] cannot find symbol
+[[1;31mERROR[m]   symbol:   method setLogin(java.lang.String)
+[[1;31mERROR[m]   location: variable contributor of type org.zalando.catwatch.backend.model.Contributor
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_ContributorStatsTest.java:[180,20] cannot find symbol
+[[1;31mERROR[m]   symbol:   method setLogin(java.lang.String)
+[[1;31mERROR[m]   location: variable contributor of type org.zalando.catwatch.backend.model.Contributor
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_ContributorStatsTest.java:[184,20] cannot find symbol
+[[1;31mERROR[m]   symbol:   method setSnapshotDate(java.util.Date)
+[[1;31mERROR[m]   location: variable contributor of type org.zalando.catwatch.backend.model.Contributor
+[[1;31mERROR[m] -> [1m[Help 1][m
+[[1;31mERROR[m] 
+[[1;31mERROR[m] To see the full stack trace of the errors, re-run Maven with the [1m-e[m switch.
+[[1;31mERROR[m] Re-run Maven using the [1m-X[m switch to enable full debug logging.
+[[1;31mERROR[m] 
+[[1;31mERROR[m] For more information about the errors and possible solutions, please read the following articles:
+[[1;31mERROR[m] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+
+#####
+*****
+
+package org.zalando.catwatch.backend;
+
+import org.junit.AfterClass;
+import org.junit.BeforeClass;
+import org.junit.Before;
+import org.junit.Test;
+import static org.junit.Assert.*;
+import java.util.Map;
+import java.util.List;
+import static org.evomaster.client.java.controller.api.EMTestUtils.*;
+import org.evomaster.client.java.controller.SutHandler;
+import io.restassured.RestAssured;
+import static io.restassured.RestAssured.given;
+import io.restassured.response.ValidatableResponse;
+import static org.evomaster.client.java.sql.dsl.SqlDsl.sql;
+import org.evomaster.client.java.controller.api.dto.database.operations.InsertionResultsDto;
+import org.evomaster.client.java.controller.api.dto.database.operations.InsertionDto;
+import static org.hamcrest.Matchers.*;
+import io.restassured.config.JsonConfig;
+import io.restassured.path.json.config.JsonPathConfig;
+import static io.restassured.config.RedirectConfig.redirectConfig;
+import static org.evomaster.client.java.controller.contentMatchers.NumberMatcher.*;
+import static org.evomaster.client.java.controller.contentMatchers.StringMatcher.*;
+import static org.evomaster.client.java.controller.contentMatchers.SubStringMatcher.*;
+import static org.evomaster.client.java.controller.expect.ExpectationHandler.expectationHandler;
+import org.evomaster.client.java.controller.expect.ExpectationHandler;
+import io.restassured.path.json.JsonPath;
+import java.util.Arrays;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.LinkedList;
+import java.util.HashMap;
+import java.util.Collections;
+import org.zalando.catwatch.backend.util.ContributorStats;
+import org.zalando.catwatch.backend.model.Contributor;
+
+public class gpt4o_run01_ContributorStatsTest {
+
+    private static final SutHandler controller = new em.embedded.org.zalando.EmbeddedEvoMasterController();
+    private static String baseUrlOfSut;
+
+    @BeforeClass
+    public static void initClass() {
+        controller.setupForGeneratedTest();
+        baseUrlOfSut = controller.startSut();
+        controller.registerOrExecuteInitSqlCommandsIfNeeded();
+        assertNotNull(baseUrlOfSut);
+        RestAssured.enableLoggingOfRequestAndResponseIfValidationFails();
+        RestAssured.useRelaxedHTTPSValidation();
+        RestAssured.urlEncodingEnabled = false;
+        RestAssured.config = RestAssured.config()
+            .jsonConfig(JsonConfig.jsonConfig().numberReturnType(JsonPathConfig.NumberReturnType.DOUBLE))
+            .redirect(redirectConfig().followRedirects(false));
+    }
+
+    @AfterClass
+    public static void tearDown() {
+        controller.stopSut();
+    }
+
+    @Before
+    public void initTest() {
+        controller.resetDatabase(Arrays.asList("CONTRIBUTOR"));
+        controller.resetStateOfSUT();
+    }
+
+    @Test
+    public void testContributorStatsConstructor_ValidInput() {
+        Contributor contributor1 = new Contributor();
+        contributor1.setLogin("user1");
+        contributor1.setName("John Doe");
+        contributor1.setUrl("http://example.com");
+        contributor1.setOrganizationName("Org1");
+        contributor1.setOrganizationalCommitsCount(5);
+        contributor1.setPersonalCommitsCount(2);
+        contributor1.setOrganizationalProjectsCount(3);
+        contributor1.setPersonalProjectsCount(1);
+        contributor1.setSnapshotDate(new Date());
+
+        Contributor contributor2 = new Contributor();
+        contributor2.setLogin("user1");
+        contributor2.setName("John Doe");
+        contributor2.setUrl("http://example.com");
+        contributor2.setOrganizationName("Org2");
+        contributor2.setOrganizationalCommitsCount(3);
+        contributor2.setPersonalCommitsCount(4);
+        contributor2.setOrganizationalProjectsCount(2);
+        contributor2.setPersonalProjectsCount(3);
+        contributor2.setSnapshotDate(new Date());
+
+        List<Contributor> contributors = Arrays.asList(contributor1, contributor2);
+
+        ContributorStats stats = new ContributorStats(contributors);
+        assertNotNull(stats);
+        assertEquals("John Doe", stats.getName());
+        assertEquals("http://example.com", stats.getUrl());
+        assertEquals(2, stats.getOrganizationName().size());
+        assertEquals(5, (int) stats.getOrganizationalCommitsCounts().get(0));
+        assertEquals(3, (int) stats.getOrganizationalProjectsCounts().get(1));
+    }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void testContributorStatsConstructor_InvalidLoginId() {
+        Contributor contributor = new Contributor();
+        contributor.setLogin("");
+        List<Contributor> contributors = Collections.singletonList(contributor);
+        new ContributorStats(contributors);
+    }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void testContributorStatsConstructor_MismatchedLoginIds() {
+        Contributor contributor1 = new Contributor();
+        contributor1.setLogin("user1");
+        Contributor contributor2 = new Contributor();
+        contributor2.setLogin("user2");
+        List<Contributor> contributors = Arrays.asList(contributor1, contributor2);
+        new ContributorStats(contributors);
+    }
+
+    @Test
+    public void testGetMethods() {
+        Contributor contributor = new Contributor();
+        contributor.setLogin("user1");
+        contributor.setName("John Doe");
+        contributor.setUrl("http://example.com");
+        contributor.setOrganizationName("Org1");
+        contributor.setOrganizationalCommitsCount(3);
+        contributor.setPersonalCommitsCount(2);
+        contributor.setOrganizationalProjectsCount(5);
+        contributor.setPersonalProjectsCount(1);
+        contributor.setSnapshotDate(new Date());
+
+        List<Contributor> contributors = Collections.singletonList(contributor);
+        ContributorStats stats = new ContributorStats(contributors);
+
+        assertEquals("John Doe", stats.getName());
+        assertEquals("http://example.com", stats.getUrl());
+        assertEquals(1, stats.getOrganizationName().size());
+        assertEquals("Org1", stats.getOrganizationName().get(0));
+        assertEquals(1, stats.getSnapshotDates().size());
+        assertEquals(3, (int) stats.getOrganizationalCommitsCounts().get(0));
+        assertEquals(2, (int) stats.getPersonalCommitsCounts().get(0));
+        assertEquals(5, (int) stats.getOrganizationalProjectsCounts().get(0));
+        assertEquals(1, (int) stats.getPersonalProjectsCounts().get(0));
+    }
+
+    @Test
+    public void testGetDistinctContributors() {
+        Contributor contributor1 = new Contributor();
+        contributor1.setLogin("user1");
+
+        Contributor contributor2 = new Contributor();
+        contributor2.setLogin("user2");
+
+        Contributor contributor3 = new Contributor();
+        contributor3.setLogin("user1");
+
+        List<Contributor> contributors = Arrays.asList(contributor1, contributor2, contributor3);
+        Map<String, List<Contributor>> result = ContributorStats.getDistinctContributors(contributors);
+
+        assertEquals(2, result.size());
+        assertTrue(result.containsKey("user1"));
+        assertTrue(result.containsKey("user2"));
+        assertEquals(2, result.get("user1").size());
+        assertEquals(1, result.get("user2").size());
+    }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void testGetDistinctContributors_InvalidLoginId() {
+        Contributor contributor = new Contributor();
+        contributor.setLogin("");
+        List<Contributor> contributors = Collections.singletonList(contributor);
+        ContributorStats.getDistinctContributors(contributors);
+    }
+
+    @Test
+    public void testToString() {
+        Contributor contributor = new Contributor();
+        contributor.setLogin("user1");
+        contributor.setName("John Doe");
+        contributor.setUrl("http://example.com");
+        contributor.setOrganizationName("Org1");
+        contributor.setSnapshotDate(new Date());
+
+        List<Contributor> contributors = Collections.singletonList(contributor);
+        ContributorStats stats = new ContributorStats(contributors);
+
+        String result = stats.toString();
+        assertNotNull(result);
+        assertTrue(result.contains("John Doe"));
+        assertTrue(result.contains("Org1"));
+        assertTrue(result.contains("http://example.com"));
+    }
+}
+
+*****

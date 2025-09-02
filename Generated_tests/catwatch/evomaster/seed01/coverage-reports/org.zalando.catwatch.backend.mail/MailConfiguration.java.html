@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="pt"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>MailConfiguration.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">catwatch-backend</a> &gt; <a href="index.source.html" class="el_package">org.zalando.catwatch.backend.mail</a> &gt; <span class="el_source">MailConfiguration.java</span></div><h1>MailConfiguration.java</h1><pre class="source lang-java linenums">package org.zalando.catwatch.backend.mail;
+
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.PropertySource;
+import org.springframework.mail.javamail.JavaMailSender;
+import org.springframework.mail.javamail.JavaMailSenderImpl;
+
+import java.util.Properties;
+
+@Configuration
+@PropertySource(&quot;classpath:mail.properties&quot;)
+<span class="fc" id="L14">public class MailConfiguration {</span>
+    @Value(&quot;${mail.protocol}&quot;)
+    private String protocol;
+    @Value(&quot;${mail.host}&quot;)
+    private String host;
+    @Value(&quot;${mail.port}&quot;)
+    private int port;
+    @Value(&quot;${mail.smtp.auth}&quot;)
+    private boolean auth;
+    @Value(&quot;${mail.smtp.starttls.enable}&quot;)
+    private boolean starttls;
+    @Value(&quot;${mail.from}&quot;)
+    private String from;
+    @Value(&quot;${mail.username}&quot;)
+    private String username;
+    @Value(&quot;${mail.password}&quot;)
+    private String password;
+
+    @Bean
+    public JavaMailSender javaMailSender() {
+<span class="fc" id="L34">        JavaMailSenderImpl mailSender = new JavaMailSenderImpl();</span>
+<span class="fc" id="L35">        Properties mailProperties = new Properties();</span>
+<span class="fc" id="L36">        mailProperties.put(&quot;mail.smtp.auth&quot;, auth);</span>
+<span class="fc" id="L37">        mailProperties.put(&quot;mail.smtp.starttls.enable&quot;, starttls);</span>
+<span class="fc" id="L38">        mailSender.setJavaMailProperties(mailProperties);</span>
+<span class="fc" id="L39">        mailSender.setHost(host);</span>
+<span class="fc" id="L40">        mailSender.setPort(port);</span>
+<span class="fc" id="L41">        mailSender.setProtocol(protocol);</span>
+<span class="fc" id="L42">        mailSender.setUsername(username);</span>
+<span class="fc" id="L43">        mailSender.setPassword(password);</span>
+<span class="fc" id="L44">        return mailSender;</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="pt"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>RetryableFetcher.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">catwatch-backend</a> &gt; <a href="index.source.html" class="el_package">org.zalando.catwatch.backend.scheduler</a> &gt; <span class="el_source">RetryableFetcher.java</span></div><h1>RetryableFetcher.java</h1><pre class="source lang-java linenums">package org.zalando.catwatch.backend.scheduler;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.retry.RecoveryCallback;
+import org.springframework.retry.RetryCallback;
+import org.springframework.retry.backoff.ExponentialBackOffPolicy;
+import org.springframework.retry.policy.SimpleRetryPolicy;
+import org.springframework.retry.support.RetryTemplate;
+import org.springframework.stereotype.Component;
+import org.zalando.catwatch.backend.mail.MailSender;
+
+import java.util.HashMap;
+import java.util.Map;
+
+/**
+ * Tries to fetch organizations data from GitHub and saves it to the database.
+ */
+@Component
+public class RetryableFetcher {
+
+    private final Fetcher fetcher;
+    private final int maxAttempts;
+    private final int initialInterval;
+    private final int maxInterval;
+    private final double multiplier;
+    private final MailSender mailSender;
+
+    @Autowired
+    public RetryableFetcher(Fetcher fetcher,
+                            @Value(&quot;${fetcher.maxAttempts}&quot;) int maxAttempts,
+                            @Value(&quot;${fetcher.initialInterval}&quot;) int initialInterval,
+                            @Value(&quot;${fetcher.maxInterval}&quot;) int maxInterval,
+                            @Value(&quot;${fetcher.multiplier}&quot;) double multiplier,
+<span class="fc" id="L35">                            MailSender mailSender) {</span>
+<span class="fc" id="L36">        this.fetcher = fetcher;</span>
+<span class="fc" id="L37">        this.maxAttempts = maxAttempts;</span>
+<span class="fc" id="L38">        this.initialInterval = initialInterval;</span>
+<span class="fc" id="L39">        this.maxInterval = maxInterval;</span>
+<span class="fc" id="L40">        this.multiplier = multiplier;</span>
+<span class="fc" id="L41">        this.mailSender = mailSender;</span>
+<span class="fc" id="L42">    }</span>
+
+    public void tryFetchData() {
+<span class="fc" id="L45">        RetryCallback&lt;Boolean, RuntimeException&gt; retryCallback = context -&gt; fetcher.fetchData();</span>
+<span class="fc" id="L46">        RecoveryCallback&lt;Boolean&gt; recoveryCallback = retryContext -&gt; mailSender.send(retryContext.getLastThrowable());</span>
+<span class="fc" id="L47">        retryTemplate().execute(retryCallback, recoveryCallback);</span>
+<span class="fc" id="L48">    }</span>
+
+    private RetryTemplate retryTemplate() {
+<span class="fc" id="L51">        RetryTemplate template = new RetryTemplate();</span>
+<span class="fc" id="L52">        template.setBackOffPolicy(exponentialBackOffPolicy());</span>
+<span class="fc" id="L53">        template.setRetryPolicy(retryPolicy());</span>
+<span class="fc" id="L54">        return template;</span>
+    }
+
+    private SimpleRetryPolicy retryPolicy() {
+<span class="fc" id="L58">        return new SimpleRetryPolicy(maxAttempts, transientExceptions());</span>
+    }
+
+    private ExponentialBackOffPolicy exponentialBackOffPolicy() {
+<span class="fc" id="L62">        ExponentialBackOffPolicy exponentialBackOffPolicy = new ExponentialBackOffPolicy();</span>
+
+<span class="fc" id="L64">        exponentialBackOffPolicy.setInitialInterval(initialInterval);</span>
+<span class="fc" id="L65">        exponentialBackOffPolicy.setMaxInterval(maxInterval);</span>
+<span class="fc" id="L66">        exponentialBackOffPolicy.setMultiplier(multiplier);</span>
+<span class="fc" id="L67">        return exponentialBackOffPolicy;</span>
+    }
+
+    private Map&lt;Class&lt;? extends Throwable&gt;, Boolean&gt; transientExceptions() {
+<span class="fc" id="L71">        Map&lt;Class&lt;? extends Throwable&gt;, Boolean&gt; exceptions = new HashMap&lt;&gt;();</span>
+<span class="fc" id="L72">        exceptions.put(CrawlerRetryException.class, true);</span>
+<span class="fc" id="L73">        return exceptions;</span>
+    }
+
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

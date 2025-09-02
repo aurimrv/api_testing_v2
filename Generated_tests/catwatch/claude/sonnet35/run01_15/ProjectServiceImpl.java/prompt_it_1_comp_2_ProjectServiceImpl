@@ -1,0 +1,419 @@
+You are a highly skilled test engineer specializing in debugging and resolving compilation errors and test failures in Java-based projects. Your expertise includes Java 8, JUnit 4, and REST Assured, allowing you to diagnose issues efficiently and provide precise, actionable fixes.
+
+Do fix the compilation errors delimited by ##### given the code below delimited by *****.
+
+The response must contain only Java code in JUnit 4 format.
+
+#####
+[[1;31mERROR[m] COMPILATION ERROR : 
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[69,33] cannot find symbol
+  symbol:   method mock(java.lang.Class<org.zalando.catwatch.backend.repo.ProjectRepository>)
+  location: class org.zalando.catwatch.backend.sonnet35_run01_ProjectServiceImplTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[70,27] cannot find symbol
+  symbol:   method mock(java.lang.Class<org.springframework.core.env.Environment>)
+  location: class org.zalando.catwatch.backend.sonnet35_run01_ProjectServiceImplTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[86,49] cannot find symbol
+  symbol:   method anyString()
+  location: class org.zalando.catwatch.backend.sonnet35_run01_ProjectServiceImplTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[86,79] cannot find symbol
+  symbol:   method anyString()
+  location: class org.zalando.catwatch.backend.sonnet35_run01_ProjectServiceImplTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[86,92] cannot find symbol
+  symbol:   method anyString()
+  location: class org.zalando.catwatch.backend.sonnet35_run01_ProjectServiceImplTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[87,42] cannot find symbol
+  symbol:   method anyString()
+  location: class org.zalando.catwatch.backend.sonnet35_run01_ProjectServiceImplTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[93,62] cannot find symbol
+  symbol:   method anyString()
+  location: class org.zalando.catwatch.backend.sonnet35_run01_ProjectServiceImplTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[93,92] cannot find symbol
+  symbol:   method anyString()
+  location: class org.zalando.catwatch.backend.sonnet35_run01_ProjectServiceImplTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[93,105] cannot find symbol
+  symbol:   method anyString()
+  location: class org.zalando.catwatch.backend.sonnet35_run01_ProjectServiceImplTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[93,39] cannot find symbol
+  symbol:   method times(int)
+  location: class org.zalando.catwatch.backend.sonnet35_run01_ProjectServiceImplTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[108,46] getMergedProjectList(java.util.List<org.zalando.catwatch.backend.model.Project>,java.util.List<org.zalando.catwatch.backend.model.Project>) has private access in org.zalando.catwatch.backend.service.ProjectServiceImpl
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[111,9] reference to assertEquals is ambiguous
+  both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[112,9] reference to assertEquals is ambiguous
+  both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[113,9] reference to assertEquals is ambiguous
+  both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[114,9] reference to assertEquals is ambiguous
+  both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[115,9] reference to assertEquals is ambiguous
+  both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[123,40] createMergedProject(org.zalando.catwatch.backend.model.Project,org.zalando.catwatch.backend.model.Project) has private access in org.zalando.catwatch.backend.service.ProjectServiceImpl
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[125,9] reference to assertEquals is ambiguous
+  both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[126,9] reference to assertEquals is ambiguous
+  both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[127,9] reference to assertEquals is ambiguous
+  both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[128,9] reference to assertEquals is ambiguous
+  both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[129,9] reference to assertEquals is ambiguous
+  both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[139,51] convertProjectsToMap(java.util.List<org.zalando.catwatch.backend.model.Project>) has private access in org.zalando.catwatch.backend.service.ProjectServiceImpl
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[148,9] cannot find symbol
+  symbol:   method when(boolean)
+  location: class org.zalando.catwatch.backend.sonnet35_run01_ProjectServiceImplTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[149,9] cannot find symbol
+  symbol:   method when(java.lang.String)
+  location: class org.zalando.catwatch.backend.sonnet35_run01_ProjectServiceImplTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[151,39] getOrganizationConfig() has private access in org.zalando.catwatch.backend.service.ProjectServiceImpl
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[158,9] cannot find symbol
+  symbol:   method when(boolean)
+  location: class org.zalando.catwatch.backend.sonnet35_run01_ProjectServiceImplTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[160,39] getOrganizationConfig() has private access in org.zalando.catwatch.backend.service.ProjectServiceImpl
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[167,34] isSortOrderAscending(java.util.Optional<java.lang.String>) has private access in org.zalando.catwatch.backend.service.ProjectServiceImpl
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[168,35] isSortOrderAscending(java.util.Optional<java.lang.String>) has private access in org.zalando.catwatch.backend.service.ProjectServiceImpl
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[169,35] isSortOrderAscending(java.util.Optional<java.lang.String>) has private access in org.zalando.catwatch.backend.service.ProjectServiceImpl
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[176,36] getProjectSortComparator(java.util.Optional<java.lang.String>,boolean) has private access in org.zalando.catwatch.backend.service.ProjectServiceImpl
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[177,42] cannot find symbol
+  symbol:   class ProjectStarComparator
+  location: class org.zalando.catwatch.backend.sonnet35_run01_ProjectServiceImplTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[179,36] getProjectSortComparator(java.util.Optional<java.lang.String>,boolean) has private access in org.zalando.catwatch.backend.service.ProjectServiceImpl
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[180,42] cannot find symbol
+  symbol:   class ProjectScoreComparator
+  location: class org.zalando.catwatch.backend.sonnet35_run01_ProjectServiceImplTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[182,36] getProjectSortComparator(java.util.Optional<java.lang.String>,boolean) has private access in org.zalando.catwatch.backend.service.ProjectServiceImpl
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[183,42] cannot find symbol
+  symbol:   class ProjectCommitComparator
+  location: class org.zalando.catwatch.backend.sonnet35_run01_ProjectServiceImplTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[185,36] getProjectSortComparator(java.util.Optional<java.lang.String>,boolean) has private access in org.zalando.catwatch.backend.service.ProjectServiceImpl
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[186,42] cannot find symbol
+  symbol:   class ProjectForkComparator
+  location: class org.zalando.catwatch.backend.sonnet35_run01_ProjectServiceImplTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[188,36] getProjectSortComparator(java.util.Optional<java.lang.String>,boolean) has private access in org.zalando.catwatch.backend.service.ProjectServiceImpl
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[189,42] cannot find symbol
+  symbol:   class ProjectContributorComparator
+  location: class org.zalando.catwatch.backend.sonnet35_run01_ProjectServiceImplTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[191,36] getProjectSortComparator(java.util.Optional<java.lang.String>,boolean) has private access in org.zalando.catwatch.backend.service.ProjectServiceImpl
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[192,42] cannot find symbol
+  symbol:   class ProjectScoreComparator
+  location: class org.zalando.catwatch.backend.sonnet35_run01_ProjectServiceImplTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[194,36] getProjectSortComparator(java.util.Optional<java.lang.String>,boolean) has private access in org.zalando.catwatch.backend.service.ProjectServiceImpl
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[195,42] cannot find symbol
+  symbol:   class ProjectScoreComparator
+  location: class org.zalando.catwatch.backend.sonnet35_run01_ProjectServiceImplTest
+[[1;31mERROR[m] Failed to execute goal [32morg.apache.maven.plugins:maven-compiler-plugin:3.8.0:testCompile[m [1m(default-testCompile)[m on project [36mcatwatch-backend[m: [1;31mCompilation failure[m: Compilation failure: 
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[69,33] cannot find symbol
+[[1;31mERROR[m]   symbol:   method mock(java.lang.Class<org.zalando.catwatch.backend.repo.ProjectRepository>)
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_ProjectServiceImplTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[70,27] cannot find symbol
+[[1;31mERROR[m]   symbol:   method mock(java.lang.Class<org.springframework.core.env.Environment>)
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_ProjectServiceImplTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[86,49] cannot find symbol
+[[1;31mERROR[m]   symbol:   method anyString()
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_ProjectServiceImplTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[86,79] cannot find symbol
+[[1;31mERROR[m]   symbol:   method anyString()
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_ProjectServiceImplTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[86,92] cannot find symbol
+[[1;31mERROR[m]   symbol:   method anyString()
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_ProjectServiceImplTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[87,42] cannot find symbol
+[[1;31mERROR[m]   symbol:   method anyString()
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_ProjectServiceImplTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[93,62] cannot find symbol
+[[1;31mERROR[m]   symbol:   method anyString()
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_ProjectServiceImplTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[93,92] cannot find symbol
+[[1;31mERROR[m]   symbol:   method anyString()
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_ProjectServiceImplTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[93,105] cannot find symbol
+[[1;31mERROR[m]   symbol:   method anyString()
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_ProjectServiceImplTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[93,39] cannot find symbol
+[[1;31mERROR[m]   symbol:   method times(int)
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_ProjectServiceImplTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[108,46] getMergedProjectList(java.util.List<org.zalando.catwatch.backend.model.Project>,java.util.List<org.zalando.catwatch.backend.model.Project>) has private access in org.zalando.catwatch.backend.service.ProjectServiceImpl
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[111,9] reference to assertEquals is ambiguous
+[[1;31mERROR[m]   both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[112,9] reference to assertEquals is ambiguous
+[[1;31mERROR[m]   both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[113,9] reference to assertEquals is ambiguous
+[[1;31mERROR[m]   both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[114,9] reference to assertEquals is ambiguous
+[[1;31mERROR[m]   both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[115,9] reference to assertEquals is ambiguous
+[[1;31mERROR[m]   both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[123,40] createMergedProject(org.zalando.catwatch.backend.model.Project,org.zalando.catwatch.backend.model.Project) has private access in org.zalando.catwatch.backend.service.ProjectServiceImpl
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[125,9] reference to assertEquals is ambiguous
+[[1;31mERROR[m]   both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[126,9] reference to assertEquals is ambiguous
+[[1;31mERROR[m]   both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[127,9] reference to assertEquals is ambiguous
+[[1;31mERROR[m]   both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[128,9] reference to assertEquals is ambiguous
+[[1;31mERROR[m]   both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[129,9] reference to assertEquals is ambiguous
+[[1;31mERROR[m]   both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[139,51] convertProjectsToMap(java.util.List<org.zalando.catwatch.backend.model.Project>) has private access in org.zalando.catwatch.backend.service.ProjectServiceImpl
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[148,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   method when(boolean)
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_ProjectServiceImplTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[149,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   method when(java.lang.String)
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_ProjectServiceImplTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[151,39] getOrganizationConfig() has private access in org.zalando.catwatch.backend.service.ProjectServiceImpl
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[158,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   method when(boolean)
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_ProjectServiceImplTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[160,39] getOrganizationConfig() has private access in org.zalando.catwatch.backend.service.ProjectServiceImpl
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[167,34] isSortOrderAscending(java.util.Optional<java.lang.String>) has private access in org.zalando.catwatch.backend.service.ProjectServiceImpl
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[168,35] isSortOrderAscending(java.util.Optional<java.lang.String>) has private access in org.zalando.catwatch.backend.service.ProjectServiceImpl
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[169,35] isSortOrderAscending(java.util.Optional<java.lang.String>) has private access in org.zalando.catwatch.backend.service.ProjectServiceImpl
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[176,36] getProjectSortComparator(java.util.Optional<java.lang.String>,boolean) has private access in org.zalando.catwatch.backend.service.ProjectServiceImpl
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[177,42] cannot find symbol
+[[1;31mERROR[m]   symbol:   class ProjectStarComparator
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_ProjectServiceImplTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[179,36] getProjectSortComparator(java.util.Optional<java.lang.String>,boolean) has private access in org.zalando.catwatch.backend.service.ProjectServiceImpl
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[180,42] cannot find symbol
+[[1;31mERROR[m]   symbol:   class ProjectScoreComparator
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_ProjectServiceImplTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[182,36] getProjectSortComparator(java.util.Optional<java.lang.String>,boolean) has private access in org.zalando.catwatch.backend.service.ProjectServiceImpl
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[183,42] cannot find symbol
+[[1;31mERROR[m]   symbol:   class ProjectCommitComparator
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_ProjectServiceImplTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[185,36] getProjectSortComparator(java.util.Optional<java.lang.String>,boolean) has private access in org.zalando.catwatch.backend.service.ProjectServiceImpl
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[186,42] cannot find symbol
+[[1;31mERROR[m]   symbol:   class ProjectForkComparator
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_ProjectServiceImplTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[188,36] getProjectSortComparator(java.util.Optional<java.lang.String>,boolean) has private access in org.zalando.catwatch.backend.service.ProjectServiceImpl
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[189,42] cannot find symbol
+[[1;31mERROR[m]   symbol:   class ProjectContributorComparator
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_ProjectServiceImplTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[191,36] getProjectSortComparator(java.util.Optional<java.lang.String>,boolean) has private access in org.zalando.catwatch.backend.service.ProjectServiceImpl
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[192,42] cannot find symbol
+[[1;31mERROR[m]   symbol:   class ProjectScoreComparator
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_ProjectServiceImplTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[194,36] getProjectSortComparator(java.util.Optional<java.lang.String>,boolean) has private access in org.zalando.catwatch.backend.service.ProjectServiceImpl
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[195,42] cannot find symbol
+[[1;31mERROR[m]   symbol:   class ProjectScoreComparator
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_ProjectServiceImplTest
+[[1;31mERROR[m] -> [1m[Help 1][m
+[[1;31mERROR[m] 
+[[1;31mERROR[m] To see the full stack trace of the errors, re-run Maven with the [1m-e[m switch.
+[[1;31mERROR[m] Re-run Maven using the [1m-X[m switch to enable full debug logging.
+[[1;31mERROR[m] 
+[[1;31mERROR[m] For more information about the errors and possible solutions, please read the following articles:
+[[1;31mERROR[m] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+
+#####
+*****
+package org.zalando.catwatch.backend;
+
+import org.junit.AfterClass;
+import org.junit.BeforeClass;
+import org.junit.Before;
+import org.junit.Test;
+import static org.junit.Assert.*;
+import java.util.Map;
+import java.util.List;
+import static org.evomaster.client.java.controller.api.EMTestUtils.*;
+import org.evomaster.client.java.controller.SutHandler;
+import io.restassured.RestAssured;
+import static io.restassured.RestAssured.given;
+import io.restassured.response.ValidatableResponse;
+import static org.evomaster.client.java.sql.dsl.SqlDsl.sql;
+import org.evomaster.client.java.controller.api.dto.database.operations.InsertionResultsDto;
+import org.evomaster.client.java.controller.api.dto.database.operations.InsertionDto;
+import static org.hamcrest.Matchers.*;
+import io.restassured.config.JsonConfig;
+import io.restassured.path.json.config.JsonPathConfig;
+import static io.restassured.config.RedirectConfig.redirectConfig;
+import static org.evomaster.client.java.controller.contentMatchers.NumberMatcher.*;
+import static org.evomaster.client.java.controller.contentMatchers.StringMatcher.*;
+import static org.evomaster.client.java.controller.contentMatchers.SubStringMatcher.*;
+import static org.evomaster.client.java.controller.expect.ExpectationHandler.expectationHandler;
+import org.evomaster.client.java.controller.expect.ExpectationHandler;
+import io.restassured.path.json.JsonPath;
+import java.util.Arrays;
+
+import org.zalando.catwatch.backend.model.Project;
+import org.zalando.catwatch.backend.repo.ProjectRepository;
+import org.zalando.catwatch.backend.service.ProjectServiceImpl;
+import org.springframework.core.env.Environment;
+
+import java.util.*;
+
+public class sonnet35_run01_ProjectServiceImplTest {
+
+    private static final SutHandler controller = new em.embedded.org.zalando.EmbeddedEvoMasterController();
+    private static String baseUrlOfSut;
+
+    private ProjectServiceImpl projectService;
+    private ProjectRepository mockProjectRepository;
+    private Environment mockEnvironment;
+
+    @BeforeClass
+    public static void initClass() {
+        controller.setupForGeneratedTest();
+        baseUrlOfSut = controller.startSut();
+        controller.registerOrExecuteInitSqlCommandsIfNeeded();
+        assertNotNull(baseUrlOfSut);
+        RestAssured.enableLoggingOfRequestAndResponseIfValidationFails();
+        RestAssured.useRelaxedHTTPSValidation();
+        RestAssured.urlEncodingEnabled = false;
+        RestAssured.config = RestAssured.config()
+            .jsonConfig(JsonConfig.jsonConfig().numberReturnType(JsonPathConfig.NumberReturnType.DOUBLE))
+            .redirect(redirectConfig().followRedirects(false));
+    }
+
+    @AfterClass
+    public static void tearDown() {
+        controller.stopSut();
+    }
+
+    @Before
+    public void initTest() {
+        controller.resetDatabase(Arrays.asList("CONTRIBUTOR"));
+        controller.resetStateOfSUT();
+        mockProjectRepository = mock(ProjectRepository.class);
+        mockEnvironment = mock(Environment.class);
+        projectService = new ProjectServiceImpl(mockProjectRepository, mockEnvironment);
+    }
+
+    @Test
+    public void testFindProjects() {
+        String organizations = "org1,org2";
+        Optional<Integer> limit = Optional.of(10);
+        Optional<Integer> offset = Optional.of(0);
+        Optional<Date> startDate = Optional.of(new Date());
+        Optional<Date> endDate = Optional.of(new Date());
+        Optional<String> sortBy = Optional.of("stars");
+        Optional<String> query = Optional.of("test");
+        Optional<String> language = Optional.of("Java");
+
+        List<Project> mockProjects = Arrays.asList(new Project(), new Project());
+        when(mockProjectRepository.findProjects(anyString(), any(Date.class), anyString(), anyString())).thenReturn(mockProjects);
+        when(mockEnvironment.getProperty(anyString())).thenReturn("org1,org2");
+
+        Iterable<Project> result = projectService.findProjects(organizations, limit, offset, startDate, endDate, sortBy, query, language);
+
+        assertNotNull(result);
+        assertTrue(result.iterator().hasNext());
+        verify(mockProjectRepository, times(4)).findProjects(anyString(), any(Date.class), anyString(), anyString());
+    }
+
+    @Test
+    public void testGetMergedProjectList() {
+        List<Project> startProjects = Arrays.asList(
+            createProject(1L, 10, 100, 20, 5, 50),
+            createProject(2L, 20, 200, 30, 10, 100)
+        );
+        List<Project> endProjects = Arrays.asList(
+            createProject(1L, 15, 150, 25, 8, 75),
+            createProject(2L, 25, 250, 35, 15, 150),
+            createProject(3L, 30, 300, 40, 20, 200)
+        );
+
+        List<Project> result = projectService.getMergedProjectList(startProjects, endProjects);
+
+        assertEquals(3, result.size());
+        assertEquals(5, result.get(0).getStarsCount());
+        assertEquals(50, result.get(0).getCommitsCount());
+        assertEquals(5, result.get(0).getForksCount());
+        assertEquals(3, result.get(0).getContributorsCount());
+        assertEquals(25, result.get(0).getScore());
+    }
+
+    @Test
+    public void testCreateMergedProject() {
+        Project startProject = createProject(1L, 10, 100, 20, 5, 50);
+        Project endProject = createProject(1L, 15, 150, 25, 8, 75);
+
+        Project result = projectService.createMergedProject(startProject, endProject);
+
+        assertEquals(5, result.getStarsCount());
+        assertEquals(50, result.getCommitsCount());
+        assertEquals(5, result.getForksCount());
+        assertEquals(3, result.getContributorsCount());
+        assertEquals(25, result.getScore());
+    }
+
+    @Test
+    public void testConvertProjectsToMap() {
+        List<Project> projects = Arrays.asList(
+            createProject(1L, 10, 100, 20, 5, 50),
+            createProject(2L, 20, 200, 30, 10, 100)
+        );
+
+        Map<Long, Project> result = projectService.convertProjectsToMap(projects);
+
+        assertEquals(2, result.size());
+        assertTrue(result.containsKey(1L));
+        assertTrue(result.containsKey(2L));
+    }
+
+    @Test
+    public void testGetOrganizationConfig() {
+        when(mockEnvironment.containsProperty("organization.list")).thenReturn(true);
+        when(mockEnvironment.getProperty("organization.list")).thenReturn("org1,org2");
+
+        String result = projectService.getOrganizationConfig();
+
+        assertEquals("org1,org2", result);
+    }
+
+    @Test
+    public void testGetOrganizationConfigEmpty() {
+        when(mockEnvironment.containsProperty("organization.list")).thenReturn(false);
+
+        String result = projectService.getOrganizationConfig();
+
+        assertEquals("", result);
+    }
+
+    @Test
+    public void testIsSortOrderAscending() {
+        assertTrue(projectService.isSortOrderAscending(Optional.of("stars")));
+        assertFalse(projectService.isSortOrderAscending(Optional.of("-stars")));
+        assertFalse(projectService.isSortOrderAscending(Optional.empty()));
+    }
+
+    @Test
+    public void testGetProjectSortComparator() {
+        Comparator<Project> comparator;
+
+        comparator = projectService.getProjectSortComparator(Optional.of("stars"), true);
+        assertTrue(comparator instanceof ProjectStarComparator);
+
+        comparator = projectService.getProjectSortComparator(Optional.of("score"), true);
+        assertTrue(comparator instanceof ProjectScoreComparator);
+
+        comparator = projectService.getProjectSortComparator(Optional.of("commits"), true);
+        assertTrue(comparator instanceof ProjectCommitComparator);
+
+        comparator = projectService.getProjectSortComparator(Optional.of("forks"), true);
+        assertTrue(comparator instanceof ProjectForkComparator);
+
+        comparator = projectService.getProjectSortComparator(Optional.of("contributors"), true);
+        assertTrue(comparator instanceof ProjectContributorComparator);
+
+        comparator = projectService.getProjectSortComparator(Optional.of("unknown"), true);
+        assertTrue(comparator instanceof ProjectScoreComparator);
+
+        comparator = projectService.getProjectSortComparator(Optional.empty(), true);
+        assertTrue(comparator instanceof ProjectScoreComparator);
+    }
+
+    private Project createProject(Long id, int stars, int commits, int forks, int contributors, int score) {
+        Project project = new Project();
+        project.setGitHubProjectId(id);
+        project.setStarsCount(stars);
+        project.setCommitsCount(commits);
+        project.setForksCount(forks);
+        project.setContributorsCount(contributors);
+        project.setScore(score);
+        return project;
+    }
+}
+
+*****

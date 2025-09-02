@@ -1,0 +1,101 @@
+You are a highly skilled test engineer specializing in debugging and resolving compilation errors and test failures in Java-based projects. Your expertise includes Java 8, JUnit 4, and REST Assured, allowing you to diagnose issues efficiently and provide precise, actionable fixes.
+
+Do fix the compilation errors delimited by ##### given the code below delimited by *****.
+
+The response must contain only Java code in JUnit 4 format.
+
+#####
+[[1;31mERROR[m] COMPILATION ERROR : 
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectForkComparatorTest.java:[10,26] cannot find symbol
+  symbol:   class SutHandler
+  location: class org.zalando.catwatch.backend.sonnet35_run01_ProjectForkComparatorTest
+[[1;31mERROR[m] Failed to execute goal [32morg.apache.maven.plugins:maven-compiler-plugin:3.8.0:testCompile[m [1m(default-testCompile)[m on project [36mcatwatch-backend[m: [1;31mCompilation failure[m
+[[1;31mERROR[m] [1;31m/media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectForkComparatorTest.java:[10,26] cannot find symbol[m
+[[1;31mERROR[m] [1;31m  symbol:   class SutHandler[m
+[[1;31mERROR[m] [1;31m  location: class org.zalando.catwatch.backend.sonnet35_run01_ProjectForkComparatorTest[m
+[[1;31mERROR[m] [1;31m[m
+[[1;31mERROR[m] -> [1m[Help 1][m
+[[1;31mERROR[m] 
+[[1;31mERROR[m] To see the full stack trace of the errors, re-run Maven with the [1m-e[m switch.
+[[1;31mERROR[m] Re-run Maven using the [1m-X[m switch to enable full debug logging.
+[[1;31mERROR[m] 
+[[1;31mERROR[m] For more information about the errors and possible solutions, please read the following articles:
+[[1;31mERROR[m] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+
+#####
+*****
+package org.zalando.catwatch.backend;
+
+import org.junit.Test;
+import static org.junit.Assert.*;
+import org.zalando.catwatch.backend.model.Project;
+import org.zalando.catwatch.backend.service.comparator.ProjectForkComparator;
+
+public class sonnet35_run01_ProjectForkComparatorTest {
+
+    private static final SutHandler controller = new em.embedded.org.zalando.EmbeddedEvoMasterController();
+    private static String baseUrlOfSut;
+
+    @Test
+    public void testCompareWithDifferentForkCounts() {
+        ProjectForkComparator comparator = new ProjectForkComparator();
+        Project p1 = new Project();
+        Project p2 = new Project();
+        
+        p1.setForksCount(10);
+        p2.setForksCount(20);
+        
+        int result = comparator.compare(p1, p2);
+        assertTrue(result < 0);
+        
+        result = comparator.compare(p2, p1);
+        assertTrue(result > 0);
+    }
+
+    @Test
+    public void testCompareWithEqualForkCounts() {
+        ProjectForkComparator comparator = new ProjectForkComparator();
+        Project p1 = new Project();
+        Project p2 = new Project();
+        
+        p1.setForksCount(15);
+        p2.setForksCount(15);
+        
+        int result = comparator.compare(p1, p2);
+        assertEquals(0, result);
+    }
+
+    @Test
+    public void testCompareWithZeroForkCounts() {
+        ProjectForkComparator comparator = new ProjectForkComparator();
+        Project p1 = new Project();
+        Project p2 = new Project();
+        
+        p1.setForksCount(0);
+        p2.setForksCount(0);
+        
+        int result = comparator.compare(p1, p2);
+        assertEquals(0, result);
+    }
+
+    @Test
+    public void testCompareWithNegativeForkCounts() {
+        ProjectForkComparator comparator = new ProjectForkComparator();
+        Project p1 = new Project();
+        Project p2 = new Project();
+        
+        p1.setForksCount(-5);
+        p2.setForksCount(-10);
+        
+        int result = comparator.compare(p1, p2);
+        assertTrue(result > 0);
+    }
+
+    @Test
+    public void testConstructor() {
+        ProjectForkComparator comparator = new ProjectForkComparator();
+        assertNotNull(comparator);
+    }
+}
+
+*****

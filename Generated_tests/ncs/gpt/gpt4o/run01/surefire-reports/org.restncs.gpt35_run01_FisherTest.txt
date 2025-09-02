@@ -1,0 +1,32 @@
+-------------------------------------------------------------------------------
+Test set: org.restncs.gpt35_run01_FisherTest
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 7, Errors: 0, Skipped: 0, Time elapsed: 0.732 s <<< FAILURE! - in org.restncs.gpt35_run01_FisherTest
+testFisherMethodExceptionCase1(org.restncs.gpt35_run01_FisherTest)  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.AssertionError: expected:<0.0> but was:<NaN>
+	at org.restncs.gpt35_run01_FisherTest.testFisherMethodExceptionCase1(gpt35_run01_FisherTest.java:90)
+
+testFisherMethodExceptionCase2(org.restncs.gpt35_run01_FisherTest)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: expected:<0.0> but was:<0.5503175760099959>
+	at org.restncs.gpt35_run01_FisherTest.testFisherMethodExceptionCase2(gpt35_run01_FisherTest.java:96)
+
+testFisherMethod(org.restncs.gpt35_run01_FisherTest)  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.AssertionError: expected:<0.17326322008467937> but was:<0.3204541099824456>
+	at org.restncs.gpt35_run01_FisherTest.testFisherMethod(gpt35_run01_FisherTest.java:60)
+
+testFisherMethodBoundaryCase1(org.restncs.gpt35_run01_FisherTest)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: expected:<1.0> but was:<0.5000000000254615>
+	at org.restncs.gpt35_run01_FisherTest.testFisherMethodBoundaryCase1(gpt35_run01_FisherTest.java:66)
+
+testFisherMethodBoundaryCase2(org.restncs.gpt35_run01_FisherTest)  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.AssertionError: expected:<0.5> but was:<0.4472135954999579>
+	at org.restncs.gpt35_run01_FisherTest.testFisherMethodBoundaryCase2(gpt35_run01_FisherTest.java:72)
+
+testFisherMethodBoundaryCase3(org.restncs.gpt35_run01_FisherTest)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: expected:<1.0> but was:<0.5527864045000421>
+	at org.restncs.gpt35_run01_FisherTest.testFisherMethodBoundaryCase3(gpt35_run01_FisherTest.java:78)
+
+testFisherMethodBoundaryCase4(org.restncs.gpt35_run01_FisherTest)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: expected:<0.5> but was:<0.6264699609795708>
+	at org.restncs.gpt35_run01_FisherTest.testFisherMethodBoundaryCase4(gpt35_run01_FisherTest.java:84)
+

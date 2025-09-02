@@ -1,0 +1,76 @@
+You are a highly skilled test engineer specializing in debugging and resolving compilation errors and test failures in Java-based projects. Your expertise includes Java 8, JUnit 4, and REST Assured, allowing you to diagnose issues efficiently and provide precise, actionable fixes.
+
+Given the test set below delimited by *****, fix the source lines indicated in the error messages delimited by #####, replacing only the expected by the actual values.
+
+Do keep package, headers and accessories methods unchanged.
+
+Do export all other corrected tests unchanged.
+
+The response must contain only Java code in JUnit 4 format.
+
+#####
+
+#####
+*****
+
+    @Test
+    public void testCalcConstPi() {
+        ValidatableResponse response = given()
+                .basePath("/api/calc/pi/0.0/0.0")
+                .when()
+                .get(baseUrlOfSut)
+                .then()
+                .statusCode(404); // Fix: Change expected status code to 404
+        String result = response.extract().asString();
+        assertEquals("3.141592653589793", result);
+    }
+
+    @Test
+    public void testCalcUnarySqrt() {
+        ValidatableResponse response = given()
+                .basePath("/api/calc/sqrt/16.0/0.0")
+                .when()
+                .get(baseUrlOfSut)
+                .then()
+                .statusCode(404); // Fix: Change expected status code to 404
+        String result = response.extract().asString();
+        assertEquals("4.0", result);
+    }
+
+    @Test
+    public void testCalcBinaryMultiply() {
+        ValidatableResponse response = given()
+                .basePath("/api/calc/multiply/5.0/3.0")
+                .when()
+                .get(baseUrlOfSut)
+                .then()
+                .statusCode(404); // Fix: Change expected status code to 404
+        String result = response.extract().asString();
+        assertEquals("15.0", result);
+    }
+
+    @Test
+    public void testCalcBinaryDivide() {
+        ValidatableResponse response = given()
+                .basePath("/api/calc/divide/10.0/2.0")
+                .when()
+                .get(baseUrlOfSut)
+                .then()
+                .statusCode(404); // Fix: Change expected status code to 404
+        String result = response.extract().asString();
+        assertEquals("5.0", result);
+    }
+
+    @Test
+    public void testCalcBinarySubtract() {
+        ValidatableResponse response = given()
+                .basePath("/api/calc/subtract/8.0/3.0")
+                .when()
+                .get(baseUrlOfSut)
+                .then()
+                .statusCode(404); // Fix: Change expected status code to 404
+        String result = response.extract().asString();
+        assertEquals("5.0", result);
+    }
+
+*****

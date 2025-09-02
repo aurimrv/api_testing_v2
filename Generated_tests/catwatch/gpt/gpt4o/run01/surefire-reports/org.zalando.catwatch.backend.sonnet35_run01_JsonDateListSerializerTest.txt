@@ -1,0 +1,20 @@
+-------------------------------------------------------------------------------
+Test set: org.zalando.catwatch.backend.sonnet35_run01_JsonDateListSerializerTest
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 1, Errors: 0, Skipped: 1, Time elapsed: 0.038 s <<< FAILURE! - in org.zalando.catwatch.backend.sonnet35_run01_JsonDateListSerializerTest
+testSerializeNonEmptyList(org.zalando.catwatch.backend.sonnet35_run01_JsonDateListSerializerTest)  Time elapsed: 0.006 s  <<< FAILURE!
+org.mockito.exceptions.verification.junit.ArgumentsAreDifferent: 
+
+Argument(s) are different! Wanted:
+jsonGenerator.writeString(
+    "2021-07-01T00:00:00"
+);
+-> at org.zalando.catwatch.backend.sonnet35_run01_JsonDateListSerializerTest.testSerializeNonEmptyList(sonnet35_run01_JsonDateListSerializerTest.java:53)
+Actual invocation has different arguments:
+jsonGenerator.writeString(
+    "2021-06-30T21:00:00"
+);
+-> at org.zalando.catwatch.backend.util.JsonDateListSerializer.serialize(JsonDateListSerializer.java:21)
+
+	at org.zalando.catwatch.backend.sonnet35_run01_JsonDateListSerializerTest.testSerializeNonEmptyList(sonnet35_run01_JsonDateListSerializerTest.java:53)
+

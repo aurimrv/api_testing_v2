@@ -1,0 +1,127 @@
+
+package market;
+
+import org.junit.jupiter.api.AfterAll;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.Timeout;
+import static org.junit.jupiter.api.Assertions.*;
+import java.util.Map;
+import java.util.List;
+import static org.evomaster.client.java.controller.api.EMTestUtils.*;
+import org.evomaster.client.java.controller.SutHandler;
+import io.restassured.RestAssured;
+import static io.restassured.RestAssured.given;
+import io.restassured.response.ValidatableResponse;
+import static org.evomaster.client.java.sql.dsl.SqlDsl.sql;
+import org.evomaster.client.java.controller.api.dto.database.operations.InsertionResultsDto;
+import org.evomaster.client.java.controller.api.dto.database.operations.InsertionDto;
+import static org.hamcrest.Matchers.*;
+import io.restassured.config.JsonConfig;
+import io.restassured.path.json.config.JsonPathConfig;
+import static io.restassured.config.RedirectConfig.redirectConfig;
+import static org.evomaster.client.java.controller.contentMatchers.NumberMatcher.*;
+import static org.evomaster.client.java.controller.contentMatchers.StringMatcher.*;
+import static org.evomaster.client.java.controller.contentMatchers.SubStringMatcher.*;
+import static org.evomaster.client.java.controller.expect.ExpectationHandler.expectationHandler;
+import org.evomaster.client.java.controller.expect.ExpectationHandler;
+import io.restassured.path.json.JsonPath;
+import java.util.Arrays;
+
+public class gpt35_run01_ContactsRestControllerTest {
+
+    private static final SutHandler controller = new em.embedded.market.EmbeddedEvoMasterController();
+    private static String baseUrlOfSut;
+
+    @BeforeAll
+    public static void initClass() {
+        controller.setupForGeneratedTest();
+        baseUrlOfSut = controller.startSut();
+        controller.registerOrExecuteInitSqlCommandsIfNeeded();
+        assertNotNull(baseUrlOfSut);
+        RestAssured.enableLoggingOfRequestAndResponseIfValidationFails();
+        RestAssured.useRelaxedHTTPSValidation();
+        RestAssured.urlEncodingEnabled = false;
+        RestAssured.config = RestAssured.config()
+            .jsonConfig(JsonConfig.jsonConfig().numberReturnType(JsonPathConfig.NumberReturnType.DOUBLE))
+            .redirect(redirectConfig().followRedirects(false));
+    }
+
+    @AfterAll
+    public static void tearDown() {
+        controller.stopSut();
+    }
+
+    @BeforeEach
+    public void initTest() {
+        controller.resetDatabase(Arrays.asList("USER_ROLE","CUSTOMER_ORDER","CART_ITEM","PRODUCT","CART","CONTACTS"));
+        controller.resetStateOfSUT();
+    }
+
+    @Test
+    public void testUpdateContacts() {
+        // Test to cover the updateContacts method in ContactsRestController
+
+        // Mock data
+        ContactsDTO contactsDTO = new ContactsDTO();
+        contactsDTO.setAddress("123 Main St.");
+        contactsDTO.setPhone("+123456789");
+
+        // Perform the updateContacts request
+        ValidatableResponse response = given()
+                .contentType("application/json")
+                .body(contactsDTO)
+                .when()
+                .put(baseUrlOfSut + "/customer/contacts")
+                .then();
+
+        // Assertions
+        response.statusCode(200)
+                .body("address", equalTo("123 Main St."))
+                .body("phone", equalTo("+123456789"));
+    }
+
+    @Test
+    public void testUpdateContacts_emptyContacts() {
+        // Test to cover the updateContacts method in ContactsRestController with empty contacts
+
+        // Mock data
+        ContactsDTO contactsDTO = new ContactsDTO();
+
+        // Perform the updateContacts request
+        ValidatableResponse response = given()
+                .contentType("application/json")
+                .body(contactsDTO)
+                .when()
+                .put(baseUrlOfSut + "/customer/contacts")
+                .then();
+
+        // Assertions
+        response.statusCode(200)
+                .body("address", equalTo(null))
+                .body("phone", equalTo(null));
+    }
+
+    // Add missing ContactsDTO class
+    public static class ContactsDTO {
+        private String address;
+        private String phone;
+
+        public String getAddress() {
+            return address;
+        }
+
+        public void setAddress(String address) {
+            this.address = address;
+        }
+
+        public String getPhone() {
+            return phone;
+        }
+
+        public void setPhone(String phone) {
+            this.phone = phone;
+        }
+    }
+}

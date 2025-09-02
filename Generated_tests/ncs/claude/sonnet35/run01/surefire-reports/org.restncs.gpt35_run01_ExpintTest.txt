@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: org.restncs.gpt35_run01_ExpintTest
+-------------------------------------------------------------------------------
+Tests run: 9, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 0.816 s <<< FAILURE! - in org.restncs.gpt35_run01_ExpintTest
+testExpintExe_NegativeN_ThrowsException(org.restncs.gpt35_run01_ExpintTest)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: Expected exception: java.lang.RuntimeException
+
+testExpintExe_NegativeX_ThrowsException(org.restncs.gpt35_run01_ExpintTest)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: Expected exception: java.lang.RuntimeException
+
+testExpintExe_XEqualsZeroNZero_ThrowsException(org.restncs.gpt35_run01_ExpintTest)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: Expected exception: java.lang.RuntimeException
+
+testExpintExe_SeriesFailed_ThrowsException(org.restncs.gpt35_run01_ExpintTest)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: Expected exception: java.lang.RuntimeException
+

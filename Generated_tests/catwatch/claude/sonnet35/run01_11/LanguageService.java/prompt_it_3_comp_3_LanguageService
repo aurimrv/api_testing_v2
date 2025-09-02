@@ -1,0 +1,183 @@
+You are a highly skilled test engineer specializing in debugging and resolving compilation errors and test failures in Java-based projects. Your expertise includes Java 8, JUnit 4, and REST Assured, allowing you to diagnose issues efficiently and provide precise, actionable fixes.
+
+Do fix the compilation errors delimited by ##### given the code below delimited by *****.
+
+The response must contain only Java code in JUnit 4 format.
+
+#####
+[[1;31mERROR[m] COMPILATION ERROR : 
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_LanguageServiceTest.java:[39,9] reference to assertEquals is ambiguous
+  both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_LanguageServiceTest.java:[40,9] reference to assertEquals is ambiguous
+  both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_LanguageServiceTest.java:[51,9] reference to assertEquals is ambiguous
+  both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_LanguageServiceTest.java:[52,9] reference to assertEquals is ambiguous
+  both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_LanguageServiceTest.java:[54,9] reference to assertEquals is ambiguous
+  both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_LanguageServiceTest.java:[55,9] reference to assertEquals is ambiguous
+  both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_LanguageServiceTest.java:[65,9] reference to assertEquals is ambiguous
+  both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_LanguageServiceTest.java:[66,9] reference to assertEquals is ambiguous
+  both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_LanguageServiceTest.java:[76,9] reference to assertEquals is ambiguous
+  both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_LanguageServiceTest.java:[77,9] reference to assertEquals is ambiguous
+  both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_LanguageServiceTest.java:[97,13] org.zalando.catwatch.backend.sonnet35_run01_LanguageServiceTest.MockProjectRepository is not abstract and does not override abstract method findProjectsByDateRange(java.util.Date,java.util.Date) in org.zalando.catwatch.backend.repo.ProjectRepository
+[[1;31mERROR[m] Failed to execute goal [32morg.apache.maven.plugins:maven-compiler-plugin:3.8.0:testCompile[m [1m(default-testCompile)[m on project [36mcatwatch-backend[m: [1;31mCompilation failure[m: Compilation failure: 
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_LanguageServiceTest.java:[39,9] reference to assertEquals is ambiguous
+[[1;31mERROR[m]   both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_LanguageServiceTest.java:[40,9] reference to assertEquals is ambiguous
+[[1;31mERROR[m]   both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_LanguageServiceTest.java:[51,9] reference to assertEquals is ambiguous
+[[1;31mERROR[m]   both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_LanguageServiceTest.java:[52,9] reference to assertEquals is ambiguous
+[[1;31mERROR[m]   both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_LanguageServiceTest.java:[54,9] reference to assertEquals is ambiguous
+[[1;31mERROR[m]   both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_LanguageServiceTest.java:[55,9] reference to assertEquals is ambiguous
+[[1;31mERROR[m]   both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_LanguageServiceTest.java:[65,9] reference to assertEquals is ambiguous
+[[1;31mERROR[m]   both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_LanguageServiceTest.java:[66,9] reference to assertEquals is ambiguous
+[[1;31mERROR[m]   both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_LanguageServiceTest.java:[76,9] reference to assertEquals is ambiguous
+[[1;31mERROR[m]   both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_LanguageServiceTest.java:[77,9] reference to assertEquals is ambiguous
+[[1;31mERROR[m]   both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_LanguageServiceTest.java:[97,13] org.zalando.catwatch.backend.sonnet35_run01_LanguageServiceTest.MockProjectRepository is not abstract and does not override abstract method findProjectsByDateRange(java.util.Date,java.util.Date) in org.zalando.catwatch.backend.repo.ProjectRepository
+[[1;31mERROR[m] -> [1m[Help 1][m
+[[1;31mERROR[m] 
+[[1;31mERROR[m] To see the full stack trace of the errors, re-run Maven with the [1m-e[m switch.
+[[1;31mERROR[m] Re-run Maven using the [1m-X[m switch to enable full debug logging.
+[[1;31mERROR[m] 
+[[1;31mERROR[m] For more information about the errors and possible solutions, please read the following articles:
+[[1;31mERROR[m] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+
+#####
+*****
+package org.zalando.catwatch.backend;
+
+import org.junit.AfterClass;
+import org.junit.BeforeClass;
+import org.junit.Before;
+import org.junit.Test;
+import static org.junit.Assert.*;
+import java.util.*;
+import java.util.stream.Collectors;
+
+import org.zalando.catwatch.backend.model.Language;
+import org.zalando.catwatch.backend.model.Project;
+import org.zalando.catwatch.backend.repo.ProjectRepository;
+import org.zalando.catwatch.backend.service.LanguageService;
+
+public class sonnet35_run01_LanguageServiceTest {
+
+    private LanguageService languageService;
+    private ProjectRepository mockRepository;
+
+    @Before
+    public void initTest() {
+        mockRepository = new MockProjectRepository();
+        languageService = new LanguageService(mockRepository);
+    }
+
+    @Test
+    public void testGetMainLanguagesWithEmptyProjects() {
+        List<Language> result = languageService.getMainLanguages("org1,org2", Comparator.comparing(Language::getName), Optional.empty());
+        assertTrue(result.isEmpty());
+    }
+
+    @Test
+    public void testGetMainLanguagesWithSingleProject() {
+        ((MockProjectRepository) mockRepository).addProject(createProject("org1", "Java"));
+        List<Language> result = languageService.getMainLanguages("org1", Comparator.comparing(Language::getName), Optional.empty());
+        assertEquals(1, result.size());
+        assertEquals("Java", result.get(0).getName());
+        assertEquals(100L, result.get(0).getPercentage());
+        assertEquals(1L, result.get(0).getProjectsCount());
+    }
+
+    @Test
+    public void testGetMainLanguagesWithMultipleProjects() {
+        ((MockProjectRepository) mockRepository).addProject(createProject("org1", "Java"));
+        ((MockProjectRepository) mockRepository).addProject(createProject("org1", "Python"));
+        ((MockProjectRepository) mockRepository).addProject(createProject("org2", "Java"));
+        List<Language> result = languageService.getMainLanguages("org1,org2", Comparator.comparing(Language::getName), Optional.empty());
+        assertEquals(2, result.size());
+        assertEquals("Java", result.get(0).getName());
+        assertEquals(67L, result.get(0).getPercentage());
+        assertEquals(2L, result.get(0).getProjectsCount());
+        assertEquals("Python", result.get(1).getName());
+        assertEquals(33L, result.get(1).getPercentage());
+        assertEquals(1L, result.get(1).getProjectsCount());
+    }
+
+    @Test
+    public void testGetMainLanguagesWithFilterLanguage() {
+        ((MockProjectRepository) mockRepository).addProject(createProject("org1", "Java"));
+        ((MockProjectRepository) mockRepository).addProject(createProject("org1", "Python"));
+        List<Language> result = languageService.getMainLanguages("org1", Comparator.comparing(Language::getName), Optional.of("Java"));
+        assertEquals(1, result.size());
+        assertEquals("Java", result.get(0).getName());
+        assertEquals(100L, result.get(0).getPercentage());
+        assertEquals(1L, result.get(0).getProjectsCount());
+    }
+
+    @Test
+    public void testGetMainLanguagesWithNullPrimaryLanguage() {
+        ((MockProjectRepository) mockRepository).addProject(createProject("org1", null));
+        ((MockProjectRepository) mockRepository).addProject(createProject("org1", "Java"));
+        List<Language> result = languageService.getMainLanguages("org1", Comparator.comparing(Language::getName), Optional.empty());
+        assertEquals(1, result.size());
+        assertEquals("Java", result.get(0).getName());
+        assertEquals(100L, result.get(0).getPercentage());
+        assertEquals(1L, result.get(0).getProjectsCount());
+    }
+
+    @Test
+    public void testGetMainLanguagesWithCustomComparator() {
+        ((MockProjectRepository) mockRepository).addProject(createProject("org1", "Java"));
+        ((MockProjectRepository) mockRepository).addProject(createProject("org1", "Python"));
+        List<Language> result = languageService.getMainLanguages("org1", Comparator.comparing(Language::getProjectsCount).reversed(), Optional.empty());
+        assertEquals(2, result.size());
+        assertEquals("Java", result.get(0).getName());
+        assertEquals("Python", result.get(1).getName());
+    }
+
+    private Project createProject(String orgName, String primaryLanguage) {
+        Project project = new Project();
+        project.setOrganizationName(orgName);
+        project.setPrimaryLanguage(primaryLanguage);
+        return project;
+    }
+
+    private class MockProjectRepository implements ProjectRepository {
+        private List<Project> projects = new ArrayList<>();
+
+        public void addProject(Project project) {
+            projects.add(project);
+        }
+
+        @Override
+        public List<Project> findProjects(String organizationName, Optional<String> projectName, Optional<String> language) {
+            return projects.stream()
+                .filter(p -> p.getOrganizationName().equals(organizationName))
+                .filter(p -> language.map(l -> l.equals(p.getPrimaryLanguage())).orElse(true))
+                .collect(Collectors.toList());
+        }
+
+        // Implement other methods of ProjectRepository interface
+        @Override
+        public List<Project> findProjectsByOrganizationNameAndDateRange(Collection<String> organizationNames, Date startDate, Date endDate) {
+            throw new UnsupportedOperationException("Not implemented");
+        }
+
+        // Add other required method implementations...
+    }
+}
+
+*****

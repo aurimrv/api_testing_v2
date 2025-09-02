@@ -1,0 +1,29 @@
+[[1;31mERROR[m] COMPILATION ERROR : 
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_CronConfigTest.java:[63,13] method does not override or implement a method from a supertype
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_CronConfigTest.java:[139,20] cannot find symbol
+  symbol: class AutowireCapableBeanFactory
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_CronConfigTest.java:[70,91] <anonymous org.zalando.catwatch.backend.sonnet35_run01_CronConfigTest$3> is not abstract and does not override abstract method addProtocolResolver(org.springframework.core.io.ProtocolResolver) in org.springframework.context.ConfigurableApplicationContext
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_CronConfigTest.java:[164,28] fetchData() in <anonymous org.zalando.catwatch.backend.sonnet35_run01_CronConfigTest$4> cannot override fetchData() in org.zalando.catwatch.backend.scheduler.Fetcher
+  overridden method does not throw java.lang.Exception
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_CronConfigTest.java:[169,13] method does not override or implement a method from a supertype
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_CronConfigTest.java:[246,20] cannot find symbol
+  symbol: class AutowireCapableBeanFactory
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_CronConfigTest.java:[176,91] <anonymous org.zalando.catwatch.backend.sonnet35_run01_CronConfigTest$6> is not abstract and does not override abstract method addProtocolResolver(org.springframework.core.io.ProtocolResolver) in org.springframework.context.ConfigurableApplicationContext
+[[1;31mERROR[m] Failed to execute goal [32morg.apache.maven.plugins:maven-compiler-plugin:3.8.0:testCompile[m [1m(default-testCompile)[m on project [36mcatwatch-backend[m: [1;31mCompilation failure[m: Compilation failure: 
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_CronConfigTest.java:[63,13] method does not override or implement a method from a supertype
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_CronConfigTest.java:[139,20] cannot find symbol
+[[1;31mERROR[m]   symbol: class AutowireCapableBeanFactory
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_CronConfigTest.java:[70,91] <anonymous org.zalando.catwatch.backend.sonnet35_run01_CronConfigTest$3> is not abstract and does not override abstract method addProtocolResolver(org.springframework.core.io.ProtocolResolver) in org.springframework.context.ConfigurableApplicationContext
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_CronConfigTest.java:[164,28] fetchData() in <anonymous org.zalando.catwatch.backend.sonnet35_run01_CronConfigTest$4> cannot override fetchData() in org.zalando.catwatch.backend.scheduler.Fetcher
+[[1;31mERROR[m]   overridden method does not throw java.lang.Exception
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_CronConfigTest.java:[169,13] method does not override or implement a method from a supertype
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_CronConfigTest.java:[246,20] cannot find symbol
+[[1;31mERROR[m]   symbol: class AutowireCapableBeanFactory
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_CronConfigTest.java:[176,91] <anonymous org.zalando.catwatch.backend.sonnet35_run01_CronConfigTest$6> is not abstract and does not override abstract method addProtocolResolver(org.springframework.core.io.ProtocolResolver) in org.springframework.context.ConfigurableApplicationContext
+[[1;31mERROR[m] -> [1m[Help 1][m
+[[1;31mERROR[m] 
+[[1;31mERROR[m] To see the full stack trace of the errors, re-run Maven with the [1m-e[m switch.
+[[1;31mERROR[m] Re-run Maven using the [1m-X[m switch to enable full debug logging.
+[[1;31mERROR[m] 
+[[1;31mERROR[m] For more information about the errors and possible solutions, please read the following articles:
+[[1;31mERROR[m] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

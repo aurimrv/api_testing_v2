@@ -1,0 +1,26 @@
+-------------------------------------------------------------------------------
+Test set: org.zalando.catwatch.backend.sonnet35_run01_RetryableFetcherTest
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 2.004 s <<< FAILURE! - in org.zalando.catwatch.backend.sonnet35_run01_RetryableFetcherTest
+testTryFetchDataWithRetry(org.zalando.catwatch.backend.sonnet35_run01_RetryableFetcherTest)  Time elapsed: 0.007 s  <<< FAILURE!
+org.mockito.exceptions.verification.TooLittleActualInvocations: 
+
+fetcher.fetchData();
+Wanted 3 times:
+-> at org.zalando.catwatch.backend.sonnet35_run01_RetryableFetcherTest.testTryFetchDataWithRetry(sonnet35_run01_RetryableFetcherTest.java:96)
+But was 1 time:
+-> at org.zalando.catwatch.backend.scheduler.RetryableFetcher.lambda$tryFetchData$0(RetryableFetcher.java:45)
+
+	at org.zalando.catwatch.backend.sonnet35_run01_RetryableFetcherTest.testTryFetchDataWithRetry(sonnet35_run01_RetryableFetcherTest.java:96)
+
+testTryFetchDataWithMaxRetries(org.zalando.catwatch.backend.sonnet35_run01_RetryableFetcherTest)  Time elapsed: 0.002 s  <<< FAILURE!
+org.mockito.exceptions.verification.TooLittleActualInvocations: 
+
+fetcher.fetchData();
+Wanted 3 times:
+-> at org.zalando.catwatch.backend.sonnet35_run01_RetryableFetcherTest.testTryFetchDataWithMaxRetries(sonnet35_run01_RetryableFetcherTest.java:111)
+But was 1 time:
+-> at org.zalando.catwatch.backend.scheduler.RetryableFetcher.lambda$tryFetchData$0(RetryableFetcher.java:45)
+
+	at org.zalando.catwatch.backend.sonnet35_run01_RetryableFetcherTest.testTryFetchDataWithMaxRetries(sonnet35_run01_RetryableFetcherTest.java:111)
+

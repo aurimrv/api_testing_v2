@@ -1,0 +1,14 @@
+Line: 79
+Expected status code <500> but was <400>.
+----------------------------------------
+Line: 89
+JSON path resultAsDouble doesn't match.
+Expected: <0.0F>
+Actual: 0.0
+----------------------------------------
+Line: 152
+IllegalArgument Index n le...
+----------------------------------------
+Line: 145
+IllegalArgument Index n le...
+----------------------------------------

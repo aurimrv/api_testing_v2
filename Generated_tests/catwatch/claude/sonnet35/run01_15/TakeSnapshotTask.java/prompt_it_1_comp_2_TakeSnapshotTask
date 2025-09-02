@@ -1,0 +1,388 @@
+You are a highly skilled test engineer specializing in debugging and resolving compilation errors and test failures in Java-based projects. Your expertise includes Java 8, JUnit 4, and REST Assured, allowing you to diagnose issues efficiently and provide precise, actionable fixes.
+
+Do fix the compilation errors delimited by ##### given the code below delimited by *****.
+
+The response must contain only Java code in JUnit 4 format.
+
+#####
+[[1;31mERROR[m] COMPILATION ERROR : 
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[83,9] cannot find symbol
+  symbol:   class Snapshot
+  location: class org.zalando.catwatch.backend.sonnet35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[93,9] cannot find symbol
+  symbol:   class OrganizationWrapper
+  location: class org.zalando.catwatch.backend.sonnet35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[93,55] cannot find symbol
+  symbol:   class OrganizationWrapper
+  location: class org.zalando.catwatch.backend.sonnet35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[101,9] cannot find symbol
+  symbol:   class OrganizationWrapper
+  location: class org.zalando.catwatch.backend.sonnet35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[101,55] cannot find symbol
+  symbol:   class OrganizationWrapper
+  location: class org.zalando.catwatch.backend.sonnet35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[102,9] cannot find symbol
+  symbol:   class Collection
+  location: class org.zalando.catwatch.backend.sonnet35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[109,9] cannot find symbol
+  symbol:   class RepositoryWrapper
+  location: class org.zalando.catwatch.backend.sonnet35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[109,52] cannot find symbol
+  symbol:   class RepositoryWrapper
+  location: class org.zalando.catwatch.backend.sonnet35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[119,9] cannot find symbol
+  symbol:   class RepositoryWrapper
+  location: class org.zalando.catwatch.backend.sonnet35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[119,52] cannot find symbol
+  symbol:   class RepositoryWrapper
+  location: class org.zalando.catwatch.backend.sonnet35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[129,9] cannot find symbol
+  symbol:   class OrganizationWrapper
+  location: class org.zalando.catwatch.backend.sonnet35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[129,55] cannot find symbol
+  symbol:   class OrganizationWrapper
+  location: class org.zalando.catwatch.backend.sonnet35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[130,9] cannot find symbol
+  symbol:   class Collection
+  location: class org.zalando.catwatch.backend.sonnet35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[137,9] cannot find symbol
+  symbol:   class OrganizationWrapper
+  location: class org.zalando.catwatch.backend.sonnet35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[137,55] cannot find symbol
+  symbol:   class OrganizationWrapper
+  location: class org.zalando.catwatch.backend.sonnet35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[138,9] cannot find symbol
+  symbol:   class Collection
+  location: class org.zalando.catwatch.backend.sonnet35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[145,29] cannot find symbol
+  symbol:   method mock(java.lang.Class<org.kohsuke.github.GitHub>)
+  location: class org.zalando.catwatch.backend.sonnet35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[146,41] cannot find symbol
+  symbol:   method anyString()
+  location: class org.zalando.catwatch.backend.sonnet35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[153,9] cannot find symbol
+  symbol:   class OrganizationWrapper
+  location: class org.zalando.catwatch.backend.sonnet35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[153,56] cannot find symbol
+  symbol:   class OrganizationWrapper
+  location: class org.zalando.catwatch.backend.sonnet35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[154,9] cannot find symbol
+  symbol:   class RepositoryWrapper
+  location: class org.zalando.catwatch.backend.sonnet35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[154,52] cannot find symbol
+  symbol:   class RepositoryWrapper
+  location: class org.zalando.catwatch.backend.sonnet35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[155,57] cannot find symbol
+  symbol:   class URL
+  location: class org.zalando.catwatch.backend.sonnet35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[162,9] cannot find symbol
+  symbol:   class RepositoryWrapper
+  location: class org.zalando.catwatch.backend.sonnet35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[162,52] cannot find symbol
+  symbol:   class RepositoryWrapper
+  location: class org.zalando.catwatch.backend.sonnet35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[170,9] cannot find symbol
+  symbol:   class RepositoryWrapper
+  location: class org.zalando.catwatch.backend.sonnet35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[170,52] cannot find symbol
+  symbol:   class RepositoryWrapper
+  location: class org.zalando.catwatch.backend.sonnet35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[171,80] cannot find symbol
+  symbol:   class FileNotFoundException
+  location: class org.zalando.catwatch.backend.sonnet35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[180,9] cannot find symbol
+  symbol:   class RepositoryWrapper
+  location: class org.zalando.catwatch.backend.sonnet35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[180,52] cannot find symbol
+  symbol:   class RepositoryWrapper
+  location: class org.zalando.catwatch.backend.sonnet35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] Failed to execute goal [32morg.apache.maven.plugins:maven-compiler-plugin:3.8.0:testCompile[m [1m(default-testCompile)[m on project [36mcatwatch-backend[m: [1;31mCompilation failure[m: Compilation failure: 
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[83,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Snapshot
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[93,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class OrganizationWrapper
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[93,55] cannot find symbol
+[[1;31mERROR[m]   symbol:   class OrganizationWrapper
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[101,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class OrganizationWrapper
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[101,55] cannot find symbol
+[[1;31mERROR[m]   symbol:   class OrganizationWrapper
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[102,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Collection
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[109,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class RepositoryWrapper
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[109,52] cannot find symbol
+[[1;31mERROR[m]   symbol:   class RepositoryWrapper
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[119,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class RepositoryWrapper
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[119,52] cannot find symbol
+[[1;31mERROR[m]   symbol:   class RepositoryWrapper
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[129,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class OrganizationWrapper
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[129,55] cannot find symbol
+[[1;31mERROR[m]   symbol:   class OrganizationWrapper
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[130,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Collection
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[137,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class OrganizationWrapper
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[137,55] cannot find symbol
+[[1;31mERROR[m]   symbol:   class OrganizationWrapper
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[138,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Collection
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[145,29] cannot find symbol
+[[1;31mERROR[m]   symbol:   method mock(java.lang.Class<org.kohsuke.github.GitHub>)
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[146,41] cannot find symbol
+[[1;31mERROR[m]   symbol:   method anyString()
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[153,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class OrganizationWrapper
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[153,56] cannot find symbol
+[[1;31mERROR[m]   symbol:   class OrganizationWrapper
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[154,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class RepositoryWrapper
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[154,52] cannot find symbol
+[[1;31mERROR[m]   symbol:   class RepositoryWrapper
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[155,57] cannot find symbol
+[[1;31mERROR[m]   symbol:   class URL
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[162,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class RepositoryWrapper
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[162,52] cannot find symbol
+[[1;31mERROR[m]   symbol:   class RepositoryWrapper
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[170,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class RepositoryWrapper
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[170,52] cannot find symbol
+[[1;31mERROR[m]   symbol:   class RepositoryWrapper
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[171,80] cannot find symbol
+[[1;31mERROR[m]   symbol:   class FileNotFoundException
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[180,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class RepositoryWrapper
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[180,52] cannot find symbol
+[[1;31mERROR[m]   symbol:   class RepositoryWrapper
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] -> [1m[Help 1][m
+[[1;31mERROR[m] 
+[[1;31mERROR[m] To see the full stack trace of the errors, re-run Maven with the [1m-e[m switch.
+[[1;31mERROR[m] Re-run Maven using the [1m-X[m switch to enable full debug logging.
+[[1;31mERROR[m] 
+[[1;31mERROR[m] For more information about the errors and possible solutions, please read the following articles:
+[[1;31mERROR[m] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+
+#####
+*****
+package org.zalando.catwatch.backend;
+
+import org.junit.AfterClass;
+import org.junit.BeforeClass;
+import org.junit.Before;
+import org.junit.Test;
+import static org.junit.Assert.*;
+import java.util.Map;
+import java.util.List;
+import static org.evomaster.client.java.controller.api.EMTestUtils.*;
+import org.evomaster.client.java.controller.SutHandler;
+import io.restassured.RestAssured;
+import static io.restassured.RestAssured.given;
+import io.restassured.response.ValidatableResponse;
+import static org.evomaster.client.java.sql.dsl.SqlDsl.sql;
+import org.evomaster.client.java.controller.api.dto.database.operations.InsertionResultsDto;
+import org.evomaster.client.java.controller.api.dto.database.operations.InsertionDto;
+import static org.hamcrest.Matchers.*;
+import io.restassured.config.JsonConfig;
+import io.restassured.path.json.config.JsonPathConfig;
+import static io.restassured.config.RedirectConfig.redirectConfig;
+import static org.evomaster.client.java.controller.contentMatchers.NumberMatcher.*;
+import static org.evomaster.client.java.controller.contentMatchers.StringMatcher.*;
+import static org.evomaster.client.java.controller.contentMatchers.SubStringMatcher.*;
+import static org.evomaster.client.java.controller.expect.ExpectationHandler.expectationHandler;
+import org.evomaster.client.java.controller.expect.ExpectationHandler;
+import io.restassured.path.json.JsonPath;
+import java.util.Arrays;
+
+import org.zalando.catwatch.backend.github.TakeSnapshotTask;
+import org.kohsuke.github.*;
+import org.zalando.catwatch.backend.model.*;
+import org.zalando.catwatch.backend.model.util.Scorer;
+import java.util.Date;
+import java.io.IOException;
+import java.net.URISyntaxException;
+import java.util.ArrayList;
+
+public class sonnet35_run01_TakeSnapshotTaskTest {
+
+    private static final SutHandler controller = new em.embedded.org.zalando.EmbeddedEvoMasterController();
+    private static String baseUrlOfSut;
+
+    private TakeSnapshotTask takeSnapshotTask;
+    private GitHub gitHub;
+    private String organizationName;
+    private Scorer scorer;
+    private Date snapshotDate;
+
+    @BeforeClass
+    public static void initClass() {
+        controller.setupForGeneratedTest();
+        baseUrlOfSut = controller.startSut();
+        controller.registerOrExecuteInitSqlCommandsIfNeeded();
+        assertNotNull(baseUrlOfSut);
+        RestAssured.enableLoggingOfRequestAndResponseIfValidationFails();
+        RestAssured.useRelaxedHTTPSValidation();
+        RestAssured.urlEncodingEnabled = false;
+        RestAssured.config = RestAssured.config()
+            .jsonConfig(JsonConfig.jsonConfig().numberReturnType(JsonPathConfig.NumberReturnType.DOUBLE))
+            .redirect(redirectConfig().followRedirects(false));
+    }
+
+    @AfterClass
+    public static void tearDown() {
+        controller.stopSut();
+    }
+
+    @Before
+    public void initTest() throws IOException {
+        controller.resetDatabase(Arrays.asList("CONTRIBUTOR"));
+        controller.resetStateOfSUT();
+        
+        gitHub = GitHub.connectAnonymously();
+        organizationName = "testOrg";
+        scorer = new Scorer();
+        snapshotDate = new Date();
+        takeSnapshotTask = new TakeSnapshotTask(gitHub, organizationName, scorer, snapshotDate);
+    }
+
+    @Test
+    public void testCall() throws Exception {
+        Snapshot snapshot = takeSnapshotTask.call();
+        assertNotNull(snapshot);
+        assertNotNull(snapshot.getStatistics());
+        assertNotNull(snapshot.getProjects());
+        assertNotNull(snapshot.getContributors());
+        assertNotNull(snapshot.getLanguages());
+    }
+
+    @Test
+    public void testCollectStatistics() throws Exception {
+        OrganizationWrapper organizationWrapper = new OrganizationWrapper(gitHub.getOrganization(organizationName));
+        Statistics statistics = takeSnapshotTask.collectStatistics(organizationWrapper);
+        assertNotNull(statistics);
+        assertEquals(organizationName, statistics.getOrganizationName());
+    }
+
+    @Test
+    public void testCollectProjects() throws Exception {
+        OrganizationWrapper organizationWrapper = new OrganizationWrapper(gitHub.getOrganization(organizationName));
+        Collection<Project> projects = takeSnapshotTask.collectProjects(organizationWrapper);
+        assertNotNull(projects);
+        assertFalse(projects.isEmpty());
+    }
+
+    @Test
+    public void testGetProjectMaintainers() throws Exception {
+        RepositoryWrapper repositoryWrapper = mock(RepositoryWrapper.class);
+        when(repositoryWrapper.getFileContent("MAINTAINERS")).thenReturn("maintainer1\nmaintainer2");
+        List<String> maintainers = takeSnapshotTask.getProjectMaintainers(repositoryWrapper);
+        assertEquals(2, maintainers.size());
+        assertTrue(maintainers.contains("maintainer1"));
+        assertTrue(maintainers.contains("maintainer2"));
+    }
+
+    @Test
+    public void testReadCatwatchYaml() throws Exception {
+        RepositoryWrapper repositoryWrapper = mock(RepositoryWrapper.class);
+        when(repositoryWrapper.getFileContent(".catwatch.yaml")).thenReturn("title: Test Project\nimage: test.png");
+        Project project = new Project();
+        takeSnapshotTask.readCatwatchYaml(repositoryWrapper, project);
+        assertEquals("Test Project", project.getTitle());
+        assertEquals("test.png", project.getImage());
+    }
+
+    @Test
+    public void testCollectContributors() throws Exception {
+        OrganizationWrapper organizationWrapper = new OrganizationWrapper(gitHub.getOrganization(organizationName));
+        Collection<Contributor> contributors = takeSnapshotTask.collectContributors(organizationWrapper);
+        assertNotNull(contributors);
+        assertFalse(contributors.isEmpty());
+    }
+
+    @Test
+    public void testCollectLanguages() throws Exception {
+        OrganizationWrapper organizationWrapper = new OrganizationWrapper(gitHub.getOrganization(organizationName));
+        Collection<Language> languages = takeSnapshotTask.collectLanguages(organizationWrapper);
+        assertNotNull(languages);
+        assertFalse(languages.isEmpty());
+    }
+
+    @Test(expected = IOException.class)
+    public void testCallWithIOException() throws Exception {
+        GitHub mockGitHub = mock(GitHub.class);
+        when(mockGitHub.getOrganization(anyString())).thenThrow(new IOException("Test exception"));
+        TakeSnapshotTask task = new TakeSnapshotTask(mockGitHub, organizationName, scorer, snapshotDate);
+        task.call();
+    }
+
+    @Test(expected = URISyntaxException.class)
+    public void testCollectProjectsWithURISyntaxException() throws Exception {
+        OrganizationWrapper organizationWrapper = mock(OrganizationWrapper.class);
+        RepositoryWrapper repositoryWrapper = mock(RepositoryWrapper.class);
+        when(repositoryWrapper.getUrl()).thenReturn(new URL("invalid://url"));
+        when(organizationWrapper.listRepositories()).thenReturn(Arrays.asList(repositoryWrapper));
+        takeSnapshotTask.collectProjects(organizationWrapper);
+    }
+
+    @Test
+    public void testGetProjectMaintainersWithIOException() throws Exception {
+        RepositoryWrapper repositoryWrapper = mock(RepositoryWrapper.class);
+        when(repositoryWrapper.getFileContent("MAINTAINERS")).thenThrow(new IOException("Test exception"));
+        List<String> maintainers = takeSnapshotTask.getProjectMaintainers(repositoryWrapper);
+        assertTrue(maintainers.isEmpty());
+    }
+
+    @Test
+    public void testReadCatwatchYamlWithFileNotFoundException() throws Exception {
+        RepositoryWrapper repositoryWrapper = mock(RepositoryWrapper.class);
+        when(repositoryWrapper.getFileContent(".catwatch.yaml")).thenThrow(new FileNotFoundException("Test exception"));
+        Project project = new Project();
+        takeSnapshotTask.readCatwatchYaml(repositoryWrapper, project);
+        assertNull(project.getTitle());
+        assertNull(project.getImage());
+    }
+
+    @Test
+    public void testReadCatwatchYamlWithIOException() throws Exception {
+        RepositoryWrapper repositoryWrapper = mock(RepositoryWrapper.class);
+        when(repositoryWrapper.getFileContent(".catwatch.yaml")).thenThrow(new IOException("Test exception"));
+        Project project = new Project();
+        takeSnapshotTask.readCatwatchYaml(repositoryWrapper, project);
+        assertNull(project.getTitle());
+        assertNull(project.getImage());
+    }
+}
+
+*****

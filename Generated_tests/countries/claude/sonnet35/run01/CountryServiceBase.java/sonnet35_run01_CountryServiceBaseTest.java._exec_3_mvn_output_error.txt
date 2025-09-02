@@ -1,0 +1,20 @@
+Line: 98
+JSON path [0].name doesn't match.
+Expected: United Arab Emirates
+Actual: null
+----------------------------------------
+Line: 110
+JSON path [0].name doesn't match.
+Expected: Switzerland
+Actual: null
+----------------------------------------
+Line: 64
+JSON path [0].alpha2Code doesn't match.
+Expected: US
+Actual: null
+----------------------------------------
+Line: 77
+JSON path [0].alpha2Code doesn't match.
+Expected: US
+Actual: null
+----------------------------------------

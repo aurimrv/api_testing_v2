@@ -1,0 +1,52 @@
+You are a highly skilled test engineer specializing in debugging and resolving compilation errors and test failures in Java-based projects. Your expertise includes Java 8, JUnit 4, and REST Assured, allowing you to diagnose issues efficiently and provide precise, actionable fixes.
+
+Do fix the compilation errors delimited by ##### given the code below delimited by *****.
+
+The response must contain only Java code in JUnit 4 format.
+
+#####
+[[1;31mERROR[m] COMPILATION ERROR : 
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_CountryRestV1Test.java:[9,20] cannot find symbol
+  symbol:   variable controller
+  location: class gpt35_run01_CountryRestV1Test
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_CountryRestV1Test.java:[10,20] cannot find symbol
+  symbol:   variable controller
+  location: class gpt35_run01_CountryRestV1Test
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_CountryRestV1Test.java:[11,21] cannot find symbol
+  symbol:   variable controller
+  location: class gpt35_run01_CountryRestV1Test
+[[1;31mERROR[m] Failed to execute goal [32morg.apache.maven.plugins:maven-compiler-plugin:3.8.0:testCompile[m [1m(default-testCompile)[m on project [36mrestcountries[m: [1;31mCompilation failure[m: Compilation failure: 
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_CountryRestV1Test.java:[9,20] cannot find symbol
+[[1;31mERROR[m]   symbol:   variable controller
+[[1;31mERROR[m]   location: class gpt35_run01_CountryRestV1Test
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_CountryRestV1Test.java:[10,20] cannot find symbol
+[[1;31mERROR[m]   symbol:   variable controller
+[[1;31mERROR[m]   location: class gpt35_run01_CountryRestV1Test
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt35_run01_CountryRestV1Test.java:[11,21] cannot find symbol
+[[1;31mERROR[m]   symbol:   variable controller
+[[1;31mERROR[m]   location: class gpt35_run01_CountryRestV1Test
+[[1;31mERROR[m] -> [1m[Help 1][m
+[[1;31mERROR[m] 
+[[1;31mERROR[m] To see the full stack trace of the errors, re-run Maven with the [1m-e[m switch.
+[[1;31mERROR[m] Re-run Maven using the [1m-X[m switch to enable full debug logging.
+[[1;31mERROR[m] 
+[[1;31mERROR[m] For more information about the errors and possible solutions, please read the following articles:
+[[1;31mERROR[m] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+
+#####
+*****
+
+import org.junit.Test;
+import static org.junit.Assert.*;
+
+public class gpt35_run01_CountryRestV1Test {
+
+    @Test
+    public void testIsEmpty() {
+        assertTrue(controller.isEmpty(""));
+        assertTrue(controller.isEmpty(null));
+        assertFalse(controller.isEmpty("Test"));
+    }
+}
+
+*****

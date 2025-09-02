@@ -1,0 +1,304 @@
+You are a highly skilled test engineer specializing in debugging and resolving compilation errors and test failures in Java-based projects. Your expertise includes Java 8, JUnit 4, and REST Assured, allowing you to diagnose issues efficiently and provide precise, actionable fixes.
+
+Do fix the compilation errors delimited by ##### given the code below delimited by *****.
+
+The response must contain only Java code in JUnit 4 format.
+
+#####
+[[1;31mERROR[m] COMPILATION ERROR : 
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectBuilderTest.java:[93,9] reference to assertEquals is ambiguous
+  both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectBuilderTest.java:[138,9] reference to assertEquals is ambiguous
+  both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectBuilderTest.java:[240,9] reference to assertEquals is ambiguous
+  both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectBuilderTest.java:[256,62] <anonymous org.zalando.catwatch.backend.sonnet35_run01_ProjectBuilderTest$1> is not abstract and does not override abstract method findProjectsByOrganizationNameAndDateRange(java.util.Collection<java.lang.String>,java.util.Date,java.util.Date) in org.zalando.catwatch.backend.repo.ProjectRepository
+[[1;31mERROR[m] Failed to execute goal [32morg.apache.maven.plugins:maven-compiler-plugin:3.8.0:testCompile[m [1m(default-testCompile)[m on project [36mcatwatch-backend[m: [1;31mCompilation failure[m: Compilation failure: 
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectBuilderTest.java:[93,9] reference to assertEquals is ambiguous
+[[1;31mERROR[m]   both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectBuilderTest.java:[138,9] reference to assertEquals is ambiguous
+[[1;31mERROR[m]   both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectBuilderTest.java:[240,9] reference to assertEquals is ambiguous
+[[1;31mERROR[m]   both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectBuilderTest.java:[256,62] <anonymous org.zalando.catwatch.backend.sonnet35_run01_ProjectBuilderTest$1> is not abstract and does not override abstract method findProjectsByOrganizationNameAndDateRange(java.util.Collection<java.lang.String>,java.util.Date,java.util.Date) in org.zalando.catwatch.backend.repo.ProjectRepository
+[[1;31mERROR[m] -> [1m[Help 1][m
+[[1;31mERROR[m] 
+[[1;31mERROR[m] To see the full stack trace of the errors, re-run Maven with the [1m-e[m switch.
+[[1;31mERROR[m] Re-run Maven using the [1m-X[m switch to enable full debug logging.
+[[1;31mERROR[m] 
+[[1;31mERROR[m] For more information about the errors and possible solutions, please read the following articles:
+[[1;31mERROR[m] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+
+#####
+*****
+package org.zalando.catwatch.backend;
+
+import org.junit.AfterClass;
+import org.junit.BeforeClass;
+import org.junit.Before;
+import org.junit.Test;
+import static org.junit.Assert.*;
+import java.util.Map;
+import java.util.List;
+import static org.evomaster.client.java.controller.api.EMTestUtils.*;
+import org.evomaster.client.java.controller.SutHandler;
+import io.restassured.RestAssured;
+import static io.restassured.RestAssured.given;
+import io.restassured.response.ValidatableResponse;
+import static org.evomaster.client.java.sql.dsl.SqlDsl.sql;
+import org.evomaster.client.java.controller.api.dto.database.operations.InsertionResultsDto;
+import org.evomaster.client.java.controller.api.dto.database.operations.InsertionDto;
+import static org.hamcrest.Matchers.*;
+import io.restassured.config.JsonConfig;
+import io.restassured.path.json.config.JsonPathConfig;
+import static io.restassured.config.RedirectConfig.redirectConfig;
+import static org.evomaster.client.java.controller.contentMatchers.NumberMatcher.*;
+import static org.evomaster.client.java.controller.contentMatchers.StringMatcher.*;
+import static org.evomaster.client.java.controller.contentMatchers.SubStringMatcher.*;
+import static org.evomaster.client.java.controller.expect.ExpectationHandler.expectationHandler;
+import org.evomaster.client.java.controller.expect.ExpectationHandler;
+import io.restassured.path.json.JsonPath;
+import java.util.Arrays;
+
+import org.zalando.catwatch.backend.model.Project;
+import org.zalando.catwatch.backend.repo.ProjectRepository;
+import org.zalando.catwatch.backend.repo.builder.ProjectBuilder;
+
+import java.util.Date;
+import java.util.ArrayList;
+
+public class sonnet35_run01_ProjectBuilderTest {
+
+    private static final SutHandler controller = new em.embedded.org.zalando.EmbeddedEvoMasterController();
+    private static String baseUrlOfSut;
+
+    @BeforeClass
+    public static void initClass() {
+        controller.setupForGeneratedTest();
+        baseUrlOfSut = controller.startSut();
+        controller.registerOrExecuteInitSqlCommandsIfNeeded();
+        assertNotNull(baseUrlOfSut);
+        RestAssured.enableLoggingOfRequestAndResponseIfValidationFails();
+        RestAssured.useRelaxedHTTPSValidation();
+        RestAssured.urlEncodingEnabled = false;
+        RestAssured.config = RestAssured.config()
+            .jsonConfig(JsonConfig.jsonConfig().numberReturnType(JsonPathConfig.NumberReturnType.DOUBLE))
+            .redirect(redirectConfig().followRedirects(false));
+    }
+
+    @AfterClass
+    public static void tearDown() {
+        controller.stopSut();
+    }
+
+    @Before
+    public void initTest() {
+        controller.resetDatabase(Arrays.asList("CONTRIBUTOR"));
+        controller.resetStateOfSUT();
+    }
+
+    @Test
+    public void testConstructor() {
+        ProjectRepository mockRepo = null;
+        ProjectBuilder builder = new ProjectBuilder(mockRepo);
+        assertNotNull(builder);
+    }
+
+    @Test
+    public void testFullConstructor() {
+        ProjectRepository mockRepo = null;
+        Date date = new Date();
+        Long gitHubProjectId = 123L;
+        String name = "TestProject";
+        String language = "Java";
+        Integer forksCount = 10;
+        Integer starsCount = 20;
+        Integer commitsCount = 30;
+        Integer contributionCount = 5;
+        Integer score = 100;
+        Integer externalContributorsCount = 2;
+
+        ProjectBuilder builder = new ProjectBuilder(mockRepo, date, gitHubProjectId, name, language, forksCount, 
+                                                    starsCount, commitsCount, contributionCount, score, 
+                                                    externalContributorsCount);
+        
+        Project project = builder.getProject();
+        assertEquals(gitHubProjectId, project.getGitHubProjectId());
+        assertEquals(date, project.getSnapshotDate());
+        assertEquals(name, project.getName());
+        assertEquals(language, project.getPrimaryLanguage());
+        assertEquals(forksCount, project.getForksCount());
+        assertEquals(starsCount, project.getStarsCount());
+        assertEquals(commitsCount, project.getCommitsCount());
+        assertEquals(contributionCount, project.getContributorsCount());
+        assertEquals(externalContributorsCount, project.getExternalContributorsCount());
+        assertEquals(score, project.getScore());
+    }
+
+    @Test
+    public void testUpdateUrl() {
+        ProjectBuilder builder = new ProjectBuilder();
+        builder.organizationName("testOrg").name("testProject");
+        Project project = builder.create();
+        assertEquals("https://github.com/testOrg/testProject", project.getUrl());
+    }
+
+    @Test
+    public void testGetProject() {
+        ProjectBuilder builder = new ProjectBuilder();
+        Project project = builder.getProject();
+        assertNotNull(project);
+    }
+
+    @Test
+    public void testName() {
+        ProjectBuilder builder = new ProjectBuilder();
+        builder.name("TestProject");
+        assertEquals("TestProject", builder.getProject().getName());
+    }
+
+    @Test
+    public void testDays() {
+        ProjectBuilder builder = new ProjectBuilder();
+        builder.days(5);
+        assertNotNull(builder.getProject().getSnapshotDate());
+    }
+
+    @Test
+    public void testGitHubProjectId() {
+        ProjectBuilder builder = new ProjectBuilder();
+        builder.gitHubProjectId(123L);
+        assertEquals(Long.valueOf(123L), builder.getProject().getGitHubProjectId());
+    }
+
+    @Test
+    public void testOrganizationName() {
+        ProjectBuilder builder = new ProjectBuilder();
+        builder.organizationName("TestOrg");
+        assertEquals("TestOrg", builder.getProject().getOrganizationName());
+    }
+
+    @Test
+    public void testPrimaryLanguage() {
+        ProjectBuilder builder = new ProjectBuilder();
+        builder.primaryLanguage("Java");
+        assertEquals("Java", builder.getProject().getPrimaryLanguage());
+    }
+
+    @Test
+    public void testForksCount() {
+        ProjectBuilder builder = new ProjectBuilder();
+        builder.forksCount(10);
+        assertEquals(Integer.valueOf(10), builder.getProject().getForksCount());
+    }
+
+    @Test
+    public void testStarsCount() {
+        ProjectBuilder builder = new ProjectBuilder();
+        builder.starsCount(20);
+        assertEquals(Integer.valueOf(20), builder.getProject().getStarsCount());
+    }
+
+    @Test
+    public void testCommitsCount() {
+        ProjectBuilder builder = new ProjectBuilder();
+        builder.commitsCount(30);
+        assertEquals(Integer.valueOf(30), builder.getProject().getCommitsCount());
+    }
+
+    @Test
+    public void testContributorsCount() {
+        ProjectBuilder builder = new ProjectBuilder();
+        builder.contributorsCount(5);
+        assertEquals(Integer.valueOf(5), builder.getProject().getContributorsCount());
+    }
+
+    @Test
+    public void testExternalContributorsCount() {
+        ProjectBuilder builder = new ProjectBuilder();
+        builder.externalContributorsCount(2);
+        assertEquals(Integer.valueOf(2), builder.getProject().getExternalContributorsCount());
+    }
+
+    @Test
+    public void testDescription() {
+        ProjectBuilder builder = new ProjectBuilder();
+        builder.description("Test Description");
+        assertEquals("Test Description", builder.getProject().getDescription());
+    }
+
+    @Test
+    public void testLastPushed() {
+        ProjectBuilder builder = new ProjectBuilder();
+        builder.lastPushed("2023-05-20");
+        assertEquals("2023-05-20", builder.getProject().getLastPushed());
+    }
+
+    @Test
+    public void testScore() {
+        ProjectBuilder builder = new ProjectBuilder();
+        builder.score(100);
+        assertEquals(Integer.valueOf(100), builder.getProject().getScore());
+    }
+
+    @Test
+    public void testLanguages() {
+        ProjectBuilder builder = new ProjectBuilder();
+        List<String> languages = Arrays.asList("Java", "Python", "JavaScript");
+        builder.languages(languages);
+        assertEquals(languages, builder.getProject().getLanguageList());
+    }
+
+    @Test
+    public void testCreate() {
+        ProjectBuilder builder = new ProjectBuilder();
+        builder.name("TestProject")
+               .organizationName("TestOrg")
+               .gitHubProjectId(123L)
+               .primaryLanguage("Java")
+               .forksCount(10)
+               .starsCount(20)
+               .commitsCount(30)
+               .contributorsCount(5)
+               .externalContributorsCount(2)
+               .description("Test Description")
+               .lastPushed("2023-05-20")
+               .score(100)
+               .languages(Arrays.asList("Java", "Python"));
+
+        Project project = builder.create();
+
+        assertEquals("TestProject", project.getName());
+        assertEquals("TestOrg", project.getOrganizationName());
+        assertEquals(Long.valueOf(123L), project.getGitHubProjectId());
+        assertEquals("Java", project.getPrimaryLanguage());
+        assertEquals(Integer.valueOf(10), project.getForksCount());
+        assertEquals(Integer.valueOf(20), project.getStarsCount());
+        assertEquals(Integer.valueOf(30), project.getCommitsCount());
+        assertEquals(Integer.valueOf(5), project.getContributorsCount());
+        assertEquals(Integer.valueOf(2), project.getExternalContributorsCount());
+        assertEquals("Test Description", project.getDescription());
+        assertEquals("2023-05-20", project.getLastPushed());
+        assertEquals(Integer.valueOf(100), project.getScore());
+        assertEquals(Arrays.asList("Java", "Python"), project.getLanguageList());
+        assertEquals("https://github.com/TestOrg/TestProject", project.getUrl());
+    }
+
+    @Test
+    public void testSave() {
+        ProjectRepository mockRepo = new ProjectRepository() {
+            @Override
+            public Project save(Project project) {
+                return project;
+            }
+        };
+
+        ProjectBuilder builder = new ProjectBuilder(mockRepo);
+        builder.name("TestProject");
+
+        Project savedProject = builder.save();
+        assertEquals("TestProject", savedProject.getName());
+    }
+}
+
+*****

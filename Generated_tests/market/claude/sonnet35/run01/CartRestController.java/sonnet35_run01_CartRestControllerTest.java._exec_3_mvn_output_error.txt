@@ -1,0 +1,12 @@
+Line: 88
+Expected status code <200> but was <401>.
+----------------------------------------
+Line: 194
+Expected status code <200> but was <401>.
+----------------------------------------
+Line: 121
+Expected status code <200> but was <401>.
+----------------------------------------
+Line: 162
+Expected status code <400> but was <406>.
+----------------------------------------

@@ -1,0 +1,11 @@
+-------------------------------------------------------------------------------
+Test set: org.zalando.catwatch.backend.gpt4o_run01_ProjectRepositoryImplTest
+-------------------------------------------------------------------------------
+Tests run: 8, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 2.5 s <<< FAILURE! - in org.zalando.catwatch.backend.gpt4o_run01_ProjectRepositoryImplTest
+testFindProjects_EmptyOrganization(org.zalando.catwatch.backend.gpt4o_run01_ProjectRepositoryImplTest)  Time elapsed: 0.021 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <400> but was <200>.
+
+	at org.zalando.catwatch.backend.gpt4o_run01_ProjectRepositoryImplTest.testFindProjects_EmptyOrganization(gpt4o_run01_ProjectRepositoryImplTest.java:152)
+

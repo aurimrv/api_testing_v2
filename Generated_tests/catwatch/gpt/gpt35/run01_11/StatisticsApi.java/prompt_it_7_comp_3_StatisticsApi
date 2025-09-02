@@ -1,0 +1,264 @@
+You are a highly skilled test engineer specializing in debugging and resolving compilation errors and test failures in Java-based projects. Your expertise includes Java 8, JUnit 4, and REST Assured, allowing you to diagnose issues efficiently and provide precise, actionable fixes.
+
+Do fix the compilation errors delimited by ##### given the code below delimited by *****.
+
+The response must contain only Java code in JUnit 4 format.
+
+#####
+[[1;31mERROR[m] COMPILATION ERROR : 
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StatisticsApiTest.java:[9,40] package org.zalando.catwatch.backend.api does not exist
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StatisticsApiTest.java:[13,26] cannot find symbol
+  symbol:   class SutHandler
+  location: class gpt35_run01_StatisticsApiTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StatisticsApiTest.java:[22,9] cannot find symbol
+  symbol:   variable RestAssured
+  location: class gpt35_run01_StatisticsApiTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StatisticsApiTest.java:[23,9] cannot find symbol
+  symbol:   variable RestAssured
+  location: class gpt35_run01_StatisticsApiTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StatisticsApiTest.java:[24,9] cannot find symbol
+  symbol:   variable RestAssured
+  location: class gpt35_run01_StatisticsApiTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StatisticsApiTest.java:[25,9] cannot find symbol
+  symbol:   variable RestAssured
+  location: class gpt35_run01_StatisticsApiTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StatisticsApiTest.java:[27,23] cannot find symbol
+  symbol:   method redirectConfig()
+  location: class gpt35_run01_StatisticsApiTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StatisticsApiTest.java:[26,80] package JsonPathConfig does not exist
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StatisticsApiTest.java:[26,25] cannot find symbol
+  symbol:   variable JsonConfig
+  location: class gpt35_run01_StatisticsApiTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StatisticsApiTest.java:[25,30] cannot find symbol
+  symbol:   variable RestAssured
+  location: class gpt35_run01_StatisticsApiTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StatisticsApiTest.java:[43,13] cannot find symbol
+  symbol:   class StatisticsApi
+  location: class gpt35_run01_StatisticsApiTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StatisticsApiTest.java:[48,9] cannot find symbol
+  symbol:   class StatisticsApi
+  location: class gpt35_run01_StatisticsApiTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StatisticsApiTest.java:[48,33] cannot find symbol
+  symbol:   class StatisticsApi
+  location: class gpt35_run01_StatisticsApiTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StatisticsApiTest.java:[65,19] cannot find symbol
+  symbol:   method notNullValue()
+  location: class gpt35_run01_StatisticsApiTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StatisticsApiTest.java:[57,9] cannot find symbol
+  symbol:   method given()
+  location: class gpt35_run01_StatisticsApiTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StatisticsApiTest.java:[78,19] cannot find symbol
+  symbol:   method notNullValue()
+  location: class gpt35_run01_StatisticsApiTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StatisticsApiTest.java:[70,9] cannot find symbol
+  symbol:   method given()
+  location: class gpt35_run01_StatisticsApiTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StatisticsApiTest.java:[91,19] cannot find symbol
+  symbol:   method notNullValue()
+  location: class gpt35_run01_StatisticsApiTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StatisticsApiTest.java:[83,9] cannot find symbol
+  symbol:   method given()
+  location: class gpt35_run01_StatisticsApiTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StatisticsApiTest.java:[96,9] cannot find symbol
+  symbol:   class StatisticsApi
+  location: class gpt35_run01_StatisticsApiTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StatisticsApiTest.java:[96,33] cannot find symbol
+  symbol:   class StatisticsApi
+  location: class gpt35_run01_StatisticsApiTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StatisticsApiTest.java:[111,19] cannot find symbol
+  symbol:   method notNullValue()
+  location: class gpt35_run01_StatisticsApiTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StatisticsApiTest.java:[103,9] cannot find symbol
+  symbol:   method given()
+  location: class gpt35_run01_StatisticsApiTest
+[[1;31mERROR[m] Failed to execute goal [32morg.apache.maven.plugins:maven-compiler-plugin:3.8.0:testCompile[m [1m(default-testCompile)[m on project [36mcatwatch-backend[m: [1;31mCompilation failure[m: Compilation failure: 
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StatisticsApiTest.java:[9,40] package org.zalando.catwatch.backend.api does not exist
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StatisticsApiTest.java:[13,26] cannot find symbol
+[[1;31mERROR[m]   symbol:   class SutHandler
+[[1;31mERROR[m]   location: class gpt35_run01_StatisticsApiTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StatisticsApiTest.java:[22,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   variable RestAssured
+[[1;31mERROR[m]   location: class gpt35_run01_StatisticsApiTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StatisticsApiTest.java:[23,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   variable RestAssured
+[[1;31mERROR[m]   location: class gpt35_run01_StatisticsApiTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StatisticsApiTest.java:[24,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   variable RestAssured
+[[1;31mERROR[m]   location: class gpt35_run01_StatisticsApiTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StatisticsApiTest.java:[25,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   variable RestAssured
+[[1;31mERROR[m]   location: class gpt35_run01_StatisticsApiTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StatisticsApiTest.java:[27,23] cannot find symbol
+[[1;31mERROR[m]   symbol:   method redirectConfig()
+[[1;31mERROR[m]   location: class gpt35_run01_StatisticsApiTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StatisticsApiTest.java:[26,80] package JsonPathConfig does not exist
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StatisticsApiTest.java:[26,25] cannot find symbol
+[[1;31mERROR[m]   symbol:   variable JsonConfig
+[[1;31mERROR[m]   location: class gpt35_run01_StatisticsApiTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StatisticsApiTest.java:[25,30] cannot find symbol
+[[1;31mERROR[m]   symbol:   variable RestAssured
+[[1;31mERROR[m]   location: class gpt35_run01_StatisticsApiTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StatisticsApiTest.java:[43,13] cannot find symbol
+[[1;31mERROR[m]   symbol:   class StatisticsApi
+[[1;31mERROR[m]   location: class gpt35_run01_StatisticsApiTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StatisticsApiTest.java:[48,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class StatisticsApi
+[[1;31mERROR[m]   location: class gpt35_run01_StatisticsApiTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StatisticsApiTest.java:[48,33] cannot find symbol
+[[1;31mERROR[m]   symbol:   class StatisticsApi
+[[1;31mERROR[m]   location: class gpt35_run01_StatisticsApiTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StatisticsApiTest.java:[65,19] cannot find symbol
+[[1;31mERROR[m]   symbol:   method notNullValue()
+[[1;31mERROR[m]   location: class gpt35_run01_StatisticsApiTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StatisticsApiTest.java:[57,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   method given()
+[[1;31mERROR[m]   location: class gpt35_run01_StatisticsApiTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StatisticsApiTest.java:[78,19] cannot find symbol
+[[1;31mERROR[m]   symbol:   method notNullValue()
+[[1;31mERROR[m]   location: class gpt35_run01_StatisticsApiTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StatisticsApiTest.java:[70,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   method given()
+[[1;31mERROR[m]   location: class gpt35_run01_StatisticsApiTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StatisticsApiTest.java:[91,19] cannot find symbol
+[[1;31mERROR[m]   symbol:   method notNullValue()
+[[1;31mERROR[m]   location: class gpt35_run01_StatisticsApiTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StatisticsApiTest.java:[83,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   method given()
+[[1;31mERROR[m]   location: class gpt35_run01_StatisticsApiTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StatisticsApiTest.java:[96,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class StatisticsApi
+[[1;31mERROR[m]   location: class gpt35_run01_StatisticsApiTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StatisticsApiTest.java:[96,33] cannot find symbol
+[[1;31mERROR[m]   symbol:   class StatisticsApi
+[[1;31mERROR[m]   location: class gpt35_run01_StatisticsApiTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StatisticsApiTest.java:[111,19] cannot find symbol
+[[1;31mERROR[m]   symbol:   method notNullValue()
+[[1;31mERROR[m]   location: class gpt35_run01_StatisticsApiTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StatisticsApiTest.java:[103,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   method given()
+[[1;31mERROR[m]   location: class gpt35_run01_StatisticsApiTest
+[[1;31mERROR[m] -> [1m[Help 1][m
+[[1;31mERROR[m] 
+[[1;31mERROR[m] To see the full stack trace of the errors, re-run Maven with the [1m-e[m switch.
+[[1;31mERROR[m] Re-run Maven using the [1m-X[m switch to enable full debug logging.
+[[1;31mERROR[m] 
+[[1;31mERROR[m] For more information about the errors and possible solutions, please read the following articles:
+[[1;31mERROR[m] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+
+#####
+*****
+
+import org.junit.AfterClass;
+import org.junit.BeforeClass;
+import org.junit.Before;
+import org.junit.Test;
+import static org.junit.Assert.*;
+import java.util.Arrays;
+import java.util.Date;
+import org.zalando.catwatch.backend.api.StatisticsApi; // Added import for StatisticsApi
+
+public class gpt35_run01_StatisticsApiTest {
+
+    private static final SutHandler controller = new em.embedded.org.zalando.EmbeddedEvoMasterController();
+    private static String baseUrlOfSut;
+
+    @BeforeClass
+    public static void initClass() {
+        controller.setupForGeneratedTest();
+        baseUrlOfSut = controller.startSut();
+        controller.registerOrExecuteInitSqlCommandsIfNeeded();
+        assertNotNull(baseUrlOfSut);
+        RestAssured.enableLoggingOfRequestAndResponseIfValidationFails();
+        RestAssured.useRelaxedHTTPSValidation();
+        RestAssured.urlEncodingEnabled = false;
+        RestAssured.config = RestAssured.config()
+            .jsonConfig(JsonConfig.jsonConfig().numberReturnType(JsonPathConfig.NumberReturnType.DOUBLE))
+            .redirect(redirectConfig().followRedirects(false));
+    }
+
+    @AfterClass
+    public static void tearDown() {
+        controller.stopSut();
+    }
+
+    @Before
+    public void initTest() {
+        controller.resetDatabase(Arrays.asList("CONTRIBUTOR"));
+        controller.resetStateOfSUT();
+    }
+
+    @Test
+    public void testInitMethod() {
+        new StatisticsApi(); // To ensure constructor is executed
+    }
+
+    @Test
+    public void testParseDate() {
+        StatisticsApi api = new StatisticsApi();
+        Date defaultDate = new Date();
+        String nullDateString = null;
+        Date result = api.parseDate(nullDateString, defaultDate);
+        assertEquals(defaultDate, result);
+    }
+
+    @Test
+    public void testStatisticsGet() {
+        given()
+            .param("organizations", "org1,org2")
+            .param("startDate", "2022-01-01")
+            .param("endDate", "2022-02-01")
+        .when()
+            .get(baseUrlOfSut + "/statistics")
+        .then()
+            .statusCode(200)
+            .body(notNullValue());
+    }
+
+    @Test
+    public void testStatisticsProjectGet() {
+        given()
+            .param("organizations", "org1,org2")
+            .param("startDateString", "2022-01-01")
+            .param("endDateString", "2022-02-01")
+        .when()
+            .get(baseUrlOfSut + "/statistics/projects")
+        .then()
+            .statusCode(200)
+            .body(notNullValue());
+    }
+
+    @Test
+    public void testStatisticsContributorGet() {
+        given()
+            .param("organizations", "org1,org2")
+            .param("startDateString", "2022-01-01")
+            .param("endDateString", "2022-02-01")
+        .when()
+            .get(baseUrlOfSut + "/statistics/contributors")
+        .then()
+            .statusCode(200)
+            .body(notNullValue());
+    }
+
+    @Test
+    public void testGetOrganizationConfig() {
+        StatisticsApi api = new StatisticsApi();
+        String result = api.getOrganizationConfig();
+        assertNull(result);
+    }
+
+    @Test
+    public void testStatisticsLanguagesGet() {
+        given()
+            .param("organizations", "org1,org2")
+            .param("startDateString", "2022-01-01")
+            .param("endDateString", "2022-02-01")
+        .when()
+            .get(baseUrlOfSut + "/statistics/languages")
+        .then()
+            .statusCode(200)
+            .body(notNullValue());
+    }
+}
+
+*****

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="pt"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>QStatisticsKey.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">catwatch-backend</a> &gt; <a href="index.source.html" class="el_package">org.zalando.catwatch.backend.model</a> &gt; <span class="el_source">QStatisticsKey.java</span></div><h1>QStatisticsKey.java</h1><pre class="source lang-java linenums">package org.zalando.catwatch.backend.model;
+
+import static com.mysema.query.types.PathMetadataFactory.*;
+
+import com.mysema.query.types.path.*;
+
+import com.mysema.query.types.PathMetadata;
+import javax.annotation.Generated;
+import com.mysema.query.types.Path;
+
+
+/**
+ * QStatisticsKey is a Querydsl query type for StatisticsKey
+ */
+@Generated(&quot;com.mysema.query.codegen.EmbeddableSerializer&quot;)
+public class QStatisticsKey extends BeanPath&lt;StatisticsKey&gt; {
+
+    private static final long serialVersionUID = -1139369725L;
+
+<span class="fc" id="L20">    public static final QStatisticsKey statisticsKey = new QStatisticsKey(&quot;statisticsKey&quot;);</span>
+
+<span class="pc" id="L22">    public final NumberPath&lt;Long&gt; id = createNumber(&quot;id&quot;, Long.class);</span>
+
+<span class="pc" id="L24">    public final DateTimePath&lt;java.util.Date&gt; snapshotDate = createDateTime(&quot;snapshotDate&quot;, java.util.Date.class);</span>
+
+    public QStatisticsKey(String variable) {
+<span class="fc" id="L27">        super(StatisticsKey.class, forVariable(variable));</span>
+<span class="fc" id="L28">    }</span>
+
+    public QStatisticsKey(Path&lt;? extends StatisticsKey&gt; path) {
+<span class="nc" id="L31">        super(path.getType(), path.getMetadata());</span>
+<span class="nc" id="L32">    }</span>
+
+    public QStatisticsKey(PathMetadata&lt;?&gt; metadata) {
+<span class="nc" id="L35">        super(StatisticsKey.class, metadata);</span>
+<span class="nc" id="L36">    }</span>
+
+}
+
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

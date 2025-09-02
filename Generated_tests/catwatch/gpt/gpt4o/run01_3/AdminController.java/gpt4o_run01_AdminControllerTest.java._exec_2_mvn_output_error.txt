@@ -1,0 +1,15 @@
+Line: 88
+Response body doesn't match expectation.
+Expected: a string containing "This endpoint is deactivated."
+Actual: {"error":"unauthorized","error_description":"Full authentication is required to access this resource"}
+----------------------------------------
+Line: 100
+Response body doesn't match expectation.
+Expected: a string containing "This endpoint is deactivated."
+Actual: {"error":"unauthorized","error_description":"Full authentication is required to access this resource"}
+----------------------------------------
+Line: 76
+Response body doesn't match expectation.
+Expected: a string containing "This endpoint is deactivated."
+Actual: {"error":"unauthorized","error_description":"Full authentication is required to access this resource"}
+----------------------------------------

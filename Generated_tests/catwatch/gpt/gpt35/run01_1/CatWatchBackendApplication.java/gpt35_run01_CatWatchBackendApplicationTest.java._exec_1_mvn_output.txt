@@ -1,0 +1,380 @@
+[[1;34mINFO[m] Scanning for projects...
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--------------------< [0;36morg.zalando:catwatch-backend[0;1m >--------------------[m
+[[1;34mINFO[m] [1mBuilding catwatch-backend 0.0.1-SNAPSHOT[m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-clean-plugin:2.5:clean[m [1m(default-clean)[m @ [36mcatwatch-backend[0;1m ---[m
+[[1;34mINFO[m] Deleting /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/target
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mjacoco-maven-plugin:0.8.7:prepare-agent[m [1m(prepare-agent)[m @ [36mcatwatch-backend[0;1m ---[m
+[[1;34mINFO[m] argLine set to -javaagent:/home/rincon/.m2/repository/org/jacoco/org.jacoco.agent/0.8.7/org.jacoco.agent-0.8.7-runtime.jar=destfile=/media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/target/jacoco.exec
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mjacoco-maven-plugin:0.8.7:prepare-agent[m [1m(default)[m @ [36mcatwatch-backend[0;1m ---[m
+[[1;34mINFO[m] argLine set to -javaagent:/home/rincon/.m2/repository/org/jacoco/org.jacoco.agent/0.8.7/org.jacoco.agent-0.8.7-runtime.jar=destfile=/media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/target/jacoco.exec
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mapt-maven-plugin:1.1.3:process[m [1m(default)[m @ [36mcatwatch-backend[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mspring-boot-maven-plugin:1.5.4.RELEASE:build-info[m [1m(default)[m @ [36mcatwatch-backend[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:resources[m [1m(default-resources)[m @ [36mcatwatch-backend[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Copying 14 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.8.0:compile[m [1m(default-compile)[m @ [36mcatwatch-backend[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 74 source files to /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/target/classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mjacoco-maven-plugin:0.8.7:prepare-agent[m [1m(prepare-agent)[m @ [36mcatwatch-backend[0;1m ---[m
+[[1;34mINFO[m] argLine set to -javaagent:/home/rincon/.m2/repository/org/jacoco/org.jacoco.agent/0.8.7/org.jacoco.agent-0.8.7-runtime.jar=destfile=/media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/target/jacoco.exec
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mjacoco-maven-plugin:0.8.7:prepare-agent[m [1m(default)[m @ [36mcatwatch-backend[0;1m ---[m
+[[1;34mINFO[m] argLine set to -javaagent:/home/rincon/.m2/repository/org/jacoco/org.jacoco.agent/0.8.7/org.jacoco.agent-0.8.7-runtime.jar=destfile=/media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/target/jacoco.exec
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mapt-maven-plugin:1.1.3:process[m [1m(default)[m @ [36mcatwatch-backend[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mspring-boot-maven-plugin:1.5.4.RELEASE:build-info[m [1m(default)[m @ [36mcatwatch-backend[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:resources[m [1m(default-resources)[m @ [36mcatwatch-backend[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Copying 14 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.8.0:compile[m [1m(default-compile)[m @ [36mcatwatch-backend[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 74 source files to /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/target/classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:testResources[m [1m(default-testResources)[m @ [36mcatwatch-backend[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.8.0:testCompile[m [1m(default-testCompile)[m @ [36mcatwatch-backend[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 1 source file to /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/target/test-classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mjacoco-maven-plugin:0.8.7:prepare-agent[m [1m(prepare-agent)[m @ [36mcatwatch-backend[0;1m ---[m
+[[1;34mINFO[m] argLine set to -javaagent:/home/rincon/.m2/repository/org/jacoco/org.jacoco.agent/0.8.7/org.jacoco.agent-0.8.7-runtime.jar=destfile=/media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/target/jacoco.exec
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mjacoco-maven-plugin:0.8.7:prepare-agent[m [1m(default)[m @ [36mcatwatch-backend[0;1m ---[m
+[[1;34mINFO[m] argLine set to -javaagent:/home/rincon/.m2/repository/org/jacoco/org.jacoco.agent/0.8.7/org.jacoco.agent-0.8.7-runtime.jar=destfile=/media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/target/jacoco.exec
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mapt-maven-plugin:1.1.3:process[m [1m(default)[m @ [36mcatwatch-backend[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mspring-boot-maven-plugin:1.5.4.RELEASE:build-info[m [1m(default)[m @ [36mcatwatch-backend[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:resources[m [1m(default-resources)[m @ [36mcatwatch-backend[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Copying 14 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.8.0:compile[m [1m(default-compile)[m @ [36mcatwatch-backend[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 74 source files to /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/target/classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:testResources[m [1m(default-testResources)[m @ [36mcatwatch-backend[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.8.0:testCompile[m [1m(default-testCompile)[m @ [36mcatwatch-backend[0;1m ---[m
+[[1;34mINFO[m] Nothing to compile - all classes are up to date
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:2.22.0:test[m [1m(default-test)[m @ [36mcatwatch-backend[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] -------------------------------------------------------
+[[1;34mINFO[m]  T E S T S
+[[1;34mINFO[m] -------------------------------------------------------
+[[1;34mINFO[m] Running org.zalando.catwatch.backend.[1mgpt35_run01_CatWatchBackendApplicationTest[m
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.5.4.RELEASE)
+
+12:23:54.042 [main] INFO  o.a.m.surefire.booter.ForkedBooter - Starting ForkedBooter v2.22.0 on IFTO-PROBOOK with PID 23364 (started by rincon in /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend)
+12:23:54.047 [main] INFO  o.a.m.surefire.booter.ForkedBooter - No active profile set, falling back to default profiles: default
+12:23:54.636 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+12:23:54.676 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4c635edc: startup date [Fri Apr 04 12:23:54 BRT 2025]; root of context hierarchy
+12:23:57.049 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+12:23:57.351 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.retry.annotation.RetryConfiguration' of type [org.springframework.retry.annotation.RetryConfiguration$$EnhancerBySpringCGLIB$$91e689f1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+12:23:57.392 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$9c22f1cc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+12:23:57.902 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 0 (http)
+12:23:57.922 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+12:23:57.924 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.15
+12:23:58.073 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+12:23:58.073 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3401 ms
+12:23:58.350 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'metricsFilter' to: [/*]
+12:23:58.351 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+12:23:58.351 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+12:23:58.351 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+12:23:58.351 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+12:23:58.353 [localhost-startStop-1] INFO  o.s.b.w.s.DelegatingFilterProxyRegistrationBean - Mapping filter: 'springSecurityFilterChain' to: [/*]
+12:23:58.353 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'webRequestLoggingFilter' to: [/*]
+12:23:58.353 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'corsFilter' to: [/*]
+12:23:58.353 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'applicationContextIdFilter' to: [/*]
+12:23:58.354 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+12:23:59.027 [main] INFO  o.f.c.internal.util.VersionPrinter - Flyway 3.2.1 by Boxfuse
+12:23:59.035 [main] INFO  o.f.c.i.dbsupport.DbSupportFactory - Database: jdbc:h2:mem:testdb (H2 1.4)
+12:23:59.075 [main] INFO  o.f.core.internal.command.DbValidate - Validated 6 migrations (execution time 00:00.013s)
+12:23:59.095 [main] INFO  o.f.c.i.m.MetaDataTableImpl - Creating Metadata table: "PUBLIC"."schema_version"
+12:23:59.122 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "PUBLIC": << Empty Schema >>
+12:23:59.123 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version 001 - base version
+12:23:59.150 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version 002 - test baseline on migrate
+12:23:59.158 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version 003 - change varchar to text
+12:23:59.237 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version 004 - maintainers
+12:23:59.245 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version 005 - catwatch yaml
+12:23:59.261 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version 006 - add external contributors
+12:23:59.275 [main] INFO  o.f.core.internal.command.DbMigrate - Successfully applied 6 migrations to schema "PUBLIC" (execution time 00:00.181s).
+12:23:59.418 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+12:23:59.445 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+12:23:59.562 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.12.Final}
+12:23:59.564 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+12:23:59.566 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+12:23:59.623 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+12:23:59.750 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+12:24:00.137 [main] WARN  org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): org.zalando.catwatch.backend.model.StatisticsKey
+12:24:00.137 [main] WARN  org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): org.zalando.catwatch.backend.model.StatisticsKey
+12:24:00.138 [main] WARN  org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): org.zalando.catwatch.backend.model.ContributorKey
+12:24:00.138 [main] WARN  org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): org.zalando.catwatch.backend.model.ContributorKey
+12:24:00.479 [main] INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000228: Running hbm2ddl schema update
+12:24:00.617 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+12:24:00.695 [main] INFO  o.z.c.b.github.SnapshotProvider - Cache directory 'target/cache' is not found. Creating new directory.
+12:24:00.695 [main] INFO  o.z.c.b.github.SnapshotProvider - Cache directory created successfully.
+12:24:00.713 [main] INFO  o.z.c.b.github.SnapshotProvider - Initialized http client with 50 mb cache.
+12:24:01.333 [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+12:24:02.187 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/contributors],methods=[GET],produces=[application/json]}" onto public java.util.List<org.zalando.catwatch.backend.model.Contributor> org.zalando.catwatch.backend.web.ContributorsApi.contributorsGet(java.lang.String,java.lang.Integer,java.lang.Integer,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+12:24:02.190 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/languages],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<java.util.Collection<org.zalando.catwatch.backend.model.Language>> org.zalando.catwatch.backend.web.LanguagesApi.languagesGet(java.lang.String,java.lang.Integer,java.lang.Integer,java.lang.String)
+12:24:02.191 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/projects],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<java.util.Collection<org.zalando.catwatch.backend.model.Project>> org.zalando.catwatch.backend.web.ProjectsApi.projectsGet(java.lang.String,java.lang.Integer,java.lang.Integer,java.util.Date,java.util.Date,java.lang.String,java.lang.String,java.lang.String)
+12:24:02.193 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/statistics/projects],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<java.util.Collection<org.zalando.catwatch.backend.util.ProjectStats>> org.zalando.catwatch.backend.web.StatisticsApi.statisticsProjectGet(java.lang.String,java.lang.String,java.lang.String) throws java.text.ParseException
+12:24:02.194 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/statistics/contributors],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<java.util.Collection<org.zalando.catwatch.backend.util.ContributorStats>> org.zalando.catwatch.backend.web.StatisticsApi.statisticsContributorGet(java.lang.String,java.lang.String,java.lang.String) throws java.text.ParseException
+12:24:02.195 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/statistics/languages],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<java.util.Collection<org.zalando.catwatch.backend.util.LanguageStats>> org.zalando.catwatch.backend.web.StatisticsApi.statisticsLanguagesGet(java.lang.String,java.lang.String,java.lang.String)
+12:24:02.195 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/statistics],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<java.util.Collection<org.zalando.catwatch.backend.model.Statistics>> org.zalando.catwatch.backend.web.StatisticsApi.statisticsGet(java.lang.String,java.lang.String,java.lang.String)
+12:24:02.198 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/delete],methods=[GET],produces=[application/json;charset=utf-8]}" onto public java.lang.String org.zalando.catwatch.backend.web.admin.AdminController.deleteAll()
+12:24:02.198 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/config/scoring.project],methods=[POST],produces=[application/json;charset=utf-8]}" onto public java.util.List<java.lang.String> org.zalando.catwatch.backend.web.admin.AdminController.configScoringProjects(java.lang.String,java.lang.String)
+12:24:02.199 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/export],methods=[GET],produces=[application/json;charset=utf-8]}" onto public org.zalando.catwatch.backend.web.admin.DatabaseDto org.zalando.catwatch.backend.web.admin.AdminController.exportJson()
+12:24:02.199 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/import],methods=[POST],produces=[application/json;charset=utf-8]}" onto public java.lang.String org.zalando.catwatch.backend.web.admin.AdminController.importJson(org.zalando.catwatch.backend.web.admin.DatabaseDto)
+12:24:02.200 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/init],methods=[GET],produces=[application/json;charset=utf-8]}" onto public java.lang.String org.zalando.catwatch.backend.web.admin.AdminController.init()
+12:24:02.201 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/config],methods=[GET],produces=[application/json]}" onto public java.util.Map<java.lang.String, java.lang.String> org.zalando.catwatch.backend.web.config.ConfigController.config() throws java.lang.Exception
+12:24:02.202 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/fetch],methods=[GET],produces=[application/json;charset=utf-8]}" onto public java.lang.String org.zalando.catwatch.backend.web.fetch.FetchController.fetch() throws java.lang.Exception
+12:24:02.206 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+12:24:02.207 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+12:24:02.208 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+12:24:02.211 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+12:24:02.212 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+12:24:02.649 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/health || /health.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,java.security.Principal)
+12:24:02.990 [main] INFO  o.s.b.a.s.AuthenticationManagerConfiguration - 
+
+Using default security password: 6da08082-5a28-4fee-9876-d762413ae926
+
+12:24:03.350 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@418b97d8, org.springframework.security.web.context.SecurityContextPersistenceFilter@57e8fe85, org.springframework.security.web.header.HeaderWriterFilter@14c38bd9, org.springframework.security.web.authentication.logout.LogoutFilter@7beaaff8, org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter@606eb800, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2ae5c2da, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@197af6a7, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@361db286, org.springframework.security.web.session.SessionManagementFilter@5fc38e49, org.springframework.security.web.access.ExceptionTranslationFilter@2b325d3c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@505f458f]
+12:24:03.375 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: org.springframework.boot.actuate.autoconfigure.ManagementWebSecurityAutoConfiguration$LazyEndpointPathRequestMatcher@3075fdbe, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7317c88c, org.springframework.security.web.context.SecurityContextPersistenceFilter@1e060307, org.springframework.security.web.header.HeaderWriterFilter@b5fbbd8, org.springframework.security.web.authentication.logout.LogoutFilter@720b9283, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@73346d46, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@54b828d1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@22cfc8e5, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2319c5f5, org.springframework.security.web.session.SessionManagementFilter@2beac73d, org.springframework.security.web.access.ExceptionTranslationFilter@5a121cda, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@532490b6]
+12:24:03.446 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+12:24:03.839 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4c635edc: startup date [Fri Apr 04 12:23:54 BRT 2025]; root of context hierarchy
+12:24:03.945 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+12:24:03.946 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+12:24:03.999 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+12:24:04.033 [main] INFO  o.s.b.a.w.WebMvcAutoConfiguration$WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+12:24:04.436 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+12:24:04.444 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Registering beans for JMX exposure on startup
+12:24:04.451 [main] INFO  o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 0
+12:24:04.463 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'healthEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=healthEndpoint]
+12:24:04.484 [main] INFO  o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+12:24:04.484 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+12:24:04.518 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+12:24:04.563 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+12:24:04.896 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: invokeUsingGET_1
+12:24:04.992 [main] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+12:24:05.008 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-auto-1"]
+12:24:05.034 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-auto-1"]
+12:24:05.041 [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+12:24:05.070 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 40343 (http)
+12:24:05.080 [main] INFO  o.a.m.surefire.booter.ForkedBooter - Started ForkedBooter in 11.522 seconds (JVM running for 12.55)
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.5.4.RELEASE)
+
+12:24:05.687 [main] INFO  o.z.c.b.CatWatchBackendApplication - Starting CatWatchBackendApplication on IFTO-PROBOOK with PID 23364 (started by rincon in /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend)
+12:24:05.687 [main] DEBUG o.z.c.b.CatWatchBackendApplication - Running with Spring Boot v1.5.4.RELEASE, Spring v4.3.9.RELEASE
+12:24:05.687 [main] INFO  o.z.c.b.CatWatchBackendApplication - No active profile set, falling back to default profiles: default
+12:24:05.689 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@57a25011: startup date [Fri Apr 04 12:24:05 BRT 2025]; root of context hierarchy
+12:24:06.288 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+12:24:06.358 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.retry.annotation.RetryConfiguration' of type [org.springframework.retry.annotation.RetryConfiguration$$EnhancerBySpringCGLIB$$91e689f1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+12:24:06.369 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$9c22f1cc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+12:24:06.487 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+12:24:06.488 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+12:24:06.488 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.15
+12:24:06.494 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat-1].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+12:24:06.494 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 805 ms
+12:24:06.703 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'metricsFilter' to: [/*]
+12:24:06.703 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+12:24:06.703 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+12:24:06.703 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+12:24:06.703 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+12:24:06.703 [localhost-startStop-1] INFO  o.s.b.w.s.DelegatingFilterProxyRegistrationBean - Mapping filter: 'springSecurityFilterChain' to: [/*]
+12:24:06.704 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'webRequestLoggingFilter' to: [/*]
+12:24:06.704 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'corsFilter' to: [/*]
+12:24:06.704 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'applicationContextIdFilter' to: [/*]
+12:24:06.704 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+12:24:06.846 [main] INFO  o.f.c.i.dbsupport.DbSupportFactory - Database: jdbc:h2:mem:testdb (H2 1.4)
+12:24:06.853 [main] INFO  o.f.core.internal.command.DbValidate - Validated 6 migrations (execution time 00:00.005s)
+12:24:06.861 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "PUBLIC": 006
+12:24:06.862 [main] INFO  o.f.core.internal.command.DbMigrate - Schema "PUBLIC" is up to date. No migration necessary.
+12:24:06.921 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+12:24:06.921 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+12:24:06.925 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+12:24:06.942 [main] WARN  org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): org.zalando.catwatch.backend.model.StatisticsKey
+12:24:06.942 [main] WARN  org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): org.zalando.catwatch.backend.model.StatisticsKey
+12:24:06.943 [main] WARN  org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): org.zalando.catwatch.backend.model.ContributorKey
+12:24:06.943 [main] WARN  org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): org.zalando.catwatch.backend.model.ContributorKey
+12:24:06.986 [main] INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000228: Running hbm2ddl schema update
+12:24:07.041 [main] WARN  o.h.j.i.EntityManagerFactoryRegistry - HHH000436: Entity manager factory name (default) is already registered.  If entity manager will be clustered or passivated, specify a unique value for property 'hibernate.ejb.entitymanager_factory_name'
+12:24:07.041 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+12:24:07.055 [main] INFO  o.z.c.b.github.SnapshotProvider - Cache directory found: /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/target/cache
+12:24:07.056 [main] INFO  o.z.c.b.github.SnapshotProvider - Initialized http client with 50 mb cache.
+12:24:07.129 [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+12:24:07.469 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/contributors],methods=[GET],produces=[application/json]}" onto public java.util.List<org.zalando.catwatch.backend.model.Contributor> org.zalando.catwatch.backend.web.ContributorsApi.contributorsGet(java.lang.String,java.lang.Integer,java.lang.Integer,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+12:24:07.470 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/languages],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<java.util.Collection<org.zalando.catwatch.backend.model.Language>> org.zalando.catwatch.backend.web.LanguagesApi.languagesGet(java.lang.String,java.lang.Integer,java.lang.Integer,java.lang.String)
+12:24:07.472 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/projects],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<java.util.Collection<org.zalando.catwatch.backend.model.Project>> org.zalando.catwatch.backend.web.ProjectsApi.projectsGet(java.lang.String,java.lang.Integer,java.lang.Integer,java.util.Date,java.util.Date,java.lang.String,java.lang.String,java.lang.String)
+12:24:07.473 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/statistics/projects],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<java.util.Collection<org.zalando.catwatch.backend.util.ProjectStats>> org.zalando.catwatch.backend.web.StatisticsApi.statisticsProjectGet(java.lang.String,java.lang.String,java.lang.String) throws java.text.ParseException
+12:24:07.474 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/statistics/contributors],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<java.util.Collection<org.zalando.catwatch.backend.util.ContributorStats>> org.zalando.catwatch.backend.web.StatisticsApi.statisticsContributorGet(java.lang.String,java.lang.String,java.lang.String) throws java.text.ParseException
+12:24:07.474 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/statistics/languages],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<java.util.Collection<org.zalando.catwatch.backend.util.LanguageStats>> org.zalando.catwatch.backend.web.StatisticsApi.statisticsLanguagesGet(java.lang.String,java.lang.String,java.lang.String)
+12:24:07.475 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/statistics],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<java.util.Collection<org.zalando.catwatch.backend.model.Statistics>> org.zalando.catwatch.backend.web.StatisticsApi.statisticsGet(java.lang.String,java.lang.String,java.lang.String)
+12:24:07.476 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/delete],methods=[GET],produces=[application/json;charset=utf-8]}" onto public java.lang.String org.zalando.catwatch.backend.web.admin.AdminController.deleteAll()
+12:24:07.477 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/config/scoring.project],methods=[POST],produces=[application/json;charset=utf-8]}" onto public java.util.List<java.lang.String> org.zalando.catwatch.backend.web.admin.AdminController.configScoringProjects(java.lang.String,java.lang.String)
+12:24:07.477 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/export],methods=[GET],produces=[application/json;charset=utf-8]}" onto public org.zalando.catwatch.backend.web.admin.DatabaseDto org.zalando.catwatch.backend.web.admin.AdminController.exportJson()
+12:24:07.477 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/import],methods=[POST],produces=[application/json;charset=utf-8]}" onto public java.lang.String org.zalando.catwatch.backend.web.admin.AdminController.importJson(org.zalando.catwatch.backend.web.admin.DatabaseDto)
+12:24:07.478 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/init],methods=[GET],produces=[application/json;charset=utf-8]}" onto public java.lang.String org.zalando.catwatch.backend.web.admin.AdminController.init()
+12:24:07.478 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/config],methods=[GET],produces=[application/json]}" onto public java.util.Map<java.lang.String, java.lang.String> org.zalando.catwatch.backend.web.config.ConfigController.config() throws java.lang.Exception
+12:24:07.479 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/fetch],methods=[GET],produces=[application/json;charset=utf-8]}" onto public java.lang.String org.zalando.catwatch.backend.web.fetch.FetchController.fetch() throws java.lang.Exception
+12:24:07.481 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+12:24:07.482 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+12:24:07.482 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+12:24:07.485 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+12:24:07.485 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+12:24:07.666 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/health || /health.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,java.security.Principal)
+12:24:07.804 [main] INFO  o.s.b.a.s.AuthenticationManagerConfiguration - 
+
+Using default security password: 513fc3c0-042e-4da6-896a-bfc10718b4e5
+
+12:24:07.879 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@413f45c4, org.springframework.security.web.context.SecurityContextPersistenceFilter@5010f134, org.springframework.security.web.header.HeaderWriterFilter@77c71b6d, org.springframework.security.web.authentication.logout.LogoutFilter@29d6f4e8, org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter@3ec44e5c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@474d2d93, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@81e4a64, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3c1b2d64, org.springframework.security.web.session.SessionManagementFilter@5d1f9ed9, org.springframework.security.web.access.ExceptionTranslationFilter@4deb5439, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@113e5cc4]
+12:24:07.895 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: org.springframework.boot.actuate.autoconfigure.ManagementWebSecurityAutoConfiguration$LazyEndpointPathRequestMatcher@5c74cecc, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6830983, org.springframework.security.web.context.SecurityContextPersistenceFilter@281ce904, org.springframework.security.web.header.HeaderWriterFilter@5ec0372f, org.springframework.security.web.authentication.logout.LogoutFilter@1c893ed1, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@7afbff07, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@42c38c9b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1de5b2a3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4daf8d02, org.springframework.security.web.session.SessionManagementFilter@657c822c, org.springframework.security.web.access.ExceptionTranslationFilter@365b8dd9, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@18fa73b2]
+12:24:07.918 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+12:24:08.041 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@57a25011: startup date [Fri Apr 04 12:24:05 BRT 2025]; root of context hierarchy
+12:24:08.063 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+12:24:08.063 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+12:24:08.088 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+12:24:08.102 [main] INFO  o.s.b.a.w.WebMvcAutoConfiguration$WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+12:24:08.289 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+12:24:08.294 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Registering beans for JMX exposure on startup
+12:24:08.297 [main] INFO  o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 0
+12:24:08.300 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'healthEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=healthEndpoint]
+12:24:08.314 [main] ERROR o.s.b.a.e.jmx.EndpointMBeanExporter - Could not register MBean for endpoint [healthEndpoint]
+org.springframework.jmx.export.UnableToRegisterMBeanException: Unable to register MBean [org.springframework.boot.actuate.endpoint.jmx.DataEndpointMBean@33c05781] with key 'healthEndpoint'; nested exception is javax.management.InstanceAlreadyExistsException: org.springframework.boot:type=Endpoint,name=healthEndpoint
+	at org.springframework.jmx.export.MBeanExporter.registerBeanNameOrInstance(MBeanExporter.java:628)
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter.registerEndpoint(EndpointMBeanExporter.java:214)
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter.registerEndpoints(EndpointMBeanExporter.java:191)
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter.locateAndRegisterEndpoints(EndpointMBeanExporter.java:163)
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter.doStart(EndpointMBeanExporter.java:158)
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter.start(EndpointMBeanExporter.java:337)
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:175)
+	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:50)
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:348)
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:151)
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:114)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:880)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:144)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at org.zalando.catwatch.backend.CatWatchBackendApplication.main(CatWatchBackendApplication.java:30)
+	at org.zalando.catwatch.backend.gpt35_run01_CatWatchBackendApplicationTest.testMainMethodLines30And31(gpt35_run01_CatWatchBackendApplicationTest.java:67)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.internal.runners.TestMethod.invoke(TestMethod.java:59)
+	at org.junit.internal.runners.MethodRoadie.runTestMethod(MethodRoadie.java:98)
+	at org.junit.internal.runners.MethodRoadie$2.run(MethodRoadie.java:79)
+	at org.junit.internal.runners.MethodRoadie.runBeforesThenTestThenAfters(MethodRoadie.java:87)
+	at org.junit.internal.runners.MethodRoadie.runTest(MethodRoadie.java:77)
+	at org.junit.internal.runners.MethodRoadie.run(MethodRoadie.java:42)
+	at org.junit.internal.runners.JUnit4ClassRunner.invokeTestMethod(JUnit4ClassRunner.java:88)
+	at org.junit.internal.runners.JUnit4ClassRunner.runMethods(JUnit4ClassRunner.java:51)
+	at org.junit.internal.runners.JUnit4ClassRunner$1.run(JUnit4ClassRunner.java:44)
+	at org.junit.internal.runners.ClassRoadie.runUnprotected(ClassRoadie.java:27)
+	at org.junit.internal.runners.ClassRoadie.runProtected(ClassRoadie.java:37)
+	at org.junit.internal.runners.JUnit4ClassRunner.run(JUnit4ClassRunner.java:42)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:383)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:344)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:417)
+Caused by: javax.management.InstanceAlreadyExistsException: org.springframework.boot:type=Endpoint,name=healthEndpoint
+	at com.sun.jmx.mbeanserver.Repository.addMBean(Repository.java:437)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerWithRepository(DefaultMBeanServerInterceptor.java:1898)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerDynamicMBean(DefaultMBeanServerInterceptor.java:966)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerObject(DefaultMBeanServerInterceptor.java:900)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerMBean(DefaultMBeanServerInterceptor.java:324)
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.registerMBean(JmxMBeanServer.java:522)
+	at org.springframework.jmx.support.MBeanRegistrationSupport.doRegister(MBeanRegistrationSupport.java:195)
+	at org.springframework.jmx.export.MBeanExporter.registerBeanInstance(MBeanExporter.java:682)
+	at org.springframework.jmx.export.MBeanExporter.registerBeanNameOrInstance(MBeanExporter.java:624)
+	... 45 common frames omitted
+12:24:08.314 [main] INFO  o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+12:24:08.315 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+12:24:08.317 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+12:24:08.329 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+12:24:08.466 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: invokeUsingGET_1
+12:24:08.533 [main] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+12:24:08.535 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+12:24:08.536 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+12:24:08.536 [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+12:24:08.539 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http)
+12:24:08.543 [main] INFO  o.z.c.b.CatWatchBackendApplication - Started CatWatchBackendApplication in 2.888 seconds (JVM running for 16.012)
+12:24:08.546 [main] INFO  o.s.c.s.DefaultLifecycleProcessor - Stopping beans in phase 2147483647
+12:24:08.547 [main] INFO  o.s.c.s.DefaultLifecycleProcessor - Stopping beans in phase 0
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m1[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 15.493 s - in org.zalando.catwatch.backend.[1mgpt35_run01_CatWatchBackendApplicationTest[m
+12:24:08.576 [Thread-9] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@57a25011: startup date [Fri Apr 04 12:24:05 BRT 2025]; root of context hierarchy
+12:24:08.580 [Thread-6] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4c635edc: startup date [Fri Apr 04 12:23:54 BRT 2025]; root of context hierarchy
+12:24:08.585 [Thread-9] INFO  o.s.c.s.DefaultLifecycleProcessor - Stopping beans in phase 2147483647
+12:24:08.585 [Thread-6] INFO  o.s.c.s.DefaultLifecycleProcessor - Stopping beans in phase 2147483647
+12:24:08.586 [Thread-6] INFO  o.s.c.s.DefaultLifecycleProcessor - Stopping beans in phase 0
+12:24:08.586 [Thread-6] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Unregistering JMX-exposed beans on shutdown
+12:24:08.587 [Thread-6] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Unregistering JMX-exposed beans
+12:24:08.585 [Thread-9] INFO  o.s.c.s.DefaultLifecycleProcessor - Stopping beans in phase 0
+12:24:08.588 [Thread-9] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Unregistering JMX-exposed beans on shutdown
+12:24:08.587 [Thread-6] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+12:24:08.591 [Thread-9] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+12:24:08.596 [Thread-6] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+12:24:08.598 [Thread-9] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[[1;34mINFO[m] 
+[[1;34mINFO[m] Results:
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1;32mTests run: 1, Failures: 0, Errors: 0, Skipped: 0[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mjacoco-maven-plugin:0.8.7:report[m [1m(report)[m @ [36mcatwatch-backend[0;1m ---[m
+[[1;34mINFO[m] Loading execution data file /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/target/jacoco.exec
+[[1;34mINFO[m] Analyzed bundle 'catwatch-backend' with 69 classes
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;32mBUILD SUCCESS[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  24.123 s
+[[1;34mINFO[m] Finished at: 2025-04-04T12:24:09-03:00
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m

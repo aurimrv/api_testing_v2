@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="pt"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>ProjectStats.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">catwatch-backend</a> &gt; <a href="index.source.html" class="el_package">org.zalando.catwatch.backend.util</a> &gt; <span class="el_source">ProjectStats.java</span></div><h1>ProjectStats.java</h1><pre class="source lang-java linenums">package org.zalando.catwatch.backend.util;
+
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
+import org.zalando.catwatch.backend.model.Project;
+
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.HashMap;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
+
+/**
+ * Class to collect Projects stats
+ *
+ * This class collects the statistics from a List of Project objects in a more compact manner
+ * so that it can then be returned from the /statistics/projects REST endpoint.
+ *
+ * Essentially, the fields which are always the same (such as &quot;name&quot;...) are stored only once
+ * and the counts (such as &quot;commitCounts&quot;) are put into arrays of their own.
+ *
+ */
+public class ProjectStats {
+
+    private String name;
+    private String organizationName;
+    private String url;
+    private String description;
+    private String primaryLanguage;
+    private List&lt;Integer&gt; commitCounts;
+    private List&lt;Integer&gt; forkCounts;
+    private List&lt;Integer&gt; contributorsCounts;
+    private List&lt;Integer&gt; scores;
+    private List&lt;Date&gt; snapshotDates;
+
+<span class="fc" id="L38">    public ProjectStats(List&lt;Project&gt; projects) {</span>
+<span class="fc" id="L39">        Project first = projects.get(0);</span>
+
+<span class="fc" id="L41">        name = first.getName();</span>
+<span class="fc" id="L42">        organizationName = first.getOrganizationName();</span>
+<span class="fc" id="L43">        url = first.getUrl();</span>
+<span class="fc" id="L44">        description = first.getDescription();</span>
+<span class="fc" id="L45">        primaryLanguage = first.getPrimaryLanguage();</span>
+
+<span class="fc" id="L47">        projects.sort((o1, o2) -&gt; o1.getSnapshotDate().compareTo(o2.getSnapshotDate()));</span>
+
+<span class="fc" id="L49">        int size = projects.size();</span>
+
+<span class="fc" id="L51">        commitCounts = new ArrayList&lt;&gt;(size);</span>
+<span class="fc" id="L52">        forkCounts = new ArrayList&lt;&gt;(size);</span>
+<span class="fc" id="L53">        snapshotDates = new ArrayList&lt;&gt;(size);</span>
+<span class="fc" id="L54">        contributorsCounts = new ArrayList&lt;&gt;(size);</span>
+<span class="fc" id="L55">        scores = new ArrayList&lt;&gt;(size);</span>
+
+<span class="fc" id="L57">        int i = 0;</span>
+
+<span class="fc" id="L59">        Date lastSnapshotDate = null;</span>
+
+<span class="fc bfc" id="L61" title="All 2 branches covered.">        for (Project p: projects) {</span>
+<span class="fc bfc" id="L62" title="All 2 branches covered.">            if (!p.getName().equals(name)) {</span>
+<span class="fc" id="L63">                throw new IllegalArgumentException(&quot;All projects in the list must refer to the same project!&quot;);</span>
+            }
+
+<span class="pc bpc" id="L66" title="1 of 4 branches missed.">            if (lastSnapshotDate == null || !p.getSnapshotDate().equals(lastSnapshotDate)) {</span>
+<span class="fc" id="L67">                commitCounts.add(i, p.getCommitsCount());</span>
+<span class="fc" id="L68">                forkCounts.add(i, p.getForksCount());</span>
+<span class="fc" id="L69">                contributorsCounts.add(i, p.getContributorsCount());</span>
+<span class="fc" id="L70">                scores.add(i, p.getScore());</span>
+<span class="fc" id="L71">                snapshotDates.add(i, p.getSnapshotDate());</span>
+<span class="fc" id="L72">                i++;</span>
+            }
+
+<span class="fc" id="L75">            lastSnapshotDate = p.getSnapshotDate();</span>
+<span class="fc" id="L76">        }</span>
+<span class="fc" id="L77">    }</span>
+
+    @JsonProperty(value=&quot;name&quot;)
+<span class="fc" id="L80">    public String getName() { return name; }</span>
+
+    @JsonProperty(value=&quot;organization_name&quot;)
+<span class="fc" id="L83">    public String getOrganizationName() { return organizationName; }</span>
+
+    @JsonProperty(value=&quot;url&quot;)
+<span class="fc" id="L86">    public String getUrl() { return url; }</span>
+
+    @JsonProperty(value=&quot;primary_language&quot;)
+<span class="fc" id="L89">    public String getPrimaryLanguage() { return primaryLanguage; }</span>
+
+    @JsonProperty(value=&quot;description&quot;)
+<span class="fc" id="L92">    public String getDescription() { return description; }</span>
+
+    @JsonProperty(value=&quot;commit_counts&quot;)
+<span class="fc" id="L95">    public List&lt;Integer&gt; getCommitCounts() { return commitCounts; }</span>
+
+    @JsonProperty(value=&quot;fork_counts&quot;)
+<span class="fc" id="L98">    public List&lt;Integer&gt; getForkCounts() { return forkCounts; }</span>
+
+    @JsonProperty(value=&quot;contributors_counts&quot;)
+<span class="fc" id="L101">    public List&lt;Integer&gt; getContributorsCounts() { return contributorsCounts; }</span>
+
+    @JsonProperty(value=&quot;scores&quot;)
+<span class="fc" id="L104">    public List&lt;Integer&gt; getScores() { return scores; }</span>
+
+    @JsonProperty(value=&quot;snapshot_dates&quot;)
+    @JsonSerialize(using = JsonDateListSerializer.class)
+<span class="fc" id="L108">    public List&lt;Date&gt; getSnapshotDates() { return snapshotDates; }</span>
+
+    public static List&lt;ProjectStats&gt; buildStats(List&lt;Project&gt; projects) {
+<span class="fc" id="L111">        Map&lt;String,List&lt;Project&gt;&gt; projectsByName = getDistinctProjects(projects);</span>
+
+<span class="fc" id="L113">        return projectsByName.values().stream()</span>
+<span class="fc" id="L114">                .map(ProjectStats::new)</span>
+<span class="fc" id="L115">                .collect(Collectors.toCollection(LinkedList::new));</span>
+    }
+
+    /**
+     * Take a list of projects and return a map of lists where projects have been partitioned
+     * by names.
+     *
+     * @param projects list consisting of potentially different projects
+     * @return a map which contains the list separated by project, using the name as index.
+     */
+    public static Map&lt;String,List&lt;Project&gt;&gt; getDistinctProjects(List&lt;Project&gt; projects)  {
+<span class="fc" id="L126">        Map&lt;String,List&lt;Project&gt;&gt; result = new HashMap&lt;&gt;();</span>
+
+<span class="fc bfc" id="L128" title="All 2 branches covered.">        for (Project project: projects) {</span>
+<span class="fc" id="L129">            String name = project.getName();</span>
+
+<span class="fc" id="L131">            List&lt;Project&gt; list = result.get(name);</span>
+<span class="fc bfc" id="L132" title="All 2 branches covered.">            if (list == null) {</span>
+<span class="fc" id="L133">                list = new LinkedList&lt;&gt;();</span>
+<span class="fc" id="L134">                result.put(name, list);</span>
+            }
+
+<span class="fc" id="L137">            list.add(project);</span>
+<span class="fc" id="L138">        }</span>
+
+<span class="fc" id="L140">        return result;</span>
+    }
+
+    @Override
+    public String toString() {
+<span class="fc" id="L145">        return String.format(&quot;ProjectStats(%s, commitCounts=%s, forkCounts=%s, snapshotDates=%s)&quot;, name, commitCounts, forkCounts, snapshotDates);</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

@@ -1,0 +1,193 @@
+You are a highly skilled test engineer specializing in debugging and resolving compilation errors and test failures in Java-based projects. Your expertise includes Java 8, JUnit 4, and REST Assured, allowing you to diagnose issues efficiently and provide precise, actionable fixes.
+
+Given the test set below delimited by *****, fix the source lines indicated in the error messages delimited by #####, replacing only the expected by the actual values.
+
+Do keep package, headers and accessories methods unchanged.
+
+Do export all other corrected tests unchanged.
+
+The response must contain only Java code in JUnit 4 format.
+
+#####
+Line: 128
+Expected status code <200> but was <404>.
+----------------------------------------
+Line: 148
+Expected status code <404> but was <200>.
+----------------------------------------
+Line: 69
+Response body doesn't match expectation.
+Expected: "3"
+Actual: 0
+----------------------------------------
+Line: 109
+Response body doesn't match expectation.
+Expected: "0"
+Actual: 3
+----------------------------------------
+
+#####
+*****
+package org.restscs;
+
+import org.junit.AfterClass;
+import org.junit.BeforeClass;
+import org.junit.Before;
+import org.junit.Test;
+import static org.junit.Assert.*;
+import java.util.Map;
+import java.util.List;
+import static org.evomaster.client.java.controller.api.EMTestUtils.*;
+import org.evomaster.client.java.controller.SutHandler;
+import io.restassured.RestAssured;
+import static io.restassured.RestAssured.given;
+import io.restassured.response.ValidatableResponse;
+import static org.hamcrest.Matchers.*;
+import io.restassured.config.JsonConfig;
+import io.restassured.path.json.config.JsonPathConfig;
+import static io.restassured.config.RedirectConfig.redirectConfig;
+import static org.evomaster.client.java.controller.contentMatchers.NumberMatcher.*;
+import static org.evomaster.client.java.controller.contentMatchers.StringMatcher.*;
+import static org.evomaster.client.java.controller.contentMatchers.SubStringMatcher.*;
+import static org.evomaster.client.java.controller.expect.ExpectationHandler.expectationHandler;
+import org.evomaster.client.java.controller.expect.ExpectationHandler;
+import io.restassured.path.json.JsonPath;
+import java.util.Arrays;
+
+public class sonnet35_run01_NotyPevarTest {
+
+    private static final SutHandler controller = new em.embedded.org.restscs.EmbeddedEvoMasterController();
+    private static String baseUrlOfSut;
+
+    @BeforeClass
+    public static void initClass() {
+        controller.setupForGeneratedTest();
+        baseUrlOfSut = controller.startSut();
+        controller.registerOrExecuteInitSqlCommandsIfNeeded();
+        assertNotNull(baseUrlOfSut);
+        RestAssured.enableLoggingOfRequestAndResponseIfValidationFails();
+        RestAssured.useRelaxedHTTPSValidation();
+        RestAssured.urlEncodingEnabled = false;
+        RestAssured.config = RestAssured.config()
+            .jsonConfig(JsonConfig.jsonConfig().numberReturnType(JsonPathConfig.NumberReturnType.DOUBLE))
+            .redirect(redirectConfig().followRedirects(false));
+    }
+
+    @AfterClass
+    public static void tearDown() {
+        controller.stopSut();
+    }
+
+    @Before
+    public void initTest() {
+        controller.resetStateOfSUT();
+    }
+
+    @Test
+    public void testConstructor() {
+        org.restscs.imp.NotyPevar instance = new org.restscs.imp.NotyPevar();
+        assertNotNull(instance);
+    }
+
+    @Test
+    public void testSubjectWithResultZero() {
+        given()
+            .accept("*/*")
+            .get(baseUrlOfSut + "/api/notypevar/1/hello")
+            .then()
+            .statusCode(200)
+            .body(equalTo("3"));
+    }
+
+    @Test
+    public void testSubjectWithResultOne() {
+        given()
+            .accept("*/*")
+            .get(baseUrlOfSut + "/api/notypevar/7/hello")
+            .then()
+            .statusCode(200)
+            .body(equalTo("3"));
+    }
+
+    @Test
+    public void testSubjectWithResultTwo() {
+        given()
+            .accept("*/*")
+            .get(baseUrlOfSut + "/api/notypevar/1/zello")
+            .then()
+            .statusCode(200)
+            .body(equalTo("2"));
+    }
+
+    @Test
+    public void testSubjectWithResultThree() {
+        given()
+            .accept("*/*")
+            .get(baseUrlOfSut + "/api/notypevar/6/hello")
+            .then()
+            .statusCode(200)
+            .body(equalTo("3"));
+    }
+
+    @Test
+    public void testSubjectWithResultZeroAndLargeInput() {
+        given()
+            .accept("*/*")
+            .get(baseUrlOfSut + "/api/notypevar/1000000/hello")
+            .then()
+            .statusCode(200)
+            .body(equalTo("0"));
+    }
+
+    @Test
+    public void testSubjectWithNegativeInput() {
+        given()
+            .accept("*/*")
+            .get(baseUrlOfSut + "/api/notypevar/-1/hello")
+            .then()
+            .statusCode(200)
+            .body(equalTo("0"));
+    }
+
+    @Test
+    public void testSubjectWithEmptyString() {
+        given()
+            .accept("*/*")
+            .get(baseUrlOfSut + "/api/notypevar/1/")
+            .then()
+            .statusCode(200)
+            .body(equalTo("2"));
+    }
+
+    @Test
+    public void testSubjectWithSpecialCharacters() {
+        given()
+            .accept("*/*")
+            .get(baseUrlOfSut + "/api/notypevar/1/!@#$%^&*()")
+            .then()
+            .statusCode(200)
+            .body(equalTo("0"));
+    }
+
+    @Test
+    public void testSubjectWithMaxIntegerValue() {
+        given()
+            .accept("*/*")
+            .get(baseUrlOfSut + "/api/notypevar/2147483647/hello")
+            .then()
+            .statusCode(404)
+            .body(equalTo("3"));
+    }
+
+    @Test
+    public void testSubjectWithMinIntegerValue() {
+        given()
+            .accept("*/*")
+            .get(baseUrlOfSut + "/api/notypevar/-2147483648/hello")
+            .then()
+            .statusCode(200)
+            .body(equalTo("0"));
+    }
+}
+
+*****

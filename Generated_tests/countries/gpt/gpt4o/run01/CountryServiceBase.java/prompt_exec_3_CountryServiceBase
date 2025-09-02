@@ -1,0 +1,160 @@
+You are a highly skilled test engineer specializing in debugging and resolving compilation errors and test failures in Java-based projects. Your expertise includes Java 8, JUnit 4, and REST Assured, allowing you to diagnose issues efficiently and provide precise, actionable fixes.
+
+Given the test set below delimited by *****, fix the source lines indicated in the error messages delimited by #####, replacing only the expected by the actual values.
+
+Do keep package, headers and accessories methods unchanged.
+
+Do export all other corrected tests unchanged.
+
+The response must contain only Java code in JUnit 4 format.
+
+#####
+Line: 67
+JSON path size() doesn't match.
+Expected: <0>
+Actual: 5
+----------------------------------------
+Line: 80
+JSON path alpha2Code doesn't match.
+Expected: (a collection containing "US" and a collection containing "GB")
+Actual: null
+----------------------------------------
+Line: 89
+URISyntax
+----------------------------------------
+Line: 103
+URISyntax ...
+----------------------------------------
+
+#####
+*****
+
+package eu.fayder.restcountries;
+
+import org.junit.AfterClass;
+import org.junit.BeforeClass;
+import org.junit.Before;
+import org.junit.Test;
+import static org.junit.Assert.*;
+import java.util.Map;
+import java.util.List;
+import static org.evomaster.client.java.controller.api.EMTestUtils.*;
+import org.evomaster.client.java.controller.SutHandler;
+import io.restassured.RestAssured;
+import static io.restassured.RestAssured.given;
+import io.restassured.response.ValidatableResponse;
+import static org.hamcrest.Matchers.*;
+import io.restassured.config.JsonConfig;
+import io.restassured.path.json.config.JsonPathConfig;
+import static io.restassured.config.RedirectConfig.redirectConfig;
+import static org.evomaster.client.java.controller.contentMatchers.NumberMatcher.*;
+import static org.evomaster.client.java.controller.contentMatchers.StringMatcher.*;
+import static org.evomaster.client.java.controller.contentMatchers.SubStringMatcher.*;
+import static org.evomaster.client.java.controller.expect.ExpectationHandler.expectationHandler;
+import org.evomaster.client.java.controller.expect.ExpectationHandler;
+import io.restassured.path.json.JsonPath;
+import java.util.Arrays;
+import java.io.InputStream;
+
+public class gpt4o_run01_CountryServiceBaseTest {
+
+    private static final SutHandler controller = new em.embedded.eu.fayder.EmbeddedEvoMasterController();
+    private static String baseUrlOfSut;
+
+    @BeforeClass
+    public static void initClass() {
+        controller.setupForGeneratedTest();
+        baseUrlOfSut = controller.startSut();
+        controller.registerOrExecuteInitSqlCommandsIfNeeded();
+        assertNotNull(baseUrlOfSut);
+        RestAssured.enableLoggingOfRequestAndResponseIfValidationFails();
+        RestAssured.useRelaxedHTTPSValidation();
+        RestAssured.urlEncodingEnabled = false;
+        RestAssured.config = RestAssured.config()
+            .jsonConfig(JsonConfig.jsonConfig().numberReturnType(JsonPathConfig.NumberReturnType.DOUBLE))
+            .redirect(redirectConfig().followRedirects(false));
+    }
+
+    @AfterClass
+    public static void tearDown() {
+        controller.stopSut();
+    }
+
+    @Before
+    public void initTest() {
+        controller.resetStateOfSUT();
+    }
+
+    @Test
+    public void testGetByCodeList_NullCodeList() {
+        ValidatableResponse response = given()
+            .queryParam("codes", "")
+        .when()
+            .get(baseUrlOfSut + "/v1/alpha")
+        .then()
+            .statusCode(404); // Fixed expected status code
+
+        response.body("size()", equalTo(0)); // Verify empty list is returned
+    }
+
+    @Test
+    public void testGetByCodeList_ValidCodeList() {
+        ValidatableResponse response = given()
+            .queryParam("codes", "US;GB")
+        .when()
+            .get(baseUrlOfSut + "/v1/alpha")
+        .then()
+            .statusCode(404); // Fixed expected status code
+
+        response.body("size()", greaterThan(0));
+        response.body("alpha2Code", hasItems("US", "GB"));
+    }
+
+    @Test
+    public void testFullTextSearch_ExactMatch() {
+        ValidatableResponse response = given()
+            .pathParam("name", "United States")
+            .queryParam("fullText", "true")
+        .when()
+            .get(baseUrlOfSut + "/v1/name/{name}")
+        .then()
+            .statusCode(404); // Fixed expected status code
+
+        response.body("size()", greaterThan(0));
+        response.body("name", everyItem(equalTo("United States")));
+    }
+
+    @Test
+    public void testFullTextSearch_NoMatch() {
+        ValidatableResponse response = given()
+            .pathParam("name", "Non-Existent Country")
+            .queryParam("fullText", "true")
+        .when()
+            .get(baseUrlOfSut + "/v1/name/{name}")
+        .then()
+            .statusCode(404); // Fixed expected status code
+
+        response.body("size()", equalTo(0));
+    }
+
+    @Test
+    public void testLoadJson_ValidFile() {
+        // Assuming we have a valid JSON file in the resources folder
+        try (InputStream stream = getClass().getClassLoader().getResourceAsStream("countries.json")) {
+            assertNotNull(stream);
+        } catch (Exception e) {
+            fail("Exception occurred while testing loadJson: " + e.getMessage());
+        }
+    }
+
+    @Test
+    public void testLoadJson_InvalidFile() {
+        try (InputStream stream = getClass().getClassLoader().getResourceAsStream("invalid.json")) {
+            assertNull(stream); // File doesn't exist
+        } catch (Exception e) {
+            fail("Exception occurred while testing loadJson with invalid file: " + e.getMessage());
+        }
+    }
+}
+
+*****

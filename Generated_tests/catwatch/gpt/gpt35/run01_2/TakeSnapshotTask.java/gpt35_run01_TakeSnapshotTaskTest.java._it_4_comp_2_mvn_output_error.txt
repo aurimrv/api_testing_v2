@@ -1,0 +1,207 @@
+[[1;31mERROR[m] COMPILATION ERROR : 
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_TakeSnapshotTaskTest.java:[72,13] cannot find symbol
+  symbol:   class TakeSnapshotTask
+  location: class gpt35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_TakeSnapshotTaskTest.java:[78,9] cannot find symbol
+  symbol:   class TakeSnapshotTask
+  location: class gpt35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_TakeSnapshotTaskTest.java:[78,37] cannot find symbol
+  symbol:   class TakeSnapshotTask
+  location: class gpt35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_TakeSnapshotTaskTest.java:[79,9] cannot find symbol
+  symbol:   class Snapshot
+  location: class gpt35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_TakeSnapshotTaskTest.java:[86,9] cannot find symbol
+  symbol:   class TakeSnapshotTask
+  location: class gpt35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_TakeSnapshotTaskTest.java:[86,37] cannot find symbol
+  symbol:   class TakeSnapshotTask
+  location: class gpt35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_TakeSnapshotTaskTest.java:[87,9] cannot find symbol
+  symbol:   class OrganizationWrapper
+  location: class gpt35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_TakeSnapshotTaskTest.java:[87,48] cannot find symbol
+  symbol:   class OrganizationWrapper
+  location: class gpt35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_TakeSnapshotTaskTest.java:[88,9] cannot find symbol
+  symbol:   class Statistics
+  location: class gpt35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_TakeSnapshotTaskTest.java:[95,9] cannot find symbol
+  symbol:   class TakeSnapshotTask
+  location: class gpt35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_TakeSnapshotTaskTest.java:[95,37] cannot find symbol
+  symbol:   class TakeSnapshotTask
+  location: class gpt35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_TakeSnapshotTaskTest.java:[96,9] cannot find symbol
+  symbol:   class OrganizationWrapper
+  location: class gpt35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_TakeSnapshotTaskTest.java:[96,48] cannot find symbol
+  symbol:   class OrganizationWrapper
+  location: class gpt35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_TakeSnapshotTaskTest.java:[97,20] cannot find symbol
+  symbol:   class Project
+  location: class gpt35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_TakeSnapshotTaskTest.java:[104,9] cannot find symbol
+  symbol:   class RepositoryWrapper
+  location: class gpt35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_TakeSnapshotTaskTest.java:[104,44] cannot find symbol
+  symbol:   class RepositoryWrapper
+  location: class gpt35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_TakeSnapshotTaskTest.java:[105,9] cannot find symbol
+  symbol:   class List
+  location: class gpt35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_TakeSnapshotTaskTest.java:[105,36] cannot find symbol
+  symbol:   variable task
+  location: class gpt35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_TakeSnapshotTaskTest.java:[112,9] cannot find symbol
+  symbol:   class RepositoryWrapper
+  location: class gpt35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_TakeSnapshotTaskTest.java:[112,44] cannot find symbol
+  symbol:   class RepositoryWrapper
+  location: class gpt35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_TakeSnapshotTaskTest.java:[113,9] cannot find symbol
+  symbol:   class Project
+  location: class gpt35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_TakeSnapshotTaskTest.java:[113,31] cannot find symbol
+  symbol:   class Project
+  location: class gpt35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_TakeSnapshotTaskTest.java:[114,9] cannot find symbol
+  symbol:   variable task
+  location: class gpt35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_TakeSnapshotTaskTest.java:[120,9] cannot find symbol
+  symbol:   class TakeSnapshotTask
+  location: class gpt35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_TakeSnapshotTaskTest.java:[120,37] cannot find symbol
+  symbol:   class TakeSnapshotTask
+  location: class gpt35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_TakeSnapshotTaskTest.java:[121,9] cannot find symbol
+  symbol:   class OrganizationWrapper
+  location: class gpt35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_TakeSnapshotTaskTest.java:[121,48] cannot find symbol
+  symbol:   class OrganizationWrapper
+  location: class gpt35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_TakeSnapshotTaskTest.java:[122,20] cannot find symbol
+  symbol:   class Contributor
+  location: class gpt35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_TakeSnapshotTaskTest.java:[129,9] cannot find symbol
+  symbol:   class TakeSnapshotTask
+  location: class gpt35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_TakeSnapshotTaskTest.java:[129,37] cannot find symbol
+  symbol:   class TakeSnapshotTask
+  location: class gpt35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_TakeSnapshotTaskTest.java:[130,9] cannot find symbol
+  symbol:   class OrganizationWrapper
+  location: class gpt35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_TakeSnapshotTaskTest.java:[130,48] cannot find symbol
+  symbol:   class OrganizationWrapper
+  location: class gpt35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_TakeSnapshotTaskTest.java:[131,20] cannot find symbol
+  symbol:   class Language
+  location: class gpt35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] Failed to execute goal [32morg.apache.maven.plugins:maven-compiler-plugin:3.8.0:testCompile[m [1m(default-testCompile)[m on project [36mcatwatch-backend[m: [1;31mCompilation failure[m: Compilation failure: 
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_TakeSnapshotTaskTest.java:[72,13] cannot find symbol
+[[1;31mERROR[m]   symbol:   class TakeSnapshotTask
+[[1;31mERROR[m]   location: class gpt35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_TakeSnapshotTaskTest.java:[78,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class TakeSnapshotTask
+[[1;31mERROR[m]   location: class gpt35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_TakeSnapshotTaskTest.java:[78,37] cannot find symbol
+[[1;31mERROR[m]   symbol:   class TakeSnapshotTask
+[[1;31mERROR[m]   location: class gpt35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_TakeSnapshotTaskTest.java:[79,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Snapshot
+[[1;31mERROR[m]   location: class gpt35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_TakeSnapshotTaskTest.java:[86,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class TakeSnapshotTask
+[[1;31mERROR[m]   location: class gpt35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_TakeSnapshotTaskTest.java:[86,37] cannot find symbol
+[[1;31mERROR[m]   symbol:   class TakeSnapshotTask
+[[1;31mERROR[m]   location: class gpt35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_TakeSnapshotTaskTest.java:[87,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class OrganizationWrapper
+[[1;31mERROR[m]   location: class gpt35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_TakeSnapshotTaskTest.java:[87,48] cannot find symbol
+[[1;31mERROR[m]   symbol:   class OrganizationWrapper
+[[1;31mERROR[m]   location: class gpt35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_TakeSnapshotTaskTest.java:[88,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Statistics
+[[1;31mERROR[m]   location: class gpt35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_TakeSnapshotTaskTest.java:[95,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class TakeSnapshotTask
+[[1;31mERROR[m]   location: class gpt35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_TakeSnapshotTaskTest.java:[95,37] cannot find symbol
+[[1;31mERROR[m]   symbol:   class TakeSnapshotTask
+[[1;31mERROR[m]   location: class gpt35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_TakeSnapshotTaskTest.java:[96,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class OrganizationWrapper
+[[1;31mERROR[m]   location: class gpt35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_TakeSnapshotTaskTest.java:[96,48] cannot find symbol
+[[1;31mERROR[m]   symbol:   class OrganizationWrapper
+[[1;31mERROR[m]   location: class gpt35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_TakeSnapshotTaskTest.java:[97,20] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Project
+[[1;31mERROR[m]   location: class gpt35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_TakeSnapshotTaskTest.java:[104,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class RepositoryWrapper
+[[1;31mERROR[m]   location: class gpt35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_TakeSnapshotTaskTest.java:[104,44] cannot find symbol
+[[1;31mERROR[m]   symbol:   class RepositoryWrapper
+[[1;31mERROR[m]   location: class gpt35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_TakeSnapshotTaskTest.java:[105,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class List
+[[1;31mERROR[m]   location: class gpt35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_TakeSnapshotTaskTest.java:[105,36] cannot find symbol
+[[1;31mERROR[m]   symbol:   variable task
+[[1;31mERROR[m]   location: class gpt35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_TakeSnapshotTaskTest.java:[112,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class RepositoryWrapper
+[[1;31mERROR[m]   location: class gpt35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_TakeSnapshotTaskTest.java:[112,44] cannot find symbol
+[[1;31mERROR[m]   symbol:   class RepositoryWrapper
+[[1;31mERROR[m]   location: class gpt35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_TakeSnapshotTaskTest.java:[113,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Project
+[[1;31mERROR[m]   location: class gpt35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_TakeSnapshotTaskTest.java:[113,31] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Project
+[[1;31mERROR[m]   location: class gpt35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_TakeSnapshotTaskTest.java:[114,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   variable task
+[[1;31mERROR[m]   location: class gpt35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_TakeSnapshotTaskTest.java:[120,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class TakeSnapshotTask
+[[1;31mERROR[m]   location: class gpt35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_TakeSnapshotTaskTest.java:[120,37] cannot find symbol
+[[1;31mERROR[m]   symbol:   class TakeSnapshotTask
+[[1;31mERROR[m]   location: class gpt35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_TakeSnapshotTaskTest.java:[121,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class OrganizationWrapper
+[[1;31mERROR[m]   location: class gpt35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_TakeSnapshotTaskTest.java:[121,48] cannot find symbol
+[[1;31mERROR[m]   symbol:   class OrganizationWrapper
+[[1;31mERROR[m]   location: class gpt35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_TakeSnapshotTaskTest.java:[122,20] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Contributor
+[[1;31mERROR[m]   location: class gpt35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_TakeSnapshotTaskTest.java:[129,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class TakeSnapshotTask
+[[1;31mERROR[m]   location: class gpt35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_TakeSnapshotTaskTest.java:[129,37] cannot find symbol
+[[1;31mERROR[m]   symbol:   class TakeSnapshotTask
+[[1;31mERROR[m]   location: class gpt35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_TakeSnapshotTaskTest.java:[130,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class OrganizationWrapper
+[[1;31mERROR[m]   location: class gpt35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_TakeSnapshotTaskTest.java:[130,48] cannot find symbol
+[[1;31mERROR[m]   symbol:   class OrganizationWrapper
+[[1;31mERROR[m]   location: class gpt35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_TakeSnapshotTaskTest.java:[131,20] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Language
+[[1;31mERROR[m]   location: class gpt35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] -> [1m[Help 1][m
+[[1;31mERROR[m] 
+[[1;31mERROR[m] To see the full stack trace of the errors, re-run Maven with the [1m-e[m switch.
+[[1;31mERROR[m] Re-run Maven using the [1m-X[m switch to enable full debug logging.
+[[1;31mERROR[m] 
+[[1;31mERROR[m] For more information about the errors and possible solutions, please read the following articles:
+[[1;31mERROR[m] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

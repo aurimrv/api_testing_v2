@@ -1,0 +1,176 @@
+You are a highly skilled test engineer specializing in debugging and resolving compilation errors and test failures in Java-based projects. Your expertise includes Java 11, JUnit 5, and REST Assured, allowing you to diagnose issues efficiently and provide precise, actionable fixes.
+
+Do fix the compilation errors delimited by ##### given the code below delimited by *****.
+
+The response must contain only Java code in JUnit 5 format.
+
+#####
+[[1;31mERROR[m] COMPILATION ERROR : 
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_11_maven/cs/rest-gui/market/market-rest/src/test/java/market/gpt4o_run01_CustomerRestControllerTest.java:[32,23] package market.services does not exist
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_11_maven/cs/rest-gui/market/market-rest/src/test/java/market/gpt4o_run01_CustomerRestControllerTest.java:[33,23] package market.services does not exist
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_11_maven/cs/rest-gui/market/market-rest/src/test/java/market/gpt4o_run01_CustomerRestControllerTest.java:[34,26] package market.controllers does not exist
+[[1;31mERROR[m] Failed to execute goal [32morg.apache.maven.plugins:maven-compiler-plugin:3.8.0:testCompile[m [1m(default-testCompile)[m on project [36mmarket-rest[m: [1;31mCompilation failure[m: Compilation failure: 
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_11_maven/cs/rest-gui/market/market-rest/src/test/java/market/gpt4o_run01_CustomerRestControllerTest.java:[32,23] package market.services does not exist
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_11_maven/cs/rest-gui/market/market-rest/src/test/java/market/gpt4o_run01_CustomerRestControllerTest.java:[33,23] package market.services does not exist
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_11_maven/cs/rest-gui/market/market-rest/src/test/java/market/gpt4o_run01_CustomerRestControllerTest.java:[34,26] package market.controllers does not exist
+[[1;31mERROR[m] -> [1m[Help 1][m
+[[1;31mERROR[m] 
+[[1;31mERROR[m] To see the full stack trace of the errors, re-run Maven with the [1m-e[m switch.
+[[1;31mERROR[m] Re-run Maven using the [1m-X[m switch to enable full debug logging.
+[[1;31mERROR[m] 
+[[1;31mERROR[m] For more information about the errors and possible solutions, please read the following articles:
+[[1;31mERROR[m] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+
+#####
+*****
+
+package market;
+
+import org.junit.jupiter.api.AfterAll;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.Timeout;
+import static org.junit.jupiter.api.Assertions.*;
+import java.util.Map;
+import java.util.List;
+import static org.evomaster.client.java.controller.api.EMTestUtils.*;
+import org.evomaster.client.java.controller.SutHandler;
+import io.restassured.RestAssured;
+import static io.restassured.RestAssured.given;
+import io.restassured.response.ValidatableResponse;
+import static org.evomaster.client.java.sql.dsl.SqlDsl.sql;
+import org.evomaster.client.java.controller.api.dto.database.operations.InsertionDto;
+import org.evomaster.client.java.controller.api.dto.database.operations.InsertionResultsDto;
+import static org.hamcrest.Matchers.*;
+import io.restassured.config.JsonConfig;
+import io.restassured.path.json.config.JsonPathConfig;
+import static io.restassured.config.RedirectConfig.redirectConfig;
+import static org.evomaster.client.java.controller.contentMatchers.NumberMatcher.*;
+import static org.evomaster.client.java.controller.contentMatchers.StringMatcher.*;
+import static org.evomaster.client.java.controller.contentMatchers.SubStringMatcher.*;
+import static org.evomaster.client.java.controller.expect.ExpectationHandler.expectationHandler;
+import org.evomaster.client.java.controller.expect.ExpectationHandler;
+import io.restassured.path.json.JsonPath;
+import java.util.Arrays;
+import org.mockito.Mockito;
+import market.services.UserAccountService;
+import market.services.AuthenticationService;
+import market.controllers.CustomerRestController;
+
+public class gpt4o_run01_CustomerRestControllerTest {
+
+    private static final SutHandler controller = new em.embedded.market.EmbeddedEvoMasterController();
+    private static String baseUrlOfSut;
+
+    @BeforeAll
+    public static void initClass() {
+        controller.setupForGeneratedTest();
+        baseUrlOfSut = controller.startSut();
+        controller.registerOrExecuteInitSqlCommandsIfNeeded();
+        assertNotNull(baseUrlOfSut);
+        RestAssured.enableLoggingOfRequestAndResponseIfValidationFails();
+        RestAssured.useRelaxedHTTPSValidation();
+        RestAssured.urlEncodingEnabled = false;
+        RestAssured.config = RestAssured.config()
+            .jsonConfig(JsonConfig.jsonConfig().numberReturnType(JsonPathConfig.NumberReturnType.DOUBLE))
+            .redirect(redirectConfig().followRedirects(false));
+    }
+
+    @AfterAll
+    public static void tearDown() {
+        controller.stopSut();
+    }
+
+    @BeforeEach
+    public void initTest() {
+        controller.resetDatabase(Arrays.asList("USER_ROLE", "CUSTOMER_ORDER", "CART_ITEM", "PRODUCT", "CART", "CONTACTS"));
+        controller.resetStateOfSUT();
+    }
+
+    @Test
+    public void testCreateCustomerSuccess() {
+        Map<String, Object> userDetails = Map.of(
+            "email", "ivan.petrov@yandex.ru",
+            "password", "petrov",
+            "name", "Ivan Petrov",
+            "phone", "+7 123 456 78 90",
+            "address", "Riesstrasse 18"
+        );
+
+        ValidatableResponse response = given()
+            .contentType("application/json")
+            .body(userDetails)
+        .when()
+            .post(baseUrlOfSut + "/register")
+        .then()
+            .statusCode(201)
+            .body("email", equalTo("ivan.petrov@yandex.ru"))
+            .body("name", equalTo("Ivan Petrov"))
+            .body("phone", equalTo("+7 123 456 78 90"))
+            .body("address", equalTo("Riesstrasse 18"))
+            .body("_links.'Manage contacts'.href", not(empty()))
+            .body("_links.'Shopping cart'.href", not(empty()));
+    }
+
+    @Test
+    public void testCreateCustomerEmailExistsException() {
+        // Insert an existing user first
+        sql(List.of(new InsertionDto("USER_ACCOUNT", Map.of(
+            "EMAIL", "ivan.petrov@yandex.ru",
+            "PASSWORD", "hashed_password",
+            "NAME", "Ivan Petrov",
+            "PHONE", "+7 123 456 78 90",
+            "ADDRESS", "Riesstrasse 18"
+        ))));
+
+        Map<String, Object> userDetails = Map.of(
+            "email", "ivan.petrov@yandex.ru",
+            "password", "petrov",
+            "name", "Ivan Petrov",
+            "phone", "+7 123 456 78 90",
+            "address", "Riesstrasse 18"
+        );
+
+        given()
+            .contentType("application/json")
+            .body(userDetails)
+        .when()
+            .post(baseUrlOfSut + "/register")
+        .then()
+            .statusCode(400) // Assuming 400 is returned for EmailExistsException
+            .body("message", containsString("Email already exists"));
+    }
+
+    @Test
+    public void testConstructorExecution() {
+        // Ensure constructor execution by explicitly instantiating the class with mocks
+        UserAccountService mockedUserAccountService = Mockito.mock(UserAccountService.class);
+        AuthenticationService mockedAuthenticationService = Mockito.mock(AuthenticationService.class);
+
+        CustomerRestController controllerInstance = new CustomerRestController(mockedUserAccountService, mockedAuthenticationService);
+        assertNotNull(controllerInstance);
+    }
+
+    @Test
+    public void testCreateCustomerValidationFailure() {
+        Map<String, Object> invalidUserDetails = Map.of(
+            "email", "invalid-email-format",
+            "password", "123", // Too short
+            "name", "!", // Not valid
+            "phone", "invalid-phone",
+            "address", "" // Empty address
+        );
+
+        given()
+            .contentType("application/json")
+            .body(invalidUserDetails)
+        .when()
+            .post(baseUrlOfSut + "/register")
+        .then()
+            .statusCode(400) // Assuming 400 is returned for validation errors
+            .body("message", containsString("Validation failed"));
+    }
+}
+
+*****

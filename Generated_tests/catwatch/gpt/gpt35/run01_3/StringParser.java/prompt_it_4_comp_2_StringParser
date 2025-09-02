@@ -1,0 +1,250 @@
+You are a highly skilled test engineer specializing in debugging and resolving compilation errors and test failures in Java-based projects. Your expertise includes Java 8, JUnit 4, and REST Assured, allowing you to diagnose issues efficiently and provide precise, actionable fixes.
+
+Do fix the compilation errors delimited by ##### given the code below delimited by *****.
+
+The response must contain only Java code in JUnit 4 format.
+
+#####
+[[1;31mERROR[m] COMPILATION ERROR : 
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StringParserTest.java:[96,47] cannot find symbol
+  symbol:   class ParseException
+  location: class org.zalando.catwatch.backend.gpt35_run01_StringParserTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StringParserTest.java:[63,13] cannot find symbol
+  symbol:   class StringParser
+  location: class org.zalando.catwatch.backend.gpt35_run01_StringParserTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StringParserTest.java:[69,9] cannot find symbol
+  symbol:   class Collection
+  location: class org.zalando.catwatch.backend.gpt35_run01_StringParserTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StringParserTest.java:[69,38] cannot find symbol
+  symbol:   variable StringParser
+  location: class org.zalando.catwatch.backend.gpt35_run01_StringParserTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StringParserTest.java:[70,22] cannot find symbol
+  symbol:   variable Collections
+  location: class org.zalando.catwatch.backend.gpt35_run01_StringParserTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StringParserTest.java:[73,9] cannot find symbol
+  symbol:   class Collection
+  location: class org.zalando.catwatch.backend.gpt35_run01_StringParserTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StringParserTest.java:[73,38] cannot find symbol
+  symbol:   variable StringParser
+  location: class org.zalando.catwatch.backend.gpt35_run01_StringParserTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StringParserTest.java:[78,9] cannot find symbol
+  symbol:   class Collection
+  location: class org.zalando.catwatch.backend.gpt35_run01_StringParserTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StringParserTest.java:[78,38] cannot find symbol
+  symbol:   variable StringParser
+  location: class org.zalando.catwatch.backend.gpt35_run01_StringParserTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StringParserTest.java:[85,9] cannot find symbol
+  symbol:   class Date
+  location: class org.zalando.catwatch.backend.gpt35_run01_StringParserTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StringParserTest.java:[85,25] cannot find symbol
+  symbol:   class Date
+  location: class org.zalando.catwatch.backend.gpt35_run01_StringParserTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StringParserTest.java:[86,9] cannot find symbol
+  symbol:   class DateFormat
+  location: class org.zalando.catwatch.backend.gpt35_run01_StringParserTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StringParserTest.java:[86,37] cannot find symbol
+  symbol:   class SimpleDateFormat
+  location: class org.zalando.catwatch.backend.gpt35_run01_StringParserTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StringParserTest.java:[86,82] cannot find symbol
+  symbol:   variable Locale
+  location: class org.zalando.catwatch.backend.gpt35_run01_StringParserTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StringParserTest.java:[87,32] cannot find symbol
+  symbol:   variable TimeZone
+  location: class org.zalando.catwatch.backend.gpt35_run01_StringParserTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StringParserTest.java:[90,25] cannot find symbol
+  symbol:   variable StringParser
+  location: class org.zalando.catwatch.backend.gpt35_run01_StringParserTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StringParserTest.java:[98,9] cannot find symbol
+  symbol:   class Date
+  location: class org.zalando.catwatch.backend.gpt35_run01_StringParserTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StringParserTest.java:[98,61] cannot find symbol
+  symbol:   class ParsePosition
+  location: class org.zalando.catwatch.backend.gpt35_run01_StringParserTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StringParserTest.java:[98,25] cannot find symbol
+  symbol:   variable ISO8601Utils
+  location: class org.zalando.catwatch.backend.gpt35_run01_StringParserTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StringParserTest.java:[99,9] cannot find symbol
+  symbol:   class Date
+  location: class org.zalando.catwatch.backend.gpt35_run01_StringParserTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StringParserTest.java:[99,23] cannot find symbol
+  symbol:   variable StringParser
+  location: class org.zalando.catwatch.backend.gpt35_run01_StringParserTest
+[[1;31mERROR[m] Failed to execute goal [32morg.apache.maven.plugins:maven-compiler-plugin:3.8.0:testCompile[m [1m(default-testCompile)[m on project [36mcatwatch-backend[m: [1;31mCompilation failure[m: Compilation failure: 
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StringParserTest.java:[96,47] cannot find symbol
+[[1;31mERROR[m]   symbol:   class ParseException
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt35_run01_StringParserTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StringParserTest.java:[63,13] cannot find symbol
+[[1;31mERROR[m]   symbol:   class StringParser
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt35_run01_StringParserTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StringParserTest.java:[69,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Collection
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt35_run01_StringParserTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StringParserTest.java:[69,38] cannot find symbol
+[[1;31mERROR[m]   symbol:   variable StringParser
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt35_run01_StringParserTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StringParserTest.java:[70,22] cannot find symbol
+[[1;31mERROR[m]   symbol:   variable Collections
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt35_run01_StringParserTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StringParserTest.java:[73,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Collection
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt35_run01_StringParserTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StringParserTest.java:[73,38] cannot find symbol
+[[1;31mERROR[m]   symbol:   variable StringParser
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt35_run01_StringParserTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StringParserTest.java:[78,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Collection
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt35_run01_StringParserTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StringParserTest.java:[78,38] cannot find symbol
+[[1;31mERROR[m]   symbol:   variable StringParser
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt35_run01_StringParserTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StringParserTest.java:[85,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Date
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt35_run01_StringParserTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StringParserTest.java:[85,25] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Date
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt35_run01_StringParserTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StringParserTest.java:[86,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class DateFormat
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt35_run01_StringParserTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StringParserTest.java:[86,37] cannot find symbol
+[[1;31mERROR[m]   symbol:   class SimpleDateFormat
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt35_run01_StringParserTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StringParserTest.java:[86,82] cannot find symbol
+[[1;31mERROR[m]   symbol:   variable Locale
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt35_run01_StringParserTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StringParserTest.java:[87,32] cannot find symbol
+[[1;31mERROR[m]   symbol:   variable TimeZone
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt35_run01_StringParserTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StringParserTest.java:[90,25] cannot find symbol
+[[1;31mERROR[m]   symbol:   variable StringParser
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt35_run01_StringParserTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StringParserTest.java:[98,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Date
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt35_run01_StringParserTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StringParserTest.java:[98,61] cannot find symbol
+[[1;31mERROR[m]   symbol:   class ParsePosition
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt35_run01_StringParserTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StringParserTest.java:[98,25] cannot find symbol
+[[1;31mERROR[m]   symbol:   variable ISO8601Utils
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt35_run01_StringParserTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StringParserTest.java:[99,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Date
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt35_run01_StringParserTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt35_run01_StringParserTest.java:[99,23] cannot find symbol
+[[1;31mERROR[m]   symbol:   variable StringParser
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt35_run01_StringParserTest
+[[1;31mERROR[m] -> [1m[Help 1][m
+[[1;31mERROR[m] 
+[[1;31mERROR[m] To see the full stack trace of the errors, re-run Maven with the [1m-e[m switch.
+[[1;31mERROR[m] Re-run Maven using the [1m-X[m switch to enable full debug logging.
+[[1;31mERROR[m] 
+[[1;31mERROR[m] For more information about the errors and possible solutions, please read the following articles:
+[[1;31mERROR[m] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+
+#####
+*****
+
+package org.zalando.catwatch.backend;
+
+import org.junit.AfterClass;
+import org.junit.BeforeClass;
+import org.junit.Before;
+import org.junit.Test;
+import static org.junit.Assert.*;
+import java.util.Map;
+import java.util.List;
+import static org.evomaster.client.java.controller.api.EMTestUtils.*;
+import org.evomaster.client.java.controller.SutHandler;
+import io.restassured.RestAssured;
+import static io.restassured.RestAssured.given;
+import io.restassured.response.ValidatableResponse;
+import static org.evomaster.client.java.sql.dsl.SqlDsl.sql;
+import org.evomaster.client.java.controller.api.dto.database.operations.InsertionResultsDto;
+import org.evomaster.client.java.controller.api.dto.database.operations.InsertionDto;
+import static org.hamcrest.Matchers.*;
+import io.restassured.config.JsonConfig;
+import io.restassured.path.json.config.JsonPathConfig;
+import static io.restassured.config.RedirectConfig.redirectConfig;
+import static org.evomaster.client.java.controller.contentMatchers.NumberMatcher.*;
+import static org.evomaster.client.java.controller.contentMatchers.StringMatcher.*;
+import static org.evomaster.client.java.controller.contentMatchers.SubStringMatcher.*;
+import static org.evomaster.client.java.controller.expect.ExpectationHandler.expectationHandler;
+import org.evomaster.client.java.controller.expect.ExpectationHandler;
+import io.restassured.path.json.JsonPath;
+import java.util.Arrays;
+
+public class gpt35_run01_StringParserTest {
+
+    private static final SutHandler controller = new em.embedded.org.zalando.EmbeddedEvoMasterController();
+    private static String baseUrlOfSut;
+
+    @BeforeClass
+    public static void initClass() {
+        controller.setupForGeneratedTest();
+        baseUrlOfSut = controller.startSut();
+        controller.registerOrExecuteInitSqlCommandsIfNeeded();
+        assertNotNull(baseUrlOfSut);
+        RestAssured.enableLoggingOfRequestAndResponseIfValidationFails();
+        RestAssured.useRelaxedHTTPSValidation();
+        RestAssured.urlEncodingEnabled = false;
+        RestAssured.config = RestAssured.config()
+            .jsonConfig(JsonConfig.jsonConfig().numberReturnType(JsonPathConfig.NumberReturnType.DOUBLE))
+            .redirect(redirectConfig().followRedirects(false));
+    }
+
+    @AfterClass
+    public static void tearDown() {
+        controller.stopSut();
+    }
+
+    @Before
+    public void initTest() {
+        controller.resetDatabase(Arrays.asList("CONTRIBUTOR"));
+        controller.resetStateOfSUT();
+    }
+
+    @Test
+    public void testStringParserConstructor() {
+        new StringParser(); // Verifies if the constructor executes successfully
+    }
+
+    @Test
+    public void testParseStringList() {
+        // Test null stringList
+        Collection<String> result1 = StringParser.parseStringList(null, ",");
+        assertEquals(Collections.emptyList(), result1);
+
+        // Test stringList without delimiter
+        Collection<String> result2 = StringParser.parseStringList("foo", ",");
+        List<String> expected2 = Arrays.asList("foo");
+        assertEquals(expected2, result2);
+
+        // Test stringList with delimiter
+        Collection<String> result3 = StringParser.parseStringList("foo,bar,lock", ",");
+        List<String> expected3 = Arrays.asList("foo", "bar", "lock");
+        assertEquals(expected3, result3);
+    }
+
+    @Test
+    public void testGetISO8601StringForDate() {
+        Date date = new Date();
+        DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss'Z'", Locale.GERMANY);
+        dateFormat.setTimeZone(TimeZone.getTimeZone("UTC"));
+        
+        String expected = dateFormat.format(date);
+        String result = StringParser.getISO8601StringForDate(date);
+        
+        assertEquals(expected, result);
+    }
+
+    @Test
+    public void testParseIso8601Date() throws ParseException {
+        String iso8601Date = "2021-01-01T12:00:00Z";
+        Date expected = ISO8601Utils.parse(iso8601Date, new ParsePosition(0));
+        Date result = StringParser.parseIso8601Date(iso8601Date);
+        
+        assertEquals(expected, result);
+    }
+}
+  
+*****

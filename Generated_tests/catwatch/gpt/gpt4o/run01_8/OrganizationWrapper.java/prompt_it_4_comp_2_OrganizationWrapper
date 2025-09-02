@@ -1,0 +1,286 @@
+You are a highly skilled test engineer specializing in debugging and resolving compilation errors and test failures in Java-based projects. Your expertise includes Java 8, JUnit 4, and REST Assured, allowing you to diagnose issues efficiently and provide precise, actionable fixes.
+
+Do fix the compilation errors delimited by ##### given the code below delimited by *****.
+
+The response must contain only Java code in JUnit 4 format.
+
+#####
+[[1;31mERROR[m] COMPILATION ERROR : 
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_OrganizationWrapperTest.java:[70,40] cannot find symbol
+  symbol:   class IOException
+  location: class org.zalando.catwatch.backend.gpt4o_run01_OrganizationWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_OrganizationWrapperTest.java:[89,49] cannot find symbol
+  symbol:   class IOException
+  location: class org.zalando.catwatch.backend.gpt4o_run01_OrganizationWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_OrganizationWrapperTest.java:[64,9] cannot find symbol
+  symbol:   class GHOrganization
+  location: class org.zalando.catwatch.backend.gpt4o_run01_OrganizationWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_OrganizationWrapperTest.java:[64,48] cannot find symbol
+  symbol:   class GHOrganization
+  location: class org.zalando.catwatch.backend.gpt4o_run01_OrganizationWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_OrganizationWrapperTest.java:[65,9] cannot find symbol
+  symbol:   class OrganizationWrapper
+  location: class org.zalando.catwatch.backend.gpt4o_run01_OrganizationWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_OrganizationWrapperTest.java:[65,55] cannot find symbol
+  symbol:   class OrganizationWrapper
+  location: class org.zalando.catwatch.backend.gpt4o_run01_OrganizationWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_OrganizationWrapperTest.java:[72,9] cannot find symbol
+  symbol:   class GHOrganization
+  location: class org.zalando.catwatch.backend.gpt4o_run01_OrganizationWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_OrganizationWrapperTest.java:[72,48] cannot find symbol
+  symbol:   class GHOrganization
+  location: class org.zalando.catwatch.backend.gpt4o_run01_OrganizationWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_OrganizationWrapperTest.java:[73,14] cannot find symbol
+  symbol:   class GHTeam
+  location: class org.zalando.catwatch.backend.gpt4o_run01_OrganizationWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_OrganizationWrapperTest.java:[73,53] cannot find symbol
+  symbol:   class GHTeam
+  location: class org.zalando.catwatch.backend.gpt4o_run01_OrganizationWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_OrganizationWrapperTest.java:[73,73] cannot find symbol
+  symbol:   class GHTeam
+  location: class org.zalando.catwatch.backend.gpt4o_run01_OrganizationWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_OrganizationWrapperTest.java:[76,9] cannot find symbol
+  symbol:   class OrganizationWrapper
+  location: class org.zalando.catwatch.backend.gpt4o_run01_OrganizationWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_OrganizationWrapperTest.java:[76,55] cannot find symbol
+  symbol:   class OrganizationWrapper
+  location: class org.zalando.catwatch.backend.gpt4o_run01_OrganizationWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_OrganizationWrapperTest.java:[77,14] cannot find symbol
+  symbol:   class GHTeam
+  location: class org.zalando.catwatch.backend.gpt4o_run01_OrganizationWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_OrganizationWrapperTest.java:[82,67] cannot find symbol
+  symbol:   class IOException
+  location: class org.zalando.catwatch.backend.gpt4o_run01_OrganizationWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_OrganizationWrapperTest.java:[91,9] cannot find symbol
+  symbol:   class GHOrganization
+  location: class org.zalando.catwatch.backend.gpt4o_run01_OrganizationWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_OrganizationWrapperTest.java:[91,48] cannot find symbol
+  symbol:   class GHOrganization
+  location: class org.zalando.catwatch.backend.gpt4o_run01_OrganizationWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_OrganizationWrapperTest.java:[94,9] cannot find symbol
+  symbol:   class OrganizationWrapper
+  location: class org.zalando.catwatch.backend.gpt4o_run01_OrganizationWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_OrganizationWrapperTest.java:[94,55] cannot find symbol
+  symbol:   class OrganizationWrapper
+  location: class org.zalando.catwatch.backend.gpt4o_run01_OrganizationWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_OrganizationWrapperTest.java:[100,67] cannot find symbol
+  symbol:   class IOException
+  location: class org.zalando.catwatch.backend.gpt4o_run01_OrganizationWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_OrganizationWrapperTest.java:[109,9] cannot find symbol
+  symbol:   class GHRepository
+  location: class org.zalando.catwatch.backend.gpt4o_run01_OrganizationWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_OrganizationWrapperTest.java:[109,44] cannot find symbol
+  symbol:   class GHRepository
+  location: class org.zalando.catwatch.backend.gpt4o_run01_OrganizationWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_OrganizationWrapperTest.java:[117,9] cannot find symbol
+  symbol:   class GHRepository
+  location: class org.zalando.catwatch.backend.gpt4o_run01_OrganizationWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_OrganizationWrapperTest.java:[117,44] cannot find symbol
+  symbol:   class GHRepository
+  location: class org.zalando.catwatch.backend.gpt4o_run01_OrganizationWrapperTest
+[[1;31mERROR[m] Failed to execute goal [32morg.apache.maven.plugins:maven-compiler-plugin:3.8.0:testCompile[m [1m(default-testCompile)[m on project [36mcatwatch-backend[m: [1;31mCompilation failure[m: Compilation failure: 
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_OrganizationWrapperTest.java:[70,40] cannot find symbol
+[[1;31mERROR[m]   symbol:   class IOException
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_OrganizationWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_OrganizationWrapperTest.java:[89,49] cannot find symbol
+[[1;31mERROR[m]   symbol:   class IOException
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_OrganizationWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_OrganizationWrapperTest.java:[64,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class GHOrganization
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_OrganizationWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_OrganizationWrapperTest.java:[64,48] cannot find symbol
+[[1;31mERROR[m]   symbol:   class GHOrganization
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_OrganizationWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_OrganizationWrapperTest.java:[65,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class OrganizationWrapper
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_OrganizationWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_OrganizationWrapperTest.java:[65,55] cannot find symbol
+[[1;31mERROR[m]   symbol:   class OrganizationWrapper
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_OrganizationWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_OrganizationWrapperTest.java:[72,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class GHOrganization
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_OrganizationWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_OrganizationWrapperTest.java:[72,48] cannot find symbol
+[[1;31mERROR[m]   symbol:   class GHOrganization
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_OrganizationWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_OrganizationWrapperTest.java:[73,14] cannot find symbol
+[[1;31mERROR[m]   symbol:   class GHTeam
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_OrganizationWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_OrganizationWrapperTest.java:[73,53] cannot find symbol
+[[1;31mERROR[m]   symbol:   class GHTeam
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_OrganizationWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_OrganizationWrapperTest.java:[73,73] cannot find symbol
+[[1;31mERROR[m]   symbol:   class GHTeam
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_OrganizationWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_OrganizationWrapperTest.java:[76,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class OrganizationWrapper
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_OrganizationWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_OrganizationWrapperTest.java:[76,55] cannot find symbol
+[[1;31mERROR[m]   symbol:   class OrganizationWrapper
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_OrganizationWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_OrganizationWrapperTest.java:[77,14] cannot find symbol
+[[1;31mERROR[m]   symbol:   class GHTeam
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_OrganizationWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_OrganizationWrapperTest.java:[82,67] cannot find symbol
+[[1;31mERROR[m]   symbol:   class IOException
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_OrganizationWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_OrganizationWrapperTest.java:[91,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class GHOrganization
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_OrganizationWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_OrganizationWrapperTest.java:[91,48] cannot find symbol
+[[1;31mERROR[m]   symbol:   class GHOrganization
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_OrganizationWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_OrganizationWrapperTest.java:[94,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class OrganizationWrapper
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_OrganizationWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_OrganizationWrapperTest.java:[94,55] cannot find symbol
+[[1;31mERROR[m]   symbol:   class OrganizationWrapper
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_OrganizationWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_OrganizationWrapperTest.java:[100,67] cannot find symbol
+[[1;31mERROR[m]   symbol:   class IOException
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_OrganizationWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_OrganizationWrapperTest.java:[109,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class GHRepository
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_OrganizationWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_OrganizationWrapperTest.java:[109,44] cannot find symbol
+[[1;31mERROR[m]   symbol:   class GHRepository
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_OrganizationWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_OrganizationWrapperTest.java:[117,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class GHRepository
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_OrganizationWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_OrganizationWrapperTest.java:[117,44] cannot find symbol
+[[1;31mERROR[m]   symbol:   class GHRepository
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_OrganizationWrapperTest
+[[1;31mERROR[m] -> [1m[Help 1][m
+[[1;31mERROR[m] 
+[[1;31mERROR[m] To see the full stack trace of the errors, re-run Maven with the [1m-e[m switch.
+[[1;31mERROR[m] Re-run Maven using the [1m-X[m switch to enable full debug logging.
+[[1;31mERROR[m] 
+[[1;31mERROR[m] For more information about the errors and possible solutions, please read the following articles:
+[[1;31mERROR[m] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+
+#####
+*****
+
+package org.zalando.catwatch.backend;
+
+import org.junit.AfterClass;
+import org.junit.BeforeClass;
+import org.junit.Before;
+import org.junit.Test;
+import static org.junit.Assert.*;
+import java.util.Map;
+import java.util.List;
+import static org.evomaster.client.java.controller.api.EMTestUtils.*;
+import org.evomaster.client.java.controller.SutHandler;
+import io.restassured.RestAssured;
+import static io.restassured.RestAssured.given;
+import io.restassured.response.ValidatableResponse;
+import static org.evomaster.client.java.sql.dsl.SqlDsl.sql;
+import org.evomaster.client.java.controller.api.dto.database.operations.InsertionResultsDto;
+import org.evomaster.client.java.controller.api.dto.database.operations.InsertionDto;
+import static org.hamcrest.Matchers.*;
+import io.restassured.config.JsonConfig;
+import io.restassured.path.json.config.JsonPathConfig;
+import static io.restassured.config.RedirectConfig.redirectConfig;
+import static org.evomaster.client.java.controller.contentMatchers.NumberMatcher.*;
+import static org.evomaster.client.java.controller.contentMatchers.StringMatcher.*;
+import static org.evomaster.client.java.controller.contentMatchers.SubStringMatcher.*;
+import static org.evomaster.client.java.controller.expect.ExpectationHandler.expectationHandler;
+import org.evomaster.client.java.controller.expect.ExpectationHandler;
+import io.restassured.path.json.JsonPath;
+import java.util.Arrays;
+
+public class gpt4o_run01_OrganizationWrapperTest {
+
+    private static final SutHandler controller = new em.embedded.org.zalando.EmbeddedEvoMasterController();
+    private static String baseUrlOfSut;
+
+    @BeforeClass
+    public static void initClass() {
+        controller.setupForGeneratedTest();
+        baseUrlOfSut = controller.startSut();
+        controller.registerOrExecuteInitSqlCommandsIfNeeded();
+        assertNotNull(baseUrlOfSut);
+        RestAssured.enableLoggingOfRequestAndResponseIfValidationFails();
+        RestAssured.useRelaxedHTTPSValidation();
+        RestAssured.urlEncodingEnabled = false;
+        RestAssured.config = RestAssured.config()
+            .jsonConfig(JsonConfig.jsonConfig().numberReturnType(JsonPathConfig.NumberReturnType.DOUBLE))
+            .redirect(redirectConfig().followRedirects(false));
+    }
+
+    @AfterClass
+    public static void tearDown() {
+        controller.stopSut();
+    }
+
+    @Before
+    public void initTest() {
+        controller.resetDatabase(Arrays.asList("CONTRIBUTOR"));
+        controller.resetStateOfSUT();
+    }
+
+    @Test
+    public void testConstructor() {
+        // Test the constructor to ensure it initializes properly
+        GHOrganization mockOrganization = mock(GHOrganization.class);
+        OrganizationWrapper organizationWrapper = new OrganizationWrapper(mockOrganization);
+        assertNotNull(organizationWrapper);
+    }
+
+    @Test
+    public void testListTeams() throws IOException {
+        // Test when teams are available
+        GHOrganization mockOrganization = mock(GHOrganization.class);
+        List<GHTeam> mockTeams = Arrays.asList(mock(GHTeam.class), mock(GHTeam.class));
+        when(mockOrganization.listTeams().asList()).thenReturn(mockTeams);
+
+        OrganizationWrapper organizationWrapper = new OrganizationWrapper(mockOrganization);
+        List<GHTeam> teams = organizationWrapper.listTeams();
+
+        assertEquals(mockTeams.size(), teams.size());
+
+        // Test when an exception occurs
+        when(mockOrganization.listTeams().asList()).thenThrow(new IOException("No teams found"));
+
+        teams = organizationWrapper.listTeams();
+        assertTrue(teams.isEmpty());
+    }
+
+    @Test
+    public void testGetPublicRepoCount() throws IOException {
+        // Test when public repo count is returned successfully
+        GHOrganization mockOrganization = mock(GHOrganization.class);
+        when(mockOrganization.getPublicRepoCount()).thenReturn(5);
+
+        OrganizationWrapper organizationWrapper = new OrganizationWrapper(mockOrganization);
+        int repoCount = organizationWrapper.getPublicRepoCount();
+
+        assertEquals(5, repoCount);
+
+        // Test when an exception occurs
+        when(mockOrganization.getPublicRepoCount()).thenThrow(new IOException("Error fetching repo count"));
+
+        repoCount = organizationWrapper.getPublicRepoCount();
+        assertEquals(0, repoCount);
+    }
+
+    @Test
+    public void testLambdaNew0() {
+        // Test for lambda$new$0 (line 41 in constructor filtering private repositories)
+        GHRepository mockRepository = mock(GHRepository.class);
+        when(mockRepository.isPrivate()).thenReturn(true); // Test private repo
+        assertFalse(mockRepository.isPrivate());
+    }
+
+    @Test
+    public void testLambdaNew1() {
+        // Test for lambda$new$1 (line 42 in constructor filtering forked repositories)
+        GHRepository mockRepository = mock(GHRepository.class);
+        when(mockRepository.isFork()).thenReturn(true); // Test forked repo
+        assertTrue(mockRepository.isFork());
+    }
+}
+
+*****

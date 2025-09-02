@@ -1,0 +1,18 @@
+-------------------------------------------------------------------------------
+Test set: org.zalando.catwatch.backend.gpt4o_run01_LanguagesApiTest
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 1.94 s <<< FAILURE! - in org.zalando.catwatch.backend.gpt4o_run01_LanguagesApiTest
+testLanguagesGetWithInvalidLimit(org.zalando.catwatch.backend.gpt4o_run01_LanguagesApiTest)  Time elapsed: 0.083 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <200> but was <500>.
+
+	at org.zalando.catwatch.backend.gpt4o_run01_LanguagesApiTest.testLanguagesGetWithInvalidLimit(gpt4o_run01_LanguagesApiTest.java:121)
+
+testLanguagesGetWithInvalidOffset(org.zalando.catwatch.backend.gpt4o_run01_LanguagesApiTest)  Time elapsed: 0.048 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <200> but was <500>.
+
+	at org.zalando.catwatch.backend.gpt4o_run01_LanguagesApiTest.testLanguagesGetWithInvalidOffset(gpt4o_run01_LanguagesApiTest.java:131)
+

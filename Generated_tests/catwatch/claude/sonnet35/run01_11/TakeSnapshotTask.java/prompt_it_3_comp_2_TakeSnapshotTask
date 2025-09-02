@@ -1,0 +1,316 @@
+You are a highly skilled test engineer specializing in debugging and resolving compilation errors and test failures in Java-based projects. Your expertise includes Java 8, JUnit 4, and REST Assured, allowing you to diagnose issues efficiently and provide precise, actionable fixes.
+
+Do fix the compilation errors delimited by ##### given the code below delimited by *****.
+
+The response must contain only Java code in JUnit 4 format.
+
+#####
+[[1;31mERROR[m] COMPILATION ERROR : 
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[84,41] no suitable method found for thenReturn(long)
+    method org.mockito.stubbing.OngoingStubbing.thenReturn(java.lang.Integer) is not applicable
+      (argument mismatch; long cannot be converted to java.lang.Integer)
+    method org.mockito.stubbing.OngoingStubbing.thenReturn(java.lang.Integer,java.lang.Integer...) is not applicable
+      (argument mismatch; long cannot be converted to java.lang.Integer)
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[101,41] no suitable method found for thenReturn(long)
+    method org.mockito.stubbing.OngoingStubbing.thenReturn(java.lang.Integer) is not applicable
+      (argument mismatch; long cannot be converted to java.lang.Integer)
+    method org.mockito.stubbing.OngoingStubbing.thenReturn(java.lang.Integer,java.lang.Integer...) is not applicable
+      (argument mismatch; long cannot be converted to java.lang.Integer)
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[105,37] collectStatistics(org.zalando.catwatch.backend.github.OrganizationWrapper) is not public in org.zalando.catwatch.backend.github.TakeSnapshotTask; cannot be accessed from outside package
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[125,9] cannot find symbol
+  symbol:   class Collection
+  location: class org.zalando.catwatch.backend.sonnet35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[125,44] collectProjects(org.zalando.catwatch.backend.github.OrganizationWrapper) is not public in org.zalando.catwatch.backend.github.TakeSnapshotTask; cannot be accessed from outside package
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[139,9] cannot find symbol
+  symbol:   class RepositoryWrapper
+  location: class org.zalando.catwatch.backend.sonnet35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[139,54] cannot find symbol
+  symbol:   class RepositoryWrapper
+  location: class org.zalando.catwatch.backend.sonnet35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[157,9] cannot find symbol
+  symbol:   class RepositoryWrapper
+  location: class org.zalando.catwatch.backend.sonnet35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[157,54] cannot find symbol
+  symbol:   class RepositoryWrapper
+  location: class org.zalando.catwatch.backend.sonnet35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[177,41] no suitable method found for thenReturn(long)
+    method org.mockito.stubbing.OngoingStubbing.thenReturn(java.lang.Integer) is not applicable
+      (argument mismatch; long cannot be converted to java.lang.Integer)
+    method org.mockito.stubbing.OngoingStubbing.thenReturn(java.lang.Integer,java.lang.Integer...) is not applicable
+      (argument mismatch; long cannot be converted to java.lang.Integer)
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[181,9] cannot find symbol
+  symbol:   class Collection
+  location: class org.zalando.catwatch.backend.sonnet35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[181,52] collectContributors(org.zalando.catwatch.backend.github.OrganizationWrapper) is not public in org.zalando.catwatch.backend.github.TakeSnapshotTask; cannot be accessed from outside package
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[197,9] cannot find symbol
+  symbol:   class Collection
+  location: class org.zalando.catwatch.backend.sonnet35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[197,46] collectLanguages(org.zalando.catwatch.backend.github.OrganizationWrapper) is not public in org.zalando.catwatch.backend.github.TakeSnapshotTask; cannot be accessed from outside package
+[[1;31mERROR[m] Failed to execute goal [32morg.apache.maven.plugins:maven-compiler-plugin:3.8.0:testCompile[m [1m(default-testCompile)[m on project [36mcatwatch-backend[m: [1;31mCompilation failure[m: Compilation failure: 
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[84,41] no suitable method found for thenReturn(long)
+[[1;31mERROR[m]     method org.mockito.stubbing.OngoingStubbing.thenReturn(java.lang.Integer) is not applicable
+[[1;31mERROR[m]       (argument mismatch; long cannot be converted to java.lang.Integer)
+[[1;31mERROR[m]     method org.mockito.stubbing.OngoingStubbing.thenReturn(java.lang.Integer,java.lang.Integer...) is not applicable
+[[1;31mERROR[m]       (argument mismatch; long cannot be converted to java.lang.Integer)
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[101,41] no suitable method found for thenReturn(long)
+[[1;31mERROR[m]     method org.mockito.stubbing.OngoingStubbing.thenReturn(java.lang.Integer) is not applicable
+[[1;31mERROR[m]       (argument mismatch; long cannot be converted to java.lang.Integer)
+[[1;31mERROR[m]     method org.mockito.stubbing.OngoingStubbing.thenReturn(java.lang.Integer,java.lang.Integer...) is not applicable
+[[1;31mERROR[m]       (argument mismatch; long cannot be converted to java.lang.Integer)
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[105,37] collectStatistics(org.zalando.catwatch.backend.github.OrganizationWrapper) is not public in org.zalando.catwatch.backend.github.TakeSnapshotTask; cannot be accessed from outside package
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[125,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Collection
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[125,44] collectProjects(org.zalando.catwatch.backend.github.OrganizationWrapper) is not public in org.zalando.catwatch.backend.github.TakeSnapshotTask; cannot be accessed from outside package
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[139,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class RepositoryWrapper
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[139,54] cannot find symbol
+[[1;31mERROR[m]   symbol:   class RepositoryWrapper
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[157,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class RepositoryWrapper
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[157,54] cannot find symbol
+[[1;31mERROR[m]   symbol:   class RepositoryWrapper
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[177,41] no suitable method found for thenReturn(long)
+[[1;31mERROR[m]     method org.mockito.stubbing.OngoingStubbing.thenReturn(java.lang.Integer) is not applicable
+[[1;31mERROR[m]       (argument mismatch; long cannot be converted to java.lang.Integer)
+[[1;31mERROR[m]     method org.mockito.stubbing.OngoingStubbing.thenReturn(java.lang.Integer,java.lang.Integer...) is not applicable
+[[1;31mERROR[m]       (argument mismatch; long cannot be converted to java.lang.Integer)
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[181,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Collection
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[181,52] collectContributors(org.zalando.catwatch.backend.github.OrganizationWrapper) is not public in org.zalando.catwatch.backend.github.TakeSnapshotTask; cannot be accessed from outside package
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[197,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Collection
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_TakeSnapshotTaskTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_TakeSnapshotTaskTest.java:[197,46] collectLanguages(org.zalando.catwatch.backend.github.OrganizationWrapper) is not public in org.zalando.catwatch.backend.github.TakeSnapshotTask; cannot be accessed from outside package
+[[1;31mERROR[m] -> [1m[Help 1][m
+[[1;31mERROR[m] 
+[[1;31mERROR[m] To see the full stack trace of the errors, re-run Maven with the [1m-e[m switch.
+[[1;31mERROR[m] Re-run Maven using the [1m-X[m switch to enable full debug logging.
+[[1;31mERROR[m] 
+[[1;31mERROR[m] For more information about the errors and possible solutions, please read the following articles:
+[[1;31mERROR[m] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+
+#####
+*****
+package org.zalando.catwatch.backend;
+
+import org.junit.AfterClass;
+import org.junit.BeforeClass;
+import org.junit.Before;
+import org.junit.Test;
+import static org.junit.Assert.*;
+import java.util.Map;
+import java.util.List;
+import static org.evomaster.client.java.controller.api.EMTestUtils.*;
+import org.evomaster.client.java.controller.SutHandler;
+import io.restassured.RestAssured;
+import static io.restassured.RestAssured.given;
+import io.restassured.response.ValidatableResponse;
+import static org.evomaster.client.java.sql.dsl.SqlDsl.sql;
+import org.evomaster.client.java.controller.api.dto.database.operations.InsertionResultsDto;
+import org.evomaster.client.java.controller.api.dto.database.operations.InsertionDto;
+import static org.hamcrest.Matchers.*;
+import io.restassured.config.JsonConfig;
+import io.restassured.path.json.config.JsonPathConfig;
+import static io.restassured.config.RedirectConfig.redirectConfig;
+import static org.evomaster.client.java.controller.contentMatchers.NumberMatcher.*;
+import static org.evomaster.client.java.controller.contentMatchers.StringMatcher.*;
+import static org.evomaster.client.java.controller.contentMatchers.SubStringMatcher.*;
+import static org.evomaster.client.java.controller.expect.ExpectationHandler.expectationHandler;
+import org.evomaster.client.java.controller.expect.ExpectationHandler;
+import io.restassured.path.json.JsonPath;
+import java.util.Arrays;
+import org.zalando.catwatch.backend.github.TakeSnapshotTask;
+import org.kohsuke.github.GitHub;
+import org.zalando.catwatch.backend.model.util.Scorer;
+import java.util.Date;
+import java.util.concurrent.Callable;
+import org.zalando.catwatch.backend.github.Snapshot;
+import org.zalando.catwatch.backend.github.OrganizationWrapper;
+import org.mockito.Mockito;
+import java.io.IOException;
+import java.net.URISyntaxException;
+import java.util.ArrayList;
+import org.zalando.catwatch.backend.model.Project;
+import org.zalando.catwatch.backend.model.Contributor;
+import org.zalando.catwatch.backend.model.Language;
+import org.zalando.catwatch.backend.model.Statistics;
+
+public class sonnet35_run01_TakeSnapshotTaskTest {
+
+    private static final SutHandler controller = new em.embedded.org.zalando.EmbeddedEvoMasterController();
+    private static String baseUrlOfSut;
+
+    @BeforeClass
+    public static void initClass() {
+        controller.setupForGeneratedTest();
+        baseUrlOfSut = controller.startSut();
+        controller.registerOrExecuteInitSqlCommandsIfNeeded();
+        assertNotNull(baseUrlOfSut);
+        RestAssured.enableLoggingOfRequestAndResponseIfValidationFails();
+        RestAssured.useRelaxedHTTPSValidation();
+        RestAssured.urlEncodingEnabled = false;
+        RestAssured.config = RestAssured.config()
+            .jsonConfig(JsonConfig.jsonConfig().numberReturnType(JsonPathConfig.NumberReturnType.DOUBLE))
+            .redirect(redirectConfig().followRedirects(false));
+    }
+
+    @AfterClass
+    public static void tearDown() {
+        controller.stopSut();
+    }
+
+    @Before
+    public void initTest() {
+        controller.resetDatabase(Arrays.asList("CONTRIBUTOR"));
+        controller.resetStateOfSUT();
+    }
+
+    @Test
+    public void testCall() throws Exception {
+        GitHub gitHub = Mockito.mock(GitHub.class);
+        String organizationName = "testOrg";
+        Scorer scorer = Mockito.mock(Scorer.class);
+        Date snapshotDate = new Date();
+
+        OrganizationWrapper orgWrapper = Mockito.mock(OrganizationWrapper.class);
+        Mockito.when(gitHub.getOrganization(organizationName)).thenReturn(null);
+        Mockito.when(orgWrapper.getId()).thenReturn(1L);
+
+        TakeSnapshotTask task = new TakeSnapshotTask(gitHub, organizationName, scorer, snapshotDate);
+        Snapshot snapshot = task.call();
+
+        assertNotNull(snapshot);
+        // Add more assertions based on the expected behavior
+    }
+
+    @Test
+    public void testCollectStatistics() throws IOException {
+        GitHub gitHub = Mockito.mock(GitHub.class);
+        String organizationName = "testOrg";
+        Scorer scorer = Mockito.mock(Scorer.class);
+        Date snapshotDate = new Date();
+
+        OrganizationWrapper orgWrapper = Mockito.mock(OrganizationWrapper.class);
+        Mockito.when(orgWrapper.getId()).thenReturn(1L);
+        Mockito.when(orgWrapper.getLogin()).thenReturn(organizationName);
+
+        TakeSnapshotTask task = new TakeSnapshotTask(gitHub, organizationName, scorer, snapshotDate);
+        Statistics statistics = task.collectStatistics(orgWrapper);
+
+        assertNotNull(statistics);
+        assertEquals(1L, statistics.getId());
+        assertEquals(organizationName, statistics.getOrganizationName());
+        assertEquals(snapshotDate, statistics.getSnapshotDate());
+        // Add more assertions for other statistics fields
+    }
+
+    @Test
+    public void testCollectProjects() throws IOException, URISyntaxException {
+        GitHub gitHub = Mockito.mock(GitHub.class);
+        String organizationName = "testOrg";
+        Scorer scorer = Mockito.mock(Scorer.class);
+        Date snapshotDate = new Date();
+
+        OrganizationWrapper orgWrapper = Mockito.mock(OrganizationWrapper.class);
+        Mockito.when(orgWrapper.getLogin()).thenReturn(organizationName);
+
+        TakeSnapshotTask task = new TakeSnapshotTask(gitHub, organizationName, scorer, snapshotDate);
+        Collection<Project> projects = task.collectProjects(orgWrapper);
+
+        assertNotNull(projects);
+        // Add more assertions based on the expected behavior
+    }
+
+    @Test
+    public void testGetProjectMaintainers() throws IOException {
+        GitHub gitHub = Mockito.mock(GitHub.class);
+        String organizationName = "testOrg";
+        Scorer scorer = Mockito.mock(Scorer.class);
+        Date snapshotDate = new Date();
+
+        TakeSnapshotTask task = new TakeSnapshotTask(gitHub, organizationName, scorer, snapshotDate);
+        RepositoryWrapper repoWrapper = Mockito.mock(RepositoryWrapper.class);
+        
+        Mockito.when(repoWrapper.getFileContent("MAINTAINERS")).thenReturn("maintainer1\nmaintainer2");
+        List<String> maintainers = task.getProjectMaintainers(repoWrapper);
+
+        assertEquals(2, maintainers.size());
+        assertTrue(maintainers.contains("maintainer1"));
+        assertTrue(maintainers.contains("maintainer2"));
+    }
+
+    @Test
+    public void testReadCatwatchYaml() throws IOException {
+        GitHub gitHub = Mockito.mock(GitHub.class);
+        String organizationName = "testOrg";
+        Scorer scorer = Mockito.mock(Scorer.class);
+        Date snapshotDate = new Date();
+
+        TakeSnapshotTask task = new TakeSnapshotTask(gitHub, organizationName, scorer, snapshotDate);
+        RepositoryWrapper repoWrapper = Mockito.mock(RepositoryWrapper.class);
+        Project project = new Project();
+
+        String yamlContent = "title: Test Project\nimage: http://example.com/image.png";
+        Mockito.when(repoWrapper.getFileContent(".catwatch.yaml")).thenReturn(yamlContent);
+
+        task.readCatwatchYaml(repoWrapper, project);
+
+        assertEquals("Test Project", project.getTitle());
+        assertEquals("http://example.com/image.png", project.getImage());
+    }
+
+    @Test
+    public void testCollectContributors() throws IOException, URISyntaxException {
+        GitHub gitHub = Mockito.mock(GitHub.class);
+        String organizationName = "testOrg";
+        Scorer scorer = Mockito.mock(Scorer.class);
+        Date snapshotDate = new Date();
+
+        OrganizationWrapper orgWrapper = Mockito.mock(OrganizationWrapper.class);
+        Mockito.when(orgWrapper.getId()).thenReturn(1L);
+        Mockito.when(orgWrapper.getLogin()).thenReturn(organizationName);
+
+        TakeSnapshotTask task = new TakeSnapshotTask(gitHub, organizationName, scorer, snapshotDate);
+        Collection<Contributor> contributors = task.collectContributors(orgWrapper);
+
+        assertNotNull(contributors);
+        // Add more assertions based on the expected behavior
+    }
+
+    @Test
+    public void testCollectLanguages() {
+        GitHub gitHub = Mockito.mock(GitHub.class);
+        String organizationName = "testOrg";
+        Scorer scorer = Mockito.mock(Scorer.class);
+        Date snapshotDate = new Date();
+
+        OrganizationWrapper orgWrapper = Mockito.mock(OrganizationWrapper.class);
+
+        TakeSnapshotTask task = new TakeSnapshotTask(gitHub, organizationName, scorer, snapshotDate);
+        Collection<Language> languages = task.collectLanguages(orgWrapper);
+
+        assertNotNull(languages);
+        // Add more assertions based on the expected behavior
+    }
+
+    @Test
+    public void testConstructor() {
+        GitHub gitHub = Mockito.mock(GitHub.class);
+        String organizationName = "testOrg";
+        Scorer scorer = Mockito.mock(Scorer.class);
+        Date snapshotDate = new Date();
+
+        TakeSnapshotTask task = new TakeSnapshotTask(gitHub, organizationName, scorer, snapshotDate);
+
+        assertNotNull(task);
+        // Add more assertions to verify the object state if needed
+    }
+}
+
+*****

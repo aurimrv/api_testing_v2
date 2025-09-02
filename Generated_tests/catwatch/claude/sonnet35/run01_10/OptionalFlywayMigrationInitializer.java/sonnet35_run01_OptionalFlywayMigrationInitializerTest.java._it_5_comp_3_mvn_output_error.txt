@@ -1,0 +1,35 @@
+[[1;31mERROR[m] COMPILATION ERROR : 
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_OptionalFlywayMigrationInitializerTest.java:[10,33] package org.powermock.api.mockito does not exist
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_OptionalFlywayMigrationInitializerTest.java:[11,50] package org.powermock.core.classloader.annotations does not exist
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_OptionalFlywayMigrationInitializerTest.java:[12,36] package org.powermock.modules.junit4 does not exist
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_OptionalFlywayMigrationInitializerTest.java:[17,2] cannot find symbol
+  symbol: class PrepareForTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_OptionalFlywayMigrationInitializerTest.java:[16,10] cannot find symbol
+  symbol: class PowerMockRunner
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_OptionalFlywayMigrationInitializerTest.java:[44,9] cannot find symbol
+  symbol:   variable PowerMockito
+  location: class org.zalando.catwatch.backend.sonnet35_run01_OptionalFlywayMigrationInitializerTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_OptionalFlywayMigrationInitializerTest.java:[67,9] cannot find symbol
+  symbol:   variable PowerMockito
+  location: class org.zalando.catwatch.backend.sonnet35_run01_OptionalFlywayMigrationInitializerTest
+[[1;31mERROR[m] Failed to execute goal [32morg.apache.maven.plugins:maven-compiler-plugin:3.8.0:testCompile[m [1m(default-testCompile)[m on project [36mcatwatch-backend[m: [1;31mCompilation failure[m: Compilation failure: 
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_OptionalFlywayMigrationInitializerTest.java:[10,33] package org.powermock.api.mockito does not exist
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_OptionalFlywayMigrationInitializerTest.java:[11,50] package org.powermock.core.classloader.annotations does not exist
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_OptionalFlywayMigrationInitializerTest.java:[12,36] package org.powermock.modules.junit4 does not exist
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_OptionalFlywayMigrationInitializerTest.java:[17,2] cannot find symbol
+[[1;31mERROR[m]   symbol: class PrepareForTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_OptionalFlywayMigrationInitializerTest.java:[16,10] cannot find symbol
+[[1;31mERROR[m]   symbol: class PowerMockRunner
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_OptionalFlywayMigrationInitializerTest.java:[44,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   variable PowerMockito
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_OptionalFlywayMigrationInitializerTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_OptionalFlywayMigrationInitializerTest.java:[67,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   variable PowerMockito
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_OptionalFlywayMigrationInitializerTest
+[[1;31mERROR[m] -> [1m[Help 1][m
+[[1;31mERROR[m] 
+[[1;31mERROR[m] To see the full stack trace of the errors, re-run Maven with the [1m-e[m switch.
+[[1;31mERROR[m] Re-run Maven using the [1m-X[m switch to enable full debug logging.
+[[1;31mERROR[m] 
+[[1;31mERROR[m] For more information about the errors and possible solutions, please read the following articles:
+[[1;31mERROR[m] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

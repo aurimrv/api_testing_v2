@@ -1,0 +1,97 @@
+package org.zalando.catwatch.backend;
+
+import org.junit.AfterClass;
+import org.junit.BeforeClass;
+import org.junit.Before;
+import org.junit.Test;
+import static org.junit.Assert.*;
+import java.util.Arrays;
+
+import org.zalando.catwatch.backend.repo.ContributorRepository;
+import org.zalando.catwatch.backend.repo.ProjectRepository;
+import org.zalando.catwatch.backend.repo.StatisticsRepository;
+import org.zalando.catwatch.backend.repo.util.DatabasePopulator;
+import org.springframework.jdbc.core.JdbcTemplate;
+import org.mockito.Mock;
+import org.mockito.MockitoAnnotations;
+import static org.mockito.Mockito.*;
+
+import org.evomaster.client.java.controller.SutHandler;
+import io.restassured.RestAssured;
+import io.restassured.config.JsonConfig;
+import io.restassured.path.json.config.JsonPathConfig;
+import static io.restassured.config.RedirectConfig.redirectConfig;
+
+public class sonnet35_run01_DatabasePopulatorTest {
+
+    private static final SutHandler controller = new em.embedded.org.zalando.EmbeddedEvoMasterController();
+    private static String baseUrlOfSut;
+
+    @Mock
+    private StatisticsRepository statisticsRepository;
+
+    @Mock
+    private ProjectRepository projectRepository;
+
+    @Mock
+    private ContributorRepository contributorRepository;
+
+    @Mock
+    private JdbcTemplate jdbcTemplate;
+
+    private DatabasePopulator databasePopulator;
+
+    @BeforeClass
+    public static void initClass() {
+        controller.setupForGeneratedTest();
+        baseUrlOfSut = controller.startSut();
+        controller.registerOrExecuteInitSqlCommandsIfNeeded();
+        assertNotNull(baseUrlOfSut);
+        RestAssured.enableLoggingOfRequestAndResponseIfValidationFails();
+        RestAssured.useRelaxedHTTPSValidation();
+        RestAssured.urlEncodingEnabled = false;
+        RestAssured.config = RestAssured.config()
+            .jsonConfig(JsonConfig.jsonConfig().numberReturnType(JsonPathConfig.NumberReturnType.DOUBLE))
+            .redirect(redirectConfig().followRedirects(false));
+    }
+
+    @AfterClass
+    public static void tearDown() {
+        controller.stopSut();
+    }
+
+    @Before
+    public void initTest() {
+        controller.resetDatabase(Arrays.asList("CONTRIBUTOR"));
+        controller.resetStateOfSUT();
+        MockitoAnnotations.initMocks(this);
+        databasePopulator = new DatabasePopulator(statisticsRepository, projectRepository, contributorRepository, jdbcTemplate);
+    }
+
+    @Test
+    public void testPopulateTestData_DatabaseAvailable() {
+        when(jdbcTemplate.queryForObject(anyString(), eq(Integer.class))).thenReturn(1);
+
+        databasePopulator.populateTestData();
+
+        verify(statisticsRepository, times(2)).save(any(Iterable.class));
+        verify(projectRepository, times(1000)).save(any(Iterable.class));
+        verify(contributorRepository, times(2)).save(any(Iterable.class));
+    }
+
+    @Test
+    public void testPopulateTestData_DatabaseUnavailable() {
+        when(jdbcTemplate.queryForObject(anyString(), eq(Integer.class))).thenThrow(new RuntimeException("Database unavailable"));
+
+        databasePopulator.populateTestData();
+
+        verify(statisticsRepository, never()).save(any(Iterable.class));
+        verify(projectRepository, never()).save(any(Iterable.class));
+        verify(contributorRepository, never()).save(any(Iterable.class));
+    }
+
+    @Test
+    public void testDatabasePopulatorConstructor() {
+        assertNotNull(databasePopulator);
+    }
+}

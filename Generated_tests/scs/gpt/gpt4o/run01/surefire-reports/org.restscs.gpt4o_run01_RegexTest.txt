@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: org.restscs.gpt4o_run01_RegexTest
+-------------------------------------------------------------------------------
+Tests run: 8, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.707 s <<< FAILURE! - in org.restscs.gpt4o_run01_RegexTest
+testSubjectInvalidDate(org.restscs.gpt4o_run01_RegexTest)  Time elapsed: 0 s  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[non]e> but was:<[dat]e>
+	at org.restscs.gpt4o_run01_RegexTest.testSubjectInvalidDate(gpt4o_run01_RegexTest.java:108)
+

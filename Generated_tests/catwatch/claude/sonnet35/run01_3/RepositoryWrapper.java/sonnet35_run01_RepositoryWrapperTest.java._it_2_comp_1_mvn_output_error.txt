@@ -1,0 +1,67 @@
+[[1;31mERROR[m] COMPILATION ERROR : 
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_RepositoryWrapperTest.java:[71,29] RepositoryWrapper(org.kohsuke.github.GHRepository,org.kohsuke.github.GHOrganization) is not public in org.zalando.catwatch.backend.github.RepositoryWrapper; cannot be accessed from outside package
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_RepositoryWrapperTest.java:[132,46] cannot find symbol
+  symbol:   method of(java.lang.String,long,java.lang.String,long)
+  location: interface java.util.Map
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_RepositoryWrapperTest.java:[153,14] cannot find symbol
+  symbol:   class GHCommit
+  location: class org.zalando.catwatch.backend.sonnet35_run01_RepositoryWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_RepositoryWrapperTest.java:[153,95] cannot find symbol
+  symbol:   class GHCommit
+  location: class org.zalando.catwatch.backend.sonnet35_run01_RepositoryWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_RepositoryWrapperTest.java:[153,65] cannot find symbol
+  symbol:   class GHCommit
+  location: class org.zalando.catwatch.backend.sonnet35_run01_RepositoryWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_RepositoryWrapperTest.java:[172,50] no suitable method found for thenReturn(org.zalando.catwatch.backend.sonnet35_run01_RepositoryWrapperTest.MockPagedIterable<org.kohsuke.github.GHRepository.Contributor>)
+    method org.mockito.stubbing.OngoingStubbing.thenReturn(org.kohsuke.github.PagedIterable<org.kohsuke.github.GHRepository.Contributor>) is not applicable
+      (argument mismatch; cannot infer type arguments for org.zalando.catwatch.backend.sonnet35_run01_RepositoryWrapperTest.MockPagedIterable<>
+          reason: no instance(s) of type variable(s) T exist so that org.zalando.catwatch.backend.sonnet35_run01_RepositoryWrapperTest.MockPagedIterable<T> conforms to org.kohsuke.github.PagedIterable<org.kohsuke.github.GHRepository.Contributor>)
+    method org.mockito.stubbing.OngoingStubbing.thenReturn(org.kohsuke.github.PagedIterable<org.kohsuke.github.GHRepository.Contributor>,org.kohsuke.github.PagedIterable<org.kohsuke.github.GHRepository.Contributor>...) is not applicable
+      (argument mismatch; cannot infer type arguments for org.zalando.catwatch.backend.sonnet35_run01_RepositoryWrapperTest.MockPagedIterable<>
+          reason: no instance(s) of type variable(s) T exist so that org.zalando.catwatch.backend.sonnet35_run01_RepositoryWrapperTest.MockPagedIterable<T> conforms to org.kohsuke.github.PagedIterable<org.kohsuke.github.GHRepository.Contributor>)
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_RepositoryWrapperTest.java:[186,14] cannot find symbol
+  symbol:   class GHTag
+  location: class org.zalando.catwatch.backend.sonnet35_run01_RepositoryWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_RepositoryWrapperTest.java:[186,86] cannot find symbol
+  symbol:   class GHTag
+  location: class org.zalando.catwatch.backend.sonnet35_run01_RepositoryWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_RepositoryWrapperTest.java:[186,59] cannot find symbol
+  symbol:   class GHTag
+  location: class org.zalando.catwatch.backend.sonnet35_run01_RepositoryWrapperTest
+[[1;31mERROR[m] Failed to execute goal [32morg.apache.maven.plugins:maven-compiler-plugin:3.8.0:testCompile[m [1m(default-testCompile)[m on project [36mcatwatch-backend[m: [1;31mCompilation failure[m: Compilation failure: 
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_RepositoryWrapperTest.java:[71,29] RepositoryWrapper(org.kohsuke.github.GHRepository,org.kohsuke.github.GHOrganization) is not public in org.zalando.catwatch.backend.github.RepositoryWrapper; cannot be accessed from outside package
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_RepositoryWrapperTest.java:[132,46] cannot find symbol
+[[1;31mERROR[m]   symbol:   method of(java.lang.String,long,java.lang.String,long)
+[[1;31mERROR[m]   location: interface java.util.Map
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_RepositoryWrapperTest.java:[153,14] cannot find symbol
+[[1;31mERROR[m]   symbol:   class GHCommit
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_RepositoryWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_RepositoryWrapperTest.java:[153,95] cannot find symbol
+[[1;31mERROR[m]   symbol:   class GHCommit
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_RepositoryWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_RepositoryWrapperTest.java:[153,65] cannot find symbol
+[[1;31mERROR[m]   symbol:   class GHCommit
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_RepositoryWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_RepositoryWrapperTest.java:[172,50] no suitable method found for thenReturn(org.zalando.catwatch.backend.sonnet35_run01_RepositoryWrapperTest.MockPagedIterable<org.kohsuke.github.GHRepository.Contributor>)
+[[1;31mERROR[m]     method org.mockito.stubbing.OngoingStubbing.thenReturn(org.kohsuke.github.PagedIterable<org.kohsuke.github.GHRepository.Contributor>) is not applicable
+[[1;31mERROR[m]       (argument mismatch; cannot infer type arguments for org.zalando.catwatch.backend.sonnet35_run01_RepositoryWrapperTest.MockPagedIterable<>
+[[1;31mERROR[m]           reason: no instance(s) of type variable(s) T exist so that org.zalando.catwatch.backend.sonnet35_run01_RepositoryWrapperTest.MockPagedIterable<T> conforms to org.kohsuke.github.PagedIterable<org.kohsuke.github.GHRepository.Contributor>)
+[[1;31mERROR[m]     method org.mockito.stubbing.OngoingStubbing.thenReturn(org.kohsuke.github.PagedIterable<org.kohsuke.github.GHRepository.Contributor>,org.kohsuke.github.PagedIterable<org.kohsuke.github.GHRepository.Contributor>...) is not applicable
+[[1;31mERROR[m]       (argument mismatch; cannot infer type arguments for org.zalando.catwatch.backend.sonnet35_run01_RepositoryWrapperTest.MockPagedIterable<>
+[[1;31mERROR[m]           reason: no instance(s) of type variable(s) T exist so that org.zalando.catwatch.backend.sonnet35_run01_RepositoryWrapperTest.MockPagedIterable<T> conforms to org.kohsuke.github.PagedIterable<org.kohsuke.github.GHRepository.Contributor>)
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_RepositoryWrapperTest.java:[186,14] cannot find symbol
+[[1;31mERROR[m]   symbol:   class GHTag
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_RepositoryWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_RepositoryWrapperTest.java:[186,86] cannot find symbol
+[[1;31mERROR[m]   symbol:   class GHTag
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_RepositoryWrapperTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_RepositoryWrapperTest.java:[186,59] cannot find symbol
+[[1;31mERROR[m]   symbol:   class GHTag
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_RepositoryWrapperTest
+[[1;31mERROR[m] -> [1m[Help 1][m
+[[1;31mERROR[m] 
+[[1;31mERROR[m] To see the full stack trace of the errors, re-run Maven with the [1m-e[m switch.
+[[1;31mERROR[m] Re-run Maven using the [1m-X[m switch to enable full debug logging.
+[[1;31mERROR[m] 
+[[1;31mERROR[m] For more information about the errors and possible solutions, please read the following articles:
+[[1;31mERROR[m] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

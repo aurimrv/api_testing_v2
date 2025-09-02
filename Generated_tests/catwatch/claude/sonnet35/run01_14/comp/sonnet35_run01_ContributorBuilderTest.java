@@ -1,0 +1,114 @@
+package org.zalando.catwatch.backend;
+
+import org.junit.AfterClass;
+import org.junit.BeforeClass;
+import org.junit.Before;
+import org.junit.Test;
+import static org.junit.Assert.*;
+import java.util.Arrays;
+import java.util.Date;
+import org.zalando.catwatch.backend.model.Contributor;
+import org.zalando.catwatch.backend.repo.ContributorRepository;
+import org.mockito.Mock;
+import org.mockito.MockitoAnnotations;
+import static org.mockito.Mockito.*;
+import org.evomaster.client.java.controller.SutHandler;
+import io.restassured.RestAssured;
+import io.restassured.config.JsonConfig;
+import io.restassured.path.json.config.JsonPathConfig;
+import static io.restassured.config.RedirectConfig.redirectConfig;
+
+public class sonnet35_run01_ContributorBuilderTest {
+
+    private static final SutHandler controller = new em.embedded.org.zalando.EmbeddedEvoMasterController();
+    private static String baseUrlOfSut;
+
+    @Mock
+    private ContributorRepository contributorRepository;
+
+    private org.zalando.catwatch.backend.repo.builder.ContributorBuilder contributorBuilder;
+
+    @BeforeClass
+    public static void initClass() {
+        controller.setupForGeneratedTest();
+        baseUrlOfSut = controller.startSut();
+        controller.registerOrExecuteInitSqlCommandsIfNeeded();
+        assertNotNull(baseUrlOfSut);
+        RestAssured.enableLoggingOfRequestAndResponseIfValidationFails();
+        RestAssured.useRelaxedHTTPSValidation();
+        RestAssured.urlEncodingEnabled = false;
+        RestAssured.config = RestAssured.config()
+            .jsonConfig(JsonConfig.jsonConfig().numberReturnType(JsonPathConfig.NumberReturnType.DOUBLE))
+            .redirect(redirectConfig().followRedirects(false));
+    }
+
+    @AfterClass
+    public static void tearDown() {
+        controller.stopSut();
+    }
+
+    @Before
+    public void initTest() {
+        controller.resetDatabase(Arrays.asList("CONTRIBUTOR"));
+        controller.resetStateOfSUT();
+        MockitoAnnotations.initMocks(this);
+        contributorBuilder = new org.zalando.catwatch.backend.repo.builder.ContributorBuilder(contributorRepository);
+    }
+
+    @Test
+    public void testSave() {
+        Contributor contributor = contributorBuilder.create();
+        when(contributorRepository.save(any(Contributor.class))).thenReturn(contributor);
+
+        Contributor savedContributor = contributorBuilder.save();
+
+        assertNotNull(savedContributor);
+        verify(contributorRepository).save(any(Contributor.class));
+    }
+
+    @Test
+    public void testSaveWithCustomValues() {
+        contributorBuilder
+            .id(123L)
+            .url("https://github.com/testuser")
+            .name("Test User")
+            .organizationName("Test Org")
+            .organizationId(456L)
+            .orgCommits(100)
+            .orgProjects(10)
+            .persProjects(5)
+            .persCommits(50)
+            .snapshotDate(new Date());
+
+        Contributor contributor = contributorBuilder.create();
+        when(contributorRepository.save(any(Contributor.class))).thenReturn(contributor);
+
+        Contributor savedContributor = contributorBuilder.save();
+
+        assertNotNull(savedContributor);
+        assertEquals(123L, savedContributor.getId());
+        assertEquals("https://github.com/testuser", savedContributor.getUrl());
+        assertEquals("Test User", savedContributor.getName());
+        assertEquals("Test Org", savedContributor.getOrganizationName());
+        assertEquals(456L, savedContributor.getOrganizationId());
+        assertEquals(Integer.valueOf(100), savedContributor.getOrganizationalCommitsCount());
+        assertEquals(Integer.valueOf(10), savedContributor.getOrganizationalProjectsCount());
+        assertEquals(Integer.valueOf(5), savedContributor.getPersonalProjectsCount());
+        assertEquals(Integer.valueOf(50), savedContributor.getPersonalCommitsCount());
+        assertNotNull(savedContributor.getSnapshotDate());
+
+        verify(contributorRepository).save(any(Contributor.class));
+    }
+
+    @Test
+    public void testSaveWithNullRepository() {
+        contributorBuilder = new org.zalando.catwatch.backend.repo.builder.ContributorBuilder(null);
+        assertNull(contributorBuilder.save());
+    }
+
+    @Test
+    public void testConstructorWithoutRepository() {
+        org.zalando.catwatch.backend.repo.builder.ContributorBuilder builder = new org.zalando.catwatch.backend.repo.builder.ContributorBuilder();
+        assertNull(builder.save());
+    }
+}

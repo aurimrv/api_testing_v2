@@ -1,0 +1,158 @@
+package org.zalando.catwatch.backend;
+
+import org.junit.AfterClass;
+import org.junit.BeforeClass;
+import org.junit.Before;
+import org.junit.Test;
+import static org.junit.Assert.*;
+import java.util.Map;
+import java.util.List;
+import static org.evomaster.client.java.controller.api.EMTestUtils.*;
+import org.evomaster.client.java.controller.SutHandler;
+import io.restassured.RestAssured;
+import static io.restassured.RestAssured.given;
+import io.restassured.response.ValidatableResponse;
+import static org.evomaster.client.java.sql.dsl.SqlDsl.sql;
+import org.evomaster.client.java.controller.api.dto.database.operations.InsertionResultsDto;
+import org.evomaster.client.java.controller.api.dto.database.operations.InsertionDto;
+import static org.hamcrest.Matchers.*;
+import io.restassured.config.JsonConfig;
+import io.restassured.path.json.config.JsonPathConfig;
+import static io.restassured.config.RedirectConfig.redirectConfig;
+import static org.evomaster.client.java.controller.contentMatchers.NumberMatcher.*;
+import static org.evomaster.client.java.controller.contentMatchers.StringMatcher.*;
+import static org.evomaster.client.java.controller.contentMatchers.SubStringMatcher.*;
+import static org.evomaster.client.java.controller.expect.ExpectationHandler.expectationHandler;
+import org.evomaster.client.java.controller.expect.ExpectationHandler;
+import io.restassured.path.json.JsonPath;
+import java.util.Arrays;
+import org.zalando.catwatch.backend.model.Project;
+import java.util.Date;
+import java.util.ArrayList;
+
+public class sonnet35_run01_ProjectBuilderTest {
+
+    private static final SutHandler controller = new em.embedded.org.zalando.EmbeddedEvoMasterController();
+    private static String baseUrlOfSut;
+
+    @BeforeClass
+    public static void initClass() {
+        controller.setupForGeneratedTest();
+        baseUrlOfSut = controller.startSut();
+        controller.registerOrExecuteInitSqlCommandsIfNeeded();
+        assertNotNull(baseUrlOfSut);
+        RestAssured.enableLoggingOfRequestAndResponseIfValidationFails();
+        RestAssured.useRelaxedHTTPSValidation();
+        RestAssured.urlEncodingEnabled = false;
+        RestAssured.config = RestAssured.config()
+            .jsonConfig(JsonConfig.jsonConfig().numberReturnType(JsonPathConfig.NumberReturnType.DOUBLE))
+            .redirect(redirectConfig().followRedirects(false));
+    }
+
+    @AfterClass
+    public static void tearDown() {
+        controller.stopSut();
+    }
+
+    @Before
+    public void initTest() {
+        controller.resetDatabase(Arrays.asList("CONTRIBUTOR"));
+        controller.resetStateOfSUT();
+    }
+
+    @Test
+    public void testConstructorAndGetProject() {
+        ProjectRepository mockRepo = new ProjectRepository();
+        Project project = new Project();
+        assertNotNull(project);
+    }
+
+    @Test
+    public void testParameterizedConstructor() {
+        ProjectRepository mockRepo = new ProjectRepository();
+        Date date = new Date();
+        Project project = new Project();
+        project.setGitHubProjectId(1L);
+        project.setSnapshotDate(date);
+        project.setName("TestProject");
+        project.setPrimaryLanguage("Java");
+        project.setForksCount(10);
+        project.setStarsCount(20);
+        project.setCommitsCount(30);
+        project.setContributorsCount(40);
+        project.setExternalContributorsCount(5);
+        project.setScore(50);
+        
+        assertEquals(1L, project.getGitHubProjectId());
+        assertEquals(date, project.getSnapshotDate());
+        assertEquals("TestProject", project.getName());
+        assertEquals("Java", project.getPrimaryLanguage());
+        assertEquals(10, (int) project.getForksCount());
+        assertEquals(20, (int) project.getStarsCount());
+        assertEquals(30, (int) project.getCommitsCount());
+        assertEquals(40, (int) project.getContributorsCount());
+        assertEquals(5, (int) project.getExternalContributorsCount());
+        assertEquals(50, (int) project.getScore());
+    }
+
+    @Test
+    public void testUpdateUrl() {
+        Project project = new Project();
+        project.setOrganizationName("testOrg");
+        project.setName("testProject");
+        assertEquals("https://github.com/testOrg/testProject", project.getUrl());
+    }
+
+    @Test
+    public void testAllSetterMethods() {
+        Project project = new Project();
+        Date date = new Date();
+        List<String> languages = Arrays.asList("Java", "Python");
+
+        project.setName("TestProject");
+        project.setGitHubProjectId(1L);
+        project.setSnapshotDate(date);
+        project.setOrganizationName("TestOrg");
+        project.setPrimaryLanguage("Java");
+        project.setForksCount(10);
+        project.setStarsCount(20);
+        project.setCommitsCount(30);
+        project.setContributorsCount(40);
+        project.setExternalContributorsCount(5);
+        project.setDescription("Test Description");
+        project.setLastPushed("2023-06-01");
+        project.setScore(50);
+        project.setLanguageList(languages);
+
+        assertEquals("TestProject", project.getName());
+        assertNotNull(project.getSnapshotDate());
+        assertEquals(1L, (long) project.getGitHubProjectId());
+        assertEquals(date, project.getSnapshotDate());
+        assertEquals("TestOrg", project.getOrganizationName());
+        assertEquals("Java", project.getPrimaryLanguage());
+        assertEquals(10, (int) project.getForksCount());
+        assertEquals(20, (int) project.getStarsCount());
+        assertEquals(30, (int) project.getCommitsCount());
+        assertEquals(40, (int) project.getContributorsCount());
+        assertEquals(5, (int) project.getExternalContributorsCount());
+        assertEquals("Test Description", project.getDescription());
+        assertEquals("2023-06-01", project.getLastPushed());
+        assertEquals(50, (int) project.getScore());
+        assertEquals(languages, project.getLanguageList());
+    }
+
+    @Test
+    public void testSave() {
+        ProjectRepository mockRepo = new ProjectRepository();
+        Project project = new Project();
+        project.setName("TestProject");
+        Project savedProject = mockRepo.save(project);
+        assertEquals("TestProject", savedProject.getName());
+    }
+}
+
+class ProjectRepository {
+    public Project save(Project project) {
+        return project;
+    }
+}

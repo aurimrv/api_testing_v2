@@ -1,0 +1,11 @@
+-------------------------------------------------------------------------------
+Test set: org.restncs.gpt4o_run01_NcsRestTest
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 8.935 s <<< FAILURE! - in org.restncs.gpt4o_run01_NcsRestTest
+testFisherExceptionHandling(org.restncs.gpt4o_run01_NcsRestTest)  Time elapsed: 0.058 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <400> but was <200>.
+
+	at org.restncs.gpt4o_run01_NcsRestTest.testFisherExceptionHandling(gpt4o_run01_NcsRestTest.java:103)
+

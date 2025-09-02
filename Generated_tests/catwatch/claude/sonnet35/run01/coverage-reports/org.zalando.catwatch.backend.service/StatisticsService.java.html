@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="pt"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>StatisticsService.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">catwatch-backend</a> &gt; <a href="index.source.html" class="el_package">org.zalando.catwatch.backend.service</a> &gt; <span class="el_source">StatisticsService.java</span></div><h1>StatisticsService.java</h1><pre class="source lang-java linenums">package org.zalando.catwatch.backend.service;
+
+import org.springframework.data.domain.PageRequest;
+import org.zalando.catwatch.backend.model.Statistics;
+import org.zalando.catwatch.backend.repo.StatisticsRepository;
+import org.zalando.catwatch.backend.util.Constants;
+import org.zalando.catwatch.backend.util.StringParser;
+
+import java.text.ParseException;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.Date;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Optional;
+import java.util.Set;
+
+<span class="fc" id="L19">public class StatisticsService {</span>
+
+	
+	public static Collection&lt;Statistics&gt; getStatistics(StatisticsRepository repository, Collection&lt;String&gt; organizations, String startDate, String endDate){
+		
+<span class="fc" id="L24">		Collection&lt;Statistics&gt; statistics = new ArrayList&lt;&gt;(organizations.size());</span>
+
+<span class="fc" id="L26">		List&lt;Statistics&gt; unaggregatedStatistics = new ArrayList&lt;&gt;();</span>
+
+<span class="fc bfc" id="L28" title="All 4 branches covered.">		if (startDate == null &amp;&amp; endDate == null) {</span>
+<span class="fc bfc" id="L29" title="All 2 branches covered.">			for (String orgName : organizations) {</span>
+
+<span class="fc" id="L31">				List&lt;Statistics&gt; s = repository.findByOrganizationNameOrderByKeySnapshotDateDesc(orgName,</span>
+						new PageRequest(0, 1));
+
+<span class="fc" id="L34">				unaggregatedStatistics.addAll(s);</span>
+<span class="fc" id="L35">			}</span>
+
+<span class="fc bfc" id="L37" title="All 2 branches covered.">			if (unaggregatedStatistics.size() &gt; 0) {</span>
+<span class="fc" id="L38">				Statistics aggregatedStatistics = aggregateStatistics(unaggregatedStatistics);</span>
+
+<span class="fc" id="L40">				statistics.add(aggregatedStatistics);</span>
+<span class="fc" id="L41">			}</span>
+
+		} else {
+			// filter by start and end date
+<span class="fc" id="L45">			statistics = getStatisticsByDate(repository, organizations, startDate, endDate);</span>
+		}
+		
+<span class="fc" id="L48">		return statistics;</span>
+	}
+	
+	
+	private static Collection&lt;Statistics&gt; getStatisticsByDate(StatisticsRepository repository, Collection&lt;String&gt; orgs, String startDate, String endDate) {
+
+<span class="fc" id="L54">		Date start = null;</span>
+		Date end;
+		try {
+<span class="fc bfc" id="L57" title="All 2 branches covered.">			if (startDate != null) {</span>
+<span class="fc" id="L58">				start = StringParser.parseIso8601Date(startDate);</span>
+			}
+<span class="fc" id="L60">		} catch (ParseException e) {</span>
+<span class="fc" id="L61">			throw new IllegalArgumentException(Constants.ERR_MSG_WRONG_DATE_FORMAT + &quot; for stardDate&quot;);</span>
+<span class="fc" id="L62">		}</span>
+
+		try {
+<span class="pc bpc" id="L65" title="1 of 2 branches missed.">			end = endDate == null ? new Date() : StringParser.parseIso8601Date(endDate);</span>
+<span class="fc" id="L66">		} catch (ParseException e) {</span>
+<span class="fc" id="L67">			throw new IllegalArgumentException(Constants.ERR_MSG_WRONG_DATE_FORMAT + &quot; for endDate&quot;);</span>
+<span class="fc" id="L68">		}</span>
+
+<span class="fc" id="L70">		List&lt;List&lt;Statistics&gt;&gt; statisticsLists = collectStatistics(repository, orgs, start, end);</span>
+
+<span class="fc" id="L72">		return aggregateHistoricalStatistics(statisticsLists);</span>
+	}
+
+	
+	private static List&lt;List&lt;Statistics&gt;&gt; collectStatistics(StatisticsRepository repository, Collection&lt;String&gt; organizations, Date start, Date end) {
+		
+<span class="fc" id="L78">		List&lt;List&lt;Statistics&gt;&gt; statisticsLists = new ArrayList&lt;&gt;();</span>
+		
+		// get statistics for each organization
+<span class="fc bfc" id="L81" title="All 2 branches covered.">		for (String orgName : organizations) {</span>
+
+<span class="pc bpc" id="L83" title="1 of 2 branches missed.">			if (start == null) {</span>
+<span class="nc" id="L84">				Optional&lt;Date&gt; earliestSnapshot = repository.getEarliestSnaphotDate(orgName);</span>
+<span class="nc bnc" id="L85" title="All 2 branches missed.">				if (earliestSnapshot.isPresent()) {</span>
+<span class="nc" id="L86">					start = earliestSnapshot.get();</span>
+				} else {
+					continue;
+				}
+<span class="nc" id="L90">			} else {</span>
+<span class="fc" id="L91">				Optional&lt;Date&gt; earlierSnapshot = repository.getLatestSnaphotDateBefore(orgName, start);</span>
+
+<span class="pc bpc" id="L93" title="1 of 2 branches missed.">				if (earlierSnapshot.isPresent()) {</span>
+<span class="nc" id="L94">					start = earlierSnapshot.get();</span>
+				} 
+			}
+
+<span class="pc bpc" id="L98" title="1 of 2 branches missed.">			if (start.after(end)) {</span>
+<span class="nc" id="L99">				continue;</span>
+				// throw new IllegalArgumentException(&quot;Start date is after end
+				// date&quot;);
+			}
+
+<span class="fc" id="L104">			List&lt;Statistics&gt; s = repository.findStatisticsByOrganizationAndDate(orgName, start, end);</span>
+<span class="fc" id="L105">			statisticsLists.add(s);</span>
+<span class="fc" id="L106">		}</span>
+		
+<span class="fc" id="L108">		return statisticsLists;</span>
+	}
+	
+	
+	
+	/**
+	 * Aggregates a collection of {@link Statistics} objects by adding up their field values
+	 * 
+	 * @param statistics The {@link Collection} of {@link Statistics} objects to be merged
+	 * @return A {@link Statistics} object whole field values are the sum of the given field values of the input Statistics objects.
+	 * @throws IllegalArgumentException If an invariant has been violated
+	 */
+	public static Statistics aggregateStatistics(Collection&lt;Statistics&gt; statistics) throws IllegalArgumentException{
+		
+<span class="pc bpc" id="L122" title="1 of 4 branches missed.">		if(statistics==null || statistics.size()==0){</span>
+<span class="fc" id="L123">			throw new IllegalArgumentException(&quot;Illegal number of statistics to aggregate&quot;);</span>
+		}
+		
+<span class="fc" id="L126">		String delimeter = &quot;, &quot;;</span>
+
+<span class="pc bpc" id="L128" title="1 of 2 branches missed.">		if(statistics.size()==1) return statistics.iterator().next();</span>
+		
+<span class="fc" id="L130">		Integer contributers = 0, externalContributors = 0, forks = 0, size = 0, stars = 0, members = 0, privateProjects = 0, languages = 0,</span>
+<span class="fc" id="L131">				publicProjects = 0, tags = 0, teams = 0;</span>
+
+		
+<span class="fc" id="L134">		Date snapshotDate = null;</span>
+
+<span class="fc" id="L136">		Set&lt;String&gt; organizationList = new HashSet&lt;&gt;();</span>
+		
+		//aggregate data
+<span class="fc bfc" id="L139" title="All 2 branches covered.">		for (Statistics s : statistics) {</span>
+<span class="fc" id="L140">			contributers = add(contributers, s.getAllContributorsCount());</span>
+<span class="fc" id="L141">			externalContributors = add(externalContributors, s.getExternalContributorsCount());</span>
+<span class="fc" id="L142">			forks = add(forks, s.getAllForksCount());</span>
+<span class="fc" id="L143">			size = add(size, s.getAllSizeCount());</span>
+<span class="fc" id="L144">			stars = add(stars, s.getAllStarsCount());</span>
+<span class="fc" id="L145">			members = add(members, s.getMembersCount());</span>
+<span class="fc" id="L146">			privateProjects = add(privateProjects, s.getPrivateProjectCount());</span>
+<span class="fc" id="L147">			languages = add(languages, s.getProgramLanguagesCount());</span>
+<span class="fc" id="L148">			publicProjects = add(publicProjects, s.getPublicProjectCount());</span>
+<span class="fc" id="L149">			tags = add(tags, s.getTagsCount());</span>
+<span class="fc" id="L150">			teams = add(teams, s.getTeamsCount());</span>
+
+<span class="fc" id="L152">			organizationList.add(s.getOrganizationName());</span>
+			
+			
+<span class="fc bfc" id="L155" title="All 2 branches covered.">			if(snapshotDate==null) snapshotDate = s.getSnapshotDate();</span>
+			
+<span class="pc bpc" id="L157" title="1 of 2 branches missed.">			else if(snapshotDate.before(s.getSnapshotDate())) snapshotDate = s.getSnapshotDate();</span>
+<span class="fc" id="L158">		}</span>
+		
+<span class="fc" id="L160">		String organizations = null;</span>
+		
+<span class="fc bfc" id="L162" title="All 2 branches covered.">		for(String org : organizationList){</span>
+<span class="pc bpc" id="L163" title="1 of 2 branches missed.">			if (organizations == null)</span>
+<span class="fc" id="L164">			organizations = org;</span>
+		else
+<span class="nc" id="L166">			organizations += delimeter + org;</span>
+<span class="fc" id="L167">		}</span>
+		
+		//save aggregated values in new statistics object
+<span class="fc" id="L170">		Statistics s = new Statistics(new Double(Math.random()*10000).intValue() , snapshotDate);</span>
+<span class="fc" id="L171">		s.setAllContributorsCount(contributers);</span>
+<span class="fc" id="L172">		s.setExternalContributorsCount(externalContributors);</span>
+<span class="fc" id="L173">		s.setAllForksCount(forks);</span>
+<span class="fc" id="L174">		s.setAllSizeCount(size);</span>
+<span class="fc" id="L175">		s.setAllStarsCount(stars);</span>
+<span class="fc" id="L176">		s.setMembersCount(members);</span>
+<span class="fc" id="L177">		s.setOrganizationName(organizations);</span>
+<span class="fc" id="L178">		s.setPrivateProjectCount(privateProjects);</span>
+<span class="fc" id="L179">		s.setProgramLanguagesCount(languages);</span>
+<span class="fc" id="L180">		s.setPublicProjectCount(publicProjects);</span>
+<span class="fc" id="L181">		s.setTagsCount(tags);</span>
+<span class="fc" id="L182">		s.setTeamsCount(teams);</span>
+
+<span class="fc" id="L184">		return s;</span>
+	}
+	
+	
+	public  static Collection&lt;Statistics&gt; aggregateHistoricalStatistics(List&lt;List&lt;Statistics&gt;&gt; statisticsLists){
+		
+<span class="fc bfc" id="L190" title="All 2 branches covered.">		if(statisticsLists.isEmpty()) return Collections.emptyList();</span>
+		
+<span class="fc bfc" id="L192" title="All 2 branches covered.">		if(statisticsLists.size()==1){</span>
+<span class="fc" id="L193">			return statisticsLists.iterator().next();</span>
+		}
+		
+		//TODO check if the lists have the same size
+		
+		//map statistics of the different organizations
+<span class="fc" id="L199">		List&lt;Statistics&gt; aggregatedStatistics = new ArrayList&lt;&gt;();</span>
+<span class="fc" id="L200">		int numberOfRecords = statisticsLists.get(0).size(); //assuming that all organizations have the same amount of records</span>
+		
+		List&lt;Statistics&gt; unaggregatedStatistics;
+		
+<span class="fc bfc" id="L204" title="All 2 branches covered.">		for (int i=0; i&lt;numberOfRecords; i++){</span>
+<span class="fc" id="L205">			unaggregatedStatistics  = new ArrayList&lt;&gt;();</span>
+<span class="fc bfc" id="L206" title="All 2 branches covered.">			for (List&lt;Statistics&gt; orgStats : statisticsLists){</span>
+				
+<span class="pc bpc" id="L208" title="1 of 2 branches missed.">				if(orgStats.isEmpty()) continue;</span>
+				
+				//FIXME figure out how to map the records
+				//for now just use the order
+<span class="fc" id="L212">				unaggregatedStatistics.add(orgStats.get(i));</span>
+<span class="fc" id="L213">			}</span>
+			
+<span class="fc" id="L215">			Statistics aggregatedRecord = aggregateStatistics(unaggregatedStatistics);</span>
+			
+<span class="fc" id="L217">			aggregatedStatistics.add(aggregatedRecord);</span>
+		}
+
+<span class="fc" id="L220">		return aggregatedStatistics;</span>
+	}
+	
+	
+	private static Integer add(Integer sum, Integer value){
+		
+<span class="pc bpc" id="L226" title="1 of 2 branches missed.">		int tempSum = sum == null ? 0 : sum;</span>
+		
+<span class="fc bfc" id="L228" title="All 2 branches covered.">		if(value!=null) tempSum += value;</span>
+		
+<span class="fc" id="L230">		return tempSum;</span>
+	}
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

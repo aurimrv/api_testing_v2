@@ -1,0 +1,16 @@
+Line: 162
+Expected status code <200> but was <400>.
+----------------------------------------
+Line: 151
+Expected status code <200> but was <400>.
+----------------------------------------
+Line: 119
+JSON path resultAsInt doesn't match.
+Expected: <-2>
+Actual: 2
+----------------------------------------
+Line: 64
+JSON path resultAsInt doesn't match.
+Expected: <0>
+Actual: -1
+----------------------------------------

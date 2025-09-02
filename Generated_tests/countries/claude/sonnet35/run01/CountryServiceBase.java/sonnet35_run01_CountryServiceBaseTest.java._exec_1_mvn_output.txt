@@ -1,0 +1,358 @@
+[[1;34mINFO[m] Scanning for projects...
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] Some problems were encountered while building the effective model for eu.fayder:restcountries:jar:2.0.6-SNAPSHOT
+[[1;33mWARNING[m] 'dependencies.dependency.(groupId:artifactId:type:classifier)' must be unique: com.google.code.gson:gson:jar -> version ${gson.version} vs 2.8.9 @ line 111, column 21
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] It is highly recommended to fix these problems because they threaten the stability of your build.
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] For this reason, future Maven versions might no longer support building such malformed projects.
+[[1;33mWARNING[m] 
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m----------------------< [0;36meu.fayder:restcountries[0;1m >-----------------------[m
+[[1;34mINFO[m] [1mBuilding restcountries 2.0.6-SNAPSHOT[m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-clean-plugin:2.5:clean[m [1m(default-clean)[m @ [36mrestcountries[0;1m ---[m
+[[1;34mINFO[m] Deleting /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/target
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mjacoco-maven-plugin:0.8.7:prepare-agent[m [1m(default)[m @ [36mrestcountries[0;1m ---[m
+[[1;34mINFO[m] argLine set to -javaagent:/home/rincon/.m2/repository/org/jacoco/org.jacoco.agent/0.8.7/org.jacoco.agent-0.8.7-runtime.jar=destfile=/media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/target/jacoco.exec
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:resources[m [1m(default-resources)[m @ [36mrestcountries[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Copying 6 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.8.0:compile[m [1m(default-compile)[m @ [36mrestcountries[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 22 source files to /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/target/classes
+[[1;34mINFO[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/main/java/eu/fayder/restcountries/v2/rest/CountryRestV2.java: /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/main/java/eu/fayder/restcountries/v2/rest/CountryRestV2.java uses or overrides a deprecated API.
+[[1;34mINFO[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/main/java/eu/fayder/restcountries/v2/rest/CountryRestV2.java: Recompile with -Xlint:deprecation for details.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mjacoco-maven-plugin:0.8.7:prepare-agent[m [1m(default)[m @ [36mrestcountries[0;1m ---[m
+[[1;34mINFO[m] argLine set to -javaagent:/home/rincon/.m2/repository/org/jacoco/org.jacoco.agent/0.8.7/org.jacoco.agent-0.8.7-runtime.jar=destfile=/media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/target/jacoco.exec
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:resources[m [1m(default-resources)[m @ [36mrestcountries[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Copying 6 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.8.0:compile[m [1m(default-compile)[m @ [36mrestcountries[0;1m ---[m
+[[1;34mINFO[m] Nothing to compile - all classes are up to date
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:testResources[m [1m(default-testResources)[m @ [36mrestcountries[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Copying 1 resource
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.8.0:testCompile[m [1m(default-testCompile)[m @ [36mrestcountries[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 1 source file to /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/target/test-classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mjacoco-maven-plugin:0.8.7:prepare-agent[m [1m(default)[m @ [36mrestcountries[0;1m ---[m
+[[1;34mINFO[m] argLine set to -javaagent:/home/rincon/.m2/repository/org/jacoco/org.jacoco.agent/0.8.7/org.jacoco.agent-0.8.7-runtime.jar=destfile=/media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/target/jacoco.exec
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:resources[m [1m(default-resources)[m @ [36mrestcountries[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Copying 6 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.8.0:compile[m [1m(default-compile)[m @ [36mrestcountries[0;1m ---[m
+[[1;34mINFO[m] Nothing to compile - all classes are up to date
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:testResources[m [1m(default-testResources)[m @ [36mrestcountries[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Copying 1 resource
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.8.0:testCompile[m [1m(default-testCompile)[m @ [36mrestcountries[0;1m ---[m
+[[1;34mINFO[m] Nothing to compile - all classes are up to date
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:2.22.0:test[m [1m(default-test)[m @ [36mrestcountries[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] -------------------------------------------------------
+[[1;34mINFO[m]  T E S T S
+[[1;34mINFO[m] -------------------------------------------------------
+[[1;34mINFO[m] Running eu.fayder.restcountries.[1msonnet35_run01_CountryServiceBaseTest[m
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.3.2.RELEASE)
+
+2025-03-26 19:40:02,309 INFO  [org.apache.maven.surefire.booter.ForkedBooter:55] Starting ForkedBooter v2.22.0 on IFTO-PROBOOK with PID 78815 (started by rincon in /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries)
+2025-03-26 19:40:02,378 INFO  [org.apache.maven.surefire.booter.ForkedBooter:651] No active profile set, falling back to default profiles: default
+2025-03-26 19:40:03,942 INFO  [org.jboss.resteasy.springboot.ResteasyEmbeddedServletInitializer:74] Finding JAX-RS Application classes
+2025-03-26 19:40:03,947 INFO  [org.jboss.resteasy.springboot.ResteasyEmbeddedServletInitializer:111] Property resteasy.jaxrs.app.registration has been set to property
+2025-03-26 19:40:03,948 INFO  [org.jboss.resteasy.springboot.ResteasyEmbeddedServletInitializer:154] Property resteasy.jaxrs.app.classes has been set to eu.fayder.restcountries.servlet.RestApplication
+2025-03-26 19:40:03,950 INFO  [org.jboss.resteasy.springboot.ResteasyEmbeddedServletInitializer:99] JAX-RS Application class found: eu.fayder.restcountries.servlet.RestApplication
+2025-03-26 19:40:04,351 INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] Tomcat initialized with port(s): 0 (http)
+2025-03-26 19:40:04,533 INFO  [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:285] Root WebApplicationContext: initialization completed in 1758 ms
+2025-03-26 19:40:05,084 INFO  [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor:181] Initializing ExecutorService 'applicationTaskExecutor'
+2025-03-26 19:40:05,338 INFO  [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping:54] Adding welcome page: ServletContext resource [/index.html]
+2025-03-26 19:40:06,260 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n:160] RESTEASY002225: Deploying javax.ws.rs.core.Application: class eu.fayder.restcountries.servlet.RestApplication
+2025-03-26 19:40:06,261 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n:187] RESTEASY002220: Adding singleton resource eu.fayder.restcountries.v1.rest.CountryRestV1 from Application class eu.fayder.restcountries.servlet.RestApplication
+2025-03-26 19:40:06,261 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n:187] RESTEASY002220: Adding singleton resource eu.fayder.restcountries.v2.rest.StripeRest from Application class eu.fayder.restcountries.servlet.RestApplication
+2025-03-26 19:40:06,262 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n:187] RESTEASY002220: Adding singleton resource eu.fayder.restcountries.v2.rest.CountryRestV2 from Application class eu.fayder.restcountries.servlet.RestApplication
+2025-03-26 19:40:06,337 INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220] Tomcat started on port(s): 44913 (http) with context path ''
+2025-03-26 19:40:06,362 INFO  [org.apache.maven.surefire.booter.ForkedBooter:61] Started ForkedBooter in 4.972 seconds (JVM running for 5.86)
+2025-03-26 19:40:07,661 INFO  [org.springframework.web.servlet.DispatcherServlet:525] Initializing Servlet 'dispatcherServlet'
+2025-03-26 19:40:07,671 INFO  [org.springframework.web.servlet.DispatcherServlet:547] Completed initialization in 9 ms
+Request method:	GET
+Request URI:	http://localhost:44913/v2/name/schweiz?fullText=true
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+HTTP/1.1 404 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Wed, 26 Mar 2025 22:40:07 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+{
+    "timestamp": "2025-03-26T22:40:07.747+00:00",
+    "status": 404,
+    "error": "Not Found",
+    "message": "",
+    "path": "/v2/name/schweiz"
+}
+Request method:	GET
+Request URI:	http://localhost:44913/v2/alpha?codes=US;CA;MX
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+HTTP/1.1 404 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Wed, 26 Mar 2025 22:40:07 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+{
+    "timestamp": "2025-03-26T22:40:08.060+00:00",
+    "status": 404,
+    "error": "Not Found",
+    "message": "",
+    "path": "/v2/alpha"
+}
+Request method:	GET
+Request URI:	http://localhost:44913/v2/alpha?codes=US;XX;CA
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+HTTP/1.1 404 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Wed, 26 Mar 2025 22:40:07 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+{
+    "timestamp": "2025-03-26T22:40:08.102+00:00",
+    "status": 404,
+    "error": "Not Found",
+    "message": "",
+    "path": "/v2/alpha"
+}
+Request method:	GET
+Request URI:	http://localhost:44913/v2/alpha
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+HTTP/1.1 404 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Wed, 26 Mar 2025 22:40:07 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+{
+    "timestamp": "2025-03-26T22:40:08.132+00:00",
+    "status": 404,
+    "error": "Not Found",
+    "message": "",
+    "path": "/v2/alpha"
+}
+Request method:	GET
+Request URI:	http://localhost:44913/v2/name/united?fullText=true
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+HTTP/1.1 404 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Wed, 26 Mar 2025 22:40:07 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+{
+    "timestamp": "2025-03-26T22:40:08.163+00:00",
+    "status": 404,
+    "error": "Not Found",
+    "message": "",
+    "path": "/v2/name/united"
+}
+Request method:	GET
+Request URI:	http://localhost:44913/v2/all
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+HTTP/1.1 404 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Wed, 26 Mar 2025 22:40:07 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+{
+    "timestamp": "2025-03-26T22:40:08.370+00:00",
+    "status": 404,
+    "error": "Not Found",
+    "message": "",
+    "path": "/v2/all"
+}
+[[1;31mERROR[m] [1;31mTests [0;1mrun: [0;1m8[m, [1;31mFailures: [0;1;31m6[m, Errors: 0, Skipped: 0, Time elapsed: 7.383 s[1;31m <<< FAILURE![m - in eu.fayder.restcountries.[1msonnet35_run01_CountryServiceBaseTest[m
+[[1;31mERROR[m] testFulltextSearchWithAlternativeSpelling(eu.fayder.restcountries.sonnet35_run01_CountryServiceBaseTest)  Time elapsed: 1.3 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <200> but was <404>.
+
+	at eu.fayder.restcountries.sonnet35_run01_CountryServiceBaseTest.testFulltextSearchWithAlternativeSpelling(sonnet35_run01_CountryServiceBaseTest.java:108)
+
+[[1;31mERROR[m] testGetByCodeList(eu.fayder.restcountries.sonnet35_run01_CountryServiceBaseTest)  Time elapsed: 0.036 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <200> but was <404>.
+
+	at eu.fayder.restcountries.sonnet35_run01_CountryServiceBaseTest.testGetByCodeList(sonnet35_run01_CountryServiceBaseTest.java:62)
+
+[[1;31mERROR[m] testGetByCodeListWithInvalidCode(eu.fayder.restcountries.sonnet35_run01_CountryServiceBaseTest)  Time elapsed: 0.037 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <200> but was <404>.
+
+	at eu.fayder.restcountries.sonnet35_run01_CountryServiceBaseTest.testGetByCodeListWithInvalidCode(sonnet35_run01_CountryServiceBaseTest.java:75)
+
+[[1;31mERROR[m] testGetByCodeListWithNullInput(eu.fayder.restcountries.sonnet35_run01_CountryServiceBaseTest)  Time elapsed: 0.031 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <400> but was <404>.
+
+	at eu.fayder.restcountries.sonnet35_run01_CountryServiceBaseTest.testGetByCodeListWithNullInput(sonnet35_run01_CountryServiceBaseTest.java:87)
+
+[[1;31mERROR[m] testFulltextSearch(eu.fayder.restcountries.sonnet35_run01_CountryServiceBaseTest)  Time elapsed: 0.029 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <200> but was <404>.
+
+	at eu.fayder.restcountries.sonnet35_run01_CountryServiceBaseTest.testFulltextSearch(sonnet35_run01_CountryServiceBaseTest.java:96)
+
+[[1;31mERROR[m] testLoadJson(eu.fayder.restcountries.sonnet35_run01_CountryServiceBaseTest)  Time elapsed: 0.027 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <200> but was <404>.
+
+	at eu.fayder.restcountries.sonnet35_run01_CountryServiceBaseTest.testLoadJson(sonnet35_run01_CountryServiceBaseTest.java:128)
+
+2025-03-26 19:40:08,433 INFO  [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor:218] Shutting down ExecutorService 'applicationTaskExecutor'
+[[1;34mINFO[m] 
+[[1;34mINFO[m] Results:
+[[1;34mINFO[m] 
+[[1;31mERROR[m] [1;31mFailures: [m
+[[1;31mERROR[m] [1;31m  sonnet35_run01_CountryServiceBaseTest.testFulltextSearch:96 1 expectation failed.
+Expected status code <200> but was <404>.
+[m
+[[1;31mERROR[m] [1;31m  sonnet35_run01_CountryServiceBaseTest.testFulltextSearchWithAlternativeSpelling:108 1 expectation failed.
+Expected status code <200> but was <404>.
+[m
+[[1;31mERROR[m] [1;31m  sonnet35_run01_CountryServiceBaseTest.testGetByCodeList:62 1 expectation failed.
+Expected status code <200> but was <404>.
+[m
+[[1;31mERROR[m] [1;31m  sonnet35_run01_CountryServiceBaseTest.testGetByCodeListWithInvalidCode:75 1 expectation failed.
+Expected status code <200> but was <404>.
+[m
+[[1;31mERROR[m] [1;31m  sonnet35_run01_CountryServiceBaseTest.testGetByCodeListWithNullInput:87 1 expectation failed.
+Expected status code <400> but was <404>.
+[m
+[[1;31mERROR[m] [1;31m  sonnet35_run01_CountryServiceBaseTest.testLoadJson:128 1 expectation failed.
+Expected status code <200> but was <404>.
+[m
+[[1;34mINFO[m] 
+[[1;31mERROR[m] [1;31mTests run: 8, Failures: 6, Errors: 0, Skipped: 0[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;31mBUILD FAILURE[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  11.075 s
+[[1;34mINFO[m] Finished at: 2025-03-26T19:40:08-03:00
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;31mERROR[m] Failed to execute goal [32morg.apache.maven.plugins:maven-surefire-plugin:2.22.0:test[m [1m(default-test)[m on project [36mrestcountries[m: [1;31mThere are test failures.[m
+[[1;31mERROR[m] [1;31m[m
+[[1;31mERROR[m] [1;31mPlease refer to /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/target/surefire-reports for the individual test results.[m
+[[1;31mERROR[m] [1;31mPlease refer to dump files (if any exist) [date]-jvmRun[N].dump, [date].dumpstream and [date]-jvmRun[N].dumpstream.[m
+[[1;31mERROR[m] -> [1m[Help 1][m
+[[1;31mERROR[m] 
+[[1;31mERROR[m] To see the full stack trace of the errors, re-run Maven with the [1m-e[m switch.
+[[1;31mERROR[m] Re-run Maven using the [1m-X[m switch to enable full debug logging.
+[[1;31mERROR[m] 
+[[1;31mERROR[m] For more information about the errors and possible solutions, please read the following articles:
+[[1;31mERROR[m] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.zalando.catwatch.backend.sonnet35_run01_FetcherTest
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 0.009 s - in org.zalando.catwatch.backend.sonnet35_run01_FetcherTest

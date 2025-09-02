@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: eu.fayder.restcountries.gpt4o_run01_CountryServiceBaseTest
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 1, Errors: 0, Skipped: 2, Time elapsed: 0.957 s <<< FAILURE! - in eu.fayder.restcountries.gpt4o_run01_CountryServiceBaseTest
+testLoadJson_ValidFile(eu.fayder.restcountries.gpt4o_run01_CountryServiceBaseTest)  Time elapsed: 0.007 s  <<< FAILURE!
+java.lang.AssertionError: 
+	at eu.fayder.restcountries.gpt4o_run01_CountryServiceBaseTest.testLoadJson_ValidFile(gpt4o_run01_CountryServiceBaseTest.java:117)
+

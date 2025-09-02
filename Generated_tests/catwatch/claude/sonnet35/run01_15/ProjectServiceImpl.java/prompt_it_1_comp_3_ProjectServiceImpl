@@ -1,0 +1,257 @@
+You are a highly skilled test engineer specializing in debugging and resolving compilation errors and test failures in Java-based projects. Your expertise includes Java 8, JUnit 4, and REST Assured, allowing you to diagnose issues efficiently and provide precise, actionable fixes.
+
+Do fix the compilation errors delimited by ##### given the code below delimited by *****.
+
+The response must contain only Java code in JUnit 4 format.
+
+#####
+[[1;31mERROR[m] COMPILATION ERROR : 
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[40,88] incompatible types: java.lang.String cannot be converted to java.util.Optional<java.lang.String>
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[47,101] incompatible types: java.lang.String cannot be converted to java.util.Optional<java.lang.String>
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[67,9] reference to assertEquals is ambiguous
+  both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[68,9] reference to assertEquals is ambiguous
+  both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[69,9] reference to assertEquals is ambiguous
+  both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[70,9] reference to assertEquals is ambiguous
+  both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[71,9] reference to assertEquals is ambiguous
+  both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[83,9] reference to assertEquals is ambiguous
+  both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[84,9] reference to assertEquals is ambiguous
+  both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[85,9] reference to assertEquals is ambiguous
+  both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[86,9] reference to assertEquals is ambiguous
+  both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[87,9] reference to assertEquals is ambiguous
+  both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] Failed to execute goal [32morg.apache.maven.plugins:maven-compiler-plugin:3.8.0:testCompile[m [1m(default-testCompile)[m on project [36mcatwatch-backend[m: [1;31mCompilation failure[m: Compilation failure: 
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[40,88] incompatible types: java.lang.String cannot be converted to java.util.Optional<java.lang.String>
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[47,101] incompatible types: java.lang.String cannot be converted to java.util.Optional<java.lang.String>
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[67,9] reference to assertEquals is ambiguous
+[[1;31mERROR[m]   both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[68,9] reference to assertEquals is ambiguous
+[[1;31mERROR[m]   both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[69,9] reference to assertEquals is ambiguous
+[[1;31mERROR[m]   both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[70,9] reference to assertEquals is ambiguous
+[[1;31mERROR[m]   both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[71,9] reference to assertEquals is ambiguous
+[[1;31mERROR[m]   both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[83,9] reference to assertEquals is ambiguous
+[[1;31mERROR[m]   both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[84,9] reference to assertEquals is ambiguous
+[[1;31mERROR[m]   both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[85,9] reference to assertEquals is ambiguous
+[[1;31mERROR[m]   both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[86,9] reference to assertEquals is ambiguous
+[[1;31mERROR[m]   both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[87,9] reference to assertEquals is ambiguous
+[[1;31mERROR[m]   both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] -> [1m[Help 1][m
+[[1;31mERROR[m] 
+[[1;31mERROR[m] To see the full stack trace of the errors, re-run Maven with the [1m-e[m switch.
+[[1;31mERROR[m] Re-run Maven using the [1m-X[m switch to enable full debug logging.
+[[1;31mERROR[m] 
+[[1;31mERROR[m] For more information about the errors and possible solutions, please read the following articles:
+[[1;31mERROR[m] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+
+#####
+*****
+package org.zalando.catwatch.backend;
+
+import org.junit.Before;
+import org.junit.Test;
+import static org.junit.Assert.*;
+import static org.mockito.Mockito.*;
+
+import org.zalando.catwatch.backend.model.Project;
+import org.zalando.catwatch.backend.repo.ProjectRepository;
+import org.zalando.catwatch.backend.service.ProjectServiceImpl;
+import org.springframework.core.env.Environment;
+
+import java.util.*;
+
+public class sonnet35_run01_ProjectServiceImplTest {
+
+    private ProjectServiceImpl projectService;
+    private ProjectRepository mockProjectRepository;
+    private Environment mockEnvironment;
+
+    @Before
+    public void initTest() {
+        mockProjectRepository = mock(ProjectRepository.class);
+        mockEnvironment = mock(Environment.class);
+        projectService = new ProjectServiceImpl(mockProjectRepository, mockEnvironment);
+    }
+
+    @Test
+    public void testFindProjects() {
+        String organizations = "org1,org2";
+        Optional<Integer> limit = Optional.of(10);
+        Optional<Integer> offset = Optional.of(0);
+        Optional<Date> startDate = Optional.of(new Date());
+        Optional<Date> endDate = Optional.of(new Date());
+        Optional<String> sortBy = Optional.of("stars");
+        Optional<String> query = Optional.of("test");
+        Optional<String> language = Optional.of("Java");
+
+        List<Project> mockProjects = Arrays.asList(new Project(), new Project());
+        when(mockProjectRepository.findProjects(anyString(), any(Date.class), anyString(), anyString())).thenReturn(mockProjects);
+        when(mockEnvironment.getProperty(anyString())).thenReturn("org1,org2");
+
+        Iterable<Project> result = projectService.findProjects(organizations, limit, offset, startDate, endDate, sortBy, query, language);
+
+        assertNotNull(result);
+        assertTrue(result.iterator().hasNext());
+        verify(mockProjectRepository, times(4)).findProjects(anyString(), any(Date.class), anyString(), anyString());
+    }
+
+    @Test
+    public void testGetMergedProjectList() throws Exception {
+        List<Project> startProjects = Arrays.asList(
+            createProject(1L, 10, 100, 20, 5, 50),
+            createProject(2L, 20, 200, 30, 10, 100)
+        );
+        List<Project> endProjects = Arrays.asList(
+            createProject(1L, 15, 150, 25, 8, 75),
+            createProject(2L, 25, 250, 35, 15, 150),
+            createProject(3L, 30, 300, 40, 20, 200)
+        );
+
+        List<Project> result = (List<Project>) projectService.getClass()
+            .getDeclaredMethod("getMergedProjectList", List.class, List.class)
+            .invoke(projectService, startProjects, endProjects);
+
+        assertEquals(3, result.size());
+        assertEquals(5, result.get(0).getStarsCount());
+        assertEquals(50, result.get(0).getCommitsCount());
+        assertEquals(5, result.get(0).getForksCount());
+        assertEquals(3, result.get(0).getContributorsCount());
+        assertEquals(25, result.get(0).getScore());
+    }
+
+    @Test
+    public void testCreateMergedProject() throws Exception {
+        Project startProject = createProject(1L, 10, 100, 20, 5, 50);
+        Project endProject = createProject(1L, 15, 150, 25, 8, 75);
+
+        Project result = (Project) projectService.getClass()
+            .getDeclaredMethod("createMergedProject", Project.class, Project.class)
+            .invoke(projectService, startProject, endProject);
+
+        assertEquals(5, result.getStarsCount());
+        assertEquals(50, result.getCommitsCount());
+        assertEquals(5, result.getForksCount());
+        assertEquals(3, result.getContributorsCount());
+        assertEquals(25, result.getScore());
+    }
+
+    @Test
+    public void testConvertProjectsToMap() throws Exception {
+        List<Project> projects = Arrays.asList(
+            createProject(1L, 10, 100, 20, 5, 50),
+            createProject(2L, 20, 200, 30, 10, 100)
+        );
+
+        Map<Long, Project> result = (Map<Long, Project>) projectService.getClass()
+            .getDeclaredMethod("convertProjectsToMap", List.class)
+            .invoke(projectService, projects);
+
+        assertEquals(2, result.size());
+        assertTrue(result.containsKey(1L));
+        assertTrue(result.containsKey(2L));
+    }
+
+    @Test
+    public void testGetOrganizationConfig() throws Exception {
+        when(mockEnvironment.containsProperty("organization.list")).thenReturn(true);
+        when(mockEnvironment.getProperty("organization.list")).thenReturn("org1,org2");
+
+        String result = (String) projectService.getClass()
+            .getDeclaredMethod("getOrganizationConfig")
+            .invoke(projectService);
+
+        assertEquals("org1,org2", result);
+    }
+
+    @Test
+    public void testGetOrganizationConfigEmpty() throws Exception {
+        when(mockEnvironment.containsProperty("organization.list")).thenReturn(false);
+
+        String result = (String) projectService.getClass()
+            .getDeclaredMethod("getOrganizationConfig")
+            .invoke(projectService);
+
+        assertEquals("", result);
+    }
+
+    @Test
+    public void testIsSortOrderAscending() throws Exception {
+        assertTrue((Boolean) projectService.getClass()
+            .getDeclaredMethod("isSortOrderAscending", Optional.class)
+            .invoke(projectService, Optional.of("stars")));
+        assertFalse((Boolean) projectService.getClass()
+            .getDeclaredMethod("isSortOrderAscending", Optional.class)
+            .invoke(projectService, Optional.of("-stars")));
+        assertFalse((Boolean) projectService.getClass()
+            .getDeclaredMethod("isSortOrderAscending", Optional.class)
+            .invoke(projectService, Optional.empty()));
+    }
+
+    @Test
+    public void testGetProjectSortComparator() throws Exception {
+        Comparator<Project> comparator;
+
+        comparator = (Comparator<Project>) projectService.getClass()
+            .getDeclaredMethod("getProjectSortComparator", Optional.class, boolean.class)
+            .invoke(projectService, Optional.of("stars"), true);
+        assertTrue(comparator.getClass().getSimpleName().equals("ProjectStarComparator"));
+
+        comparator = (Comparator<Project>) projectService.getClass()
+            .getDeclaredMethod("getProjectSortComparator", Optional.class, boolean.class)
+            .invoke(projectService, Optional.of("score"), true);
+        assertTrue(comparator.getClass().getSimpleName().equals("ProjectScoreComparator"));
+
+        comparator = (Comparator<Project>) projectService.getClass()
+            .getDeclaredMethod("getProjectSortComparator", Optional.class, boolean.class)
+            .invoke(projectService, Optional.of("commits"), true);
+        assertTrue(comparator.getClass().getSimpleName().equals("ProjectCommitComparator"));
+
+        comparator = (Comparator<Project>) projectService.getClass()
+            .getDeclaredMethod("getProjectSortComparator", Optional.class, boolean.class)
+            .invoke(projectService, Optional.of("forks"), true);
+        assertTrue(comparator.getClass().getSimpleName().equals("ProjectForkComparator"));
+
+        comparator = (Comparator<Project>) projectService.getClass()
+            .getDeclaredMethod("getProjectSortComparator", Optional.class, boolean.class)
+            .invoke(projectService, Optional.of("contributors"), true);
+        assertTrue(comparator.getClass().getSimpleName().equals("ProjectContributorComparator"));
+
+        comparator = (Comparator<Project>) projectService.getClass()
+            .getDeclaredMethod("getProjectSortComparator", Optional.class, boolean.class)
+            .invoke(projectService, Optional.of("unknown"), true);
+        assertTrue(comparator.getClass().getSimpleName().equals("ProjectScoreComparator"));
+
+        comparator = (Comparator<Project>) projectService.getClass()
+            .getDeclaredMethod("getProjectSortComparator", Optional.class, boolean.class)
+            .invoke(projectService, Optional.empty(), true);
+        assertTrue(comparator.getClass().getSimpleName().equals("ProjectScoreComparator"));
+    }
+
+    private Project createProject(Long id, int stars, int commits, int forks, int contributors, int score) {
+        Project project = new Project();
+        project.setGitHubProjectId(id);
+        project.setStarsCount(stars);
+        project.setCommitsCount(commits);
+        project.setForksCount(forks);
+        project.setContributorsCount(contributors);
+        project.setScore(score);
+        return project;
+    }
+}
+
+*****

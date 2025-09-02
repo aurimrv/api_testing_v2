@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: org.restncs.gpt4o_run01_ExpintTest
+-------------------------------------------------------------------------------
+Tests run: 10, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.869 s <<< FAILURE! - in org.restncs.gpt4o_run01_ExpintTest
+testContinuedFractionFailure(org.restncs.gpt4o_run01_ExpintTest)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: Expected RuntimeException for continued fraction failure
+	at org.restncs.gpt4o_run01_ExpintTest.testContinuedFractionFailure(gpt4o_run01_ExpintTest.java:132)
+
+testSeriesFailure(org.restncs.gpt4o_run01_ExpintTest)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: Expected RuntimeException for series failure
+	at org.restncs.gpt4o_run01_ExpintTest.testSeriesFailure(gpt4o_run01_ExpintTest.java:143)
+

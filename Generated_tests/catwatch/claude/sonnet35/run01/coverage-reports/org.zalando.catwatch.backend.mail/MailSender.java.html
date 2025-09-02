@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="pt"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>MailSender.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">catwatch-backend</a> &gt; <a href="index.source.html" class="el_package">org.zalando.catwatch.backend.mail</a> &gt; <span class="el_source">MailSender.java</span></div><h1>MailSender.java</h1><pre class="source lang-java linenums">package org.zalando.catwatch.backend.mail;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.mail.SimpleMailMessage;
+import org.springframework.mail.javamail.JavaMailSender;
+import org.springframework.stereotype.Service;
+
+import static java.lang.String.format;
+import static java.util.Arrays.stream;
+import static java.util.stream.Collectors.joining;
+
+@Service
+public class MailSender {
+
+    private final JavaMailSender javaMailSender;
+    private final String destinationAddress;
+    private final String sourceAddress;
+
+    @Autowired
+    public MailSender(JavaMailSender javaMailSender,
+                      @Value(&quot;${mail.to}&quot;) String destinationAddress,
+<span class="fc" id="L23">                      @Value(&quot;${mail.from}&quot;) String sourceAddress) {</span>
+<span class="fc" id="L24">        this.javaMailSender = javaMailSender;</span>
+<span class="fc" id="L25">        this.destinationAddress = destinationAddress;</span>
+<span class="fc" id="L26">        this.sourceAddress = sourceAddress;</span>
+<span class="fc" id="L27">    }</span>
+
+    public boolean send(Throwable e) {
+<span class="fc" id="L30">        javaMailSender.send(createMessageFor(e));</span>
+<span class="fc" id="L31">        return true;</span>
+    }
+
+    private SimpleMailMessage createMessageFor(Throwable e) {
+<span class="fc" id="L35">        SimpleMailMessage mailMessage = new SimpleMailMessage();</span>
+<span class="fc" id="L36">        mailMessage.setTo(destinationAddress);</span>
+<span class="fc" id="L37">        mailMessage.setFrom(sourceAddress);</span>
+<span class="fc" id="L38">        mailMessage.setSubject(&quot;GitHub crawler failed to fetch data&quot;);</span>
+<span class="fc" id="L39">        mailMessage.setText(format(&quot;%s\n%s&quot;, e.getMessage(), stream(e.getStackTrace()).map(StackTraceElement::toString).collect(joining(&quot;\n&quot;))));</span>
+<span class="fc" id="L40">        return mailMessage;</span>
+    }
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

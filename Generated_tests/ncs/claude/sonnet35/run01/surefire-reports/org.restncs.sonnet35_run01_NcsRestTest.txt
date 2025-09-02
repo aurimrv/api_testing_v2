@@ -1,0 +1,11 @@
+-------------------------------------------------------------------------------
+Test set: org.restncs.sonnet35_run01_NcsRestTest
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.796 s <<< FAILURE! - in org.restncs.sonnet35_run01_NcsRestTest
+testFisherRuntimeException(org.restncs.sonnet35_run01_NcsRestTest)  Time elapsed: 0.035 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <400> but was <200>.
+
+	at org.restncs.sonnet35_run01_NcsRestTest.testFisherRuntimeException(sonnet35_run01_NcsRestTest.java:85)
+

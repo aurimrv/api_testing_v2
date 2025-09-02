@@ -1,0 +1,166 @@
+You are a highly skilled test engineer specializing in debugging and resolving compilation errors and test failures in Java-based projects. Your expertise includes Java 8, JUnit 4, and REST Assured, allowing you to diagnose issues efficiently and provide precise, actionable fixes.
+
+Do fix the compilation errors delimited by ##### given the code below delimited by *****.
+
+The response must contain only Java code in JUnit 4 format.
+
+#####
+[[1;31mERROR[m] COMPILATION ERROR : 
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ContributorBuilderTest.java:[76,41] reference to any is ambiguous
+  both method <T>any(java.lang.Class<T>) in org.mockito.Mockito and method <T>any(java.lang.Class<T>) in org.hamcrest.Matchers match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ContributorBuilderTest.java:[81,44] reference to any is ambiguous
+  both method <T>any(java.lang.Class<T>) in org.mockito.Mockito and method <T>any(java.lang.Class<T>) in org.hamcrest.Matchers match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ContributorBuilderTest.java:[99,41] reference to any is ambiguous
+  both method <T>any(java.lang.Class<T>) in org.mockito.Mockito and method <T>any(java.lang.Class<T>) in org.hamcrest.Matchers match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ContributorBuilderTest.java:[115,44] reference to any is ambiguous
+  both method <T>any(java.lang.Class<T>) in org.mockito.Mockito and method <T>any(java.lang.Class<T>) in org.hamcrest.Matchers match
+[[1;31mERROR[m] Failed to execute goal [32morg.apache.maven.plugins:maven-compiler-plugin:3.8.0:testCompile[m [1m(default-testCompile)[m on project [36mcatwatch-backend[m: [1;31mCompilation failure[m: Compilation failure: 
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ContributorBuilderTest.java:[76,41] reference to any is ambiguous
+[[1;31mERROR[m]   both method <T>any(java.lang.Class<T>) in org.mockito.Mockito and method <T>any(java.lang.Class<T>) in org.hamcrest.Matchers match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ContributorBuilderTest.java:[81,44] reference to any is ambiguous
+[[1;31mERROR[m]   both method <T>any(java.lang.Class<T>) in org.mockito.Mockito and method <T>any(java.lang.Class<T>) in org.hamcrest.Matchers match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ContributorBuilderTest.java:[99,41] reference to any is ambiguous
+[[1;31mERROR[m]   both method <T>any(java.lang.Class<T>) in org.mockito.Mockito and method <T>any(java.lang.Class<T>) in org.hamcrest.Matchers match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ContributorBuilderTest.java:[115,44] reference to any is ambiguous
+[[1;31mERROR[m]   both method <T>any(java.lang.Class<T>) in org.mockito.Mockito and method <T>any(java.lang.Class<T>) in org.hamcrest.Matchers match
+[[1;31mERROR[m] -> [1m[Help 1][m
+[[1;31mERROR[m] 
+[[1;31mERROR[m] To see the full stack trace of the errors, re-run Maven with the [1m-e[m switch.
+[[1;31mERROR[m] Re-run Maven using the [1m-X[m switch to enable full debug logging.
+[[1;31mERROR[m] 
+[[1;31mERROR[m] For more information about the errors and possible solutions, please read the following articles:
+[[1;31mERROR[m] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+
+#####
+*****
+package org.zalando.catwatch.backend;
+
+import org.junit.AfterClass;
+import org.junit.BeforeClass;
+import org.junit.Before;
+import org.junit.Test;
+import static org.junit.Assert.*;
+import java.util.Map;
+import java.util.List;
+import static org.evomaster.client.java.controller.api.EMTestUtils.*;
+import org.evomaster.client.java.controller.SutHandler;
+import io.restassured.RestAssured;
+import static io.restassured.RestAssured.given;
+import io.restassured.response.ValidatableResponse;
+import static org.evomaster.client.java.sql.dsl.SqlDsl.sql;
+import org.evomaster.client.java.controller.api.dto.database.operations.InsertionResultsDto;
+import org.evomaster.client.java.controller.api.dto.database.operations.InsertionDto;
+import static org.hamcrest.Matchers.*;
+import io.restassured.config.JsonConfig;
+import io.restassured.path.json.config.JsonPathConfig;
+import static io.restassured.config.RedirectConfig.redirectConfig;
+import static org.evomaster.client.java.controller.contentMatchers.NumberMatcher.*;
+import static org.evomaster.client.java.controller.contentMatchers.StringMatcher.*;
+import static org.evomaster.client.java.controller.contentMatchers.SubStringMatcher.*;
+import static org.evomaster.client.java.controller.expect.ExpectationHandler.expectationHandler;
+import org.evomaster.client.java.controller.expect.ExpectationHandler;
+import io.restassured.path.json.JsonPath;
+import java.util.Arrays;
+import org.zalando.catwatch.backend.model.Contributor;
+import org.zalando.catwatch.backend.repo.ContributorRepository;
+import org.mockito.Mock;
+import org.mockito.MockitoAnnotations;
+import static org.mockito.Mockito.*;
+import java.util.Date;
+
+public class sonnet35_run01_ContributorBuilderTest {
+
+    private static final SutHandler controller = new em.embedded.org.zalando.EmbeddedEvoMasterController();
+    private static String baseUrlOfSut;
+
+    @Mock
+    private ContributorRepository contributorRepository;
+
+    private org.zalando.catwatch.backend.repo.builder.ContributorBuilder contributorBuilder;
+
+    @BeforeClass
+    public static void initClass() {
+        controller.setupForGeneratedTest();
+        baseUrlOfSut = controller.startSut();
+        controller.registerOrExecuteInitSqlCommandsIfNeeded();
+        assertNotNull(baseUrlOfSut);
+        RestAssured.enableLoggingOfRequestAndResponseIfValidationFails();
+        RestAssured.useRelaxedHTTPSValidation();
+        RestAssured.urlEncodingEnabled = false;
+        RestAssured.config = RestAssured.config()
+            .jsonConfig(JsonConfig.jsonConfig().numberReturnType(JsonPathConfig.NumberReturnType.DOUBLE))
+            .redirect(redirectConfig().followRedirects(false));
+    }
+
+    @AfterClass
+    public static void tearDown() {
+        controller.stopSut();
+    }
+
+    @Before
+    public void initTest() {
+        controller.resetDatabase(Arrays.asList("CONTRIBUTOR"));
+        controller.resetStateOfSUT();
+        MockitoAnnotations.initMocks(this);
+        contributorBuilder = new org.zalando.catwatch.backend.repo.builder.ContributorBuilder(contributorRepository);
+    }
+
+    @Test
+    public void testSave() {
+        Contributor contributor = contributorBuilder.create();
+        when(contributorRepository.save(any(Contributor.class))).thenReturn(contributor);
+
+        Contributor savedContributor = contributorBuilder.save();
+
+        assertNotNull(savedContributor);
+        verify(contributorRepository).save(any(Contributor.class));
+    }
+
+    @Test
+    public void testSaveWithCustomValues() {
+        contributorBuilder
+            .id(123L)
+            .url("https://github.com/testuser")
+            .name("Test User")
+            .organizationName("Test Org")
+            .organizationId(456L)
+            .orgCommits(100)
+            .orgProjects(10)
+            .persProjects(5)
+            .persCommits(50)
+            .snapshotDate(new Date());
+
+        Contributor contributor = contributorBuilder.create();
+        when(contributorRepository.save(any(Contributor.class))).thenReturn(contributor);
+
+        Contributor savedContributor = contributorBuilder.save();
+
+        assertNotNull(savedContributor);
+        assertEquals(123L, savedContributor.getId());
+        assertEquals("https://github.com/testuser", savedContributor.getUrl());
+        assertEquals("Test User", savedContributor.getName());
+        assertEquals("Test Org", savedContributor.getOrganizationName());
+        assertEquals(456L, savedContributor.getOrganizationId());
+        assertEquals(Integer.valueOf(100), savedContributor.getOrganizationalCommitsCount());
+        assertEquals(Integer.valueOf(10), savedContributor.getOrganizationalProjectsCount());
+        assertEquals(Integer.valueOf(5), savedContributor.getPersonalProjectsCount());
+        assertEquals(Integer.valueOf(50), savedContributor.getPersonalCommitsCount());
+        assertNotNull(savedContributor.getSnapshotDate());
+
+        verify(contributorRepository).save(any(Contributor.class));
+    }
+
+    @Test
+    public void testSaveWithNullRepository() {
+        contributorBuilder = new org.zalando.catwatch.backend.repo.builder.ContributorBuilder(null);
+        assertNull(contributorBuilder.save());
+    }
+
+    @Test
+    public void testConstructorWithoutRepository() {
+        org.zalando.catwatch.backend.repo.builder.ContributorBuilder builder = new org.zalando.catwatch.backend.repo.builder.ContributorBuilder();
+        assertNull(builder.save());
+    }
+}
+
+*****

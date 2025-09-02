@@ -1,0 +1,57 @@
+2025-07-15 15:12:10,718 INFO  [background-preinit] o.h.v.i.u.Version - HV000001: Hibernate Validator 6.1.7.Final
+2025-07-15 15:12:10,838 INFO  [main] o.a.m.s.b.ForkedBooter - Starting ForkedBooter v2.22.0 using Java 11.0.20 on IFTO-PROBOOK with PID 5243 (started by rincon in /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_11_maven/cs/rest-gui/market/market-rest)
+2025-07-15 15:12:10,845 INFO  [main] o.a.m.s.b.ForkedBooter - No active profile set, falling back to default profiles: default
+2025-07-15 15:12:11,564 WARN  [main] o.s.b.c.c.ConfigDataEnvironment - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 34:13]
+2025-07-15 15:12:11,564 WARN  [main] o.s.b.c.c.ConfigDataEnvironment - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 24:13]
+2025-07-15 15:12:13,134 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-07-15 15:12:13,260 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 113 ms. Found 8 JPA repository interfaces.
+2025-07-15 15:12:13,770 INFO  [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'market.DataConfig' of type [market.DataConfig$$EnhancerBySpringCGLIB$$96802cd6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-07-15 15:12:13,997 INFO  [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@4df0dc7f' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-07-15 15:12:14,007 INFO  [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-07-15 15:12:14,487 INFO  [main] o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 0 (http)
+2025-07-15 15:12:14,510 INFO  [main] o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-auto-1"]
+2025-07-15 15:12:14,511 INFO  [main] o.a.c.c.StandardService - Starting service [Tomcat]
+2025-07-15 15:12:14,511 INFO  [main] o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.43]
+2025-07-15 15:12:14,679 INFO  [main] o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+2025-07-15 15:12:14,679 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3111 ms
+2025-07-15 15:12:14,932 INFO  [main] c.z.h.HikariDataSource - HikariPool-1 - Starting...
+2025-07-15 15:12:15,393 INFO  [main] c.z.h.HikariDataSource - HikariPool-1 - Start completed.
+2025-07-15 15:12:15,634 INFO  [main] o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-07-15 15:12:15,745 INFO  [main] o.h.Version - HHH000412: Hibernate ORM core version 5.4.28.Final
+2025-07-15 15:12:15,946 INFO  [main] o.h.a.c.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2025-07-15 15:12:16,343 INFO  [main] o.h.d.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2025-07-15 15:12:16,714 WARN  [main] o.h.b.i.InFlightMetadataCollectorImpl - HHH000069: Duplicate generator name gen
+2025-07-15 15:12:16,717 WARN  [main] o.h.b.i.InFlightMetadataCollectorImpl - HHH000069: Duplicate generator name gen
+2025-07-15 15:12:17,617 INFO  [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-07-15 15:12:17,629 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-07-15 15:12:18,743 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-07-15 15:12:19,757 INFO  [main] o.s.s.w.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6ce96a8f, org.springframework.security.web.context.SecurityContextPersistenceFilter@46e020f, org.springframework.security.web.header.HeaderWriterFilter@5da0311d, org.springframework.security.web.authentication.logout.LogoutFilter@f707aea, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@57c70513, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@ed6f879, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7abbf712, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@696f8df2, org.springframework.security.web.session.SessionManagementFilter@12e919ec, org.springframework.security.web.access.ExceptionTranslationFilter@647d6430, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4523eb5d]
+2025-07-15 15:12:19,952 INFO  [main] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2025-07-15 15:12:20,428 INFO  [main] o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-auto-1"]
+2025-07-15 15:12:20,463 INFO  [main] o.s.b.w.e.t.TomcatWebServer - Tomcat started on port(s): 46243 (http) with context path ''
+2025-07-15 15:12:21,057 INFO  [main] o.a.m.s.b.ForkedBooter - Started ForkedBooter in 11.276 seconds (JVM running for 13.554)
+2025-07-15 15:12:22,967 INFO  [http-nio-auto-1-exec-1] o.a.c.c.C.[.[.[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-07-15 15:12:22,967 INFO  [http-nio-auto-1-exec-1] o.s.w.s.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-07-15 15:12:22,969 INFO  [http-nio-auto-1-exec-1] o.s.w.s.DispatcherServlet - Completed initialization in 2 ms
+2025-07-15 15:12:23,304 WARN  [http-nio-auto-1-exec-1] m.r.e.RestExceptionHandler - RestErrorResponse{message='Argument validation error', entityName='UserAccount', description='uri=/register', fieldErrors=[{field='email', message='Account with this email already exists'}]}
+2025-07-15 15:12:23,603 WARN  [http-nio-auto-1-exec-2] m.r.e.RestExceptionHandler - RestErrorResponse{message='Argument validation error', entityName='UserAccount', description='uri=/register', fieldErrors=[{field='email', message='Account with this email already exists'}]}
+2025-07-15 15:12:23,704 WARN  [http-nio-auto-1-exec-3] m.r.e.RestExceptionHandler - RestErrorResponse{message='Argument validation error', entityName='userDTO', description='uri=/register', fieldErrors=[{field='email', message='The value shall be in the format of an email address'}]}
+2025-07-15 15:12:23,763 WARN  [http-nio-auto-1-exec-4] m.r.e.RestExceptionHandler - RestErrorResponse{message='Argument validation error', entityName='UserAccount', description='uri=/register', fieldErrors=[{field='email', message='Account with this email already exists'}]}
+2025-07-15 15:12:23,818 WARN  [http-nio-auto-1-exec-5] m.r.e.RestExceptionHandler - RestErrorResponse{message='Argument validation error', entityName='UserAccount', description='uri=/register', fieldErrors=[{field='email', message='Account with this email already exists'}]}
+2025-07-15 15:12:23,918 WARN  [http-nio-auto-1-exec-1] m.r.e.RestExceptionHandler - RestErrorResponse{message='Argument validation error', entityName='UserAccount', description='uri=/register', fieldErrors=[{field='email', message='Account with this email already exists'}]}
+2025-07-15 15:12:23,972 WARN  [http-nio-auto-1-exec-2] m.r.e.RestExceptionHandler - RestErrorResponse{message='Argument validation error', entityName='UserAccount', description='uri=/register', fieldErrors=[{field='email', message='Account with this email already exists'}]}
+2025-07-15 15:12:24,335 WARN  [http-nio-auto-1-exec-4] m.r.e.RestExceptionHandler - RestErrorResponse{message='Argument validation error', entityName='UserAccount', description='uri=/register', fieldErrors=[{field='email', message='Account with this email already exists'}]}
+2025-07-15 15:12:24,374 WARN  [http-nio-auto-1-exec-5] m.r.e.RestExceptionHandler - RestErrorResponse{message='Argument validation error', entityName='UserAccount', description='uri=/register', fieldErrors=[{field='email', message='Account with this email already exists'}]}
+2025-07-15 15:12:24,417 WARN  [http-nio-auto-1-exec-6] m.r.e.RestExceptionHandler - RestErrorResponse{message='Argument validation error', entityName='UserAccount', description='uri=/register', fieldErrors=[{field='email', message='Account with this email already exists'}]}
+2025-07-15 15:12:24,477 WARN  [http-nio-auto-1-exec-7] m.r.e.RestExceptionHandler - RestErrorResponse{message='Requested entity doesn't exist', entityName='ProductDTO', description='uri=/products/99999', fieldErrors=[{field='id', message='No instance with this id'}]}
+2025-07-15 15:12:24,515 WARN  [http-nio-auto-1-exec-8] m.r.e.RestExceptionHandler - RestErrorResponse{message='Argument validation error', entityName='userDTO', description='uri=/register', fieldErrors=[{field='phone', message='The value shall not be empty'}, {field='address', message='The value shall not be empty'}, {field='name', message='The value shall not be empty'}]}
+2025-07-15 15:12:25,748 WARN  [http-nio-auto-1-exec-10] m.r.e.RestExceptionHandler - RestErrorResponse{message='Argument validation error', entityName='UserAccount', description='uri=/register', fieldErrors=[{field='email', message='Account with this email already exists'}]}
+2025-07-15 15:12:25,855 INFO  [main] o.a.c.h.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-auto-1"]
+2025-07-15 15:12:25,856 INFO  [main] o.a.c.c.StandardService - Stopping service [Tomcat]
+2025-07-15 15:12:25,857 INFO  [main] o.a.c.c.C.[.[.[/] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2025-07-15 15:12:25,861 INFO  [main] o.a.c.h.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-auto-1"]
+2025-07-15 15:12:25,865 INFO  [main] o.a.c.h.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-auto-1"]
+2025-07-15 15:12:25,946 INFO  [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2025-07-15 15:12:25,962 INFO  [SpringContextShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-07-15 15:12:25,965 INFO  [SpringContextShutdownHook] c.z.h.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-07-15 15:12:25,969 INFO  [SpringContextShutdownHook] c.z.h.HikariDataSource - HikariPool-1 - Shutdown completed.

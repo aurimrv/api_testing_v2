@@ -1,0 +1,164 @@
+You are a highly skilled test engineer specializing in debugging and resolving compilation errors and test failures in Java-based projects. Your expertise includes Java 8, JUnit 4, and REST Assured, allowing you to diagnose issues efficiently and provide precise, actionable fixes.
+
+Given the test set below delimited by *****, fix the source lines indicated in the error messages delimited by #####, replacing only the expected by the actual values.
+
+Do keep package, headers and accessories methods unchanged.
+
+Do export all other corrected tests unchanged.
+
+The response must contain only Java code in JUnit 4 format.
+
+#####
+Line: 79
+NullPointer
+----------------------------------------
+Line: 87
+FileNotFound
+----------------------------------------
+
+#####
+*****
+package org.zalando.catwatch.backend;
+
+import org.junit.AfterClass;
+import org.junit.BeforeClass;
+import org.junit.Before;
+import org.junit.Test;
+import static org.junit.Assert.*;
+import java.util.Map;
+import java.util.List;
+import org.evomaster.client.java.controller.SutHandler;
+import io.restassured.RestAssured;
+import io.restassured.config.JsonConfig;
+import io.restassured.path.json.config.JsonPathConfig;
+import static io.restassured.config.RedirectConfig.redirectConfig;
+
+import org.zalando.catwatch.backend.github.SnapshotProvider;
+import org.zalando.catwatch.backend.model.util.Scorer;
+import java.io.File;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.io.IOException;
+import java.util.Date;
+import java.util.Optional;
+import java.util.concurrent.Future;
+import java.lang.reflect.Method;
+
+public class sonnet35_run01_SnapshotProviderTest {
+
+    private static final SutHandler controller = new em.embedded.org.zalando.EmbeddedEvoMasterController();
+    private static String baseUrlOfSut;
+
+    private SnapshotProvider snapshotProvider;
+    private Scorer mockScorer;
+
+    @BeforeClass
+    public static void initClass() {
+        controller.setupForGeneratedTest();
+        baseUrlOfSut = controller.startSut();
+        controller.registerOrExecuteInitSqlCommandsIfNeeded();
+        assertNotNull(baseUrlOfSut);
+        RestAssured.enableLoggingOfRequestAndResponseIfValidationFails();
+        RestAssured.useRelaxedHTTPSValidation();
+        RestAssured.urlEncodingEnabled = false;
+        RestAssured.config = RestAssured.config()
+            .jsonConfig(JsonConfig.jsonConfig().numberReturnType(JsonPathConfig.NumberReturnType.DOUBLE))
+            .redirect(redirectConfig().followRedirects(false));
+    }
+
+    @AfterClass
+    public static void tearDown() {
+        controller.stopSut();
+    }
+
+    @Before
+    public void initTest() {
+        controller.resetStateOfSUT();
+
+        mockScorer = new Scorer();
+        snapshotProvider = new SnapshotProvider(mockScorer, "/tmp/cache", 100, "testuser", "testpass", "testtoken");
+    }
+
+    @Test
+    public void testInit() {
+        snapshotProvider.init();
+        // Verify that the cache is initialized
+        assertNotNull(getCacheDirectory(snapshotProvider));
+    }
+
+    @Test
+    public void testInitWithInvalidCachePath() {
+        SnapshotProvider invalidProvider = new SnapshotProvider(mockScorer, "/invalid/path", 100, "testuser", "testpass", "testtoken");
+        invalidProvider.init();
+        // Verify that the cache is not initialized
+        assertFalse(getCacheDirectory(invalidProvider).isPresent());
+    }
+
+    @Test
+    public void testTakeSnapshot() throws IOException {
+        Future<?> snapshotFuture = snapshotProvider.takeSnapshot("testorg", new Date());
+        assertNotNull(snapshotFuture);
+    }
+
+    @Test
+    public void testTakeSnapshotWithToken() throws IOException {
+        SnapshotProvider tokenProvider = new SnapshotProvider(mockScorer, "/tmp/cache", 100, null, null, "testtoken");
+        tokenProvider.init();
+        Future<?> snapshotFuture = tokenProvider.takeSnapshot("testorg", new Date());
+        assertNotNull(snapshotFuture);
+    }
+
+    @Test
+    public void testTakeSnapshotWithoutCredentials() throws IOException {
+        SnapshotProvider noAuthProvider = new SnapshotProvider(mockScorer, "/tmp/cache", 100, null, null, null);
+        noAuthProvider.init();
+        Future<?> snapshotFuture = noAuthProvider.takeSnapshot("testorg", new Date());
+        assertNotNull(snapshotFuture);
+    }
+
+    @Test
+    public void testGetCacheDirectory() {
+        Optional<File> cacheDir = getCacheDirectory(snapshotProvider);
+        assertTrue(cacheDir.isPresent());
+        assertTrue(cacheDir.get().isDirectory());
+    }
+
+    @Test
+    public void testGetCacheDirectoryWithExistingDir() throws IOException {
+        Path tempDir = Files.createTempDirectory("testCache");
+        SnapshotProvider tempProvider = new SnapshotProvider(mockScorer, tempDir.toString(), 100, "testuser", "testpass", "testtoken");
+        Optional<File> cacheDir = getCacheDirectory(tempProvider);
+        assertTrue(cacheDir.isPresent());
+        assertEquals(tempDir.toFile(), cacheDir.get());
+    }
+
+    @Test
+    public void testGetCacheDirectoryWithNonWritableDir() throws IOException {
+        Path tempDir = Files.createTempDirectory("testCache");
+        tempDir.toFile().setWritable(false);
+        SnapshotProvider tempProvider = new SnapshotProvider(mockScorer, tempDir.toString(), 100, "testuser", "testpass", "testtoken");
+        Optional<File> cacheDir = getCacheDirectory(tempProvider);
+        assertFalse(cacheDir.isPresent());
+    }
+
+    @Test
+    public void testGetCacheDirectoryWithFileInsteadOfDir() throws IOException {
+        Path tempFile = Files.createTempFile("testCache", ".tmp");
+        SnapshotProvider tempProvider = new SnapshotProvider(mockScorer, tempFile.toString(), 100, "testuser", "testpass", "testtoken");
+        Optional<File> cacheDir = getCacheDirectory(tempProvider);
+        assertFalse(cacheDir.isPresent());
+    }
+
+    private Optional<File> getCacheDirectory(SnapshotProvider provider) {
+        try {
+            Method method = SnapshotProvider.class.getDeclaredMethod("getCacheDirectory");
+            method.setAccessible(true);
+            return (Optional<File>) method.invoke(provider);
+        } catch (Exception e) {
+            e.printStackTrace();
+            return Optional.empty();
+        }
+    }
+}
+
+*****

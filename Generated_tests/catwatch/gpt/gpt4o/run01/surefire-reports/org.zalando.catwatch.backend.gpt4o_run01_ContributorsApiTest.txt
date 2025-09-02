@@ -1,0 +1,13 @@
+-------------------------------------------------------------------------------
+Test set: org.zalando.catwatch.backend.gpt4o_run01_ContributorsApiTest
+-------------------------------------------------------------------------------
+Tests run: 9, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 2.148 s <<< FAILURE! - in org.zalando.catwatch.backend.gpt4o_run01_ContributorsApiTest
+testContributorsGetDefaultLimit(org.zalando.catwatch.backend.gpt4o_run01_ContributorsApiTest)  Time elapsed: 0.059 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+JSON path message doesn't match.
+Expected: a string containing "sortBy must be empty or have a valid value but was -commits. Valid values are organizationalCommitsCount,organizationalProjectsCount,personalCommitsCount,personalProjectsCount,organizationName,name"
+  Actual: this parameter configuration is not implemented yet .. start date, end date required atm
+
+	at org.zalando.catwatch.backend.gpt4o_run01_ContributorsApiTest.testContributorsGetDefaultLimit(gpt4o_run01_ContributorsApiTest.java:128)
+

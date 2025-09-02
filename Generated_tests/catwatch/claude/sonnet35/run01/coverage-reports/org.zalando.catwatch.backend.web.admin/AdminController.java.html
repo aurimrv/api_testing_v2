@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="pt"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>AdminController.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">catwatch-backend</a> &gt; <a href="index.source.html" class="el_package">org.zalando.catwatch.backend.web.admin</a> &gt; <span class="el_source">AdminController.java</span></div><h1>AdminController.java</h1><pre class="source lang-java linenums">package org.zalando.catwatch.backend.web.admin;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.*;
+import org.zalando.catwatch.backend.repo.ContributorRepository;
+import org.zalando.catwatch.backend.repo.ProjectRepository;
+import org.zalando.catwatch.backend.repo.StatisticsRepository;
+
+import java.util.List;
+
+import static com.google.common.collect.Lists.newArrayList;
+import static org.springframework.web.bind.annotation.RequestMethod.GET;
+import static org.springframework.web.bind.annotation.RequestMethod.POST;
+
+@Controller
+public class AdminController {
+
+    private final ContributorRepository contributorRepository;
+    private final StatisticsRepository statisticsRepository;
+    private final ProjectRepository projectRepository;
+
+    @Autowired
+    public AdminController(ContributorRepository contributorRepository,
+                           StatisticsRepository statisticsRepository,
+<span class="fc" id="L27">                           ProjectRepository projectRepository) {</span>
+<span class="fc" id="L28">        this.contributorRepository = contributorRepository;</span>
+<span class="fc" id="L29">        this.statisticsRepository = statisticsRepository;</span>
+<span class="fc" id="L30">        this.projectRepository = projectRepository;</span>
+<span class="fc" id="L31">    }</span>
+
+    @RequestMapping(value = &quot;/config/scoring.project&quot;, method = POST, produces = &quot;application/json; charset=utf-8&quot;)
+    @ResponseBody
+    public List&lt;String&gt; configScoringProjects(@RequestBody(required=false) String scoringProject,
+                                              @RequestHeader(value=&quot;X-Organizations&quot;, required=false) String organizations) {
+        //This endpoint enabled execution of arbitrary JS code passed in through the body, deactivated for now
+<span class="fc" id="L38">        throw new UnsupportedOperationException(&quot;This endpoint is deactivated.&quot;);</span>
+    }
+
+    @RequestMapping(value = &quot;/init&quot;, method = GET, produces = &quot;application/json; charset=utf-8&quot;)
+    @ResponseBody
+    public String init() {
+        //Unsecured writable endpoint deactivated
+<span class="nc" id="L45">        throw new UnsupportedOperationException(&quot;This endpoint is deactivated.&quot;);</span>
+    }
+
+    @RequestMapping(value = &quot;/delete&quot;, method = GET, produces = &quot;application/json; charset=utf-8&quot;)
+    @ResponseBody
+    public String deleteAll() {
+        //Unsecured writable endpoint deactivated
+<span class="nc" id="L52">        throw new UnsupportedOperationException(&quot;This endpoint is deactivated.&quot;);</span>
+    }
+
+    @RequestMapping(value = &quot;/import&quot;, method = POST, produces = &quot;application/json; charset=utf-8&quot;)
+    @ResponseBody
+    public String importJson(@RequestBody DatabaseDto dto) {
+        //Unsecured writable endpoint deactivated
+<span class="fc" id="L59">        throw new UnsupportedOperationException(&quot;This endpoint is deactivated.&quot;);</span>
+    }
+
+    @RequestMapping(value = &quot;/export&quot;, method = GET, produces = &quot;application/json; charset=utf-8&quot;)
+    @ResponseBody
+    public DatabaseDto exportJson() {
+<span class="fc" id="L65">        DatabaseDto dto = new DatabaseDto();</span>
+<span class="fc" id="L66">        dto.contributors.addAll(newArrayList(contributorRepository.findAll()));</span>
+<span class="fc" id="L67">        dto.projects.addAll(newArrayList(projectRepository.findAll()));</span>
+<span class="fc" id="L68">        dto.statistics.addAll(newArrayList(statisticsRepository.findAll()));</span>
+<span class="fc" id="L69">        return dto;</span>
+    }
+
+    @ExceptionHandler(UnsupportedOperationException.class)
+    @ResponseBody
+    @ResponseStatus(value = HttpStatus.FORBIDDEN)
+    public String handleException(Exception e) {
+<span class="fc" id="L76">        return e.getMessage();</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

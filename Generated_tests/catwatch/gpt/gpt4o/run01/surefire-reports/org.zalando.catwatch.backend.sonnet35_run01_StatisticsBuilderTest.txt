@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.zalando.catwatch.backend.sonnet35_run01_StatisticsBuilderTest
+-------------------------------------------------------------------------------
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 s - in org.zalando.catwatch.backend.sonnet35_run01_StatisticsBuilderTest

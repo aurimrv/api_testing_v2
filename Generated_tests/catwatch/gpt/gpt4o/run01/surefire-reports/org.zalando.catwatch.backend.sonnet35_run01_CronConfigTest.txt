@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.zalando.catwatch.backend.sonnet35_run01_CronConfigTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 1.787 s - in org.zalando.catwatch.backend.sonnet35_run01_CronConfigTest

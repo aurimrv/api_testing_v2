@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="pt"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Contributor.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">catwatch-backend</a> &gt; <a href="index.source.html" class="el_package">org.zalando.catwatch.backend.model</a> &gt; <span class="el_source">Contributor.java</span></div><h1>Contributor.java</h1><pre class="source lang-java linenums">package org.zalando.catwatch.backend.model;
+
+import com.fasterxml.jackson.annotation.JsonProperty;
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
+
+import javax.persistence.EmbeddedId;
+import javax.persistence.Entity;
+import java.util.Date;
+
+@Entity
+@ApiModel(description = &quot;A contributor is a (GitHub) user that may have contributed to projects. &quot;
+		+ &quot;Equals to a GitHub acocunt. See https://developer.github.com/v3/users/#get-a-single-user&quot;)
+public class Contributor {
+
+	@EmbeddedId
+	private ContributorKey key;
+
+<span class="fc" id="L19">	private String name = null;</span>
+<span class="fc" id="L20">	private String url = null;</span>
+<span class="fc" id="L21">	private Integer organizationalCommitsCount = null;</span>
+	/**
+	 * todo
+	 */
+<span class="fc" id="L25">	private Integer personalCommitsCount = null;</span>
+<span class="fc" id="L26">	private Integer personalProjectsCount = null;</span>
+<span class="fc" id="L27">	private Integer organizationalProjectsCount = null;</span>
+<span class="fc" id="L28">	private String organizationName = null;</span>
+
+	public Contributor() {
+<span class="fc" id="L31">		super();</span>
+<span class="fc" id="L32">	}</span>
+
+	public Contributor(long id, long organizationId, Date snapshotDate) {
+<span class="fc" id="L35">		super();</span>
+<span class="fc" id="L36">		this.key = new ContributorKey(id, organizationId, snapshotDate);</span>
+<span class="fc" id="L37">	}</span>
+	
+
+	public ContributorKey getKey() {
+<span class="fc" id="L41">		return key;</span>
+	}
+
+	@ApiModelProperty(value = &quot;the GitHub User ID of the Contributor. Part of the primary key. See official GitHub REST API guide.&quot;)
+	@JsonProperty(&quot;id&quot;)
+	public long getId() {
+<span class="fc bfc" id="L47" title="All 2 branches covered.">		return key == null ? 0: key.getId();</span>
+	}
+
+	@ApiModelProperty(value = &quot;the GitHub ID of the organization. Part of the primary key. See official GitHub REST API guide.&quot;)
+	@JsonProperty(&quot;organizationId&quot;)
+	public long getOrganizationId() {
+<span class="fc bfc" id="L53" title="All 2 branches covered.">		return key == null ? 0: key.getOrganizationId();</span>
+	}
+	/**
+	 * Name of contributor
+	 **/
+	@ApiModelProperty(value = &quot;Name of contributor&quot;)
+	@JsonProperty(&quot;name&quot;)
+	public String getName() {
+<span class="fc" id="L61">		return name;</span>
+	}
+
+	public void setName(String name) {
+<span class="fc" id="L65">		this.name = name;</span>
+<span class="fc" id="L66">	}</span>
+
+	/**
+	 * URL of contributor
+	 **/
+	@ApiModelProperty(value = &quot;URL of contributor&quot;)
+	@JsonProperty(&quot;url&quot;)
+	public String getUrl() {
+<span class="fc" id="L74">		return url;</span>
+	}
+
+	public void setUrl(String url) {
+<span class="fc" id="L78">		this.url = url;</span>
+<span class="fc" id="L79">	}</span>
+
+	/**
+	 * Count of organizational commits.
+	 **/
+	@ApiModelProperty(value = &quot;Count of organizational commits.&quot;)
+	@JsonProperty(&quot;organizationalCommitsCount&quot;)
+	public Integer getOrganizationalCommitsCount() {
+<span class="fc" id="L87">		return organizationalCommitsCount;</span>
+	}
+
+	public void setOrganizationalCommitsCount(Integer organizationalCommitsCount) {
+<span class="fc" id="L91">		this.organizationalCommitsCount = organizationalCommitsCount;</span>
+<span class="fc" id="L92">	}</span>
+
+	/**
+	 * Count of personal commits.
+	 **/
+	@ApiModelProperty(value = &quot;Count of personal commits.&quot;)
+	@JsonProperty(&quot;personalCommitsCount&quot;)
+	public Integer getPersonalCommitsCount() {
+<span class="fc" id="L100">		return personalCommitsCount;</span>
+	}
+
+	public void setPersonalCommitsCount(Integer personalCommitsCount) {
+<span class="fc" id="L104">		this.personalCommitsCount = personalCommitsCount;</span>
+<span class="fc" id="L105">	}</span>
+
+	/**
+	 * Count of personal projects of contributor.
+	 **/
+	@ApiModelProperty(value = &quot;Count of personal projects of contributor.&quot;)
+	@JsonProperty(&quot;personalProjectsCount&quot;)
+	public Integer getPersonalProjectsCount() {
+<span class="fc" id="L113">		return personalProjectsCount;</span>
+	}
+
+	public void setPersonalProjectsCount(Integer personalProjectsCount) {
+<span class="fc" id="L117">		this.personalProjectsCount = personalProjectsCount;</span>
+<span class="fc" id="L118">	}</span>
+
+	/**
+	 * Count of organization projects of contributor.
+	 **/
+	@ApiModelProperty(value = &quot;Count of organization projects of contributor.&quot;)
+	@JsonProperty(&quot;organizationalProjectsCount&quot;)
+	public Integer getOrganizationalProjectsCount() {
+<span class="fc" id="L126">		return organizationalProjectsCount;</span>
+	}
+
+	public void setOrganizationalProjectsCount(Integer organizationalProjectsCount) {
+<span class="fc" id="L130">		this.organizationalProjectsCount = organizationalProjectsCount;</span>
+<span class="fc" id="L131">	}</span>
+	
+	/**
+	 * Organization of the Contributor.
+	 **/
+	@ApiModelProperty(value = &quot;Organization of the Contributor.&quot;)
+	@JsonProperty(&quot;organizationName&quot;)
+	public String getOrganizationName() {
+<span class="fc" id="L139">		return organizationName;</span>
+	}
+
+	public void setOrganizationName(String organizationName) {
+<span class="fc" id="L143">		this.organizationName = organizationName;</span>
+<span class="fc" id="L144">	}</span>
+
+	/**
+	 * Contributor snapshot date.
+	 **/
+	@ApiModelProperty(value = &quot;Contributor snapshot date. Part of the primary key.&quot;)
+	@JsonProperty(&quot;snapshotDate&quot;)
+	public Date getSnapshotDate() {
+<span class="fc bfc" id="L152" title="All 2 branches covered.">		return key == null ? null : key.getSnapshotDate();</span>
+	}
+
+	public String getLoginId() {
+<span class="fc" id="L156">		String regex = &quot;https://github.com/&quot;;</span>
+<span class="fc" id="L157">		String loginId = &quot;&quot;;</span>
+<span class="pc bpc" id="L158" title="1 of 4 branches missed.">		if (url != null &amp;&amp; url.startsWith(regex)) {</span>
+<span class="fc" id="L159">			loginId = url.split(regex)[1];</span>
+		}
+<span class="fc" id="L161">		return loginId;</span>
+	}
+
+	@Override
+	public String toString() {
+<span class="fc" id="L166">		StringBuilder sb = new StringBuilder();</span>
+<span class="fc" id="L167">		sb.append(&quot;class Contributor {\n&quot;);</span>
+
+<span class="fc" id="L169">		sb.append(&quot;  id: &quot;).append(getId()).append(&quot;\n&quot;);</span>
+<span class="fc" id="L170">		sb.append(&quot;  organizationId: &quot;).append(getOrganizationId()).append(&quot;\n&quot;);</span>
+<span class="fc" id="L171">		sb.append(&quot;  name: &quot;).append(name).append(&quot;\n&quot;);</span>
+<span class="fc" id="L172">		sb.append(&quot;  url: &quot;).append(url).append(&quot;\n&quot;);</span>
+<span class="fc" id="L173">		sb.append(&quot;  organizationalCommitsCount: &quot;).append(organizationalCommitsCount).append(&quot;\n&quot;);</span>
+<span class="fc" id="L174">		sb.append(&quot;  personalCommitsCount: &quot;).append(personalCommitsCount).append(&quot;\n&quot;);</span>
+<span class="fc" id="L175">		sb.append(&quot;  personalProjectsCount: &quot;).append(personalProjectsCount).append(&quot;\n&quot;);</span>
+<span class="fc" id="L176">		sb.append(&quot;  organizationalProjectsCount: &quot;).append(organizationalProjectsCount).append(&quot;\n&quot;);</span>
+<span class="fc" id="L177">		sb.append(&quot;  organizationName: &quot;).append(organizationName).append(&quot;\n&quot;);</span>
+<span class="fc" id="L178">		sb.append(&quot;  snapshotDate: &quot;).append(getSnapshotDate()).append(&quot;\n&quot;);</span>
+<span class="fc" id="L179">		sb.append(&quot;}\n&quot;);</span>
+<span class="fc" id="L180">		return sb.toString();</span>
+	}
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

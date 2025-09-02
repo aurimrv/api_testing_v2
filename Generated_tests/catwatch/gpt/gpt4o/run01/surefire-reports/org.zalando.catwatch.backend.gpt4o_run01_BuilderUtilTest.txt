@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: org.zalando.catwatch.backend.gpt4o_run01_BuilderUtilTest
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 2.399 s <<< FAILURE! - in org.zalando.catwatch.backend.gpt4o_run01_BuilderUtilTest
+testRandomProjectName_pollingBehavior(org.zalando.catwatch.backend.gpt4o_run01_BuilderUtilTest)  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.AssertionError: Project names should rotate and not be the same consecutively
+	at org.zalando.catwatch.backend.gpt4o_run01_BuilderUtilTest.testRandomProjectName_pollingBehavior(gpt4o_run01_BuilderUtilTest.java:86)
+
+testRandomProjectName_exceptionHandling(org.zalando.catwatch.backend.gpt4o_run01_BuilderUtilTest)  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.AssertionError: Expected RuntimeException for simulated IOException
+	at org.zalando.catwatch.backend.gpt4o_run01_BuilderUtilTest.testRandomProjectName_exceptionHandling(gpt4o_run01_BuilderUtilTest.java:94)
+

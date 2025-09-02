@@ -1,0 +1,242 @@
+
+package eu.fayder.restcountries;
+
+import org.junit.AfterClass;
+import org.junit.BeforeClass;
+import org.junit.Before;
+import org.junit.Test;
+import static org.junit.Assert.*;
+import java.util.Map;
+import java.util.List;
+import static org.evomaster.client.java.controller.api.EMTestUtils.*;
+import org.evomaster.client.java.controller.SutHandler;
+import io.restassured.RestAssured;
+import static io.restassured.RestAssured.given;
+import io.restassured.response.ValidatableResponse;
+import static org.hamcrest.Matchers.*;
+import io.restassured.config.JsonConfig;
+import io.restassured.path.json.config.JsonPathConfig;
+import static io.restassured.config.RedirectConfig.redirectConfig;
+import static org.evomaster.client.java.controller.contentMatchers.NumberMatcher.*;
+import static org.evomaster.client.java.controller.contentMatchers.StringMatcher.*;
+import static org.evomaster.client.java.controller.contentMatchers.SubStringMatcher.*;
+import static org.evomaster.client.java.controller.expect.ExpectationHandler.expectationHandler;
+import org.evomaster.client.java.controller.expect.ExpectationHandler;
+import io.restassured.path.json.JsonPath;
+import java.util.Arrays;
+
+public class gpt4o_run01_CountryRestV2Test {
+
+    private static final SutHandler controller = new em.embedded.eu.fayder.EmbeddedEvoMasterController();
+    private static String baseUrlOfSut;
+
+    @BeforeClass
+    public static void initClass() {
+        controller.setupForGeneratedTest();
+        baseUrlOfSut = controller.startSut();
+        controller.registerOrExecuteInitSqlCommandsIfNeeded();
+        assertNotNull(baseUrlOfSut);
+        RestAssured.enableLoggingOfRequestAndResponseIfValidationFails();
+        RestAssured.useRelaxedHTTPSValidation();
+        RestAssured.urlEncodingEnabled = false;
+        RestAssured.config = RestAssured.config()
+            .jsonConfig(JsonConfig.jsonConfig().numberReturnType(JsonPathConfig.NumberReturnType.DOUBLE))
+            .redirect(redirectConfig().followRedirects(false));
+    }
+
+    @AfterClass
+    public static void tearDown() {
+        controller.stopSut();
+    }
+
+    @Before
+    public void initTest() {
+        controller.resetStateOfSUT();
+    }
+
+    @Test
+    public void testGetByAlpha_ValidAlphaCode() {
+        given()
+            .baseUri(baseUrlOfSut)
+            .pathParam("alphacode", "USA")
+        .when()
+            .get("/v2/alpha/{alphacode}")
+        .then()
+            .statusCode(200);
+    }
+
+    @Test
+    public void testGetByAlpha_InvalidAlphaCode() {
+        given()
+            .baseUri(baseUrlOfSut)
+            .pathParam("alphacode", "ZZZ")
+        .when()
+            .get("/v2/alpha/{alphacode}")
+        .then()
+            .statusCode(404);
+    }
+
+    @Test
+    public void testGetByAlpha_EmptyAlphaCode() {
+        given()
+            .baseUri(baseUrlOfSut)
+            .pathParam("alphacode", "")
+        .when()
+            .get("/v2/alpha/{alphacode}")
+        .then()
+            .statusCode(400);
+    }
+
+    @Test
+    public void testGetByAlphaList_ValidCodes() {
+        given()
+            .baseUri(baseUrlOfSut)
+            .queryParam("codes", "USA;CAN")
+        .when()
+            .get("/v2/alpha")
+        .then()
+            .statusCode(200);
+    }
+
+    @Test
+    public void testGetByAlphaList_EmptyCodes() {
+        given()
+            .baseUri(baseUrlOfSut)
+            .queryParam("codes", "")
+        .when()
+            .get("/v2/alpha")
+        .then()
+            .statusCode(400);
+    }
+
+    @Test
+    public void testGetByCurrency_ValidCurrency() {
+        given()
+            .baseUri(baseUrlOfSut)
+            .pathParam("currency", "USD")
+        .when()
+            .get("/v2/currency/{currency}")
+        .then()
+            .statusCode(200);
+    }
+
+    @Test
+    public void testGetByCurrency_InvalidCurrencyLength() {
+        given()
+            .baseUri(baseUrlOfSut)
+            .pathParam("currency", "US")
+        .when()
+            .get("/v2/currency/{currency}")
+        .then()
+            .statusCode(400);
+    }
+
+    @Test
+    public void testGetByCurrency_NonexistentCurrency() {
+        given()
+            .baseUri(baseUrlOfSut)
+            .pathParam("currency", "ZZZ")
+        .when()
+            .get("/v2/currency/{currency}")
+        .then()
+            .statusCode(404);
+    }
+
+    @Test
+    public void testGetByName_ValidName() {
+        given()
+            .baseUri(baseUrlOfSut)
+            .pathParam("name", "France")
+        .when()
+            .get("/v2/name/{name}")
+        .then()
+            .statusCode(200);
+    }
+
+    @Test
+    public void testGetByName_NonexistentName() {
+        given()
+            .baseUri(baseUrlOfSut)
+            .pathParam("name", "Atlantis")
+        .when()
+            .get("/v2/name/{name}")
+        .then()
+            .statusCode(404);
+    }
+
+    @Test
+    public void testGetByCallingCode_ValidCode() {
+        given()
+            .baseUri(baseUrlOfSut)
+            .pathParam("callingcode", "1")
+        .when()
+            .get("/v2/callingcode/{callingcode}")
+        .then()
+            .statusCode(200);
+    }
+
+    @Test
+    public void testGetByCallingCode_NonexistentCode() {
+        given()
+            .baseUri(baseUrlOfSut)
+            .pathParam("callingcode", "999")
+        .when()
+            .get("/v2/callingcode/{callingcode}")
+        .then()
+            .statusCode(404);
+    }
+
+    @Test
+    public void testGetByCapital_ValidCapital() {
+        given()
+            .baseUri(baseUrlOfSut)
+            .pathParam("capital", "Tokyo")
+        .when()
+            .get("/v2/capital/{capital}")
+        .then()
+            .statusCode(200);
+    }
+
+    @Test
+    public void testGetByCapital_NonexistentCapital() {
+        given()
+            .baseUri(baseUrlOfSut)
+            .pathParam("capital", "UnknownCity")
+        .when()
+            .get("/v2/capital/{capital}")
+        .then()
+            .statusCode(404);
+    }
+
+    @Test
+    public void testGetByRegion_ValidRegion() {
+        given()
+            .baseUri(baseUrlOfSut)
+            .pathParam("region", "Asia")
+        .when()
+            .get("/v2/region/{region}")
+        .then()
+            .statusCode(200);
+    }
+
+    @Test
+    public void testGetByRegion_NonexistentRegion() {
+        given()
+            .baseUri(baseUrlOfSut)
+            .pathParam("region", "UnknownRegion")
+        .when()
+            .get("/v2/region/{region}")
+        .then()
+            .statusCode(404);
+    }
+
+    @Test
+    public void testDoPOST_MethodNotAllowed() {
+        given()
+            .baseUri(baseUrlOfSut)
+        .when()
+            .post("/v2/")
+        .then()
+            .statusCode(405);
+    }
+}

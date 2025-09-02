@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: eu.fayder.restcountries.sonnet35_run01_CountryRestV1Test
+-------------------------------------------------------------------------------
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.863 s - in eu.fayder.restcountries.sonnet35_run01_CountryRestV1Test

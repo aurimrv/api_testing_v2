@@ -1,0 +1,73 @@
+[[1;31mERROR[m] COMPILATION ERROR : 
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_CronConfigTest.java:[71,9] cannot find symbol
+  symbol:   class RetryableFetcher
+  location: class org.zalando.catwatch.backend.gpt4o_run01_CronConfigTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_CronConfigTest.java:[71,44] cannot find symbol
+  symbol:   class RetryableFetcher
+  location: class org.zalando.catwatch.backend.gpt4o_run01_CronConfigTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_CronConfigTest.java:[77,9] cannot find symbol
+  symbol:   class ApplicationContext
+  location: class org.zalando.catwatch.backend.gpt4o_run01_CronConfigTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_CronConfigTest.java:[77,46] cannot find symbol
+  symbol:   class ApplicationContext
+  location: class org.zalando.catwatch.backend.gpt4o_run01_CronConfigTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_CronConfigTest.java:[84,9] cannot find symbol
+  symbol:   class CommandLineRunner
+  location: class org.zalando.catwatch.backend.gpt4o_run01_CronConfigTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_CronConfigTest.java:[97,9] cannot find symbol
+  symbol:   class RetryableFetcher
+  location: class org.zalando.catwatch.backend.gpt4o_run01_CronConfigTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_CronConfigTest.java:[97,44] cannot find symbol
+  symbol:   class RetryableFetcher
+  location: class org.zalando.catwatch.backend.gpt4o_run01_CronConfigTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_CronConfigTest.java:[103,9] cannot find symbol
+  symbol:   class ApplicationContext
+  location: class org.zalando.catwatch.backend.gpt4o_run01_CronConfigTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_CronConfigTest.java:[103,46] cannot find symbol
+  symbol:   class ApplicationContext
+  location: class org.zalando.catwatch.backend.gpt4o_run01_CronConfigTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_CronConfigTest.java:[110,9] cannot find symbol
+  symbol:   class CommandLineRunner
+  location: class org.zalando.catwatch.backend.gpt4o_run01_CronConfigTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_CronConfigTest.java:[123,58] org.zalando.catwatch.backend.scheduler.CronConfig.CustomExitCodeGenerator is not public in org.zalando.catwatch.backend.scheduler.CronConfig; cannot be accessed from outside package
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_CronConfigTest.java:[124,66] org.zalando.catwatch.backend.scheduler.CronConfig.CustomExitCodeGenerator is not public in org.zalando.catwatch.backend.scheduler.CronConfig; cannot be accessed from outside package
+[[1;31mERROR[m] Failed to execute goal [32morg.apache.maven.plugins:maven-compiler-plugin:3.8.0:testCompile[m [1m(default-testCompile)[m on project [36mcatwatch-backend[m: [1;31mCompilation failure[m: Compilation failure: 
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_CronConfigTest.java:[71,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class RetryableFetcher
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_CronConfigTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_CronConfigTest.java:[71,44] cannot find symbol
+[[1;31mERROR[m]   symbol:   class RetryableFetcher
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_CronConfigTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_CronConfigTest.java:[77,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class ApplicationContext
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_CronConfigTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_CronConfigTest.java:[77,46] cannot find symbol
+[[1;31mERROR[m]   symbol:   class ApplicationContext
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_CronConfigTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_CronConfigTest.java:[84,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class CommandLineRunner
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_CronConfigTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_CronConfigTest.java:[97,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class RetryableFetcher
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_CronConfigTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_CronConfigTest.java:[97,44] cannot find symbol
+[[1;31mERROR[m]   symbol:   class RetryableFetcher
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_CronConfigTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_CronConfigTest.java:[103,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class ApplicationContext
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_CronConfigTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_CronConfigTest.java:[103,46] cannot find symbol
+[[1;31mERROR[m]   symbol:   class ApplicationContext
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_CronConfigTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_CronConfigTest.java:[110,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class CommandLineRunner
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.gpt4o_run01_CronConfigTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_CronConfigTest.java:[123,58] org.zalando.catwatch.backend.scheduler.CronConfig.CustomExitCodeGenerator is not public in org.zalando.catwatch.backend.scheduler.CronConfig; cannot be accessed from outside package
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/gpt4o_run01_CronConfigTest.java:[124,66] org.zalando.catwatch.backend.scheduler.CronConfig.CustomExitCodeGenerator is not public in org.zalando.catwatch.backend.scheduler.CronConfig; cannot be accessed from outside package
+[[1;31mERROR[m] -> [1m[Help 1][m
+[[1;31mERROR[m] 
+[[1;31mERROR[m] To see the full stack trace of the errors, re-run Maven with the [1m-e[m switch.
+[[1;31mERROR[m] Re-run Maven using the [1m-X[m switch to enable full debug logging.
+[[1;31mERROR[m] 
+[[1;31mERROR[m] For more information about the errors and possible solutions, please read the following articles:
+[[1;31mERROR[m] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

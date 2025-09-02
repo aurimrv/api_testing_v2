@@ -1,0 +1,11 @@
+-------------------------------------------------------------------------------
+Test set: org.zalando.catwatch.backend.gpt35_run01_CronConfigTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 2.182 s <<< FAILURE! - in org.zalando.catwatch.backend.gpt35_run01_CronConfigTest
+testCronMethod(org.zalando.catwatch.backend.gpt35_run01_CronConfigTest)  Time elapsed: 0.083 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <200> but was <405>.
+
+	at org.zalando.catwatch.backend.gpt35_run01_CronConfigTest.testCronMethod(gpt35_run01_CronConfigTest.java:81)
+

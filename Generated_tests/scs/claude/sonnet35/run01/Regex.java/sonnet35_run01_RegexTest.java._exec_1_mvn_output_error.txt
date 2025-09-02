@@ -1,0 +1,24 @@
+Line: 102
+Expected status code <200> but was <404>.
+----------------------------------------
+Line: 83
+Response body doesn't match expectation.
+Expected: "fpe"
+Actual: none
+----------------------------------------
+Line: 133
+Response body doesn't match expectation.
+Expected: "none"
+Actual: date
+----------------------------------------
+Line: 123
+Response body doesn't match expectation.
+Expected: "none"
+Actual: 0
+----------------------------------------
+Line: 112
+Expected status code <200> but was <404>.
+----------------------------------------
+Line: 62
+Expected status code <200> but was <404>.
+----------------------------------------

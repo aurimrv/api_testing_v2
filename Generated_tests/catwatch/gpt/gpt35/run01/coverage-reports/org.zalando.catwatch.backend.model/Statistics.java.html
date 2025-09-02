@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="pt"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Statistics.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">catwatch-backend</a> &gt; <a href="index.source.html" class="el_package">org.zalando.catwatch.backend.model</a> &gt; <span class="el_source">Statistics.java</span></div><h1>Statistics.java</h1><pre class="source lang-java linenums">package org.zalando.catwatch.backend.model;
+
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.google.common.base.MoreObjects;
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import java.util.Date;
+
+@Entity
+@ApiModel(description = &quot;Represents the statistics of a GitHub organization. See https://developer.github.com/v3/orgs/&quot;)
+public class Statistics {
+
+	@Id
+	private StatisticsKey key;
+
+<span class="pc" id="L19">	private Integer privateProjectCount = null;</span>
+<span class="pc" id="L20">	private Integer publicProjectCount = null;</span>
+<span class="pc" id="L21">	private Integer membersCount = null;</span>
+<span class="pc" id="L22">	private Integer teamsCount = null;</span>
+<span class="pc" id="L23">	private Integer allContributorsCount = null;</span>
+<span class="pc" id="L24">	private Integer externalContributorsCount = null;</span>
+<span class="pc" id="L25">	private Integer allStarsCount = null;</span>
+<span class="pc" id="L26">	private Integer allForksCount = null;</span>
+<span class="pc" id="L27">	private Integer allSizeCount = null;</span>
+<span class="pc" id="L28">	private Integer programLanguagesCount = null;</span>
+<span class="pc" id="L29">	private Integer tagsCount = null;</span>
+<span class="pc" id="L30">	private String organizationName = null;</span>
+
+	public Statistics() {
+<span class="fc" id="L33">		super();</span>
+<span class="fc" id="L34">	}</span>
+
+	public Statistics(long id, Date snapshotDate) {
+<span class="nc" id="L37">		super();</span>
+<span class="nc" id="L38">		this.key = new StatisticsKey(id, snapshotDate);</span>
+<span class="nc" id="L39">	}</span>
+
+	public StatisticsKey getKey() {
+<span class="fc" id="L42">		return key;</span>
+	}
+
+	@ApiModelProperty(value = &quot;the GitHub ID of the organization. Part of the primary key. See official GitHub REST API guide.&quot;)
+	@JsonProperty(&quot;id&quot;)
+	public long getId() {
+<span class="pc bpc" id="L48" title="1 of 2 branches missed.">		return key == null ? 0: key.getId();</span>
+	}
+	
+	/**
+	 * Count of private projects.
+	 **/
+	@ApiModelProperty(value = &quot;Count of private projects.&quot;)
+	@JsonProperty(&quot;privateProjectCount&quot;)
+	public Integer getPrivateProjectCount() {
+<span class="fc" id="L57">		return privateProjectCount;</span>
+	}
+
+	public void setPrivateProjectCount(Integer privateProjectCount) {
+<span class="fc" id="L61">		this.privateProjectCount = privateProjectCount;</span>
+<span class="fc" id="L62">	}</span>
+
+	/**
+	 * Count of public projects.
+	 **/
+	@ApiModelProperty(value = &quot;Count of public projects.&quot;)
+	@JsonProperty(&quot;publicProjectCount&quot;)
+	public Integer getPublicProjectCount() {
+<span class="fc" id="L70">		return publicProjectCount;</span>
+	}
+
+	public void setPublicProjectCount(Integer publicProjectCount) {
+<span class="fc" id="L74">		this.publicProjectCount = publicProjectCount;</span>
+<span class="fc" id="L75">	}</span>
+
+	/**
+	 * Count of memebers.
+	 **/
+	@ApiModelProperty(value = &quot;Count of memebers.&quot;)
+	@JsonProperty(&quot;membersCount&quot;)
+	public Integer getMembersCount() {
+<span class="fc" id="L83">		return membersCount;</span>
+	}
+
+	public void setMembersCount(Integer membersCount) {
+<span class="fc" id="L87">		this.membersCount = membersCount;</span>
+<span class="fc" id="L88">	}</span>
+
+	/**
+	 * Count of teams.
+	 **/
+	@ApiModelProperty(value = &quot;Count of teams.&quot;)
+	@JsonProperty(&quot;teamsCount&quot;)
+	public Integer getTeamsCount() {
+<span class="fc" id="L96">		return teamsCount;</span>
+	}
+
+	public void setTeamsCount(Integer teamsCount) {
+<span class="fc" id="L100">		this.teamsCount = teamsCount;</span>
+<span class="fc" id="L101">	}</span>
+
+	/**
+	 * Count of contributors.
+	 **/
+	@ApiModelProperty(value = &quot;Count of contributors.&quot;)
+	@JsonProperty(&quot;allContributorsCount&quot;)
+	public Integer getAllContributorsCount() {
+<span class="fc" id="L109">		return allContributorsCount;</span>
+	}
+
+	public void setAllContributorsCount(Integer allContributorsCount) {
+<span class="fc" id="L113">		this.allContributorsCount = allContributorsCount;</span>
+<span class="fc" id="L114">	}</span>
+
+	@ApiModelProperty(value = &quot;Count of external contributors.&quot;)
+	@JsonProperty(&quot;externalContributorsCount&quot;)
+	public Integer getExternalContributorsCount() {
+<span class="fc" id="L119">		return externalContributorsCount;</span>
+	}
+
+	public void setExternalContributorsCount(Integer externalContributorsCount) {
+<span class="fc" id="L123">		this.externalContributorsCount = externalContributorsCount;</span>
+<span class="fc" id="L124">	}</span>
+
+	/**
+	 * Count of stars.
+	 **/
+	@ApiModelProperty(value = &quot;Count of stars.&quot;)
+	@JsonProperty(&quot;allStarsCount&quot;)
+	public Integer getAllStarsCount() {
+<span class="fc" id="L132">		return allStarsCount;</span>
+	}
+
+	public void setAllStarsCount(Integer allStarsCount) {
+<span class="fc" id="L136">		this.allStarsCount = allStarsCount;</span>
+<span class="fc" id="L137">	}</span>
+
+	/**
+	 * Count of forks.
+	 **/
+	@ApiModelProperty(value = &quot;Count of forks.&quot;)
+	@JsonProperty(&quot;allForksCount&quot;)
+	public Integer getAllForksCount() {
+<span class="fc" id="L145">		return allForksCount;</span>
+	}
+
+	public void setAllForksCount(Integer allForksCount) {
+<span class="fc" id="L149">		this.allForksCount = allForksCount;</span>
+<span class="fc" id="L150">	}</span>
+
+	/**
+	 * Count of projects.
+	 **/
+	@ApiModelProperty(value = &quot;Count of projects.&quot;)
+	@JsonProperty(&quot;allSizeCount&quot;)
+	public Integer getAllSizeCount() {
+<span class="fc" id="L158">		return allSizeCount;</span>
+	}
+
+	public void setAllSizeCount(Integer allSizeCount) {
+<span class="fc" id="L162">		this.allSizeCount = allSizeCount;</span>
+<span class="fc" id="L163">	}</span>
+
+	/**
+	 * Count of programming languages used.
+	 **/
+	@ApiModelProperty(value = &quot;Count of programming languages used.&quot;)
+	@JsonProperty(&quot;programLanguagesCount&quot;)
+	public Integer getProgramLanguagesCount() {
+<span class="fc" id="L171">		return programLanguagesCount;</span>
+	}
+
+	public void setProgramLanguagesCount(Integer programLanguagesCount) {
+<span class="fc" id="L175">		this.programLanguagesCount = programLanguagesCount;</span>
+<span class="fc" id="L176">	}</span>
+
+	/**
+	 * Count of tags.
+	 **/
+	@ApiModelProperty(value = &quot;Count of tags.&quot;)
+	@JsonProperty(&quot;tagsCount&quot;)
+	public Integer getTagsCount() {
+<span class="fc" id="L184">		return tagsCount;</span>
+	}
+
+	public void setTagsCount(Integer tagsCount) {
+<span class="fc" id="L188">		this.tagsCount = tagsCount;</span>
+<span class="fc" id="L189">	}</span>
+
+	
+	/**
+	 * Organization name.
+	 **/
+	@ApiModelProperty(value = &quot;Organization name.&quot;)
+	@JsonProperty(&quot;organizationName&quot;)
+	public String getOrganizationName() {
+<span class="fc" id="L198">		return organizationName;</span>
+	}
+
+	public void setOrganizationName(String organizationName) {
+<span class="fc" id="L202">		this.organizationName = organizationName;</span>
+<span class="fc" id="L203">	}</span>
+	/**
+	 * Statistics snapshot date.
+	 **/
+	@ApiModelProperty(value = &quot;Statistics snapshot date. Part of the primary key.&quot;)
+	@JsonProperty(&quot;snapshotDate&quot;)
+	public Date getSnapshotDate() {
+<span class="pc bpc" id="L210" title="1 of 2 branches missed.">		return key == null ? null : key.getSnapshotDate();</span>
+	}
+	
+	public void setSnapshotDate(Date snapshotDate){
+		
+<span class="pc bpc" id="L215" title="1 of 2 branches missed.">		if(this.key==null) this.key = new StatisticsKey();</span>
+		
+<span class="fc" id="L217">		this.key.setSnapshotDate(snapshotDate);</span>
+<span class="fc" id="L218">	}</span>
+
+	@Override
+	public String toString() {
+<span class="nc" id="L222">		return MoreObjects.toStringHelper(this)</span>
+<span class="nc" id="L223">				.add(&quot;id&quot;, getId())</span>
+<span class="nc" id="L224">				.add(&quot;privateProjectCount&quot;, privateProjectCount)</span>
+<span class="nc" id="L225">				.add(&quot;publicProjectCount&quot;, publicProjectCount)</span>
+<span class="nc" id="L226">				.add(&quot;membersCount&quot;, membersCount)</span>
+<span class="nc" id="L227">				.add(&quot;teamsCount&quot;, teamsCount)</span>
+<span class="nc" id="L228">				.add(&quot;allContributorsCount&quot;, allContributorsCount)</span>
+<span class="nc" id="L229">				.add(&quot;externalContributorsCount&quot;, externalContributorsCount)</span>
+<span class="nc" id="L230">				.add(&quot;allStarsCount&quot;, allStarsCount)</span>
+<span class="nc" id="L231">				.add(&quot;allForksCount&quot;, allForksCount)</span>
+<span class="nc" id="L232">				.add(&quot;allSizeCount&quot;, allSizeCount)</span>
+<span class="nc" id="L233">				.add(&quot;programLanguagesCount&quot;, programLanguagesCount)</span>
+<span class="nc" id="L234">				.add(&quot;tagsCount&quot;, tagsCount)</span>
+<span class="nc" id="L235">				.add(&quot;organizationName&quot;, organizationName)</span>
+<span class="nc" id="L236">				.add(&quot;snapshotDate&quot;, getSnapshotDate())</span>
+<span class="nc" id="L237">				.toString();</span>
+	}
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

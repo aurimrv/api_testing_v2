@@ -1,0 +1,225 @@
+You are a highly skilled test engineer specializing in debugging and resolving compilation errors and test failures in Java-based projects. Your expertise includes Java 11, JUnit 5, and REST Assured, allowing you to diagnose issues efficiently and provide precise, actionable fixes.
+
+Given the test set below delimited by *****, fix the source lines indicated in the error messages delimited by #####, replacing only the expected by the actual values.
+
+Do keep package, headers and accessories methods unchanged.
+
+Do export all other corrected tests unchanged.
+
+The response must contain only Java code in JUnit 5 format.
+
+#####
+Line: 87
+Expected status code <200> but was <401>.
+----------------------------------------
+Line: 118
+Expected status code <404> but was <401>.
+----------------------------------------
+Line: 188
+Expected status code <400> but was <401>.
+----------------------------------------
+Line: 146
+Expected status code <200> but was <401>.
+----------------------------------------
+
+#####
+*****
+
+package market;
+
+import org.junit.jupiter.api.AfterAll;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.Timeout;
+import static org.junit.jupiter.api.Assertions.*;
+import java.util.Map;
+import java.util.List;
+import static org.evomaster.client.java.controller.api.EMTestUtils.*;
+import org.evomaster.client.java.controller.SutHandler;
+import io.restassured.RestAssured;
+import static io.restassured.RestAssured.given;
+import io.restassured.response.ValidatableResponse;
+import static org.evomaster.client.java.sql.dsl.SqlDsl.sql;
+import org.evomaster.client.java.controller.api.dto.database.operations.InsertionResultsDto;
+import org.evomaster.client.java.controller.api.dto.database.operations.InsertionDto;
+import static org.hamcrest.Matchers.*;
+import io.restassured.config.JsonConfig;
+import io.restassured.path.json.config.JsonPathConfig;
+import static io.restassured.config.RedirectConfig.redirectConfig;
+import static org.evomaster.client.java.controller.contentMatchers.NumberMatcher.*;
+import static org.evomaster.client.java.controller.contentMatchers.StringMatcher.*;
+import static org.evomaster.client.java.controller.contentMatchers.SubStringMatcher.*;
+import static org.evomaster.client.java.controller.expect.ExpectationHandler.expectationHandler;
+import org.evomaster.client.java.controller.expect.ExpectationHandler;
+import io.restassured.path.json.JsonPath;
+import java.util.Arrays;
+
+class gpt4o_run01_CartRestControllerTest {
+
+    private static final SutHandler controller = new em.embedded.market.EmbeddedEvoMasterController();
+    private static String baseUrlOfSut;
+
+    @BeforeAll
+    public static void initClass() {
+        controller.setupForGeneratedTest();
+        baseUrlOfSut = controller.startSut();
+        controller.registerOrExecuteInitSqlCommandsIfNeeded();
+        assertNotNull(baseUrlOfSut);
+        RestAssured.enableLoggingOfRequestAndResponseIfValidationFails();
+        RestAssured.useRelaxedHTTPSValidation();
+        RestAssured.urlEncodingEnabled = false;
+        RestAssured.config = RestAssured.config()
+            .jsonConfig(JsonConfig.jsonConfig().numberReturnType(JsonPathConfig.NumberReturnType.DOUBLE))
+            .redirect(redirectConfig().followRedirects(false));
+    }
+
+    @AfterAll
+    public static void tearDown() {
+        controller.stopSut();
+    }
+
+    @BeforeEach
+    public void initTest() {
+        controller.resetDatabase(Arrays.asList("USER_ROLE","CUSTOMER_ORDER","CART_ITEM","PRODUCT","CART","CONTACTS"));
+        controller.resetStateOfSUT();
+    }
+
+    @Test
+    public void testAddItemSuccess() {
+        Map<String, Object> user = Map.of(
+            "email", "ivan.petrov@yandex.ru",
+            "password", "petrov",
+            "name", "Ivan Petrov",
+            "phone", "+7 123 456 78 90",
+            "address", "Riesstrasse 18"
+        );
+
+        given().contentType("application/json")
+            .body(user)
+            .post(baseUrlOfSut + "/register")
+            .then().statusCode(406);
+
+        Map<String, Object> cartItem = Map.of(
+            "productId", 1,
+            "quantity", 3
+        );
+
+        given().contentType("application/json")
+            .auth().basic("ivan.petrov@yandex.ru", "petrov")
+            .body(cartItem)
+            .put(baseUrlOfSut + "/customer/cart")
+            .then()
+            .statusCode(200)
+            .body("cartItems.size()", equalTo(1))
+            .body("cartItems[0].productId", equalTo(1))
+            .body("cartItems[0].quantity", equalTo(3));
+    }
+
+    @Test
+    public void testAddItemUnknownEntityException() {
+        Map<String, Object> user = Map.of(
+            "email", "ivan.petrov@yandex.ru",
+            "password", "petrov",
+            "name", "Ivan Petrov",
+            "phone", "+7 123 456 78 90",
+            "address", "Riesstrasse 18"
+        );
+
+        given().contentType("application/json")
+            .body(user)
+            .post(baseUrlOfSut + "/register")
+            .then().statusCode(406);
+
+        Map<String, Object> cartItem = Map.of(
+            "productId", 999, // Non-existent product
+            "quantity", 3
+        );
+
+        given().contentType("application/json")
+            .auth().basic("ivan.petrov@yandex.ru", "petrov")
+            .body(cartItem)
+            .put(baseUrlOfSut + "/customer/cart")
+            .then()
+            .statusCode(404);
+    }
+
+    @Test
+    public void testPayByCardSuccess() {
+        Map<String, Object> user = Map.of(
+            "email", "ivan.petrov@yandex.ru",
+            "password", "petrov",
+            "name", "Ivan Petrov",
+            "phone", "+7 123 456 78 90",
+            "address", "Riesstrasse 18"
+        );
+
+        given().contentType("application/json")
+            .body(user)
+            .post(baseUrlOfSut + "/register")
+            .then().statusCode(406);
+
+        // Add item to the cart
+        Map<String, Object> cartItem = Map.of(
+            "productId", 1,
+            "quantity", 3
+        );
+
+        given().contentType("application/json")
+            .auth().basic("ivan.petrov@yandex.ru", "petrov")
+            .body(cartItem)
+            .put(baseUrlOfSut + "/customer/cart")
+            .then().statusCode(200);
+
+        // Pay by card
+        Map<String, Object> card = Map.of(
+            "ccNumber", "4111111111111111"
+        );
+
+        given().contentType("application/json")
+            .auth().basic("ivan.petrov@yandex.ru", "petrov")
+            .body(card)
+            .post(baseUrlOfSut + "/customer/cart/pay")
+            .then()
+            .statusCode(406)
+            .header("Location", notNullValue())
+            .body("payed", equalTo(true));
+    }
+
+    @Test
+    public void testPayByCardEmptyCartException() {
+        Map<String, Object> user = Map.of(
+            "email", "ivan.petrov@yandex.ru",
+            "password", "petrov",
+            "name", "Ivan Petrov",
+            "phone", "+7 123 456 78 90",
+            "address", "Riesstrasse 18"
+        );
+
+        given().contentType("application/json")
+            .body(user)
+            .post(baseUrlOfSut + "/register")
+            .then().statusCode(406);
+
+        // Pay by card without adding items
+        Map<String, Object> card = Map.of(
+            "ccNumber", "4111111111111111"
+        );
+
+        given().contentType("application/json")
+            .auth().basic("ivan.petrov@yandex.ru", "petrov")
+            .body(card)
+            .post(baseUrlOfSut + "/customer/cart/pay")
+            .then()
+            .statusCode(400);
+    }
+
+    @Test
+    public void testConstructorCoverage() {
+        assertNotNull(new market.rest.CartRestController(
+            null, null, null
+        )); // Ensure constructor is tested.
+    }
+}
+
+*****

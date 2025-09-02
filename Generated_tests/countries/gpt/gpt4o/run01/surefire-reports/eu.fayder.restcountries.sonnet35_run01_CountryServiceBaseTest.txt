@@ -1,0 +1,40 @@
+-------------------------------------------------------------------------------
+Test set: eu.fayder.restcountries.sonnet35_run01_CountryServiceBaseTest
+-------------------------------------------------------------------------------
+Tests run: 8, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 0.651 s <<< FAILURE! - in eu.fayder.restcountries.sonnet35_run01_CountryServiceBaseTest
+testGetByCodeList(eu.fayder.restcountries.sonnet35_run01_CountryServiceBaseTest)  Time elapsed: 0.089 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+JSON path [0].alpha2Code doesn't match.
+Expected: US
+  Actual: null
+
+	at eu.fayder.restcountries.sonnet35_run01_CountryServiceBaseTest.testGetByCodeList(sonnet35_run01_CountryServiceBaseTest.java:64)
+
+testFulltextSearch(eu.fayder.restcountries.sonnet35_run01_CountryServiceBaseTest)  Time elapsed: 0.04 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+JSON path [0].name doesn't match.
+Expected: United Arab Emirates
+  Actual: null
+
+	at eu.fayder.restcountries.sonnet35_run01_CountryServiceBaseTest.testFulltextSearch(sonnet35_run01_CountryServiceBaseTest.java:98)
+
+testGetByCodeListWithInvalidCode(eu.fayder.restcountries.sonnet35_run01_CountryServiceBaseTest)  Time elapsed: 0.042 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+JSON path [0].alpha2Code doesn't match.
+Expected: US
+  Actual: null
+
+	at eu.fayder.restcountries.sonnet35_run01_CountryServiceBaseTest.testGetByCodeListWithInvalidCode(sonnet35_run01_CountryServiceBaseTest.java:77)
+
+testFulltextSearchWithAlternativeSpelling(eu.fayder.restcountries.sonnet35_run01_CountryServiceBaseTest)  Time elapsed: 0.037 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+JSON path [0].name doesn't match.
+Expected: Switzerland
+  Actual: null
+
+	at eu.fayder.restcountries.sonnet35_run01_CountryServiceBaseTest.testFulltextSearchWithAlternativeSpelling(sonnet35_run01_CountryServiceBaseTest.java:110)
+

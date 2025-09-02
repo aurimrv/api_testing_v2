@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: gpt35_run01_MailSenderTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.001 s <<< FAILURE! - in gpt35_run01_MailSenderTest
+testCreateMessageFor(gpt35_run01_MailSenderTest)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: expected:<to@test.com> but was:<null>
+	at gpt35_run01_MailSenderTest.testCreateMessageFor(gpt35_run01_MailSenderTest.java:60)
+

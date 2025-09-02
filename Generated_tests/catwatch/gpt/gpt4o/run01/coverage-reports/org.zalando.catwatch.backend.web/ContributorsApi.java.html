@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="pt"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>ContributorsApi.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">catwatch-backend</a> &gt; <a href="index.source.html" class="el_package">org.zalando.catwatch.backend.web</a> &gt; <span class="el_source">ContributorsApi.java</span></div><h1>ContributorsApi.java</h1><pre class="source lang-java linenums">package org.zalando.catwatch.backend.web;
+
+import com.google.common.base.Strings;
+import com.google.common.collect.ArrayListMultimap;
+import com.google.common.collect.Sets.SetView;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
+import io.swagger.annotations.ApiParam;
+import io.swagger.annotations.ApiResponse;
+import io.swagger.annotations.ApiResponses;
+import org.apache.commons.beanutils.BeanComparator;
+import org.apache.commons.collections.comparators.ComparatorChain;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.core.env.Environment;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
+import org.zalando.catwatch.backend.model.Contributor;
+import org.zalando.catwatch.backend.model.ContributorKey;
+import org.zalando.catwatch.backend.repo.ContributorRepository;
+import org.zalando.catwatch.backend.util.Constants;
+
+import javax.persistence.EmbeddedId;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.Date;
+import java.util.List;
+import java.util.Map;
+
+import static com.google.common.base.Joiner.on;
+import static com.google.common.base.Preconditions.checkArgument;
+import static com.google.common.base.Preconditions.checkNotNull;
+import static com.google.common.base.Strings.isNullOrEmpty;
+import static com.google.common.collect.Sets.intersection;
+import static java.time.Instant.now;
+import static java.util.Arrays.asList;
+import static java.util.Arrays.stream;
+import static java.util.Collections.unmodifiableList;
+import static java.util.Date.from;
+import static java.util.function.Function.identity;
+import static java.util.stream.Collectors.toList;
+import static java.util.stream.Collectors.toMap;
+import static org.springframework.http.MediaType.APPLICATION_JSON_VALUE;
+import static org.zalando.catwatch.backend.util.Constants.CONFIG_ORGANIZATION_LIST;
+import static org.zalando.catwatch.backend.web.config.DateUtil.iso8601;
+
+@Controller
+@RequestMapping(value = Constants.API_RESOURCE_CONTRIBUTORS, produces = {APPLICATION_JSON_VALUE})
+@Api(value = Constants.API_RESOURCE_CONTRIBUTORS, description = &quot;the contributors API&quot;)
+public class ContributorsApi {
+
+    private final static int LIMIT_DEFAULT = 5;
+
+<span class="fc" id="L57">    private final static List&lt;String&gt; SORT_BY_LIST = unmodifiableList(</span>
+<span class="fc" id="L58">            asList(&quot;organizationalCommitsCount&quot;, &quot;organizationalProjectsCount&quot;, &quot;personalCommitsCount&quot;,</span>
+                    &quot;personalProjectsCount&quot;, &quot;organizationName&quot;, &quot;name&quot;));
+
+    @EmbeddedId
+    private ContributorKey key;
+
+    private final ContributorRepository repository;
+    private final Environment env;
+
+    @Autowired
+<span class="fc" id="L68">    public ContributorsApi(ContributorRepository repository, Environment env) {</span>
+<span class="fc" id="L69">        this.repository = repository;</span>
+<span class="fc" id="L70">        this.env = env;</span>
+<span class="fc" id="L71">    }</span>
+
+    @ApiOperation(value = &quot;Contributor&quot;, notes = &quot;The Contributors endpoint returns all information like name, url, commits count, \nprojects count of all the Contributors for the selected filter. \n&quot;, response = Contributor.class, responseContainer = &quot;List&quot;)
+    @ApiResponses(value = {
+            @ApiResponse(code = 200, message = &quot;An array of Contributors of selected Github organization&quot;),
+            @ApiResponse(code = 0, message = &quot;Unexpected error&quot;)})
+    @RequestMapping(value = &quot;&quot;,
+
+            method = RequestMethod.GET)
+    public
+    @ResponseBody
+    List&lt;Contributor&gt; contributorsGet(
+            @ApiParam(value = &quot;List of github.com organizations to scan(comma seperated)&quot;, required = true) //
+            @RequestParam(value = Constants.API_REQUEST_PARAM_ORGANIZATIONS, required = true) //
+                    String organizations, //
+
+            @ApiParam(value = &quot;Number of items to retrieve. Default is 5.&quot;) //
+            @RequestParam(value = Constants.API_REQUEST_PARAM_LIMIT, required = false) //
+                    Integer limit, //
+
+            @ApiParam(value = &quot;Offset the list of returned results by this amount. Default is zero.&quot;) //
+            @RequestParam(value = Constants.API_REQUEST_PARAM_OFFSET, required = false) //
+                    Integer offset, //
+
+            @ApiParam(value = &quot;Date from which to start fetching records from database(default = current_date)&quot;) //
+            @RequestParam(value = Constants.API_REQUEST_PARAM_STARTDATE, required = false) //
+                    String startDate, //
+
+            @ApiParam(value = &quot;Date till which records will be fetched from database(default = current_date)&quot;) //
+            @RequestParam(value = Constants.API_REQUEST_PARAM_ENDDATE, required = false) //
+                    String endDate, //
+
+            @ApiParam(value = &quot;parameter by which result should be sorted. '-' means descending order (default is count of commit)&quot;)
+            //
+            @RequestParam(value = Constants.API_REQUEST_PARAM_SORTBY, required = false) //
+                    String sortBy, //
+
+            @ApiParam(value = &quot;query paramater for search query (this will be contributor names prefix)&quot;) //
+            @RequestParam(value = Constants.API_REQUEST_PARAM_Q, required = false) //
+                    String q //
+
+    ) {
+
+<span class="fc" id="L114">        validate(organizations, offset, limit, sortBy, startDate, endDate);</span>
+
+<span class="pc bpc" id="L116" title="5 of 6 branches missed.">        if (startDate != null &amp;&amp; endDate != null &amp;&amp; repository.findPreviousSnapShotDate(iso8601(endDate)) != null</span>
+<span class="nc bnc" id="L117" title="All 2 branches missed.">                &amp;&amp; repository.findPreviousSnapShotDate(iso8601(startDate)) != null) {</span>
+
+<span class="nc" id="L119">            return contributorsGet_timeSpan(organizations, limit, offset, startDate, endDate, sortBy, q);</span>
+
+<span class="pc bpc" id="L121" title="2 of 4 branches missed.">        } else if (startDate == null &amp;&amp; endDate == null //</span>
+<span class="pc bpc" id="L122" title="1 of 2 branches missed.">                &amp;&amp; repository.findPreviousSnapShotDate(from(now())) != null) {</span>
+
+<span class="nc" id="L124">            return contributorsGet_noTimeSpan(organizations, limit, offset, endDate, sortBy, q);</span>
+
+        } else {
+
+<span class="fc" id="L128">            throw new UnsupportedOperationException(</span>
+                    &quot;this parameter configuration is not implemented yet&quot; + &quot; .. start date, end date required atm&quot;);
+
+        }
+    }
+
+    private List&lt;Contributor&gt; contributorsGet_noTimeSpan(String organizations, Integer limit, Integer offset,
+                                                         String endDate, String sortBy, String q) {
+
+<span class="nc bnc" id="L137" title="All 2 branches missed.">        Date endDateDate = endDate != null ? iso8601(endDate) : new Date();</span>
+<span class="nc" id="L138">        Date endDateInDb = repository.findPreviousSnapShotDate(endDateDate);</span>
+
+<span class="nc" id="L140">        ArrayListMultimap&lt;Long, Contributor&gt; multiMap = ArrayListMultimap.create();</span>
+
+<span class="nc" id="L142">        orgs(organizations).values().stream().forEach(organizationId -&gt; {</span>
+
+<span class="nc" id="L144">            List&lt;Contributor&gt; contributors = repository.findAllTimeTopContributors(organizationId, endDateInDb, q, null,</span>
+                    null);
+
+<span class="nc" id="L147">            contributors.stream().forEach(c -&gt; multiMap.put(c.getKey().getId(), c));</span>
+<span class="nc" id="L148">        });</span>
+
+<span class="nc" id="L150">        List&lt;Contributor&gt; sorted = multiMap.asMap().values().stream().map(list -&gt; add(list)).collect(toList());</span>
+<span class="nc" id="L151">        Collections.sort(sorted, sortBy(sortBy));</span>
+
+<span class="nc" id="L153">        return sublist(limit, offset, sorted);</span>
+    }
+
+    private List&lt;Contributor&gt; contributorsGet_timeSpan(String organizations, Integer limit, Integer offset,
+                                                       String startDate, String endDate, String sortBy, String q) {
+
+<span class="nc" id="L159">        Date startDateInDb = repository.findPreviousSnapShotDate(iso8601(startDate));</span>
+<span class="nc" id="L160">        Date endDateInDb = repository.findPreviousSnapShotDate(iso8601(endDate));</span>
+
+<span class="nc" id="L162">        checkNotNull(startDateInDb);</span>
+<span class="nc" id="L163">        checkNotNull(endDateInDb);</span>
+
+<span class="nc" id="L165">        ArrayListMultimap&lt;Long, Contributor&gt; multiMap = ArrayListMultimap.create();</span>
+
+<span class="nc" id="L167">        orgs(organizations).values().stream().forEach(organizationId -&gt; {</span>
+
+<span class="nc" id="L169">            List&lt;Contributor&gt; startData = repository.findAllTimeTopContributors(organizationId, startDateInDb, q, null,</span>
+                    null);
+
+<span class="nc" id="L172">            Map&lt;Long, Contributor&gt; startMap = startData.stream().collect(toMap(Contributor::getId, identity()));</span>
+
+<span class="nc" id="L174">            List&lt;Contributor&gt; endData = repository.findAllTimeTopContributors(organizationId, endDateInDb, q, null,</span>
+                    null);
+
+<span class="nc" id="L177">            Map&lt;Long, Contributor&gt; endMap = endData.stream().collect(toMap(Contributor::getId, identity()));</span>
+
+<span class="nc" id="L179">            SetView&lt;Long&gt; contributorIds = intersection(startMap.keySet(), endMap.keySet());</span>
+
+<span class="nc" id="L181">            contributorIds.stream() //</span>
+<span class="nc" id="L182">                    .map(id -&gt; diff(startMap.get(id), endMap.get(id))) //</span>
+<span class="nc" id="L183">                    .forEach(c -&gt; multiMap.put(c.getKey().getId(), c));</span>
+<span class="nc" id="L184">        });</span>
+
+<span class="nc" id="L186">        List&lt;Contributor&gt; sorted = multiMap.asMap().values().stream().map(list -&gt; add(list)).collect(toList());</span>
+<span class="nc" id="L187">        Collections.sort(sorted, sortBy(sortBy));</span>
+
+<span class="nc" id="L189">        return sublist(limit, offset, sorted);</span>
+    }
+
+    //
+    // util
+    //
+
+    private List&lt;Contributor&gt; sublist(Integer limit, Integer offset, List&lt;Contributor&gt; sorted) {
+        int endIndex;
+<span class="nc bnc" id="L198" title="All 2 branches missed.">        if (offset(offset) + limit(limit) &gt; sorted.size()) {</span>
+<span class="nc" id="L199">            endIndex = sorted.size();</span>
+        } else {
+<span class="nc" id="L201">            endIndex = offset(offset) + limit(limit);</span>
+        }
+<span class="nc" id="L203">        sorted = sorted.subList(offset(offset), endIndex);</span>
+
+<span class="nc" id="L205">        return sorted;</span>
+    }
+
+    //
+    // validate / process arguments
+    //
+
+    private void validate(String organizations, Integer offset, Integer limit, String sortBy, String startDate,
+                          String endDate) {
+
+<span class="fc bfc" id="L215" title="All 2 branches covered.">        checkArgument(offset(offset) &gt;= 0, &quot;offset must be greater than zero but was &quot; + offset);</span>
+
+<span class="fc bfc" id="L217" title="All 2 branches covered.">        checkArgument(limit(limit) &gt; 0, &quot;limit must be greater than zero but was &quot; + limit);</span>
+
+<span class="pc bpc" id="L219" title="1 of 2 branches missed.">        checkArgument(!orgs(organizations).containsValue(null), &quot;an organization name was not found: &quot; + organizations);</span>
+
+<span class="fc bfc" id="L221" title="All 2 branches covered.">        checkArgument(sortBy(sortBy) != null, &quot;sortBy must be empty or have a valid value but was &quot; + sortBy</span>
+<span class="fc" id="L222">                + &quot;. Valid values are &quot; + on(&quot;,&quot;).join(SORT_BY_LIST));</span>
+
+<span class="pc bpc" id="L224" title="3 of 4 branches missed.">        checkArgument(endDate == null || repository.findPreviousSnapShotDate(iso8601(endDate)) != null,</span>
+                &quot;endDate is set to &quot; + endDate + &quot;but there is no snapshot data before that date&quot;);
+
+<span class="pc bpc" id="L227" title="3 of 4 branches missed.">        checkArgument(startDate == null || repository.findPreviousSnapShotDate(iso8601(startDate)) != null,</span>
+                &quot;startDate is set to &quot; + startDate + &quot;but there is no snapshot data before that date&quot;);
+
+<span class="pc bpc" id="L230" title="5 of 6 branches missed.">        checkArgument(startDate == null || endDate == null || iso8601(startDate).before(iso8601(endDate)),</span>
+                &quot;startDate &quot; + startDate + &quot; must be before endDate&quot; + endDate + &quot; but was not&quot;);
+<span class="fc" id="L232">    }</span>
+
+    private Map&lt;String, Long&gt; orgs(String organizations) {
+<span class="fc bfc" id="L235" title="All 2 branches covered.">        if (isNullOrEmpty(organizations)) {</span>
+<span class="fc" id="L236">            organizations = env.getProperty(CONFIG_ORGANIZATION_LIST);</span>
+        }
+<span class="fc" id="L238">        return stream(organizations.trim().split(&quot;\\s*,\\s*&quot;))</span>
+<span class="fc" id="L239">                .collect(toMap(identity(), orgName -&gt; repository.findOrganizationId(orgName)));</span>
+    }
+
+    private int offset(Integer offset) {
+<span class="fc bfc" id="L243" title="All 2 branches covered.">        return offset == null ? 0 : offset;</span>
+    }
+
+    private int limit(Integer limit) {
+<span class="fc bfc" id="L247" title="All 2 branches covered.">        if (limit != null) {</span>
+<span class="fc" id="L248">            return limit;</span>
+        } else {
+<span class="fc" id="L250">            return LIMIT_DEFAULT;</span>
+        }
+    }
+
+    private Comparator&lt;Contributor&gt; sortBy(String sortBy) {
+<span class="fc bfc" id="L255" title="All 2 branches covered.">        if (Strings.isNullOrEmpty(sortBy)) {</span>
+<span class="fc" id="L256">            return comparator(SORT_BY_LIST.get(0), true);</span>
+        } else {
+            // (this should be re-written or/and unit tested)
+<span class="fc" id="L259">            sortBy = sortBy.trim();</span>
+<span class="fc" id="L260">            boolean reverse = false;</span>
+<span class="fc bfc" id="L261" title="All 2 branches covered.">            if (sortBy.startsWith(&quot;-&quot;)) {</span>
+<span class="fc" id="L262">                reverse = true;</span>
+<span class="fc" id="L263">                sortBy = sortBy.substring(1);</span>
+            }
+<span class="fc" id="L265">            String cleanedSortBy = SORT_BY_LIST.stream().collect(toMap(String::toLowerCase, identity()))</span>
+<span class="fc" id="L266">                    .get(sortBy.toLowerCase());</span>
+<span class="fc bfc" id="L267" title="All 2 branches covered.">            if (cleanedSortBy != null) {</span>
+<span class="fc" id="L268">                return comparator(cleanedSortBy, reverse);</span>
+            } else {
+<span class="fc" id="L270">                return null;</span>
+            }
+        }
+    }
+
+    //
+    // process data
+    //
+
+    private Contributor add(Collection&lt;Contributor&gt; collection) {
+<span class="nc" id="L280">        Contributor any = collection.iterator().next();</span>
+
+<span class="nc" id="L282">        Contributor c = new Contributor(any.getId(), any.getOrganizationId(), any.getSnapshotDate());</span>
+<span class="nc" id="L283">        c.setName(any.getName());</span>
+<span class="nc" id="L284">        c.setUrl(any.getUrl());</span>
+<span class="nc" id="L285">        c.setOrganizationalCommitsCount(0);</span>
+<span class="nc" id="L286">        c.setOrganizationalProjectsCount(0);</span>
+<span class="nc" id="L287">        c.setPersonalCommitsCount(0);</span>
+<span class="nc" id="L288">        c.setPersonalProjectsCount(0);</span>
+
+<span class="nc bnc" id="L290" title="All 2 branches missed.">        for (Contributor cc : collection) {</span>
+<span class="nc" id="L291">            c.setOrganizationalCommitsCount(add(c.getOrganizationalCommitsCount(), cc.getOrganizationalCommitsCount()));</span>
+<span class="nc" id="L292">            c.setOrganizationalProjectsCount(</span>
+<span class="nc" id="L293">                    add(c.getOrganizationalProjectsCount(), cc.getOrganizationalProjectsCount()));</span>
+<span class="nc" id="L294">            c.setPersonalCommitsCount(add(c.getPersonalCommitsCount(), cc.getPersonalCommitsCount()));</span>
+<span class="nc" id="L295">            c.setPersonalProjectsCount(add(c.getPersonalProjectsCount(), cc.getPersonalProjectsCount()));</span>
+<span class="nc" id="L296">        }</span>
+
+<span class="nc" id="L298">        return c;</span>
+    }
+
+    private Contributor diff(Contributor start, Contributor end) {
+<span class="nc" id="L302">        Contributor c = new Contributor(end.getId(), end.getOrganizationId(), end.getSnapshotDate());</span>
+<span class="nc" id="L303">        c.setName(end.getName());</span>
+<span class="nc" id="L304">        c.setUrl(end.getUrl());</span>
+
+<span class="nc" id="L306">        c.setOrganizationalCommitsCount(</span>
+<span class="nc" id="L307">                subtract(end.getOrganizationalCommitsCount(), start.getOrganizationalCommitsCount()));</span>
+<span class="nc" id="L308">        c.setOrganizationalProjectsCount(</span>
+<span class="nc" id="L309">                subtract(end.getOrganizationalProjectsCount(), start.getOrganizationalProjectsCount()));</span>
+<span class="nc" id="L310">        c.setPersonalCommitsCount(subtract(end.getPersonalCommitsCount(), start.getPersonalCommitsCount()));</span>
+<span class="nc" id="L311">        c.setPersonalProjectsCount(subtract(end.getPersonalProjectsCount(), start.getPersonalProjectsCount()));</span>
+
+<span class="nc" id="L313">        return c;</span>
+    }
+
+    private Integer subtract(Integer x, Integer y) {
+<span class="nc bnc" id="L317" title="All 4 branches missed.">        return (x != null &amp;&amp; y != null) ? x - y : null;</span>
+    }
+
+    private Integer add(Integer x, Integer y) {
+<span class="nc bnc" id="L321" title="All 4 branches missed.">        return (x != null &amp;&amp; y != null) ? x + y : null;</span>
+    }
+
+    @SuppressWarnings(&quot;unchecked&quot;)
+    private Comparator&lt;Contributor&gt; comparator(String sortBy, boolean reverse) {
+<span class="fc" id="L326">        ComparatorChain comparator = new ComparatorChain();</span>
+<span class="fc" id="L327">        comparator.addComparator(new BeanComparator&lt;Contributor&gt;(sortBy), reverse);</span>
+<span class="fc" id="L328">        comparator.addComparator(new BeanComparator&lt;Contributor&gt;(&quot;id&quot;));</span>
+<span class="fc" id="L329">        return comparator;</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

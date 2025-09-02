@@ -1,0 +1,198 @@
+You are a highly skilled test engineer specializing in debugging and resolving compilation errors and test failures in Java-based projects. Your expertise includes Java 8, JUnit 4, and REST Assured, allowing you to diagnose issues efficiently and provide precise, actionable fixes.
+
+Given the test set below delimited by *****, fix the source lines indicated in the error messages delimited by #####, replacing only the expected by the actual values.
+
+Do keep package, headers and accessories methods unchanged.
+
+Do export all other corrected tests unchanged.
+
+The response must contain only Java code in JUnit 4 format.
+
+#####
+
+#####
+*****
+
+import org.junit.AfterClass;
+import org.junit.BeforeClass;
+import org.junit.Before;
+import org.junit.Test;
+import static org.junit.Assert.*;
+import java.util.Map;
+import java.util.List;
+import static org.evomaster.client.java.controller.api.EMTestUtils.*;
+import org.evomaster.client.java.controller.SutHandler;
+import io.restassured.RestAssured;
+import static io.restassured.RestAssured.given;
+import io.restassured.response.ValidatableResponse;
+import static org.evomaster.client.java.sql.dsl.SqlDsl.sql;
+import org.evomaster.client.java.controller.api.dto.database.operations.InsertionResultsDto;
+import org.evomaster.client.java.controller.api.dto.database.operations.InsertionDto;
+import static org.hamcrest.Matchers.*;
+import io.restassured.config.JsonConfig;
+import io.restassured.path.json.config.JsonPathConfig;
+import static io.restassured.config.RedirectConfig.redirectConfig;
+import static org.evomaster.client.java.controller.contentMatchers.NumberMatcher.*;
+import static org.evomaster.client.java.controller.contentMatchers.StringMatcher.*;
+import static org.evomaster.client.java.controller.contentMatchers.SubStringMatcher.*;
+import static org.evomaster.client.java.controller.expect.ExpectationHandler.expectationHandler;
+import org.evomaster.client.java.controller.expect.ExpectationHandler;
+import io.restassured.path.json.JsonPath;
+import java.util.Arrays;
+import java.io.InputStream;
+import java.io.IOException;
+import java.net.URL;
+import java.util.Date;
+
+public class gpt35_run01_RepositoryWrapperTest {
+
+    private static final SutHandler controller = new em.embedded.org.zalando.EmbeddedEvoMasterController();
+    private static String baseUrlOfSut;
+
+    @BeforeClass
+    public static void initClass() {
+        controller.setupForGeneratedTest();
+        baseUrlOfSut = controller.startSut();
+        controller.registerOrExecuteInitSqlCommandsIfNeeded();
+        assertNotNull(baseUrlOfSut);
+        RestAssured.enableLoggingOfRequestAndResponseIfValidationFails();
+        RestAssured.useRelaxedHTTPSValidation();
+        RestAssured.urlEncodingEnabled = false;
+        RestAssured.config = RestAssured.config()
+            .jsonConfig(JsonConfig.jsonConfig().numberReturnType(JsonPathConfig.NumberReturnType.DOUBLE))
+            .redirect(redirectConfig().followRedirects(false));
+    }
+
+    @AfterClass
+    public static void tearDown() {
+        controller.stopSut();
+    }
+
+    @Before
+    public void initTest() {
+        controller.resetDatabase(Arrays.asList("CONTRIBUTOR"));
+        controller.resetStateOfSUT();
+    }
+
+    @Test
+    public void testConstructor() {
+        RepositoryWrapper repositoryWrapper = new RepositoryWrapper(null, null);
+        assertNotNull(repositoryWrapper);
+    }
+
+    @Test
+    public void testGetId() {
+        RepositoryWrapper repositoryWrapper = new RepositoryWrapper(null, null);
+        int id = repositoryWrapper.getId();
+        assertEquals(0, id);
+    }
+
+    @Test
+    public void testGetName() {
+        RepositoryWrapper repositoryWrapper = new RepositoryWrapper(null, null);
+        String name = repositoryWrapper.getName();
+        assertNull(name);
+    }
+
+    @Test
+    public void testGetUrl() {
+        RepositoryWrapper repositoryWrapper = new RepositoryWrapper(null, null);
+        URL url = repositoryWrapper.getUrl();
+        assertNull(url);
+    }
+
+    @Test
+    public void testGetDescription() {
+        RepositoryWrapper repositoryWrapper = new RepositoryWrapper(null, null);
+        String description = repositoryWrapper.getDescription();
+        assertNull(description);
+    }
+
+    @Test
+    public void testGetStarsCount() {
+        RepositoryWrapper repositoryWrapper = new RepositoryWrapper(null, null);
+        int starsCount = repositoryWrapper.getStarsCount();
+        assertEquals(0, starsCount);
+    }
+
+    @Test
+    public void testGetForksCount() {
+        RepositoryWrapper repositoryWrapper = new RepositoryWrapper(null, null);
+        int forksCount = repositoryWrapper.getForksCount();
+        assertEquals(0, forksCount);
+    }
+
+    @Test
+    public void testGetSize() {
+        RepositoryWrapper repositoryWrapper = new RepositoryWrapper(null, null);
+        int size = repositoryWrapper.getSize();
+        assertEquals(0, size);
+    }
+
+    @Test
+    public void testGetLastPushed() {
+        RepositoryWrapper repositoryWrapper = new RepositoryWrapper(null, null);
+        Date lastPushed = repositoryWrapper.getLastPushed();
+        assertNull(lastPushed);
+    }
+
+    @Test
+    public void testGetPrimaryLanguage() {
+        RepositoryWrapper repositoryWrapper = new RepositoryWrapper(null, null);
+        String primaryLanguage = repositoryWrapper.getPrimaryLanguage();
+        assertNull(primaryLanguage);
+    }
+
+    @Test
+    public void testListLanguages() {
+        RepositoryWrapper repositoryWrapper = new RepositoryWrapper(null, null);
+        Map<String, Long> languages = repositoryWrapper.listLanguages();
+        assertNotNull(languages);
+        assertTrue(languages.isEmpty());
+    }
+
+    @Test
+    public void testGetOrganizationName() {
+        RepositoryWrapper repositoryWrapper = new RepositoryWrapper(null, null);
+        String organizationName = repositoryWrapper.getOrganizationName();
+        assertNull(organizationName);
+    }
+
+    @Test
+    public void testListCommits() {
+        RepositoryWrapper repositoryWrapper = new RepositoryWrapper(null, null);
+        List<GHCommit> commits = repositoryWrapper.listCommits();
+        assertNotNull(commits);
+        assertEquals(0, commits.size());
+    }
+
+    @Test
+    public void testListContributors() {
+        RepositoryWrapper repositoryWrapper = new RepositoryWrapper(null, null);
+        List<GHRepository.Contributor> contributors = repositoryWrapper.listContributors();
+        assertNotNull(contributors);
+        assertEquals(0, contributors.size());
+    }
+
+    @Test
+    public void testListTags() {
+        RepositoryWrapper repositoryWrapper = new RepositoryWrapper(null, null);
+        List<GHTag> tags = repositoryWrapper.listTags();
+        assertNotNull(tags);
+        assertEquals(0, tags.size());
+    }
+
+    @Test
+    public void testGetFileContent() {
+        RepositoryWrapper repositoryWrapper = new RepositoryWrapper(null, null);
+        try {
+            InputStream fileContent = repositoryWrapper.getFileContent("path");
+            assertNull(fileContent);
+        } catch (IOException e) {
+            fail("Exception thrown");
+        }
+    }
+
+}
+
+*****

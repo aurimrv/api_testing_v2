@@ -1,0 +1,69 @@
+[[1;31mERROR[m] COMPILATION ERROR : 
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt4o_run01_CORSFilterTest.java:[27,19] package org.mockito does not exist
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt4o_run01_CORSFilterTest.java:[28,19] package org.mockito does not exist
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt4o_run01_CORSFilterTest.java:[29,19] package org.mockito does not exist
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt4o_run01_CORSFilterTest.java:[58,9] cannot find symbol
+  symbol:   variable MockitoAnnotations
+  location: class eu.fayder.restcountries.gpt4o_run01_CORSFilterTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt4o_run01_CORSFilterTest.java:[75,52] cannot find symbol
+  symbol:   variable Mockito
+  location: class eu.fayder.restcountries.gpt4o_run01_CORSFilterTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt4o_run01_CORSFilterTest.java:[76,63] cannot find symbol
+  symbol:   variable Mockito
+  location: class eu.fayder.restcountries.gpt4o_run01_CORSFilterTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt4o_run01_CORSFilterTest.java:[77,53] cannot find symbol
+  symbol:   variable Mockito
+  location: class eu.fayder.restcountries.gpt4o_run01_CORSFilterTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt4o_run01_CORSFilterTest.java:[85,9] cannot find symbol
+  symbol:   variable Mockito
+  location: class eu.fayder.restcountries.gpt4o_run01_CORSFilterTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt4o_run01_CORSFilterTest.java:[86,9] cannot find symbol
+  symbol:   variable Mockito
+  location: class eu.fayder.restcountries.gpt4o_run01_CORSFilterTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt4o_run01_CORSFilterTest.java:[87,9] cannot find symbol
+  symbol:   variable Mockito
+  location: class eu.fayder.restcountries.gpt4o_run01_CORSFilterTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt4o_run01_CORSFilterTest.java:[88,9] cannot find symbol
+  symbol:   variable Mockito
+  location: class eu.fayder.restcountries.gpt4o_run01_CORSFilterTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt4o_run01_CORSFilterTest.java:[91,9] cannot find symbol
+  symbol:   variable Mockito
+  location: class eu.fayder.restcountries.gpt4o_run01_CORSFilterTest
+[[1;31mERROR[m] Failed to execute goal [32morg.apache.maven.plugins:maven-compiler-plugin:3.8.0:testCompile[m [1m(default-testCompile)[m on project [36mrestcountries[m: [1;31mCompilation failure[m: Compilation failure: 
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt4o_run01_CORSFilterTest.java:[27,19] package org.mockito does not exist
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt4o_run01_CORSFilterTest.java:[28,19] package org.mockito does not exist
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt4o_run01_CORSFilterTest.java:[29,19] package org.mockito does not exist
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt4o_run01_CORSFilterTest.java:[58,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   variable MockitoAnnotations
+[[1;31mERROR[m]   location: class eu.fayder.restcountries.gpt4o_run01_CORSFilterTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt4o_run01_CORSFilterTest.java:[75,52] cannot find symbol
+[[1;31mERROR[m]   symbol:   variable Mockito
+[[1;31mERROR[m]   location: class eu.fayder.restcountries.gpt4o_run01_CORSFilterTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt4o_run01_CORSFilterTest.java:[76,63] cannot find symbol
+[[1;31mERROR[m]   symbol:   variable Mockito
+[[1;31mERROR[m]   location: class eu.fayder.restcountries.gpt4o_run01_CORSFilterTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt4o_run01_CORSFilterTest.java:[77,53] cannot find symbol
+[[1;31mERROR[m]   symbol:   variable Mockito
+[[1;31mERROR[m]   location: class eu.fayder.restcountries.gpt4o_run01_CORSFilterTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt4o_run01_CORSFilterTest.java:[85,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   variable Mockito
+[[1;31mERROR[m]   location: class eu.fayder.restcountries.gpt4o_run01_CORSFilterTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt4o_run01_CORSFilterTest.java:[86,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   variable Mockito
+[[1;31mERROR[m]   location: class eu.fayder.restcountries.gpt4o_run01_CORSFilterTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt4o_run01_CORSFilterTest.java:[87,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   variable Mockito
+[[1;31mERROR[m]   location: class eu.fayder.restcountries.gpt4o_run01_CORSFilterTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt4o_run01_CORSFilterTest.java:[88,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   variable Mockito
+[[1;31mERROR[m]   location: class eu.fayder.restcountries.gpt4o_run01_CORSFilterTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/restcountries/src/test/java/eu/fayder/restcountries/gpt4o_run01_CORSFilterTest.java:[91,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   variable Mockito
+[[1;31mERROR[m]   location: class eu.fayder.restcountries.gpt4o_run01_CORSFilterTest
+[[1;31mERROR[m] -> [1m[Help 1][m
+[[1;31mERROR[m] 
+[[1;31mERROR[m] To see the full stack trace of the errors, re-run Maven with the [1m-e[m switch.
+[[1;31mERROR[m] Re-run Maven using the [1m-X[m switch to enable full debug logging.
+[[1;31mERROR[m] 
+[[1;31mERROR[m] For more information about the errors and possible solutions, please read the following articles:
+[[1;31mERROR[m] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

@@ -1,0 +1,8 @@
+Line: 98
+Expected status code <400> but was <404>.
+----------------------------------------
+Line: 77
+JSON path alphaCode doesn't match.
+Expected: US
+Actual: null
+----------------------------------------

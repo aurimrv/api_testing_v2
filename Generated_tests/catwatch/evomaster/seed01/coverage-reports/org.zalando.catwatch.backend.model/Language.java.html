@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="pt"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Language.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">catwatch-backend</a> &gt; <a href="index.source.html" class="el_package">org.zalando.catwatch.backend.model</a> &gt; <span class="el_source">Language.java</span></div><h1>Language.java</h1><pre class="source lang-java linenums">package org.zalando.catwatch.backend.model;
+
+import com.fasterxml.jackson.annotation.JsonProperty;
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
+
+
+@ApiModel(description = &quot;A programming language as it is used in source code of GitHub repositories. &quot;
+		+ &quot;Compare with https://developer.github.com/v3/repos/#list-languages&quot;)
+public class Language  {
+  
+<span class="nc" id="L12">  private String name = null;</span>
+<span class="nc" id="L13">  private Integer projectsCount = null;</span>
+<span class="nc" id="L14">  private Integer percentage = null;</span>
+
+<span class="nc" id="L16">  public Language(){</span>
+<span class="nc" id="L17">  }</span>
+  
+<span class="nc" id="L19">  public Language(String name){</span>
+<span class="nc" id="L20">	  this.name = name;</span>
+<span class="nc" id="L21">  }</span>
+  /**
+   * Name of the programming language used.
+   **/
+  @ApiModelProperty(value = &quot;Name of the programming language used.&quot;)
+  @JsonProperty(&quot;name&quot;)
+  public String getName() {
+<span class="nc" id="L28">    return name;</span>
+  }
+  public void setName(String name) {
+<span class="nc" id="L31">    this.name = name;</span>
+<span class="nc" id="L32">  }</span>
+
+  
+  /**
+   * Count of projects using it.
+   **/
+  @ApiModelProperty(value = &quot;Count of projects using it.&quot;)
+  @JsonProperty(&quot;projectsCount&quot;)
+  public Integer getProjectsCount() {
+<span class="nc" id="L41">    return projectsCount;</span>
+  }
+  public void setProjectsCount(Integer projectsCount) {
+<span class="nc" id="L44">    this.projectsCount = projectsCount;</span>
+<span class="nc" id="L45">  }</span>
+
+  
+  /**
+   * Usage percentage of programming language.
+   **/
+  @ApiModelProperty(value = &quot;Usage percentage of programming language.&quot;)
+  @JsonProperty(&quot;percentage&quot;)
+  public Integer getPercentage() {
+<span class="nc" id="L54">    return percentage;</span>
+  }
+  public void setPercentage(Integer percentage) {
+<span class="nc" id="L57">    this.percentage = percentage;</span>
+<span class="nc" id="L58">  }</span>
+
+  
+
+  @Override
+  public String toString()  {
+<span class="nc" id="L64">    StringBuilder sb = new StringBuilder();</span>
+<span class="nc" id="L65">    sb.append(&quot;class Language {\n&quot;);</span>
+    
+<span class="nc" id="L67">    sb.append(&quot;  name: &quot;).append(name).append(&quot;\n&quot;);</span>
+<span class="nc" id="L68">    sb.append(&quot;  projectsCount: &quot;).append(projectsCount).append(&quot;\n&quot;);</span>
+<span class="nc" id="L69">    sb.append(&quot;  percentage: &quot;).append(percentage).append(&quot;\n&quot;);</span>
+<span class="nc" id="L70">    sb.append(&quot;}\n&quot;);</span>
+<span class="nc" id="L71">    return sb.toString();</span>
+  }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

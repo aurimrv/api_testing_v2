@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: org.restscs.gpt35_run01_RegexTest
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.576 s <<< FAILURE! - in org.restscs.gpt35_run01_RegexTest
+testRegexSubjectUrlMatch(org.restscs.gpt35_run01_RegexTest)  Time elapsed: 0 s  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[url]> but was:<[none]>
+	at org.restscs.gpt35_run01_RegexTest.testRegexSubjectUrlMatch(gpt35_run01_RegexTest.java:67)
+
+testRegexSubjectFpeMatch(org.restscs.gpt35_run01_RegexTest)  Time elapsed: 0.001 s  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[fp]e> but was:<[non]e>
+	at org.restscs.gpt35_run01_RegexTest.testRegexSubjectFpeMatch(gpt35_run01_RegexTest.java:81)
+

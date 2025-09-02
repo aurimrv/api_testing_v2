@@ -1,0 +1,18 @@
+-------------------------------------------------------------------------------
+Test set: market.gpt4o_run01_ContactsRestControllerTest
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 1.761 s <<< FAILURE! - in market.gpt4o_run01_ContactsRestControllerTest
+testUpdateContacts_invalidPhone  Time elapsed: 0.169 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <201> but was <406>.
+
+	at market.gpt4o_run01_ContactsRestControllerTest.testUpdateContacts_invalidPhone(gpt4o_run01_ContactsRestControllerTest.java:126)
+
+testUpdateContacts_success  Time elapsed: 0.042 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <201> but was <406>.
+
+	at market.gpt4o_run01_ContactsRestControllerTest.testUpdateContacts_success(gpt4o_run01_ContactsRestControllerTest.java:85)
+

@@ -1,0 +1,9 @@
+Line: Unknown
+[ERROR]   gpt4o_run01_BuilderUtilTest.testRandomProjectName_exceptionHandling:96 Exception message should match expected:<Simulated IOException> but was:<null>
+----------------------------------------
+Line: 64
+UnsupportedOperation
+----------------------------------------
+Line: 84
+UnsupportedOperation
+----------------------------------------

@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: org.restscs.gpt35_run01_PatTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.755 s <<< FAILURE! - in org.restscs.gpt35_run01_PatTest
+testSubject(org.restscs.gpt35_run01_PatTest)  Time elapsed: 0.001 s  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[1]> but was:<[dummy]>
+	at org.restscs.gpt35_run01_PatTest.testSubject(gpt35_run01_PatTest.java:77)
+

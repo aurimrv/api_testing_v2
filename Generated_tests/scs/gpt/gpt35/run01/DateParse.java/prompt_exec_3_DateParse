@@ -1,0 +1,32 @@
+You are a highly skilled test engineer specializing in debugging and resolving compilation errors and test failures in Java-based projects. Your expertise includes Java 8, JUnit 4, and REST Assured, allowing you to diagnose issues efficiently and provide precise, actionable fixes.
+
+Given the test set below delimited by *****, fix the source lines indicated in the error messages delimited by #####, replacing only the expected by the actual values.
+
+Do keep package, headers and accessories methods unchanged.
+
+Do export all other corrected tests unchanged.
+
+The response must contain only Java code in JUnit 4 format.
+
+#####
+
+#####
+*****
+
+    @Test
+    public void testDateParse() {
+        // Test different combinations of day names and month names
+        assertEquals("1", org.restscs.imp.DateParse.subject("mon", "jan"));
+        assertEquals("7", org.restscs.imp.DateParse.subject("sun", "jul"));
+        assertEquals("12", org.restscs.imp.DateParse.subject("wed", "dec"));
+        
+        // Test lowercase and uppercase day and month names
+        assertEquals("4", org.restscs.imp.DateParse.subject("ThUr", "AUG"));
+        assertEquals("9", org.restscs.imp.DateParse.subject("fri", "SEP"));
+        
+        // Test unknown day and month names
+        assertEquals("0", org.restscs.imp.DateParse.subject("xyz", "abc"));
+    }
+
+
+*****

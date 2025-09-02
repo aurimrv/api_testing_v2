@@ -1,0 +1,169 @@
+You are a highly skilled test engineer specializing in debugging and resolving compilation errors and test failures in Java-based projects. Your expertise includes Java 8, JUnit 4, and REST Assured, allowing you to diagnose issues efficiently and provide precise, actionable fixes.
+
+Do fix the compilation errors delimited by ##### given the code below delimited by *****.
+
+The response must contain only Java code in JUnit 4 format.
+
+#####
+[[1;31mERROR[m] COMPILATION ERROR : 
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/artificial/ncs/src/test/java/org/restncs/gpt35_run01_BessjTest.java:[59,9] cannot find symbol
+  symbol:   class Bessj
+  location: class org.restncs.gpt35_run01_BessjTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/artificial/ncs/src/test/java/org/restncs/gpt35_run01_BessjTest.java:[59,27] cannot find symbol
+  symbol:   class Bessj
+  location: class org.restncs.gpt35_run01_BessjTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/artificial/ncs/src/test/java/org/restncs/gpt35_run01_BessjTest.java:[70,9] cannot find symbol
+  symbol:   class Bessj
+  location: class org.restncs.gpt35_run01_BessjTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/artificial/ncs/src/test/java/org/restncs/gpt35_run01_BessjTest.java:[70,27] cannot find symbol
+  symbol:   class Bessj
+  location: class org.restncs.gpt35_run01_BessjTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/artificial/ncs/src/test/java/org/restncs/gpt35_run01_BessjTest.java:[77,9] cannot find symbol
+  symbol:   class Bessj
+  location: class org.restncs.gpt35_run01_BessjTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/artificial/ncs/src/test/java/org/restncs/gpt35_run01_BessjTest.java:[77,27] cannot find symbol
+  symbol:   class Bessj
+  location: class org.restncs.gpt35_run01_BessjTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/artificial/ncs/src/test/java/org/restncs/gpt35_run01_BessjTest.java:[84,9] cannot find symbol
+  symbol:   class Bessj
+  location: class org.restncs.gpt35_run01_BessjTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/artificial/ncs/src/test/java/org/restncs/gpt35_run01_BessjTest.java:[84,27] cannot find symbol
+  symbol:   class Bessj
+  location: class org.restncs.gpt35_run01_BessjTest
+[[1;31mERROR[m] Failed to execute goal [32morg.apache.maven.plugins:maven-compiler-plugin:3.8.0:testCompile[m [1m(default-testCompile)[m on project [36mevomaster-benchmark-cs-rest-artificial-ncs[m: [1;31mCompilation failure[m: Compilation failure: 
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/artificial/ncs/src/test/java/org/restncs/gpt35_run01_BessjTest.java:[59,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Bessj
+[[1;31mERROR[m]   location: class org.restncs.gpt35_run01_BessjTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/artificial/ncs/src/test/java/org/restncs/gpt35_run01_BessjTest.java:[59,27] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Bessj
+[[1;31mERROR[m]   location: class org.restncs.gpt35_run01_BessjTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/artificial/ncs/src/test/java/org/restncs/gpt35_run01_BessjTest.java:[70,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Bessj
+[[1;31mERROR[m]   location: class org.restncs.gpt35_run01_BessjTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/artificial/ncs/src/test/java/org/restncs/gpt35_run01_BessjTest.java:[70,27] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Bessj
+[[1;31mERROR[m]   location: class org.restncs.gpt35_run01_BessjTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/artificial/ncs/src/test/java/org/restncs/gpt35_run01_BessjTest.java:[77,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Bessj
+[[1;31mERROR[m]   location: class org.restncs.gpt35_run01_BessjTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/artificial/ncs/src/test/java/org/restncs/gpt35_run01_BessjTest.java:[77,27] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Bessj
+[[1;31mERROR[m]   location: class org.restncs.gpt35_run01_BessjTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/artificial/ncs/src/test/java/org/restncs/gpt35_run01_BessjTest.java:[84,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Bessj
+[[1;31mERROR[m]   location: class org.restncs.gpt35_run01_BessjTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/artificial/ncs/src/test/java/org/restncs/gpt35_run01_BessjTest.java:[84,27] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Bessj
+[[1;31mERROR[m]   location: class org.restncs.gpt35_run01_BessjTest
+[[1;31mERROR[m] -> [1m[Help 1][m
+[[1;31mERROR[m] 
+[[1;31mERROR[m] To see the full stack trace of the errors, re-run Maven with the [1m-e[m switch.
+[[1;31mERROR[m] Re-run Maven using the [1m-X[m switch to enable full debug logging.
+[[1;31mERROR[m] 
+[[1;31mERROR[m] For more information about the errors and possible solutions, please read the following articles:
+[[1;31mERROR[m] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+
+#####
+*****
+
+package org.restncs;
+
+import org.junit.AfterClass;
+import org.junit.BeforeClass;
+import org.junit.Before;
+import org.junit.Test;
+import static org.junit.Assert.*;
+import java.util.Map;
+import java.util.List;
+import static org.evomaster.client.java.controller.api.EMTestUtils.*;
+import org.evomaster.client.java.controller.SutHandler;
+import io.restassured.RestAssured;
+import static io.restassured.RestAssured.given;
+import io.restassured.response.ValidatableResponse;
+import static org.hamcrest.Matchers.*;
+import io.restassured.config.JsonConfig;
+import io.restassured.path.json.config.JsonPathConfig;
+import static io.restassured.config.RedirectConfig.redirectConfig;
+import static org.evomaster.client.java.controller.contentMatchers.NumberMatcher.*;
+import static org.evomaster.client.java.controller.contentMatchers.StringMatcher.*;
+import static org.evomaster.client.java.controller.contentMatchers.SubStringMatcher.*;
+import static org.evomaster.client.java.controller.expect.ExpectationHandler.expectationHandler;
+import org.evomaster.client.java.controller.expect.ExpectationHandler;
+import io.restassured.path.json.JsonPath;
+import java.util.Arrays;
+
+public class gpt35_run01_BessjTest {
+
+    private static final SutHandler controller = new em.embedded.org.restncs.EmbeddedEvoMasterController();
+    private static String baseUrlOfSut;
+
+    @BeforeClass
+    public static void initClass() {
+        controller.setupForGeneratedTest();
+        baseUrlOfSut = controller.startSut();
+        controller.registerOrExecuteInitSqlCommandsIfNeeded();
+        assertNotNull(baseUrlOfSut);
+        RestAssured.enableLoggingOfRequestAndResponseIfValidationFails();
+        RestAssured.useRelaxedHTTPSValidation();
+        RestAssured.urlEncodingEnabled = false;
+        RestAssured.config = RestAssured.config()
+            .jsonConfig(JsonConfig.jsonConfig().numberReturnType(JsonPathConfig.NumberReturnType.DOUBLE))
+            .redirect(redirectConfig().followRedirects(false));
+    }
+
+    @AfterClass
+    public static void tearDown() {
+        controller.stopSut();
+    }
+
+    @Before
+    public void initTest() {
+        controller.resetStateOfSUT();
+    }
+
+    @Test
+    public void testBessjWithIndexLessThan2() {
+        Bessj bessj = new Bessj();
+        try {
+            bessj.bessj(1, 5.0);
+            fail("Expected IllegalArgumentException for index less than 2");
+        } catch (IllegalArgumentException e) {
+            assertNotNull(e.getMessage());
+        }
+    }
+
+    @Test
+    public void testBessjWithAxEqualToZero() {
+        Bessj bessj = new Bessj();
+        double result = bessj.bessj(2, 0.0);
+        assertEquals(0.0, result, 0.0001);
+    }
+
+    @Test
+    public void testBessj1() {
+        Bessj bessj = new Bessj();
+        double result = bessj.bessj1(5.0);
+        assertNotNull(result);
+    }
+
+    @Test
+    public void testBessjExecutionPaths() {
+        Bessj bessj = new Bessj();
+        double result1 = bessj.bessj(5, 3.0);
+        double result2 = bessj.bessj(3, 7.0);
+        double result3 = bessj.bessj(8, 2.0);
+        double result4 = bessj.bessj(2, 6.0);
+        double result5 = bessj.bessj(4, -4.0);
+        double result6 = bessj.bessj(6, -1.0);
+        double result7 = bessj.bessj(2, -3.0);
+        assertEquals(1.0, result1, 0.0001);
+        assertNotNull(result2);
+        assertTrue(result3 > 0);
+        assertTrue(result4 < 0);
+        assertTrue(result5 < 0);
+        assertTrue(result6 > 0);
+        assertTrue(result7 < 0);
+    }
+}
+
+*****

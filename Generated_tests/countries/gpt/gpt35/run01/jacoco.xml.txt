@@ -1,0 +1,213 @@
+------------------------------------------------------------------------------------------
+Class name: eu/fayder/restcountries/rest/CountryServiceBase
+Method: getByCodeList
+Lines: 41
+------------------------------------------------------------------------------------------
+Class name: eu/fayder/restcountries/rest/CountryServiceBase
+Method: fulltextSearch
+Lines: 112
+------------------------------------------------------------------------------------------
+Class name: eu/fayder/restcountries/rest/CountryServiceBase
+Method: loadJson
+Lines: 157, 158
+------------------------------------------------------------------------------------------
+Class name: eu/fayder/restcountries/domain/ResponseEntity
+Method: getMessage
+Lines: 17
+------------------------------------------------------------------------------------------
+Class name: eu/fayder/restcountries/domain/ResponseEntity
+Method: getStatus
+Lines: 21
+------------------------------------------------------------------------------------------
+Class name: eu/fayder/restcountries/servlet/CORSFilter
+Method: <init>
+Lines: 12
+------------------------------------------------------------------------------------------
+Class name: eu/fayder/restcountries/servlet/CORSFilter
+Method: init
+Lines: 16
+------------------------------------------------------------------------------------------
+Class name: eu/fayder/restcountries/servlet/CORSFilter
+Method: doFilter
+Lines: 20, 21, 22, 23, 24, 25
+------------------------------------------------------------------------------------------
+Class name: eu/fayder/restcountries/servlet/CORSFilter
+Method: destroy
+Lines: 30
+------------------------------------------------------------------------------------------
+Class name: eu/fayder/restcountries/v1/domain/CountryTranslations
+Method: setDe
+Lines: 18, 19
+------------------------------------------------------------------------------------------
+Class name: eu/fayder/restcountries/v1/domain/CountryTranslations
+Method: setEs
+Lines: 24, 25
+------------------------------------------------------------------------------------------
+Class name: eu/fayder/restcountries/v1/domain/CountryTranslations
+Method: setFr
+Lines: 30, 31
+------------------------------------------------------------------------------------------
+Class name: eu/fayder/restcountries/v1/domain/CountryTranslations
+Method: setJa
+Lines: 36, 37
+------------------------------------------------------------------------------------------
+Class name: eu/fayder/restcountries/v1/domain/CountryTranslations
+Method: setIt
+Lines: 42, 43
+------------------------------------------------------------------------------------------
+Class name: eu/fayder/restcountries/v2/domain/Contribution
+Method: <init>
+Lines: 6
+------------------------------------------------------------------------------------------
+Class name: eu/fayder/restcountries/v2/domain/Contribution
+Method: getAmount
+Lines: 12
+------------------------------------------------------------------------------------------
+Class name: eu/fayder/restcountries/v2/domain/Contribution
+Method: getToken
+Lines: 16
+------------------------------------------------------------------------------------------
+Class name: eu/fayder/restcountries/v2/domain/Contribution
+Method: toString
+Lines: 21
+------------------------------------------------------------------------------------------
+Class name: eu/fayder/restcountries/v2/domain/Currency
+Method: setCode
+Lines: 17, 18
+------------------------------------------------------------------------------------------
+Class name: eu/fayder/restcountries/v2/domain/Currency
+Method: setName
+Lines: 25, 26
+------------------------------------------------------------------------------------------
+Class name: eu/fayder/restcountries/v2/domain/Currency
+Method: setSymbol
+Lines: 33, 34
+------------------------------------------------------------------------------------------
+Class name: eu/fayder/restcountries/v2/domain/Language
+Method: setIso639_1
+Lines: 18, 19
+------------------------------------------------------------------------------------------
+Class name: eu/fayder/restcountries/v2/domain/Language
+Method: setIso639_2
+Lines: 26, 27
+------------------------------------------------------------------------------------------
+Class name: eu/fayder/restcountries/v2/domain/Language
+Method: setName
+Lines: 34, 35
+------------------------------------------------------------------------------------------
+Class name: eu/fayder/restcountries/v2/domain/Language
+Method: setNativeName
+Lines: 42, 43
+------------------------------------------------------------------------------------------
+Class name: eu/fayder/restcountries/Application
+Method: main
+Lines: 9, 10
+------------------------------------------------------------------------------------------
+Class name: eu/fayder/restcountries/v2/rest/StripeRest
+Method: isBlank
+Lines: 32
+------------------------------------------------------------------------------------------
+Class name: eu/fayder/restcountries/v2/rest/StripeRest
+Method: contribute
+Lines: 37, 39, 40, 43, 44, 45, 46, 47, 48, 51, 52, 53, 54, 55, 57
+------------------------------------------------------------------------------------------
+Class name: eu/fayder/restcountries/v2/rest/StripeRest
+Method: getResponse
+Lines: 61, 62, 63, 64, 65
+------------------------------------------------------------------------------------------
+Class name: eu/fayder/restcountries/v2/rest/CountryRestV2
+Method: getByAlpha
+Lines: 44
+------------------------------------------------------------------------------------------
+Class name: eu/fayder/restcountries/v2/rest/CountryRestV2
+Method: getByAlphaList
+Lines: 63, 66
+------------------------------------------------------------------------------------------
+Class name: eu/fayder/restcountries/v2/rest/CountryRestV2
+Method: getByCurrency
+Lines: 77, 86, 87, 88
+------------------------------------------------------------------------------------------
+Class name: eu/fayder/restcountries/v2/rest/CountryRestV2
+Method: getByName
+Lines: 102, 103, 104
+------------------------------------------------------------------------------------------
+Class name: eu/fayder/restcountries/v2/rest/CountryRestV2
+Method: getByCallingCode
+Lines: 118, 119, 120
+------------------------------------------------------------------------------------------
+Class name: eu/fayder/restcountries/v2/rest/CountryRestV2
+Method: getByCapital
+Lines: 134, 135, 136
+------------------------------------------------------------------------------------------
+Class name: eu/fayder/restcountries/v2/rest/CountryRestV2
+Method: getByRegion
+Lines: 150, 151, 152
+------------------------------------------------------------------------------------------
+Class name: eu/fayder/restcountries/v2/rest/CountryRestV2
+Method: getBySubRegion
+Lines: 166, 167, 168
+------------------------------------------------------------------------------------------
+Class name: eu/fayder/restcountries/v2/rest/CountryRestV2
+Method: getByLanguage
+Lines: 182, 183, 184
+------------------------------------------------------------------------------------------
+Class name: eu/fayder/restcountries/v2/rest/CountryRestV2
+Method: getByDemonym
+Lines: 198, 199, 200
+------------------------------------------------------------------------------------------
+Class name: eu/fayder/restcountries/v2/rest/CountryRestV2
+Method: getByRegionalBloc
+Lines: 214, 215, 216
+------------------------------------------------------------------------------------------
+Class name: eu/fayder/restcountries/v2/rest/CountryRestV2
+Method: doPOST
+Lines: 222, 223
+------------------------------------------------------------------------------------------
+Class name: eu/fayder/restcountries/v2/rest/CountryRestV2
+Method: isEmpty
+Lines: 313
+------------------------------------------------------------------------------------------
+Class name: eu/fayder/restcountries/v1/rest/CountryRestV1
+Method: getByAlpha
+Lines: 48
+------------------------------------------------------------------------------------------
+Class name: eu/fayder/restcountries/v1/rest/CountryRestV1
+Method: getByAlphaList
+Lines: 67, 70, 71, 72, 73
+------------------------------------------------------------------------------------------
+Class name: eu/fayder/restcountries/v1/rest/CountryRestV1
+Method: getByCurrency
+Lines: 81, 90, 91, 92
+------------------------------------------------------------------------------------------
+Class name: eu/fayder/restcountries/v1/rest/CountryRestV1
+Method: getByName
+Lines: 106, 107, 108
+------------------------------------------------------------------------------------------
+Class name: eu/fayder/restcountries/v1/rest/CountryRestV1
+Method: getByCallingCode
+Lines: 122, 123, 124
+------------------------------------------------------------------------------------------
+Class name: eu/fayder/restcountries/v1/rest/CountryRestV1
+Method: getByCapital
+Lines: 138, 139, 140
+------------------------------------------------------------------------------------------
+Class name: eu/fayder/restcountries/v1/rest/CountryRestV1
+Method: getByRegion
+Lines: 154, 155, 156
+------------------------------------------------------------------------------------------
+Class name: eu/fayder/restcountries/v1/rest/CountryRestV1
+Method: getBySubregion
+Lines: 170, 171, 172
+------------------------------------------------------------------------------------------
+Class name: eu/fayder/restcountries/v1/rest/CountryRestV1
+Method: getByLanguage
+Lines: 186, 187, 188
+------------------------------------------------------------------------------------------
+Class name: eu/fayder/restcountries/v1/rest/CountryRestV1
+Method: doPOST
+Lines: 194, 195
+------------------------------------------------------------------------------------------
+Class name: eu/fayder/restcountries/v1/rest/CountryRestV1
+Method: isEmpty
+Lines: 207
+------------------------------------------------------------------------------------------

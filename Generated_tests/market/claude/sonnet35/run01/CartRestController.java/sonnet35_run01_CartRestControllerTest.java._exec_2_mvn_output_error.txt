@@ -1,0 +1,12 @@
+Line: 78
+Expected status code <302> but was <404>.
+----------------------------------------
+Line: 186
+Expected status code <302> but was <404>.
+----------------------------------------
+Line: 111
+Expected status code <302> but was <404>.
+----------------------------------------
+Line: 152
+Expected status code <302> but was <404>.
+----------------------------------------

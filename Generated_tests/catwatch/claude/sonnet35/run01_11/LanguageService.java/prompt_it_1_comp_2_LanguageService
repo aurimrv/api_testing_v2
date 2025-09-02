@@ -1,0 +1,402 @@
+You are a highly skilled test engineer specializing in debugging and resolving compilation errors and test failures in Java-based projects. Your expertise includes Java 8, JUnit 4, and REST Assured, allowing you to diagnose issues efficiently and provide precise, actionable fixes.
+
+Do fix the compilation errors delimited by ##### given the code below delimited by *****.
+
+The response must contain only Java code in JUnit 4 format.
+
+#####
+[[1;31mERROR[m] COMPILATION ERROR : 
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_LanguageServiceTest.java:[72,62] <anonymous org.zalando.catwatch.backend.sonnet35_run01_LanguageServiceTest$1> is not abstract and does not override abstract method findProjectsByOrganizationNameAndDateRange(java.util.Collection<java.lang.String>,java.util.Date,java.util.Date) in org.zalando.catwatch.backend.repo.ProjectRepository
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_LanguageServiceTest.java:[74,38] findProjects(java.lang.String,java.util.Optional<java.lang.String>,java.util.Optional<java.lang.String>) in <anonymous org.zalando.catwatch.backend.sonnet35_run01_LanguageServiceTest$1> cannot implement findProjects(java.lang.String,java.util.Optional<java.lang.String>,java.util.Optional<java.lang.String>) in org.zalando.catwatch.backend.repo.ProjectRepositoryCustom
+  return type java.lang.Iterable<org.zalando.catwatch.backend.model.Project> is not compatible with java.util.List<org.zalando.catwatch.backend.model.Project>
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_LanguageServiceTest.java:[73,13] method does not override or implement a method from a supertype
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_LanguageServiceTest.java:[87,62] <anonymous org.zalando.catwatch.backend.sonnet35_run01_LanguageServiceTest$2> is not abstract and does not override abstract method findProjectsByOrganizationNameAndDateRange(java.util.Collection<java.lang.String>,java.util.Date,java.util.Date) in org.zalando.catwatch.backend.repo.ProjectRepository
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_LanguageServiceTest.java:[89,38] findProjects(java.lang.String,java.util.Optional<java.lang.String>,java.util.Optional<java.lang.String>) in <anonymous org.zalando.catwatch.backend.sonnet35_run01_LanguageServiceTest$2> cannot implement findProjects(java.lang.String,java.util.Optional<java.lang.String>,java.util.Optional<java.lang.String>) in org.zalando.catwatch.backend.repo.ProjectRepositoryCustom
+  return type java.lang.Iterable<org.zalando.catwatch.backend.model.Project> is not compatible with java.util.List<org.zalando.catwatch.backend.model.Project>
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_LanguageServiceTest.java:[88,13] method does not override or implement a method from a supertype
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_LanguageServiceTest.java:[102,9] reference to assertEquals is ambiguous
+  both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_LanguageServiceTest.java:[103,9] reference to assertEquals is ambiguous
+  both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_LanguageServiceTest.java:[108,62] <anonymous org.zalando.catwatch.backend.sonnet35_run01_LanguageServiceTest$3> is not abstract and does not override abstract method findProjectsByOrganizationNameAndDateRange(java.util.Collection<java.lang.String>,java.util.Date,java.util.Date) in org.zalando.catwatch.backend.repo.ProjectRepository
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_LanguageServiceTest.java:[110,38] findProjects(java.lang.String,java.util.Optional<java.lang.String>,java.util.Optional<java.lang.String>) in <anonymous org.zalando.catwatch.backend.sonnet35_run01_LanguageServiceTest$3> cannot implement findProjects(java.lang.String,java.util.Optional<java.lang.String>,java.util.Optional<java.lang.String>) in org.zalando.catwatch.backend.repo.ProjectRepositoryCustom
+  return type java.lang.Iterable<org.zalando.catwatch.backend.model.Project> is not compatible with java.util.List<org.zalando.catwatch.backend.model.Project>
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_LanguageServiceTest.java:[109,13] method does not override or implement a method from a supertype
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_LanguageServiceTest.java:[136,9] reference to assertEquals is ambiguous
+  both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_LanguageServiceTest.java:[137,9] reference to assertEquals is ambiguous
+  both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_LanguageServiceTest.java:[140,9] reference to assertEquals is ambiguous
+  both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_LanguageServiceTest.java:[141,9] reference to assertEquals is ambiguous
+  both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_LanguageServiceTest.java:[146,62] <anonymous org.zalando.catwatch.backend.sonnet35_run01_LanguageServiceTest$4> is not abstract and does not override abstract method findProjectsByOrganizationNameAndDateRange(java.util.Collection<java.lang.String>,java.util.Date,java.util.Date) in org.zalando.catwatch.backend.repo.ProjectRepository
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_LanguageServiceTest.java:[148,38] findProjects(java.lang.String,java.util.Optional<java.lang.String>,java.util.Optional<java.lang.String>) in <anonymous org.zalando.catwatch.backend.sonnet35_run01_LanguageServiceTest$4> cannot implement findProjects(java.lang.String,java.util.Optional<java.lang.String>,java.util.Optional<java.lang.String>) in org.zalando.catwatch.backend.repo.ProjectRepositoryCustom
+  return type java.lang.Iterable<org.zalando.catwatch.backend.model.Project> is not compatible with java.util.List<org.zalando.catwatch.backend.model.Project>
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_LanguageServiceTest.java:[147,13] method does not override or implement a method from a supertype
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_LanguageServiceTest.java:[165,9] reference to assertEquals is ambiguous
+  both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_LanguageServiceTest.java:[166,9] reference to assertEquals is ambiguous
+  both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_LanguageServiceTest.java:[171,62] <anonymous org.zalando.catwatch.backend.sonnet35_run01_LanguageServiceTest$5> is not abstract and does not override abstract method findProjectsByOrganizationNameAndDateRange(java.util.Collection<java.lang.String>,java.util.Date,java.util.Date) in org.zalando.catwatch.backend.repo.ProjectRepository
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_LanguageServiceTest.java:[173,38] findProjects(java.lang.String,java.util.Optional<java.lang.String>,java.util.Optional<java.lang.String>) in <anonymous org.zalando.catwatch.backend.sonnet35_run01_LanguageServiceTest$5> cannot implement findProjects(java.lang.String,java.util.Optional<java.lang.String>,java.util.Optional<java.lang.String>) in org.zalando.catwatch.backend.repo.ProjectRepositoryCustom
+  return type java.lang.Iterable<org.zalando.catwatch.backend.model.Project> is not compatible with java.util.List<org.zalando.catwatch.backend.model.Project>
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_LanguageServiceTest.java:[172,13] method does not override or implement a method from a supertype
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_LanguageServiceTest.java:[194,9] reference to assertEquals is ambiguous
+  both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_LanguageServiceTest.java:[195,9] reference to assertEquals is ambiguous
+  both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_LanguageServiceTest.java:[200,62] <anonymous org.zalando.catwatch.backend.sonnet35_run01_LanguageServiceTest$6> is not abstract and does not override abstract method findProjectsByOrganizationNameAndDateRange(java.util.Collection<java.lang.String>,java.util.Date,java.util.Date) in org.zalando.catwatch.backend.repo.ProjectRepository
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_LanguageServiceTest.java:[202,38] findProjects(java.lang.String,java.util.Optional<java.lang.String>,java.util.Optional<java.lang.String>) in <anonymous org.zalando.catwatch.backend.sonnet35_run01_LanguageServiceTest$6> cannot implement findProjects(java.lang.String,java.util.Optional<java.lang.String>,java.util.Optional<java.lang.String>) in org.zalando.catwatch.backend.repo.ProjectRepositoryCustom
+  return type java.lang.Iterable<org.zalando.catwatch.backend.model.Project> is not compatible with java.util.List<org.zalando.catwatch.backend.model.Project>
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_LanguageServiceTest.java:[201,13] method does not override or implement a method from a supertype
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_LanguageServiceTest.java:[229,62] <anonymous org.zalando.catwatch.backend.sonnet35_run01_LanguageServiceTest$7> is not abstract and does not override abstract method findProjectsByOrganizationNameAndDateRange(java.util.Collection<java.lang.String>,java.util.Date,java.util.Date) in org.zalando.catwatch.backend.repo.ProjectRepository
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_LanguageServiceTest.java:[231,38] findProjects(java.lang.String,java.util.Optional<java.lang.String>,java.util.Optional<java.lang.String>) in <anonymous org.zalando.catwatch.backend.sonnet35_run01_LanguageServiceTest$7> cannot implement findProjects(java.lang.String,java.util.Optional<java.lang.String>,java.util.Optional<java.lang.String>) in org.zalando.catwatch.backend.repo.ProjectRepositoryCustom
+  return type java.lang.Iterable<org.zalando.catwatch.backend.model.Project> is not compatible with java.util.List<org.zalando.catwatch.backend.model.Project>
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_LanguageServiceTest.java:[230,13] method does not override or implement a method from a supertype
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_LanguageServiceTest.java:[254,9] reference to assertEquals is ambiguous
+  both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_LanguageServiceTest.java:[255,9] reference to assertEquals is ambiguous
+  both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_LanguageServiceTest.java:[260,62] <anonymous org.zalando.catwatch.backend.sonnet35_run01_LanguageServiceTest$8> is not abstract and does not override abstract method findProjectsByOrganizationNameAndDateRange(java.util.Collection<java.lang.String>,java.util.Date,java.util.Date) in org.zalando.catwatch.backend.repo.ProjectRepository
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_LanguageServiceTest.java:[262,38] findProjects(java.lang.String,java.util.Optional<java.lang.String>,java.util.Optional<java.lang.String>) in <anonymous org.zalando.catwatch.backend.sonnet35_run01_LanguageServiceTest$8> cannot implement findProjects(java.lang.String,java.util.Optional<java.lang.String>,java.util.Optional<java.lang.String>) in org.zalando.catwatch.backend.repo.ProjectRepositoryCustom
+  return type java.lang.Iterable<org.zalando.catwatch.backend.model.Project> is not compatible with java.util.List<org.zalando.catwatch.backend.model.Project>
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_LanguageServiceTest.java:[261,13] method does not override or implement a method from a supertype
+[[1;31mERROR[m] Failed to execute goal [32morg.apache.maven.plugins:maven-compiler-plugin:3.8.0:testCompile[m [1m(default-testCompile)[m on project [36mcatwatch-backend[m: [1;31mCompilation failure[m: Compilation failure: 
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_LanguageServiceTest.java:[72,62] <anonymous org.zalando.catwatch.backend.sonnet35_run01_LanguageServiceTest$1> is not abstract and does not override abstract method findProjectsByOrganizationNameAndDateRange(java.util.Collection<java.lang.String>,java.util.Date,java.util.Date) in org.zalando.catwatch.backend.repo.ProjectRepository
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_LanguageServiceTest.java:[74,38] findProjects(java.lang.String,java.util.Optional<java.lang.String>,java.util.Optional<java.lang.String>) in <anonymous org.zalando.catwatch.backend.sonnet35_run01_LanguageServiceTest$1> cannot implement findProjects(java.lang.String,java.util.Optional<java.lang.String>,java.util.Optional<java.lang.String>) in org.zalando.catwatch.backend.repo.ProjectRepositoryCustom
+[[1;31mERROR[m]   return type java.lang.Iterable<org.zalando.catwatch.backend.model.Project> is not compatible with java.util.List<org.zalando.catwatch.backend.model.Project>
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_LanguageServiceTest.java:[73,13] method does not override or implement a method from a supertype
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_LanguageServiceTest.java:[87,62] <anonymous org.zalando.catwatch.backend.sonnet35_run01_LanguageServiceTest$2> is not abstract and does not override abstract method findProjectsByOrganizationNameAndDateRange(java.util.Collection<java.lang.String>,java.util.Date,java.util.Date) in org.zalando.catwatch.backend.repo.ProjectRepository
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_LanguageServiceTest.java:[89,38] findProjects(java.lang.String,java.util.Optional<java.lang.String>,java.util.Optional<java.lang.String>) in <anonymous org.zalando.catwatch.backend.sonnet35_run01_LanguageServiceTest$2> cannot implement findProjects(java.lang.String,java.util.Optional<java.lang.String>,java.util.Optional<java.lang.String>) in org.zalando.catwatch.backend.repo.ProjectRepositoryCustom
+[[1;31mERROR[m]   return type java.lang.Iterable<org.zalando.catwatch.backend.model.Project> is not compatible with java.util.List<org.zalando.catwatch.backend.model.Project>
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_LanguageServiceTest.java:[88,13] method does not override or implement a method from a supertype
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_LanguageServiceTest.java:[102,9] reference to assertEquals is ambiguous
+[[1;31mERROR[m]   both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_LanguageServiceTest.java:[103,9] reference to assertEquals is ambiguous
+[[1;31mERROR[m]   both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_LanguageServiceTest.java:[108,62] <anonymous org.zalando.catwatch.backend.sonnet35_run01_LanguageServiceTest$3> is not abstract and does not override abstract method findProjectsByOrganizationNameAndDateRange(java.util.Collection<java.lang.String>,java.util.Date,java.util.Date) in org.zalando.catwatch.backend.repo.ProjectRepository
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_LanguageServiceTest.java:[110,38] findProjects(java.lang.String,java.util.Optional<java.lang.String>,java.util.Optional<java.lang.String>) in <anonymous org.zalando.catwatch.backend.sonnet35_run01_LanguageServiceTest$3> cannot implement findProjects(java.lang.String,java.util.Optional<java.lang.String>,java.util.Optional<java.lang.String>) in org.zalando.catwatch.backend.repo.ProjectRepositoryCustom
+[[1;31mERROR[m]   return type java.lang.Iterable<org.zalando.catwatch.backend.model.Project> is not compatible with java.util.List<org.zalando.catwatch.backend.model.Project>
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_LanguageServiceTest.java:[109,13] method does not override or implement a method from a supertype
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_LanguageServiceTest.java:[136,9] reference to assertEquals is ambiguous
+[[1;31mERROR[m]   both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_LanguageServiceTest.java:[137,9] reference to assertEquals is ambiguous
+[[1;31mERROR[m]   both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_LanguageServiceTest.java:[140,9] reference to assertEquals is ambiguous
+[[1;31mERROR[m]   both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_LanguageServiceTest.java:[141,9] reference to assertEquals is ambiguous
+[[1;31mERROR[m]   both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_LanguageServiceTest.java:[146,62] <anonymous org.zalando.catwatch.backend.sonnet35_run01_LanguageServiceTest$4> is not abstract and does not override abstract method findProjectsByOrganizationNameAndDateRange(java.util.Collection<java.lang.String>,java.util.Date,java.util.Date) in org.zalando.catwatch.backend.repo.ProjectRepository
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_LanguageServiceTest.java:[148,38] findProjects(java.lang.String,java.util.Optional<java.lang.String>,java.util.Optional<java.lang.String>) in <anonymous org.zalando.catwatch.backend.sonnet35_run01_LanguageServiceTest$4> cannot implement findProjects(java.lang.String,java.util.Optional<java.lang.String>,java.util.Optional<java.lang.String>) in org.zalando.catwatch.backend.repo.ProjectRepositoryCustom
+[[1;31mERROR[m]   return type java.lang.Iterable<org.zalando.catwatch.backend.model.Project> is not compatible with java.util.List<org.zalando.catwatch.backend.model.Project>
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_LanguageServiceTest.java:[147,13] method does not override or implement a method from a supertype
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_LanguageServiceTest.java:[165,9] reference to assertEquals is ambiguous
+[[1;31mERROR[m]   both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_LanguageServiceTest.java:[166,9] reference to assertEquals is ambiguous
+[[1;31mERROR[m]   both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_LanguageServiceTest.java:[171,62] <anonymous org.zalando.catwatch.backend.sonnet35_run01_LanguageServiceTest$5> is not abstract and does not override abstract method findProjectsByOrganizationNameAndDateRange(java.util.Collection<java.lang.String>,java.util.Date,java.util.Date) in org.zalando.catwatch.backend.repo.ProjectRepository
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_LanguageServiceTest.java:[173,38] findProjects(java.lang.String,java.util.Optional<java.lang.String>,java.util.Optional<java.lang.String>) in <anonymous org.zalando.catwatch.backend.sonnet35_run01_LanguageServiceTest$5> cannot implement findProjects(java.lang.String,java.util.Optional<java.lang.String>,java.util.Optional<java.lang.String>) in org.zalando.catwatch.backend.repo.ProjectRepositoryCustom
+[[1;31mERROR[m]   return type java.lang.Iterable<org.zalando.catwatch.backend.model.Project> is not compatible with java.util.List<org.zalando.catwatch.backend.model.Project>
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_LanguageServiceTest.java:[172,13] method does not override or implement a method from a supertype
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_LanguageServiceTest.java:[194,9] reference to assertEquals is ambiguous
+[[1;31mERROR[m]   both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_LanguageServiceTest.java:[195,9] reference to assertEquals is ambiguous
+[[1;31mERROR[m]   both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_LanguageServiceTest.java:[200,62] <anonymous org.zalando.catwatch.backend.sonnet35_run01_LanguageServiceTest$6> is not abstract and does not override abstract method findProjectsByOrganizationNameAndDateRange(java.util.Collection<java.lang.String>,java.util.Date,java.util.Date) in org.zalando.catwatch.backend.repo.ProjectRepository
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_LanguageServiceTest.java:[202,38] findProjects(java.lang.String,java.util.Optional<java.lang.String>,java.util.Optional<java.lang.String>) in <anonymous org.zalando.catwatch.backend.sonnet35_run01_LanguageServiceTest$6> cannot implement findProjects(java.lang.String,java.util.Optional<java.lang.String>,java.util.Optional<java.lang.String>) in org.zalando.catwatch.backend.repo.ProjectRepositoryCustom
+[[1;31mERROR[m]   return type java.lang.Iterable<org.zalando.catwatch.backend.model.Project> is not compatible with java.util.List<org.zalando.catwatch.backend.model.Project>
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_LanguageServiceTest.java:[201,13] method does not override or implement a method from a supertype
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_LanguageServiceTest.java:[229,62] <anonymous org.zalando.catwatch.backend.sonnet35_run01_LanguageServiceTest$7> is not abstract and does not override abstract method findProjectsByOrganizationNameAndDateRange(java.util.Collection<java.lang.String>,java.util.Date,java.util.Date) in org.zalando.catwatch.backend.repo.ProjectRepository
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_LanguageServiceTest.java:[231,38] findProjects(java.lang.String,java.util.Optional<java.lang.String>,java.util.Optional<java.lang.String>) in <anonymous org.zalando.catwatch.backend.sonnet35_run01_LanguageServiceTest$7> cannot implement findProjects(java.lang.String,java.util.Optional<java.lang.String>,java.util.Optional<java.lang.String>) in org.zalando.catwatch.backend.repo.ProjectRepositoryCustom
+[[1;31mERROR[m]   return type java.lang.Iterable<org.zalando.catwatch.backend.model.Project> is not compatible with java.util.List<org.zalando.catwatch.backend.model.Project>
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_LanguageServiceTest.java:[230,13] method does not override or implement a method from a supertype
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_LanguageServiceTest.java:[254,9] reference to assertEquals is ambiguous
+[[1;31mERROR[m]   both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_LanguageServiceTest.java:[255,9] reference to assertEquals is ambiguous
+[[1;31mERROR[m]   both method assertEquals(long,long) in org.junit.Assert and method assertEquals(java.lang.Object,java.lang.Object) in org.junit.Assert match
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_LanguageServiceTest.java:[260,62] <anonymous org.zalando.catwatch.backend.sonnet35_run01_LanguageServiceTest$8> is not abstract and does not override abstract method findProjectsByOrganizationNameAndDateRange(java.util.Collection<java.lang.String>,java.util.Date,java.util.Date) in org.zalando.catwatch.backend.repo.ProjectRepository
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_LanguageServiceTest.java:[262,38] findProjects(java.lang.String,java.util.Optional<java.lang.String>,java.util.Optional<java.lang.String>) in <anonymous org.zalando.catwatch.backend.sonnet35_run01_LanguageServiceTest$8> cannot implement findProjects(java.lang.String,java.util.Optional<java.lang.String>,java.util.Optional<java.lang.String>) in org.zalando.catwatch.backend.repo.ProjectRepositoryCustom
+[[1;31mERROR[m]   return type java.lang.Iterable<org.zalando.catwatch.backend.model.Project> is not compatible with java.util.List<org.zalando.catwatch.backend.model.Project>
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_LanguageServiceTest.java:[261,13] method does not override or implement a method from a supertype
+[[1;31mERROR[m] -> [1m[Help 1][m
+[[1;31mERROR[m] 
+[[1;31mERROR[m] To see the full stack trace of the errors, re-run Maven with the [1m-e[m switch.
+[[1;31mERROR[m] Re-run Maven using the [1m-X[m switch to enable full debug logging.
+[[1;31mERROR[m] 
+[[1;31mERROR[m] For more information about the errors and possible solutions, please read the following articles:
+[[1;31mERROR[m] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+
+#####
+*****
+package org.zalando.catwatch.backend;
+
+import org.junit.AfterClass;
+import org.junit.BeforeClass;
+import org.junit.Before;
+import org.junit.Test;
+import static org.junit.Assert.*;
+import java.util.Map;
+import java.util.List;
+import static org.evomaster.client.java.controller.api.EMTestUtils.*;
+import org.evomaster.client.java.controller.SutHandler;
+import io.restassured.RestAssured;
+import static io.restassured.RestAssured.given;
+import io.restassured.response.ValidatableResponse;
+import static org.evomaster.client.java.sql.dsl.SqlDsl.sql;
+import org.evomaster.client.java.controller.api.dto.database.operations.InsertionResultsDto;
+import org.evomaster.client.java.controller.api.dto.database.operations.InsertionDto;
+import static org.hamcrest.Matchers.*;
+import io.restassured.config.JsonConfig;
+import io.restassured.path.json.config.JsonPathConfig;
+import static io.restassured.config.RedirectConfig.redirectConfig;
+import static org.evomaster.client.java.controller.contentMatchers.NumberMatcher.*;
+import static org.evomaster.client.java.controller.contentMatchers.StringMatcher.*;
+import static org.evomaster.client.java.controller.contentMatchers.SubStringMatcher.*;
+import static org.evomaster.client.java.controller.expect.ExpectationHandler.expectationHandler;
+import org.evomaster.client.java.controller.expect.ExpectationHandler;
+import io.restassured.path.json.JsonPath;
+import java.util.Arrays;
+
+import org.zalando.catwatch.backend.model.Language;
+import org.zalando.catwatch.backend.model.Project;
+import org.zalando.catwatch.backend.repo.ProjectRepository;
+import org.zalando.catwatch.backend.service.LanguageService;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.Optional;
+
+public class sonnet35_run01_LanguageServiceTest {
+
+    private static final SutHandler controller = new em.embedded.org.zalando.EmbeddedEvoMasterController();
+    private static String baseUrlOfSut;
+
+    @BeforeClass
+    public static void initClass() {
+        controller.setupForGeneratedTest();
+        baseUrlOfSut = controller.startSut();
+        controller.registerOrExecuteInitSqlCommandsIfNeeded();
+        assertNotNull(baseUrlOfSut);
+        RestAssured.enableLoggingOfRequestAndResponseIfValidationFails();
+        RestAssured.useRelaxedHTTPSValidation();
+        RestAssured.urlEncodingEnabled = false;
+        RestAssured.config = RestAssured.config()
+            .jsonConfig(JsonConfig.jsonConfig().numberReturnType(JsonPathConfig.NumberReturnType.DOUBLE))
+            .redirect(redirectConfig().followRedirects(false));
+    }
+
+    @AfterClass
+    public static void tearDown() {
+        controller.stopSut();
+    }
+
+    @Before
+    public void initTest() {
+        controller.resetDatabase(Arrays.asList("CONTRIBUTOR"));
+        controller.resetStateOfSUT();
+    }
+
+    @Test
+    public void testGetMainLanguagesWithEmptyProjects() {
+        ProjectRepository mockRepo = new ProjectRepository() {
+            @Override
+            public Iterable<Project> findProjects(String org, Optional<String> query, Optional<String> language) {
+                return Collections.emptyList();
+            }
+        };
+
+        LanguageService service = new LanguageService(mockRepo);
+        List<Language> result = service.getMainLanguages("org1,org2", Comparator.comparing(Language::getName), Optional.empty());
+
+        assertTrue(result.isEmpty());
+    }
+
+    @Test
+    public void testGetMainLanguagesWithSingleProject() {
+        ProjectRepository mockRepo = new ProjectRepository() {
+            @Override
+            public Iterable<Project> findProjects(String org, Optional<String> query, Optional<String> language) {
+                Project project = new Project();
+                project.setPrimaryLanguage("Java");
+                project.setName("TestProject");
+                return Collections.singletonList(project);
+            }
+        };
+
+        LanguageService service = new LanguageService(mockRepo);
+        List<Language> result = service.getMainLanguages("org1", Comparator.comparing(Language::getName), Optional.empty());
+
+        assertEquals(1, result.size());
+        assertEquals("Java", result.get(0).getName());
+        assertEquals(100, result.get(0).getPercentage());
+        assertEquals(1, result.get(0).getProjectsCount());
+    }
+
+    @Test
+    public void testGetMainLanguagesWithMultipleProjects() {
+        ProjectRepository mockRepo = new ProjectRepository() {
+            @Override
+            public Iterable<Project> findProjects(String org, Optional<String> query, Optional<String> language) {
+                List<Project> projects = new ArrayList<>();
+                Project project1 = new Project();
+                project1.setPrimaryLanguage("Java");
+                project1.setName("Project1");
+                projects.add(project1);
+
+                Project project2 = new Project();
+                project2.setPrimaryLanguage("Python");
+                project2.setName("Project2");
+                projects.add(project2);
+
+                Project project3 = new Project();
+                project3.setPrimaryLanguage("Java");
+                project3.setName("Project3");
+                projects.add(project3);
+
+                return projects;
+            }
+        };
+
+        LanguageService service = new LanguageService(mockRepo);
+        List<Language> result = service.getMainLanguages("org1", Comparator.comparing(Language::getName), Optional.empty());
+
+        assertEquals(2, result.size());
+        assertEquals("Java", result.get(0).getName());
+        assertEquals(67, result.get(0).getPercentage());
+        assertEquals(2, result.get(0).getProjectsCount());
+
+        assertEquals("Python", result.get(1).getName());
+        assertEquals(33, result.get(1).getPercentage());
+        assertEquals(1, result.get(1).getProjectsCount());
+    }
+
+    @Test
+    public void testGetMainLanguagesWithFilterLanguage() {
+        ProjectRepository mockRepo = new ProjectRepository() {
+            @Override
+            public Iterable<Project> findProjects(String org, Optional<String> query, Optional<String> language) {
+                List<Project> projects = new ArrayList<>();
+                if (language.isPresent() && language.get().equals("Java")) {
+                    Project project = new Project();
+                    project.setPrimaryLanguage("Java");
+                    project.setName("JavaProject");
+                    projects.add(project);
+                }
+                return projects;
+            }
+        };
+
+        LanguageService service = new LanguageService(mockRepo);
+        List<Language> result = service.getMainLanguages("org1", Comparator.comparing(Language::getName), Optional.of("Java"));
+
+        assertEquals(1, result.size());
+        assertEquals("Java", result.get(0).getName());
+        assertEquals(100, result.get(0).getPercentage());
+        assertEquals(1, result.get(0).getProjectsCount());
+    }
+
+    @Test
+    public void testGetMainLanguagesWithNullPrimaryLanguage() {
+        ProjectRepository mockRepo = new ProjectRepository() {
+            @Override
+            public Iterable<Project> findProjects(String org, Optional<String> query, Optional<String> language) {
+                List<Project> projects = new ArrayList<>();
+                Project project1 = new Project();
+                project1.setPrimaryLanguage(null);
+                project1.setName("Project1");
+                projects.add(project1);
+
+                Project project2 = new Project();
+                project2.setPrimaryLanguage("Java");
+                project2.setName("Project2");
+                projects.add(project2);
+
+                return projects;
+            }
+        };
+
+        LanguageService service = new LanguageService(mockRepo);
+        List<Language> result = service.getMainLanguages("org1", Comparator.comparing(Language::getName), Optional.empty());
+
+        assertEquals(1, result.size());
+        assertEquals("Java", result.get(0).getName());
+        assertEquals(100, result.get(0).getPercentage());
+        assertEquals(1, result.get(0).getProjectsCount());
+    }
+
+    @Test
+    public void testGetMainLanguagesWithCustomComparator() {
+        ProjectRepository mockRepo = new ProjectRepository() {
+            @Override
+            public Iterable<Project> findProjects(String org, Optional<String> query, Optional<String> language) {
+                List<Project> projects = new ArrayList<>();
+                Project project1 = new Project();
+                project1.setPrimaryLanguage("Java");
+                project1.setName("Project1");
+                projects.add(project1);
+
+                Project project2 = new Project();
+                project2.setPrimaryLanguage("Python");
+                project2.setName("Project2");
+                projects.add(project2);
+
+                return projects;
+            }
+        };
+
+        LanguageService service = new LanguageService(mockRepo);
+        Comparator<Language> customComparator = Comparator.comparing(Language::getProjectsCount).reversed();
+        List<Language> result = service.getMainLanguages("org1", customComparator, Optional.empty());
+
+        assertEquals(2, result.size());
+        assertEquals("Java", result.get(0).getName());
+        assertEquals("Python", result.get(1).getName());
+    }
+
+    @Test
+    public void testGetMainLanguagesWithMultipleOrganizations() {
+        ProjectRepository mockRepo = new ProjectRepository() {
+            @Override
+            public Iterable<Project> findProjects(String org, Optional<String> query, Optional<String> language) {
+                List<Project> projects = new ArrayList<>();
+                if (org.equals("org1")) {
+                    Project project = new Project();
+                    project.setPrimaryLanguage("Java");
+                    project.setName("Org1Project");
+                    projects.add(project);
+                } else if (org.equals("org2")) {
+                    Project project = new Project();
+                    project.setPrimaryLanguage("Python");
+                    project.setName("Org2Project");
+                    projects.add(project);
+                }
+                return projects;
+            }
+        };
+
+        LanguageService service = new LanguageService(mockRepo);
+        List<Language> result = service.getMainLanguages("org1,org2", Comparator.comparing(Language::getName), Optional.empty());
+
+        assertEquals(2, result.size());
+        assertEquals("Java", result.get(0).getName());
+        assertEquals("Python", result.get(1).getName());
+        assertEquals(50, result.get(0).getPercentage());
+        assertEquals(50, result.get(1).getPercentage());
+    }
+
+    @Test
+    public void testLanguageServiceConstructor() {
+        ProjectRepository mockRepo = new ProjectRepository() {
+            @Override
+            public Iterable<Project> findProjects(String org, Optional<String> query, Optional<String> language) {
+                return Collections.emptyList();
+            }
+        };
+
+        LanguageService service = new LanguageService(mockRepo);
+        assertNotNull(service);
+    }
+}
+*****

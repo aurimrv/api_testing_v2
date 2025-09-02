@@ -1,0 +1,5 @@
+Line: 65
+JSON path resultAsDouble doesn't match.
+Expected: <0.03223>
+Actual: 0.89799772335573
+----------------------------------------

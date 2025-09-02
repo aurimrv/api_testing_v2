@@ -1,0 +1,9 @@
+Line: 80
+Expected status code <500> but was <400>.
+----------------------------------------
+Line: 106
+Expected status code <500> but was <400>.
+----------------------------------------
+Line: 93
+Expected status code <500> but was <400>.
+----------------------------------------

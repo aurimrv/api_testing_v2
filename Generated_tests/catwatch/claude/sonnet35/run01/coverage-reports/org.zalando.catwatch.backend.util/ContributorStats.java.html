@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="pt"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>ContributorStats.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">catwatch-backend</a> &gt; <a href="index.source.html" class="el_package">org.zalando.catwatch.backend.util</a> &gt; <span class="el_source">ContributorStats.java</span></div><h1>ContributorStats.java</h1><pre class="source lang-java linenums">package org.zalando.catwatch.backend.util;
+
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
+import org.zalando.catwatch.backend.model.Contributor;
+
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.HashMap;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
+
+/**
+ * Class to collect the statistics of the contributors
+ *
+ * This class collect the statistics from a List of Contributor objects and
+ * put them in a more compact way.
+ * Specifically, the fields which have always the same value are storaged for
+ * only once. The counts and dates are put into an array of their own.
+ *
+ */
+public class ContributorStats {
+    private String name;
+    private List&lt;String&gt; organizationName;
+    private String url;
+    private List&lt;Integer&gt; organizationalCommitsCounts;
+    private List&lt;Integer&gt; personalCommitsCounts;
+    private List&lt;Integer&gt; organizationalProjectsCounts;
+    private List&lt;Integer&gt; personalProjectsCounts;
+    private List&lt;Date&gt; snapshotDates;
+
+<span class="fc" id="L34">    public ContributorStats(List&lt;Contributor&gt; contributions) {</span>
+<span class="fc" id="L35">        Contributor first = contributions.get(0);</span>
+<span class="fc" id="L36">        name = first.getName();</span>
+<span class="fc" id="L37">        organizationName = new ArrayList&lt;&gt;();</span>
+<span class="fc" id="L38">        url = first.getUrl();</span>
+<span class="pc" id="L39">        contributions.sort((o1, o2) -&gt; o1.getSnapshotDate().compareTo(o2.getSnapshotDate()));</span>
+<span class="fc" id="L40">        int size = contributions.size();</span>
+<span class="fc" id="L41">        organizationalCommitsCounts = new ArrayList&lt;&gt;(size);</span>
+<span class="fc" id="L42">        personalCommitsCounts = new ArrayList&lt;&gt;(size);</span>
+<span class="fc" id="L43">        organizationalProjectsCounts = new ArrayList&lt;&gt;(size);</span>
+<span class="fc" id="L44">        personalProjectsCounts = new ArrayList&lt;&gt;(size);</span>
+<span class="fc" id="L45">        snapshotDates = new ArrayList&lt;&gt;(size);</span>
+<span class="fc" id="L46">        int i = 0;</span>
+<span class="fc" id="L47">        Date lastSnapshotDate = null;</span>
+<span class="fc" id="L48">        String lastOrganizationName = null;</span>
+<span class="pc bpc" id="L49" title="1 of 2 branches missed.">        for (Contributor c : contributions) {</span>
+<span class="fc" id="L50">            String loginId = c.getLoginId();</span>
+<span class="pc bpc" id="L51" title="1 of 2 branches missed.">            if (loginId.isEmpty()) {</span>
+<span class="fc" id="L52">                throw new IllegalArgumentException(&quot;Contributor loginId could not be determinated.&quot;);</span>
+            }
+
+<span class="nc bnc" id="L55" title="All 2 branches missed.">            if (!loginId.equals(first.getLoginId())) {</span>
+<span class="nc" id="L56">                throw new IllegalArgumentException(&quot;All the contributors in the list must have the same loginId.&quot;);</span>
+            }
+
+<span class="nc bnc" id="L59" title="All 4 branches missed.">            if (lastSnapshotDate == null || !c.getSnapshotDate().equals(lastSnapshotDate)) {</span>
+<span class="nc" id="L60">                organizationalCommitsCounts.add(i, c.getOrganizationalCommitsCount());</span>
+<span class="nc" id="L61">                personalCommitsCounts.add(i, c.getPersonalCommitsCount());</span>
+<span class="nc" id="L62">                organizationalProjectsCounts.add(i, c.getOrganizationalProjectsCount());</span>
+<span class="nc" id="L63">                personalProjectsCounts.add(i, c.getPersonalProjectsCount());</span>
+<span class="nc" id="L64">                snapshotDates.add(i, c.getSnapshotDate());</span>
+<span class="nc bnc" id="L65" title="All 4 branches missed.">                if (lastOrganizationName == null || !c.getOrganizationName().equals(lastOrganizationName)) {</span>
+<span class="nc" id="L66">                    organizationName.add(c.getOrganizationName());</span>
+                }
+<span class="nc" id="L68">                i++;</span>
+            }
+            // sum up the statistics if they are on the same day but for different organizations.
+            // the prerequisite condition is to have all entries ordered by the name, date,
+<span class="nc bnc" id="L72" title="All 4 branches missed.">            if (lastSnapshotDate != null &amp;&amp; c.getSnapshotDate().equals(lastSnapshotDate)) {</span>
+<span class="nc bnc" id="L73" title="All 2 branches missed.">                if (!c.getOrganizationName().equals(lastOrganizationName)) {</span>
+<span class="nc" id="L74">                    organizationalCommitsCounts.set(</span>
+<span class="nc" id="L75">                        i-1, organizationalCommitsCounts.get(i-1)+c.getOrganizationalCommitsCount());</span>
+                    //personalCommitsCounts.set(
+                    //    i-1, personalCommitsCounts.get(i-1)+c.getPersonalCommitsCount());
+<span class="nc" id="L78">                    organizationalProjectsCounts.set(</span>
+<span class="nc" id="L79">                            i-1, organizationalProjectsCounts.get(i-1)+c.getOrganizationalProjectsCount());</span>
+<span class="nc" id="L80">                    personalProjectsCounts.set(</span>
+<span class="nc" id="L81">                            i-1, personalProjectsCounts.get(i-1)+c.getPersonalProjectsCount());</span>
+                }
+            }
+<span class="nc" id="L84">            lastSnapshotDate = c.getSnapshotDate();</span>
+<span class="nc" id="L85">            lastOrganizationName = c.getOrganizationName();</span>
+<span class="nc" id="L86">        }</span>
+<span class="nc" id="L87">    }</span>
+
+    @JsonProperty(value=&quot;name&quot;)
+<span class="nc" id="L90">    public String getName() {return name;}</span>
+
+    @JsonProperty(value=&quot;organization_name&quot;)
+<span class="nc" id="L93">    public List&lt;String&gt; getOrganizationName() {return organizationName;}</span>
+
+    @JsonProperty(value=&quot;url&quot;)
+<span class="nc" id="L96">    public String getUrl() {return url;}</span>
+
+    @JsonProperty(value=&quot;organization_commit_counts&quot;)
+<span class="nc" id="L99">    public List&lt;Integer&gt; getOrganizationalCommitsCounts() {return organizationalCommitsCounts;}</span>
+
+    @JsonProperty(value=&quot;personal_commit_counts&quot;)
+<span class="nc" id="L102">    public List&lt;Integer&gt; getPersonalCommitsCounts() {return personalCommitsCounts;}</span>
+
+    @JsonProperty(value=&quot;organization_project_counts&quot;)
+<span class="nc" id="L105">    public List&lt;Integer&gt; getOrganizationalProjectsCounts() {return organizationalProjectsCounts;}</span>
+
+    @JsonProperty(value=&quot;personal_project_counts&quot;)
+<span class="nc" id="L108">    public List&lt;Integer&gt; getPersonalProjectsCounts() {return personalProjectsCounts;}</span>
+
+    @JsonProperty(value=&quot;snapshot_dates&quot;)
+    @JsonSerialize(using = JsonDateListSerializer.class)
+<span class="nc" id="L112">    public List&lt;Date&gt; getSnapshotDates() { return snapshotDates; }</span>
+
+    /**
+     * Take a list of contributors and return a list their statistics that are seperated
+     * by different contributors.
+     *
+     * @param contributors  a list consisting of contributors.
+     * @return a list, each entry of which consists of statistics of the same contributors
+     * at different date.
+     */
+    public static List&lt;ContributorStats&gt; buildStats(List&lt;Contributor&gt; contributors) {
+<span class="fc" id="L123">        Map&lt;String, List&lt;Contributor&gt;&gt; contributorByLoginId = getDistinctContributors(contributors);</span>
+<span class="fc" id="L124">        return contributorByLoginId.values().stream()</span>
+<span class="fc" id="L125">                .map(ContributorStats::new)</span>
+<span class="fc" id="L126">                .collect(Collectors.toCollection(LinkedList::new));</span>
+    }
+
+    /**
+     * Take a list of contributors and return a map of lists where contributors have been partitioned
+     * by loginId.
+     *
+     * @param contributors a list consisting of potentially different contributors.
+     * @return a map which contains the list separated by contributors, using the loginId as index.
+     */
+    public static Map&lt;String, List&lt;Contributor&gt;&gt; getDistinctContributors(List&lt;Contributor&gt; contributors) {
+<span class="fc" id="L137">        Map&lt;String, List&lt;Contributor&gt;&gt; result = new HashMap&lt;&gt;();</span>
+<span class="pc bpc" id="L138" title="1 of 2 branches missed.">        for (Contributor contributor : contributors) {</span>
+<span class="nc" id="L139">            String loginId = contributor.getLoginId();</span>
+<span class="nc bnc" id="L140" title="All 2 branches missed.">            if (loginId.isEmpty()) {</span>
+<span class="nc" id="L141">                throw new IllegalArgumentException(&quot;Could not determinate loginId.&quot;);</span>
+            }
+
+<span class="nc" id="L144">            List&lt;Contributor&gt; list = result.get(loginId);</span>
+<span class="nc bnc" id="L145" title="All 2 branches missed.">            if (list == null) {</span>
+<span class="nc" id="L146">                list = new LinkedList&lt;&gt;();</span>
+<span class="nc" id="L147">                result.put(loginId, list);</span>
+            }
+<span class="nc" id="L149">            list.add(contributor);</span>
+<span class="nc" id="L150">        }</span>
+<span class="fc" id="L151">        return result;</span>
+    }
+
+    @Override
+    public String toString() {
+<span class="nc" id="L156">        return String.format(</span>
+                &quot;ContributorStats(%s, %s, %s, %s)&quot;, name, organizationName, url, snapshotDates);
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

@@ -1,0 +1,159 @@
+[[1;31mERROR[m] COMPILATION ERROR : 
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[71,33] cannot find symbol
+  symbol:   method mock(java.lang.Class<org.zalando.catwatch.backend.repo.ProjectRepository>)
+  location: class org.zalando.catwatch.backend.sonnet35_run01_ProjectServiceImplTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[72,27] cannot find symbol
+  symbol:   method mock(java.lang.Class<org.springframework.core.env.Environment>)
+  location: class org.zalando.catwatch.backend.sonnet35_run01_ProjectServiceImplTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[88,49] cannot find symbol
+  symbol:   method anyString()
+  location: class org.zalando.catwatch.backend.sonnet35_run01_ProjectServiceImplTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[88,79] cannot find symbol
+  symbol:   method anyString()
+  location: class org.zalando.catwatch.backend.sonnet35_run01_ProjectServiceImplTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[88,92] cannot find symbol
+  symbol:   method anyString()
+  location: class org.zalando.catwatch.backend.sonnet35_run01_ProjectServiceImplTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[89,42] cannot find symbol
+  symbol:   method anyString()
+  location: class org.zalando.catwatch.backend.sonnet35_run01_ProjectServiceImplTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[94,62] cannot find symbol
+  symbol:   method anyString()
+  location: class org.zalando.catwatch.backend.sonnet35_run01_ProjectServiceImplTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[94,92] cannot find symbol
+  symbol:   method anyString()
+  location: class org.zalando.catwatch.backend.sonnet35_run01_ProjectServiceImplTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[94,105] cannot find symbol
+  symbol:   method anyString()
+  location: class org.zalando.catwatch.backend.sonnet35_run01_ProjectServiceImplTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[94,39] cannot find symbol
+  symbol:   method times(int)
+  location: class org.zalando.catwatch.backend.sonnet35_run01_ProjectServiceImplTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[110,46] getMergedProjectList(java.util.List<org.zalando.catwatch.backend.model.Project>,java.util.List<org.zalando.catwatch.backend.model.Project>) has private access in org.zalando.catwatch.backend.service.ProjectServiceImpl
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[132,40] createMergedProject(org.zalando.catwatch.backend.model.Project,org.zalando.catwatch.backend.model.Project) has private access in org.zalando.catwatch.backend.service.ProjectServiceImpl
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[148,51] convertProjectsToMap(java.util.List<org.zalando.catwatch.backend.model.Project>) has private access in org.zalando.catwatch.backend.service.ProjectServiceImpl
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[157,9] cannot find symbol
+  symbol:   method when(boolean)
+  location: class org.zalando.catwatch.backend.sonnet35_run01_ProjectServiceImplTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[158,9] cannot find symbol
+  symbol:   method when(java.lang.String)
+  location: class org.zalando.catwatch.backend.sonnet35_run01_ProjectServiceImplTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[160,39] getOrganizationConfig() has private access in org.zalando.catwatch.backend.service.ProjectServiceImpl
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[167,9] cannot find symbol
+  symbol:   method when(boolean)
+  location: class org.zalando.catwatch.backend.sonnet35_run01_ProjectServiceImplTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[169,39] getOrganizationConfig() has private access in org.zalando.catwatch.backend.service.ProjectServiceImpl
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[176,34] isSortOrderAscending(java.util.Optional<java.lang.String>) has private access in org.zalando.catwatch.backend.service.ProjectServiceImpl
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[177,35] isSortOrderAscending(java.util.Optional<java.lang.String>) has private access in org.zalando.catwatch.backend.service.ProjectServiceImpl
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[178,35] isSortOrderAscending(java.util.Optional<java.lang.String>) has private access in org.zalando.catwatch.backend.service.ProjectServiceImpl
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[185,36] getProjectSortComparator(java.util.Optional<java.lang.String>,boolean) has private access in org.zalando.catwatch.backend.service.ProjectServiceImpl
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[186,42] cannot find symbol
+  symbol:   class ProjectStarComparator
+  location: class org.zalando.catwatch.backend.sonnet35_run01_ProjectServiceImplTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[188,36] getProjectSortComparator(java.util.Optional<java.lang.String>,boolean) has private access in org.zalando.catwatch.backend.service.ProjectServiceImpl
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[189,42] cannot find symbol
+  symbol:   class ProjectScoreComparator
+  location: class org.zalando.catwatch.backend.sonnet35_run01_ProjectServiceImplTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[191,36] getProjectSortComparator(java.util.Optional<java.lang.String>,boolean) has private access in org.zalando.catwatch.backend.service.ProjectServiceImpl
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[192,42] cannot find symbol
+  symbol:   class ProjectCommitComparator
+  location: class org.zalando.catwatch.backend.sonnet35_run01_ProjectServiceImplTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[194,36] getProjectSortComparator(java.util.Optional<java.lang.String>,boolean) has private access in org.zalando.catwatch.backend.service.ProjectServiceImpl
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[195,42] cannot find symbol
+  symbol:   class ProjectForkComparator
+  location: class org.zalando.catwatch.backend.sonnet35_run01_ProjectServiceImplTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[197,36] getProjectSortComparator(java.util.Optional<java.lang.String>,boolean) has private access in org.zalando.catwatch.backend.service.ProjectServiceImpl
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[198,42] cannot find symbol
+  symbol:   class ProjectContributorComparator
+  location: class org.zalando.catwatch.backend.sonnet35_run01_ProjectServiceImplTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[200,36] getProjectSortComparator(java.util.Optional<java.lang.String>,boolean) has private access in org.zalando.catwatch.backend.service.ProjectServiceImpl
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[201,42] cannot find symbol
+  symbol:   class ProjectScoreComparator
+  location: class org.zalando.catwatch.backend.sonnet35_run01_ProjectServiceImplTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[203,36] getProjectSortComparator(java.util.Optional<java.lang.String>,boolean) has private access in org.zalando.catwatch.backend.service.ProjectServiceImpl
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[204,42] cannot find symbol
+  symbol:   class ProjectScoreComparator
+  location: class org.zalando.catwatch.backend.sonnet35_run01_ProjectServiceImplTest
+[[1;31mERROR[m] Failed to execute goal [32morg.apache.maven.plugins:maven-compiler-plugin:3.8.0:testCompile[m [1m(default-testCompile)[m on project [36mcatwatch-backend[m: [1;31mCompilation failure[m: Compilation failure: 
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[71,33] cannot find symbol
+[[1;31mERROR[m]   symbol:   method mock(java.lang.Class<org.zalando.catwatch.backend.repo.ProjectRepository>)
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_ProjectServiceImplTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[72,27] cannot find symbol
+[[1;31mERROR[m]   symbol:   method mock(java.lang.Class<org.springframework.core.env.Environment>)
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_ProjectServiceImplTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[88,49] cannot find symbol
+[[1;31mERROR[m]   symbol:   method anyString()
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_ProjectServiceImplTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[88,79] cannot find symbol
+[[1;31mERROR[m]   symbol:   method anyString()
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_ProjectServiceImplTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[88,92] cannot find symbol
+[[1;31mERROR[m]   symbol:   method anyString()
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_ProjectServiceImplTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[89,42] cannot find symbol
+[[1;31mERROR[m]   symbol:   method anyString()
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_ProjectServiceImplTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[94,62] cannot find symbol
+[[1;31mERROR[m]   symbol:   method anyString()
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_ProjectServiceImplTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[94,92] cannot find symbol
+[[1;31mERROR[m]   symbol:   method anyString()
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_ProjectServiceImplTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[94,105] cannot find symbol
+[[1;31mERROR[m]   symbol:   method anyString()
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_ProjectServiceImplTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[94,39] cannot find symbol
+[[1;31mERROR[m]   symbol:   method times(int)
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_ProjectServiceImplTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[110,46] getMergedProjectList(java.util.List<org.zalando.catwatch.backend.model.Project>,java.util.List<org.zalando.catwatch.backend.model.Project>) has private access in org.zalando.catwatch.backend.service.ProjectServiceImpl
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[132,40] createMergedProject(org.zalando.catwatch.backend.model.Project,org.zalando.catwatch.backend.model.Project) has private access in org.zalando.catwatch.backend.service.ProjectServiceImpl
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[148,51] convertProjectsToMap(java.util.List<org.zalando.catwatch.backend.model.Project>) has private access in org.zalando.catwatch.backend.service.ProjectServiceImpl
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[157,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   method when(boolean)
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_ProjectServiceImplTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[158,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   method when(java.lang.String)
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_ProjectServiceImplTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[160,39] getOrganizationConfig() has private access in org.zalando.catwatch.backend.service.ProjectServiceImpl
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[167,9] cannot find symbol
+[[1;31mERROR[m]   symbol:   method when(boolean)
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_ProjectServiceImplTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[169,39] getOrganizationConfig() has private access in org.zalando.catwatch.backend.service.ProjectServiceImpl
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[176,34] isSortOrderAscending(java.util.Optional<java.lang.String>) has private access in org.zalando.catwatch.backend.service.ProjectServiceImpl
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[177,35] isSortOrderAscending(java.util.Optional<java.lang.String>) has private access in org.zalando.catwatch.backend.service.ProjectServiceImpl
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[178,35] isSortOrderAscending(java.util.Optional<java.lang.String>) has private access in org.zalando.catwatch.backend.service.ProjectServiceImpl
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[185,36] getProjectSortComparator(java.util.Optional<java.lang.String>,boolean) has private access in org.zalando.catwatch.backend.service.ProjectServiceImpl
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[186,42] cannot find symbol
+[[1;31mERROR[m]   symbol:   class ProjectStarComparator
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_ProjectServiceImplTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[188,36] getProjectSortComparator(java.util.Optional<java.lang.String>,boolean) has private access in org.zalando.catwatch.backend.service.ProjectServiceImpl
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[189,42] cannot find symbol
+[[1;31mERROR[m]   symbol:   class ProjectScoreComparator
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_ProjectServiceImplTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[191,36] getProjectSortComparator(java.util.Optional<java.lang.String>,boolean) has private access in org.zalando.catwatch.backend.service.ProjectServiceImpl
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[192,42] cannot find symbol
+[[1;31mERROR[m]   symbol:   class ProjectCommitComparator
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_ProjectServiceImplTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[194,36] getProjectSortComparator(java.util.Optional<java.lang.String>,boolean) has private access in org.zalando.catwatch.backend.service.ProjectServiceImpl
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[195,42] cannot find symbol
+[[1;31mERROR[m]   symbol:   class ProjectForkComparator
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_ProjectServiceImplTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[197,36] getProjectSortComparator(java.util.Optional<java.lang.String>,boolean) has private access in org.zalando.catwatch.backend.service.ProjectServiceImpl
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[198,42] cannot find symbol
+[[1;31mERROR[m]   symbol:   class ProjectContributorComparator
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_ProjectServiceImplTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[200,36] getProjectSortComparator(java.util.Optional<java.lang.String>,boolean) has private access in org.zalando.catwatch.backend.service.ProjectServiceImpl
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[201,42] cannot find symbol
+[[1;31mERROR[m]   symbol:   class ProjectScoreComparator
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_ProjectServiceImplTest
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[203,36] getProjectSortComparator(java.util.Optional<java.lang.String>,boolean) has private access in org.zalando.catwatch.backend.service.ProjectServiceImpl
+[[1;31mERROR[m] /media/rincon/63999417195/eclipse-workspace/EMB-master/jdk_8_maven/cs/rest/original/catwatch/catwatch-backend/src/test/java/org/zalando/catwatch/backend/sonnet35_run01_ProjectServiceImplTest.java:[204,42] cannot find symbol
+[[1;31mERROR[m]   symbol:   class ProjectScoreComparator
+[[1;31mERROR[m]   location: class org.zalando.catwatch.backend.sonnet35_run01_ProjectServiceImplTest
+[[1;31mERROR[m] -> [1m[Help 1][m
+[[1;31mERROR[m] 
+[[1;31mERROR[m] To see the full stack trace of the errors, re-run Maven with the [1m-e[m switch.
+[[1;31mERROR[m] Re-run Maven using the [1m-X[m switch to enable full debug logging.
+[[1;31mERROR[m] 
+[[1;31mERROR[m] For more information about the errors and possible solutions, please read the following articles:
+[[1;31mERROR[m] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

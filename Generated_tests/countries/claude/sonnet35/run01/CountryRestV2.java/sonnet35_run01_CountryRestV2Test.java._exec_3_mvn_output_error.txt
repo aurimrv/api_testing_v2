@@ -1,0 +1,11 @@
+Line: 70
+JSON path alpha3Code doesn't match.
+Expected: USA
+Actual: null
+----------------------------------------
+Line: 140
+URISyntax Illegal charact...
+----------------------------------------
+Line: 204
+URISyntax Illegal ch...
+----------------------------------------

@@ -1,0 +1,15 @@
+Line: 138
+JSON path message doesn't match.
+Expected: a string containing "Email already exists"
+Actual: Argument validation error
+----------------------------------------
+Line: 92
+JSON path email doesn't match.
+Expected: ivan.petrov@yandex.ru
+Actual: null
+----------------------------------------
+Line: 163
+JSON path message doesn't match.
+Expected: a string containing "Validation failed"
+Actual: Argument validation error
+----------------------------------------

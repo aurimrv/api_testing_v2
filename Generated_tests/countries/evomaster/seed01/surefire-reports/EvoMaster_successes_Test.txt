@@ -1,0 +1,103 @@
+-------------------------------------------------------------------------------
+Test set: EvoMaster_successes_Test
+-------------------------------------------------------------------------------
+Tests run: 43, Failures: 11, Errors: 0, Skipped: 0, Time elapsed: 10.636 s <<< FAILURE! - in EvoMaster_successes_Test
+test_13(EvoMaster_successes_Test)  Time elapsed: 0.083 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+JSON path '[0]'.isEmpty() doesn't match.
+Expected: is <true>
+  Actual: false
+
+	at EvoMaster_successes_Test.test_13(EvoMaster_successes_Test.java:884)
+
+test_14(EvoMaster_successes_Test)  Time elapsed: 0.048 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+JSON path '[0]'.isEmpty() doesn't match.
+Expected: is <true>
+  Actual: false
+
+	at EvoMaster_successes_Test.test_14(EvoMaster_successes_Test.java:903)
+
+test_15(EvoMaster_successes_Test)  Time elapsed: 0.051 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+JSON path '[0]'.isEmpty() doesn't match.
+Expected: is <true>
+  Actual: false
+
+	at EvoMaster_successes_Test.test_15(EvoMaster_successes_Test.java:921)
+
+test_16(EvoMaster_successes_Test)  Time elapsed: 0.043 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+JSON path '[0]'.isEmpty() doesn't match.
+Expected: is <true>
+  Actual: false
+
+	at EvoMaster_successes_Test.test_16(EvoMaster_successes_Test.java:939)
+
+test_17(EvoMaster_successes_Test)  Time elapsed: 0.041 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+JSON path '[0]'.isEmpty() doesn't match.
+Expected: is <true>
+  Actual: false
+
+	at EvoMaster_successes_Test.test_17(EvoMaster_successes_Test.java:960)
+
+test_18(EvoMaster_successes_Test)  Time elapsed: 0.046 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+JSON path '[0]'.isEmpty() doesn't match.
+Expected: is <true>
+  Actual: false
+
+	at EvoMaster_successes_Test.test_18(EvoMaster_successes_Test.java:976)
+
+test_21(EvoMaster_successes_Test)  Time elapsed: 0.036 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+JSON path '[0]'.isEmpty() doesn't match.
+Expected: is <true>
+  Actual: false
+
+	at EvoMaster_successes_Test.test_21(EvoMaster_successes_Test.java:1219)
+
+test_22(EvoMaster_successes_Test)  Time elapsed: 0.035 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+JSON path '[0]'.isEmpty() doesn't match.
+Expected: is <true>
+  Actual: false
+
+	at EvoMaster_successes_Test.test_22(EvoMaster_successes_Test.java:1240)
+
+test_25(EvoMaster_successes_Test)  Time elapsed: 0.033 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+JSON path '[0]'.isEmpty() doesn't match.
+Expected: is <true>
+  Actual: false
+
+	at EvoMaster_successes_Test.test_25(EvoMaster_successes_Test.java:1412)
+
+test_28(EvoMaster_successes_Test)  Time elapsed: 0.03 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+JSON path '[0]'.isEmpty() doesn't match.
+Expected: is <true>
+  Actual: false
+
+	at EvoMaster_successes_Test.test_28(EvoMaster_successes_Test.java:1531)
+
+test_29(EvoMaster_successes_Test)  Time elapsed: 0.031 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+JSON path '[0]'.isEmpty() doesn't match.
+Expected: is <true>
+  Actual: false
+
+	at EvoMaster_successes_Test.test_29(EvoMaster_successes_Test.java:1549)
+

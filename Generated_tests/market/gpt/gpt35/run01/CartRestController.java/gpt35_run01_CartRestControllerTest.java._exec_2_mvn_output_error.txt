@@ -1,0 +1,5 @@
+Line: 57
+JSON path totalItems doesn't match.
+Expected: <2>
+Actual: null
+----------------------------------------

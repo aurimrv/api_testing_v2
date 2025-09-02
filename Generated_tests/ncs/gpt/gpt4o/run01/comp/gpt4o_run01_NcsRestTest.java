@@ -1,0 +1,112 @@
+
+package org.restncs;
+
+import org.junit.AfterClass;
+import org.junit.BeforeClass;
+import org.junit.Before;
+import org.junit.Test;
+import static org.junit.Assert.*;
+import java.util.Map;
+import java.util.List;
+import static org.evomaster.client.java.controller.api.EMTestUtils.*;
+import org.evomaster.client.java.controller.SutHandler;
+import io.restassured.RestAssured;
+import static io.restassured.RestAssured.given;
+import io.restassured.response.ValidatableResponse;
+import static org.hamcrest.Matchers.*;
+import io.restassured.config.JsonConfig;
+import io.restassured.path.json.config.JsonPathConfig;
+import static io.restassured.config.RedirectConfig.redirectConfig;
+import static org.evomaster.client.java.controller.contentMatchers.NumberMatcher.*;
+import static org.evomaster.client.java.controller.contentMatchers.StringMatcher.*;
+import static org.evomaster.client.java.controller.contentMatchers.SubStringMatcher.*;
+import static org.evomaster.client.java.controller.expect.ExpectationHandler.expectationHandler;
+import org.evomaster.client.java.controller.expect.ExpectationHandler;
+import io.restassured.path.json.JsonPath;
+import java.util.Arrays;
+
+public class gpt4o_run01_NcsRestTest {
+
+    private static final SutHandler controller = new em.embedded.org.restncs.EmbeddedEvoMasterController();
+    private static String baseUrlOfSut;
+
+    @BeforeClass
+    public static void initClass() {
+        controller.setupForGeneratedTest();
+        baseUrlOfSut = controller.startSut();
+        controller.registerOrExecuteInitSqlCommandsIfNeeded();
+        assertNotNull(baseUrlOfSut);
+        RestAssured.enableLoggingOfRequestAndResponseIfValidationFails();
+        RestAssured.useRelaxedHTTPSValidation();
+        RestAssured.urlEncodingEnabled = false;
+        RestAssured.config = RestAssured.config()
+            .jsonConfig(JsonConfig.jsonConfig().numberReturnType(JsonPathConfig.NumberReturnType.DOUBLE))
+            .redirect(redirectConfig().followRedirects(false));
+    }
+
+    @AfterClass
+    public static void tearDown() {
+        controller.stopSut();
+    }
+
+    @Before
+    public void initTest() {
+        controller.resetStateOfSUT();
+    }
+
+    @Test
+    public void testFisherValidInput() {
+        given()
+            .pathParam("m", 500)
+            .pathParam("n", 500)
+            .pathParam("x", 1.5)
+        .when()
+            .get(baseUrlOfSut + "/api/fisher/{m}/{n}/{x}")
+        .then()
+            .statusCode(200)
+            .body("resultAsDouble", notNullValue());
+    }
+
+    @Test
+    public void testFisherBoundaryMExceeds() {
+        given()
+            .pathParam("m", 1001)
+            .pathParam("n", 500)
+            .pathParam("x", 1.5)
+        .when()
+            .get(baseUrlOfSut + "/api/fisher/{m}/{n}/{x}")
+        .then()
+            .statusCode(400);
+    }
+
+    @Test
+    public void testFisherBoundaryNExceeds() {
+        given()
+            .pathParam("m", 500)
+            .pathParam("n", 1001)
+            .pathParam("x", 1.5)
+        .when()
+            .get(baseUrlOfSut + "/api/fisher/{m}/{n}/{x}")
+        .then()
+            .statusCode(400);
+    }
+
+    @Test
+    public void testFisherExceptionHandling() {
+        given()
+            .pathParam("m", 500)
+            .pathParam("n", 500)
+            .pathParam("x", -1.0) // Assuming negative x causes an exception
+        .when()
+            .get(baseUrlOfSut + "/api/fisher/{m}/{n}/{x}")
+        .then()
+            .statusCode(400);
+    }
+
+    @Test
+    public void testFisherConstructor() {
+        // Explicitly instantiating the class to ensure constructor coverage
+        NcsRest ncsRest = new NcsRest();
+        assertNotNull(ncsRest);
+    }
+}

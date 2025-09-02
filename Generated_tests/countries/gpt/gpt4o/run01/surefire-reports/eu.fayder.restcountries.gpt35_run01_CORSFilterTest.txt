@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: eu.fayder.restcountries.gpt35_run01_CORSFilterTest
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in eu.fayder.restcountries.gpt35_run01_CORSFilterTest
