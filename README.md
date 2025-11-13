@@ -5,7 +5,7 @@ Repository created for the paper **"Incremental Multi-Model LLM Strategy for Aut
 ## Repository Structure
 
 ### 1. `EMB_projects/`
-- **Description**: Folder containing the EvoMaster Benchmark ([EMB](https://github.com/WebFuzzing/EMB)) projects.  
+- **Description**: Folder containing the EvoMaster Benchmark (EMB) projects, nowadays called Web Fuzzing Dataset (WFD) - https://github.com/WebFuzzing/Dataset.  
 - **Modifications**:  
   - The configurations have been adapted to enable integration with `Python_scripts/`.
 
