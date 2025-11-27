@@ -1,0 +1,187 @@
+=================================================================
+   LLM TEST GENERATION EFFECTIVENESS ANALYSIS
+   T1 = GPT-3.5 | T2 = Claude | T3 = GPT-4o
+=================================================================
+
+RAW DATA:
+---------
+    Project T1_TOTAL T1_FAILURES T1_SKIPPED T1_VALID T2_TOTAL T2_FAILURES
+1  Catwatch      224          26          3      195      309           9
+2    Market        9           4          1        4       15           7
+3       Scs       34          11          1       22       84           9
+4 Countries       43          12          1       30       72           6
+5       Ncs       28          15          0       13       62           5
+  T2_SKIPPED T2_VALID T3_TOTAL T3_FAILURES T3_SKIPPED T3_VALID
+1         29      271      149          17         16      116
+2          0        8       16           7          0        9
+3          2       73       40           6          0       34
+4          4       62       42           7          3       32
+5          2       55       41           8          0       33
+
+=================================================================
+              EFFECTIVENESS CALCULATION
+         Effectiveness = VALID / TOTAL * 100%
+=================================================================
+
+   Project T1_GPT35 T2_Claude T3_GPT4o
+  Catwatch   87.05%    87.70%   77.85%
+    Market   44.44%    53.33%   56.25%
+       Scs   64.71%    86.90%   85.00%
+ Countries   69.77%    86.11%   76.19%
+       Ncs   46.43%    88.71%   80.49%
+
+=================================================================
+              DESCRIPTIVE STATISTICS BY MODEL
+=================================================================
+
+        Model Total_Tests Failures Skipped Valid Effectiveness_Pct
+ T1 (GPT-3.5)         338       68       6   264          78.10651
+  T2 (Claude)         542       36      37   469          86.53137
+  T3 (GPT-4o)         288       45      19   224          77.77778
+
+EFFECTIVENESS STATISTICS:
+-------------------------
+
+T1_GPT35:
+  Mean:   62.48%
+  Median: 64.71%
+  SD:     17.64
+  Min:    44.44%
+  Max:    87.05%
+
+T2_Claude:
+  Mean:   80.55%
+  Median: 86.90%
+  SD:     15.25
+  Min:    53.33%
+  Max:    88.71%
+
+T3_GPT4o:
+  Mean:   75.16%
+  Median: 77.85%
+  SD:     11.08
+  Min:    56.25%
+  Max:    85.00%
+
+=================================================================
+              CHI-SQUARE TEST FOR INDEPENDENCE
+=================================================================
+
+Research Question: Is there a significant association between
+LLM model and test outcome (VALID vs. NOT VALID)?
+
+H0 (Null Hypothesis): Test effectiveness is independent of LLM model
+H1 (Alternative): Test effectiveness depends on the LLM model
+Significance level: α = 0.05
+
+CONTINGENCY TABLE:
+           VALID NOT_VALID
+T1_GPT-3.5   264        74
+T2_Claude    469        73
+T3_GPT-4o    224        64
+
+CHI-SQUARE TEST RESULTS:
+  χ² statistic = 14.4458
+  Degrees of freedom = 2
+  p-value = 0.0007
+
+CONCLUSION: p < 0.05 → REJECT H0
+There IS a statistically significant association between LLM model
+and test effectiveness. Different models have different effectiveness rates.
+
+Effect Size (Cramer's V) = 0.1112
+Interpretation: Small effect
+
+=================================================================
+         PAIRWISE COMPARISONS (FISHER'S EXACT TEST)
+=================================================================
+
+Fisher's Exact Test is used for pairwise comparisons (more accurate
+for small sample sizes than chi-square).
+Bonferroni correction applied: α = 0.05 / 3 = 0.0167
+
+              Comparison Model1_Eff Model2_Eff P_Value       Significant
+ T1_GPT-3.5 vs T2_Claude      78.11      86.53  0.0015 Yes* (p < 0.0167)
+ T1_GPT-3.5 vs T3_GPT-4o      78.11      77.78  0.9233   No (p ≥ 0.0167)
+  T2_Claude vs T3_GPT-4o      86.53      77.78  0.0016 Yes* (p < 0.0167)
+
+* Bonferroni-corrected significance level (α = 0.0167)
+
+=================================================================
+           PROPORTION TEST (ALTERNATIVE APPROACH)
+=================================================================
+
+Two-proportion z-test for comparing effectiveness rates:
+
+              Comparison Z_Statistic P_Value CI_Lower CI_Upper    Significant
+ T1_GPT-3.5 vs T2_Claude      3.1658  0.0015   -13.93    -2.92 Yes (p < 0.05)
+ T1_GPT-3.5 vs T3_GPT-4o      0.0022  0.9983    -6.51     7.17  No (p ≥ 0.05)
+  T2_Claude vs T3_GPT-4o      3.1354  0.0017     2.89    14.62 Yes (p < 0.05)
+
+CI = 95% Confidence Interval for difference in proportions
+
+=================================================================
+                  DETAILED INTERPRETATION
+=================================================================
+
+OVERALL EFFECTIVENESS RANKING:
+------------------------------
+1. T2 (Claude): 86.53% (469 valid out of 542 total)
+2. T1 (GPT-3.5): 78.11% (264 valid out of 338 total)
+3. T3 (GPT-4o): 77.78% (224 valid out of 288 total)
+
+STATISTICAL FINDINGS:
+--------------------
+✓ The chi-square test confirms significant differences in effectiveness
+  between the LLM models (p < 0.05).
+
+PAIRWISE ANALYSIS:
+
+• T1_GPT-3.5 vs T2_Claude:
+  Effectiveness: 78.11% vs 86.53%
+  p-value: 0.0015 → Yes* (p < 0.0167)
+  Result: Statistically significant difference (Δ = 8.42%)
+
+• T1_GPT-3.5 vs T3_GPT-4o:
+  Effectiveness: 78.11% vs 77.78%
+  p-value: 0.9233 → No (p ≥ 0.0167)
+  Result: No significant difference after Bonferroni correction
+
+• T2_Claude vs T3_GPT-4o:
+  Effectiveness: 86.53% vs 77.78%
+  p-value: 0.0016 → Yes* (p < 0.0167)
+  Result: Statistically significant difference (Δ = 8.75%)
+
+
+PRACTICAL SIGNIFICANCE:
+----------------------
+The best performing model (T2 (Claude)) achieved 86.53% effectiveness,
+which is 8.75 percentage points higher than the lowest performer
+(T3 (GPT-4o) at 77.78%).
+
+This represents a MODERATE practical difference (5-10 percentage points).
+
+=================================================================
+                    ANALYSIS COMPLETE
+=================================================================
+
+
+Creating visualizations...
+null device 
+          1 
+null device 
+          1 
+null device 
+          1 
+null device 
+          1 
+
+Visualizations saved to:
+  - rq2_effectiveness_by_model.png
+  - rq2_test_outcomes_stacked.png
+  - rq2_effectiveness_by_project.png
+  - rq2_total_tests_by_model.png
+
+=================================================================
+All analyses and visualizations completed successfully!
+=================================================================

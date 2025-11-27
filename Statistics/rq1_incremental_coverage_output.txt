@@ -1,0 +1,335 @@
+=================================================================
+     INCREMENTAL TEST COVERAGE ANALYSIS
+     Instruction Coverage & Branch Coverage
+=================================================================
+
+DATA STRUCTURE:
+---------------
+Test sets are INCREMENTAL (nested/cumulative):
+  T0: Initial test set (baseline)
+  T1: T0 + additional tests (superset of T0)
+  T2: T1 + additional tests (superset of T1)
+  T3: T2 + additional tests (superset of T2)
+
+Research Question: Does coverage significantly improve as we
+add more tests to the test suite?
+
+=================================================================
+                    RAW DATA
+=================================================================
+
+INSTRUCTION COVERAGE (%):
+    Project    T0    T1    T2    T3
+1  Catwatch 28.82 37.36 74.48 76.63
+2    Market 82.41 83.10 86.43 87.67
+3       Scs 90.32 96.53 99.67 99.83
+4 Countries 82.94 84.02 85.60 86.67
+5       Ncs 96.77 97.28 98.17 98.48
+
+BRANCH COVERAGE (%):
+    Project    T0    T1    T2     T3
+1  Catwatch 31.94 34.03 61.52  63.87
+2    Market 62.50 62.50 62.50 100.00
+3       Scs 89.29 96.03 97.22  97.62
+4 Countries 91.82 91.82 91.82  91.82
+5       Ncs 95.24 95.24 95.83  96.43
+
+
+
+#################################################################
+#                                                               #
+#                 INSTRUCTION COVERAGE ANALYSIS                 #
+#                                                               #
+#################################################################
+
+=================================================================
+               INSTRUCTION COVERAGE ANALYSIS
+=================================================================
+
+-------------------------------------------------------------------
+1. DESCRIPTIVE STATISTICS
+-------------------------------------------------------------------
+
+ Test_Set   Mean Median        SD   Min   Max Range
+       T0 76.252  82.94 27.163127 28.82 96.77 67.95
+       T1 79.658  84.02 24.572314 37.36 97.28 59.92
+       T2 88.870  86.43 10.330157 74.48 99.67 25.19
+       T3 89.856  87.67  9.535595 76.63 99.83 23.20
+
+INCREMENTAL IMPROVEMENTS:
+  T0 → T1: Mean Δ = 3.41% (from 76.25% to 79.66%)
+  T1 → T2: Mean Δ = 9.21% (from 79.66% to 88.87%)
+  T2 → T3: Mean Δ = 0.99% (from 88.87% to 89.86%)
+  T0 → T3: Mean Δ = 13.60% (from 76.25% to 89.86%) [TOTAL]
+
+-------------------------------------------------------------------
+2. SHAPIRO-WILK NORMALITY TEST (α = 0.05)
+-------------------------------------------------------------------
+
+Testing normality of DIFFERENCES (appropriate for paired tests):
+
+ Comparison W_Statistic P_Value         Normal
+    T1 - T0      0.8030  0.0857 Yes (p ≥ 0.05)
+    T2 - T1      0.6140  0.0010  No (p < 0.05)
+    T3 - T2      0.9329  0.6161 Yes (p ≥ 0.05)
+    T3 - T0      0.6863  0.0068  No (p < 0.05)
+
+INTERPRETATION:
+At least one set of differences is non-normal.
+→ NON-PARAMETRIC tests (Wilcoxon signed-rank) are appropriate.
+
+-------------------------------------------------------------------
+3. WILCOXON SIGNED-RANK TEST (Paired, One-Tailed)
+-------------------------------------------------------------------
+
+Hypothesis for each comparison:
+  H0: No improvement in coverage (median difference ≤ 0)
+  H1: Coverage INCREASES (median difference > 0)
+  Alternative: 'greater' (one-tailed test)
+  Significance level: α = 0.05
+
+ Comparison Median_Diff V_Statistic P_Value    Significant  Direction
+   T0 vs T1        1.08          15  0.0295 Yes (p < 0.05) Increase ↑
+   T1 vs T2        3.14          15  0.0295 Yes (p < 0.05) Increase ↑
+   T2 vs T3        1.07          15  0.0295 Yes (p < 0.05) Increase ↑
+   T0 vs T3        5.26          15  0.0295 Yes (p < 0.05) Increase ↑
+
+-------------------------------------------------------------------
+4. EFFECT SIZE ANALYSIS
+-------------------------------------------------------------------
+
+Calculating effect size (r = Z / sqrt(N)) for significant comparisons:
+
+T0 vs T1:
+  Effect size r ≈ 0.844 (Large effect)
+  → Statistically significant improvement (p = 0.0295)
+
+T1 vs T2:
+  Effect size r ≈ 0.844 (Large effect)
+  → Statistically significant improvement (p = 0.0295)
+
+T2 vs T3:
+  Effect size r ≈ 0.844 (Large effect)
+  → Statistically significant improvement (p = 0.0295)
+
+T0 vs T3:
+  Effect size r ≈ 0.844 (Large effect)
+  → Statistically significant improvement (p = 0.0295)
+
+-------------------------------------------------------------------
+5. DETAILED INTERPRETATION
+-------------------------------------------------------------------
+
+OVERALL TREND: Instruction Coverage coverage ranges from 76.25% (T0) to 89.86% (T3)
+
+RESULT: ALL comparisons show statistically significant improvements!
+Each increment of tests (T0→T1, T1→T2, T2→T3, and overall T0→T3)
+leads to significant coverage gains. This demonstrates:
+  - Consistent and meaningful improvements at each stage
+  - Each new test batch contributes to coverage growth
+  - The incremental approach is effective
+
+PROJECT-LEVEL IMPROVEMENTS:
+
+Catwatch:
+  T0: 28.82% → T1: 37.36% → T2: 74.48% → T3: 76.63%
+  Total improvement: 47.81 percentage points
+
+Market:
+  T0: 82.41% → T1: 83.10% → T2: 86.43% → T3: 87.67%
+  Total improvement: 5.26 percentage points
+
+Scs:
+  T0: 90.32% → T1: 96.53% → T2: 99.67% → T3: 99.83%
+  Total improvement: 9.51 percentage points
+
+Countries:
+  T0: 82.94% → T1: 84.02% → T2: 85.60% → T3: 86.67%
+  Total improvement: 3.73 percentage points
+
+Ncs:
+  T0: 96.77% → T1: 97.28% → T2: 98.17% → T3: 98.48%
+  Total improvement: 1.71 percentage points
+
+
+
+#################################################################
+#                                                               #
+#                   BRANCH COVERAGE ANALYSIS                    #
+#                                                               #
+#################################################################
+
+=================================================================
+               BRANCH COVERAGE ANALYSIS
+=================================================================
+
+-------------------------------------------------------------------
+1. DESCRIPTIVE STATISTICS
+-------------------------------------------------------------------
+
+ Test_Set   Mean Median       SD   Min    Max Range
+       T0 74.158  89.29 26.94273 31.94  95.24 63.30
+       T1 75.924  91.82 27.22753 34.03  96.03 62.00
+       T2 81.778  91.82 18.15753 61.52  97.22 35.70
+       T3 89.948  96.43 14.87855 63.87 100.00 36.13
+
+INCREMENTAL IMPROVEMENTS:
+  T0 → T1: Mean Δ = 1.77% (from 74.16% to 75.92%)
+  T1 → T2: Mean Δ = 5.85% (from 75.92% to 81.78%)
+  T2 → T3: Mean Δ = 8.17% (from 81.78% to 89.95%)
+  T0 → T3: Mean Δ = 15.79% (from 74.16% to 89.95%) [TOTAL]
+
+-------------------------------------------------------------------
+2. SHAPIRO-WILK NORMALITY TEST (α = 0.05)
+-------------------------------------------------------------------
+
+Testing normality of DIFFERENCES (appropriate for paired tests):
+
+ Comparison W_Statistic P_Value         Normal
+    T1 - T0      0.7263  0.0177  No (p < 0.05)
+    T2 - T1      0.5876  0.0004  No (p < 0.05)
+    T3 - T2      0.5979  0.0006  No (p < 0.05)
+    T3 - T0      0.8369  0.1565 Yes (p ≥ 0.05)
+
+INTERPRETATION:
+At least one set of differences is non-normal.
+→ NON-PARAMETRIC tests (Wilcoxon signed-rank) are appropriate.
+
+-------------------------------------------------------------------
+3. WILCOXON SIGNED-RANK TEST (Paired, One-Tailed)
+-------------------------------------------------------------------
+
+Hypothesis for each comparison:
+  H0: No improvement in coverage (median difference ≤ 0)
+  H1: Coverage INCREASES (median difference > 0)
+  Alternative: 'greater' (one-tailed test)
+  Significance level: α = 0.05
+
+ Comparison Median_Diff V_Statistic P_Value   Significant   Direction
+   T0 vs T1        0.00           3  0.1855 No (p ≥ 0.05) No change =
+   T1 vs T2        0.59           6  0.0907 No (p ≥ 0.05)  Increase ↑
+   T2 vs T3        0.60          10  0.0502 No (p ≥ 0.05)  Increase ↑
+   T0 vs T3        8.33          10  0.0502 No (p ≥ 0.05)  Increase ↑
+
+-------------------------------------------------------------------
+4. EFFECT SIZE ANALYSIS
+-------------------------------------------------------------------
+
+Calculating effect size (r = Z / sqrt(N)) for significant comparisons:
+
+T0 vs T1:
+  Effect size r ≈ 0.400 (Medium effect)
+  → Not statistically significant (p = 0.1855)
+
+T1 vs T2:
+  Effect size r ≈ 0.598 (Large effect)
+  → Not statistically significant (p = 0.0907)
+
+T2 vs T3:
+  Effect size r ≈ 0.735 (Large effect)
+  → Not statistically significant (p = 0.0502)
+
+T0 vs T3:
+  Effect size r ≈ 0.735 (Large effect)
+  → Not statistically significant (p = 0.0502)
+
+-------------------------------------------------------------------
+5. DETAILED INTERPRETATION
+-------------------------------------------------------------------
+
+OVERALL TREND: Branch Coverage coverage ranges from 74.16% (T0) to 89.95% (T3)
+
+RESULT: No statistically significant improvements detected.
+Despite incremental test additions, coverage improvements are not
+significant at the 0.05 level. This could indicate:
+  - The additional tests don't target new code areas
+  - Coverage was already high at baseline (ceiling effect)
+  - Sample size is too small to detect improvements
+
+PROJECT-LEVEL IMPROVEMENTS:
+
+Catwatch:
+  T0: 31.94% → T1: 34.03% → T2: 61.52% → T3: 63.87%
+  Total improvement: 31.93 percentage points
+
+Market:
+  T0: 62.50% → T1: 62.50% → T2: 62.50% → T3: 100.00%
+  Total improvement: 37.50 percentage points
+  ⚠ Plateau: No improvement from T0 to T1
+
+Scs:
+  T0: 89.29% → T1: 96.03% → T2: 97.22% → T3: 97.62%
+  Total improvement: 8.33 percentage points
+
+Countries:
+  T0: 91.82% → T1: 91.82% → T2: 91.82% → T3: 91.82%
+  Total improvement: 0.00 percentage points
+  ⚠ Plateau: No improvement from T2 to T3
+  ⚠ Plateau: No improvement from T0 to T1
+
+Ncs:
+  T0: 95.24% → T1: 95.24% → T2: 95.83% → T3: 96.43%
+  Total improvement: 1.19 percentage points
+  ⚠ Plateau: No improvement from T0 to T1
+
+
+
+=================================================================
+            COMPARATIVE SUMMARY & CONCLUSIONS
+=================================================================
+
+INSTRUCTION COVERAGE RESULTS:
+-----------------------------
+ Comparison Median_Diff P_Value    Significant
+   T0 vs T1        1.08  0.0295 Yes (p < 0.05)
+   T1 vs T2        3.14  0.0295 Yes (p < 0.05)
+   T2 vs T3        1.07  0.0295 Yes (p < 0.05)
+   T0 vs T3        5.26  0.0295 Yes (p < 0.05)
+
+
+BRANCH COVERAGE RESULTS:
+------------------------
+ Comparison Median_Diff P_Value   Significant
+   T0 vs T1        0.00  0.1855 No (p ≥ 0.05)
+   T1 vs T2        0.59  0.0907 No (p ≥ 0.05)
+   T2 vs T3        0.60  0.0502 No (p ≥ 0.05)
+   T0 vs T3        8.33  0.0502 No (p ≥ 0.05)
+
+
+KEY FINDINGS:
+-------------
+• Instruction Coverage: 4/4 comparisons significant
+• Branch Coverage: 0/4 comparisons significant
+
+→ Instruction coverage shows MORE significant improvements than branch coverage.
+
+
+RECOMMENDATIONS:
+----------------
+⚡ MIXED results - one metric improves significantly, the other doesn't.
+  Investigate why instruction and branch coverage diverge.
+
+=================================================================
+                    ANALYSIS COMPLETE
+=================================================================
+
+
+Creating visualizations...
+null device 
+          1 
+null device 
+          1 
+null device 
+          1 
+null device 
+          1 
+
+Visualizations saved to:
+  - rq1_instruction_coverage_trends.png
+  - rq1_branch_coverage_trends.png
+  - rq1_coverage_boxplots_comparison.png
+  - rq1_mean_coverage_progression.png
+
+=================================================================
+All analyses and visualizations completed successfully!
+=================================================================

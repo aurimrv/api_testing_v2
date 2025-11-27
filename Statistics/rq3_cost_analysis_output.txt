@@ -1,0 +1,243 @@
+=================================================================
+     LLM TEST GENERATION COST ANALYSIS
+     T1 = GPT-3.5 | T2 = Claude | T3 = GPT-4o
+=================================================================
+
+Research Question: Is there a cost difference between LLMs
+for creating VALID test cases?
+
+RAW DATA:
+---------
+    Project T1_SET_COST T1_PER_TEST T1_PER_VALID T2_SET_COST T2_PER_TEST
+1  Catwatch        2.73     0.01219      0.01400       16.26     0.05262
+2    Market        0.10     0.01111      0.02500        0.49     0.03267
+3       Scs        0.09     0.00265      0.00409        0.69     0.00821
+4 Countries        0.14     0.00326      0.00467        0.75     0.01042
+5       Ncs        0.05     0.00179      0.00385        0.51     0.00823
+  T2_PER_VALID T3_SET_COST T3_PER_TEST T3_PER_VALID
+1      0.06000        4.61     0.03094      0.03974
+2      0.06125        0.66     0.04125      0.07333
+3      0.00945        0.21     0.00525      0.00618
+4      0.01210        0.61     0.01452      0.01906
+5      0.00927        0.27     0.00659      0.00818
+
+=================================================================
+                 DESCRIPTIVE STATISTICS
+=================================================================
+
+
+Total Set Cost ($):
+-------------------
+        Model  Mean Median       SD  Min   Max
+ T1 (GPT-3.5) 0.622   0.10 1.178843 0.05  2.73
+  T2 (Claude) 3.740   0.69 6.999793 0.49 16.26
+  T3 (GPT-4o) 1.272   0.61 1.876625 0.21  4.61
+
+
+Cost per Test ($):
+------------------
+        Model    Mean  Median          SD     Min     Max
+ T1 (GPT-3.5) 0.00620 0.00326 0.005017031 0.00179 0.01219
+  T2 (Claude) 0.02243 0.01042 0.019776136 0.00821 0.05262
+  T3 (GPT-4o) 0.01971 0.01452 0.015797520 0.00525 0.04125
+
+
+Cost per Valid Test ($):
+------------------------
+        Model     Mean  Median          SD     Min     Max
+ T1 (GPT-3.5) 0.010322 0.00467 0.009241768 0.00385 0.02500
+  T2 (Claude) 0.030414 0.01210 0.027605031 0.00927 0.06125
+  T3 (GPT-4o) 0.029298 0.01906 0.027986965 0.00618 0.07333
+
+=================================================================
+     PRIMARY ANALYSIS: COST PER VALID TEST
+     (Most important metric - accounts for effectiveness)
+=================================================================
+
+RANKING BY MEAN COST PER VALID TEST:
+------------------------------------
+1. GPT-3.5: $0.01032 per valid test
+2. GPT-4o: $0.02930 per valid test
+3. Claude: $0.03041 per valid test
+
+Cost Range: $0.01032 to $0.03041
+Most expensive is 2.95x more costly than cheapest
+
+=================================================================
+              NORMALITY TESTING (α = 0.05)
+=================================================================
+
+Shapiro-Wilk test for each cost metric:
+
+   Model    Metric W_Statistic P_Value Normal
+ GPT-3.5  Set Cost      0.5785  0.0003     No
+  Claude  Set Cost      0.5668  0.0002     No
+  GPT-4o  Set Cost      0.6468  0.0024     No
+ GPT-3.5  Per Test      0.7963  0.0756    Yes
+  Claude  Per Test      0.8018  0.0837    Yes
+  GPT-4o  Per Test      0.8898  0.3563    Yes
+ GPT-3.5 Per Valid      0.7920  0.0696    Yes
+  Claude Per Valid      0.7170  0.0143     No
+  GPT-4o Per Valid      0.8713  0.2717    Yes
+
+INTERPRETATION:
+Some distributions are non-normal (p < 0.05).
+→ NON-PARAMETRIC tests (Friedman + Wilcoxon) are appropriate.
+
+=================================================================
+         FRIEDMAN TEST (Non-parametric Repeated Measures)
+=================================================================
+
+H0: No difference in costs between LLM models
+H1: At least one model has different costs
+Significance level: α = 0.05
+
+    Metric Chi_Square DF P_Value    Significant
+  Set Cost        8.4  2  0.0150 Yes (p < 0.05)
+  Per Test        7.6  2  0.0224 Yes (p < 0.05)
+ Per Valid        7.6  2  0.0224 Yes (p < 0.05)
+
+INTERPRETATION:
+
+Set Cost:
+  χ² = 8.4000, p = 0.0150 → SIGNIFICANT
+  → There ARE significant cost differences between models
+
+Per Test:
+  χ² = 7.6000, p = 0.0224 → SIGNIFICANT
+  → There ARE significant cost differences between models
+
+Per Valid:
+  χ² = 7.6000, p = 0.0224 → SIGNIFICANT
+  → There ARE significant cost differences between models
+
+=================================================================
+     PAIRWISE COMPARISONS (Wilcoxon Signed-Rank Tests)
+=================================================================
+
+Post-hoc pairwise comparisons for Cost per Valid Test
+Bonferroni correction: α = 0.05 / 3 = 0.0167
+
+Mensagens de aviso:
+1: In wilcox.test.default(comp$data1, comp$data2, paired = TRUE, exact = FALSE,  :
+  conf.level solicitado não alcançável
+2: In wilcox.test.default(comp$data1, comp$data2, paired = TRUE, exact = FALSE,  :
+  conf.level solicitado não alcançável
+3: In wilcox.test.default(comp$data1, comp$data2, paired = TRUE, exact = FALSE,  :
+  conf.level solicitado não alcançável
+        Comparison Median_Diff V_Statistic P_Value     Significant  Winner
+ GPT-3.5 vs Claude     0.00743           0  0.0591 No (p ≥ 0.0167) GPT-3.5
+ GPT-3.5 vs GPT-4o     0.01439           0  0.0591 No (p ≥ 0.0167) GPT-3.5
+  Claude vs GPT-4o    -0.00109           8  1.0000 No (p ≥ 0.0167)  GPT-4o
+
+* Bonferroni-corrected significance level
+
+=================================================================
+              COST-EFFECTIVENESS ANALYSIS
+=================================================================
+
+Combining cost data with effectiveness from RQ2:
+
+COST-EFFECTIVENESS RANKING:
+---------------------------
+
+1. GPT-3.5:
+   Cost per valid test: $0.01032
+   Effectiveness: 78.11%
+   Value Score: 75.67 (effectiveness/cost)
+
+2. Claude:
+   Cost per valid test: $0.03041
+   Effectiveness: 86.53%
+   Value Score: 28.45 (effectiveness/cost)
+
+3. GPT-4o:
+   Cost per valid test: $0.02930
+   Effectiveness: 77.78%
+   Value Score: 26.55 (effectiveness/cost)
+
+=================================================================
+              PROJECT-LEVEL COST BREAKDOWN
+=================================================================
+
+Cost per Valid Test by Project:
+
+   Project   GPT35  Claude   GPT4o Cheapest
+  Catwatch 0.01400 0.06000 0.03974  GPT-3.5
+    Market 0.02500 0.06125 0.07333  GPT-3.5
+       Scs 0.00409 0.00945 0.00618  GPT-3.5
+ Countries 0.00467 0.01210 0.01906  GPT-3.5
+       Ncs 0.00385 0.00927 0.00818  GPT-3.5
+
+
+FREQUENCY OF BEING CHEAPEST:
+----------------------------
+GPT-3.5: 5/5 projects (100%)
+
+=================================================================
+                  DETAILED INTERPRETATION
+=================================================================
+
+PRIMARY QUESTION: Is there a cost difference between LLMs?
+-----------------------------------------------------------
+
+✓ YES - Friedman test confirms significant cost differences
+  (χ² = 7.6000, p = 0.0224)
+
+PAIRWISE FINDINGS:
+
+• GPT-3.5 vs Claude:
+  Median difference: $0.00743
+  p-value: 0.0591 → No (p ≥ 0.0167)
+  Cheaper model: GPT-3.5
+
+• GPT-3.5 vs GPT-4o:
+  Median difference: $0.01439
+  p-value: 0.0591 → No (p ≥ 0.0167)
+  Cheaper model: GPT-3.5
+
+• Claude vs GPT-4o:
+  Median difference: $-0.00109
+  p-value: 1.0000 → No (p ≥ 0.0167)
+  Cheaper model: GPT-4o
+
+
+COST ANALYSIS SUMMARY:
+----------------------
+Best value: GPT-3.5 ($0.01032, 78.11% effective)
+Worst value: GPT-4o ($0.02930, 77.78% effective)
+
+KEY INSIGHTS:
+1. Raw Cost Perspective:
+   → GPT-3.5 has the lowest mean cost per valid test ($0.01032)
+
+2. Effectiveness-Adjusted Perspective:
+   → GPT-3.5 offers the best value (highest effectiveness/cost ratio)
+
+3. Practical Consideration:
+   → GPT-3.5 is both cheapest AND best value!
+
+=================================================================
+                    ANALYSIS COMPLETE
+=================================================================
+
+
+Creating visualizations...
+null device 
+          1 
+null device 
+          1 
+null device 
+          1 
+null device 
+          1 
+
+Visualizations saved to:
+  - rq3_cost_per_valid_by_model.png
+  - rq3_cost_by_project_comparison.png
+  - rq3_cost_effectiveness_scatter.png
+  - rq3_cost_metrics_boxplots.png
+
+=================================================================
+All analyses and visualizations completed successfully!
+=================================================================
